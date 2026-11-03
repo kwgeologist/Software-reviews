@@ -1,0 +1,7 @@
+{
+  "runs": 20,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "interpretation": "Repeated same-process UI regression; passing runs do not establish the cause of an earlier intermittent failure."
+}

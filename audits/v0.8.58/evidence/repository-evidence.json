@@ -1,0 +1,7 @@
+{
+  "reference": "@repository/TEST//tmp/tmpfgo4klcp/outside.txt",
+  "resolver_status": "Unsafe repository path",
+  "resolver_path": "None",
+  "database_resolved_path": "/tmp/tmpfgo4klcp/outside.txt",
+  "outside_file_accessible": true
+}

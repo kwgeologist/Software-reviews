@@ -1,0 +1,22 @@
+{
+  "requested": {
+    "family": "DejaVu Serif",
+    "size": 9,
+    "weight": "bold",
+    "slant": "roman",
+    "underline": 0,
+    "overstrike": 0
+  },
+  "actual": {
+    "family": "fixed",
+    "size": 10,
+    "weight": "normal",
+    "slant": "roman",
+    "underline": 0,
+    "overstrike": 0
+  },
+  "tk_dejavu_available": false,
+  "tk_family_count": 33,
+  "recreated_root_returns_old_font": true,
+  "recreated_root_error": "cannot invoke \"font\" command: application has been destroyed"
+}

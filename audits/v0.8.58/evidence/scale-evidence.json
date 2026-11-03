@@ -1,0 +1,47 @@
+{
+  "wells": 112000,
+  "set_wells_seconds": 0.2572317980000207,
+  "basin_refresh_seconds": 0.32574133100001745,
+  "zoom_refresh_seconds": [
+    0.09073445000001357,
+    0.08097842099994068,
+    0.08478401599995777,
+    0.08067686200001845,
+    0.0831067299999404,
+    0.07958027400002265
+  ],
+  "artist_counts_over_pans": [
+    [
+      8,
+      5,
+      4
+    ],
+    [
+      8,
+      5,
+      4
+    ],
+    [
+      8,
+      5,
+      4
+    ],
+    [
+      8,
+      5,
+      4
+    ],
+    [
+      8,
+      5,
+      4
+    ],
+    [
+      8,
+      5,
+      4
+    ]
+  ],
+  "peak_process_rss_MiB": 162.58984375,
+  "limitations": "Synthetic well markers only; no 200-layer composite, LIC/LAS load, production or SEG-Y stress."
+}

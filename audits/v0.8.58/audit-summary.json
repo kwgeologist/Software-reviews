@@ -1,0 +1,29 @@
+{
+  "version": "0.8.58",
+  "audit_date": "2026-11-03",
+  "read_only": true,
+  "source_integrity": {
+    "archive_sha256": "b5b774c349bc734cc573a89cbfe4bdc9b29cf0b9c020d99b0e7d300ff2fbe0a4",
+    "archive_files": 571,
+    "changed": [],
+    "missing": [],
+    "extra_source_files": [],
+    "python_files": 416,
+    "python_lines": 189286
+  },
+  "test_summary": {
+    "passed": 1674,
+    "failed": 1,
+    "skipped": 9,
+    "subtests_passed": 354,
+    "seconds": 791.9
+  },
+  "rw_repetitions": 20,
+  "findings_by_severity": {
+    "RELEASE BLOCKER": 6,
+    "HIGH": 5,
+    "MEDIUM": 3,
+    "LOW": 1
+  },
+  "windows_artifact_executed": false
+}

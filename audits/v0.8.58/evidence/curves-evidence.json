@@ -1,0 +1,38 @@
+{
+  "delete_run_cache": {
+    "canonical_resolve_missing": true,
+    "cached_run_curves": [
+      "GR",
+      "RT"
+    ],
+    "fresh_database_run_curves": [
+      "GR",
+      "RT"
+    ]
+  },
+  "well_unit_cache": {
+    "before_ft": [
+      100.0,
+      101.0,
+      102.0
+    ],
+    "cached_after_m": [
+      100.0,
+      101.0,
+      102.0
+    ],
+    "fresh_after_m": [
+      30.48,
+      30.7848,
+      31.0896
+    ]
+  },
+  "stable_identity": {
+    "parent_original_id": 3,
+    "parent_id_after_derive": 4,
+    "original_id_still_exists": false,
+    "child_parents": [
+      3
+    ]
+  }
+}

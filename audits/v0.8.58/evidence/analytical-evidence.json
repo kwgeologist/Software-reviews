@@ -1,0 +1,37 @@
+{
+  "archie": {
+    "expected": 0.43301270189221924,
+    "actual": 0.43301270189221924
+  },
+  "vsh_endpoints": {
+    "expected": [
+      0.0,
+      1.0
+    ],
+    "actual": [
+      0.0,
+      1.0
+    ]
+  },
+  "raster_linear_calibration": {
+    "expected_depth": 1500.0,
+    "actual_depth": 1500.0,
+    "expected_row": 600.0,
+    "actual_row": 600.0
+  },
+  "constant_60_degree_survey": {
+    "expected_tvd": 500.0,
+    "actual_tvd": 500.0000000000001,
+    "expected_north": 866.0254037844386,
+    "actual_north": 866.0254037844386
+  },
+  "rotated_grid": {
+    "expected_ft2": 60000.0,
+    "actual_ft2": 60000.00000000001,
+    "cells": 6
+  },
+  "linear_plane": {
+    "expected_net_acre_ft": 9.182736455463727,
+    "actual_net_acre_ft": 9.18273645546373
+  }
+}

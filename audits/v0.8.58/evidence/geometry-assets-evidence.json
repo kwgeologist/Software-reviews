@@ -1,0 +1,34 @@
+{
+  "singular_georef": {
+    "coefficients": [
+      0.9999999999999997,
+      2.0,
+      -4.440892098500626e-16,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "rms": 5.768888059150692e-16,
+    "determinant": 0.0
+  },
+  "crossed_grid_boundary": {
+    "accepted": true,
+    "cells": 2,
+    "in_place": 28941.115702479343
+  },
+  "pdf_partial_write": {
+    "raised": "synthetic sidecar write failure",
+    "previous_bytes_preserved": false,
+    "tiff_written": true,
+    "sidecar_exists": false
+  },
+  "synthetic_density_explicit_gcc": {
+    "input": [
+      2500.0
+    ],
+    "unit": "g/cc",
+    "result": [
+      2.5
+    ]
+  }
+}

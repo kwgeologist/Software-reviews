@@ -1,0 +1,20 @@
+{
+  "mutable_run": {
+    "working_value": 99.0,
+    "another_run_reader": 99.0,
+    "canonical_curve_reader": 1.0
+  },
+  "delete": {
+    "cached_values": [
+      1.0,
+      2.0,
+      3.0
+    ],
+    "uncached_values": "[nan, nan, nan]"
+  },
+  "length_mismatch": {
+    "stored_samples": 2,
+    "axis_samples": 3,
+    "canonical_read": "None"
+  }
+}

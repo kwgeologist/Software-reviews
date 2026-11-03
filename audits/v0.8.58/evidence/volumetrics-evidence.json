@@ -1,0 +1,55 @@
+{
+  "manual_acceptance": {
+    "area_acres": 150.0,
+    "net_af": 9750.0,
+    "hcpv_af": 1462.5,
+    "in_place": 9455062.5,
+    "recoverable": 1891012.5
+  },
+  "manual_porosity_35": {
+    "accepted": false,
+    "error": "Porosity 35 v/v is outside 0\u20131 as a fraction: if the value is a percentage, choose %."
+  },
+  "polygon_porosity_35": {
+    "accepted": true,
+    "in_place": 1654635937.5,
+    "net_af": 9750.0
+  },
+  "grid_porosity_35": {
+    "accepted": true,
+    "in_place": 10129390.49586777,
+    "net_af": 59.68778696051424
+  },
+  "manual_net_pay_-65.0": {
+    "accepted": true,
+    "in_place": "-9455062.5"
+  },
+  "manual_bo_nan": {
+    "accepted": true,
+    "in_place": "nan"
+  },
+  "polygon_net_pay_-65.0": {
+    "accepted": true,
+    "in_place": "-9455062.5"
+  },
+  "polygon_bo_nan": {
+    "accepted": true,
+    "in_place": "nan"
+  },
+  "nodes_2": {
+    "cells": 1,
+    "area_ft2": 10000.000000000002
+  },
+  "nodes_3": {
+    "cells": 4,
+    "area_ft2": 40000.00000000001
+  },
+  "nodes_51": {
+    "cells": 2500,
+    "area_ft2": 25000000.000000004
+  },
+  "unused_top_nan_grid": {
+    "base": 57882.231404958686,
+    "with_unused_grid": 57882.231404958686
+  }
+}

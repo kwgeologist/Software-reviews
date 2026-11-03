@@ -1,0 +1,29 @@
+{
+  "independent_mineral_mixture": {
+    "input_logs": {
+      "RHOB": 2.4615,
+      "NPHI": 0.19899999999999998,
+      "PE": 4.054266586157445
+    },
+    "expected": {
+      "VCAL": 0.5,
+      "VDOL": 0.2,
+      "VSH": 0.15,
+      "PHIE": 0.15,
+      "PHIT": 0.168
+    },
+    "actual": {
+      "VCAL": 0.4999999999125383,
+      "VDOL": 0.20000000008418406,
+      "VSH": 0.15,
+      "PHIE": 0.15000000000327765,
+      "PHIT": 0.16800000000327764
+    },
+    "qc": 0
+  },
+  "short_synthetic": {
+    "time_length": 10,
+    "trace_length": 129,
+    "wavelet_length": 129
+  }
+}

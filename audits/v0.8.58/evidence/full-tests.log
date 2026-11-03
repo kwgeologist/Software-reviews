@@ -1,0 +1,104 @@
+.................................................................................... [  4%]
+..................................s................................................... [ 10%]
+........................................................... [ 13%]
+................................................................... [ 17%]
+........................................................................ [ 21%]
+...................................................ssssss............... [ 26%]
+s........................................................... [ 29%]
+....................................................................................................................... [ 36%]
+............................................................ [ 40%]
+...................................................................................... [ 45%]
+................................................................... [ 49%]
+........................................................................ [ 53%]
+................s....................................................... [ 57%]
+........................................................................ [ 62%]
+...................................................................... [ 66%]
+................................................................................................................................. [ 74%]
+..................................................................... [ 78%]
+........................................................ [ 81%]
+......................................F.............................................................................................................. [ 90%]
+..................................................................... [ 94%]
+........................................................................ [ 98%]
+......................                                                   [100%]
+=================================== FAILURES ===================================
+______________ ControlTests.test_the_common_control_and_tk_fonts _______________
+
+self = <test_text_style.ControlTests testMethod=test_the_common_control_and_tk_fonts>
+
+    def test_the_common_control_and_tk_fonts(self):
+        root = tk.Tk()
+        self.addCleanup(root.destroy)
+        font = other_font()
+        controls = text_style.style_controls(root, TextStyle(font=font, size=9, bold=True, color="#00ff00"))
+        self.assertEqual(controls.style(), TextStyle(font=font, size=9.0, bold=True, italic=False, color="#00ff00"))
+        changed = []
+        row = text_style.FontRow(root, MISSING_FONT, False, True, on_change=lambda: changed.append(1))
+        self.assertEqual(row.value(), (MISSING_FONT, False, True))  # a missing font kept, not lost
+        self.assertEqual(row.font.get(), MISSING_FONT + text_style.MISSING)
+        row.set(font, True, False)
+        self.assertEqual((row.value(), changed), ((font, True, False), []))  # set quietly
+        row.bold_check.invoke()
+        self.assertEqual((row.value(), changed), ((font, False, False), [1]))
+        a = text_style.tk_font(root, TextStyle(font=font, size=9, bold=True))
+        self.assertIs(a, text_style.tk_font(root, TextStyle(font=font, size=9, bold=True)))  # cached
+>       self.assertEqual((a.actual("weight"), a.actual("slant")), ("bold", "roman"))
+E       AssertionError: Tuples differ: ('normal', 'roman') != ('bold', 'roman')
+E       
+E       First differing element 0:
+E       'normal'
+E       'bold'
+E       
+E       - ('normal', 'roman')
+E       ?   ^ ---
+E       
+E       + ('bold', 'roman')
+E       ?   ^  +
+
+tests/test_text_style.py:154: AssertionError
+=============================== warnings summary ===============================
+../../../opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/anyio/pytest_plugin.py:14
+  /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/anyio/pytest_plugin.py:14: PytestRemovedIn10Warning: _pytest.python.CallSpec2 has been renamed to CallSpec.
+  The CallSpec2 alias will be removed in pytest 10.
+  Update imports to use CallSpec instead.
+  See https://docs.pytest.org/en/stable/deprecations.html#callspec2-renamed
+    from _pytest.python import CallSpec2
+
+tests/test_petro_integration.py::PetroIntegrationTests::test_crossplot_custom_line_ends_on_double_click
+  /workspace/audit-v0.8.58/OandG_Workbench_v0.8.58/petroworkbench/analysis.py:844: UserWarning: No artists with labels found to put in legend.  Note that artists whose label start with an underscore are ignored when legend() is called with no argument.
+    axis.legend(loc="best", fontsize=8)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+============================= slowest 30 durations =============================
+15.45s call     tests/test_map_text_rule.py::CultureTextTests::test_sizes_follow_the_map_and_every_label_is_drawn
+9.46s call     tests/test_geosteer_display.py::FillTests::test_lateral_curves_and_type_log_fill_the_same_ways
+9.35s call     tests/test_gridding_methods.py::MethodTests::test_barriers_stop_the_gridding_across_them
+7.87s call     tests/test_geosteering.py::WindowTests::test_steer_drag_keys_and_undo
+7.36s call     tests/test_xsection.py::PunchListWindowTests::test_settings_hold_from_one_session_to_the_next
+7.12s call     tests/test_geosteer_display.py::FillTests::test_every_fill_mode_on_the_gr
+5.79s call     tests/test_petro_integration.py::PetroIntegrationTests::test_raster_shown_in_a_track
+5.50s call     tests/test_geosteering.py::WindowTests::test_right_click_axes_scales_colour_bar_and_curves
+5.12s call     tests/test_xsection.py::PunchListWindowTests::test_top_and_bottom_depths
+5.10s call     tests/test_geosteering.py::WindowTests::test_segments_on_and_off_in_the_correlation_window
+5.08s call     tests/test_geosteering.py::WindowTests::test_local_editing_in_the_correlation_window
+5.06s call     tests/test_map_layer_stack.py::LayerStackWindowTests::test_drawing_needs_an_active_layer_and_goes_into_it
+4.91s call     tests/test_geosteering.py::WindowTests::test_faults_survey_delete_scrolling_and_toolbar
+4.91s call     tests/test_petro_integration.py::PetroIntegrationTests::test_an_alias_made_once_applies_to_every_well
+4.90s call     tests/test_xsection.py::PunchListWindowTests::test_hanging_another_way_keeps_the_view
+4.75s call     tests/test_multimineral.py::PetroTests::test_inputs_are_used_as_stored_unless_explicitly_percent
+4.51s call     tests/test_geosteering.py::WindowTests::test_report_whole_lateral_or_current_view
+4.49s call     tests/test_correlation_session.py::CorrelationSessionTests::test_rasters_follow_every_scroll_from_the_cache
+4.47s call     tests/test_xsection.py::PunchListWindowTests::test_depth_basis_and_depth_track
+4.30s call     tests/test_multimineral.py::PetroTests::test_run_save_reopen_and_other_modules
+4.24s call     tests/test_petro_integration.py::PetroIntegrationTests::test_every_depth_window_opens
+4.06s call     tests/test_petro_integration.py::PetroIntegrationTests::test_core_datasets_switched_on_and_off_with_a_tick
+4.01s call     tests/test_petro_integration.py::PetroIntegrationTests::test_equations_use_core_values
+4.00s call     tests/test_scrolling_petro.py::PetroWindowScrollingTests::test_dialog_windows_keep_their_buttons_in_view
+3.97s call     tests/test_geosteering.py::WindowTests::test_slide_boundaries_zoom_and_tops
+3.97s call     tests/test_xsection.py::PunchListWindowTests::test_pick_and_edit_tops
+3.96s call     tests/test_xsection.py::PunchListWindowTests::test_apply_style_to_all_copies_every_style_property
+3.85s call     tests/test_ui_consistency.py::StyleOwnershipTests::test_one_icon_for_one_action
+3.72s call     tests/test_petro_integration.py::PetroIntegrationTests::test_interpretation_survives_save_and_reopen
+3.66s call     tests/test_petro_integration.py::PetroIntegrationTests::test_narrow_tracks_leave_room_for_more_tracks
+=========================== short test summary info ============================
+FAILED tests/test_text_style.py::ControlTests::test_the_common_control_and_tk_fonts
+1 failed, 1674 passed, 9 skipped, 2 warnings, 354 subtests passed in 791.90s (0:13:11)
