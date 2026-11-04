@@ -1,0 +1,53 @@
+{
+  "truncate_1750": {
+    "handled": false,
+    "exception": "error",
+    "message": "unpack_from requires a buffer of at least 1760 bytes for unpacking 20 bytes at offset 1740 (actual buffer size is 1750)"
+  },
+  "truncate_2400": {
+    "handled": false,
+    "exception": "error",
+    "message": "unpack_from requires a buffer of at least 2408 bytes for unpacking 20 bytes at offset 2388 (actual buffer size is 2400)"
+  },
+  "truncate_4200": {
+    "handled": false,
+    "exception": "error",
+    "message": "unpack_from requires a buffer of at least 4212 bytes for unpacking 20 bytes at offset 4192 (actual buffer size is 4200)"
+  },
+  "picked_nan": {
+    "native_picks": 1830,
+    "nonfinite_values": 1
+  },
+  "increment_two_survey": {
+    "input_grid_nodes": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        2
+      ]
+    ],
+    "numbered_lines": [
+      100,
+      101,
+      102
+    ],
+    "placed_bins": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "unmatched": 1
+  }
+}

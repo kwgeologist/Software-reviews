@@ -1,0 +1,8 @@
+{
+  "duplicate_rename_accepted": false,
+  "GAS_entry_restored": true,
+  "validation_after_rejection": [],
+  "IHS_GAS_mapping_before_save": "OIL",
+  "saved": true,
+  "IHS_GAS_mapping_after_restart": "OIL"
+}

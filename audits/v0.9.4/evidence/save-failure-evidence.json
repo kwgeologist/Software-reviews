@@ -1,0 +1,14 @@
+{
+  "result_returned": {
+    "10300": [
+      "10300",
+      1830,
+      0
+    ]
+  },
+  "status_sequence": [
+    "Interpretation not saved yet: synthetic disk full",
+    "Kingdom horizons imported: 10300 (1,830 picks)"
+  ],
+  "final_status_claims_import": true
+}

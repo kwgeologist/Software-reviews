@@ -1,0 +1,465 @@
+# O&G Workbench v0.9.4 — Read-Only Codex Audit
+
+Audit the current `v0.9.4` codebase on branch:
+
+`claude/new-session-96rnbt`
+
+The corresponding source archive is:
+
+`OandG_Workbench_v0.9.4.zip`
+
+## Objective
+
+Perform a **read-only engineering audit**.
+
+Do not modify code.
+
+Do not refactor.
+
+Do not create a PR.
+
+Do not fix findings unless explicitly asked after the audit.
+
+The goal is to identify:
+- correctness problems
+- data-integrity risks
+- architectural regressions
+- importer edge cases
+- persistence problems
+- performance risks
+- Windows-specific issues
+- insufficient test coverage
+
+Prioritize real defects over style commentary.
+
+---
+
+# 1. Full-suite baseline
+
+Confirm the current automated test state.
+
+Expected reported baseline from the build:
+
+- **1,835 tests passed**
+- one earlier unrelated raster-process crash passed individually and passed in the second full run
+
+Check whether the current branch reproduces the expected result.
+
+If the environment cannot execute specific Windows/Tk tests, identify that explicitly.
+
+Do not treat environment-related skips as product defects without evidence.
+
+---
+
+# 2. Native Kingdom HZN importer
+
+Audit the native `.hzn` implementation.
+
+Verify:
+
+- it parses the native binary rather than the old decoded CSV export
+- no CSV-derived production path is masquerading as native import
+- horizon name comes from the native file
+- pick validity flags are honored
+- unpicked/null cells are not imported as valid picks
+- grid indexing/orientation is correct
+- X/Y reconstruction is correct
+- time/depth values are preserved
+- source provenance is retained
+- selected survey line/trace origin is used consistently
+- user-selected units are propagated correctly
+- save/reload preserves the imported interpretation
+
+Pay special attention to:
+
+### H02503
+The native file marks **3 cells as not picked** that the decoded export includes.
+
+The native file is authoritative.
+
+Confirm the importer:
+- excludes those 3 cells
+- does not attempt to “repair” them from the CSV truth data
+
+### Object names
+Some native names differ from the decoded exports, including:
+
+- `DTS1`
+- `Rob L-1 LS dtse1`
+- `Rob L1`
+
+Native names are authoritative.
+
+Do not flag name differences merely because exports differ.
+
+---
+
+# 3. Native Kingdom FLT importer
+
+Audit the native `.FLT` implementation.
+
+Critical invariant:
+
+**Fault → Stick → ordered picks**
+
+Verify:
+
+- native compound/binary data is actually parsed
+- individual sticks remain distinct
+- stick IDs/grouping are preserved
+- point order within each stick is preserved
+- coordinates match the native data
+- time/depth values are preserved
+- no point-cloud flattening occurs
+- no implicit stick merging occurs
+- existing-fault New / Merge / Replace behavior is safe
+- save/reload preserves topology
+
+The implementation reportedly matches all **26 decoded faults exactly, stick-by-stick and point-by-point**.
+
+Confirm that the tests actually establish this and are not simply comparing a parser against data generated from itself.
+
+---
+
+# 4. Kingdom validation independence
+
+Audit the test fixtures under the native-import tests.
+
+Determine whether the decoded Kingdom truth data is sufficiently independent from the native parser.
+
+Watch for circular tests such as:
+
+`native parser → fixture generator → test expected result`
+
+A meaningful regression test should compare native parser output against independently decoded/exported truth.
+
+Report any circular validation.
+
+---
+
+# 5. Well Symbol catalog
+
+Audit the new 29-symbol catalog.
+
+Exactly these active built-in codes should remain:
+
+`LOC, OIL, GAS, O&G, DRY, INJ, ABDNLOC, SUS, SRV, JNK, JNKOIL, JNKGAS, P&A, PERCNL, KIL, ABINJ, DRILWELL, UNKN, PAOW, PAGW, PAOGW, DRL, ABDN, TA, KEYINJ, DERRICK, PLUGINJ, PLUGOIL, INJECT`
+
+Verify:
+
+- exactly 29 are active
+- deleted legacy codes do not reappear through fallback/inference
+- existing projects with retired codes still open
+- retired code is preserved rather than silently remapped
+- neutral/legacy rendering is safe
+- user can reassign a legacy symbol
+
+---
+
+# 6. Well Symbol geometry
+
+Verify shared-geometry requirements:
+
+- `PLUGOIL` renders identically to `PAOW`
+- `DRILWELL` renders identically to `DERRICK`
+- `DRL` renders identically to `DERRICK`
+
+Codes/descriptions should remain distinct.
+
+Prefer actual primitive/render equality tests, not merely visual assumptions.
+
+`PLUGINJ` has not yet been visually validated by the user. Do not treat its current drawing as authoritative.
+
+Flag it only as **awaiting visual confirmation**, not as a defect unless the code itself is inconsistent.
+
+---
+
+# 7. Well Symbol Editor
+
+Audit:
+
+**Wells ▸ Well Symbols…**
+
+Check:
+
+- catalog loads correctly
+- editing Code/SYM/description/color/scale is safe
+- drawing edits update the live preview
+- Add
+- Duplicate
+- Delete
+- Deactivate
+- Import WSD
+- Export WSD
+- alias/status mappings
+- Cancel behavior
+- persistence
+
+Look for:
+- duplicate-code corruption
+- duplicate SYM-number ambiguity
+- invalid geometry definitions
+- unsupported overlay/body combinations
+- stale preview/cache
+- mutation of shipped files
+- malformed user settings causing startup failure
+
+User changes should be stored in a writable user settings location, not inside the installed application directory.
+
+---
+
+# 8. Central external-status mapping
+
+Audit the centralized mapping for:
+
+- IHS
+- Enverus
+- Petra
+- custom sources
+
+Verify importers use the common resolution path rather than private status dictionaries.
+
+For IHS 297:
+
+`external status → centralized mapping → Workbench symbol`
+
+If no mapping exists:
+
+- existing well keeps its current symbol
+- new well gets the normal Location Only/default symbol
+- unmapped status is reported
+
+Confirm there is no secondary fallback that silently guesses an active symbol.
+
+---
+
+# 9. IHS 297 importer regression audit
+
+Ensure v0.9.4 did not regress the v0.9.3 importer.
+
+Audit at minimum:
+
+- streaming behavior
+- existing-well handling
+- exact/full API preservation
+- headers
+- location
+- Well Symbol
+- tops
+- directional surveys
+- cores
+- IP tests
+- treatments
+- FM tests
+- recoveries
+- unsupported-record reporting
+- no automatic perforations from tests
+- idempotent second import
+
+Recognized unsupported source records should remain visible in diagnostics rather than disappear.
+
+Pay attention to transaction safety if a large import fails midway.
+
+---
+
+# 10. IHS 298 full-API identity
+
+This is a high-priority audit item.
+
+The full **14-digit API/UWI** is the production well identity.
+
+Examples:
+
+- `42401123450000`
+- `42401123450001`
+- `42401123450002`
+
+These must remain distinct wells.
+
+Verify:
+
+1. Exact 14-digit match is attempted first.
+2. No normalization collapses completion suffixes.
+3. Missing full API creates a new well.
+4. Lease/operator/field are populated from the 298 where available.
+5. Location is only assigned when valid datum handling permits it.
+6. Different 14-digit APIs are never combined merely because the first 10 digits match.
+7. Duplicate production key is effectively:
+   **full API + production month**
+8. Same month on different completion APIs is not considered a conflict.
+9. Same full API/month identical row is skipped.
+10. Same full API/month differing row is handled as an actual conflict.
+
+Search the entire production/import codebase for helper functions that reduce APIs to 10 digits and make sure none are accidentally used in the 298 identity path.
+
+---
+
+# 11. New-well creation from 298
+
+Audit creation of a 298 API that does not already exist.
+
+Verify:
+
+- well ID remains full 14-digit API
+- it does not accidentally merge later with its base 10-digit borehole
+- repeated import finds the newly created well instead of creating another
+- symbol/default metadata is valid
+- provenance records the 298 source
+- blank/unknown fields are not populated with guessed values
+
+---
+
+# 12. Database migrations/schema
+
+Review schema changes introduced from v0.9.3 → v0.9.4.
+
+Check:
+
+- migrations are idempotent
+- old projects upgrade correctly
+- new indexes are created safely
+- no destructive schema changes
+- user symbol settings do not conflict with project data
+- Kingdom provenance columns work on existing DBs
+- opening a project repeatedly does not rerun expensive migration work
+
+---
+
+# 13. Save/reopen integrity
+
+Create or inspect tests covering:
+
+- native HZN import → save → close → reopen
+- native FLT import → save → close → reopen
+- edited symbol catalog → restart application
+- legacy symbol project → reopen
+- 297 imported tests → reopen
+- 298 completion wells → reopen
+
+Compare identifiers and child relationships, not merely counts.
+
+---
+
+# 14. Windows behavior
+
+This is a Windows application.
+
+Audit for:
+
+- path handling
+- case sensitivity assumptions
+- bundled resources
+- writable user settings
+- PyInstaller/resource resolution
+- filenames containing spaces
+- WSD location
+- native import dialog filters
+- temporary files
+- binary file reading
+
+Pay special attention to `_MEIPASS` / packaged resource behavior for the Well Symbol system.
+
+---
+
+# 15. Performance
+
+Look for regressions in:
+
+- 297 large-file import
+- 298 monthly production import
+- native FLT loading
+- native HZN loading
+- symbol editor opening
+- Well Manager opening
+- project opening
+
+Check for:
+- per-record DB queries inside large loops
+- repeated full-table reads
+- repeated source lookups
+- excessive commits
+- accidental N+1 behavior
+- unbounded caches
+
+The previous formation-top source lookup optimization should remain intact.
+
+---
+
+# 16. Error handling
+
+Audit native import failure paths:
+
+- truncated HZN
+- corrupt FLT compound file
+- unsupported Kingdom version
+- wrong survey origin
+- invalid unit selection
+- malformed WSD
+- duplicate symbol codes
+- malformed status mapping
+- failed 297/298 transaction
+
+A bad file should produce a useful diagnostic rather than corrupting the project.
+
+---
+
+# 17. Test quality
+
+Do not just count tests.
+
+Identify high-value behavior that is currently untested.
+
+Especially inspect for:
+
+- circular fixture validation
+- parser tests that only validate happy paths
+- no corruption/truncation cases
+- missing rollback tests
+- missing legacy-project tests
+- missing packaged-Windows resource tests
+- missing API normalization edge cases
+
+---
+
+# 18. Audit output
+
+Return findings grouped by severity:
+
+## Critical
+Could corrupt or misassign project data.
+
+## High
+Major functional error or realistic workflow failure.
+
+## Medium
+Incorrect edge behavior, migration risk, or insufficient protection.
+
+## Low
+Minor robustness/usability issue.
+
+For every finding include:
+
+- file/module
+- function/class
+- line range where practical
+- exact problem
+- why it matters
+- reproducible scenario
+- recommended correction
+- whether an existing test should have caught it
+
+Then provide:
+
+### Tests to add
+A concise prioritized list.
+
+### Overall assessment
+Choose one:
+
+- **Do not release**
+- **Release after targeted fixes**
+- **Acceptable baseline; fix findings incrementally**
+
+Do not praise code quality without evidence.
+
+Do not report formatting/style issues unless they create a maintenance or correctness risk.

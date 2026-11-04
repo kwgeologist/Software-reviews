@@ -1,0 +1,265 @@
+{
+  "bad_numeric": {
+    "load_succeeded": false,
+    "exception": "ValueError",
+    "message": "could not convert string to float: 'oops'"
+  },
+  "bad_symbols_type": {
+    "load_succeeded": false,
+    "exception": "AttributeError",
+    "message": "'list' object has no attribute 'items'"
+  },
+  "bad_geometry": {
+    "load_succeeded": true,
+    "validation": [
+      "OIL: unknown body 'no-such-body'."
+    ]
+  },
+  "duplicate_sym": {
+    "validation": [],
+    "shared_sym": 2,
+    "saved": true,
+    "numeric_resolves": "OIL"
+  },
+  "297_metric_well": {
+    "well_unit": "m",
+    "top_1000ft_stored": 1000.0,
+    "survey_1000ft_stored": 304.8,
+    "expected_m": 304.8
+  },
+  "297_header_only_reimport": {
+    "prior_top_count": 1,
+    "after_top_count": 0
+  },
+  "fault_merge": {
+    "input_sticks_per_import": 1,
+    "imports": 2,
+    "result_sticks": 1,
+    "node_sequence": [
+      [
+        1,
+        1,
+        2,
+        2,
+        3,
+        3
+      ]
+    ]
+  },
+  "truncated_hzn": {
+    "handled": true,
+    "diagnostics": [
+      "{'category': 'malformed', 'record': 'HZN', 'count': 1, 'sample': 'truncated.hzn', 'message': 'truncated.hzn: no pick-value tile directory found.'}"
+    ]
+  }
+}
+{
+  "truncate_1750": {
+    "handled": false,
+    "exception": "error",
+    "message": "unpack_from requires a buffer of at least 1760 bytes for unpacking 20 bytes at offset 1740 (actual buffer size is 1750)"
+  },
+  "truncate_2400": {
+    "handled": false,
+    "exception": "error",
+    "message": "unpack_from requires a buffer of at least 2408 bytes for unpacking 20 bytes at offset 2388 (actual buffer size is 2400)"
+  },
+  "truncate_4200": {
+    "handled": false,
+    "exception": "error",
+    "message": "unpack_from requires a buffer of at least 4212 bytes for unpacking 20 bytes at offset 4192 (actual buffer size is 4200)"
+  },
+  "picked_nan": {
+    "native_picks": 1830,
+    "nonfinite_values": 1
+  },
+  "increment_two_survey": {
+    "input_grid_nodes": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        2
+      ]
+    ],
+    "numbered_lines": [
+      100,
+      101,
+      102
+    ],
+    "placed_bins": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "unmatched": 1
+  }
+}
+{
+  "merge_reopen": {
+    "sticks": 1,
+    "z_order": [
+      [
+        100.0,
+        200.0,
+        101.0,
+        201.0,
+        102.0,
+        202.0
+      ]
+    ],
+    "provenance_files": [
+      "source1.FLT"
+    ]
+  },
+  "broken_flt": {
+    "handled": false,
+    "exception": "CFBError",
+    "message": "broken.FLT: a broken sector chain."
+  },
+  "empty_replace": {
+    "prior_picks": 1,
+    "after_picks": 0
+  }
+}
+{
+  "completion_identity": {
+    "rows": [
+      {
+        "id": 1,
+        "api14": "42401123450000",
+        "production_id": 1,
+        "month": "2025-01",
+        "oil": 100.0,
+        "gas": 200.0
+      },
+      {
+        "id": 2,
+        "api14": "42401123450001",
+        "production_id": 2,
+        "month": "2025-01",
+        "oil": 101.0,
+        "gas": 201.0
+      },
+      {
+        "id": 3,
+        "api14": "42401123450002",
+        "production_id": 3,
+        "month": "2025-01",
+        "oil": 102.0,
+        "gas": 202.0
+      }
+    ],
+    "reimport_counts": {
+      "identical": 3
+    },
+    "create_again": 0,
+    "same_ids_and_values_after_reopen": true
+  },
+  "one_completion_conflict": {
+    "conflicts": 1,
+    "identical": 2
+  },
+  "migration_idempotence": [
+    {
+      "well": {
+        "id": 1,
+        "api14": "42401111110000",
+        "well_symbol_code": "DRYSO",
+        "well_symbol_id": 58
+      },
+      "horizon_provenance_column": true,
+      "fault_provenance_column": true
+    },
+    {
+      "well": {
+        "id": 1,
+        "api14": "42401111110000",
+        "well_symbol_code": "DRYSO",
+        "well_symbol_id": 58
+      },
+      "horizon_provenance_column": true,
+      "fault_provenance_column": true
+    }
+  ],
+  "cancel_rollback": {
+    "exception": "Cancelled",
+    "wells": 0,
+    "months": 0
+  },
+  "active_codes": [
+    "LOC",
+    "OIL",
+    "GAS",
+    "O&G",
+    "DRY",
+    "INJ",
+    "ABDNLOC",
+    "SUS",
+    "SRV",
+    "JNK",
+    "JNKOIL",
+    "JNKGAS",
+    "P&A",
+    "PERCNL",
+    "KIL",
+    "ABINJ",
+    "DRILWELL",
+    "UNKN",
+    "PAOW",
+    "PAGW",
+    "PAOGW",
+    "DRL",
+    "ABDN",
+    "TA",
+    "KEYINJ",
+    "DERRICK",
+    "PLUGINJ",
+    "PLUGOIL",
+    "INJECT"
+  ],
+  "shared_primitives": {
+    "PLUGOIL=PAOW": true,
+    "DRILWELL=DERRICK": true,
+    "DRL=DERRICK": true
+  }
+}
+Fontconfig error: No writable cache directories
+{
+  "prior_picks": 1830,
+  "after_picks": 0,
+  "report": {
+    "10300": [
+      "10300",
+      0,
+      0
+    ]
+  },
+  "save_calls": 2,
+  "status": "Kingdom horizons imported: 10300 (0 picks)"
+}
+{
+  "result_returned": {
+    "10300": [
+      "10300",
+      1830,
+      0
+    ]
+  },
+  "status_sequence": [
+    "Interpretation not saved yet: synthetic disk full",
+    "Kingdom horizons imported: 10300 (1,830 picks)"
+  ],
+  "final_status_claims_import": true
+}

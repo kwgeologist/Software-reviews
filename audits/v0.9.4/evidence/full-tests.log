@@ -1,0 +1,98 @@
+................................................................................ [  4%]
+......................................................... [  7%]
+........................s........................................................................................................................ [ 15%]
+................................................................... [ 18%]
+........................................................................ [ 22%]
+.........................................ssssss...............s......... [ 26%]
+............................................................ [ 30%]
+....................................................................................................................... [ 36%]
+.................................................................................................................................................. [ 44%]
+................................................................... [ 48%]
+........................................................................ [ 52%]
+........................................................................ [ 56%]
+...........s............................................................ [ 59%]
+........................................................................ [ 63%]
+...................................................................... [ 67%]
+......................................................... [ 70%]
+........................................................................ [ 74%]
+............................................................................................................................. [ 81%]
+.................................F................................................................................................................ [ 89%]
+............................................................................................................................................ [ 97%]
+......................................................                   [100%]
+=================================== FAILURES ===================================
+______________ ControlTests.test_the_common_control_and_tk_fonts _______________
+
+self = <test_text_style.ControlTests testMethod=test_the_common_control_and_tk_fonts>
+
+    def test_the_common_control_and_tk_fonts(self):
+        root = tk.Tk()
+        self.addCleanup(root.destroy)
+        font = other_font()
+        controls = text_style.style_controls(root, TextStyle(font=font, size=9, bold=True, color="#00ff00"))
+        self.assertEqual(controls.style(), TextStyle(font=font, size=9.0, bold=True, italic=False, color="#00ff00"))
+        changed = []
+        row = text_style.FontRow(root, MISSING_FONT, False, True, on_change=lambda: changed.append(1))
+        self.assertEqual(row.value(), (MISSING_FONT, False, True))  # a missing font kept, not lost
+        self.assertEqual(row.font.get(), MISSING_FONT + text_style.MISSING)
+        row.set(font, True, False)
+        self.assertEqual((row.value(), changed), ((font, True, False), []))  # set quietly
+        row.bold_check.invoke()
+        self.assertEqual((row.value(), changed), ((font, False, False), [1]))
+        a = text_style.tk_font(root, TextStyle(font=font, size=9, bold=True))
+        self.assertIs(a, text_style.tk_font(root, TextStyle(font=font, size=9, bold=True)))  # cached
+>       self.assertEqual((a.actual("weight"), a.actual("slant")), ("bold", "roman"))
+E       AssertionError: Tuples differ: ('normal', 'roman') != ('bold', 'roman')
+E       
+E       First differing element 0:
+E       'normal'
+E       'bold'
+E       
+E       - ('normal', 'roman')
+E       ?   ^ ---
+E       
+E       + ('bold', 'roman')
+E       ?   ^  +
+
+tests/test_text_style.py:154: AssertionError
+=============================== warnings summary ===============================
+../../../opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/anyio/pytest_plugin.py:14
+  /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/anyio/pytest_plugin.py:14: PytestRemovedIn10Warning: _pytest.python.CallSpec2 has been renamed to CallSpec.
+  The CallSpec2 alias will be removed in pytest 10.
+  Update imports to use CallSpec instead.
+  See https://docs.pytest.org/en/stable/deprecations.html#callspec2-renamed
+    from _pytest.python import CallSpec2
+
+tests/test_petro_integration.py::PetroIntegrationTests::test_crossplot_custom_line_ends_on_double_click
+  /workspace/audit-v0.9.4/OandG_Workbench_v0.9.4/petroworkbench/analysis.py:844: UserWarning: No artists with labels found to put in legend.  Note that artists whose label start with an underscore are ignored when legend() is called with no argument.
+    axis.legend(loc="best", fontsize=8)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+============================= slowest 25 durations =============================
+14.27s call     tests/test_map_text_rule.py::CultureTextTests::test_sizes_follow_the_map_and_every_label_is_drawn
+10.11s call     tests/test_geosteer_display.py::FillTests::test_lateral_curves_and_type_log_fill_the_same_ways
+9.03s call     tests/test_gridding_methods.py::MethodTests::test_barriers_stop_the_gridding_across_them
+8.41s call     tests/test_geosteering.py::WindowTests::test_steer_drag_keys_and_undo
+8.33s call     tests/test_geosteer_display.py::FillTests::test_every_fill_mode_on_the_gr
+6.33s call     tests/test_xsection.py::PunchListWindowTests::test_hanging_another_way_keeps_the_view
+6.03s call     tests/test_xsection.py::PunchListWindowTests::test_settings_hold_from_one_session_to_the_next
+5.84s call     tests/test_geosteering.py::WindowTests::test_right_click_axes_scales_colour_bar_and_curves
+5.63s call     tests/test_geosteering.py::WindowTests::test_local_editing_in_the_correlation_window
+5.44s call     tests/test_geosteering.py::WindowTests::test_segments_on_and_off_in_the_correlation_window
+5.43s call     tests/test_xsection.py::PunchListWindowTests::test_depth_basis_and_depth_track
+5.29s call     tests/test_xsection.py::PunchListWindowTests::test_top_and_bottom_depths
+5.16s call     tests/test_geosteering.py::WindowTests::test_faults_survey_delete_scrolling_and_toolbar
+5.15s call     tests/test_petro_integration.py::PetroIntegrationTests::test_raster_shown_in_a_track
+5.09s call     tests/test_petro_integration.py::PetroIntegrationTests::test_an_alias_made_once_applies_to_every_well
+5.08s call     tests/test_petro_integration.py::PetroIntegrationTests::test_sw_archie_is_one_black_line
+4.85s call     tests/test_multimineral.py::PetroTests::test_run_save_reopen_and_other_modules
+4.41s call     tests/test_multimineral.py::PetroTests::test_inputs_are_used_as_stored_unless_explicitly_percent
+4.37s call     tests/test_petro_integration.py::PetroIntegrationTests::test_every_depth_window_opens
+4.33s call     tests/test_geosteering.py::WindowTests::test_slide_boundaries_zoom_and_tops
+4.28s call     tests/test_geosteering.py::WindowTests::test_report_whole_lateral_or_current_view
+4.27s call     tests/test_petro_integration.py::PetroIntegrationTests::test_curves_made_in_petro_appear_in_geo
+4.26s call     tests/test_petro_integration.py::PetroIntegrationTests::test_core_datasets_switched_on_and_off_with_a_tick
+4.26s call     tests/test_scrolling_petro.py::PetroWindowScrollingTests::test_dialog_windows_keep_their_buttons_in_view
+4.24s call     tests/test_petro_integration.py::PetroIntegrationTests::test_tops_outside_the_view_are_not_printed_below_the_tracks
+=========================== short test summary info ============================
+FAILED tests/test_text_style.py::ControlTests::test_the_common_control_and_tk_fonts
+1 failed, 1827 passed, 9 skipped, 2 warnings, 521 subtests passed in 825.01s (0:13:45)

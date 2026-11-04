@@ -1,5 +1,19 @@
 # Software reviews
 
+## O&G Workbench v0.9.4
+
+Independent read-only audit of the uploaded v0.9.4 archive: **15 findings — 4 Critical, 5 High, 5 Medium, 1 Low**. **Overall assessment: Do not release unchanged.** No application code was modified and no PR was created.
+
+- [Read the report](audits/v0.9.4/OandG_Workbench_v0.9.4_Audit.md)
+- [Download PDF](https://github.com/kwgeologist/Software-reviews/raw/refs/heads/main/audits/v0.9.4/OandG_Workbench_v0.9.4_Audit.pdf)
+- [Download report and evidence ZIP](https://github.com/kwgeologist/Software-reviews/raw/refs/heads/main/audits/v0.9.4/OandG_Workbench_v0.9.4_Audit_Bundle.zip)
+- [HTML report](audits/v0.9.4/OandG_Workbench_v0.9.4_Audit.html)
+- [Structured findings](audits/v0.9.4/findings.json)
+
+Full GUI-enabled suite: **1,827 passed, 1 failed, 9 skipped**, plus 521 passing subtests. The font-weight assertion fails in this cloud Tk environment. Separately, the real Geo source self-test exits 1 on its obsolete 100-symbol requirement; v0.9.4 intentionally ships 29 symbols. Windows runtime acceptance was not executed. The requested branch HEAD could not be identified from the archive; the report pins its exact ZIP SHA-256.
+
+All 613 source files remain byte-identical. The bundle includes logs and controlled synthetic probes, not application source or client databases. If a file opens instead of saving, select **Download raw file** on GitHub.
+
 ## O&G Workbench v0.8.58
 
 Independent read-only release audit: **15 findings — 6 release blockers, 5 high, 3 medium, 1 low**. Application source remains unchanged.

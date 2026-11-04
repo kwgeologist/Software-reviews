@@ -1,0 +1,31 @@
+{
+  "version": "0.9.4",
+  "date": "2026-11-04",
+  "read_only": true,
+  "assessment": "Do not release",
+  "findings": {
+    "Critical": 4,
+    "High": 5,
+    "Medium": 5,
+    "Low": 1
+  },
+  "tests": {
+    "passed": 1827,
+    "failed": 1,
+    "skipped": 9,
+    "subtests_passed": 521,
+    "seconds": 825.01
+  },
+  "source_integrity": {
+    "zip_sha256": "883a01dd8486e9166fd32dba9b38edf329a18da550ac54c12aa85d558039ffeb",
+    "archive_files": 613,
+    "changed": [],
+    "missing": [],
+    "extra_source_files": [],
+    "python_files": 435,
+    "python_lines": 199214
+  },
+  "branch_head_verified": false,
+  "windows_runtime_executed": false,
+  "geo_source_self_test_exit_code": 1
+}

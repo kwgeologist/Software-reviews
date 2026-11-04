@@ -1,0 +1,27 @@
+{
+  "merge_reopen": {
+    "sticks": 1,
+    "z_order": [
+      [
+        100.0,
+        200.0,
+        101.0,
+        201.0,
+        102.0,
+        202.0
+      ]
+    ],
+    "provenance_files": [
+      "source1.FLT"
+    ]
+  },
+  "broken_flt": {
+    "handled": false,
+    "exception": "CFBError",
+    "message": "broken.FLT: a broken sector chain."
+  },
+  "empty_replace": {
+    "prior_picks": 1,
+    "after_picks": 0
+  }
+}

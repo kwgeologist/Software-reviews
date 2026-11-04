@@ -1,0 +1,19 @@
+{
+  "requested": {
+    "family": "DejaVu Serif",
+    "size": 9,
+    "weight": "bold",
+    "slant": "roman",
+    "underline": 0,
+    "overstrike": 0
+  },
+  "actual": {
+    "family": "fixed",
+    "size": 10,
+    "weight": "normal",
+    "slant": "roman",
+    "underline": 0,
+    "overstrike": 0
+  },
+  "tk_has_dejavu_serif": false
+}

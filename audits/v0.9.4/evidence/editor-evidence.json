@@ -1,0 +1,46 @@
+{
+  "rejected_rename": {
+    "accepted": false,
+    "oil_entry_restored": true,
+    "mapping_changes": [
+      {
+        "before": {
+          "source": "IHS",
+          "external": "OIL",
+          "code": "OIL",
+          "comment": "Oil producer"
+        },
+        "after": {
+          "source": "IHS",
+          "external": "OIL",
+          "code": "BAD CODE",
+          "comment": "Oil producer"
+        }
+      },
+      {
+        "before": {
+          "source": "IHS",
+          "external": "OIL-WO",
+          "code": "OIL",
+          "comment": "Oil, workover"
+        },
+        "after": {
+          "source": "IHS",
+          "external": "OIL-WO",
+          "code": "BAD CODE",
+          "comment": "Oil, workover"
+        }
+      }
+    ],
+    "catalog_errors": [
+      "IHS OIL maps to BAD CODE, which is not an active symbol.",
+      "IHS OIL-WO maps to BAD CODE, which is not an active symbol."
+    ]
+  },
+  "save_without_apply": {
+    "saved": true,
+    "typed": "Edited in form",
+    "reloaded": "Gas Well",
+    "before": "Gas Well"
+  }
+}

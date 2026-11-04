@@ -1,0 +1,12 @@
+{
+  "before": [
+    "#008000"
+  ],
+  "after_catalog_install_and_refresh": [
+    "#008000"
+  ],
+  "new_marker_definition": "#123456",
+  "after_set_wells_rebuild": [
+    "#123456"
+  ]
+}

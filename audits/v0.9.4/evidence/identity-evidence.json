@@ -1,0 +1,102 @@
+{
+  "completion_identity": {
+    "rows": [
+      {
+        "id": 1,
+        "api14": "42401123450000",
+        "production_id": 1,
+        "month": "2025-01",
+        "oil": 100.0,
+        "gas": 200.0
+      },
+      {
+        "id": 2,
+        "api14": "42401123450001",
+        "production_id": 2,
+        "month": "2025-01",
+        "oil": 101.0,
+        "gas": 201.0
+      },
+      {
+        "id": 3,
+        "api14": "42401123450002",
+        "production_id": 3,
+        "month": "2025-01",
+        "oil": 102.0,
+        "gas": 202.0
+      }
+    ],
+    "reimport_counts": {
+      "identical": 3
+    },
+    "create_again": 0,
+    "same_ids_and_values_after_reopen": true
+  },
+  "one_completion_conflict": {
+    "conflicts": 1,
+    "identical": 2
+  },
+  "migration_idempotence": [
+    {
+      "well": {
+        "id": 1,
+        "api14": "42401111110000",
+        "well_symbol_code": "DRYSO",
+        "well_symbol_id": 58
+      },
+      "horizon_provenance_column": true,
+      "fault_provenance_column": true
+    },
+    {
+      "well": {
+        "id": 1,
+        "api14": "42401111110000",
+        "well_symbol_code": "DRYSO",
+        "well_symbol_id": 58
+      },
+      "horizon_provenance_column": true,
+      "fault_provenance_column": true
+    }
+  ],
+  "cancel_rollback": {
+    "exception": "Cancelled",
+    "wells": 0,
+    "months": 0
+  },
+  "active_codes": [
+    "LOC",
+    "OIL",
+    "GAS",
+    "O&G",
+    "DRY",
+    "INJ",
+    "ABDNLOC",
+    "SUS",
+    "SRV",
+    "JNK",
+    "JNKOIL",
+    "JNKGAS",
+    "P&A",
+    "PERCNL",
+    "KIL",
+    "ABINJ",
+    "DRILWELL",
+    "UNKN",
+    "PAOW",
+    "PAGW",
+    "PAOGW",
+    "DRL",
+    "ABDN",
+    "TA",
+    "KEYINJ",
+    "DERRICK",
+    "PLUGINJ",
+    "PLUGOIL",
+    "INJECT"
+  ],
+  "shared_primitives": {
+    "PLUGOIL=PAOW": true,
+    "DRILWELL=DERRICK": true,
+    "DRL=DERRICK": true
+  }
+}

@@ -1,0 +1,6 @@
+2026-11-04 17:19:35,867 ERROR Geo Workbench: Self-test failed
+Traceback (most recent call last):
+  File "/workspace/audit-v0.9.4/OandG_Workbench_v0.9.4/geoworkbench/main_window.py", line 2325, in self_test
+    assert len(SYMBOLS) >= 100, "well symbol catalogue (.WSD) missing"
+           ^^^^^^^^^^^^^^^^^^^
+AssertionError: well symbol catalogue (.WSD) missing

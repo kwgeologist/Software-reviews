@@ -1,0 +1,55 @@
+{
+  "bad_numeric": {
+    "load_succeeded": false,
+    "exception": "ValueError",
+    "message": "could not convert string to float: 'oops'"
+  },
+  "bad_symbols_type": {
+    "load_succeeded": false,
+    "exception": "AttributeError",
+    "message": "'list' object has no attribute 'items'"
+  },
+  "bad_geometry": {
+    "load_succeeded": true,
+    "validation": [
+      "OIL: unknown body 'no-such-body'."
+    ]
+  },
+  "duplicate_sym": {
+    "validation": [],
+    "shared_sym": 2,
+    "saved": true,
+    "numeric_resolves": "OIL"
+  },
+  "297_metric_well": {
+    "well_unit": "m",
+    "top_1000ft_stored": 1000.0,
+    "survey_1000ft_stored": 304.8,
+    "expected_m": 304.8
+  },
+  "297_header_only_reimport": {
+    "prior_top_count": 1,
+    "after_top_count": 0
+  },
+  "fault_merge": {
+    "input_sticks_per_import": 1,
+    "imports": 2,
+    "result_sticks": 1,
+    "node_sequence": [
+      [
+        1,
+        1,
+        2,
+        2,
+        3,
+        3
+      ]
+    ]
+  },
+  "truncated_hzn": {
+    "handled": true,
+    "diagnostics": [
+      "{'category': 'malformed', 'record': 'HZN', 'count': 1, 'sample': 'truncated.hzn', 'message': 'truncated.hzn: no pick-value tile directory found.'}"
+    ]
+  }
+}

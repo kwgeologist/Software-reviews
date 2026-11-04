@@ -1,0 +1,26 @@
+{
+  "0": {
+    "new_wells": 100,
+    "planning_seconds": 0.008439363999059424,
+    "apply_seconds": 0.022520396989420988,
+    "sql_counts": {
+      "whole_table_api_refresh": 100,
+      "commits": 1
+    },
+    "api_refresh_query_plan": [
+      "SCAN wells"
+    ]
+  },
+  "112000": {
+    "new_wells": 100,
+    "planning_seconds": 0.11505803599720821,
+    "apply_seconds": 0.8063118720019702,
+    "sql_counts": {
+      "whole_table_api_refresh": 100,
+      "commits": 1
+    },
+    "api_refresh_query_plan": [
+      "SCAN wells"
+    ]
+  }
+}
