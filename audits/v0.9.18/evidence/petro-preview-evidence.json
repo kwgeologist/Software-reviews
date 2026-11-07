@@ -1,0 +1,28 @@
+{
+  "exact_view_relative_tolerance": {
+    "source_depth": [
+      5000.003
+    ],
+    "target_depth": [
+      5000.0
+    ],
+    "mapped_values": [
+      123.0
+    ]
+  },
+  "own_depth_before": [
+    1010.0,
+    1010.5,
+    1011.0,
+    1011.5,
+    1012.0
+  ],
+  "preview_save": {
+    "reference_samples": 9361,
+    "own_samples_before": 5,
+    "stored_samples_during_preview": 9361,
+    "stored_samples_after_discard": 9361,
+    "has_own_series_after_discard": false,
+    "axis_preserved_after_discard": false
+  }
+}

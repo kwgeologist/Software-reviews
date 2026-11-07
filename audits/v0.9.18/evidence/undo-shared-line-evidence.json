@@ -1,0 +1,17 @@
+{
+  "after_two_edits": [
+    110.0,
+    null,
+    220.0
+  ],
+  "after_undo_in_first_view": [
+    100.0,
+    null,
+    200.0
+  ],
+  "expected_revert_first_keep_second": [
+    100.0,
+    null,
+    220.0
+  ]
+}

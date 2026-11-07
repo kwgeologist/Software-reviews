@@ -1,0 +1,681 @@
+# WHOLE-PACKAGE CODE AUDIT — READ ONLY
+
+## CURRENT BASELINE
+
+Audit the current accepted O&G Workbench baseline:
+
+- Version: **v0.9.18**
+- Branch: `claude/new-session-96rnbt`
+- Commit: `ad43c0e`
+
+The current full regression status is:
+
+- **2,144 tests passed**
+- **3 skipped**
+- Geo self-test passes
+- Seismic self-test passes
+- Petro self-test passes
+
+This audit is being performed before release hardening and before preparing a first stable external release.
+
+---
+
+# SCOPE CONTROL
+
+This is an **AUDIT ONLY**.
+
+Do **not**:
+
+- modify source code
+- refactor
+- rename
+- delete files
+- reformat files
+- update dependencies
+- change tests
+- change documentation
+- create commits
+- fix issues as you find them
+
+Do not interpret “cleanup” as permission to improve code.
+
+The purpose is to identify and rank risks before any changes are made.
+
+Historical TODOs, old version notes, prior Claude plans and comments about earlier releases are context only.
+
+Do not resurrect old work simply because you find a historical comment.
+
+Audit the **current code as it exists at v0.9.18**.
+
+---
+
+# PRIMARY GOAL
+
+Determine whether the package is technically ready for release hardening.
+
+Identify:
+
+1. actual defects
+2. latent defects likely to appear in real use
+3. data-loss risks
+4. release/build/install risks
+5. security or unsafe file-handling issues
+6. reliability problems
+7. significant performance problems
+8. maintainability problems that materially increase release risk
+9. important test gaps
+
+Do not fill the report with stylistic preferences.
+
+---
+
+# AUDIT PRIORITIES
+
+## 1. DATA INTEGRITY
+
+Highest priority.
+
+Audit all code paths that can:
+
+- create
+- update
+- overwrite
+- delete
+- migrate
+- import
+- export
+- convert
+- save
+
+project data.
+
+Look specifically for:
+
+- destructive save-by-omission behavior
+- accidental overwrite of unrelated records
+- partial transactions
+- orphaned child records
+- failed rollback
+- inconsistent update semantics
+- duplicate creation
+- identity collisions
+- foreign-key assumptions
+- stale-object overwrites
+- unit mismatches
+- coordinate/reference-system mistakes
+- silent truncation
+- silent numeric coercion
+- unhandled null/blank values
+
+Pay particular attention to:
+
+- wells
+- tops
+- tests
+- production
+- cores
+- directional surveys
+- raster data
+- seismic horizons/faults
+- seismic grids
+- map layers
+- imports
+- project conversion/migration
+
+---
+
+## 2. DATABASE / PROJECT LIFECYCLE
+
+Audit:
+
+- database schema initialization
+- migrations
+- schema-version handling
+- legacy-project conversion
+- Save
+- Save As
+- project open/close
+- transaction boundaries
+- concurrent windows
+- multiple module access to one project
+
+Look for paths where an old project could:
+
+- lose data
+- partially migrate
+- become unreadable
+- save successfully despite incomplete conversion
+- overwrite newer state
+
+---
+
+## 3. IMPORTERS
+
+Review every major importer, including:
+
+- Petra PPF
+- IHS 297
+- IHS 298
+- LAS
+- SEG-Y 2D
+- SEG-Y 3D
+- Kingdom interpretation
+- horizon/fault pick files
+- grids
+- shapefiles
+- raster/log-related imports
+- directional-survey imports
+
+Check:
+
+- malformed-input handling
+- unit handling
+- duplicate handling
+- well identity
+- re-import behavior
+- transactional safety
+- cancellation
+- large-file memory behavior
+- unsupported-record reporting
+- accidental deletion of pre-existing data
+- assumptions made without user confirmation
+
+Do not reopen accepted behavior merely because another design is possible.
+
+---
+
+## 4. EXPORTERS
+
+Audit exported files for:
+
+- incomplete data
+- wrong units
+- wrong coordinate systems
+- malformed field ordering
+- inconsistent API/UWI identity
+- loss of precision
+- destructive overwrite behavior
+- exceptions after partial output
+- temporary-file leakage
+
+---
+
+## 5. SEISMIC
+
+Perform a concentrated audit of SeismicWorkbench.
+
+Review:
+
+- 2D SEG-Y
+- 3D SEG-Y
+- interpretation storage
+- horizons
+- faults
+- shared 2D/3D identity
+- grids/surfaces
+- map display
+- attributes
+- tie/mistie logic
+- corrections
+- time-depth models
+- interpretation import/export
+- project conversion
+- concurrent-edit protection
+
+Look especially for:
+
+- index errors
+- coordinate conversion errors
+- trace/CDP/SP confusion
+- IL/XL assumptions
+- time/depth unit problems
+- ms/s or ft/m errors
+- destructive persistence
+- stale state between windows
+- memory growth with large surveys
+
+---
+
+## 6. GEOWORKBENCH / MAP SYSTEM
+
+Audit:
+
+- map layers
+- logical augmentable layers
+- feature provenance
+- append-to-existing behavior
+- geometry compatibility
+- shapefile handling
+- CRS transformation
+- map rendering
+- layer ordering
+- styling
+- digitizing
+- labels
+- coverage maps
+- bubble maps
+- contouring
+- active-layer behavior
+
+Pay special attention to whether:
+
+- appending can corrupt a layer
+- one feature source can overwrite another
+- incompatible geometry can enter a layer
+- source CRS can be confused with project CRS
+- digitizing can accidentally alter the wrong layer
+
+---
+
+## 7. PETROWORKBENCH
+
+Audit:
+
+- LAS loading
+- curve depth vectors
+- per-curve sampling
+- calculations
+- petrophysical equations
+- templates
+- fills
+- pay flags
+- multiwell behavior
+- core overlays
+- exports
+- curve editor
+- curve resampling
+
+Preserve the current rule:
+
+**each curve owns its own real depth vector.**
+
+Look specifically for any code that still assumes a universal master depth vector.
+
+Also look for silent interpolation in multi-curve calculations where exact common sample positions are required.
+
+---
+
+## 8. RASTER / DIGITIZER
+
+Audit:
+
+- image loading
+- registration
+- depth ties
+- curve digitizing
+- edge definition
+- auto trace
+- manual trace
+- node editing
+- curve replacement
+- export
+- temporary resources
+
+Look for:
+
+- coordinate drift
+- cumulative transform errors
+- stale registration transforms
+- accidental loss of curve sections
+- failures on large images
+
+---
+
+## 9. CORRELATION / CROSS SECTION
+
+Audit:
+
+- project data access
+- well ordering
+- tops
+- faults
+- directional wells
+- flattening
+- depth windows
+- log rendering
+- raster/log combinations
+- section persistence
+
+Focus on data correctness rather than display aesthetics.
+
+---
+
+# FILE AND PATH SAFETY
+
+Audit all filesystem access.
+
+Look for:
+
+- hard-coded development paths
+- assumptions about current working directory
+- writes into application/install directory
+- writes into source tree
+- unsafe temp-file handling
+- temp files not cleaned after failure
+- filename collisions
+- unsafe overwrite
+- Windows-invalid filenames
+- path-length problems
+- Unicode/path encoding issues
+
+Identify anything likely to fail once installed under:
+
+`C:\Program Files\...`
+
+or when user data lives under normal Windows user directories.
+
+---
+
+# PACKAGING / RELEASE BUILD
+
+Audit:
+
+- PyInstaller configuration
+- Windows build scripts
+- hidden imports
+- bundled binaries
+- PDFium
+- SEG-Y dependencies
+- runtime resources
+- icons
+- data files
+- module discovery
+- executable relationships
+
+Look for dependencies that may exist only because the developer machine already has them installed.
+
+Identify anything that could cause:
+
+> works from source but fails on a clean Windows machine.
+
+---
+
+# DEPENDENCIES
+
+Review runtime and development dependencies.
+
+Report:
+
+- unused runtime dependencies
+- undeclared runtime dependencies
+- loose version constraints that create release reproducibility risk
+- platform-specific dependencies
+- packages imported conditionally
+- packages that may fail under PyInstaller
+
+Do not update them.
+
+---
+
+# ERROR HANDLING
+
+Search systematically for:
+
+- broad `except Exception`
+- bare `except`
+- swallowed exceptions
+- `pass` after exceptions
+- errors printed only to console
+- operations continuing after a failed critical step
+- misleading success messages
+- UI state left inconsistent after an exception
+
+Do not report broad exception handling merely because it exists.
+
+Report it where it can conceal real failure or data corruption.
+
+---
+
+# THREADING / GUI SAFETY
+
+Audit Tk/Tkinter and background work.
+
+Look for:
+
+- Tk calls from worker threads
+- race conditions
+- `after()` callbacks against destroyed widgets
+- stale widget references
+- focus manipulation likely to crash Tk
+- background tasks modifying closed projects
+- cancellation races
+
+Pay attention to the historical Tk/focus crash risk, but judge only the current implementation.
+
+---
+
+# PERFORMANCE
+
+Look for significant problems only.
+
+Examples:
+
+- O(N²) loops across large well populations
+- repeated full-table scans
+- loading entire large seismic/PPF files unnecessarily
+- repeated database commits in large loops
+- per-feature redraw during bulk import
+- expensive calculations on the UI thread
+- unbounded caches
+- retained large NumPy arrays after windows close
+
+Do not recommend micro-optimization.
+
+---
+
+# SECURITY / TRUST BOUNDARIES
+
+This is desktop geology software, not a public web service.
+
+Use an appropriate threat model.
+
+Audit:
+
+- arbitrary file parsing
+- pickle or unsafe deserialization
+- shell execution
+- subprocess invocation
+- SQL construction
+- ZIP extraction
+- temporary files
+- external executables
+- DLL loading
+- plugin/resource loading
+
+Focus on plausible risks from opening third-party project/data files.
+
+Do not inflate theoretical risks that require a malicious local administrator.
+
+---
+
+# DEAD / DUPLICATE / STALE CODE
+
+Identify:
+
+- unreachable code
+- obsolete compatibility paths
+- duplicated implementations of the same business rule
+- modules apparently no longer referenced
+- old utilities no longer used
+- stale experimental code
+
+BUT classify these as cleanup unless they create actual release risk.
+
+Do not recommend deleting code solely because it looks old.
+
+---
+
+# TEST AUDIT
+
+Review the test suite itself.
+
+Identify important areas where:
+
+- tests are absent
+- tests only test helpers instead of real workflows
+- tests mock away the failure mode
+- rollback/data preservation is not tested
+- large-project behavior is untested
+- migration behavior is insufficiently covered
+- release packaging is not exercised
+
+Also identify areas that already have particularly strong coverage.
+
+---
+
+# REQUIRED FINDING FORMAT
+
+Every finding must contain:
+
+### ID
+Example: `DATA-001`
+
+### Severity
+
+Use only:
+
+- **CRITICAL**
+- **HIGH**
+- **MEDIUM**
+- **LOW**
+- **CLEANUP**
+
+### Component
+
+### File(s)
+
+Include file and function/class where possible.
+
+### Finding
+
+Short factual description.
+
+### Evidence
+
+Describe the exact code path or logic that supports the finding.
+
+Do not speculate.
+
+### User impact
+
+Explain what can actually happen.
+
+### Trigger
+
+What conditions cause it.
+
+### Existing test coverage
+
+State whether a test currently covers the condition.
+
+### Recommended action
+
+Describe the smallest reasonable fix.
+
+### Change risk
+
+- Low
+- Moderate
+- High
+
+Explain briefly.
+
+---
+
+# SEVERITY DEFINITIONS
+
+## CRITICAL
+
+Likely to cause:
+
+- project corruption
+- significant silent data loss
+- unrecoverable project failure
+- severe security exposure
+
+under realistic normal use.
+
+## HIGH
+
+Likely functional failure in a normal supported workflow, or substantial risk of incorrect technical data.
+
+## MEDIUM
+
+Real defect or robustness issue but requires a less-common condition or has a reasonable workaround.
+
+## LOW
+
+Minor defect, edge case, confusing error handling or low-impact release issue.
+
+## CLEANUP
+
+Maintainability/style/dead-code issue with no demonstrated user-facing defect.
+
+Do not promote a finding because the code is ugly.
+
+---
+
+# IMPORTANT AUDIT RULES
+
+1. **Do not change anything.**
+2. **Do not create speculative findings.**
+3. Trace the actual call path before reporting a defect.
+4. Search for tests before claiming something is untested.
+5. Check whether apparent duplication is intentional compatibility behavior.
+6. Do not treat a missing feature as a defect.
+7. Do not challenge established product decisions unless the implementation contradicts them.
+8. Do not suggest broad rewrites when a local fix would solve the problem.
+9. Distinguish release blockers from long-term cleanup.
+10. Current working behavior has priority over theoretical architectural purity.
+
+---
+
+# FINAL REPORT STRUCTURE
+
+Produce one audit report with:
+
+## Executive Summary
+
+Include:
+
+- overall release-readiness assessment
+- number of findings by severity
+- whether you found any reason **not** to proceed to release hardening
+
+## Release Blockers
+
+Only CRITICAL/HIGH findings that genuinely should be fixed before release.
+
+If none, say:
+
+**No release blockers found.**
+
+## Medium Findings
+
+## Low Findings
+
+## Cleanup Opportunities
+
+## Test Coverage Assessment
+
+## Packaging / Clean-Machine Risks
+
+## Recommended Release-Hardening Scope
+
+Give a **small prioritized list** of what should actually be changed before v1.0.
+
+Do not automatically include every audit finding.
+
+## Do Not Touch
+
+Call out stable areas where refactoring would create more risk than benefit.
+
+---
+
+# FINAL REQUIREMENT
+
+This audit should answer one practical question:
+
+> **Can O&G Workbench move from active feature development into release hardening without exposing the user’s projects or technical data to unacceptable risk?**
+
+Do not implement anything until the audit report has been reviewed and specific fixes are separately approved.

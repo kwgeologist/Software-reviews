@@ -1,0 +1,24 @@
+{
+  "failed_export": {
+    "error": "synthetic output failure",
+    "old_bytes_preserved": false,
+    "new_file_prefix": "# O&G Workbench seismic interpretation, format 1\n# exported 2026-11-06T23:37:29+00:00 from"
+  },
+  "windows_reserved_names": {
+    "CON": {
+      "project_name": "CON",
+      "grid_file": "CON.oggrid",
+      "reserved_windows_path": true
+    },
+    "NUL": {
+      "project_name": "NUL",
+      "grid_file": "NUL.oggrid",
+      "reserved_windows_path": true
+    },
+    "AUX": {
+      "project_name": "AUX",
+      "grid_file": "AUX.oggrid",
+      "reserved_windows_path": true
+    }
+  }
+}

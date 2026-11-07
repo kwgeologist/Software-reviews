@@ -1,0 +1,14 @@
+[
+  {
+    "application": "app.py",
+    "exit_code": 0
+  },
+  {
+    "application": "seismic_app.py",
+    "exit_code": 0
+  },
+  {
+    "application": "petro_app.py",
+    "exit_code": 0
+  }
+]

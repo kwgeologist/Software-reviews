@@ -1,0 +1,12 @@
+{
+  "ogcore/pay.py": true,
+  "ogcore/multimineral.py": true,
+  "ogcore/production.py": true,
+  "ogcore/depth.py": true,
+  "ogcore/formulas.py": true,
+  "ogcore/background.py": true,
+  "correlationworkbench/store.py": true,
+  "xsection/store.py": true,
+  "ogvol/engine.py": true,
+  "ogcore/raster.py": true
+}

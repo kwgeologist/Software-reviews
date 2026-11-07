@@ -1,5 +1,19 @@
 # Software reviews
 
+## O&G Workbench v0.9.18
+
+Independent read-only release audit: **9 findings — 6 High, 1 Medium, 2 Low**. Proceed to targeted release hardening; resolve the six High findings before external release. Application source remains unchanged.
+
+- [Read the report](audits/v0.9.18/OandG_Workbench_v0.9.18_Audit.md)
+- [Download PDF](https://github.com/kwgeologist/Software-reviews/raw/refs/heads/main/audits/v0.9.18/OandG_Workbench_v0.9.18_Audit.pdf)
+- [Download report and evidence ZIP](https://github.com/kwgeologist/Software-reviews/raw/refs/heads/main/audits/v0.9.18/OandG_Workbench_v0.9.18_Audit_Bundle.zip)
+- [HTML report](audits/v0.9.18/OandG_Workbench_v0.9.18_Audit.html)
+- [Evidence files](audits/v0.9.18/evidence)
+
+Full GUI-enabled suite: **2,132 passed, 1 failed, 14 skipped**, plus 565 passing subtests. The font failure is attributable to cloud Tk font substitution; all three source self-tests passed. All 670 application archive files remained unchanged. Windows binaries were not executed. The report identifies the exact source ZIP hash rather than claiming verified Git commit provenance.
+
+The report records the read-only audit as completed before publication. These deliverables were subsequently committed and pushed at the user's explicit request. The bundle contains synthetic evidence, not application source or client data.
+
 ## O&G Workbench v0.9.4
 
 Independent read-only audit of the uploaded v0.9.4 archive: **15 findings — 4 Critical, 5 High, 5 Medium, 1 Low**. **Overall assessment: Do not release unchanged.** No application code was modified and no PR was created.

@@ -1,0 +1,16 @@
+{
+  "exception": "Cancelled",
+  "existing_file_preserved": false,
+  "file_now_contains_new_samples": true,
+  "db_before": [
+    10.0,
+    20.0,
+    30.0
+  ],
+  "db_after": [
+    10.0,
+    20.0,
+    30.0
+  ],
+  "newly_written_tracked": []
+}

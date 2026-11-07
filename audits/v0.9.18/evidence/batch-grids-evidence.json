@@ -1,0 +1,44 @@
+{
+  "offgrid_inputs": {
+    "A_depth": [
+      1000.0,
+      1001.0,
+      1002.0
+    ],
+    "B_depth": [
+      1000.5,
+      1001.5
+    ],
+    "stored_output_depth": [
+      1000.0,
+      1001.0,
+      1002.0
+    ],
+    "stored_output_values": [
+      null,
+      170.0,
+      null
+    ],
+    "engine_report": {
+      "curves": {
+        "A": "A",
+        "B": "B"
+      },
+      "written": {
+        "OUT": 1
+      },
+      "renamed": {},
+      "kept": []
+    }
+  },
+  "own_axis_calculated": {
+    "canonical_read_depth": [
+      1000.5,
+      1001.5
+    ],
+    "batch_error": {
+      "type": "Skip",
+      "message": "OWN (made in Petro) has no saved values"
+    }
+  }
+}

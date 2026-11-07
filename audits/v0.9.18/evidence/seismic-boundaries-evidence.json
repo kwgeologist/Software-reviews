@@ -1,0 +1,23 @@
+{
+  "two_session_2d": {
+    "first_writer_expected_trace0": 110.0,
+    "second_writer_expected_trace2": 220.0,
+    "stored": [
+      100.0,
+      null,
+      220.0
+    ]
+  },
+  "mixed_crs_tie": {
+    "actual_UTM_to_Geographic_ties": 0,
+    "expected_after_transform": 1,
+    "stored_crs": [
+      "EPSG:32613",
+      "EPSG:4326"
+    ]
+  },
+  "stale_delete_3d": {
+    "conflict": false,
+    "remaining_rows": 0
+  }
+}

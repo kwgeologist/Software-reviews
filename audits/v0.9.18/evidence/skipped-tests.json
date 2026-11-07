@@ -1,0 +1,58 @@
+[
+  {
+    "test": "tests.test_auto_trace_real.RealScans.test_dashed_grid_line_and_a_lines_ragged_edge_are_found",
+    "reason": "scan not available"
+  },
+  {
+    "test": "tests.test_auto_trace_real.RealScans.test_grey_scan_gr_through_crossing_curves_and_labels",
+    "reason": "test log (2).tif not available"
+  },
+  {
+    "test": "tests.test_auto_trace_real.RealScans.test_old_black_and_white_gr_lower_section",
+    "reason": "state16_6_30-039-26984.tif not available"
+  },
+  {
+    "test": "tests.test_auto_trace_real.RealScans.test_old_black_and_white_gr_through_dashed_and_bold_grid",
+    "reason": "state16_6_30-039-26984.tif not available"
+  },
+  {
+    "test": "tests.test_autoreg_real.RealLogTests.test_real_logs",
+    "reason": "no real logs here (tests/data/real_logs/*.json with their images, or OGW_REAL_LOGS)"
+  },
+  {
+    "test": "tests.test_digitize_ui.DigitizeRealLogTests.test_curve_settings_are_checked",
+    "reason": "needs tests/data/real_logs/test log (2).tif"
+  },
+  {
+    "test": "tests.test_digitize_ui.DigitizeRealLogTests.test_edge_nodes_crosshair_nudging_and_trace_nodes",
+    "reason": "needs tests/data/real_logs/test log (2).tif"
+  },
+  {
+    "test": "tests.test_digitize_ui.DigitizeRealLogTests.test_gamma_ray_segments_resume_and_edit",
+    "reason": "needs tests/data/real_logs/test log (2).tif"
+  },
+  {
+    "test": "tests.test_digitize_ui.DigitizeRealLogTests.test_needs_a_registered_raster",
+    "reason": "needs tests/data/real_logs/test log (2).tif"
+  },
+  {
+    "test": "tests.test_digitize_ui.DigitizeRealLogTests.test_neutron_wraps_off_the_left_edge_and_goes_to_the_well",
+    "reason": "needs tests/data/real_logs/test log (2).tif"
+  },
+  {
+    "test": "tests.test_digitize_ui.DigitizeRealLogTests.test_the_track_is_set_before_any_curve_then_curves_use_it",
+    "reason": "needs tests/data/real_logs/test log (2).tif"
+  },
+  {
+    "test": "tests.test_geo_tabs.GeoTabTests.test_files_dropped_from_explorer_reach_the_las_loader",
+    "reason": "Explorer drops are a Windows message"
+  },
+  {
+    "test": "tests.test_kingdom_native_full.FullKingdomValidation.test_every_fault_and_horizon_matches_the_export",
+    "reason": "full Kingdom files not supplied (OGW_KINGDOM_NATIVE / OGW_KINGDOM_TRUTH)"
+  },
+  {
+    "test": "tests.test_pdf_packaging.PackagedBuildTests.test_packaged_pdf_import",
+    "reason": "slow packaged build: set OGW_PACKAGING_TEST=1"
+  }
+]
