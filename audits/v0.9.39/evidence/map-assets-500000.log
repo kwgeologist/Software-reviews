@@ -1,0 +1,27 @@
+500000 open 14.615 340
+500000 pan regional 0.634 0
+500000 zoom regional 0.566 0
+500000 field zoom 0.46 0
+500000 apply labels field 0.25 0
+500000 symbol style field 0.243 0
+500000 zoom repeat 0 0.12 0
+500000 zoom repeat 1 0.118 0
+500000 zoom repeat 2 0.113 0
+500000 zoom repeat 3 0.122 0
+500000 rename grid 0.272 20
+500000 rename image 0.159 8
+500000 grid visibility 0.146 4
+500000 regional home 1.738 0
+500000 layer group create 0.075 12
+500000 layer move into group 0.024 12
+500000 layer order move 0.023 11
+500000 layer visibility 0.57 7
+500000 grid contours 0.543 14
+500000 raster opacity 0.595 7
+500000 threshold setup 5000 wells 0.835 0
+500000 threshold crossing 0 factor 0.1 0.612 0
+500000 threshold crossing 1 factor 1.0 0.389 0
+500000 threshold crossing 2 factor 0.1 0.436 0
+500000 threshold crossing 3 factor 1.0 0.353 0
+500000 threshold crossing 4 factor 0.1 0.347 0
+500000 threshold crossing 5 factor 1.0 0.341 0

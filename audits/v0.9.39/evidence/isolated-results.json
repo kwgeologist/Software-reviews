@@ -1,0 +1,1217 @@
+[
+  {
+    "file": "test_ambiguous_well_names.py",
+    "exit_code": 0,
+    "seconds": 2.3386754559996916
+  },
+  {
+    "file": "test_api_uniqueness.py",
+    "exit_code": 0,
+    "seconds": 5.684901448999881
+  },
+  {
+    "file": "test_assistant.py",
+    "exit_code": 0,
+    "seconds": 1.5223710120008036
+  },
+  {
+    "file": "test_assistant_ui.py",
+    "exit_code": 0,
+    "seconds": 5.042997524999009
+  },
+  {
+    "file": "test_atomic_edits.py",
+    "exit_code": 0,
+    "seconds": 1.2267233239999769
+  },
+  {
+    "file": "test_attribute_index.py",
+    "exit_code": 0,
+    "seconds": 2.5352197690008325
+  },
+  {
+    "file": "test_audit_assets.py",
+    "exit_code": 0,
+    "seconds": 1.4251367920005578
+  },
+  {
+    "file": "test_audit_cleanup.py",
+    "exit_code": 0,
+    "seconds": 5.444188741999824
+  },
+  {
+    "file": "test_audit_depth_units.py",
+    "exit_code": 0,
+    "seconds": 1.1216004119996796
+  },
+  {
+    "file": "test_audit_fraction_scale.py",
+    "exit_code": 0,
+    "seconds": 0.9713753340001858
+  },
+  {
+    "file": "test_audit_invalidation.py",
+    "exit_code": 0,
+    "seconds": 3.9834084219983197
+  },
+  {
+    "file": "test_audit_ownership_schema.py",
+    "exit_code": 0,
+    "seconds": 1.21983859500142
+  },
+  {
+    "file": "test_audit_performance.py",
+    "exit_code": 0,
+    "seconds": 7.14032921999933
+  },
+  {
+    "file": "test_audit_robustness.py",
+    "exit_code": 0,
+    "seconds": 0.9210043069997482
+  },
+  {
+    "file": "test_audit_v0858.py",
+    "exit_code": 0,
+    "seconds": 4.27734057699854
+  },
+  {
+    "file": "test_audit_v095.py",
+    "exit_code": 0,
+    "seconds": 17.116652077000253
+  },
+  {
+    "file": "test_auto_trace.py",
+    "exit_code": 0,
+    "seconds": 31.25165919200117
+  },
+  {
+    "file": "test_auto_trace_real.py",
+    "exit_code": 0,
+    "seconds": 0.9208190400004241
+  },
+  {
+    "file": "test_autoreg.py",
+    "exit_code": 0,
+    "seconds": 58.45206174299892
+  },
+  {
+    "file": "test_autoreg_real.py",
+    "exit_code": 0,
+    "seconds": 1.0218585589991562
+  },
+  {
+    "file": "test_axis_tolerance.py",
+    "exit_code": 0,
+    "seconds": 1.0261063819998526
+  },
+  {
+    "file": "test_background_work.py",
+    "exit_code": 0,
+    "seconds": 1.7273398260003887
+  },
+  {
+    "file": "test_batch_curves.py",
+    "exit_code": 0,
+    "seconds": 1.2222981689992594
+  },
+  {
+    "file": "test_batch_exact_samples.py",
+    "exit_code": 0,
+    "seconds": 1.6355299429997103
+  },
+  {
+    "file": "test_batch_ui.py",
+    "exit_code": 0,
+    "seconds": 4.903766425999493
+  },
+  {
+    "file": "test_batch_zones.py",
+    "exit_code": 0,
+    "seconds": 3.7845914520003134
+  },
+  {
+    "file": "test_batch_zones_grids.py",
+    "exit_code": 0,
+    "seconds": 1.324319014998764
+  },
+  {
+    "file": "test_bhl_and_scale_units.py",
+    "exit_code": 0,
+    "seconds": 5.385120454000571
+  },
+  {
+    "file": "test_bhl_validation.py",
+    "exit_code": 0,
+    "seconds": 2.874827738000022
+  },
+  {
+    "file": "test_bin_listing.py",
+    "exit_code": 0,
+    "seconds": 1.3218079369999032
+  },
+  {
+    "file": "test_branding.py",
+    "exit_code": 0,
+    "seconds": 1.6256831059999968
+  },
+  {
+    "file": "test_bubble_audit_fixes.py",
+    "exit_code": 0,
+    "seconds": 6.184813224001118
+  },
+  {
+    "file": "test_bubble_definitions.py",
+    "exit_code": 0,
+    "seconds": 5.482279746000131
+  },
+  {
+    "file": "test_bubble_linear_render.py",
+    "exit_code": 0,
+    "seconds": 5.593286713999987
+  },
+  {
+    "file": "test_bubbles.py",
+    "exit_code": 0,
+    "seconds": 4.190339221000613
+  },
+  {
+    "file": "test_build_test_license.py",
+    "exit_code": 0,
+    "seconds": 0.925720907998766
+  },
+  {
+    "file": "test_bulk_lic.py",
+    "exit_code": 0,
+    "seconds": 1.3750824079997983
+  },
+  {
+    "file": "test_calculated_curve_concurrency.py",
+    "exit_code": 0,
+    "seconds": 1.2725361400007387
+  },
+  {
+    "file": "test_cell_editor.py",
+    "exit_code": 0,
+    "seconds": 1.0732743040007335
+  },
+  {
+    "file": "test_close_project.py",
+    "exit_code": 0,
+    "seconds": 3.62841721499899
+  },
+  {
+    "file": "test_color_range.py",
+    "exit_code": 0,
+    "seconds": 1.439585989999614
+  },
+  {
+    "file": "test_colorbar_overflow.py",
+    "exit_code": 0,
+    "seconds": 21.361870975000784
+  },
+  {
+    "file": "test_contouring.py",
+    "exit_code": 0,
+    "seconds": 30.503250323999964
+  },
+  {
+    "file": "test_core_unit_groups.py",
+    "exit_code": 0,
+    "seconds": 0.9316748049986927
+  },
+  {
+    "file": "test_correlation.py",
+    "exit_code": 0,
+    "seconds": 51.377101893000145
+  },
+  {
+    "file": "test_correlation_session.py",
+    "exit_code": 0,
+    "seconds": 12.03775977800069
+  },
+  {
+    "file": "test_curve_aliases.py",
+    "exit_code": 0,
+    "seconds": 4.000075362999269
+  },
+  {
+    "file": "test_curve_editor_v096.py",
+    "exit_code": 0,
+    "seconds": 23.14996077199976
+  },
+  {
+    "file": "test_curve_precedence.py",
+    "exit_code": 0,
+    "seconds": 2.384924879999744
+  },
+  {
+    "file": "test_curve_series_project.py",
+    "exit_code": 0,
+    "seconds": 10.042450922999706
+  },
+  {
+    "file": "test_curve_store.py",
+    "exit_code": 0,
+    "seconds": 2.378795615999479
+  },
+  {
+    "file": "test_data_posting.py",
+    "exit_code": 0,
+    "seconds": 3.6298114040000655
+  },
+  {
+    "file": "test_data_safety.py",
+    "exit_code": 0,
+    "seconds": 1.7227192650007055
+  },
+  {
+    "file": "test_database.py",
+    "exit_code": 0,
+    "seconds": 5.181926864999696
+  },
+  {
+    "file": "test_dh_symbol_fallback.py",
+    "exit_code": 0,
+    "seconds": 2.3233273519999784
+  },
+  {
+    "file": "test_digitize.py",
+    "exit_code": 0,
+    "seconds": 1.0703150360004656
+  },
+  {
+    "file": "test_digitize_ui.py",
+    "exit_code": 0,
+    "seconds": 0.7687933760007581
+  },
+  {
+    "file": "test_digitized_save.py",
+    "exit_code": 0,
+    "seconds": 2.479461769999034
+  },
+  {
+    "file": "test_directional_cache.py",
+    "exit_code": 0,
+    "seconds": 1.1207396820009308
+  },
+  {
+    "file": "test_duplicate_survey_names.py",
+    "exit_code": 0,
+    "seconds": 1.7746585389995744
+  },
+  {
+    "file": "test_export_las_axes.py",
+    "exit_code": 0,
+    "seconds": 1.8805681630001345
+  },
+  {
+    "file": "test_fault_pieces.py",
+    "exit_code": 0,
+    "seconds": 2.2775733310008945
+  },
+  {
+    "file": "test_fault_reimport.py",
+    "exit_code": 0,
+    "seconds": 1.8744152479994227
+  },
+  {
+    "file": "test_fault_surface.py",
+    "exit_code": 0,
+    "seconds": 1.088341553000646
+  },
+  {
+    "file": "test_fill_amount_units.py",
+    "exit_code": 0,
+    "seconds": 1.4836456130014994
+  },
+  {
+    "file": "test_geo_tabs.py",
+    "exit_code": 0,
+    "seconds": 23.854370134999044
+  },
+  {
+    "file": "test_geosteer_display.py",
+    "exit_code": 0,
+    "seconds": 53.596808701000555
+  },
+  {
+    "file": "test_geosteer_reload_license.py",
+    "exit_code": 0,
+    "seconds": 5.199058457999854
+  },
+  {
+    "file": "test_geosteering.py",
+    "exit_code": 0,
+    "seconds": 108.89319385299859
+  },
+  {
+    "file": "test_geosteering_depth_frame.py",
+    "exit_code": 0,
+    "seconds": 0.9348640509997495
+  },
+  {
+    "file": "test_geosteering_own_depths.py",
+    "exit_code": 0,
+    "seconds": 1.2213286179994611
+  },
+  {
+    "file": "test_geosteering_project.py",
+    "exit_code": 0,
+    "seconds": 17.946960372999456
+  },
+  {
+    "file": "test_geosteering_publish.py",
+    "exit_code": 0,
+    "seconds": 5.032757119999587
+  },
+  {
+    "file": "test_geosteering_run_depths.py",
+    "exit_code": 0,
+    "seconds": 0.9699341149989777
+  },
+  {
+    "file": "test_geosteering_run_units.py",
+    "exit_code": 0,
+    "seconds": 1.0754169459996774
+  },
+  {
+    "file": "test_grid_display_and_stops.py",
+    "exit_code": 0,
+    "seconds": 5.688474034999672
+  },
+  {
+    "file": "test_grid_display_save.py",
+    "exit_code": 0,
+    "seconds": 1.5221745489998284
+  },
+  {
+    "file": "test_grid_export_atomic.py",
+    "exit_code": 0,
+    "seconds": 1.172771522000403
+  },
+  {
+    "file": "test_grid_prognosis_units.py",
+    "exit_code": 0,
+    "seconds": 2.2987384209991433
+  },
+  {
+    "file": "test_gridding.py",
+    "exit_code": 0,
+    "seconds": 3.6700400820009236
+  },
+  {
+    "file": "test_gridding_methods.py",
+    "exit_code": 0,
+    "seconds": 24.15555147499981
+  },
+  {
+    "file": "test_header_post_styles.py",
+    "exit_code": 0,
+    "seconds": 5.249248662999889
+  },
+  {
+    "file": "test_help_catalog.py",
+    "exit_code": 0,
+    "seconds": 1.2718190560008225
+  },
+  {
+    "file": "test_ihs_fill_only.py",
+    "exit_code": 0,
+    "seconds": 3.380117077998875
+  },
+  {
+    "file": "test_import_well_modes.py",
+    "exit_code": 0,
+    "seconds": 4.583843995998905
+  },
+  {
+    "file": "test_injection_units.py",
+    "exit_code": 0,
+    "seconds": 1.6789040260009642
+  },
+  {
+    "file": "test_isopach.py",
+    "exit_code": 0,
+    "seconds": 13.919030156999725
+  },
+  {
+    "file": "test_kingdom_native.py",
+    "exit_code": 0,
+    "seconds": 3.126164093000625
+  },
+  {
+    "file": "test_kingdom_native_full.py",
+    "exit_code": 0,
+    "seconds": 1.0709786069983238
+  },
+  {
+    "file": "test_las_depth_precision.py",
+    "exit_code": 0,
+    "seconds": 1.4719980840000062
+  },
+  {
+    "file": "test_las_time_index.py",
+    "exit_code": 0,
+    "seconds": 1.0694448319991352
+  },
+  {
+    "file": "test_legal_location.py",
+    "exit_code": 0,
+    "seconds": 3.6831109619997733
+  },
+  {
+    "file": "test_lic_flat.py",
+    "exit_code": 0,
+    "seconds": 1.2711209040007816
+  },
+  {
+    "file": "test_license_manager_gui.py",
+    "exit_code": 0,
+    "seconds": 2.3245900490001077
+  },
+  {
+    "file": "test_license_runtime.py",
+    "exit_code": 0,
+    "seconds": 6.491537599000367
+  },
+  {
+    "file": "test_license_runtime_memory.py",
+    "exit_code": 0,
+    "seconds": 19.402719005998733
+  },
+  {
+    "file": "test_licensing.py",
+    "exit_code": 0,
+    "seconds": 9.194654421999076
+  },
+  {
+    "file": "test_map_change_kinds.py",
+    "exit_code": 0,
+    "seconds": 5.461151093000808
+  },
+  {
+    "file": "test_map_collections.py",
+    "exit_code": 0,
+    "seconds": 3.225598434000858
+  },
+  {
+    "file": "test_map_culture_order.py",
+    "exit_code": 0,
+    "seconds": 8.6998505069987
+  },
+  {
+    "file": "test_map_culture_visibility.py",
+    "exit_code": 0,
+    "seconds": 5.0909384790011245
+  },
+  {
+    "file": "test_map_datastore.py",
+    "exit_code": 0,
+    "seconds": 3.542716810999991
+  },
+  {
+    "file": "test_map_dependencies.py",
+    "exit_code": 0,
+    "seconds": 3.027491419001308
+  },
+  {
+    "file": "test_map_drawing_objects.py",
+    "exit_code": 0,
+    "seconds": 6.792353946999356
+  },
+  {
+    "file": "test_map_dynamic_layer.py",
+    "exit_code": 0,
+    "seconds": 3.567012260999036
+  },
+  {
+    "file": "test_map_grid_population.py",
+    "exit_code": 0,
+    "seconds": 9.267821229999754
+  },
+  {
+    "file": "test_map_images.py",
+    "exit_code": 0,
+    "seconds": 11.765754883999762
+  },
+  {
+    "file": "test_map_label_scaling.py",
+    "exit_code": 0,
+    "seconds": 5.055114139999205
+  },
+  {
+    "file": "test_map_labels.py",
+    "exit_code": 0,
+    "seconds": 5.083397423000861
+  },
+  {
+    "file": "test_map_layer_order.py",
+    "exit_code": 0,
+    "seconds": 17.318385597000088
+  },
+  {
+    "file": "test_map_layer_speed.py",
+    "exit_code": 0,
+    "seconds": 1.431199018999905
+  },
+  {
+    "file": "test_map_layer_stack.py",
+    "exit_code": 0,
+    "seconds": 13.98999239099976
+  },
+  {
+    "file": "test_map_layers.py",
+    "exit_code": 0,
+    "seconds": 3.583735272000922
+  },
+  {
+    "file": "test_map_layers_panel.py",
+    "exit_code": 0,
+    "seconds": 19.07064814399928
+  },
+  {
+    "file": "test_map_lifecycle.py",
+    "exit_code": 0,
+    "seconds": 6.504347128000518
+  },
+  {
+    "file": "test_map_lod.py",
+    "exit_code": 0,
+    "seconds": 3.8068046959997446
+  },
+  {
+    "file": "test_map_logical_layers.py",
+    "exit_code": 0,
+    "seconds": 5.8561502269985795
+  },
+  {
+    "file": "test_map_many_wells.py",
+    "exit_code": 0,
+    "seconds": 3.7328105680007866
+  },
+  {
+    "file": "test_map_navigation.py",
+    "exit_code": 0,
+    "seconds": 11.40686537900001
+  },
+  {
+    "file": "test_map_next_pass.py",
+    "exit_code": 0,
+    "seconds": 5.736877824001567
+  },
+  {
+    "file": "test_map_open.py",
+    "exit_code": 0,
+    "seconds": 4.134508344001006
+  },
+  {
+    "file": "test_map_overlay_speed.py",
+    "exit_code": 0,
+    "seconds": 9.406602338000084
+  },
+  {
+    "file": "test_map_perf_probe.py",
+    "exit_code": 0,
+    "seconds": 3.530416632000197
+  },
+  {
+    "file": "test_map_punch_list.py",
+    "exit_code": 0,
+    "seconds": 11.527236372001425
+  },
+  {
+    "file": "test_map_spatial.py",
+    "exit_code": 0,
+    "seconds": 2.1242594980012655
+  },
+  {
+    "file": "test_map_startup.py",
+    "exit_code": 0,
+    "seconds": 18.29142766699988
+  },
+  {
+    "file": "test_map_text_rule.py",
+    "exit_code": 0,
+    "seconds": 28.729338679999273
+  },
+  {
+    "file": "test_map_ui_cleanup.py",
+    "exit_code": 0,
+    "seconds": 6.700249520001307
+  },
+  {
+    "file": "test_map_well_markers.py",
+    "exit_code": 0,
+    "seconds": 7.894194442000298
+  },
+  {
+    "file": "test_mm_compare_grid.py",
+    "exit_code": 0,
+    "seconds": 3.830324260999987
+  },
+  {
+    "file": "test_multimineral.py",
+    "exit_code": 0,
+    "seconds": 23.7301211289996
+  },
+  {
+    "file": "test_multivariate.py",
+    "exit_code": 0,
+    "seconds": 1.1248563160006597
+  },
+  {
+    "file": "test_native_ihs297.py",
+    "exit_code": 0,
+    "seconds": 5.838163915999758
+  },
+  {
+    "file": "test_native_ihs298.py",
+    "exit_code": 0,
+    "seconds": 4.281143342999712
+  },
+  {
+    "file": "test_native_kingdom.py",
+    "exit_code": 0,
+    "seconds": 1.2212782120004704
+  },
+  {
+    "file": "test_native_petra.py",
+    "exit_code": 0,
+    "seconds": 3.548906703999819
+  },
+  {
+    "file": "test_ogcore.py",
+    "exit_code": 0,
+    "seconds": 2.6749013569988165
+  },
+  {
+    "file": "test_owner_local_trust.py",
+    "exit_code": 0,
+    "seconds": 1.0209512990004441
+  },
+  {
+    "file": "test_owner_tools_build.py",
+    "exit_code": 1,
+    "seconds": 1.1781602179999027
+  },
+  {
+    "file": "test_pay.py",
+    "exit_code": 0,
+    "seconds": 3.983143942999959
+  },
+  {
+    "file": "test_pay_correlation.py",
+    "exit_code": 0,
+    "seconds": 6.951807626999653
+  },
+  {
+    "file": "test_pay_petro.py",
+    "exit_code": 0,
+    "seconds": 18.19956490200093
+  },
+  {
+    "file": "test_pay_raster.py",
+    "exit_code": 0,
+    "seconds": 6.515788991000591
+  },
+  {
+    "file": "test_pay_support.py",
+    "exit_code": 0,
+    "seconds": 0.8696291659998678
+  },
+  {
+    "file": "test_pay_xsection.py",
+    "exit_code": 0,
+    "seconds": 11.512865165999756
+  },
+  {
+    "file": "test_pdf_log_import.py",
+    "exit_code": 0,
+    "seconds": 6.344536697000876
+  },
+  {
+    "file": "test_pdf_packaging.py",
+    "exit_code": 0,
+    "seconds": 4.701902966999114
+  },
+  {
+    "file": "test_performance_fixes.py",
+    "exit_code": 0,
+    "seconds": 3.630602085000646
+  },
+  {
+    "file": "test_petra_ppf.py",
+    "exit_code": 0,
+    "seconds": 4.931415918999846
+  },
+  {
+    "file": "test_petra_recovery_identity.py",
+    "exit_code": 0,
+    "seconds": 1.2208750600002531
+  },
+  {
+    "file": "test_petro_as_loaded_export.py",
+    "exit_code": 0,
+    "seconds": 1.0212082590005593
+  },
+  {
+    "file": "test_petro_canonical_curves.py",
+    "exit_code": 0,
+    "seconds": 30.679121873999975
+  },
+  {
+    "file": "test_petro_export_paths.py",
+    "exit_code": 0,
+    "seconds": 1.02010320699992
+  },
+  {
+    "file": "test_petro_external_curves.py",
+    "exit_code": 0,
+    "seconds": 9.022902968999915
+  },
+  {
+    "file": "test_petro_integration.py",
+    "exit_code": 0,
+    "seconds": 176.30102721100047
+  },
+  {
+    "file": "test_petro_own_axis_conflicts.py",
+    "exit_code": 0,
+    "seconds": 9.968033944000126
+  },
+  {
+    "file": "test_petro_roster.py",
+    "exit_code": 0,
+    "seconds": 5.786798039998757
+  },
+  {
+    "file": "test_petro_selection.py",
+    "exit_code": 0,
+    "seconds": 5.38945688000058
+  },
+  {
+    "file": "test_plss.py",
+    "exit_code": 0,
+    "seconds": 1.2736186269994505
+  },
+  {
+    "file": "test_polygon_area.py",
+    "exit_code": 0,
+    "seconds": 3.785279548001199
+  },
+  {
+    "file": "test_pre_v1_additions.py",
+    "exit_code": 0,
+    "seconds": 21.016019709999455
+  },
+  {
+    "file": "test_production.py",
+    "exit_code": 0,
+    "seconds": 4.9878148610005155
+  },
+  {
+    "file": "test_production_key.py",
+    "exit_code": 1,
+    "seconds": 1.0337052590002713
+  },
+  {
+    "file": "test_project_assets.py",
+    "exit_code": 0,
+    "seconds": 2.0223327259991493
+  },
+  {
+    "file": "test_project_cache.py",
+    "exit_code": 0,
+    "seconds": 1.4740385690001858
+  },
+  {
+    "file": "test_project_folders.py",
+    "exit_code": 0,
+    "seconds": 4.093137096999271
+  },
+  {
+    "file": "test_raster.py",
+    "exit_code": 0,
+    "seconds": 17.792127527000048
+  },
+  {
+    "file": "test_raster_overlay.py",
+    "exit_code": 0,
+    "seconds": 46.93154759800018
+  },
+  {
+    "file": "test_recovery_copy.py",
+    "exit_code": 0,
+    "seconds": 2.740794018000088
+  },
+  {
+    "file": "test_recovery_hot_journal.py",
+    "exit_code": 0,
+    "seconds": 0.969872530999055
+  },
+  {
+    "file": "test_recovery_las_snapshot.py",
+    "exit_code": 0,
+    "seconds": 1.4221358630002214
+  },
+  {
+    "file": "test_recovery_live_writer.py",
+    "exit_code": 0,
+    "seconds": 12.1015227099997
+  },
+  {
+    "file": "test_regional_depth_units.py",
+    "exit_code": 0,
+    "seconds": 2.788375371001166
+  },
+  {
+    "file": "test_release_payload.py",
+    "exit_code": 0,
+    "seconds": 1.0695212310001807
+  },
+  {
+    "file": "test_release_security.py",
+    "exit_code": 0,
+    "seconds": 0.9704097169997112
+  },
+  {
+    "file": "test_repositories.py",
+    "exit_code": 0,
+    "seconds": 2.3728532410004846
+  },
+  {
+    "file": "test_repository.py",
+    "exit_code": 0,
+    "seconds": 0.9276911729994026
+  },
+  {
+    "file": "test_save_as_nested.py",
+    "exit_code": 0,
+    "seconds": 0.9690109319999465
+  },
+  {
+    "file": "test_scrolling.py",
+    "exit_code": 0,
+    "seconds": 1.9820341890008422
+  },
+  {
+    "file": "test_scrolling_geo.py",
+    "exit_code": 0,
+    "seconds": 4.4839191470000515
+  },
+  {
+    "file": "test_scrolling_map.py",
+    "exit_code": 0,
+    "seconds": 8.742730803000086
+  },
+  {
+    "file": "test_scrolling_petro.py",
+    "exit_code": 0,
+    "seconds": 16.073125357001118
+  },
+  {
+    "file": "test_scrolling_seis.py",
+    "exit_code": 0,
+    "seconds": 15.237414959001399
+  },
+  {
+    "file": "test_section_navigation_perf.py",
+    "exit_code": 0,
+    "seconds": 29.164732793999065
+  },
+  {
+    "file": "test_seg_p1.py",
+    "exit_code": 0,
+    "seconds": 3.541259617000833
+  },
+  {
+    "file": "test_segy.py",
+    "exit_code": 0,
+    "seconds": 6.493546416999379
+  },
+  {
+    "file": "test_seismic_2d_interpretation.py",
+    "exit_code": 0,
+    "seconds": 70.93656462199942
+  },
+  {
+    "file": "test_seismic_2d_lines.py",
+    "exit_code": 0,
+    "seconds": 8.1398819620008
+  },
+  {
+    "file": "test_seismic_2d_shared_undo.py",
+    "exit_code": 0,
+    "seconds": 7.475378240998907
+  },
+  {
+    "file": "test_seismic_app.py",
+    "exit_code": 1,
+    "seconds": 64.4282571499989
+  },
+  {
+    "file": "test_seismic_attributes_more.py",
+    "exit_code": 0,
+    "seconds": 1.222146853000595
+  },
+  {
+    "file": "test_seismic_export_atomic.py",
+    "exit_code": 0,
+    "seconds": 3.030451405000349
+  },
+  {
+    "file": "test_seismic_external_delete.py",
+    "exit_code": 0,
+    "seconds": 1.4740150599991466
+  },
+  {
+    "file": "test_seismic_grids_access.py",
+    "exit_code": 0,
+    "seconds": 4.782718255000873
+  },
+  {
+    "file": "test_seismic_interp_preservation.py",
+    "exit_code": 0,
+    "seconds": 5.129487636000704
+  },
+  {
+    "file": "test_seismic_legacy.py",
+    "exit_code": 0,
+    "seconds": 0.9187923350000347
+  },
+  {
+    "file": "test_seismic_map_layers.py",
+    "exit_code": 0,
+    "seconds": 6.783959938999033
+  },
+  {
+    "file": "test_seismic_picking.py",
+    "exit_code": 0,
+    "seconds": 2.7273312760007684
+  },
+  {
+    "file": "test_seismic_picks_io.py",
+    "exit_code": 0,
+    "seconds": 5.43813613400016
+  },
+  {
+    "file": "test_seismic_project.py",
+    "exit_code": 0,
+    "seconds": 2.17289007600084
+  },
+  {
+    "file": "test_seismic_robustness.py",
+    "exit_code": 0,
+    "seconds": 3.9321677970001474
+  },
+  {
+    "file": "test_seismic_slices.py",
+    "exit_code": 0,
+    "seconds": 1.1214841999990313
+  },
+  {
+    "file": "test_seismic_tie_crs.py",
+    "exit_code": 0,
+    "seconds": 1.5218465800007834
+  },
+  {
+    "file": "test_shape_export_collisions.py",
+    "exit_code": 0,
+    "seconds": 0.9697213059989735
+  },
+  {
+    "file": "test_shapefile_cache.py",
+    "exit_code": 0,
+    "seconds": 1.6772960449998209
+  },
+  {
+    "file": "test_shared_color_bars.py",
+    "exit_code": 0,
+    "seconds": 2.2478009309998015
+  },
+  {
+    "file": "test_shared_curve_readers.py",
+    "exit_code": 0,
+    "seconds": 1.1332432189992687
+  },
+  {
+    "file": "test_sl_bhl.py",
+    "exit_code": 0,
+    "seconds": 3.6766870740011655
+  },
+  {
+    "file": "test_sources.py",
+    "exit_code": 0,
+    "seconds": 3.6812164459988708
+  },
+  {
+    "file": "test_spreadsheet.py",
+    "exit_code": 0,
+    "seconds": 3.7444220240013237
+  },
+  {
+    "file": "test_standalone_las_index.py",
+    "exit_code": 0,
+    "seconds": 1.020902603999275
+  },
+  {
+    "file": "test_startup.py",
+    "exit_code": 0,
+    "seconds": 4.486789954000415
+  },
+  {
+    "file": "test_survey_files.py",
+    "exit_code": 0,
+    "seconds": 3.6787706109989813
+  },
+  {
+    "file": "test_synthetic.py",
+    "exit_code": 0,
+    "seconds": 0.8689596280000842
+  },
+  {
+    "file": "test_synthetic_depth_units.py",
+    "exit_code": 0,
+    "seconds": 2.07143304300007
+  },
+  {
+    "file": "test_task_progress.py",
+    "exit_code": 0,
+    "seconds": 2.1170530319996033
+  },
+  {
+    "file": "test_text_style.py",
+    "exit_code": 1,
+    "seconds": 9.050651756000661
+  },
+  {
+    "file": "test_time_depth_ui.py",
+    "exit_code": 0,
+    "seconds": 5.90553087400076
+  },
+  {
+    "file": "test_ui_consistency.py",
+    "exit_code": 0,
+    "seconds": 8.6488283639992
+  },
+  {
+    "file": "test_ui_lag.py",
+    "exit_code": 0,
+    "seconds": 3.07386965600017
+  },
+  {
+    "file": "test_ui_standard.py",
+    "exit_code": 0,
+    "seconds": 4.284697290999247
+  },
+  {
+    "file": "test_v0936_fixes.py",
+    "exit_code": 0,
+    "seconds": 8.093353770998874
+  },
+  {
+    "file": "test_v0937_fixes.py",
+    "exit_code": 0,
+    "seconds": 5.831821208001202
+  },
+  {
+    "file": "test_v0938_fixes.py",
+    "exit_code": 0,
+    "seconds": 7.94045060100143
+  },
+  {
+    "file": "test_v0939_fixes.py",
+    "exit_code": 0,
+    "seconds": 9.894166979000147
+  },
+  {
+    "file": "test_velocity_model.py",
+    "exit_code": 0,
+    "seconds": 5.559695282998291
+  },
+  {
+    "file": "test_volumetrics.py",
+    "exit_code": 0,
+    "seconds": 12.97687661999953
+  },
+  {
+    "file": "test_well_list_builder.py",
+    "exit_code": 0,
+    "seconds": 11.454965151000579
+  },
+  {
+    "file": "test_well_list_builder_files.py",
+    "exit_code": 0,
+    "seconds": 4.532205190998866
+  },
+  {
+    "file": "test_well_list_files.py",
+    "exit_code": 0,
+    "seconds": 4.894724183999642
+  },
+  {
+    "file": "test_well_manager_merge.py",
+    "exit_code": 0,
+    "seconds": 5.323946098998931
+  },
+  {
+    "file": "test_well_manager_sheets.py",
+    "exit_code": 0,
+    "seconds": 7.510761786999865
+  },
+  {
+    "file": "test_well_selection.py",
+    "exit_code": 0,
+    "seconds": 13.661030589000802
+  },
+  {
+    "file": "test_well_symbols.py",
+    "exit_code": 0,
+    "seconds": 4.9502013199999055
+  },
+  {
+    "file": "test_well_test_concurrency.py",
+    "exit_code": 0,
+    "seconds": 2.1882653739994566
+  },
+  {
+    "file": "test_well_tests.py",
+    "exit_code": 0,
+    "seconds": 11.076197768999918
+  },
+  {
+    "file": "test_well_value_units.py",
+    "exit_code": 0,
+    "seconds": 1.4206668099996023
+  },
+  {
+    "file": "test_wells_posting.py",
+    "exit_code": 0,
+    "seconds": 6.438311207999504
+  },
+  {
+    "file": "test_windows_reserved_names.py",
+    "exit_code": 0,
+    "seconds": 2.2781039499986946
+  },
+  {
+    "file": "test_xsection.py",
+    "exit_code": 0,
+    "seconds": 69.9456611079986
+  },
+  {
+    "file": "test_xsection_fills.py",
+    "exit_code": 0,
+    "seconds": 9.70861590200002
+  },
+  {
+    "file": "test_xyz.py",
+    "exit_code": 0,
+    "seconds": 8.875226615999054
+  },
+  {
+    "file": "test_zone_track_units.py",
+    "exit_code": 0,
+    "seconds": 1.2196671609999612
+  }
+]

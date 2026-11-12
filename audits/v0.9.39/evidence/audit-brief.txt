@@ -1,0 +1,567 @@
+# FRESH WHOLE-CODE AUDIT — v0.9.39
+
+Audit the complete **OandG_Workbench v0.9.39** source tree.
+
+Baseline:
+
+- branch: `release/1.0`
+- version: `v0.9.39`
+- commit: `030800e`
+- intended release: private/internal v1.0 field test
+- do not modify source
+- do not create commits
+- findings only
+
+# OBJECTIVE
+
+Perform a fresh independent audit of the **entire codebase**.
+
+Do not limit the review to:
+
+- recent fixes
+- prior audit findings
+- recently changed files
+- current tests
+- known performance issues
+
+Search broadly for any remaining material defect affecting:
+
+- scientific correctness
+- data integrity
+- persistence
+- concurrency
+- imports/exports
+- units
+- depth axes
+- MD/TVD/TVDSS/time
+- CRS/coordinates
+- cross-module behavior
+- recovery
+- licensing/security
+- file/process safety
+- packaging
+- responsiveness/performance
+
+This is a whole-code audit, not a targeted regression check.
+
+# RELEASE STANDARD
+
+This is for **private/internal field-test v1.0**.
+
+Do not block for:
+
+- cosmetic cleanup
+- code style
+- speculative refactoring
+- minor polish
+- public-distribution legal work
+
+Do block for defects that can:
+
+- alter scientific meaning
+- lose/corrupt data
+- overwrite valid work
+- write to the wrong object
+- resurrect deleted data
+- publish unaccepted state
+- hide valid geological data
+- produce materially wrong calculations
+- make normal field use impractically slow
+
+# 1. SCIENTIFIC / DATA INTEGRITY
+
+Audit for:
+
+- stale saves
+- stale scientific caches
+- concurrent edit loss
+- concurrent deletion resurrection
+- partial saves
+- unintended deletion
+- duplicate records
+- wrong-object identity
+- save/reopen drift
+- stale UI state reaching persisted scientific output
+- preview/transient state becoming accepted data
+
+Binding rule:
+
+> Each curve owns its real depth axis. Never silently substitute, interpolate or resample.
+
+Check complete curve identity:
+
+- axis
+- axis unit
+- values
+- curve unit
+- description
+- relevant persisted metadata
+
+# 2. UNITS / DEPTH / CRS
+
+Aggressively test mixed-unit boundaries:
+
+- feet / metres
+- percent / fraction
+- density
+- sonic
+- map units
+- grid units
+- datum/elevation units
+- survey units
+- attributes
+- core data
+- tops
+- isopachs
+
+Check:
+
+- MD
+- TVD
+- TVDSS
+- time
+- datum/elevation
+- synthetics
+- seismic posting
+- Geosteering
+- Correlation
+- Cross Section
+- Map/grids
+
+Do not assume one LAS file, well, or project uses one unit everywhere.
+
+# 3. IMPORT / EXPORT
+
+Audit:
+
+- Petra PPF
+- IHS 297/298
+- LAS
+- SEG-Y
+- shapefiles
+- grids
+- XYZ
+- ZMAP
+- CSV/Excel
+- raster/PDF
+- digitized curves
+- seismic picks/faults
+- native interchange
+- Recovery
+
+Look for:
+
+- identity ambiguity
+- filename collisions
+- sidecar/companion collisions
+- silent overwrite
+- partial publication
+- non-atomic output
+- duplicate reimport
+- merge/update errors
+- rollback failures
+- round-trip loss
+
+Treat multi-file exports as one atomic publication set.
+
+# 4. PROJECT / CONCURRENCY
+
+Audit:
+
+- open
+- save
+- Save As
+- Close Project
+- reopen
+- migration
+- multiple connections
+- stale windows
+- external edits
+- refresh/invalidation
+- Recovery snapshots
+
+Test concurrent:
+
+- curve edits
+- curve deletions
+- curve metadata
+- previews vs accepted curves
+- aliases
+- production records
+- formation tops
+- grids
+- registered images
+- well metadata
+- seismic interpretations
+
+Absence from a stale snapshot must not imply deletion.
+
+# 5. MODULE REVIEW
+
+## Geo / Well Manager / Map
+
+Review:
+
+- wells
+- symbols
+- directionals
+- tops
+- tests
+- treatments
+- recoveries
+- production
+- grids
+- contours
+- culture layers
+- groups
+- shapefiles
+- rasters
+- labels
+- registered images
+- attributes
+- Close Project
+- modeless editors
+
+Specifically audit rename/update paths for:
+
+- grids
+- images
+- culture layers
+- other named scientific objects
+
+A rename must not persist stale scientific content.
+
+Verify:
+
+- DH* values remain stored unchanged
+- unmapped DH* displays as DRY
+- exact mappings take precedence
+- Symbol Editor changes to DRY affect DH* display
+
+## Petro
+
+Review:
+
+- accepted curve state
+- preview state
+- own-depth curves
+- calculated curves
+- mixed-unit working representations
+- concurrent edits/deletes
+- descriptions
+- aliases
+- batch calculations
+- core data
+- pay
+- exports
+- reconciliation
+
+Specifically verify an unaccepted preview can never:
+
+- become persisted data
+- become a conflict copy
+- overwrite accepted state
+- combine one version’s values with another version’s metadata
+- overwrite newer external state
+- resurrect a concurrently deleted curve
+
+Test preview:
+
+- save
+- discard
+- accept
+- external edit
+- external deletion
+- repeated save/discard cycles
+
+## Formation Tops
+
+Review:
+
+- field-level merge
+- MD/TVD/TVDSS coupling
+- notes/metadata
+- concurrent edit
+- concurrent deletion
+- save/reopen
+
+## Correlation
+
+Review:
+
+- digital/raster wells
+- mixed units
+- clipping
+- flattening
+- tops/faults/pay
+- picking
+- scrolling
+- overview
+- cache invalidation
+
+## Cross Section
+
+Review:
+
+- local/external scientific refresh
+- flattening
+- KB/elevation
+- surveys
+- tops
+- aliases
+- picking
+- scrolling
+- redraw
+- exports
+- viewport culling
+
+## Seismic
+
+Review:
+
+- save-time locking
+- concurrent interpretation edits
+- 2D/3D identity
+- horizons
+- faults
+- pieces
+- picks
+- ties
+- attributes
+- grids
+- synthetics
+- time/depth
+- persistence
+
+## Geosteering
+
+Review:
+
+- depth frame
+- LAS datum units
+- survey/tops/elevation
+- mixed units
+- grid prognosis
+- map track
+- save/reopen
+- reload
+
+## Raster / Digitizer
+
+Review:
+
+- loading
+- registration
+- zoom
+- digitization
+- LAS publication
+- large-file behavior
+- atomic output
+
+Do not redesign post-v1.0 digitizing behavior in this audit.
+
+# 6. PERFORMANCE
+
+Audit for remaining performance bottlenecks and correctness risks introduced by caching/lazy rendering.
+
+Look for:
+
+- stale prepared data
+- incorrect cache invalidation
+- viewport culling hiding required data
+- exports using screen-limited state
+- O(N²) behavior
+- unnecessary database/file reads
+- UI-thread blocking
+- memory growth
+
+## Map scale
+
+Use at least:
+
+- 100,000 wells
+- 250,000 wells
+- 500,000 wells
+
+Use 1,000,000 wells if practical for pathological-scaling detection.
+
+Projects below 100,000 wells are not representative performance evidence.
+
+Measure:
+
+- open
+- zoom
+- pan
+- apply label settings
+- threshold crossing
+- repeated threshold crossing
+- layer visibility/order/group moves
+- rename operations
+- symbols
+- grids
+- contours
+- shapefiles
+- rasters
+
+Report:
+
+- elapsed time
+- SQL reads
+- file reads
+- objects rendered
+- redraw count
+- memory
+- dominant CPU cost
+
+## Dense labels
+
+A38-P01 is already known as a MEDIUM rendering limitation.
+
+Do not reclassify it as HIGH unless new evidence shows ordinary field use is materially impaired.
+
+Focus on whether caching/reuse is correct and whether there are any new regressions.
+
+# 7. RECENT v0.9.39 FIXES — VERIFY BUT DO NOT LIMIT AUDIT
+
+Verify:
+
+- A38-01 complete accepted-series metadata under preview
+- A38-02 preview-discard state after concurrent deletion
+- A38-03 name-only grid/image rename
+
+Look for second-order defects introduced by these changes.
+
+# 8. RECOVERY / LICENSING / SECURITY
+
+Confirm:
+
+- Recovery remains read-only
+- committed snapshots only
+- collision-safe exports
+- production public key embedded
+- no private signing key/passphrase
+- frozen builds ignore local-owner trust
+- runtime expiry protections intact
+- License Manager excluded from customer payload
+
+# 9. FILE / PROCESS SAFETY
+
+Review for:
+
+- unsafe temp files
+- non-atomic writes
+- recursive copy
+- path traversal
+- symlink issues
+- unsafe deserialization
+- subprocess/shell injection
+- formula evaluation risks
+- large-file/decompression failure modes
+
+# 10. PACKAGING
+
+Audit source-level:
+
+- PyInstaller specs
+- five-EXE build
+- Owner Tools separation
+- manifest allowlist
+- collision checks
+- packaged self-tests
+- version consistency
+- prohibited issuer/private material
+
+Do not claim Windows runtime validation without actual Windows artifacts.
+
+# TESTING
+
+Run the full suite against the exact supplied v0.9.39 archive.
+
+Claude/Fable reported:
+
+- 2,611 passed
+- 4 skipped
+- 0 failed
+
+Independently establish the result.
+
+Also run targeted temporary-project reproductions where needed.
+
+Assess the known parallel Tk crash again, but distinguish clearly whether it is:
+
+- reproducible functional defect
+- parallel Linux/Tk instability
+- Windows-unverified behavior
+
+Clearly separate:
+
+- confirmed defect
+- confirmed performance problem
+- environment limitation
+- Windows-only unverified behavior
+- speculative concern
+
+Do not report speculation as a finding.
+
+# SEVERITY
+
+Use:
+
+- CRITICAL
+- HIGH
+- MEDIUM
+- LOW
+
+For every finding provide:
+
+- ID
+- severity
+- file/function
+- exact failure
+- realistic trigger
+- consequence
+- reproduction/evidence
+- recommended fix
+
+For performance findings also provide:
+
+- project size
+- timing
+- operation counts
+- scaling behavior
+- dominant cost
+- UI-thread impact
+
+# SOURCE INTEGRITY
+
+Do not modify source.
+
+At completion confirm:
+
+- original file count
+- no missing files
+- no added files
+- supplied files remain byte-for-byte unchanged
+
+# OUTPUT
+
+Return:
+
+1. Executive summary
+2. Finding table
+3. Detailed findings
+4. Performance findings
+5. Areas reviewed with no additional material issue
+6. Tests/profiling performed
+7. Environment limitations
+8. Final recommendation:
+
+**BLOCK v1.0**
+
+or
+
+**ACCEPT v1.0 FOR PRIVATE FIELD TEST**
+
+Do not modify code.
+Do not create commits.
+Stop after the audit report.

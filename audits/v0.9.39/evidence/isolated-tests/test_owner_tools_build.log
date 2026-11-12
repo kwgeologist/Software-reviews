@@ -1,0 +1,30 @@
+....F..                                                                  [100%]
+=================================== FAILURES ===================================
+_________ OwnerToolBuild.test_the_owner_spec_is_in_the_source_package __________
+
+self = <test_owner_tools_build.OwnerToolBuild testMethod=test_the_owner_spec_is_in_the_source_package>
+
+    def test_the_owner_spec_is_in_the_source_package(self):
+        # (v0.9.31: it was on disk but ignored by git, so a source zip - git archive - lacked it.)
+        tracked = subprocess.run(
+            ["git", "ls-files", "--error-unmatch", "release/OwnerTools_LicenseManager.spec"],
+            cwd=ROOT,
+            capture_output=True,
+            text=True,
+        )
+>       self.assertEqual(tracked.returncode, 0, tracked.stderr)
+E       AssertionError: 128 != 0 : fatal: not a git repository (or any of the parent directories): .git
+
+tests/test_owner_tools_build.py:39: AssertionError
+=============================== warnings summary ===============================
+../../../opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/anyio/pytest_plugin.py:14
+  /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/anyio/pytest_plugin.py:14: PytestRemovedIn10Warning: _pytest.python.CallSpec2 has been renamed to CallSpec.
+  The CallSpec2 alias will be removed in pytest 10.
+  Update imports to use CallSpec instead.
+  See https://docs.pytest.org/en/stable/deprecations.html#callspec2-renamed
+    from _pytest.python import CallSpec2
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED tests/test_owner_tools_build.py::OwnerToolBuild::test_the_owner_spec_is_in_the_source_package
+1 failed, 6 passed, 1 warning in 0.64s

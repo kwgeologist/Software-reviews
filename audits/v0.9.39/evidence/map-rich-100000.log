@@ -1,0 +1,28 @@
+rich assets ready 250 5
+100000 open 16.838 94
+100000 pan regional 2.529 0
+100000 zoom regional 2.062 0
+100000 field zoom 0.939 0
+100000 apply labels field 0.54 0
+100000 symbol style field 0.519 0
+100000 zoom repeat 0 0.324 0
+100000 zoom repeat 1 0.438 0
+100000 zoom repeat 2 0.306 0
+100000 zoom repeat 3 0.414 0
+100000 rename grid 0.714 20
+100000 rename image 0.674 8
+100000 grid visibility 0.693 4
+100000 regional home 10.754 0
+100000 layer group create 0.066 12
+100000 layer move into group 0.05 12
+100000 layer order move 0.071 11
+100000 layer visibility 3.633 7
+100000 grid contours 3.069 14
+100000 raster opacity 2.354 7
+100000 threshold setup 5000 wells 1.539 0
+100000 threshold crossing 0 factor 0.1 0.323 0
+100000 threshold crossing 1 factor 1.0 0.823 0
+100000 threshold crossing 2 factor 0.1 0.271 0
+100000 threshold crossing 3 factor 1.0 0.699 0
+100000 threshold crossing 4 factor 0.1 0.28 0
+100000 threshold crossing 5 factor 1.0 0.664 0

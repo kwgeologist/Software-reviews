@@ -1,0 +1,254 @@
+[
+  {
+    "size": 1000000,
+    "operation": "open",
+    "seconds": 54.175517959998615,
+    "sql_selects_main_connection": 90,
+    "sql_rows_main_connection": 3000107,
+    "python_open_reads": 19,
+    "rss_mb": 1391.03125,
+    "peak_rss_mb": 1457.7890625,
+    "draws": 1,
+    "view": {
+      "visible": 1000000,
+      "artists": 31,
+      "collections": 1,
+      "labels": 5
+    },
+    "cpu_top": "         75432217 function calls (75423859 primitive calls) in 54.294 seconds\n\n   Ordered by: internal time\n   List reduced from 3094 to 5 due to restriction <5>\n\n   ncalls  tottime  percall  cumtime  percall filename:lineno(function)\n        1    7.504    7.504    8.374    8.374 /workspace/audit-v0.9.39/OandG_Workbench_v0.9.39/ogmap/datastore.py:560(store_wells)\n  1000002    4.162    0.000    9.366    0.000 /workspace/audit-v0.9.39/OandG_Workbench_v0.9.39/ogmap/project.py:714(normal_field_style)\n  2000003    3.862    0.000    6.270    0.000 /workspace/audit-v0.9.39/OandG_Workbench_v0.9.39/ogmap/project.py:698(default_field_style)\n 25021295    3.813    0.000    3.813    0.000 {method 'get' of 'dict' objects}\n  1000000    3.722    0.000   20.775    0.000 /workspace/audit-v0.9.39/OandG_Workbench_v0.9.39/ogmap/project.py:956(label_parts_from)\n\n\n"
+  },
+  {
+    "size": 1000000,
+    "operation": "pan regional",
+    "seconds": 1.0854028970006766,
+    "sql_selects_main_connection": 0,
+    "sql_rows_main_connection": 0,
+    "python_open_reads": 0,
+    "rss_mb": 1393.2578125,
+    "peak_rss_mb": 1482.96875,
+    "draws": 1,
+    "view": {
+      "visible": 1000000,
+      "artists": 31,
+      "collections": 1,
+      "labels": 5
+    },
+    "cpu_top": "         79134 function calls (77794 primitive calls) in 1.107 seconds\n\n   Ordered by: internal time\n   List reduced from 956 to 5 due to restriction <5>\n\n   ncalls  tottime  percall  cumtime  percall filename:lineno(function)\n       69    0.718    0.010    0.718    0.010 /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/matplotlib/lines.py:758(draw)\n        1    0.138    0.138    0.240    0.240 /workspace/audit-v0.9.39/OandG_Workbench_v0.9.39/ogmap/view.py:1662(refresh_wells)\n        4    0.077    0.019    0.077    0.019 /workspace/audit-v0.9.39/OandG_Workbench_v0.9.39/ogmap/spatial.py:114(_meeting)\n        1    0.027    0.027    0.027    0.027 /workspace/audit-v0.9.39/OandG_Workbench_v0.9.39/ogmap/view.py:1589(_label_sizes_shown)\n      108    0.020    0.000    0.020    0.000 {method 'tolist' of 'numpy.ndarray' objects}\n\n\n"
+  },
+  {
+    "size": 1000000,
+    "operation": "zoom regional",
+    "seconds": 1.075773205000587,
+    "sql_selects_main_connection": 0,
+    "sql_rows_main_connection": 0,
+    "python_open_reads": 0,
+    "rss_mb": 1387.76171875,
+    "peak_rss_mb": 1482.96875,
+    "draws": 1,
+    "view": {
+      "visible": 864000,
+      "artists": 31,
+      "collections": 1,
+      "labels": 5
+    },
+    "cpu_top": "         207088 function calls (205255 primitive calls) in 1.079 seconds\n\n   Ordered by: internal time\n   List reduced from 1000 to 5 due to restriction <5>\n\n   ncalls  tottime  percall  cumtime  percall filename:lineno(function)\n       72    0.666    0.009    0.667    0.009 /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/matplotlib/lines.py:758(draw)\n        1    0.149    0.149    0.284    0.284 /workspace/audit-v0.9.39/OandG_Workbench_v0.9.39/ogmap/view.py:1662(refresh_wells)\n        4    0.079    0.020    0.079    0.020 /workspace/audit-v0.9.39/OandG_Workbench_v0.9.39/ogmap/spatial.py:114(_meeting)\n        1    0.025    0.025    0.049    0.049 /workspace/audit-v0.9.39/OandG_Workbench_v0.9.39/ogmap/view.py:1563(_draw_well_labels)\n        1    0.024    0.024    0.024    0.024 /workspace/audit-v0.9.39/OandG_Workbench_v0.9.39/ogmap/view.py:1589(_label_sizes_shown)\n\n\n"
+  },
+  {
+    "size": 1000000,
+    "operation": "field zoom",
+    "seconds": 0.4104159600010462,
+    "sql_selects_main_connection": 0,
+    "sql_rows_main_connection": 0,
+    "python_open_reads": 0,
+    "rss_mb": 1339.56640625,
+    "peak_rss_mb": 1482.96875,
+    "draws": 1,
+    "view": {
+      "visible": 2173,
+      "artists": 34,
+      "collections": 5,
+      "labels": 5
+    },
+    "cpu_top": "         963937 function calls (962473 primitive calls) in 0.401 seconds\n\n   Ordered by: internal time\n   List reduced from 1081 to 5 due to restriction <5>\n\n   ncalls  tottime  percall  cumtime  percall filename:lineno(function)\n        1    0.155    0.155    0.269    0.269 /workspace/audit-v0.9.39/OandG_Workbench_v0.9.39/ogmap/view.py:1662(refresh_wells)\n   862688    0.095    0.000    0.095    0.000 {method 'pop' of 'dict' objects}\n        6    0.042    0.007    0.042    0.007 /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/matplotlib/collections.py:352(draw)\n        2    0.011    0.006    0.011    0.006 {built-in method matplotlib.backends._tkagg.blit}\n       68    0.009    0.000    0.009    0.000 /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/matplotlib/lines.py:758(draw)\n\n\n"
+  },
+  {
+    "size": 1000000,
+    "operation": "apply labels field",
+    "seconds": 0.3920923010009574,
+    "sql_selects_main_connection": 0,
+    "sql_rows_main_connection": 0,
+    "python_open_reads": 0,
+    "rss_mb": 1313.84375,
+    "peak_rss_mb": 1482.96875,
+    "draws": 1,
+    "view": {
+      "visible": 2173,
+      "artists": 34,
+      "collections": 5,
+      "labels": 5
+    },
+    "cpu_top": "         113319 function calls (112187 primitive calls) in 0.397 seconds\n\n   Ordered by: internal time\n   List reduced from 1022 to 5 due to restriction <5>\n\n   ncalls  tottime  percall  cumtime  percall filename:lineno(function)\n        1    0.096    0.096    0.131    0.131 /workspace/audit-v0.9.39/OandG_Workbench_v0.9.39/ogmap/spatial.py:43(__init__)\n        6    0.054    0.009    0.054    0.009 /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/matplotlib/collections.py:352(draw)\n       50    0.027    0.001    0.027    0.001 /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/numpy/lib/_shape_base_impl.py:628(column_stack)\n      657    0.024    0.000    0.024    0.000 {method 'reduce' of 'numpy.ufunc' objects}\n        3    0.022    0.007    0.022    0.007 {built-in method matplotlib.backends._tkagg.blit}\n\n\n"
+  },
+  {
+    "size": 1000000,
+    "operation": "symbol style field",
+    "seconds": 0.3960357279993332,
+    "sql_selects_main_connection": 0,
+    "sql_rows_main_connection": 0,
+    "python_open_reads": 0,
+    "rss_mb": 1351.9921875,
+    "peak_rss_mb": 1482.96875,
+    "draws": 1,
+    "view": {
+      "visible": 2173,
+      "artists": 34,
+      "collections": 5,
+      "labels": 5
+    },
+    "cpu_top": "         113827 function calls (112695 primitive calls) in 0.398 seconds\n\n   Ordered by: internal time\n   List reduced from 1025 to 5 due to restriction <5>\n\n   ncalls  tottime  percall  cumtime  percall filename:lineno(function)\n        1    0.098    0.098    0.139    0.139 /workspace/audit-v0.9.39/OandG_Workbench_v0.9.39/ogmap/spatial.py:43(__init__)\n        6    0.053    0.009    0.053    0.009 /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/matplotlib/collections.py:352(draw)\n        3    0.028    0.009    0.028    0.009 {built-in method matplotlib.backends._tkagg.blit}\n       50    0.025    0.001    0.026    0.001 /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/numpy/lib/_shape_base_impl.py:628(column_stack)\n      657    0.024    0.000    0.024    0.000 {method 'reduce' of 'numpy.ufunc' objects}\n\n\n"
+  },
+  {
+    "size": 1000000,
+    "operation": "zoom repeat 0",
+    "seconds": 0.15148197800044727,
+    "sql_selects_main_connection": 0,
+    "sql_rows_main_connection": 0,
+    "python_open_reads": 0,
+    "rss_mb": 1351.9921875,
+    "peak_rss_mb": 1482.96875,
+    "draws": 1,
+    "view": {
+      "visible": 1419,
+      "artists": 34,
+      "collections": 5,
+      "labels": 5
+    },
+    "cpu_top": "         107261 function calls (105615 primitive calls) in 0.143 seconds\n\n   Ordered by: internal time\n   List reduced from 1004 to 5 due to restriction <5>\n\n   ncalls  tottime  percall  cumtime  percall filename:lineno(function)\n        6    0.051    0.009    0.051    0.009 /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/matplotlib/collections.py:352(draw)\n        2    0.010    0.005    0.010    0.005 {built-in method matplotlib.backends._tkagg.blit}\n       74    0.009    0.000    0.009    0.000 /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/matplotlib/lines.py:758(draw)\n       29    0.003    0.000    0.011    0.000 /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/matplotlib/backends/backend_agg.py:248(_prepare_font)\n       20    0.003    0.000    0.009    0.000 /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/matplotlib/backends/backend_agg.py:93(draw_path)\n\n\n"
+  },
+  {
+    "size": 1000000,
+    "operation": "zoom repeat 1",
+    "seconds": 0.1465461570005573,
+    "sql_selects_main_connection": 0,
+    "sql_rows_main_connection": 0,
+    "python_open_reads": 0,
+    "rss_mb": 1351.9921875,
+    "peak_rss_mb": 1482.96875,
+    "draws": 1,
+    "view": {
+      "visible": 2173,
+      "artists": 34,
+      "collections": 5,
+      "labels": 5
+    },
+    "cpu_top": "         102447 function calls (101215 primitive calls) in 0.149 seconds\n\n   Ordered by: internal time\n   List reduced from 946 to 5 due to restriction <5>\n\n   ncalls  tottime  percall  cumtime  percall filename:lineno(function)\n        6    0.053    0.009    0.053    0.009 /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/matplotlib/collections.py:352(draw)\n        2    0.015    0.007    0.015    0.007 {built-in method matplotlib.backends._tkagg.blit}\n        2    0.011    0.005    0.011    0.005 /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/matplotlib/backends/backend_agg.py:185(draw_text)\n       68    0.007    0.000    0.008    0.000 /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/matplotlib/lines.py:758(draw)\n       24    0.002    0.000    0.009    0.000 /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/matplotlib/backends/backend_agg.py:248(_prepare_font)\n\n\n"
+  },
+  {
+    "size": 1000000,
+    "operation": "zoom repeat 2",
+    "seconds": 0.1599951449989021,
+    "sql_selects_main_connection": 0,
+    "sql_rows_main_connection": 0,
+    "python_open_reads": 0,
+    "rss_mb": 1351.9921875,
+    "peak_rss_mb": 1482.96875,
+    "draws": 1,
+    "view": {
+      "visible": 1419,
+      "artists": 34,
+      "collections": 5,
+      "labels": 5
+    },
+    "cpu_top": "         104101 function calls (102850 primitive calls) in 0.165 seconds\n\n   Ordered by: internal time\n   List reduced from 938 to 5 due to restriction <5>\n\n   ncalls  tottime  percall  cumtime  percall filename:lineno(function)\n        6    0.049    0.008    0.049    0.008 /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/matplotlib/collections.py:352(draw)\n       45    0.015    0.000    0.024    0.001 /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/matplotlib/text.py:926(get_window_extent)\n        2    0.013    0.006    0.013    0.006 {built-in method matplotlib.backends._tkagg.blit}\n        2    0.013    0.006    0.013    0.006 /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/matplotlib/backends/backend_agg.py:185(draw_text)\n       74    0.009    0.000    0.009    0.000 /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/matplotlib/lines.py:758(draw)\n\n\n"
+  },
+  {
+    "size": 1000000,
+    "operation": "zoom repeat 3",
+    "seconds": 0.16621143399970606,
+    "sql_selects_main_connection": 0,
+    "sql_rows_main_connection": 0,
+    "python_open_reads": 0,
+    "rss_mb": 1351.9921875,
+    "peak_rss_mb": 1482.96875,
+    "draws": 1,
+    "view": {
+      "visible": 2173,
+      "artists": 34,
+      "collections": 5,
+      "labels": 5
+    },
+    "cpu_top": "         102372 function calls (101209 primitive calls) in 0.169 seconds\n\n   Ordered by: internal time\n   List reduced from 945 to 5 due to restriction <5>\n\n   ncalls  tottime  percall  cumtime  percall filename:lineno(function)\n        6    0.053    0.009    0.053    0.009 /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/matplotlib/collections.py:352(draw)\n       68    0.027    0.000    0.028    0.000 /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/matplotlib/lines.py:758(draw)\n        2    0.011    0.006    0.011    0.006 /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/matplotlib/backends/backend_agg.py:185(draw_text)\n        2    0.009    0.005    0.009    0.005 {built-in method matplotlib.backends._tkagg.blit}\n       23    0.003    0.000    0.010    0.000 /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/matplotlib/backends/backend_agg.py:248(_prepare_font)\n\n\n"
+  },
+  {
+    "size": 1000000,
+    "operation": "rename grid",
+    "seconds": 0.19767984300051467,
+    "sql_selects_main_connection": 20,
+    "sql_rows_main_connection": 15,
+    "python_open_reads": 0,
+    "rss_mb": 1351.9921875,
+    "peak_rss_mb": 1482.96875,
+    "draws": 1,
+    "view": {
+      "visible": 2173,
+      "artists": 34,
+      "collections": 5,
+      "labels": 5
+    },
+    "cpu_top": "         153303 function calls (150316 primitive calls) in 0.188 seconds\n\n   Ordered by: internal time\n   List reduced from 1588 to 5 due to restriction <5>\n\n   ncalls  tottime  percall  cumtime  percall filename:lineno(function)\n        6    0.054    0.009    0.054    0.009 /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/matplotlib/collections.py:352(draw)\n        2    0.011    0.006    0.012    0.006 /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/matplotlib/backends/backend_agg.py:185(draw_text)\n        2    0.010    0.005    0.010    0.005 {built-in method matplotlib.backends._tkagg.blit}\n       68    0.008    0.000    0.008    0.000 /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/matplotlib/lines.py:758(draw)\n    23/22    0.002    0.000    0.008    0.000 /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/matplotlib/backends/backend_agg.py:248(_prepare_font)\n\n\n"
+  },
+  {
+    "size": 1000000,
+    "operation": "rename image",
+    "seconds": 0.1414236050004547,
+    "sql_selects_main_connection": 8,
+    "sql_rows_main_connection": 13,
+    "python_open_reads": 0,
+    "rss_mb": 1351.9921875,
+    "peak_rss_mb": 1482.96875,
+    "draws": 1,
+    "view": {
+      "visible": 2173,
+      "artists": 34,
+      "collections": 5,
+      "labels": 5
+    },
+    "cpu_top": "         95464 function calls (94303 primitive calls) in 0.144 seconds\n\n   Ordered by: internal time\n   List reduced from 986 to 5 due to restriction <5>\n\n   ncalls  tottime  percall  cumtime  percall filename:lineno(function)\n        6    0.051    0.009    0.051    0.009 /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/matplotlib/collections.py:352(draw)\n        2    0.011    0.006    0.011    0.006 /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/matplotlib/backends/backend_agg.py:185(draw_text)\n        2    0.010    0.005    0.010    0.005 {built-in method matplotlib.backends._tkagg.blit}\n       68    0.008    0.000    0.008    0.000 /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/matplotlib/lines.py:758(draw)\n       20    0.003    0.000    0.009    0.000 /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/matplotlib/backends/backend_agg.py:93(draw_path)\n\n\n"
+  },
+  {
+    "size": 1000000,
+    "operation": "grid visibility",
+    "seconds": 0.16452929300066899,
+    "sql_selects_main_connection": 4,
+    "sql_rows_main_connection": 0,
+    "python_open_reads": 0,
+    "rss_mb": 1351.9921875,
+    "peak_rss_mb": 1482.96875,
+    "draws": 1,
+    "view": {
+      "visible": 2173,
+      "artists": 34,
+      "collections": 5,
+      "labels": 5
+    },
+    "cpu_top": "         97747 function calls (96647 primitive calls) in 0.167 seconds\n\n   Ordered by: internal time\n   List reduced from 1047 to 5 due to restriction <5>\n\n   ncalls  tottime  percall  cumtime  percall filename:lineno(function)\n        6    0.054    0.009    0.054    0.009 /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/matplotlib/collections.py:352(draw)\n        2    0.025    0.012    0.025    0.012 {built-in method matplotlib.backends._tkagg.blit}\n        2    0.012    0.006    0.012    0.006 /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/matplotlib/backends/backend_agg.py:185(draw_text)\n       68    0.008    0.000    0.008    0.000 /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/matplotlib/lines.py:758(draw)\n       20    0.003    0.000    0.008    0.000 /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/matplotlib/backends/backend_agg.py:93(draw_path)\n\n\n"
+  },
+  {
+    "size": 1000000,
+    "operation": "regional home",
+    "seconds": 3.6840654209991044,
+    "sql_selects_main_connection": 0,
+    "sql_rows_main_connection": 0,
+    "python_open_reads": 0,
+    "rss_mb": 1441.4375,
+    "peak_rss_mb": 1482.96875,
+    "draws": 1,
+    "view": {
+      "visible": 1000000,
+      "artists": 31,
+      "collections": 1,
+      "labels": 5
+    },
+    "cpu_top": "         3057370 function calls (3056077 primitive calls) in 3.670 seconds\n\n   Ordered by: internal time\n   List reduced from 1062 to 5 due to restriction <5>\n\n   ncalls  tottime  percall  cumtime  percall filename:lineno(function)\n        1    1.553    1.553    2.297    2.297 /workspace/audit-v0.9.39/OandG_Workbench_v0.9.39/ogmap/view.py:1599(_label_records)\n       69    0.747    0.011    0.748    0.011 /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/matplotlib/lines.py:758(draw)\n        1    0.290    0.290    0.415    0.415 /workspace/audit-v0.9.39/OandG_Workbench_v0.9.39/ogmap/window.py:1050(labels)\n   997827    0.124    0.000    0.124    0.000 /workspace/audit-v0.9.39/OandG_Workbench_v0.9.39/ogmap/window.py:62(get)\n   998882    0.123    0.000    0.123    0.000 {method 'items' of 'dict' objects}\n\n\n"
+  }
+]

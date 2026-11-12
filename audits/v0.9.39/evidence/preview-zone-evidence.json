@@ -1,0 +1,56 @@
+{
+  "before": {
+    "zones": [
+      {
+        "name": "AUDITPAY gross",
+        "value_number": 5.0
+      },
+      {
+        "name": "AUDITPAY net",
+        "value_number": 5.0
+      },
+      {
+        "name": "AUDITPAY N:G",
+        "value_number": 1.0
+      }
+    ],
+    "canonical_X_first": 1.0
+  },
+  "previews": [
+    "X"
+  ],
+  "during_preview": {
+    "zones": [
+      {
+        "name": "AUDITPAY gross",
+        "value_number": 5.0
+      },
+      {
+        "name": "AUDITPAY net",
+        "value_number": 0.0
+      },
+      {
+        "name": "AUDITPAY N:G",
+        "value_number": 0.0
+      }
+    ],
+    "canonical_X_first": 1.0
+  },
+  "after_discard": {
+    "zones": [
+      {
+        "name": "AUDITPAY gross",
+        "value_number": 5.0
+      },
+      {
+        "name": "AUDITPAY net",
+        "value_number": 5.0
+      },
+      {
+        "name": "AUDITPAY N:G",
+        "value_number": 1.0
+      }
+    ],
+    "canonical_X_first": 1.0
+  }
+}

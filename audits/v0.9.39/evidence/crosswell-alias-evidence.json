@@ -1,0 +1,20 @@
+{
+  "active_alias_in_A": "A_ONLY",
+  "first_well_results_before_switch": [
+    {
+      "well_name": "SOUTH BLANCO 7",
+      "value_number": 5.0
+    }
+  ],
+  "active_alias_in_B": "B_ONLY",
+  "results_after_save_with_B_active": [
+    {
+      "well_name": "SOUTH BLANCO 7",
+      "value_number": 5.0
+    },
+    {
+      "well_name": "STATE 16 6",
+      "value_number": 5.0
+    }
+  ]
+}

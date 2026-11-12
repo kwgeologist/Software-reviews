@@ -1,0 +1,63 @@
+.......................................................................................................................................................................................................................................................ssss..... [  9%]
+.........................................Fatal Python error: Segmentation fault
+
+Current thread 0x00007fd877fff6c0 (most recent call first):
+  Garbage-collecting
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/tkinter/__init__.py", line 414 in __del__
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/numpy/_core/numerictypes.py", line 534 in issubdtype
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/numpy/lib/_function_base_impl.py", line 4042 in _median
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/numpy/lib/_function_base_impl.py", line 3914 in _ureduce
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/numpy/lib/_function_base_impl.py", line 4021 in median
+  File "/workspace/audit-v0.9.39/OandG_Workbench_v0.9.39/ogcore/autoreg/ocr.py", line 256 in words_in
+  File "/workspace/audit-v0.9.39/OandG_Workbench_v0.9.39/ogcore/autoreg/ocr.py", line 463 in read_near
+  File "/workspace/audit-v0.9.39/OandG_Workbench_v0.9.39/ogcore/autoreg/ocr.py", line 474 in find_label_columns
+  File "/workspace/audit-v0.9.39/OandG_Workbench_v0.9.39/ogcore/autoreg/engine.py", line 116 in run
+  File "/workspace/audit-v0.9.39/OandG_Workbench_v0.9.39/ograster/autoreview.py", line 207 in work
+  File "/workspace/audit-v0.9.39/OandG_Workbench_v0.9.39/ograster/progress.py", line 24 in target
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/threading.py", line 1012 in run
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/threading.py", line 1075 in _bootstrap_inner
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/threading.py", line 1032 in _bootstrap
+
+Thread 0x00007fd8977af740 (most recent call first):
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/tkinter/__init__.py", line 1712 in _configure
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/tkinter/__init__.py", line 1722 in configure
+  File "/workspace/audit-v0.9.39/OandG_Workbench_v0.9.39/ograster/progress.py", line 46 in poll
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/tkinter/__init__.py", line 862 in callit
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/tkinter/__init__.py", line 1968 in __call__
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/tkinter/__init__.py", line 744 in wait_window
+  File "/workspace/audit-v0.9.39/OandG_Workbench_v0.9.39/ograster/progress.py", line 53 in run_with_progress
+  File "/workspace/audit-v0.9.39/OandG_Workbench_v0.9.39/ograster/autoreview.py", line 209 in auto_register
+  File "/workspace/audit-v0.9.39/OandG_Workbench_v0.9.39/tests/test_autoreg.py", line 452 in test_propose_review_and_accept
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/unittest/case.py", line 589 in _callTestMethod
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/unittest/case.py", line 634 in run
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/unittest/case.py", line 690 in __call__
+  File "/tmp/audit0939-venv/lib/python3.12/site-packages/_pytest/unittest.py", line 408 in runtest
+  File "/tmp/audit0939-venv/lib/python3.12/site-packages/_pytest/runner.py", line 184 in pytest_runtest_call
+  File "/tmp/audit0939-venv/lib/python3.12/site-packages/pluggy/_execution.py", line 147 in _multicall
+  File "/tmp/audit0939-venv/lib/python3.12/site-packages/pluggy/_manager.py", line 183 in _hookexec
+  File "/tmp/audit0939-venv/lib/python3.12/site-packages/pluggy/_caller.py", line 197 in __call__
+  File "/tmp/audit0939-venv/lib/python3.12/site-packages/_pytest/runner.py", line 250 in <lambda>
+  File "/tmp/audit0939-venv/lib/python3.12/site-packages/_pytest/runner.py", line 361 in from_call
+  File "/tmp/audit0939-venv/lib/python3.12/site-packages/_pytest/runner.py", line 249 in call_and_report
+  File "/tmp/audit0939-venv/lib/python3.12/site-packages/_pytest/runner.py", line 139 in runtestprotocol
+  File "/tmp/audit0939-venv/lib/python3.12/site-packages/_pytest/runner.py", line 118 in pytest_runtest_protocol
+  File "/tmp/audit0939-venv/lib/python3.12/site-packages/pluggy/_execution.py", line 147 in _multicall
+  File "/tmp/audit0939-venv/lib/python3.12/site-packages/pluggy/_manager.py", line 183 in _hookexec
+  File "/tmp/audit0939-venv/lib/python3.12/site-packages/pluggy/_caller.py", line 197 in __call__
+  File "/tmp/audit0939-venv/lib/python3.12/site-packages/_pytest/main.py", line 411 in pytest_runtestloop
+  File "/tmp/audit0939-venv/lib/python3.12/site-packages/pluggy/_execution.py", line 147 in _multicall
+  File "/tmp/audit0939-venv/lib/python3.12/site-packages/pluggy/_manager.py", line 183 in _hookexec
+  File "/tmp/audit0939-venv/lib/python3.12/site-packages/pluggy/_caller.py", line 197 in __call__
+  File "/tmp/audit0939-venv/lib/python3.12/site-packages/_pytest/main.py", line 387 in _main
+  File "/tmp/audit0939-venv/lib/python3.12/site-packages/_pytest/main.py", line 333 in wrap_session
+  File "/tmp/audit0939-venv/lib/python3.12/site-packages/_pytest/main.py", line 380 in pytest_cmdline_main
+  File "/tmp/audit0939-venv/lib/python3.12/site-packages/pluggy/_execution.py", line 147 in _multicall
+  File "/tmp/audit0939-venv/lib/python3.12/site-packages/pluggy/_manager.py", line 183 in _hookexec
+  File "/tmp/audit0939-venv/lib/python3.12/site-packages/pluggy/_caller.py", line 197 in __call__
+  File "/tmp/audit0939-venv/lib/python3.12/site-packages/_pytest/config/__init__.py", line 262 in _main
+  File "/tmp/audit0939-venv/lib/python3.12/site-packages/_pytest/config/__init__.py", line 286 in _console_main
+  File "/tmp/audit0939-venv/lib/python3.12/site-packages/pytest/__main__.py", line 9 in <module>
+  File "<frozen runpy>", line 88 in _run_code
+  File "<frozen runpy>", line 198 in _run_module_as_main
+
+Extension modules: _cffi_backend, numpy._core._multiarray_umath, numpy.linalg._umath_linalg, charset_normalizer.md, charset_normalizer.cd, numpy.random._common, numpy.random.bit_generator, numpy.random._bounded_integers, numpy.random._pcg64, numpy.random._mt19937, numpy.random._generator, numpy.random._philox, numpy.random._sfc64, numpy.random.mtrand, lxml._elementpath, lxml.etree, PIL._imaging, kiwisolver._cext, PIL._imagingft, pyproj._compat, pyproj._context, pyproj._network, pyproj._version, pyproj._geod, pyproj.list, pyproj._crs, pyproj.database, pyproj._transformer, pyproj._sync, PIL._imagingtk, segyio._segyio, PIL._imagingmath (total: 32)

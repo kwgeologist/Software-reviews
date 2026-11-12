@@ -1,0 +1,500 @@
+[
+  {
+    "size": 100000,
+    "operation": "open",
+    "seconds": 4.5524794690009,
+    "sql_selects_main_connection": 340,
+    "sql_rows_main_connection": 301857,
+    "python_open_reads": 19,
+    "rss_mb": 251.9765625,
+    "peak_rss_mb": 251.703125,
+    "draws": 1,
+    "view": {
+      "visible": 100000,
+      "artists": 281,
+      "collections": 251,
+      "labels": 5
+    },
+    "cpu_top": ""
+  },
+  {
+    "size": 100000,
+    "operation": "pan regional",
+    "seconds": 0.2307637470003101,
+    "sql_selects_main_connection": 0,
+    "sql_rows_main_connection": 0,
+    "python_open_reads": 0,
+    "rss_mb": 261.6875,
+    "peak_rss_mb": 262.828125,
+    "draws": 1,
+    "view": {
+      "visible": 100000,
+      "artists": 281,
+      "collections": 251,
+      "labels": 5
+    },
+    "cpu_top": ""
+  },
+  {
+    "size": 100000,
+    "operation": "zoom regional",
+    "seconds": 0.17805809799938288,
+    "sql_selects_main_connection": 0,
+    "sql_rows_main_connection": 0,
+    "python_open_reads": 0,
+    "rss_mb": 261.69921875,
+    "peak_rss_mb": 262.828125,
+    "draws": 1,
+    "view": {
+      "visible": 86400,
+      "artists": 281,
+      "collections": 251,
+      "labels": 5
+    },
+    "cpu_top": ""
+  },
+  {
+    "size": 100000,
+    "operation": "field zoom",
+    "seconds": 0.568146297999192,
+    "sql_selects_main_connection": 0,
+    "sql_rows_main_connection": 0,
+    "python_open_reads": 0,
+    "rss_mb": 260.7421875,
+    "peak_rss_mb": 262.828125,
+    "draws": 1,
+    "view": {
+      "visible": 2173,
+      "artists": 284,
+      "collections": 255,
+      "labels": 5
+    },
+    "cpu_top": ""
+  },
+  {
+    "size": 100000,
+    "operation": "apply labels field",
+    "seconds": 0.15903981200062844,
+    "sql_selects_main_connection": 0,
+    "sql_rows_main_connection": 0,
+    "python_open_reads": 0,
+    "rss_mb": 259.765625,
+    "peak_rss_mb": 262.828125,
+    "draws": 1,
+    "view": {
+      "visible": 2173,
+      "artists": 284,
+      "collections": 255,
+      "labels": 5
+    },
+    "cpu_top": ""
+  },
+  {
+    "size": 100000,
+    "operation": "symbol style field",
+    "seconds": 0.16750672299895086,
+    "sql_selects_main_connection": 0,
+    "sql_rows_main_connection": 0,
+    "python_open_reads": 0,
+    "rss_mb": 259.765625,
+    "peak_rss_mb": 262.828125,
+    "draws": 1,
+    "view": {
+      "visible": 2173,
+      "artists": 284,
+      "collections": 255,
+      "labels": 5
+    },
+    "cpu_top": ""
+  },
+  {
+    "size": 100000,
+    "operation": "zoom repeat 0",
+    "seconds": 0.14223077799942985,
+    "sql_selects_main_connection": 0,
+    "sql_rows_main_connection": 0,
+    "python_open_reads": 0,
+    "rss_mb": 259.765625,
+    "peak_rss_mb": 262.828125,
+    "draws": 1,
+    "view": {
+      "visible": 1419,
+      "artists": 284,
+      "collections": 255,
+      "labels": 5
+    },
+    "cpu_top": ""
+  },
+  {
+    "size": 100000,
+    "operation": "zoom repeat 1",
+    "seconds": 0.16527735799900256,
+    "sql_selects_main_connection": 0,
+    "sql_rows_main_connection": 0,
+    "python_open_reads": 0,
+    "rss_mb": 259.765625,
+    "peak_rss_mb": 262.828125,
+    "draws": 1,
+    "view": {
+      "visible": 2173,
+      "artists": 284,
+      "collections": 255,
+      "labels": 5
+    },
+    "cpu_top": ""
+  },
+  {
+    "size": 100000,
+    "operation": "zoom repeat 2",
+    "seconds": 0.12698554700000386,
+    "sql_selects_main_connection": 0,
+    "sql_rows_main_connection": 0,
+    "python_open_reads": 0,
+    "rss_mb": 259.765625,
+    "peak_rss_mb": 262.828125,
+    "draws": 1,
+    "view": {
+      "visible": 1419,
+      "artists": 284,
+      "collections": 255,
+      "labels": 5
+    },
+    "cpu_top": ""
+  },
+  {
+    "size": 100000,
+    "operation": "zoom repeat 3",
+    "seconds": 0.13040668800022104,
+    "sql_selects_main_connection": 0,
+    "sql_rows_main_connection": 0,
+    "python_open_reads": 0,
+    "rss_mb": 259.765625,
+    "peak_rss_mb": 262.828125,
+    "draws": 1,
+    "view": {
+      "visible": 2173,
+      "artists": 284,
+      "collections": 255,
+      "labels": 5
+    },
+    "cpu_top": ""
+  },
+  {
+    "size": 100000,
+    "operation": "rename grid",
+    "seconds": 0.2686671569990722,
+    "sql_selects_main_connection": 20,
+    "sql_rows_main_connection": 765,
+    "python_open_reads": 0,
+    "rss_mb": 259.765625,
+    "peak_rss_mb": 262.828125,
+    "draws": 1,
+    "view": {
+      "visible": 2173,
+      "artists": 284,
+      "collections": 255,
+      "labels": 5
+    },
+    "cpu_top": ""
+  },
+  {
+    "size": 100000,
+    "operation": "rename image",
+    "seconds": 0.14449149199936073,
+    "sql_selects_main_connection": 8,
+    "sql_rows_main_connection": 263,
+    "python_open_reads": 0,
+    "rss_mb": 259.765625,
+    "peak_rss_mb": 262.828125,
+    "draws": 1,
+    "view": {
+      "visible": 2173,
+      "artists": 284,
+      "collections": 255,
+      "labels": 5
+    },
+    "cpu_top": ""
+  },
+  {
+    "size": 100000,
+    "operation": "grid visibility",
+    "seconds": 0.2041726630013727,
+    "sql_selects_main_connection": 4,
+    "sql_rows_main_connection": 250,
+    "python_open_reads": 0,
+    "rss_mb": 259.765625,
+    "peak_rss_mb": 262.828125,
+    "draws": 1,
+    "view": {
+      "visible": 2173,
+      "artists": 284,
+      "collections": 255,
+      "labels": 5
+    },
+    "cpu_top": ""
+  },
+  {
+    "size": 100000,
+    "operation": "regional home",
+    "seconds": 0.5728975599995465,
+    "sql_selects_main_connection": 0,
+    "sql_rows_main_connection": 0,
+    "python_open_reads": 0,
+    "rss_mb": 265.94921875,
+    "peak_rss_mb": 265.64453125,
+    "draws": 1,
+    "view": {
+      "visible": 100000,
+      "artists": 281,
+      "collections": 251,
+      "labels": 5
+    },
+    "cpu_top": ""
+  },
+  {
+    "size": 100000,
+    "operation": "layer group create",
+    "seconds": 0.046013310999114765,
+    "sql_selects_main_connection": 12,
+    "sql_rows_main_connection": 525,
+    "python_open_reads": 0,
+    "rss_mb": 266.0078125,
+    "peak_rss_mb": 265.76953125,
+    "draws": 0,
+    "view": {
+      "visible": 100000,
+      "artists": 281,
+      "collections": 251,
+      "labels": 5
+    },
+    "cpu_top": ""
+  },
+  {
+    "size": 100000,
+    "operation": "layer move into group",
+    "seconds": 0.02706021499943745,
+    "sql_selects_main_connection": 12,
+    "sql_rows_main_connection": 526,
+    "python_open_reads": 0,
+    "rss_mb": 266.01171875,
+    "peak_rss_mb": 265.76953125,
+    "draws": 0,
+    "view": {
+      "visible": 100000,
+      "artists": 281,
+      "collections": 251,
+      "labels": 5
+    },
+    "cpu_top": ""
+  },
+  {
+    "size": 100000,
+    "operation": "layer order move",
+    "seconds": 0.023443890999260475,
+    "sql_selects_main_connection": 11,
+    "sql_rows_main_connection": 514,
+    "python_open_reads": 0,
+    "rss_mb": 266.01171875,
+    "peak_rss_mb": 265.76953125,
+    "draws": 0,
+    "view": {
+      "visible": 100000,
+      "artists": 281,
+      "collections": 251,
+      "labels": 5
+    },
+    "cpu_top": ""
+  },
+  {
+    "size": 100000,
+    "operation": "layer visibility",
+    "seconds": 0.2676290780000272,
+    "sql_selects_main_connection": 7,
+    "sql_rows_main_connection": 263,
+    "python_open_reads": 0,
+    "rss_mb": 266.01953125,
+    "peak_rss_mb": 265.76953125,
+    "draws": 1,
+    "view": {
+      "visible": 100000,
+      "artists": 280,
+      "collections": 250,
+      "labels": 5
+    },
+    "cpu_top": ""
+  },
+  {
+    "size": 100000,
+    "operation": "grid contours",
+    "seconds": 0.1832422139996197,
+    "sql_selects_main_connection": 14,
+    "sql_rows_main_connection": 753,
+    "python_open_reads": 0,
+    "rss_mb": 266.46875,
+    "peak_rss_mb": 266.14453125,
+    "draws": 1,
+    "view": {
+      "visible": 100000,
+      "artists": 284,
+      "collections": 252,
+      "labels": 7
+    },
+    "cpu_top": ""
+  },
+  {
+    "size": 100000,
+    "operation": "raster opacity",
+    "seconds": 0.1854947550000361,
+    "sql_selects_main_connection": 7,
+    "sql_rows_main_connection": 263,
+    "python_open_reads": 0,
+    "rss_mb": 266.4921875,
+    "peak_rss_mb": 266.26953125,
+    "draws": 1,
+    "view": {
+      "visible": 100000,
+      "artists": 284,
+      "collections": 252,
+      "labels": 7
+    },
+    "cpu_top": ""
+  },
+  {
+    "size": 100000,
+    "operation": "threshold setup 5000 wells",
+    "seconds": 0.44097307300035027,
+    "sql_selects_main_connection": 0,
+    "sql_rows_main_connection": 0,
+    "python_open_reads": 0,
+    "rss_mb": 266.59375,
+    "peak_rss_mb": 266.26953125,
+    "draws": 1,
+    "view": {
+      "visible": 13200,
+      "artists": 285,
+      "collections": 256,
+      "labels": 5
+    },
+    "cpu_top": ""
+  },
+  {
+    "size": 100000,
+    "operation": "threshold crossing 0 factor 0.1",
+    "seconds": 0.30268681999950786,
+    "sql_selects_main_connection": 0,
+    "sql_rows_main_connection": 0,
+    "python_open_reads": 0,
+    "rss_mb": 266.59375,
+    "peak_rss_mb": 266.26953125,
+    "draws": 1,
+    "view": {
+      "visible": 13200,
+      "artists": 285,
+      "collections": 256,
+      "labels": 5
+    },
+    "cpu_top": "",
+    "label_records_created": 0,
+    "labels_drawn_paths": 0
+  },
+  {
+    "size": 100000,
+    "operation": "threshold crossing 1 factor 1.0",
+    "seconds": 0.3871961690001626,
+    "sql_selects_main_connection": 0,
+    "sql_rows_main_connection": 0,
+    "python_open_reads": 0,
+    "rss_mb": 266.59375,
+    "peak_rss_mb": 266.26953125,
+    "draws": 1,
+    "view": {
+      "visible": 13200,
+      "artists": 285,
+      "collections": 256,
+      "labels": 5
+    },
+    "cpu_top": "",
+    "label_records_created": 8200,
+    "labels_drawn_paths": 0
+  },
+  {
+    "size": 100000,
+    "operation": "threshold crossing 2 factor 0.1",
+    "seconds": 0.2867134759999317,
+    "sql_selects_main_connection": 0,
+    "sql_rows_main_connection": 0,
+    "python_open_reads": 0,
+    "rss_mb": 266.59375,
+    "peak_rss_mb": 266.26953125,
+    "draws": 1,
+    "view": {
+      "visible": 13200,
+      "artists": 285,
+      "collections": 256,
+      "labels": 5
+    },
+    "cpu_top": "",
+    "label_records_created": 0,
+    "labels_drawn_paths": 0
+  },
+  {
+    "size": 100000,
+    "operation": "threshold crossing 3 factor 1.0",
+    "seconds": 0.35911246099931304,
+    "sql_selects_main_connection": 0,
+    "sql_rows_main_connection": 0,
+    "python_open_reads": 0,
+    "rss_mb": 266.59375,
+    "peak_rss_mb": 266.26953125,
+    "draws": 1,
+    "view": {
+      "visible": 13200,
+      "artists": 285,
+      "collections": 256,
+      "labels": 5
+    },
+    "cpu_top": "",
+    "label_records_created": 0,
+    "labels_drawn_paths": 0
+  },
+  {
+    "size": 100000,
+    "operation": "threshold crossing 4 factor 0.1",
+    "seconds": 0.3346351649997814,
+    "sql_selects_main_connection": 0,
+    "sql_rows_main_connection": 0,
+    "python_open_reads": 0,
+    "rss_mb": 266.59375,
+    "peak_rss_mb": 266.26953125,
+    "draws": 1,
+    "view": {
+      "visible": 13200,
+      "artists": 285,
+      "collections": 256,
+      "labels": 5
+    },
+    "cpu_top": "",
+    "label_records_created": 0,
+    "labels_drawn_paths": 0
+  },
+  {
+    "size": 100000,
+    "operation": "threshold crossing 5 factor 1.0",
+    "seconds": 0.2928171929997916,
+    "sql_selects_main_connection": 0,
+    "sql_rows_main_connection": 0,
+    "python_open_reads": 0,
+    "rss_mb": 266.59375,
+    "peak_rss_mb": 266.26953125,
+    "draws": 1,
+    "view": {
+      "visible": 13200,
+      "artists": 285,
+      "collections": 256,
+      "labels": 5
+    },
+    "cpu_top": "",
+    "label_records_created": 0,
+    "labels_drawn_paths": 0
+  }
+]

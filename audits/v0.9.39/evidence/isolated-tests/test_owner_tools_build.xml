@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="7" time="0.646" timestamp="2026-11-12T21:52:52.761939+00:00" hostname="d44c9735b084"><testcase classname="tests.test_owner_tools_build.OwnerToolBuild" name="test_a_customer_payload_with_the_license_manager_is_refused" time="0.269" /><testcase classname="tests.test_owner_tools_build.OwnerToolBuild" name="test_ci_keeps_the_owner_tool_for_download" time="0.004" /><testcase classname="tests.test_owner_tools_build.OwnerToolBuild" name="test_no_unquoted_ampersand_in_the_build_script" time="0.003" /><testcase classname="tests.test_owner_tools_build.OwnerToolBuild" name="test_the_owner_spec_builds_the_license_manager_alone_with_cryptography" time="0.011" /><testcase classname="tests.test_owner_tools_build.OwnerToolBuild" name="test_the_owner_spec_is_in_the_source_package" time="0.014"><failure message="AssertionError: 128 != 0 : fatal: not a git repository (or any of the parent directories): .git">self = &lt;test_owner_tools_build.OwnerToolBuild testMethod=test_the_owner_spec_is_in_the_source_package&gt;
+
+    def test_the_owner_spec_is_in_the_source_package(self):
+        # (v0.9.31: it was on disk but ignored by git, so a source zip - git archive - lacked it.)
+        tracked = subprocess.run(
+            ["git", "ls-files", "--error-unmatch", "release/OwnerTools_LicenseManager.spec"],
+            cwd=ROOT,
+            capture_output=True,
+            text=True,
+        )
+&gt;       self.assertEqual(tracked.returncode, 0, tracked.stderr)
+E       AssertionError: 128 != 0 : fatal: not a git repository (or any of the parent directories): .git
+
+tests/test_owner_tools_build.py:39: AssertionError</failure></testcase><testcase classname="tests.test_owner_tools_build.OwnerToolBuild" name="test_the_windows_build_makes_it_after_the_customer_payload_and_apart_from_it" time="0.002" /><testcase classname="tests.test_owner_tools_build.OwnerSelfTest" name="test_the_first_time_workflow_in_a_folder_of_its_own" time="0.263" /></testsuite></testsuites>

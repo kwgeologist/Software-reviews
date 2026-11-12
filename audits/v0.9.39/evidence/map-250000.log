@@ -1,0 +1,14 @@
+250000 open 11.464 90
+250000 pan regional 0.378 0
+250000 zoom regional 0.368 0
+250000 field zoom 0.206 0
+250000 apply labels field 0.212 0
+250000 symbol style field 0.207 0
+250000 zoom repeat 0 0.157 0
+250000 zoom repeat 1 0.243 0
+250000 zoom repeat 2 0.137 0
+250000 zoom repeat 3 0.143 0
+250000 rename grid 0.2 20
+250000 rename image 0.135 8
+250000 grid visibility 0.15 5
+250000 regional home 1.02 0

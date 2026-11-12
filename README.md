@@ -1,5 +1,19 @@
 # Software reviews
 
+## O&G Workbench v0.9.39
+
+Fresh whole-package read-only audit for private/internal v1.0: **BLOCK v1.0**. Six new confirmed defects: **5 High, 1 Medium**. The previously known A38-P01 dense-label limitation remains **Medium**, separately identified.
+
+- [Read the report](audits/v0.9.39/OandG_Workbench_v0.9.39_Audit.md)
+- [Download PDF](https://github.com/kwgeologist/Software-reviews/raw/refs/heads/main/audits/v0.9.39/OandG_Workbench_v0.9.39_Audit.pdf)
+- [Download complete report and evidence ZIP](https://github.com/kwgeologist/Software-reviews/raw/refs/heads/main/audits/v0.9.39/OandG_Workbench_v0.9.39_Audit_Bundle.zip)
+- [Detailed evidence files](audits/v0.9.39/evidence)
+- [Structured findings](audits/v0.9.39/findings.json)
+
+The full single-process suite hit a Linux/Tk segmentation fault. A complete serial file-isolated rerun recorded **2,596 passed, 4 failed, 15 skipped**, plus **605 passing subtests**. The report distinguishes two archive-without-Git failures, one Tk font-substitution failure and one Seismic toolbar layout assertion. It does not claim the crashed run passed. All eight focused v0.9.39 regressions passed independently. Five launcher self-tests were refused at the missing-license gate; Windows packaged runtime was not tested.
+
+Includes Map measurements at 100,000 / 250,000 / 500,000 wells, a separate million-well symbol-oriented run, and a richer 100,000-well asset fixture. All **887 source files remain byte-identical**, with no missing or added files. No application changes were made. Report/evidence publication is separately authorized by the user.
+
 ## O&G Workbench v0.9.18
 
 Independent read-only release audit: **9 findings — 6 High, 1 Medium, 2 Low**. Proceed to targeted release hardening; resolve the six High findings before external release. Application source remains unchanged.

@@ -1,0 +1,64 @@
+{
+  "version": "0.9.39",
+  "audit_date": "2026-11-12",
+  "recommendation": "BLOCK v1.0",
+  "new_findings": {
+    "CRITICAL": 0,
+    "HIGH": 5,
+    "MEDIUM": 1,
+    "LOW": 0
+  },
+  "known_performance": {
+    "id": "A38-P01",
+    "severity": "MEDIUM"
+  },
+  "source_integrity": {
+    "archive_sha256": "b237c93bfe5ba908256789f38fff5090e475ebad365fcc7a1e82c808265dfcb2",
+    "original_files": 887,
+    "missing": [],
+    "changed": [],
+    "added": []
+  },
+  "tests": {
+    "completed_files": 243,
+    "expected_files": 243,
+    "collected_test_cases": 2615,
+    "mode": "one fresh process per test file, serial; original monolithic run crashed",
+    "counts": {
+      "passed": 2596,
+      "failed": 4,
+      "skipped": 15,
+      "errors": 0,
+      "subtests_passed": 605
+    },
+    "subprocess_seconds": 2032.5444860589905,
+    "issues": [
+      {
+        "file": "test_owner_tools_build.py",
+        "class": "tests.test_owner_tools_build.OwnerToolBuild",
+        "test": "test_the_owner_spec_is_in_the_source_package",
+        "message": "AssertionError: 128 != 0 : fatal: not a git repository (or any of the parent directories): .git"
+      },
+      {
+        "file": "test_production_key.py",
+        "class": "tests.test_production_key.ProductionKey",
+        "test": "test_no_private_key_material_in_the_repository",
+        "message": "subprocess.CalledProcessError: Command '['git', 'ls-files']' returned non-zero exit status 128."
+      },
+      {
+        "file": "test_seismic_app.py",
+        "class": "tests.test_seismic_app.SeismicAppTests",
+        "test": "test_grid_and_contours_are_separate",
+        "message": "AssertionError: 2 != 1"
+      },
+      {
+        "file": "test_text_style.py",
+        "class": "tests.test_text_style.ControlTests",
+        "test": "test_the_common_control_and_tk_fonts",
+        "message": "AssertionError: Tuples differ: ('normal', 'roman') != ('bold', 'roman')\n\nFirst differing element 0:\n'normal'\n'bold'\n\n- ('normal', 'roman')\n?   ^ ---\n\n+ ('bold', 'roman')\n?   ^  +"
+      }
+    ]
+  },
+  "windows_tested": false,
+  "self_test_cli": "all five exit 3: missing license; bodies not executed"
+}

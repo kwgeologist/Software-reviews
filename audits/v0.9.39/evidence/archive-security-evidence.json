@@ -1,0 +1,19 @@
+{
+  "files_scanned": 887,
+  "prohibited_key_filenames": [],
+  "private_key_blocks": [],
+  "embedded_public_key_ids": [
+    "ogw-2026-01"
+  ],
+  "production_ready": true,
+  "owner_spec_present": true,
+  "license_manager_excluded": true,
+  "customer_executables": [
+    "OandG_Workbench",
+    "PetroWorkbench",
+    "SeismicWorkbench",
+    "GeosteeringWorkbench",
+    "CorrelationWorkbench"
+  ],
+  "git_tracking_not_verifiable_from_zip": true
+}

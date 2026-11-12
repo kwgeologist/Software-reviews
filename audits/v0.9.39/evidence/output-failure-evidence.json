@@ -1,0 +1,14 @@
+[
+  {
+    "export": "volumetrics",
+    "exception": "injected disk full during second row",
+    "old_preserved": false,
+    "bytes_after": 19
+  },
+  {
+    "export": "spreadsheet",
+    "exception": "injected disk full during second row",
+    "old_preserved": false,
+    "bytes_after": 8
+  }
+]

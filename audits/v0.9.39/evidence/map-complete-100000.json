@@ -1,0 +1,554 @@
+[
+  {
+    "file_read_open_events": 1610,
+    "worker_selects": 0,
+    "size": 100000,
+    "operation": "open",
+    "seconds": 16.63241287100027,
+    "sql_selects_main_connection": 340,
+    "sql_rows_main_connection": 301865,
+    "python_open_reads": 19,
+    "rss_mb": 706.0546875,
+    "peak_rss_mb": 706.62890625,
+    "draws": 1,
+    "view": {
+      "visible": 100000,
+      "artists": 282,
+      "collections": 252,
+      "labels": 5
+    },
+    "cpu_top": ""
+  },
+  {
+    "file_read_open_events": 0,
+    "worker_selects": 0,
+    "size": 100000,
+    "operation": "pan regional",
+    "seconds": 1.7475851659983164,
+    "sql_selects_main_connection": 0,
+    "sql_rows_main_connection": 0,
+    "python_open_reads": 0,
+    "rss_mb": 715.58984375,
+    "peak_rss_mb": 716.6484375,
+    "draws": 1,
+    "view": {
+      "visible": 100000,
+      "artists": 282,
+      "collections": 252,
+      "labels": 5
+    },
+    "cpu_top": ""
+  },
+  {
+    "file_read_open_events": 0,
+    "worker_selects": 0,
+    "size": 100000,
+    "operation": "zoom regional",
+    "seconds": 1.817553715000031,
+    "sql_selects_main_connection": 0,
+    "sql_rows_main_connection": 0,
+    "python_open_reads": 0,
+    "rss_mb": 723.46484375,
+    "peak_rss_mb": 730.33203125,
+    "draws": 1,
+    "view": {
+      "visible": 86400,
+      "artists": 282,
+      "collections": 252,
+      "labels": 5
+    },
+    "cpu_top": ""
+  },
+  {
+    "file_read_open_events": 0,
+    "worker_selects": 0,
+    "size": 100000,
+    "operation": "field zoom",
+    "seconds": 1.102073576001203,
+    "sql_selects_main_connection": 0,
+    "sql_rows_main_connection": 0,
+    "python_open_reads": 0,
+    "rss_mb": 679.1015625,
+    "peak_rss_mb": 730.33203125,
+    "draws": 1,
+    "view": {
+      "visible": 2173,
+      "artists": 285,
+      "collections": 256,
+      "labels": 5
+    },
+    "cpu_top": ""
+  },
+  {
+    "file_read_open_events": 0,
+    "worker_selects": 0,
+    "size": 100000,
+    "operation": "apply labels field",
+    "seconds": 0.7739122370003315,
+    "sql_selects_main_connection": 0,
+    "sql_rows_main_connection": 0,
+    "python_open_reads": 0,
+    "rss_mb": 664.3359375,
+    "peak_rss_mb": 730.33203125,
+    "draws": 1,
+    "view": {
+      "visible": 2173,
+      "artists": 285,
+      "collections": 256,
+      "labels": 5
+    },
+    "cpu_top": ""
+  },
+  {
+    "file_read_open_events": 0,
+    "worker_selects": 0,
+    "size": 100000,
+    "operation": "symbol style field",
+    "seconds": 0.5880813830008265,
+    "sql_selects_main_connection": 0,
+    "sql_rows_main_connection": 0,
+    "python_open_reads": 0,
+    "rss_mb": 664.3359375,
+    "peak_rss_mb": 730.33203125,
+    "draws": 1,
+    "view": {
+      "visible": 2173,
+      "artists": 285,
+      "collections": 256,
+      "labels": 5
+    },
+    "cpu_top": ""
+  },
+  {
+    "file_read_open_events": 0,
+    "worker_selects": 0,
+    "size": 100000,
+    "operation": "zoom repeat 0",
+    "seconds": 0.2667717519998405,
+    "sql_selects_main_connection": 0,
+    "sql_rows_main_connection": 0,
+    "python_open_reads": 0,
+    "rss_mb": 663.3515625,
+    "peak_rss_mb": 730.33203125,
+    "draws": 1,
+    "view": {
+      "visible": 1419,
+      "artists": 285,
+      "collections": 256,
+      "labels": 5
+    },
+    "cpu_top": ""
+  },
+  {
+    "file_read_open_events": 0,
+    "worker_selects": 0,
+    "size": 100000,
+    "operation": "zoom repeat 1",
+    "seconds": 0.3180390180004906,
+    "sql_selects_main_connection": 0,
+    "sql_rows_main_connection": 0,
+    "python_open_reads": 0,
+    "rss_mb": 663.3515625,
+    "peak_rss_mb": 730.33203125,
+    "draws": 1,
+    "view": {
+      "visible": 2173,
+      "artists": 285,
+      "collections": 256,
+      "labels": 5
+    },
+    "cpu_top": ""
+  },
+  {
+    "file_read_open_events": 0,
+    "worker_selects": 0,
+    "size": 100000,
+    "operation": "zoom repeat 2",
+    "seconds": 0.2585978690003685,
+    "sql_selects_main_connection": 0,
+    "sql_rows_main_connection": 0,
+    "python_open_reads": 0,
+    "rss_mb": 663.3515625,
+    "peak_rss_mb": 730.33203125,
+    "draws": 1,
+    "view": {
+      "visible": 1419,
+      "artists": 285,
+      "collections": 256,
+      "labels": 5
+    },
+    "cpu_top": ""
+  },
+  {
+    "file_read_open_events": 0,
+    "worker_selects": 0,
+    "size": 100000,
+    "operation": "zoom repeat 3",
+    "seconds": 0.34086827499959327,
+    "sql_selects_main_connection": 0,
+    "sql_rows_main_connection": 0,
+    "python_open_reads": 0,
+    "rss_mb": 663.3515625,
+    "peak_rss_mb": 730.33203125,
+    "draws": 1,
+    "view": {
+      "visible": 2173,
+      "artists": 285,
+      "collections": 256,
+      "labels": 5
+    },
+    "cpu_top": ""
+  },
+  {
+    "file_read_open_events": 1,
+    "worker_selects": 0,
+    "size": 100000,
+    "operation": "rename grid",
+    "seconds": 0.399968401001388,
+    "sql_selects_main_connection": 20,
+    "sql_rows_main_connection": 765,
+    "python_open_reads": 0,
+    "rss_mb": 663.3515625,
+    "peak_rss_mb": 730.33203125,
+    "draws": 1,
+    "view": {
+      "visible": 2173,
+      "artists": 285,
+      "collections": 256,
+      "labels": 5
+    },
+    "cpu_top": ""
+  },
+  {
+    "file_read_open_events": 0,
+    "worker_selects": 0,
+    "size": 100000,
+    "operation": "rename image",
+    "seconds": 0.32982983399961086,
+    "sql_selects_main_connection": 8,
+    "sql_rows_main_connection": 263,
+    "python_open_reads": 0,
+    "rss_mb": 663.3515625,
+    "peak_rss_mb": 730.33203125,
+    "draws": 1,
+    "view": {
+      "visible": 2173,
+      "artists": 285,
+      "collections": 256,
+      "labels": 5
+    },
+    "cpu_top": ""
+  },
+  {
+    "file_read_open_events": 0,
+    "worker_selects": 0,
+    "size": 100000,
+    "operation": "grid visibility",
+    "seconds": 0.33331449100114696,
+    "sql_selects_main_connection": 4,
+    "sql_rows_main_connection": 250,
+    "python_open_reads": 0,
+    "rss_mb": 663.3515625,
+    "peak_rss_mb": 730.33203125,
+    "draws": 1,
+    "view": {
+      "visible": 2173,
+      "artists": 285,
+      "collections": 256,
+      "labels": 5
+    },
+    "cpu_top": ""
+  },
+  {
+    "file_read_open_events": 0,
+    "worker_selects": 0,
+    "size": 100000,
+    "operation": "regional home",
+    "seconds": 5.78043115500077,
+    "sql_selects_main_connection": 0,
+    "sql_rows_main_connection": 0,
+    "python_open_reads": 0,
+    "rss_mb": 716.0390625,
+    "peak_rss_mb": 730.33203125,
+    "draws": 1,
+    "view": {
+      "visible": 100000,
+      "artists": 282,
+      "collections": 252,
+      "labels": 5
+    },
+    "cpu_top": ""
+  },
+  {
+    "file_read_open_events": 0,
+    "worker_selects": 0,
+    "size": 100000,
+    "operation": "layer group create",
+    "seconds": 0.040443710999170435,
+    "sql_selects_main_connection": 12,
+    "sql_rows_main_connection": 525,
+    "python_open_reads": 0,
+    "rss_mb": 716.046875,
+    "peak_rss_mb": 730.33203125,
+    "draws": 0,
+    "view": {
+      "visible": 100000,
+      "artists": 282,
+      "collections": 252,
+      "labels": 5
+    },
+    "cpu_top": ""
+  },
+  {
+    "file_read_open_events": 0,
+    "worker_selects": 0,
+    "size": 100000,
+    "operation": "layer move into group",
+    "seconds": 0.01807922999978473,
+    "sql_selects_main_connection": 12,
+    "sql_rows_main_connection": 526,
+    "python_open_reads": 0,
+    "rss_mb": 716.05078125,
+    "peak_rss_mb": 730.33203125,
+    "draws": 0,
+    "view": {
+      "visible": 100000,
+      "artists": 282,
+      "collections": 252,
+      "labels": 5
+    },
+    "cpu_top": ""
+  },
+  {
+    "file_read_open_events": 0,
+    "worker_selects": 0,
+    "size": 100000,
+    "operation": "layer order move",
+    "seconds": 0.01860350999959337,
+    "sql_selects_main_connection": 11,
+    "sql_rows_main_connection": 514,
+    "python_open_reads": 0,
+    "rss_mb": 716.05078125,
+    "peak_rss_mb": 730.33203125,
+    "draws": 0,
+    "view": {
+      "visible": 100000,
+      "artists": 282,
+      "collections": 252,
+      "labels": 5
+    },
+    "cpu_top": ""
+  },
+  {
+    "file_read_open_events": 0,
+    "worker_selects": 0,
+    "size": 100000,
+    "operation": "layer visibility",
+    "seconds": 2.587478760999147,
+    "sql_selects_main_connection": 7,
+    "sql_rows_main_connection": 263,
+    "python_open_reads": 0,
+    "rss_mb": 716.05078125,
+    "peak_rss_mb": 730.33203125,
+    "draws": 1,
+    "view": {
+      "visible": 100000,
+      "artists": 281,
+      "collections": 251,
+      "labels": 5
+    },
+    "cpu_top": ""
+  },
+  {
+    "file_read_open_events": 10,
+    "worker_selects": 0,
+    "size": 100000,
+    "operation": "grid contours",
+    "seconds": 2.136772916999689,
+    "sql_selects_main_connection": 14,
+    "sql_rows_main_connection": 753,
+    "python_open_reads": 0,
+    "rss_mb": 716.43359375,
+    "peak_rss_mb": 730.33203125,
+    "draws": 1,
+    "view": {
+      "visible": 100000,
+      "artists": 285,
+      "collections": 253,
+      "labels": 7
+    },
+    "cpu_top": ""
+  },
+  {
+    "file_read_open_events": 0,
+    "worker_selects": 0,
+    "size": 100000,
+    "operation": "raster opacity",
+    "seconds": 1.7739101759998448,
+    "sql_selects_main_connection": 7,
+    "sql_rows_main_connection": 263,
+    "python_open_reads": 0,
+    "rss_mb": 716.43359375,
+    "peak_rss_mb": 730.33203125,
+    "draws": 1,
+    "view": {
+      "visible": 100000,
+      "artists": 285,
+      "collections": 253,
+      "labels": 7
+    },
+    "cpu_top": ""
+  },
+  {
+    "file_read_open_events": 0,
+    "worker_selects": 0,
+    "size": 100000,
+    "operation": "threshold setup 5000 wells",
+    "seconds": 1.0277132280007208,
+    "sql_selects_main_connection": 0,
+    "sql_rows_main_connection": 0,
+    "python_open_reads": 0,
+    "rss_mb": 716.4375,
+    "peak_rss_mb": 730.33203125,
+    "draws": 1,
+    "view": {
+      "visible": 13200,
+      "artists": 286,
+      "collections": 257,
+      "labels": 5
+    },
+    "cpu_top": ""
+  },
+  {
+    "file_read_open_events": 0,
+    "worker_selects": 0,
+    "size": 100000,
+    "operation": "threshold crossing 0 factor 0.1",
+    "seconds": 0.4784005999990768,
+    "sql_selects_main_connection": 0,
+    "sql_rows_main_connection": 0,
+    "python_open_reads": 0,
+    "rss_mb": 716.4375,
+    "peak_rss_mb": 730.33203125,
+    "draws": 1,
+    "view": {
+      "visible": 13200,
+      "artists": 285,
+      "collections": 256,
+      "labels": 5
+    },
+    "cpu_top": "",
+    "label_records_created": 0,
+    "labels_drawn_paths": 0
+  },
+  {
+    "file_read_open_events": 0,
+    "worker_selects": 0,
+    "size": 100000,
+    "operation": "threshold crossing 1 factor 1.0",
+    "seconds": 1.598786652999479,
+    "sql_selects_main_connection": 0,
+    "sql_rows_main_connection": 0,
+    "python_open_reads": 0,
+    "rss_mb": 716.4375,
+    "peak_rss_mb": 730.33203125,
+    "draws": 1,
+    "view": {
+      "visible": 13200,
+      "artists": 286,
+      "collections": 257,
+      "labels": 5
+    },
+    "cpu_top": "",
+    "label_records_created": 8200,
+    "labels_drawn_paths": 13200
+  },
+  {
+    "file_read_open_events": 0,
+    "worker_selects": 0,
+    "size": 100000,
+    "operation": "threshold crossing 2 factor 0.1",
+    "seconds": 0.30995854799948575,
+    "sql_selects_main_connection": 0,
+    "sql_rows_main_connection": 0,
+    "python_open_reads": 0,
+    "rss_mb": 716.4375,
+    "peak_rss_mb": 730.33203125,
+    "draws": 1,
+    "view": {
+      "visible": 13200,
+      "artists": 285,
+      "collections": 256,
+      "labels": 5
+    },
+    "cpu_top": "",
+    "label_records_created": 0,
+    "labels_drawn_paths": 0
+  },
+  {
+    "file_read_open_events": 0,
+    "worker_selects": 0,
+    "size": 100000,
+    "operation": "threshold crossing 3 factor 1.0",
+    "seconds": 0.9653547319994686,
+    "sql_selects_main_connection": 0,
+    "sql_rows_main_connection": 0,
+    "python_open_reads": 0,
+    "rss_mb": 716.4375,
+    "peak_rss_mb": 730.33203125,
+    "draws": 1,
+    "view": {
+      "visible": 13200,
+      "artists": 286,
+      "collections": 257,
+      "labels": 5
+    },
+    "cpu_top": "",
+    "label_records_created": 0,
+    "labels_drawn_paths": 13200
+  },
+  {
+    "file_read_open_events": 0,
+    "worker_selects": 0,
+    "size": 100000,
+    "operation": "threshold crossing 4 factor 0.1",
+    "seconds": 1.2530366779992619,
+    "sql_selects_main_connection": 0,
+    "sql_rows_main_connection": 0,
+    "python_open_reads": 0,
+    "rss_mb": 716.4375,
+    "peak_rss_mb": 730.33203125,
+    "draws": 1,
+    "view": {
+      "visible": 13200,
+      "artists": 285,
+      "collections": 256,
+      "labels": 5
+    },
+    "cpu_top": "",
+    "label_records_created": 0,
+    "labels_drawn_paths": 0
+  },
+  {
+    "file_read_open_events": 0,
+    "worker_selects": 0,
+    "size": 100000,
+    "operation": "threshold crossing 5 factor 1.0",
+    "seconds": 2.1101519170006213,
+    "sql_selects_main_connection": 0,
+    "sql_rows_main_connection": 0,
+    "python_open_reads": 0,
+    "rss_mb": 716.4375,
+    "peak_rss_mb": 730.33203125,
+    "draws": 1,
+    "view": {
+      "visible": 13200,
+      "artists": 286,
+      "collections": 257,
+      "labels": 5
+    },
+    "cpu_top": "",
+    "label_records_created": 0,
+    "labels_drawn_paths": 13200
+  }
+]
