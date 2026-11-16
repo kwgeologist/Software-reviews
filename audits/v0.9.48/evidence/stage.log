@@ -1,0 +1,7 @@
+staged 1632 files (515.5 MB) in /workspace/audit-v0.9.48/staged-payload
+  warning: path-like text '/Users/' in a third-party file: _internal/base_library.zip
+  warning: path-like text '/Users/' in a third-party file: _internal/libpython3.12.so.1.0
+  warning: path-like text 'C:/Users/' in a third-party file: _internal/base_library.zip
+  warning: path-like text 'C:/Users/' in a third-party file: _internal/libpython3.12.so.1.0
+  warning: EULA.txt is the placeholder: the owner must supply the license agreement
+staging: clean

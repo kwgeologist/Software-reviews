@@ -1,0 +1,50 @@
+{
+  "mode": "ordinary single-process full pytest run; no pytest parallel workers",
+  "full_run": {
+    "exit_code": 1,
+    "seconds": 1622.0872273970162
+  },
+  "completed_files": 249,
+  "expected_files": 249,
+  "collected_test_cases": 2663,
+  "counts": {
+    "passed": 2642,
+    "failed": 5,
+    "skipped": 16,
+    "errors": 0,
+    "subtests_passed": 609
+  },
+  "issues": [
+    {
+      "class": "tests.test_licensing.Gate",
+      "test": "test_invalid_and_expired_licenses_offer_recovery_access",
+      "message": "AssertionError: <Status.CLOCK_ROLLBACK_SUSPECTED: 'clock_rollback_suspected'> != <Status.EXPIRED: 'expired'>",
+      "file": "test_licensing.py"
+    },
+    {
+      "class": "tests.test_owner_tools_build.OwnerToolBuild",
+      "test": "test_the_owner_spec_is_in_the_source_package",
+      "message": "AssertionError: 128 != 0 : fatal: not a git repository (or any of the parent directories): .git",
+      "file": "test_owner_tools_build.py"
+    },
+    {
+      "class": "tests.test_production_key.ProductionKey",
+      "test": "test_no_private_key_material_in_the_repository",
+      "message": "subprocess.CalledProcessError: Command '['git', 'ls-files']' returned non-zero exit status 128.",
+      "file": "test_production_key.py"
+    },
+    {
+      "class": "tests.test_seismic_app.SeismicAppTests",
+      "test": "test_grid_and_contours_are_separate",
+      "message": "AssertionError: 2 != 1",
+      "file": "test_seismic_app.py"
+    },
+    {
+      "class": "tests.test_text_style.ControlTests",
+      "test": "test_the_common_control_and_tk_fonts",
+      "message": "AssertionError: Tuples differ: ('normal', 'roman') != ('bold', 'roman')\n\nFirst differing element 0:\n'normal'\n'bold'\n\n- ('normal', 'roman')\n?   ^ ---\n\n+ ('bold', 'roman')\n?   ^  +",
+      "file": "test_text_style.py"
+    }
+  ],
+  "pytest_summary": "5 failed, 2642 passed, 16 skipped, 2 warnings, 609 subtests passed in 1600.02s (0:26:40)"
+}

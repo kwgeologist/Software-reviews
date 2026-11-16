@@ -1,0 +1,42 @@
+{
+  "full": {
+    "summary": "4 failed, 2664 passed, 19 skipped, 2 warnings, 684 subtests passed in 1883.99s (0:31:23)",
+    "passed": 2664,
+    "failed": 4,
+    "skipped": 19,
+    "errors": 0,
+    "subtests_passed": 684,
+    "seconds": 1883.99,
+    "xml_testcases": 2687
+  },
+  "targeted": {
+    "summary": "149 passed, 5 skipped, 1 warning, 75 subtests passed in 172.64s (0:02:52)",
+    "passed": 149,
+    "failed": 0,
+    "skipped": 5,
+    "errors": 0,
+    "subtests_passed": 75,
+    "seconds": 172.64,
+    "xml_testcases": 154
+  },
+  "compiled": {
+    "summary": "219 passed, 1 skipped, 1 warning, 60 subtests passed in 156.71s (0:02:36)",
+    "passed": 219,
+    "failed": 0,
+    "skipped": 1,
+    "errors": 0,
+    "subtests_passed": 60,
+    "seconds": 156.71,
+    "xml_testcases": 220
+  },
+  "compiled_integration": {
+    "summary": "88 passed, 2 warnings, 60 subtests passed in 299.51s (0:04:59)",
+    "passed": 88,
+    "failed": 0,
+    "skipped": 0,
+    "errors": 0,
+    "subtests_passed": 60,
+    "seconds": 299.51,
+    "xml_testcases": 88
+  }
+}

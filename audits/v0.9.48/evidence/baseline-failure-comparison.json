@@ -1,0 +1,25 @@
+{
+  "all_current_failures_seen_in_v0945": true,
+  "matches": [
+    {
+      "class": "tests.test_owner_tools_build.OwnerToolBuild",
+      "test": "test_the_owner_spec_is_in_the_source_package",
+      "same_message": true
+    },
+    {
+      "class": "tests.test_production_key.ProductionKey",
+      "test": "test_no_private_key_material_in_the_repository",
+      "same_message": true
+    },
+    {
+      "class": "tests.test_seismic_app.SeismicAppTests",
+      "test": "test_grid_and_contours_are_separate",
+      "same_message": true
+    },
+    {
+      "class": "tests.test_text_style.ControlTests",
+      "test": "test_the_common_control_and_tk_fonts",
+      "same_message": true
+    }
+  ]
+}

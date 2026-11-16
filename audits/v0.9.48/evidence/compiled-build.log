@@ -1,0 +1,4 @@
+running build_ext
+building 'ogcore.licensing' extension
+clang -pthread -fno-strict-overflow -Wsign-compare -Wunreachable-code -DNDEBUG -g -O3 -Wall -O3 -fstack-protector -fstack-clash-protection -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -fPIC -fPIC -I/workspace/audit-tooling-v048/include -I/opt/codex/runtimes/codex-primary-runtime/dependencies/python/include/python3.12 -c build/cython/c/ogcore/licensing.c -o /workspace/audit-v0.9.48/compiled-worktree/build/cython/temp/build/cython/c/ogcore/licensing.o -g0
+error: [Errno 2] No such file or directory: 'clang'

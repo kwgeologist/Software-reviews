@@ -1,0 +1,16 @@
+{
+  "requested": {
+    "family": "DejaVu Serif",
+    "weight": "bold"
+  },
+  "tk_actual": {
+    "family": "fixed",
+    "size": 10,
+    "weight": "normal",
+    "slant": "roman",
+    "underline": 0,
+    "overstrike": 0
+  },
+  "tk_has_requested_family": false,
+  "tcl": "9.0.4"
+}

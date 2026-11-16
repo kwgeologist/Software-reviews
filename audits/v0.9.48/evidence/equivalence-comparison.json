@@ -1,0 +1,38 @@
+{
+  "cases": 24,
+  "case_differences": [],
+  "signature_differences": {
+    "ogcore.licensing": {},
+    "ogcore.license_runtime": {},
+    "ogcore.formulas": {},
+    "ogcore.multimineral": {},
+    "ogcore.multivariate": {},
+    "ogcore.core_equations": {},
+    "ogcore.water": {},
+    "petroworkbench.curve_ops": {},
+    "ogcore.pay": {},
+    "ogcore.batch_zones": {},
+    "ogcore.gridders": {},
+    "ogcore.gridding": {},
+    "ogcore.mincurv": {},
+    "ogcore.velocity_model": {},
+    "ogvol.engine": {}
+  },
+  "compiled_origins": {
+    "ogcore.licensing": "/workspace/audit-v0.9.48/compiled-worktree/ogcore/licensing.cpython-312-x86_64-linux-gnu.so",
+    "ogcore.license_runtime": "/workspace/audit-v0.9.48/compiled-worktree/ogcore/license_runtime.cpython-312-x86_64-linux-gnu.so",
+    "ogcore.formulas": "/workspace/audit-v0.9.48/compiled-worktree/ogcore/formulas.cpython-312-x86_64-linux-gnu.so",
+    "ogcore.multimineral": "/workspace/audit-v0.9.48/compiled-worktree/ogcore/multimineral.cpython-312-x86_64-linux-gnu.so",
+    "ogcore.multivariate": "/workspace/audit-v0.9.48/compiled-worktree/ogcore/multivariate.cpython-312-x86_64-linux-gnu.so",
+    "ogcore.core_equations": "/workspace/audit-v0.9.48/compiled-worktree/ogcore/core_equations.cpython-312-x86_64-linux-gnu.so",
+    "ogcore.water": "/workspace/audit-v0.9.48/compiled-worktree/ogcore/water.cpython-312-x86_64-linux-gnu.so",
+    "petroworkbench.curve_ops": "/workspace/audit-v0.9.48/compiled-worktree/petroworkbench/curve_ops.cpython-312-x86_64-linux-gnu.so",
+    "ogcore.pay": "/workspace/audit-v0.9.48/compiled-worktree/ogcore/pay.cpython-312-x86_64-linux-gnu.so",
+    "ogcore.batch_zones": "/workspace/audit-v0.9.48/compiled-worktree/ogcore/batch_zones.cpython-312-x86_64-linux-gnu.so",
+    "ogcore.gridders": "/workspace/audit-v0.9.48/compiled-worktree/ogcore/gridders.cpython-312-x86_64-linux-gnu.so",
+    "ogcore.gridding": "/workspace/audit-v0.9.48/compiled-worktree/ogcore/gridding.cpython-312-x86_64-linux-gnu.so",
+    "ogcore.mincurv": "/workspace/audit-v0.9.48/compiled-worktree/ogcore/mincurv.cpython-312-x86_64-linux-gnu.so",
+    "ogcore.velocity_model": "/workspace/audit-v0.9.48/compiled-worktree/ogcore/velocity_model.cpython-312-x86_64-linux-gnu.so",
+    "ogvol.engine": "/workspace/audit-v0.9.48/compiled-worktree/ogvol/engine.cpython-312-x86_64-linux-gnu.so"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "_internal/well symbols.WSD": {
+    "failures": [
+      "prohibited: _internal/well symbols.WSD"
+    ],
+    "warnings": []
+  },
+  "_internal/petra_well_symbols.WSD": {
+    "failures": [],
+    "warnings": []
+  },
+  "_internal/tests/fixtures/petra_well_symbols.WSD": {
+    "failures": [],
+    "warnings": [
+      "third-party tests: _internal/tests",
+      "third-party tests: _internal/tests/fixtures",
+      "third-party tests: _internal/tests/fixtures/petra_well_symbols.WSD"
+    ]
+  }
+}

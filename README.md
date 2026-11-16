@@ -1,5 +1,16 @@
 # Software reviews
 
+## O&G Workbench v0.9.48
+
+Read-only pre-release audit against the accepted v0.9.45 baseline: **Clean except for listed material risks; fix identified items first.** Three confirmed feature/release-gate defects and one manual-fault scope risk. No demonstrated Cython numerical blocker. Windows validation remains incomplete.
+
+- [Read the report](audits/v0.9.48/OandG_Workbench_v0.9.48_Audit.md)
+- [Download PDF](https://github.com/kwgeologist/Software-reviews/raw/refs/heads/main/audits/v0.9.48/OandG_Workbench_v0.9.48_Audit.pdf)
+- [Download report and evidence ZIP](https://github.com/kwgeologist/Software-reviews/raw/refs/heads/main/audits/v0.9.48/OandG_Workbench_v0.9.48_Audit_Bundle.zip)
+- [Evidence files](audits/v0.9.48/evidence)
+
+Full source suite: **2,664 passed, 4 failed, 19 skipped**, plus 684 passing subtests. The report explains two archive-without-Git failures and two repeated baseline font/layout assertions. Compiled reference tests: 219 passed / 1 skipped; compiled integration: 88 passed. Separate cohorts overlap. All **899 supplied files remain unchanged**. Only audit deliverables are published; no application source, binaries, licenses, private keys or client projects are included.
+
 ## O&G Workbench v0.9.39
 
 Fresh whole-package read-only audit for private/internal v1.0: **BLOCK v1.0**. Six new confirmed defects: **5 High, 1 Medium**. The previously known A38-P01 dense-label limitation remains **Medium**, separately identified.

@@ -1,0 +1,43 @@
+{
+  "changed": [
+    "CHANGELOG.md",
+    "requirements-dev.txt",
+    "well_symbols.py",
+    ".gitignore",
+    "constraints-build.txt",
+    "Build_Windows_EXE.bat",
+    "release/OwnerTools_LicenseManager.spec",
+    "release/OandG_Workbench.spec",
+    "release/manifest.json",
+    "petroworkbench/project_tree.py",
+    "petroworkbench/app.py",
+    "tools/render_symbol_sheet.py",
+    "tools/help_catalog_source.py",
+    "ogcore/__init__.py",
+    "ogcore/symbol_catalog.py",
+    "tests/test_licensing.py",
+    "tests/test_petro_integration.py",
+    "tests/test_release_payload.py",
+    "tests/test_geosteering.py",
+    "tests/test_pdf_packaging.py",
+    "tests/test_well_symbols.py",
+    "tests/test_audit_v095.py",
+    "geosteering/app.py",
+    "geosteering/dialogs.py",
+    "ogcore/help/catalog.json",
+    "ogcore/help/ui_labels.json",
+    "ogcore/help/workflows/geosteering.interpret.md"
+  ],
+  "added": [
+    "tests/fixtures/petra_well_symbols.WSD",
+    "tests/test_cython_build.py",
+    "tests/test_petro_api_search.py",
+    "tests/test_v0948_fixes.py",
+    "tools/release/build_cython.py",
+    "tools/release/check_protected.py",
+    "tools/release/cython_modules.py"
+  ],
+  "removed": [
+    "well symbols.WSD"
+  ]
+}

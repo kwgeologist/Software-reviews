@@ -1,0 +1,758 @@
+# O&G Workbench v0.9.48 — Pre-Release Audit
+
+## Baseline
+
+Audit the current **v0.9.48** code on:
+
+`release/1.0`
+
+Current commit:
+
+`194c11f`
+
+The codebase underwent a substantial audit at **v0.9.45** and returned without critical issues.
+
+Treat **v0.9.45 as the clean baseline**.
+
+The purpose of this audit is primarily to determine whether changes made in **v0.9.46, v0.9.47 and v0.9.48** introduced:
+
+- defects;
+- regressions;
+- build problems;
+- packaging problems;
+- Cython-related behavior changes;
+- release risks;
+- stale assumptions;
+- unintended functionality changes.
+
+Do not perform a broad redesign review of stable v0.9.45 functionality unless a later change touches or interacts with it.
+
+---
+
+# 1. Audit Philosophy
+
+This is a **release-readiness audit**, not a development task.
+
+Prioritize:
+
+1. correctness;
+2. preservation of existing behavior;
+3. scientific equivalence;
+4. build reliability;
+5. packaging reliability;
+6. release integrity.
+
+Do not search for stylistic improvements.
+
+Do not propose refactors merely because another design might be cleaner.
+
+Do not change code unless explicitly instructed after the audit.
+
+---
+
+# 2. Primary Change Areas
+
+Audit the following changes in detail.
+
+## v0.9.46 — Petro Project Tree
+
+Review the PetroWorkbench project-tree changes involving:
+
+- API sorting;
+- vertical scrollbar;
+- API search/filter;
+- API normalization;
+- 10-digit vs 14-digit API matching;
+- partial matching;
+- Ctrl+F;
+- preservation of well identity;
+- filtering by hiding existing rows rather than rebuilding them.
+
+Verify:
+
+- sorting cannot cause the wrong well to load;
+- active-well state is preserved;
+- search cannot trigger curve loading or calculations;
+- clearing the search restores every well;
+- tree rebuilds preserve search correctly;
+- wells with missing APIs behave correctly;
+- duplicate/tied APIs do not corrupt selection identity;
+- 4,000+ wells do not introduce pathological behavior;
+- Ctrl+F is properly scoped to PetroWorkbench.
+
+Look for interactions with:
+
+- project loading;
+- curve changes;
+- well selection;
+- Well Manager links;
+- API normalization elsewhere in the application.
+
+---
+
+# 3. v0.9.47 — Limited Cython Conversion
+
+This is a major audit area.
+
+The Cython pass was deliberately limited to proprietary/core logic.
+
+## Intended Compiled Modules
+
+### Licensing
+- `ogcore.licensing`
+- `ogcore.license_runtime`
+
+### Petrophysics
+- `ogcore.formulas`
+- `ogcore.multimineral`
+- `ogcore.multivariate`
+- `ogcore.core_equations`
+- `ogcore.water`
+- `petroworkbench.curve_ops`
+
+### Pay / Zones
+- `ogcore.pay`
+- `ogcore.batch_zones`
+
+### Gridding / Depth Conversion
+- `ogcore.gridders`
+- `ogcore.gridding`
+- `ogcore.mincurv`
+- `ogcore.velocity_model`
+
+### Volumetrics
+- `ogvol.engine`
+
+Total expected:
+
+**15 modules**
+
+## Cython Audit Requirements
+
+Inspect the Cython conversion itself, not merely the build scripts.
+
+Verify:
+
+- these are exactly the intended 15 modules;
+- no unintended modules are compiled;
+- UI-heavy modules remain normal Python;
+- persistence plumbing remains normal Python unless explicitly intended otherwise;
+- public module names are unchanged;
+- imports remain compatible;
+- function names are unchanged;
+- class names are unchanged;
+- signatures are unchanged;
+- return values are unchanged;
+- exceptions are unchanged;
+- numerical behavior is unchanged;
+- initialization order is unchanged;
+- global state behaves correctly;
+- monkeypatching/test hooks still behave where expected.
+
+Inspect Cython compiler directives for semantic changes.
+
+Pay particular attention to:
+
+- division behavior;
+- integer vs float behavior;
+- overflow behavior;
+- bounds checking assumptions;
+- inferred C types;
+- annotations being interpreted unexpectedly;
+- keyword arguments;
+- `None` handling;
+- mutable defaults;
+- module globals;
+- exception propagation;
+- Python object lifetime/reference behavior.
+
+The stated intent was that annotations **not** become C types and that Python semantics remain intact.
+
+Confirm this from the build configuration.
+
+---
+
+# 4. Scientific Equivalence
+
+For every Cythonized scientific module, determine whether compilation could alter results.
+
+Review especially:
+
+- petrophysical formulas;
+- multimineral calculations;
+- multivariate calculations;
+- water calculations;
+- pay determination;
+- batch-zone calculations;
+- gridding;
+- minimum curvature;
+- velocity/depth conversion;
+- volumetrics.
+
+Compare compiled behavior with source-Python behavior wherever practical.
+
+Look for:
+
+- changed floating-point output;
+- changed NaN handling;
+- changed divide-by-zero behavior;
+- different rounding;
+- different exception paths;
+- changed treatment of missing values;
+- changed array/list behavior.
+
+Any meaningful numerical change introduced by Cython is a **release blocker**.
+
+Do not redesign equations.
+
+---
+
+# 5. Cython Build Infrastructure
+
+Audit:
+
+- `tools/release/cython_modules.py`
+- `tools/release/build_cython.py`
+- `tools/release/check_protected.py`
+- `Build_Windows_EXE.bat`
+- PyInstaller specs;
+- `requirements-dev.txt`;
+- `constraints-build.txt`;
+- `.gitignore`;
+- relevant release/build tests.
+
+Verify:
+
+- compilation occurs before PyInstaller;
+- compiled modules retain their normal import names;
+- generated extensions are picked up correctly;
+- package-relative imports remain valid;
+- hidden imports are complete;
+- required runtime dependencies are included;
+- `.pyd` modules should build correctly on Windows;
+- Linux `.so` validation does not conceal a Windows-specific issue.
+
+Specifically identify any probable Windows `.pyd` problems visible from source or configuration.
+
+Do not treat lack of an actual Windows build as proof of failure; distinguish:
+
+- code/configuration risk;
+- unverified Windows behavior;
+- confirmed defect.
+
+---
+
+# 6. Protected-Source Verification
+
+Audit `check_protected.py` aggressively.
+
+Confirm it really fails if:
+
+- a protected module is missing as a compiled extension;
+- its `.py` version is packaged;
+- its `.pyx` version is packaged;
+- generated `.c` or `.cpp` source is packaged;
+- the module remains in a PyInstaller Python archive;
+- another application bundle accidentally contains the source.
+
+Look for bypasses or false positives.
+
+Verify protected-source checking applies to every appropriate executable/package.
+
+Confirm the release cannot silently fall back to the original Python source while still passing the protection check.
+
+---
+
+# 7. PyInstaller Integration
+
+Audit both:
+
+- `release/OandG_Workbench.spec`
+- `release/OwnerTools_LicenseManager.spec`
+
+and any other affected build configuration.
+
+Check:
+
+- compiled-module dependency inclusion;
+- hidden imports;
+- DLL collection;
+- data files;
+- package paths;
+- module discovery;
+- duplicate Python/compiled copies;
+- stale references;
+- runtime-resource locations.
+
+Look specifically for Linux-success/Windows-failure scenarios.
+
+---
+
+# 8. v0.9.48 — Native Well Symbol Catalog
+
+The Petra `well symbols.WSD` runtime dependency was removed.
+
+Workbench now uses its own built-in catalog.
+
+Audit this carefully.
+
+## Expected Catalog
+
+`well_symbols.BUILTIN_CATALOG`
+
+contains all **29 symbols**, preserving the metadata previously required by the application.
+
+The old WSD supplied only five fields actually used by Workbench:
+
+- code;
+- symbol number;
+- description;
+- color;
+- scale.
+
+Verify:
+
+- all 29 records exist;
+- order is correct where order matters;
+- codes are correct;
+- numbers are correct;
+- descriptions are correct;
+- colors are correct;
+- scales are correct.
+
+Confirm no runtime code still depends on:
+
+`well symbols.WSD`
+
+Search the entire repository for:
+
+- filename references;
+- expected resource paths;
+- release-manifest entries;
+- installer references;
+- tests accidentally masking a runtime dependency.
+
+---
+
+# 9. Well Symbol Behavior
+
+Confirm the v0.9.48 change did **not** alter:
+
+- glyph geometry;
+- symbol rendering;
+- existing stored codes;
+- stored symbol numbers;
+- colors;
+- sizing;
+- unknown-code/legacy behavior;
+- the existing `DH... → DRY` mapping;
+- Well Manager behavior;
+- Map display;
+- saved-project compatibility.
+
+The moved Petra WSD file should exist only as a **test fixture for interoperability**.
+
+Verify:
+
+- `Import WSD...` still functions;
+- `Export WSD...` still functions;
+- the commercial application does not require or ship the Petra catalog.
+
+Do not recommend redesigning the well symbols.
+
+---
+
+# 10. Automatic Geosteering UI Removal
+
+Automatic-geosteering algorithms were **not removed**.
+
+They intentionally remain:
+
+- in source;
+- in the application;
+- in the packaged software.
+
+Only user-facing controls were removed.
+
+The switch is:
+
+`geosteering.app.AUTOMATIC_STEERING_UI = False`
+
+Audit whether this achieves the intended behavior.
+
+## Automatic Functions That Must Have No Normal UI Access
+
+- Auto-steer;
+- automatic segment fitting;
+- automatic fault fitting.
+
+Check every possible entry point:
+
+- toolbar;
+- main menus;
+- interpretation menus;
+- context menus;
+- section right-click menus;
+- fault dialogs;
+- segment dialogs;
+- keyboard shortcuts;
+- toolbar accelerators;
+- help-driven commands;
+- hidden/debug menus;
+- alternate launch paths.
+
+A normal user should not be able to invoke these features through the UI.
+
+---
+
+# 11. Automatic Geosteering Code Must Remain Functional
+
+Verify the underlying functions were **not** deleted, stubbed or materially changed.
+
+Check presence/functionality of:
+
+- `model.auto_steer`
+- `fit_segment`
+- `fit_fault`
+- `fit_local`
+- relevant Steering methods;
+- window handlers;
+- `AutoSteerDialog`;
+- other supporting automatic-fitting logic.
+
+Confirm that setting:
+
+`AUTOMATIC_STEERING_UI = True`
+
+would restore the controls without requiring restoration of deleted algorithms.
+
+The current Geosteering self-test intentionally exercises auto-steer directly.
+
+Verify that this still meaningfully proves the underlying automatic code remains functional.
+
+---
+
+# 12. Manual Geosteering Regression
+
+Verify that removal of automatic controls did not damage manual workflows.
+
+Review:
+
+- type-log comparison;
+- manual segment placement;
+- stretch/squeeze;
+- flip behavior where applicable;
+- manual dip changes;
+- manual fault insertion;
+- manual fault editing;
+- manually entered fault throw;
+- MD;
+- TVD;
+- TVDSS;
+- GR display;
+- TG display;
+- reports;
+- exports.
+
+Pay particular attention to removal of automatic behavior from the fault dialog.
+
+Confirm manually entered throws still produce the intended geometry.
+
+---
+
+# 13. Help System
+
+Audit the help changes related to removal of automatic-geosteering UI.
+
+Verify:
+
+- no user-facing help tells customers to click removed controls;
+- menu-label indexes are consistent;
+- workflows remain internally consistent;
+- automatic code can remain documented internally if appropriate, but normal commercial help must not advertise unavailable controls;
+- no broken help links or labels were introduced.
+
+---
+
+# 14. Licensing Test Fix
+
+v0.9.47 corrected a date-dependent licensing test that previously failed after its fixed date passed.
+
+Audit the fix.
+
+Verify:
+
+- the test now isolates its license folder correctly;
+- the fix changes only test isolation;
+- actual licensing behavior was not weakened;
+- clock rollback behavior remains intact;
+- current-date writes cannot contaminate unrelated tests;
+- licensing tests are deterministic.
+
+Do not alter legitimate licensing behavior.
+
+---
+
+# 15. Release Manifest
+
+Audit the current release manifest.
+
+Check specifically:
+
+- Petra WSD no longer required;
+- Petra WSD cannot enter a commercial payload;
+- required files remain complete;
+- no Cython build artifacts are inadvertently included;
+- no required runtime resources were removed;
+- no stale v0.9.45/v0.9.46/v0.9.47 expectations remain.
+
+---
+
+# 16. Versioning / Changelog
+
+Verify:
+
+- application version is exactly **v0.9.48**;
+- version references are consistent;
+- no executable/build metadata still reports an earlier version;
+- CHANGELOG accurately reflects v0.9.46–v0.9.48 changes;
+- nothing has incorrectly advanced to v1.0.
+
+---
+
+# 17. Tests
+
+Review tests added or changed since v0.9.45.
+
+Pay particular attention to:
+
+- `tests/test_petro_api_search.py`
+- `tests/test_cython_build.py`
+- `tests/test_v0948_fixes.py`
+- modified licensing tests;
+- modified Petro integration tests;
+- packaging/release tests;
+- Geosteering tests.
+
+Do not merely note that they pass.
+
+Look for tests that:
+
+- assert the implementation rather than behavior;
+- cannot fail when the feature is broken;
+- use the wrong file/path;
+- accidentally rely on source rather than packaged behavior;
+- mask a missing runtime dependency;
+- falsely prove compiled equivalence;
+- skip meaningful Windows behavior.
+
+Flag tests that appear to pass for the wrong reason.
+
+---
+
+# 18. Full Regression Suite
+
+Run the complete test suite.
+
+Expected current baseline:
+
+- approximately **2,683 passed**
+- **4 skipped**
+- **0 failed**
+
+A small count difference is acceptable only if explained by the actual repository state.
+
+Any unexplained failure is material.
+
+---
+
+# 19. Application Self-Tests
+
+Run and inspect:
+
+- Geo;
+- Seismic;
+- Petro;
+- Geosteering.
+
+Expected licensed behavior:
+
+`exit 0`
+
+Expected unlicensed behavior:
+
+`exit 3`
+
+Verify the tests exercise meaningful application paths rather than only startup.
+
+Geosteering should still directly exercise automatic steering internally even though its UI controls are hidden.
+
+---
+
+# 20. Windows Release Risk
+
+An actual Windows Cython/PyInstaller build has **not yet been completed** because GitHub-hosted Windows Actions did not obtain a runner.
+
+Therefore:
+
+Do not claim Windows validation is complete.
+
+Instead identify:
+
+- probable Windows-specific issues visible from code;
+- C compiler assumptions;
+- `.pyd` naming/discovery problems;
+- DLL risks;
+- path quoting problems;
+- batch-script problems;
+- PyInstaller Windows issues;
+- architecture assumptions;
+- Visual Studio Build Tools assumptions.
+
+Clearly separate:
+
+**Confirmed defect**
+
+from
+
+**Must be validated on Windows**
+
+---
+
+# 21. Release-Critical Cross-Checks
+
+Trace interactions across the three post-v0.9.45 changes.
+
+Examples:
+
+- Petro search and compiled Petro calculation modules;
+- Cython modules and PyInstaller manifests;
+- symbol catalog and release staging;
+- hidden geosteering controls and help/menu tests;
+- automatic geosteering code and packaging;
+- licensing compiled modules and License Manager build;
+- release checks and moved test fixtures.
+
+Look for failures caused by interactions rather than by one change in isolation.
+
+---
+
+# 22. Scope Protection
+
+Do not:
+
+- redesign UI;
+- add features;
+- refactor stable code;
+- optimize algorithms;
+- rewrite scientific methods;
+- alter numerical constants;
+- remove automatic geosteering code;
+- restore automatic geosteering controls;
+- redesign symbols;
+- alter project/database formats;
+- change Cython scope merely because more code could be compiled;
+- perform unrelated cleanup.
+
+An unused helper such as `well_symbols.resource_path` is not a release defect merely because it is currently unused.
+
+Do not recommend cleanup unless it presents an actual risk.
+
+---
+
+# 23. Audit Classification
+
+Classify every finding into one of these categories.
+
+## A. Release Blocker
+A defect that should prevent v1.0 release.
+
+Examples:
+
+- wrong scientific result;
+- broken project compatibility;
+- wrong well selected;
+- failed licensing enforcement;
+- protected source shipped;
+- required runtime file missing;
+- automatic geosteering still user-accessible;
+- build cannot succeed.
+
+## B. Material Pre-Release Defect / Risk
+Should probably be corrected before v1.0, but does not necessarily invalidate the application.
+
+## C. Windows Validation Item
+Not proven defective, but must be verified during the Windows build.
+
+## D. Post-v1.0 / No Action
+Valid observation that does not justify destabilizing the release.
+
+Be conservative about calling something a blocker.
+
+---
+
+# 24. Required Output
+
+Do **not** modify code.
+
+Return a concise audit report with exactly these sections:
+
+## 1. Executive Result
+State one of:
+
+- **Clean for Windows validation**
+- **Clean except for listed material risks**
+- **Not ready for Windows validation**
+
+## 2. Release Blockers
+For each:
+
+- file/module;
+- exact defect;
+- evidence;
+- impact;
+- smallest safe correction.
+
+If none:
+
+**None found.**
+
+## 3. Material Pre-Release Defects / Risks
+Same format.
+
+## 4. Windows Validation Items
+List only items that cannot be resolved without the actual Windows build.
+
+## 5. No-Action Observations
+Only meaningful observations. Do not pad this section with stylistic comments.
+
+## 6. Cython Audit Result
+Explicitly state:
+
+- module selection correct or incorrect;
+- Python semantic preservation assessment;
+- scientific equivalence assessment;
+- protection-check assessment;
+- PyInstaller integration assessment;
+- Windows-specific remaining uncertainty.
+
+## 7. v0.9.46–v0.9.48 Regression Result
+Explicitly state whether the audit found evidence that these iterations regressed the clean v0.9.45 baseline.
+
+## 8. Test Results
+Report:
+
+- targeted tests;
+- full suite;
+- self-tests;
+- any skips/failures;
+- whether any tests appear misleading.
+
+## 9. Recommendation
+Finish with one clear recommendation:
+
+- proceed to Windows build;
+- fix identified items first;
+- or stop release because of a blocker.
+
+Do not make code changes unless separately instructed.

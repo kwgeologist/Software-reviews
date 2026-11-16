@@ -1,0 +1,15 @@
+{
+  "version": "0.9.48",
+  "catalog_count": 29,
+  "metadata_order_equal": true,
+  "fixture_identical": true,
+  "protected_source_changed": [],
+  "symbol_definitions_changed": [
+    "load_wsd"
+  ],
+  "symbol_definitions_removed": [
+    "_find_wsd"
+  ],
+  "generated_help_has_removed_labels": false,
+  "generated_help_version_correct": true
+}

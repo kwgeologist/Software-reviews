@@ -1,0 +1,188 @@
+<!DOCTYPE html><html lang='en'><head><meta charset='utf-8'>
+<title>O&amp;G Workbench 0.9.48 - Help</title>
+<style>body{font-family:Segoe UI,Arial,sans-serif;max-width:52em;margin:2em auto;color:#202428;line-height:1.45}h1{color:#1c2530}h2{border-bottom:2px solid #d4a73a;padding-bottom:.2em;margin-top:2em}h3{margin-bottom:.3em}.where{color:#5a6570}li{margin:.2em 0}nav a{display:block}</style></head><body>
+<h1>O&amp;G Workbench 0.9.48 - Help</h1>
+<p>Reviewed workflows for every Workbench program. In the programs, Help ▸ Workbench Assistant… finds them from a question in ordinary English.</p><nav>
+<a href='#geo'>Geo Workbench and the Well Manager</a>
+<a href='#map'>The Map</a>
+<a href='#raster'>Raster logs and the digitizer</a>
+<a href='#petro'>Petro Workbench</a>
+<a href='#seismic'>Seismic Workbench</a>
+<a href='#correlation'>Correlation Workbench</a>
+<a href='#cross_section'>Cross Section</a>
+<a href='#geosteering'>Geosteering Workbench</a>
+</nav>
+<h2 id='geo'>Geo Workbench and the Well Manager</h2>
+<h3 id='wm.tops'>Add or edit formation tops</h3><p class='where'>Where: Geo Workbench ▸ Well Manager ▸ FM Tops tab</p>
+<ol><li>Select the well and open the FM Tops tab. Sources: … above the table opens a checklist (Select All, Clear All, a box per source) that stays open while you tick; the table shows the sources ticked.</li><li>Choose the Formation (or type a new name), type one of MD, TVD or TVDSS (the others follow from the survey and KB), and the Source.</li><li>Press Add for a new pick, or select a pick and Update. The table also takes typing and pasting from Excel.</li></ol>
+<p><b>Notes</b></p><ul><li>A well may hold several sources&#x27; picks of the same top; new picks use the project&#x27;s active source unless another is typed.</li></ul>
+<h3 id='wm.symbols'>Change well symbols and status</h3><p class='where'>Where: Geo Workbench: Wells ▸ Well Symbols…; one well: Well tab ▸ Well Symbol ▸ Choose…</p>
+<ol><li>For one well: on the Well tab press Choose… beside Well Symbol, pick the symbol and Save well.</li><li>Wells ▸ Well Symbols… shows the symbol catalogue.</li></ol>
+<h3 id='geo.project.create_open'>Create or open a project</h3><p class='where'>Where: Geo Workbench: File ▸ New Project… / File ▸ Open Project… (File ▸ Recent Projects)</p>
+<ol><li>In Geo Workbench choose File ▸ New Project… to make a new project, or File ▸ Open Project… to open one (File ▸ Recent Projects lists those opened lately).</li><li>Choose the folder and name. A project is one .ogwdb file that every Workbench program shares.</li><li>Set the project&#x27;s coordinate system with Project ▸ Coordinate System… before importing located data.</li></ol>
+<p><b>If it does not work</b></p><ul><li>New and Open are refused after the license expires: save and close still work; install a license or use Recovery Access to look at a project read-only.</li></ul>
+<h3 id='wm.edit_well'>Edit a well&#x27;s header</h3><p class='where'>Where: Geo Workbench ▸ Well Manager ▸ Well tab</p>
+<ol><li>Select the well in Geo Workbench&#x27;s well list.</li><li>On the Well tab change the header fields.</li><li>Press Save well.</li></ol>
+<p><b>If it does not work</b></p><ul><li>Edits are refused after the license expires (the project is then read-only for new work).</li></ul>
+<h3 id='wm.production'>Enter or import production</h3><p class='where'>Where: Well Manager ▸ Production tab; many wells: Project ▸ Import Production (many wells)…</p>
+<ol><li>Select the well and open the Production tab.</li><li>Type a month&#x27;s volumes in the table (the blank row at the bottom adds a month), or Add month, or paste from Excel. Import… brings in a file for this well.</li><li>For many wells use Project ▸ Import Production (many wells)… (matched by API/UWI).</li></ol>
+<p><b>Notes</b></p><ul><li>Oil and water in bbl, gas in Mcf, BOE with 6 Mcf = 1 boe.</li></ul>
+<h3 id='geo.import.ihs'>Import IHS 297 well data or IHS 298 production</h3><p class='where'>Where: Geo Workbench: Project ▸ Import IHS 297… / Project ▸ Import IHS 298 Production…</p>
+<p><b>Before you start</b></p><ul>
+<li>A project is open.</li>
+</ul>
+<ol><li>Open the project in Geo Workbench.</li><li>For well headers, tops and tests choose Project ▸ Import IHS 297… and pick the 297 file (.97f, .297 or .txt).</li><li>For monthly production choose Project ▸ Import IHS 298 Production….</li><li>Review the preview and import.</li></ol>
+<h3 id='geo.import.ppf'>Import a Petra project file (PPF)</h3><p class='where'>Where: Geo Workbench: Project ▸ Import Petra Project File (.PPF)…</p>
+<p><b>Before you start</b></p><ul>
+<li>A project is open.</li>
+</ul>
+<ol><li>Open (or create) the project in Geo Workbench.</li><li>Choose Project ▸ Import Petra Project File (.PPF)… and pick the .ppf file. Workbench scans it first.</li><li>In the preview, check the record summary and diagnostics; choose the latitude/longitude datum if the file does not state it, and how Existing wells are treated.</li><li>Leave &quot;Load digital log curves (written as LAS files)&quot; ticked to bring in the logs, then import. Progress shows well by well; Cancel writes nothing.</li></ol>
+<p><b>If it does not work</b></p><ul><li>Nothing can be imported when the file does not state its depth unit (DEFUNITS).</li><li>A file without a stated datum needs one chosen in the preview, or nothing is imported.</li><li>Import is refused after the license expires.</li></ul>
+<h3 id='geo.import.wells_csv'>Import wells from a CSV or Excel file</h3><p class='where'>Where: Geo Workbench: Project ▸ Import Wells/Data from CSV or Excel…</p>
+<p><b>Before you start</b></p><ul>
+<li>A project is open.</li>
+</ul>
+<ol><li>Open the project in Geo Workbench.</li><li>Choose Project ▸ Import Wells/Data from CSV or Excel… and pick the file.</li><li>Tell Workbench what each column is (well name, API/UWI, coordinates, tops and so on); columns left as Ignore are not imported.</li><li>Review the preview, choose how existing wells are treated, and import.</li></ol>
+<p><b>If it does not work</b></p><ul><li>Wells without coordinates import but do not show on the Map until a location is given.</li><li>Latitude/longitude need the project&#x27;s coordinate system (Project ▸ Coordinate System…) to be placed in map X/Y.</li></ul>
+<h3 id='wm.directional'>Load or edit a directional survey</h3><p class='where'>Where: Well Manager ▸ Location tab ▸ Directional Survey Manager…; many wells: Project ▸ Bulk Load Directionals…</p>
+<ol><li>Select the well, open the Location tab and press Directional Survey Manager….</li><li>Import file… (CSV, text or Excel with MD, Inc, Azi or TVD, N/S, E/W), Paste…, or type a Manual survey point.</li><li>For many wells at once use Project ▸ Bulk Load Directionals….</li></ol>
+<h3 id='wm.tests'>Record IP and formation tests</h3><p class='where'>Where: Geo Workbench ▸ Well Manager ▸ Tests tab</p>
+<ol><li>Select the well and open the Tests tab; choose IP Tests or FM Tests at the top.</li><li>Press Add (or Duplicate), fill in the fields, treatments (IP) or recoveries (FM).</li><li>Press Save (Cancel puts the saved values back). Mark Preferred marks the well&#x27;s preferred test.</li></ol>
+<h3 id='wm.treatments'>See a well&#x27;s treatments (linked to a test or standalone)</h3><p class='where'>Where: Geo Workbench ▸ Well Manager ▸ Treatments tab</p>
+<ol><li>Select the well and open the Treatments tab: every treatment of the well, by depth.</li><li>Linked test names the IP test a treatment was done for; &quot;standalone&quot; means it belongs to the well alone (for example a Petra TREAT on no IP test&#x27;s interval).</li><li>Treatments of a test are edited with the test on the Tests tab.</li></ol>
+<p><b>Notes</b></p><ul><li>A Petra PPF import keeps every treatment: linked to the IP test on its interval, else standalone. Re-importing the file never duplicates them, and nothing is deleted because a file lacks it.</li></ul>
+<h3 id='wm.spreadsheet'>Work in the Well Spreadsheet</h3><p class='where'>Where: Geo Workbench: Wells ▸ Well Spreadsheet… (or Spreadsheet… button)</p>
+<ol><li>Choose Wells ▸ Well Spreadsheet….</li><li>Pick the well set (the list, the working selection, every well, a saved list...) and the columns: header, tops (MD, TVD, TVDSS), zone values (PhiH...), well values, production totals.</li><li>It reads the project when filled: it is a view of the data, not a copy.</li></ol>
+<h2 id='map'>The Map</h2>
+<h3 id='map.shapefile.add'>Add a shapefile to the Map</h3><p class='where'>Where: Map ▸ Layers tab ▸ Functions ▾ ▸ Add Shapefile…</p>
+<p><b>Before you start</b></p><ul>
+<li>A project is open and the Map is open.</li>
+</ul>
+<ol><li>Open the Map (Geo Workbench: Project ▸ Map).</li><li>On the Layers tab open Functions ▾ and choose Add Shapefile…, then pick one or more .shp files.</li><li>For each file choose Create New Layer (or Append to Existing Layer to add it to a layer of the same geometry), then OK.</li></ol>
+<p><b>If it does not work</b></p><ul><li>Only layers of the same geometry (point, line or polygon) are offered for Append.</li><li>A shapefile in another coordinate system needs its .prj and the project&#x27;s coordinate system set.</li></ul>
+<h3 id='map.shapefile.append'>Append another shapefile to an existing layer</h3><p class='where'>Where: Map ▸ Layers tab ▸ Functions ▾ ▸ Add Shapefile… ▸ Append to Existing Layer</p>
+<p><b>Before you start</b></p><ul>
+<li>The existing layer is in the project.</li>
+</ul>
+<ol><li>Open the Map and go to the Layers tab.</li><li>Open Functions ▾ and choose Add Shapefile…, then pick the new file (for example the next county&#x27;s abstracts).</li><li>In the Add Map Layer dialog choose Append to Existing Layer and select the layer (for example Abstracts) in the list.</li><li>OK: the features join that layer and take its style; the layer&#x27;s sources list both files.</li></ol>
+<p><b>Constraints</b></p><ul><li>Only layers with the file&#x27;s geometry are listed: points into a point layer, lines into a line layer, polygons into a polygon layer.</li></ul>
+<p><b>If it does not work</b></p><ul><li>The layer you want is not listed: its geometry differs from the file&#x27;s.</li></ul>
+<h3 id='map.grid.display'>Change a grid&#x27;s display (Grid Display)</h3><p class='where'>Where: Map ▸ Grid Display… (also Grids tab ▸ Functions ▾ ▸ Display…)</p>
+<p><b>Before you start</b></p><ul>
+<li>The project has a grid.</li>
+</ul>
+<ol><li>Open the Map. Select the grid on the Grids tab (or make it the Active grid).</li><li>Choose Map ▸ Grid Display… on the toolbar (the same dialog as Grids tab ▸ Functions ▾ ▸ Display…).</li><li>Set Color fill (Fill with color, Banded, Color bar, Reverse, Show Color Bar, Color range From data or Manual, Opacity), Contour lines and Labels.</li><li>Show Color Bar (also Map ▸ Show Color Bar) shows or hides the bar beside the map; a saved color bar is labelled at its stops (0, 0.2 … 6.0).</li><li>Apply to see it; OK keeps it with the project; Cancel puts the display back.</li></ol>
+<p><b>If it does not work</b></p><ul><li>Map ▸ Grid Display… is greyed out: the project has no grid yet.</li><li>Several grids are shown and none is selected or Active: Workbench asks which one.</li></ul>
+<h3 id='map.digitize.active_layer'>Digitize into the active layer</h3><p class='where'>Where: Map: Layers tab ▸ Functions ▾ ▸ Set Active, then toolbar ▸ Drawing</p>
+<ol><li>On the Layers tab select the layer to draw into (a drawing layer, or a map layer), then Functions ▾ ▸ Set Active. Functions ▾ ▸ New Layer… makes a new drawing layer, Active at once.</li><li>On the toolbar open Drawing and choose Polygon, Fault Polygon, Line, Contour or Text.</li><li>Click to place points (hold and drag to draw freehand); double-click, Enter or Finish ends the shape.</li><li>Drawing ▸ Undo / Redo step back and forward.</li></ol>
+<p><b>Constraints</b></p><ul><li>A map (shapefile) layer made Active takes drawings of its own geometry only.</li></ul>
+<p><b>If it does not work</b></p><ul><li>With no Active layer Workbench asks which layer the drawing goes into.</li></ul>
+<h3 id='map.colorbar.edit'>Edit or save a color bar</h3><p class='where'>Where: Map ▸ Grids tab ▸ Functions ▾ ▸ Color Bars… (or Edit color bars… in Grid Display)</p>
+<ol><li>Open Functions ▾ ▸ Color Bars… on the Grids tab (or Edit color bars… in the Grid Display dialog).</li><li>Pick a bar on the left (New starts one). Set Min / Max (From data or Manual).</li><li>Change stops: select one, Color… to recolour, Add stop…, Delete stop, Reverse, Even spacing; Bands (0 = smooth).</li><li>Save (or Save as…) keeps it in the shared library: Map, Geosteer, Petro, Cross Section and Correlation all offer it. Close without saving leaves the saved bar as it was.</li></ol>
+<h3 id='map.grid.export'>Export a grid (ZMAP, XYZ or contour shapefile)</h3><p class='where'>Where: Map ▸ Grids tab ▸ Functions ▾ ▸ Export…</p>
+<ol><li>Select the grid on the Grids tab and choose Functions ▾ ▸ Export….</li><li>Choose the format: ZMAP+ grid, Grid nodes as XYZ text, Contour lines as a shapefile, or Data points as XYZ text.</li><li>Choose map X, Y or latitude/longitude (WGS 84), then Export… and the file name.</li></ol>
+<p><b>Constraints</b></p><ul><li>ZMAP+ grids are always in map X, Y.</li><li>Latitude, longitude needs the project coordinate system set in Geo.</li></ul>
+<h3 id='map.colorbar.generate'>Generate color-bar stops every Step (Min / Max / Step)</h3><p class='where'>Where: Color Bars editor: Min / Max / Step ▸ Generate Stops</p>
+<ol><li>Open the Color Bars editor (Grids tab ▸ Functions ▾ ▸ Color Bars…, or Edit color bars… in Grid Display).</li><li>Choose Manual and type Min and Max (for example 0 and 6).</li><li>Type the Step (for example 0.2) and press Generate Stops (or Enter in Step): 0 to 6 by 0.2 makes 31 stops.</li><li>The stops take the bar&#x27;s own colours along its length. Save to keep it; Close leaves the saved bar unchanged.</li></ol>
+<p><b>Constraints</b></p><ul><li>Step must be above zero and Max above Min; at most 1000 stops.</li><li>When the Step does not reach Max exactly, Max is added as the last stop (0 to 5.1 by 0.2 ends 5.0, 5.1).</li></ul>
+<h3 id='map.grid.import'>Import a grid (Petra, ZMAP or XYZ)</h3><p class='where'>Where: Map ▸ Grids tab ▸ Functions ▾ ▸ Import Petra Grid… / Import ZMAP… / Import XYZ…</p>
+<ol><li>Open the Map and go to the Grids tab.</li><li>Open Functions ▾ and choose Import Petra Grid…, Import ZMAP… or Import XYZ….</li><li>Pick the file; the grid is added to the project and listed on the Grids tab.</li><li>Use Map ▸ Grid Display… (or Functions ▾ ▸ Display…) to set its colours and contours.</li></ol>
+<p><b>Notes</b></p><ul><li>An imported grid keeps its values as read: Regrid does not apply to it.</li></ul>
+<h3 id='map.grid.new'>Make a grid (gridding project data)</h3><p class='where'>Where: Map ▸ Grids tab ▸ Functions ▾ ▸ New Grid…</p>
+<ol><li>Open the Map and go to the Grids tab.</li><li>Open Functions ▾ and choose New Grid….</li><li>Choose the Data (a formation top, a well value, a zone value, an XYZ file...), the wells and the Grid name.</li><li>Set the gridding method, cell size, area, honoring and faults as needed, then Grid. The grid is made in the background (Cancel gridding stops it).</li></ol>
+<h3 id='map.isopach'>Make an isopach (thickness) map</h3><p class='where'>Where: Map ▸ Grids tab ▸ Functions ▾ ▸ Isopach / Thickness… (also Project ▸ Batch Calculations…, Isopachs tab)</p>
+<ol><li>Open the Map and choose Grids tab ▸ Functions ▾ ▸ Isopach / Thickness….</li><li>Formation tops tab: choose the upper and lower tops (and Picks from), then Calculate: thickness = lower minus upper in every well with both picks.</li><li>Keep the result: Save as well attribute or Save as zone attribute, Grid on the map, or Export XYZ….</li><li>For two surfaces use the Seismic horizons / grids tab, then Save grid and show on the map.</li></ol>
+<p><b>Constraints</b></p><ul><li>A time surface is never subtracted from a depth surface.</li></ul>
+<h3 id='map.bubble'>Post bubbles (Bubble Map), for example PhiH</h3><p class='where'>Where: Map toolbar ▸ Bubble Map…</p>
+<ol><li>Make sure the value exists: a Petro pay flag on a zone of a project well is saved to Geo as zone values (&quot;&lt;pay name&gt; phi-h&quot;, net, N:G...); Project ▸ Batch Calculations… can also make PhiH for many wells.</li><li>Open the Map and press Bubble Map… on the toolbar.</li><li>Add a bubble set: choose the Value (for example &quot;Zone value: &lt;zone&gt; — &lt;pay&gt; phi-h&quot;), Size (Constant or Scaled to a range), Range and Color.</li><li>Tick Show the bubble map and press Apply; it is kept with the project.</li></ol>
+<h3 id='map.grid.contours'>Set grid contours (interval, labels, smoothing)</h3><p class='where'>Where: Map ▸ Grid Display… ▸ Contour lines / Labels</p>
+<ol><li>Open Map ▸ Grid Display… for the grid (or Grids tab ▸ Functions ▾ ▸ Display…).</li><li>Under Contour lines tick Show contours; set Contour from / to, Minor interval and Major interval (blank: automatic), line widths and Color.</li><li>Grid smoothing smooths the surface only for contouring (the grid is not changed); Contour line smoothing draws smoother lines.</li><li>Under Labels tick Label contours and set the Label interval, Size and Decimals.</li><li>Apply, then OK to keep it.</li></ol>
+<h3 id='map.coverage'>Show which wells have which data (Attribute Map)</h3><p class='where'>Where: Map toolbar ▸ Attribute Map…</p>
+<ol><li>Open the Map and press Attribute Map… on the toolbar.</li><li>Add attributes (LAS, raster, core, directional survey, production...) with Add to the map; order them with ▲ ▼.</li><li>Tick Show the Attribute Map, set the Ring size and Legend, then Apply.</li></ol>
+<h2 id='raster'>Raster logs and the digitizer</h2>
+<h3 id='raster.digitize'>Digitize a curve from a raster log</h3><p class='where'>Where: Raster tab ▸ Digitize… (on a registered raster)</p>
+<ol><li>Select a registered raster and press Digitize….</li><li>New curve…: mnemonic, type, units, the values at the track&#x27;s edges, wrapping and sampling.</li><li>Left edge / Right edge: click each edge of the curve&#x27;s track.</li><li>Point clicks along the curve; Manual Trace draws it; Auto Trace follows it from one click.</li><li>Edit: drag nodes, click the line to add one, select and Delete. Save curve to well writes a LAS curve into the well.</li></ol>
+<h3 id='raster.import'>Import a raster log (image or PDF)</h3><p class='where'>Where: Geo Workbench ▸ Well Manager ▸ Raster tab ▸ Add raster image… / Import PDF log… / Import Petra rasters (.lic)…</p>
+<ol><li>Select the well and open the Raster tab.</li><li>Add raster image… (TIFF, PNG or JPEG), Import PDF log… (pages joined into one image) or Import Petra rasters (.lic)….</li><li>Then register it to depth with Calibrate….</li></ol>
+<h3 id='raster.register'>Register a raster log to depth (depth ties, edges)</h3><p class='where'>Where: Raster tab ▸ Calibrate… (the registration window)</p>
+<ol><li>Select the raster and press Calibrate… (or double-click it).</li><li>Click a depth line you can read, type its depth, Enter; do the same for a second one: depth lines appear every interval.</li><li>Where the scan has stretched, click the log&#x27;s line and accept or type the depth: each is a red hard line (drag to move, Delete to remove).</li><li>The edges mode sets the left and right limits of the useful width. Auto register can propose ties for review.</li></ol>
+<h3 id='raster.repair'>Repair a bad trace segment</h3><p class='where'>Where: Digitizer: Edit mode and a node&#x27;s right-click menu</p>
+<ol><li>In Edit mode drag a box (or Shift-click) over the bad nodes and press Delete.</li><li>Trace that stretch again with Point, Manual Trace or Auto Trace; near the end of a segment it carries on.</li><li>Right-click a node for: Break the curve after this node, Join this segment to the next, Wrap to the next / previous scale, Smooth selected segment, Delete this whole segment.</li><li>Ctrl+Z undoes, Ctrl+Y redoes.</li></ol>
+<h2 id='petro'>Petro Workbench</h2>
+<h3 id='petro.add_wells'>Add more wells to a Petro project</h3><p class='where'>Where: Petro Workbench: File ▸ Add new well from LAS… / Add multiple wells from LAS…</p>
+<ol><li>Choose File ▸ Add new well from LAS… for one well, or File ▸ Add multiple wells from LAS… for several.</li><li>Pick the LAS files; each becomes a well in the project tree (Activate Well switches between them).</li></ol>
+<h3 id='petro.vsh'>Calculate shale volume (Vsh)</h3><p class='where'>Where: Petro Workbench toolbar ▸ Equations</p>
+<ol><li>Press Equations on the toolbar.</li><li>Choose a built-in: Linear GR shale volume, Larionov Vsh — Tertiary rocks / Older rocks, Clavier Vsh or Stieber Vsh; edit GR_CLEAN and GR_SHALE (and curve names) in the text.</li><li>Pick the Calculation interval, Run Preview, check the curve on the logs, then Accept… to keep it (Discard drops it).</li></ol>
+<h3 id='petro.sw'>Calculate water saturation (Archie, Simandoux, Dual Water, Waxman-Smits)</h3><p class='where'>Where: Petro Workbench toolbar ▸ Equations</p>
+<ol><li>Press Equations on the toolbar.</li><li>Choose Archie water saturation, Indonesian water saturation, Simandoux water saturation, Dual Water saturation (N=2) or Waxman-Smits saturation (N=2).</li><li>Edit the constants (A, M, N, RW, RSH, RWB, SWB, B, QV) and curve names in the text; porosity and Vsh are used as stored (write PHIE / 100 for a curve in percent).</li><li>Run Preview, check, then Accept….</li></ol>
+<p><b>Constraints</b></p><ul><li>Every input curve must be on one sample grid (see the common-depth requirement).</li></ul>
+<h3 id='petro.tracks'>Change the curve display (Track Manager)</h3><p class='where'>Where: Petro Workbench toolbar ▸ Track Manager</p>
+<ol><li>Press Track Manager on the toolbar.</li><li>Choose a track, select curves under Available curves and Add →.</li><li>Select an assigned curve to set Min / Max, Reverse, Color, Thickness and scale grid, then Save curve display and scale grid. Tick the box beside a curve to hide or show it.</li></ol>
+<h3 id='petro.payflags'>Define pay flags (cut-offs) and their PhiH</h3><p class='where'>Where: Petro Workbench toolbar ▸ Interpretation ▸ Pay Flags tab</p>
+<ol><li>Define a zone first: Interpretation ▸ Zones tab (Add zone).</li><li>On the Pay Flags tab give a name, choose the Zone and the output curve, and type the cut-offs (one per line, for example PHIE &gt;= 0.08).</li><li>Add &amp; Generate makes the 0/1 flag curve and shows gross, net, N:G, average porosity and Sw, and phi-h.</li><li>In a project well the summary is saved to Geo as zone values (&quot;&lt;pay name&gt; phi-h&quot; ...) for maps and bubbles.</li></ol>
+<h3 id='petro.curve_editor'>Edit curves (Curve Editor)</h3><p class='where'>Where: Petro Workbench toolbar ▸ Curve Editor</p>
+<ol><li>Press Curve Editor on the toolbar.</li><li>Choose the source curve and the operation (resample, shift, smooth...), set its parameters and Preview Edit.</li><li>Accept Edit keeps it; Discard drops it. Duplicate, Rename and Delete manage curves.</li></ol>
+<h3 id='petro.load_las'>Load LAS logs into Petro</h3><p class='where'>Where: Petro Workbench: File ▸ Start new project from LAS… / Add LAS run to active well…; project wells: Geo ▸ Project ▸ Open Petro Workbench</p>
+<ol><li>Project wells: in Geo choose Project ▸ Open Petro Workbench; Petro opens the project&#x27;s wells and their LAS.</li><li>Standalone: File ▸ Start new project from LAS… and pick the files.</li><li>To add another logging run to the active well: File ▸ Add LAS run to active well….</li></ol>
+<h3 id='petro.crossplot'>Make crossplots and histograms</h3><p class='where'>Where: Petro Workbench toolbar ▸ Interpretation ▸ Crossplots / Histograms…</p>
+<ol><li>Press Interpretation on the toolbar, then Crossplots / Histograms….</li><li>Choose the curves, Plot mode, bins, axis ranges and colours; the Pickett Plot box draws Sw lines.</li></ol>
+<p><b>Notes</b></p><ul><li>Statistics on the toolbar gives curve and core statistics over an interval.</li></ul>
+<h3 id='petro.core'>Overlay core data on the logs</h3><p class='where'>Where: Petro Workbench toolbar ▸ Core / Perf ▸ Core Dataset Manager… / Import Core Dataset CSV…</p>
+<ol><li>Press Core / Perf on the toolbar.</li><li>Import Core Dataset CSV… brings measurements in; Core Dataset Manager… sets each dataset&#x27;s track, scale, marker and colour.</li><li>Perforations and core intervals are posted as bands from the same window.</li></ol>
+<h3 id='petro.common_depth'>Why a curve cannot be calculated (curves on different sample grids)</h3><p class='where'>Where: Petro Workbench: Equations (the check before calculating); fix with Curve Editor ▸ Resample</p>
+<ol><li>Petro calculates only when every input curve is on one sample grid (same step and depths).</li><li>When they differ it says which curves and offers to resample: the Curve Editor opens on Resample with the target grid filled in.</li><li>Accept the resampled curve, then run the equation again.</li></ol>
+<p><b>If it does not work</b></p><ul><li>An input curve is missing: map the mnemonic to a loaded curve, or load it.</li><li>A curve stored in percent used as a fraction: write PHIE / 100.</li><li>After the license expires new calculations are refused (saving still works).</li></ul>
+<h2 id='seismic'>Seismic Workbench</h2>
+<h3 id='seismic.mistie'>Analyze and correct misties</h3><p class='where'>Where: Seismic Workbench: right-click a tie ▸ Analyze Mistie…; Interpretation ▸ Mistie corrections…</p>
+<ol><li>At a tie, right-click and choose Analyze Mistie…: choose what to compare; nothing changes.</li><li>Store a correction from the analysis, then apply it in Interpretation ▸ Mistie corrections….</li></ol>
+<h3 id='seismic.attributes'>Compute seismic attributes</h3><p class='where'>Where: Seismic Workbench: Interpretation ▸ Seismic Attributes… (Window ▸ New Seismic Attributes window)</p>
+<ol><li>Choose Interpretation ▸ Seismic Attributes….</li><li>Pick the attribute and its settings and view it in its window.</li></ol>
+<h3 id='seismic.time_depth'>Convert time to depth</h3><p class='where'>Where: Seismic Workbench: Interpretation ▸ Time-Depth Models… / Convert Time to Depth…</p>
+<ol><li>Interpretation ▸ Time-Depth Models… sets up the models (wells&#x27; time-depth data come from Geo&#x27;s Time–Depth tab).</li><li>Interpretation ▸ Convert Time to Depth… converts horizons with a chosen model.</li></ol>
+<h3 id='seismic.picks_io'>Export or import horizon and fault picks</h3><p class='where'>Where: Seismic Workbench: right-click a horizon or fault ▸ Export … Picks…; File ▸ Import Seismic Interpretation…</p>
+<ol><li>Export: right-click the horizon or fault in the interpretation list and choose Export Horizon Picks… / Export Fault Picks… (Export Horizon Surface… for the gridded surface).</li><li>Import: File ▸ Import Seismic Interpretation… (columns mapped in a preview), or File ▸ Import Kingdom Horizon… / Import Kingdom Fault….</li></ol>
+<h3 id='seismic.load_2d'>Load a 2-D SEG-Y line and its navigation</h3><p class='where'>Where: Seismic Workbench: File ▸ Load 2-D SEG-Y line… / File ▸ Import SEG-P1 / SP1 Navigation…</p>
+<ol><li>Choose File ▸ Load 2-D SEG-Y line… and pick the file.</li><li>Choose File ▸ Import SEG-P1 / SP1 Navigation… to position it: read, preview and import; the line&#x27;s map shows supplied and interpolated positions.</li></ol>
+<h3 id='seismic.load_3d'>Load a 3-D SEG-Y survey</h3><p class='where'>Where: Seismic Workbench: File ▸ Load SEG-Y survey…</p>
+<ol><li>Open the project (Geo: Project ▸ Open Seismic Workbench, or File ▸ Open project…).</li><li>Choose File ▸ Load SEG-Y survey… and pick the file; check the geometry Workbench reads.</li><li>Survey ▸ Survey properties… and Display settings… adjust it later.</li></ol>
+<h3 id='seismic.horizon_grid'>Make a grid from a horizon</h3><p class='where'>Where: Seismic Workbench: right-click the horizon in the interpretation list ▸ Save / Update Horizon Grid…</p>
+<ol><li>Right-click the horizon in the interpretation list and choose Save / Update Horizon Grid….</li><li>The picks are gridded into the horizon&#x27;s project grid (made or updated); the picks are not changed.</li><li>The grid is listed on Geo&#x27;s Map Grids tab: Map ▸ Grid Display… sets its colours and contours.</li></ol>
+<h3 id='seismic.pick_horizon'>Pick a horizon</h3><p class='where'>Where: Seismic Workbench: Interpretation ▸ New horizon…, then the toolbar&#x27;s Horizon / Add</p>
+<ol><li>Open a section: Window ▸ New inline (or the Inline / Crossline buttons).</li><li>Interpretation ▸ New horizon… (or New… on the toolbar), and make it the active horizon in the box beside Horizon / Fault.</li><li>Choose Horizon and Add on the toolbar, set Snap, then click along the event on the section. Edit and Delete change picks.</li><li>Auto Pick… extends picks; Interpretation ▸ Undo steps back. Picks are saved automatically.</li></ol>
+<h3 id='seismic.pick_fault'>Pick faults</h3><p class='where'>Where: Seismic Workbench: Interpretation ▸ New fault…, then the toolbar&#x27;s Fault / Add</p>
+<ol><li>Interpretation ▸ New fault… (or New unassigned fault) and make it active.</li><li>Choose Fault and Add on the toolbar and click along the fault on a section: each section&#x27;s clicks make a stick.</li><li>Right-click a stick to delete it or assign it to another fault.</li></ol>
+<h3 id='seismic.ties'>Tie a 2-D line to a 3-D survey (and other lines)</h3><p class='where'>Where: Seismic Workbench: right-click a 2-D line&#x27;s section ▸ Ties on this line / Open 3D tie section… / Tie to 3D here</p>
+<ol><li>Load the 2-D line with its navigation and the 3-D survey in a common coordinate system.</li><li>Open the line&#x27;s section, right-click it: Ties on this line lists where it crosses other lines and enters or leaves the survey.</li><li>Open 3D tie section… (or Tie to 3D here) shows the 3-D along or across the line; Open Tie View shows both side by side.</li><li>Picks are shown as they are: nothing is shifted unless you run Analyze Mistie… and apply a correction.</li></ol>
+<h2 id='correlation'>Correlation Workbench</h2>
+<h3 id='correlation.wells'>Add wells to the correlation</h3><p class='where'>Where: Correlation Workbench: Wells ▸ Select Wells… (or Wells ▸ Use Well Manager Selection)</p>
+<ol><li>Choose Wells ▸ Select Wells… and pick the wells in order, or Wells ▸ Use Well Manager Selection.</li><li>On Geo&#x27;s Map the Correlate drop-down digitizes the correlation line through wells.</li><li>Right-click a well to move it left or right or take it off the table.</li></ol>
+<h3 id='correlation.depth_window'>Adjust the depth window and scale in Correlation</h3><p class='where'>Where: Correlation Workbench toolbar ▸ Scale / Depth (Depth Range); Scales menu</p>
+<ol><li>Type the top and bottom MD in Depth Range (Scale / Depth group) and press Enter; blank shows the logs&#x27; end.</li><li>Scales chooses the vertical scale; View ▸ Zoom In / Zoom Out / Show All change the screen view only.</li></ol>
+<h3 id='correlation.flatten'>Flatten on a top (hang) in Correlation</h3><p class='where'>Where: Correlation Workbench: Depths ▸ Flatten on (or the Hang box)</p>
+<ol><li>Open the Depths menu (or the Hang box) and choose Measured depth, Structural, or Flatten on ▸ &lt;top&gt;.</li><li>Right-click a well&#x27;s pick ▸ Flatten on &lt;top&gt; does the same.</li></ol>
+<h3 id='correlation.pick'>Pick tops and faults in Correlation</h3><p class='where'>Where: Correlation Workbench: Tops ▸ Select Tops…, Tops ▸ Pick Tops (Faults ▸ Pick Faults)</p>
+<ol><li>Tops ▸ Select Tops… chooses the tops in the Pick list (New Top… adds a name).</li><li>Choose Tops ▸ Pick Tops, select the top in the list and click its depth in each well.</li><li>For faults: Faults ▸ New Fault…, then Faults ▸ Pick Faults. Right-click ends picking.</li></ol>
+<h3 id='correlation.layout'>Save and reopen a correlation layout</h3><p class='where'>Where: Correlation Workbench: File ▸ Save layout as… / File ▸ Open layout…</p>
+<ol><li>The table as left is kept automatically between sessions.</li><li>File ▸ Save layout as… keeps a named layout; File ▸ Open layout… brings one back.</li></ol>
+<h2 id='cross_section'>Cross Section</h2>
+<h3 id='xs.create'>Create a cross section</h3><p class='where'>Where: Geo&#x27;s Map toolbar ▸ Cross Section ▸ Digitize Cross-Section Line; in the window: Section ▸ New Section</p>
+<ol><li>On Geo&#x27;s Map open the Cross Section drop-down and choose Digitize Cross-Section Line, then click the wells in order: the Cross Section window opens on them.</li><li>In the window, Section ▸ New Section starts another; Wells… adds or removes wells; ◀ ▶ move the selected well.</li></ol>
+<h3 id='xs.hang'>Hang a cross section (structural or on a datum)</h3><p class='where'>Where: Cross Section toolbar ▸ Hang / Spacing</p>
+<ol><li>In the Hang / Spacing group choose Structural or Stratigraphic.</li><li>For Stratigraphic choose the datum top in the box beside it: the section is flattened on that top.</li></ol>
+<h3 id='xs.save'>Save and reopen a cross section</h3><p class='where'>Where: Cross Section: Section ▸ Save / Save As… / Open Section…</p>
+<ol><li>Section ▸ Save (or Save As…) keeps the section under a name; it is also kept automatically.</li><li>Section ▸ Open Section… brings a saved one back; Section ▸ Print / Export… writes it to a file.</li></ol>
+<h3 id='xs.logs'>Set cross-section tracks, logs, tops and faults</h3><p class='where'>Where: Cross Section toolbar ▸ Log Display… / Tops… / Correlation… / Fills…</p>
+<ol><li>Log Display… chooses the logs and how they are drawn.</li><li>Tops… chooses the tops shown and their look; Correlation… adds the section&#x27;s own correlations.</li><li>Pick faults with the Picking group; Fills… adds interval and curve fills.</li></ol>
+<h2 id='geosteering'>Geosteering Workbench</h2>
+<h3 id='geosteering.job'>Create or open a geosteering job</h3><p class='where'>Where: Geosteering Workbench: File ▸ New job / Open job… / Open a lateral from the project…</p>
+<ol><li>File ▸ New job starts one; File ▸ Open job… opens a saved .ogsteer file.</li><li>In a project: File ▸ Open a lateral from the project… (the job is kept in the project).</li><li>Job ▸ Properties… sets the target, curves and plan.</li></ol>
+<h3 id='geosteering.interpret'>Interpret horizons along the lateral</h3><p class='where'>Where: Geosteering Workbench: Interpretation ▸ Start interpretation</p>
+<ol><li>Interpretation ▸ Start interpretation (or right-click ▸ Start interpretation here).</li><li>Drag segment handles on the section, or segments in the correlation window, to match the lateral&#x27;s log to the type log; double-click splits a segment.</li><li>Insert fault… places a fault (type its throw); Undo / Redo step back and forward.</li></ol>
+<h3 id='geosteering.wells'>Load the type well and the lateral&#x27;s survey</h3><p class='where'>Where: Geosteering Workbench: Wells ▸ Type well… / Lateral well… (or … from the project)</p>
+<ol><li>Wells ▸ Type well… (or Type well from the project…) loads the offset well with its log and tops.</li><li>Wells ▸ Lateral well… (or Lateral from the project…) loads the lateral&#x27;s survey and LAS.</li></ol>
+<h3 id='geosteering.reload'>Reload changed source files (watch files)</h3><p class='where'>Where: Geosteering Workbench: Wells ▸ Read files again (F5) / Watch files for updates (real time)</p>
+<ol><li>Wells ▸ Read files again (F5) rereads the lateral&#x27;s survey and LAS files that changed.</li><li>Wells ▸ Watch files for updates (real time) checks them every 15 seconds.</li></ol>
+<p><b>If it does not work</b></p><ul><li>After the license expires changed files are noticed but not read (the status line says so); a valid new license reads them.</li></ul>
+<h3 id='geosteering.prognosis'>Set a predrill prognosis</h3><p class='where'>Where: Geosteering Workbench: Job ▸ Predrill prognosis… / Job ▸ Prognosis from a map grid…</p>
+<ol><li>Job ▸ Predrill prognosis… enters the structural tops along the lateral before it is drilled.</li><li>Job ▸ Prognosis from a map grid… takes the planned tops from a project grid.</li></ol>
+</body></html>

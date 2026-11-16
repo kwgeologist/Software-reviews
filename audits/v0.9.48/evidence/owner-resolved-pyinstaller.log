@@ -1,0 +1,89 @@
+141 INFO: PyInstaller: 6.22.3, contrib hooks: 2026.10
+142 INFO: Python: 3.12.14
+146 INFO: Platform: Linux-6.18.57-x86_64-with-glibc2.41
+146 INFO: Python environment: /workspace/audit-tooling-v048
+149 INFO: Removing temporary files and cleaning cache in /home/agent/.cache/pyinstaller
+603 INFO: Module search paths (PYTHONPATH):
+['/workspace/audit-v0.9.48/compiled-worktree/tools/release',
+ '/workspace/audit-v0.9.48/compiled-worktree',
+ '/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python312.zip',
+ '/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12',
+ '/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/lib-dynload',
+ '/workspace/audit-tooling-v048/lib/python3.12/site-packages',
+ '/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages',
+ '/workspace/audit-v0.9.48/compiled-worktree']
+1217 INFO: checking Analysis
+1217 INFO: Building Analysis because Analysis-00.toc is non existent
+1218 INFO: Looking for Python shared library...
+1244 INFO: Using Python shared library: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/libpython3.12.so.1.0
+1244 INFO: Running Analysis Analysis-00.toc
+1244 INFO: Target bytecode optimization level: 0
+1244 INFO: Initializing module dependency graph...
+1245 INFO: Initializing module graph hook caches...
+1256 INFO: Analyzing modules for base_library.zip ...
+2566 INFO: Processing standard module hook 'hook-encodings.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+5106 INFO: Processing standard module hook 'hook-math.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+5840 INFO: Processing standard module hook 'hook-pickle.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+8563 INFO: Processing standard module hook 'hook-heapq.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+9290 INFO: Caching module dependency graph...
+9368 INFO: Analyzing /workspace/audit-v0.9.48/compiled-worktree/license_manager/__main__.py
+9482 INFO: Processing standard module hook 'hook-cryptography.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+10376 INFO: hook-cryptography: cryptography does not seem to be using dynamically linked OpenSSL.
+10813 INFO: Processing standard module hook 'hook-platform.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+10856 INFO: Processing standard module hook 'hook-_ctypes.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+10887 INFO: Processing pre-find-module-path hook 'hook-tkinter.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks/pre_find_module_path'
+10888 INFO: TclTkInfo: initializing cached Tcl/Tk info...
+11314 INFO: Processing standard module hook 'hook-_tkinter.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+11540 INFO: Analyzing hidden import 'cryptography.hazmat.primitives.asymmetric.ed448'
+11544 INFO: Analyzing hidden import 'cryptography.hazmat.primitives.asymmetric.mldsa'
+11560 INFO: Analyzing hidden import 'cryptography.hazmat.primitives.asymmetric.mlkem'
+11568 INFO: Analyzing hidden import 'cryptography.hazmat.primitives.asymmetric.types'
+11579 INFO: Analyzing hidden import 'cryptography.hazmat.primitives.ciphers.aead'
+11580 INFO: Analyzing hidden import 'cryptography.hazmat.primitives.cmac'
+11583 INFO: Analyzing hidden import 'cryptography.hazmat.primitives.constant_time'
+11584 INFO: Analyzing hidden import 'cryptography.hazmat.primitives.hmac'
+11585 INFO: Analyzing hidden import 'cryptography.hazmat.primitives.hpke'
+11587 INFO: Analyzing hidden import 'cryptography.hazmat.primitives.kdf'
+11588 INFO: Analyzing hidden import 'cryptography.hazmat.primitives.kdf.argon2'
+11590 INFO: Analyzing hidden import 'cryptography.hazmat.primitives.kdf.concatkdf'
+11592 INFO: Analyzing hidden import 'cryptography.hazmat.primitives.kdf.hkdf'
+11594 INFO: Analyzing hidden import 'cryptography.hazmat.primitives.kdf.kbkdf'
+11596 INFO: Analyzing hidden import 'cryptography.hazmat.primitives.kdf.pbkdf2'
+11597 INFO: Analyzing hidden import 'cryptography.hazmat.primitives.kdf.scrypt'
+11599 INFO: Analyzing hidden import 'cryptography.hazmat.primitives.kdf.x963kdf'
+11600 INFO: Analyzing hidden import 'cryptography.hazmat.primitives.keywrap'
+11604 INFO: Analyzing hidden import 'cryptography.hazmat.primitives.padding'
+11609 INFO: Analyzing hidden import 'cryptography.hazmat.primitives.poly1305'
+11609 INFO: Analyzing hidden import 'cryptography.hazmat.primitives.serialization.pkcs12'
+11847 INFO: Analyzing hidden import 'cryptography.hazmat.primitives.serialization.pkcs7'
+11861 INFO: Analyzing hidden import 'cryptography.hazmat.primitives.twofactor'
+11862 INFO: Analyzing hidden import 'cryptography.hazmat.primitives.twofactor.hotp'
+11869 INFO: Analyzing hidden import 'cryptography.hazmat.primitives.twofactor.totp'
+11873 INFO: Processing module hooks (post-graph stage)...
+11877 INFO: Processing standard module hook 'hook-_tkinter.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+11890 INFO: Performing binary vs. data reclassification (194 entries)
+11906 INFO: Looking for ctypes DLLs
+11990 INFO: Analyzing run-time hooks ...
+11992 INFO: Including run-time hook 'pyi_rth_inspect.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks/rthooks'
+11996 INFO: Including run-time hook 'pyi_rth_cryptography_openssl.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/rthooks'
+11997 INFO: Including run-time hook 'pyi_rth__tkinter.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks/rthooks'
+12017 INFO: Creating base_library.zip...
+12057 INFO: Looking for dynamic libraries
+12246 INFO: Warnings written to /workspace/audit-v0.9.48/owner-resolved-work/OwnerTools_LicenseManager/warn-OwnerTools_LicenseManager.txt
+12266 INFO: Graph cross-reference written to /workspace/audit-v0.9.48/owner-resolved-work/OwnerTools_LicenseManager/xref-OwnerTools_LicenseManager.html
+12295 INFO: checking PYZ
+12295 INFO: Building PYZ because PYZ-00.toc is non existent
+12295 INFO: Building PYZ (ZlibArchive) /workspace/audit-v0.9.48/owner-resolved-work/OwnerTools_LicenseManager/PYZ-00.pyz
+12696 INFO: Building PYZ (ZlibArchive) /workspace/audit-v0.9.48/owner-resolved-work/OwnerTools_LicenseManager/PYZ-00.pyz completed successfully.
+12760 INFO: checking PKG
+12760 INFO: Building PKG because PKG-00.toc is non existent
+12760 INFO: Building PKG (CArchive) OandG_Workbench_License_Manager.pkg
+41281 INFO: Building PKG (CArchive) OandG_Workbench_License_Manager.pkg completed successfully.
+41288 INFO: Bootloader /workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/bootloader/Linux-64bit-intel/run
+41288 INFO: checking EXE
+41288 INFO: Building EXE because EXE-00.toc is non existent
+41288 INFO: Building EXE from EXE-00.toc
+41288 INFO: Copying bootloader EXE to /workspace/audit-v0.9.48/owner-resolved-build/OandG_Workbench_License_Manager
+41288 INFO: Appending PKG archive to custom ELF section in EXE
+41461 INFO: Building EXE from EXE-00.toc completed successfully.
+41472 INFO: Build complete! The results are available in: /workspace/audit-v0.9.48/owner-resolved-build

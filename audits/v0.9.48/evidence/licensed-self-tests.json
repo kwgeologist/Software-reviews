@@ -1,0 +1,27 @@
+[
+  {
+    "script": "app.py",
+    "exit_code": 0,
+    "seconds": 7.772333893999985
+  },
+  {
+    "script": "petro_app.py",
+    "exit_code": 0,
+    "seconds": 2.440792170000009
+  },
+  {
+    "script": "seismic_app.py",
+    "exit_code": 0,
+    "seconds": 2.6849323620000405
+  },
+  {
+    "script": "geosteer_app.py",
+    "exit_code": 0,
+    "seconds": 5.86509967500001
+  },
+  {
+    "script": "correlation_app.py",
+    "exit_code": 0,
+    "seconds": 1.8805917390000104
+  }
+]

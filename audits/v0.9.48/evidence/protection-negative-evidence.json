@@ -1,0 +1,41 @@
+{
+  "synthetic_clean": [],
+  "missing_extension": [
+    "ogcore.formulas: no compiled module in _internal/ogcore"
+  ],
+  "direct.py": [
+    "protected source in the build: _internal/ogcore/formulas.py"
+  ],
+  "direct.pyx": [
+    "protected source in the build: _internal/ogcore/formulas.pyx"
+  ],
+  "direct.c": [
+    "protected source in the build: _internal/ogcore/formulas.c"
+  ],
+  "direct.cpp": [
+    "protected source in the build: _internal/ogcore/formulas.cpp"
+  ],
+  "direct.pyc": [],
+  "nested.py": {
+    "protection": [],
+    "inventory": []
+  },
+  "nested.pyx": {
+    "protection": [],
+    "inventory": []
+  },
+  "nested.c": {
+    "protection": [],
+    "inventory": []
+  },
+  "nested.cpp": {
+    "protection": [],
+    "inventory": []
+  },
+  "pyz": [
+    "ogcore.formulas: bundled as Python in OandG_Workbench"
+  ],
+  "raw_module": [],
+  "embedded_source": [],
+  "additional_bundle": []
+}

@@ -1,0 +1,73 @@
+{
+  "version": "0.9.48",
+  "audit_date": "2026-11-16",
+  "scope": "post-v0.9.45 release delta",
+  "executive_result": "Clean except for listed material risks",
+  "recommendation": "Fix identified items first",
+  "read_only": true,
+  "source_integrity": {
+    "archive_sha256": "143b7fa20a6b7d63ac2249527c275931beced67e15d9c5389a107424ed16a977",
+    "original_files": 899,
+    "missing": [],
+    "changed": [],
+    "added": []
+  },
+  "requested_git_commit": "194c11f",
+  "requested_git_commit_verified": false,
+  "categories": {
+    "A": 0,
+    "B": 4
+  },
+  "tests": {
+    "full": {
+      "summary": "4 failed, 2664 passed, 19 skipped, 2 warnings, 684 subtests passed in 1883.99s (0:31:23)",
+      "passed": 2664,
+      "failed": 4,
+      "skipped": 19,
+      "errors": 0,
+      "subtests_passed": 684,
+      "seconds": 1883.99,
+      "xml_testcases": 2687
+    },
+    "targeted": {
+      "summary": "149 passed, 5 skipped, 1 warning, 75 subtests passed in 172.64s (0:02:52)",
+      "passed": 149,
+      "failed": 0,
+      "skipped": 5,
+      "errors": 0,
+      "subtests_passed": 75,
+      "seconds": 172.64,
+      "xml_testcases": 154
+    },
+    "compiled": {
+      "summary": "219 passed, 1 skipped, 1 warning, 60 subtests passed in 156.71s (0:02:36)",
+      "passed": 219,
+      "failed": 0,
+      "skipped": 1,
+      "errors": 0,
+      "subtests_passed": 60,
+      "seconds": 156.71,
+      "xml_testcases": 220
+    },
+    "compiled_integration": {
+      "summary": "88 passed, 2 warnings, 60 subtests passed in 299.51s (0:04:59)",
+      "passed": 88,
+      "failed": 0,
+      "skipped": 0,
+      "errors": 0,
+      "subtests_passed": 60,
+      "seconds": 299.51,
+      "xml_testcases": 88
+    }
+  },
+  "windows_build_executed": false,
+  "linux_actual_specs_built": true,
+  "compiled_modules": 15,
+  "representative_comparison_cases": 24,
+  "numerical_differences_observed": 0,
+  "public_signature_differences_observed": 0,
+  "licensed_frozen_customer_body_executed": false,
+  "licensed_source_and_compiled_copy_selftests": "all five exit 0",
+  "unlicensed_source_and_frozen_customer_selftests": "all five exit 3",
+  "current_payload_wsd_files": 0
+}

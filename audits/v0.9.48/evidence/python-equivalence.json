@@ -1,0 +1,1047 @@
+{
+  "origins": {
+    "ogcore.licensing": "/workspace/audit-v0.9.48/OandG_Workbench_v0.9.48/ogcore/licensing.py",
+    "ogcore.license_runtime": "/workspace/audit-v0.9.48/OandG_Workbench_v0.9.48/ogcore/license_runtime.py",
+    "ogcore.formulas": "/workspace/audit-v0.9.48/OandG_Workbench_v0.9.48/ogcore/formulas.py",
+    "ogcore.multimineral": "/workspace/audit-v0.9.48/OandG_Workbench_v0.9.48/ogcore/multimineral.py",
+    "ogcore.multivariate": "/workspace/audit-v0.9.48/OandG_Workbench_v0.9.48/ogcore/multivariate.py",
+    "ogcore.core_equations": "/workspace/audit-v0.9.48/OandG_Workbench_v0.9.48/ogcore/core_equations.py",
+    "ogcore.water": "/workspace/audit-v0.9.48/OandG_Workbench_v0.9.48/ogcore/water.py",
+    "petroworkbench.curve_ops": "/workspace/audit-v0.9.48/OandG_Workbench_v0.9.48/petroworkbench/curve_ops.py",
+    "ogcore.pay": "/workspace/audit-v0.9.48/OandG_Workbench_v0.9.48/ogcore/pay.py",
+    "ogcore.batch_zones": "/workspace/audit-v0.9.48/OandG_Workbench_v0.9.48/ogcore/batch_zones.py",
+    "ogcore.gridders": "/workspace/audit-v0.9.48/OandG_Workbench_v0.9.48/ogcore/gridders.py",
+    "ogcore.gridding": "/workspace/audit-v0.9.48/OandG_Workbench_v0.9.48/ogcore/gridding.py",
+    "ogcore.mincurv": "/workspace/audit-v0.9.48/OandG_Workbench_v0.9.48/ogcore/mincurv.py",
+    "ogcore.velocity_model": "/workspace/audit-v0.9.48/OandG_Workbench_v0.9.48/ogcore/velocity_model.py",
+    "ogvol.engine": "/workspace/audit-v0.9.48/OandG_Workbench_v0.9.48/ogvol/engine.py"
+  },
+  "cases": {
+    "formulas:A/B": {
+      "value": {
+        "shape": [
+          5
+        ],
+        "dtype": "float64",
+        "bytes": "0000000000000000000000000000f07f000000000000f03f000000000000f87f000000000000f03f"
+      }
+    },
+    "formulas:A*B**2": {
+      "value": {
+        "shape": [
+          5
+        ],
+        "dtype": "float64",
+        "bytes": "000000000000000000000000000000000000000000002040000000000000f87f000000000000f0bf"
+      }
+    },
+    "formulas:LOG10(A)+SQRT(B)": {
+      "value": {
+        "shape": [
+          5
+        ],
+        "dtype": "float64",
+        "bytes": "000000000000f0ff00000000000000004d1aa73aa371fb3f000000000000f87f000000000000f8ff"
+      }
+    },
+    "formulas:A > 1": {
+      "value": {
+        "shape": [
+          5
+        ],
+        "dtype": "bool",
+        "bytes": "0000010000"
+      }
+    },
+    "formulas:1/0": {
+      "exception": "ZeroDivisionError",
+      "message": "division by zero"
+    },
+    "formulas:A + MISSING": {
+      "exception": "FormulaError",
+      "message": "'MISSING' is not a curve, core measurement or constant."
+    },
+    "water": {
+      "value": [
+        {
+          "shape": [
+            3
+          ],
+          "dtype": "float64",
+          "bytes": "ca0896c2e059af3fb98ddb2c1923a33f000000000000f87f"
+        },
+        {
+          "shape": [
+            3
+          ],
+          "dtype": "float64",
+          "bytes": "03a10a285ef51340dbc4d1f70a259c3ffbab5c068b11e23f"
+        },
+        {
+          "shape": [
+            3
+          ],
+          "dtype": "float64",
+          "bytes": "00000000008051400000000000406a40000000000000f87f"
+        }
+      ]
+    },
+    "core_equations": {
+      "value": [
+        {
+          "shape": [
+            8
+          ],
+          "dtype": "float64",
+          "bytes": "000000000000f87f000000000000000000000000000014400000000000002440000000000000f87f000000000000f87f0000000000004440000000000000f87f"
+        },
+        {
+          "shape": [
+            3
+          ],
+          "dtype": "float64",
+          "bytes": "0000000000001040000000000000f87f0000000000000840"
+        },
+        [
+          "ORGANIC_CARBON_TOC",
+          "TOC"
+        ]
+      ]
+    },
+    "multimineral": {
+      "value": {
+        "curves": {
+          "VCAL": {
+            "shape": [
+              3
+            ],
+            "dtype": "float64",
+            "bytes": "9fcc7b999999e93f042c88877aeef23d81da9c999999d93f"
+          },
+          "VDOL": {
+            "shape": [
+              3
+            ],
+            "dtype": "float64",
+            "bytes": "e45e5e48cbfbec3d825d6ac2f528ec3fc537c9ccccccdc3f"
+          },
+          "VSH": {
+            "shape": [
+              3
+            ],
+            "dtype": "float64",
+            "bytes": "000000000000000000000000000000000000000000000000"
+          },
+          "PHIT": {
+            "shape": [
+              3
+            ],
+            "dtype": "float64",
+            "bytes": "50de9c999999c93f462c7eeb51b8be3f73db33333333c33f"
+          },
+          "PHIE": {
+            "shape": [
+              3
+            ],
+            "dtype": "float64",
+            "bytes": "50de9c999999c93f462c7eeb51b8be3f73db33333333c33f"
+          },
+          "RHOB_PRED": {
+            "shape": [
+              3
+            ],
+            "dtype": "float64",
+            "bytes": "e83be8fba9f10240b2453155302a0540fb3d105839340440"
+          },
+          "NPHI_PRED": {
+            "shape": [
+              3
+            ],
+            "dtype": "float64",
+            "bytes": "e52f9f999999c93f428ef075e09cc13fb8b408ac1c5ac43f"
+          },
+          "PE_PRED": {
+            "shape": [
+              3
+            ],
+            "dtype": "float64",
+            "bytes": "c392fe8691901240301ab0e33c0008405edfd851104a0e40"
+          },
+          "MM_RMS": {
+            "shape": [
+              3
+            ],
+            "dtype": "float64",
+            "bytes": "23195762d05a203e53c55b797721233e91b82ea7e662e33d"
+          },
+          "MM_QC": {
+            "shape": [
+              3
+            ],
+            "dtype": "float64",
+            "bytes": "000000000000000000000000000000000000000000000000"
+          }
+        },
+        "qc": {
+          "shape": [
+            3
+          ],
+          "dtype": "float64",
+          "bytes": "000000000000000000000000000000000000000000000000"
+        },
+        "model": {
+          "minerals": [
+            "calcite",
+            "dolomite"
+          ],
+          "endpoints": {
+            "calcite": {
+              "rho": {
+                "float64": "ae47e17a14ae0540"
+              },
+              "nphi": {
+                "float64": "0000000000000000"
+              },
+              "pe": {
+                "float64": "52b81e85eb511440"
+              },
+              "dt": {
+                "float64": "cdcccccccccc4740"
+              },
+              "gr": {
+                "float64": "0000000000002440"
+              }
+            },
+            "dolomite": {
+              "rho": {
+                "float64": "f6285c8fc2f50640"
+              },
+              "nphi": {
+                "float64": "7b14ae47e17a943f"
+              },
+              "pe": {
+                "float64": "1f85eb51b81e0940"
+              },
+              "dt": {
+                "float64": "0000000000c04540"
+              },
+              "gr": {
+                "float64": "0000000000002440"
+              }
+            },
+            "anhydrite": {
+              "rho": {
+                "float64": "d7a3703d0ad70740"
+              },
+              "nphi": {
+                "float64": "7b14ae47e17a94bf"
+              },
+              "pe": {
+                "float64": "3333333333331440"
+              },
+              "dt": {
+                "float64": "0000000000004940"
+              },
+              "gr": {
+                "float64": "0000000000001440"
+              }
+            },
+            "quartz": {
+              "rho": {
+                "float64": "3333333333330540"
+              },
+              "nphi": {
+                "float64": "7b14ae47e17a94bf"
+              },
+              "pe": {
+                "float64": "f6285c8fc2f5fc3f"
+              },
+              "dt": {
+                "float64": "0000000000c04b40"
+              },
+              "gr": {
+                "float64": "0000000000002e40"
+              }
+            },
+            "shale": {
+              "rho": {
+                "float64": "6666666666660440"
+              },
+              "nphi": {
+                "float64": "333333333333d33f"
+              },
+              "pe": {
+                "float64": "3333333333330b40"
+              },
+              "dt": {
+                "float64": "0000000000805640"
+              },
+              "gr": {
+                "float64": "0000000000005e40"
+              }
+            },
+            "fluid": {
+              "rho": {
+                "float64": "000000000000f03f"
+              },
+              "nphi": {
+                "float64": "000000000000f03f"
+              },
+              "pe": {
+                "float64": "0ad7a3703d0ad73f"
+              },
+              "dt": {
+                "float64": "0000000000a06740"
+              },
+              "gr": {
+                "float64": "0000000000000000"
+              }
+            }
+          },
+          "measurements": [
+            "RHOB",
+            "NPHI",
+            "PE"
+          ],
+          "weights": {
+            "RHOB": {
+              "float64": "000000000000f03f"
+            },
+            "NPHI": {
+              "float64": "000000000000f03f"
+            },
+            "PE": {
+              "float64": "000000000000f03f"
+            },
+            "DT": {
+              "float64": "000000000000f03f"
+            },
+            "GR": {
+              "float64": "0000000000000000"
+            }
+          },
+          "sigmas": {
+            "RHOB": {
+              "float64": "7b14ae47e17a943f"
+            },
+            "NPHI": {
+              "float64": "7b14ae47e17a943f"
+            },
+            "PE": {
+              "float64": "333333333333c33f"
+            },
+            "DT": {
+              "float64": "0000000000000040"
+            },
+            "GR": {
+              "float64": "0000000000002440"
+            }
+          },
+          "shale_mode": "fixed",
+          "shale_fixed": {
+            "float64": "0000000000000000"
+          },
+          "shale_bounds": [
+            {
+              "float64": "0000000000000000"
+            },
+            {
+              "float64": "000000000000f03f"
+            }
+          ],
+          "shale_tolerance": null,
+          "shale_porosity": {
+            "float64": "9a9999999999b93f"
+          },
+          "ambiguity_limit": {
+            "float64": "9a9999999999b93f"
+          },
+          "residual_limit": {
+            "float64": "0000000000000840"
+          },
+          "name": ""
+        },
+        "inputs": {},
+        "interval_mask": {
+          "shape": [
+            3
+          ],
+          "dtype": "bool",
+          "bytes": "010101"
+        },
+        "resolution": {
+          "calcite": {
+            "float64": "8a7fb49bf21eb23f"
+          },
+          "dolomite": {
+            "float64": "44730768c39cb13f"
+          },
+          "shale": {
+            "float64": "0000000000000000"
+          },
+          "fluid": {
+            "float64": "ee7226fce2bb833f"
+          }
+        },
+        "notes": []
+      }
+    },
+    "multivariate_regression": {
+      "value": {
+        "target": "Y",
+        "inputs": [
+          "X"
+        ],
+        "coefficients": {
+          "shape": [
+            2
+          ],
+          "dtype": "float64",
+          "bytes": "da9d51410afeff3f2053f98663ff0740"
+        },
+        "std_errors": {
+          "shape": [
+            2
+          ],
+          "dtype": "float64",
+          "bytes": "37ceaef6b5785e3f06e71799418e5d3f"
+        },
+        "t_values": {
+          "shape": [
+            2
+          ],
+          "dtype": "float64",
+          "bytes": "9748abdc6dcc904070330a6d75fb9940"
+        },
+        "beta": {
+          "shape": [
+            1
+          ],
+          "dtype": "float64",
+          "bytes": "344f1bf8f1ffef3f"
+        },
+        "r2": {
+          "float64": "51c53cf0e3ffef3f"
+        },
+        "adjusted_r2": {
+          "float64": "53e6142ee3ffef3f"
+        },
+        "rmse": {
+          "float64": "511ffa6fbdd1853f"
+        },
+        "n": 39,
+        "log_target": false,
+        "fitted": {
+          "shape": [
+            39
+          ],
+          "dtype": "float64",
+          "bytes": "ea1703d1a38603400e0cfd6c222df2bfdcfed7a1e75f1f40db9323a57f7a0a40f0f25a6eb2c9d1bffcc0744b2ffaf9bf64732f32bb760740408ce313ded3c13f8db0f6a06d0efc3f506a734be12ffa3f6082e5bcf9aa13c0828831811e61114030e446c1b83bfbbf68f5a4ca22f00640d5c0adc241c1f93fc07f5c37fc6511c074621f9708a5044058063b76a732d23f5c272f017ac3fbbf5f7234509827f63f654ff5d0646513400a437e2a8b65fa3f8e362622041b12c0e2196ed053a7ed3f303608d6c3f8dfbf5583f3445fb00140b79001a8ca1906407c6824789293de3ff5029446b70600c00cc6505effb81640028d04722bb81a4094c4e477205fe9bf1effd9ec13411140f7ed47ade87c0fc04bff6874fc7b00408ef3eb7d48e1ef3f30cf383397dec6bfe4676ebb7d60efbf3c44404107c6d53f"
+        },
+        "observed": {
+          "shape": [
+            39
+          ],
+          "dtype": "float64",
+          "bytes": "849bcf143a99034033a60009551cf2bfef177c0b35781f40996d41de70530a401ad22c67df17d2bf0117a47699e0f9bf75890c6a497f0740bd4f91661c24c23f9a25a0e7d4f0fb3fde5d9dc51b5bfa3fc6e3fb95eaa413c057ff3acc50531140fc6a8bbdb626fbbf667dbca52c0a074022acc3a2ce6af93f54bb07e9746811c051c76dfc80a60440f9e1f881cb60d13f44775c0a2367fbbfa31ee18e2417f63f1b40c393736a134093676d9fbd58fa3ff7a0ddd26a1112c0785b7cbfb9eced3f6b1a26889c88dfbf94054d28b38e01407cfdcc59c7340640e54a02559343de3f3016b7ba662600c07feff8710baa164011e52d0286bb1a40461e51a76da8e9bf853eb904164511400eb563a3dc7f0fc0a8128fb4a07400409025a578daccef3fbacfe3049002c8bfd18a9a623396efbfae9c33807aabd63f"
+        }
+      }
+    },
+    "multivariate_kmeans": {
+      "value": {
+        "inputs": [
+          "X",
+          "Y"
+        ],
+        "centers": {
+          "shape": [
+            3,
+            2
+          ],
+          "dtype": "float64",
+          "bytes": "94ea81a51819f8bfc297484f432204c0ed9aaaa7f866c8bfcd39bf0ac5d2f63fd62ce696bc4df33f1467647bc57a1640"
+        },
+        "counts": {
+          "shape": [
+            3
+          ],
+          "dtype": "int64",
+          "bytes": "0b0000000000000016000000000000000600000000000000"
+        },
+        "mean": {
+          "shape": [
+            2
+          ],
+          "dtype": "float64",
+          "bytes": "96391452e730d6bf105d2f8c92b3ee3f"
+        },
+        "scale": {
+          "shape": [
+            2
+          ],
+          "dtype": "float64",
+          "bytes": "8c6051e5df11ef3fa644b636da4c0740"
+        },
+        "labels": {
+          "shape": [
+            39
+          ],
+          "dtype": "int64",
+          "bytes": "020000000000000001000000000000000300000000000000020000000000000002000000000000000100000000000000020000000000000002000000000000000200000000000000020000000000000001000000000000000300000000000000010000000000000002000000000000000200000000000000010000000000000002000000000000000200000000000000010000000000000002000000000000000300000000000000020000000000000001000000000000000200000000000000020000000000000002000000000000000200000000000000020000000000000001000000000000000300000000000000030000000000000001000000000000000300000000000000010000000000000002000000000000000200000000000000020000000000000001000000000000000200000000000000"
+        }
+      }
+    },
+    "pay": {
+      "value": [
+        {
+          "shape": [
+            200
+          ],
+          "dtype": "float64",
+          "bytes": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000020da64ca19e03f00401597d86ff13f00e0ae7d8627f33f0080e414c792ea3f0080d9df8bfce33f00e068198450f03f009868d304f6f33f00c04f6e079af03f001090f3762eee3f00c072ba78e7ed3f00200242fc57f13f001899472e56f43f00987d67a25ff53f005020ce7eedf33f00209f2a0587e83f0040e10bc084ee3f00e81059e236f13f00600a92261fe43f007073e564e3e53f00a0b666e27be73f00a00454b149e13f00203347bca1e93f00602504d69cee3f0030a37c7182e43f0080fc699a69df3f0010d26cc714e03f00602fa6558bea3f00d058d0de11e83f0090bd23d2e0eb3f00f02b3bed45f13f0040a8e86a40e53f00a070447c0ae93f00e063684f19ea3f0000295b241ce63f00407bd47617e13f0040f4519bc6db3f00b06ecaf2bae73f00b053f8030be93f008093299d9cf03f0020dd84066af03f00309409b3e5ea3f00281f00896ff13f0030ca76bfcef13f00902cbcb67ef03f0030ffd9d367e73f00b018b21480e53f00e0b102237be33f00e0cd0b8a0be03f0090b90e5222f03f0060045dea29ef3f00c0ac61b6bbe83f0080437164a1f23f00004118bac4eb3f0090956a4742e13f00f0ecc509a3eb3f0030f4166186f03f00f02c9e5035f03f00d01914bc00ed3f00d0cca336bceb3f00f0bc283edcf23f00a0c81fc43cf13f007802d0a337f03f00202231c48fe93f0090e0d384e3e83f0018ddd3350ef53f0090c0cad2dfee3f0030d389d7e9ee3f00b00373091df13f00508844cee7ee3f00e06217b5bced3f0060a61814fae83f00b094497e2ae93f0000f3c23057f03f007015941da6ef3f0010b57d2974e83f00c0a68c8198ee3f0068e291f129f03f00e0de0980e3eb3f00a0ae8ca583eb3f00c06569f82fe73f0040e9a0008be53f00506916cfe2f13f005040517fa7f13f004066afac26e23f0090e9903379e53f00d03ca393e4ed3f00e09cbc79b0e33f0000781e10cbe23f00e04325598be43f0010f6387991ea3f003012e0279cea3f00e0213b3201e93f0010b684a788ee3f000065320820ec3f00f0717c9472ee3f0000644cbb3be43f00400045450edb3f00b07b969b59ef3f00e8f1859ba7f43f008069944b55eb3f0040e3476cb8ef3f0080b8f703d6f13f00004e6bc9adf03f0000257a673df43f00c0061f8c1eee3f0000aac1a029e93f0040b0d97e04e43f00807fe6d474e63f00407c263abcea3f00801192954ddd3f00e0b64c9e3beb3f003055cc7709f43f00405af2eaecf23f00401386f69af03f00708dd17996f13f0010af4ca5eef53f00e02b66d577f33f006025db779bf03f00002f05ebb8f03f00d06d17b019f03f00c0c5e1e194e23f00403182b96fd53f00c021cbbcf7e63f0040177001afea3f0040c30e03f3e53f004032e52983e03f0000e44af0afec3f00600f78fb7af53f00000e70c3d2f03f00803070c5c4e23f00004f0b9e4fd83f00c078d7b542dd3f00e0c99ba556ec3f00c0951b375ff33f0040048f676ce53f00005e186a69d13f004001eeb0a7e83f00c0f1b019c0eb3f00c07dc68c51d83f00a0441d9c77eb3f00400c5e4383f63f0000f65bfed7f03f0040cf52f038e23f0080cd11cdade93f00403661c567f13f0040fa331599ef3f0040f6aa7a3fe73f000018da57f2e13f00e016384657eb3f00b0a96cf522f23f00000eab0124ea3f0060ccaa7ac9eb3f00d037dd1709f03f00004d337010e53f00c0ad1bc112eb3f0040b9c7ee04f33f00402f4e69a3f23f00909001d6d7f13f00c0498f7f6aec3f0040e19e64fbde3f0080a8bcca93d63f00807669d3b9d63f000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        },
+        {
+          "shape": [
+            200
+          ],
+          "dtype": "bool",
+          "bytes": "0000000000000000000000000000000100000000000000010001010000000100010101010100010001010100010100000101010001000101010000000000000000000000010000010001000101010101010001010001000100000100000001010001000100000000000000000000000000010000010100000001000000000101010100000000000000000100010001000000010001000000010100000100010001010000000000000100010001000000000000000000000000000000000000000000000000000000"
+        },
+        {
+          "reference": "MD",
+          "gross": {
+            "float64": "0000000000806140"
+          },
+          "net": {
+            "float64": "40d91534db864a40"
+          },
+          "gross_md": {
+            "float64": "0000000000806140"
+          },
+          "net_md": {
+            "float64": "40d91534db864a40"
+          },
+          "porosity_curve": "PHIE",
+          "porosity": {
+            "float64": "2351066435b9ca3f"
+          },
+          "saturation_curve": "SW",
+          "saturation": {
+            "float64": "ba692ce0282cd53f"
+          },
+          "phih": {
+            "float64": "a696dcff19272640"
+          },
+          "hcpt": {
+            "float64": "58a6ffdff8a51d40"
+          },
+          "permeability_curve": null,
+          "permeability": {
+            "float64": "000000000000f87f"
+          },
+          "permeability_geometric": {
+            "float64": "000000000000f87f"
+          },
+          "kh": {
+            "float64": "000000000000f87f"
+          },
+          "shale_curve": null,
+          "shale": {
+            "float64": "000000000000f87f"
+          }
+        }
+      ]
+    },
+    "curve_ops": {
+      "value": [
+        {
+          "shape": [
+            5
+          ],
+          "dtype": "float64",
+          "bytes": "000000000000f03f000000000000f03f000000000000144000000000000022400000000000002240"
+        },
+        {
+          "shape": [
+            3
+          ],
+          "dtype": "float64",
+          "bytes": "000000000000f83f00000000000000400000000000000440"
+        }
+      ]
+    },
+    "gridders:Inverse distance": {
+      "value": {
+        "shape": [
+          7,
+          7
+        ],
+        "dtype": "float64",
+        "bytes": "00000000000024405184010000002640e6680300000028402895050000002a40fe70060000002c400000000000002e40e854eeffffff2f403dfafaffffff2740ec16fdffffff2940e22cffffffff2b4026a0feffffff2d404664fbffffff2f406369f9ffffff3040e8ebefffffff31404c31faffffff2b408b30fbffffff2d40dd33000000003040476cfeffffff30408d55f9ffffff314029f7f4ffffff324049baebffffff3340cf89feffffff2f40860bfdffffff3040b0a4fcffffff314018ddfaffffff3240cfc8f8ffffff33406c23f7ffffff344052c0eeffffff3540ce69020000003240d0d8fcffffff32400011f7ffffff3340a1caf6ffffff34407ffffbffffff35401256feffffff364071c5f6ffffff37400000000000003440b19af8ffffff34407c71f1ffffff35409e87f2ffffff36400911fbffffff37400000000000003940bdfcf8ffffff39409170f2ffffff35409e7eeaffffff36400458e3ffffff37400ddbe4ffffff384061ebedffffff3940b559f3ffffff3a40c11eecffffff3b40"
+      }
+    },
+    "gridders:Minimum curvature": {
+      "value": {
+        "shape": [
+          7,
+          7
+        ],
+        "dtype": "float64",
+        "bytes": "00000000000024405184010000002640e6680300000028402895050000002a40fe70060000002c400000000000002e40e854eeffffff2f403dfafaffffff2740ec16fdffffff2940e22cffffffff2b4026a0feffffff2d404664fbffffff2f406369f9ffffff3040e8ebefffffff31404c31faffffff2b408b30fbffffff2d40dd33000000003040476cfeffffff30408d55f9ffffff314029f7f4ffffff324049baebffffff3340cf89feffffff2f40860bfdffffff3040b0a4fcffffff314018ddfaffffff3240cfc8f8ffffff33406c23f7ffffff344052c0eeffffff3540ce69020000003240d0d8fcffffff32400011f7ffffff3340a1caf6ffffff34407ffffbffffff35401256feffffff364071c5f6ffffff37400000000000003440b19af8ffffff34407c71f1ffffff35409e87f2ffffff36400911fbffffff37400000000000003940bdfcf8ffffff39409170f2ffffff35409e7eeaffffff36400458e3ffffff37400ddbe4ffffff384061ebedffffff3940b559f3ffffff3a40c11eecffffff3b40"
+      }
+    },
+    "gridders:Linear triangulation": {
+      "value": {
+        "shape": [
+          7,
+          7
+        ],
+        "dtype": "float64",
+        "bytes": "00000000000024405184010000002640e6680300000028402895050000002a40fe70060000002c400000000000002e40e854eeffffff2f403dfafaffffff2740ec16fdffffff2940e22cffffffff2b4026a0feffffff2d404664fbffffff2f406369f9ffffff3040e8ebefffffff31404c31faffffff2b408b30fbffffff2d40dd33000000003040476cfeffffff30408d55f9ffffff314029f7f4ffffff324049baebffffff3340cf89feffffff2f40860bfdffffff3040b0a4fcffffff314018ddfaffffff3240cfc8f8ffffff33406c23f7ffffff344052c0eeffffff3540ce69020000003240d0d8fcffffff32400011f7ffffff3340a1caf6ffffff34407ffffbffffff35401256feffffff364071c5f6ffffff37400000000000003440b19af8ffffff34407c71f1ffffff35409e87f2ffffff36400911fbffffff37400000000000003940bdfcf8ffffff39409170f2ffffff35409e7eeaffffff36400458e3ffffff37400ddbe4ffffff384061ebedffffff3940b559f3ffffff3a40c11eecffffff3b40"
+      }
+    },
+    "gridders:Polynomial trend": {
+      "value": {
+        "shape": [
+          7,
+          7
+        ],
+        "dtype": "float64",
+        "bytes": "00000000000024405184010000002640e6680300000028402895050000002a40fe70060000002c400000000000002e40e854eeffffff2f403dfafaffffff2740ec16fdffffff2940e22cffffffff2b4026a0feffffff2d404664fbffffff2f406369f9ffffff3040e8ebefffffff31404c31faffffff2b408b30fbffffff2d40dd33000000003040476cfeffffff30408d55f9ffffff314029f7f4ffffff324049baebffffff3340cf89feffffff2f40860bfdffffff3040b0a4fcffffff314018ddfaffffff3240cfc8f8ffffff33406c23f7ffffff344052c0eeffffff3540ce69020000003240d0d8fcffffff32400011f7ffffff3340a1caf6ffffff34407ffffbffffff35401256feffffff364071c5f6ffffff37400000000000003440b19af8ffffff34407c71f1ffffff35409e87f2ffffff36400911fbffffff37400000000000003940bdfcf8ffffff39409170f2ffffff35409e7eeaffffff36400458e3ffffff37400ddbe4ffffff384061ebedffffff3940b559f3ffffff3a40c11eecffffff3b40"
+      }
+    },
+    "mincurv": {
+      "value": [
+        {
+          "shape": [
+            17,
+            23
+          ],
+          "dtype": "float64",
+          "bytes": "d5144a647126a03ff0f67fe0f04ed5bff7d11b04466ae3bf1766a2325488e0bf33458af6988fd2bf3093919e05adb7bf3bde7372cdff9f3f58ef5adbb54cb93f5b3d1824336cc83f87caf635623ad33f58a064ddaf3bd73fbd6c5b7940b6d73f289120d2b1d6d13facae2b4453d0b73fcc4171f385e0a6bfb58155229597a6bff9ea089364b9b03f011b593d0534bc3fdd9f6321d96295bf5f12d4b9f73497bf9be878ade5c8ce3f0048753ada4cd83f2ce267b7bc7cd43ffd6c00b3467ccabfc6e014840c8cd6bf736f4b1b47f3d9bf6790b2fcc65bd0bfa4e649ee4337babf0e9eb708a4a693bf6a13a8a93b87ad3f3ed9927e878db63fcbddbad173a7b43f0d83b61a5930bb3fc3ef788c5e6ac33f3c6042e8b439c73f0807125b0a8cbc3f31cc37538c1bb2bf9940c92c1348c5bfa2a1b797e943b4bf5aa704f29afba83f02bc31cbc747b33f90ef308e89ea713f25bc52c2d28fad3fd4754f0b5201d23f1a660a8883bfd73f91db870fc8b4d33f05cafd24846eddbf49dbc45f7030d3bf358166303c40a6bf0a7778b5a9b7c33fc2ff477c68c4c33fca88894fd2c8943fe22dc1d9e98bb0bfdc0f9e69929eb7bfead2e4df6344adbfa079e92bb501983f3c5b7cab0ab0983f125578a499a57abf0f441e7ee401b1bf265e25053b38d0bf419279205e39d7bfb7c03c1bf175d0bf21d9f83507dcc2bf57440f86812eb9bfb0193487888f913f4619f237ef3ecc3fdf913868b669d63fc3be31db4fe8ce3f67103ffc4d5fb23f7fecaa05d7b6debfa65f941a2054c3bf4c5bdb519594d13f91158bf0ae9bdd3f2894c2721af9d43f0086135a591a70bf116ca9bf6ea2d1bf40fa5d8ab4ddd3bf8df2b2d7f527b3bf264477d52219c63f23635c4158bdbd3f001be144be5ea0bfd9843e44ae23bdbff7723b121f6fd5bf115cee43d703e1bfc35ecf69868be0bf9cbfbf56b4fadebf8a0d72972894d8bfa80a76339fbd9abf051af14fc30ed63f698d2d0f1d5cd63f10d9f722a5159f3fb94cd4acf1eeccbfcd8f6e0e86d8dabf28b05806b60eb5bf7a88967a2e46d53f2e395cc1a379de3f7506b425cbdcd53f6aa706acb74fac3f12a33ab906d3c9bf5483a6e8021dcebf80a2a900bafb433fa6ed0c56d94ace3f1614aabfe06cc33fb650ade22263b0bf436026f1973fcbbf4eed8b80e8bedcbf0136372a67fbe3bfd401d1e37c2ce3bfd5dd2812b1f6e2bfb598b6a3248be0bfdbe76d10d6a8c1bf42c576bd27bace3fe6ac293d5deecb3fc26a34f0aba0a1bf187c94611443c6bfb5b4cfa82db2d8bf05d55115dfdfc1bfc0fa562c9416c23fc4e1299d6b99cc3f018ba8617311cc3fb991a7313c8dcc3f300101a76ecdc53f4426a63515f1bb3fba76870f1f4bc13f01f960e81ca3c83fe9e94344ab6ebf3f78d6a3c390b9b3bf58f2279a6301d3bfd8ce2d569a05e0bfa1eac25a02bde1bf34ea4e7ee17fdcbf4cc8b0d86d49d9bf985098c08c5ad7bfb29d6ead6756c7bfa70fe49c0019a33fd87239a25997bd3f524e8dbeb052be3fb81f98bf3d41c23f7f5b3afd9f00d1bf9602b9d5adecccbfac4d059068abc3bf12b47be7b3dbb1bfefa768482a9bb83fc022493f1745d53faae3abe01b5ddd3f82475416a96edc3f2adb923cea1ed73f5c3b1d0d2d3bd13f6022f7106ef9cd3f28aa3c78769dc63f70948edffbeb81bf53ab39b214b8cfbf18cd50feaeacd5bfa2365d7e7ff8d0bf68fb00e46684c7bfe491c497c16fb7bfd90e46265912943fb22ac48ac5f0ba3f70bee21b3dabc83f90e4041a24dbd03f7924e705296dd23f65000a8f88cbc4bf1f0b5e49a170d5bf3a491de70d38dbbf29eddc5f525dd2bfdf3fb8c9cc7aa8bfc8e01396a4cccb3ff200a1aadf0bdc3f3bdfb20fcefde03facbe3131c286db3f45ea483b347fcc3f27136c2c5e16ca3f8fdec478c491d73f9321f1e75717d63f93f6d553b265ab3f1070f5995847c6bfc6c5ab0140c0c9bf381acac68da8c3bf509b250d630c75bf93be7fa62898cc3fc51e0e64870dd73f7a01c2a277cdd73ff1e9a9cc4d78d53fabd089e65bb4d33f68e7e07586c3c8bf7c3710142040d9bf32e678b6fa4fe0bf0ab73754b95cdcbf03e64480f4d7d5bfce1f18d098aebfbf775e628b39f9c63f109270381f20d43f6eee6ca1e23ec33fc857a639f175c3bfa4c5d50b9817cabf4242f3793dbdb03f23c7a8f83d5dcf3f7236dd4e5105c13f3fc93680d10da0bf2cf829a80458c0bf3c52250de733ccbf04f554bb4416c4bfaa0585dd2a4bc53ff885197696dbdc3f641bf5203a66dd3f0227a0f61fcdd83f2df9c37b4951d93f489050fe6b70c7bf988341dc8669d4bfd22912e7ac7edabf4cb54390ce34e0bf24280ed82d0de3bf02b1530f3890d9bfcca8fcd727a3a7bf73f0df39ea24b03f745813ad36c8c0bfe8b26cc02defdabfa1e0195f0c08e1bffc0ebba1b176d5bfd852ab3b9ee283bf29249433d45fc73f0c63deb2c49aca3fdc7f5896966bbd3f90d7787bd72bb5bf4fc351015901c3bf4455c68463dbbd3f1388334c558bd93f725d799ee540d83fc67ee0216821d13ff7f4940870d0d03f056572cf508eb8bf8846a934ee66cebf666f1bdc7a16d6bf030c0e9345ffdabf7209f632b364ddbf70008a7e5267d1bfd0aebe25d56f90bf5cb2d579ec5285bf99ed2cac5d3bccbfbaa15429e70bdbbf9e33b418165bdfbf3ccaabbc6c92d4bf7cf22b270521a63f6c10c64464dbd23f5c93aaa9f19dd53f8e171b693a16d43f7cf8dbeb6322c63fb48d2de9c08d9c3fde72cba14fc8c33fdebde994ac78d73fa83f27b5fa68d53fe00822476ca3c03f00c14b6d92ee86bfb17297e5137da7bf98214e2cad6ecabf54c3e01de6fbd3bf0e7dd33e8c3eccbf680f504bae07aabf8bc268825d96b13fc4caa2ed944cb33fb981a5931d08b3bfacee376574aed3bf17af724b7234dbbf9c67a9afc1b2d6bf17b61d971c5fbfbfe3cc2e93c612c53fda5feb9fda90ce3f46360bb000e5c23fd99b6ae8d704c33f6c5b9f93998bb63f44e40c839580b3bf3024dcc234ab7e3f3e4b3109db34d33f8cb1836a5360d93f1a84ded3a7d7c63f507e411d49cfaebf341415934044b73f9142ecc2ac7ab0bf482909a9602ec7bfc4fdff67dcf1a6bf8c2e689bf490c33fecf076492d8bbb3f6593da396bc3bcbf9bcf7b7918a4d1bf37b5e689ae0ed6bf46219efc3fbbd5bfadeb9fd7d1b4d1bf529c56924755c7bf0c4348861477b3bf1ff4916686f7b5bf566eac4f2747c6bf7a7062286c11c3bfc8aef8698157c5bf0ac37e8434f0d3bfd147abfba6a4cabf4bde534529e8c63f19976c0d813fd63f67a915096963b93fc73496990c0ec7bf10936b64baa1d73fb13da0116f47c43fc4c772a48780acbff0cb4387d39181bf460164950500b73fa00ac4d25dd3b6bf944f41707e6dd9bf59b5a0b800caddbfb29997a65f18d2bfe410116f783abdbfb1900c77364bc2bfc023cba719d3d3bf64581ed101ecd7bfb7a905e16631d3bf6529d83518d7cbbfc3c49c44eb40c0bf73d3426e6b5bc1bfd595d9e21322d2bfdcc6fc3c596bcbbf2cb659f1227ebf3fa3146d121eb6ca3fcfe78bd51b5ac0bf74e61015f6efdbbf7c5d046f0ca2dc3ff7eede6a3f98c73f7d2c8b9bb8e3bdbfce7df5b0d6b5bcbf68e5b6c64b61793f8b011f906360bfbf51e32ff09403d8bfaa447ac5b715dabff0bc804db40dcabf7f695961852791bf65f11624f5fc97bf132a2349576dc8bffc7c92150d79d2bfe72e6c364411c8bf6ce3bc3be402a9bf1669f07ebe4077bff19ce750dd13b5bf5298dd5f8ad7cbbfbb3799fd64d9c4bf0c839eaf7ff5b83fe147f27d42b8c53fda3ead1f70e6b4bf0bab9d35c020d4bf172e85b8e1a9c63f2857547955ab93bfdc8e5e46f38dd2bf0453477eaa3cd4bf52eb71dd6d82c5bf1867dbb2cbe3c1bfa94b61928152c8bfea1ebab39404c1bfa6aa42817492a9bfdc12d0d3a3cdb2bfdd4359de942dbabfe895be5c5cc3bdbfff549bc97d6fc4bf682af109e664c1bf1cb09a3ec6c8bebf09f66dd41272cebf483406e4aebad7bf7bf59ebec6add9bfe6843b26ec77d2bfcfed9cc75e6ea2bf4baf16111083c53fa51be01675dcc43f71ec65e7b811b53f8ba062cc8d10b1bf780547be927dc6bf73351a0e06bed8bfe0ae8897b582debf751bee8108f5d8bf357ab914349bd1bfa42bb4341190c1bf78848aabbdd8ad3faf6c7bc8488db83fadfc368ce5e9bdbf458dc5b033b1cfbf15524f79e9a6cbbf589f7fe16199ccbf836036ad7914cfbf429ebb6d3e29d5bf73dbabd261c0e1bf4b7bb940cbcae5bfbc4a7f532a63e3bf436d665dbf6fdcbf6b443843486bc7bffd164b52bed7be3f05b9f96fd137d13f04783eef83cad13f"
+        },
+        {
+          "shape": [
+            17,
+            23
+          ],
+          "dtype": "float64",
+          "bytes": "b3706d147ddcbc3fcbd9bd39296ae5bf586a74f86cdff5bf5bc0f5ec2065cfbfd7704cc3bff3ed3f31927e00631bf13f4a0e1213e0bfe13f655ad9fe8795e43f05e0fd5aa142f33fceb26a3d041ef43fdacf08d417a5d93fb698795c47d3ec3fe1df1b836e3fedbf247d75b582fef63fd4be6cedef57e73f2070e6c62328f63f5afe00b468b2f33f4b26f92bf82ac3bfa76a23d91818e23f10fadd87288dc53f6a868c0bce6e9f3f458db807cdd6e2bf899fbc4f94edf7bf084fc2698ebee13f6f4ca5b590c8e1bfce974ec812f2e43fdd3100108f4ce5bfa6f9fd6a4d38e63f1f90d1a33604dcbf94d2a67c0ba9c23f60001794d58698bf65a83283a151d33fe69174886095dfbf005abfbf0020c23f595775bf3876ec3f8341c300f53be43f6c5ad1c0ae6cc8bf5c689475810af6bff32555681577d6bf4e52a104e85be7bf360a5a695dc2e1bfbd4b1d8f1e64ec3f628cb79976f5e2bf7f7d0c52f66ff63f09714dd66195b13ff0b20c3ecb67dfbf97623376f1a0e4bf78a5446dbb79ebbf49dafd29965dd6bf41b8e1520a77f0bf2541c71d1f2dfbbff70c3c460e97d0bfbacc893135e0b83f75769ff1a240d0bfe40a1ccbbf2be43fc02c3c3d9247a43f46b3c3ffecb3f7bf741fb63822dfd23f993dd63b83cbd53fffdc601fbe02e23f475453e46080fb3f280bd32f37b5a43f62c3b4d8c1cde7bfca2592eaa910eabf90f288a48b2ec0bf77026e55f7a6f2bf07287b6e91bcfb3f9acb1c0028caf9bfaf3861194013d63f13d539fe2cf8d5bf276dffb7eef2e53fd165aa85f8e4f33fd4571c22fd1bc3bfafb83f7d998ff13fd8d3f828576fa83fc5f679d0ade108c047fa09d635e6e2bf0cfeb1dba8ec02c0107bb5c87e9fe53f59aceb68e3afd53f1c2e2f68d68fd23f828f3ff42737fcbf502fbd8f76fff0bf580c9001749fe7bfeda7a9cac15cea3f32d3573c2662f1bf5f4f25ab2edae0bf3864e33247ccd33f2d0cf2a6f152f23f72a98952070cedbf77098c1040eaea3f004f2d8b9d7afabfbb2765df3b1be0bfbd14ef336f66e63fe76155475b5be4bfcd965d59eac5eebf1eefdbb8aacacb3fb08b706edfacd43f342f0a1108d0fabff45631c6cf3fb23f97eca2f2c627f4bfc67a09adda98de3ff72ba2e092a7d83fc0a34aa1e2f681bfeed9859d4890f43fae24c65fafd3f7bf16e7355336eb0240c07bf89057f586bfa8330433d43eeabfe04a6ad5e9b597bfae2c840d5565f63fddabe0ce145af93fd874ae79741dd53f7ab4939ed253e6bfdefa51b75ebff43f2dc7c1c9bb15e5bf011d6ddc8f41df3f0fd890a06879f93fe41ef6f37d7df2bf403cb16a09f2c9bfca5fbe708d9ed4bfd2bcb6484b27d4bf519bad25b6d8f4bf3243ba5ecb93df3f280c2d40b574d0bf25e46ee45ed5e3bf8da81e2fa482dcbf8246afe1a257d8bfc758f7e33323ebbff0334f367092ba3f8c69d6c0d316c8bf8a6917c06663ddbf1bf2cb232d34c9bfde2e3581a186e83f985530451e57d0bf16fdcce45ba9d6bf53440302b0ede9bfc85b5312bf62db3f1125330a5ff8cfbfcdd58a8b6f76c0bf82f6901fc3f8dbbffcb7e956bfaafebfb33683ae9760e1bfe07cfddeba44dcbfe709de4f89a6f43ffe4fada23bbbc6bf2d5ed5e8eae8babfd7f72b65f073c03fc4dff77e7d4af5bf77d4f291fe73f0bf0091f6278e9be9bf86c64fb7bae0ee3f93f0e3a6e028e5bf3e27edff82e693bfb93ff00b6e9af53f6c383a2f89c8f43f0f3f276b3589c93f1c302257b72505c03659d454a46dfbbf7937df0b3c55e73ffc273eacabade5bfe740e7134ba504407b4644f75c2ac5bf9cb1d66d58eaf4bf8b88856ef6b5cebf65fd6d6e0fafe53f522af38b5a6ff83ff2a7e94fa573fbbf4a575b7c6f11fd3f98bbd3fd6838f53f780d2752e116c9bf506346eee02bf93f0a2b93a5c2a5f63f99c53c82158df43fec86e6951552efbfb634def93bd0dbbf1cdb512ecfaafd3f205d611dc098f5bf4ab29afa47e3e0bf5662eecd94f6e53f8a93ad12fabfd4bf771d3b6a5805f03f601078040741b23f61bb6fb0962df23fe2fc200958dbf0bfd2b11014bfe2eebfa57b5a9db38ac03f75aa5ec511b0fdbf7cd042cafe4dd4bfcd1d1a1f603dddbf4cffba8d046af13f0d2569b05233ea3f21811571d350d0bf02a5699c702dd3bf84073cc84880f4bf65ce99b88deef43f6a1ed3ce5d6fef3f501f12cfd312aebf8ff1f19ec1c6ed3fa45542f1788ee9bf58d83b904ddfed3f3351d6ea1ff7c83f30978067d531f5bf90e1cba3ff74d5bfe3dcc007e155f9bf149e8036c14bdd3f0b7294b323a5cd3f8e1914afd819e5bf79cac441a779fdbf5bc9527d2b06f73f024824464e22d03f7d59232051ecf43fff3a204ef299f1bf1e07482d0ab9e03fc74ade2ae195fc3fde577bc7af75ebbfe3077dc54f80d9bf4f978ac89f15d93f5c6ba962a619fabf499776628637f83ffab0f58b96a6e8bfe0922625ed33de3fea2a6504777cf13fb8efe9f2b850e23f30dc443a361fe5bfe81871082a54c63f422882dda680e5bf10a05eaeaf28e7bf4d7234be127e024074a187657637e4bfaadd08f3b604e1bf50f4f3196868c3bf3dc438225243f1bfa6867023196df83f664dff431ac7f8bff6ecf94cdaf3fa3fe7ab49f13362f63f5fce530a7a41cbbfe2f7fe31a978f4bf3cfc1bca8ee2ddbfa40d0d28e4edc5bf7e7d84747359c63f9b8af1390cffeabfb233f645c8d1eb3fed2439ea70290140a30d7e37ce95e03ff6823edf22acb5bf606a79a74a22fb3fc445c4ae4beac0bf139058c93922d7bf38a0b160a969e0bfd811c36e8617a93f6fb1faec2551e6bf0df049592fa5ef3f27f7f7468b90f9bfea0abc3554c5db3f4ba70af02105c3bf409137c35eba8bbf0172760000c9f2bfd2437c5cc65bdcbf91a04c4c9b9c03408785bfeff5d8ea3fd5092c36a99df63f2dd3a8fd1036f0bf1ec9f102e8c2f93f7403aad8bc44da3ff80cacb474a5e6bf5838f13201cfc13f584ddbacc7d3b33f4ded05555a45f8bf15305e929738e53f070f79db7296dc3fc44393250b87f03f67312f0265dcb63f88dd2d81b68bddbf150dac28afddfa3f0efe372843b8e7bf8fd352e4537aea3f2b6e1986bd78d23f2625b1c9462bd8bf2d9d5ac9174fdc3f78709b1862bdfcbf06c36726c8e1e4bf9d1960dc172cdc3f94885b758d59d93f00d15aa11751893f0ad395fac514ae3f9b404cc21b4dc13f66ac81fe17d0bd3f011457218daac33f1ea2ec035145da3ff11b31442c63eebfe913245634f7d9bfdc8000046150bc3f00db1be8b7ab7d3f38413c5271fcdfbf1661d048990499bfa6333d7ed0ede13f0e586d8f14bae33f74ecc088ed9efbbf664d56a0f8b5ca3f6ab161829b49f53fe46c1a52c3abc9bf7798bea9137ddbbf887644cf48e90140862c52efd006d3bf2cb161c23280d0bfe618243f78acfabf88b78fc4ace00040bccd2cb553dcd3bf15de72b066f1fb3f7afc53c91e79eebfbe4d92c66fabf4bf10653c673ae5b4bf3d5088d251efe9bf7f3f37449820e93fd8417b1f2b66e53f258b9606f522e4bf82390487bb34e8bf088f963bde79fcbf7ab5b6574fcef1bf4941f3428943f03f77eb327a3ce0da3f436ab4195747e13fec3bc5f1338cb7bf142b272c843e05401aa8fe32d08ae13f74ad7f006586cf3f5884fc061f3061bfe02f6ae547cad6bfa8d0f4aedd0cd43f088f2629df13fd3f7625f92c6fd6f33fce43e8a0a400e8bf8e328da98830d83fbbdefa918135f13f0194d28cc2e8f93f3f98fcfa8607f0bff01286e039c5e1bf43b5905749c0b4bfe7d6c4026e01d23f1c0df27bec62b2bfff1a4c3720bee73fc2670b50ab3fe33fb0a0e320eab9f73f89b65e72a67fb23fa5257cc78143e6bf3ec22cda9c21cc3f040be053e50dfcbfd0bb8835c3f9d13f22e9eecdb772e9bf903ee43a1ec697bfd058ab5c363bf33faa8d8a6e2a75d43f376cd8bb0afaeb3f72b328e9abc7e3bf2c57e4365dfdf03f10d4d15db25fab3ff6f331d2a7aff2bf92f27846aed302c0ded9df0b5ab6c7bf929a71a39ab1c43f7ac3af77fd86ebbfd15aacf46df6fabf80f8815cc89ec03f98808bf11bc1e3bfd21568fe1a7bc0bf2f7a3b5c9349f2bfc3bfe80ca0b500c0856a77935cbdc83face8c7de1a22d63fbec88fe15883ebbfd65b670eedeff13f7e3818bcc45fe03f121d70cd3feeee3f3277b98cb174c73f7333f2894610eabf206930957a40f0bf2a42d92e95abd73f831e7ae1ee87c1bfe76af87af0b8bfbfd01832535e48e63f551b384edd6fd4bf784dad3c3260d8bf2c3023f112faf03f804c0789d1dd743f7a37e2c61800ba3f5be1cb72748bf9bf6af26867b9fdeb3f1303e4f23c34dc3ff067b987b4a2f6bf"
+        },
+        {
+          "shape": [
+            7,
+            7
+          ],
+          "dtype": "float64",
+          "bytes": "0000000000002440e93eca8af1d02640ee9b6a00d539294073da6489d83d2b40698d2b43f3c62c400000000000002e40bdd22d5553e32f4040218c32497928409a0b83fd318a2a40945037e246832c40d8d2011be7912e40cbc6a0f366313040cb5b5be85cf8304001146ae9f3c53140b73fbd33afc32c401f703a452d522e40e8e0fff7a2e62f4083e0e76e040e314091dddc75421732402ff6fb42a5f632407e76a041faad3340d9f985ee767630405cf7ffbea22931407ad9486899f831408e55cfac100633408e7107791f1c3440fa26fdc5f2083540d40484e9a4a635407d9de4605b603240f47e32308d0a3340ba30ef3372de3340e759a2221aee3440b8486bd9bc19364068872c93cc1f3740f9b58260c19337400000000000003440cd51750711a034406b3251910c733540318226ebe1863640d42be4a622ca37400000000000003940baa7043af03239408105a66c912e3540876e7c9e78d33540e792fde816a236408d02c3992da437409819fcc5f3c13840b3027f18e6b83940e2029c3587163a40"
+        }
+      ]
+    },
+    "gridding": {
+      "value": {
+        "values": {
+          "data": {
+            "shape": [
+              9,
+              11
+            ],
+            "dtype": "float64",
+            "bytes": "0000000000002440c753df83465d2a40e448c54e559d2f40c18da1a6ccda3140c49f03053462334050f9cfec647434401f153aa2a71a354014aa578bb1573540b64af25dad2c354020eaeded1ca634400000000000003440f40eb03f49292b4084449e74536a2f404964ee6e879e3140f4156ed3ab3733406d5a65f74b7d3440521291f945733540efb24054041d3640d0944699657a3640ad2b9d0b398d364097bbe270ff633640f60c5919422d3640bff85c17b4b53040b7c8eb707a1b32406aa3e4bdd471334075df921268a63440d9afe561eaaf35407c156d4c538c3640561c9a33473c3740f8840bab4cbb37405de07ec37e083840aa995514ef2c384014b580c9a2413840c7ce8b87986a334031b79d21585134407a824f46363b3540f6b7e9ae831f3640a63d47b5a1f6364017e8c3e22cbe374005e2e0b9f67938406e31f29f6a1d39408fdb49ce33a23940eadcb58ebe083a40943c2cf02d593a402b8bcae6cacb3540fefc765fbf57364025dfe0d420f13640680ea31cb9973740488e58fdde473840000000000000394091378f78abcf3940c747cf00f09b3a4075b2243f0c5a3b40a92f6d3d4d013c406f922ebf7d8b3c40c60219fe7bf33740e21ef522d6353840353ed5064d8e38404386c7de2c053940860c22d5e09c3940a3c0feb8ff563a405a0a3544b3373b40f5e10b2f522f3c4076ff7b91282e3d4077c3af8d0a203e405974c53290ec3e40b789ef511efa3940ea650c4a60f3394011c33e7bcd0d3a401655e039135a3a409e182d41dede3a4092be98a0b49e3b4064bf0391f8993c407b9f0a43b9c73d409a030f25ff173f4056f524262e364040038bda206dc8404077265b93eff63b40fe37fe2b7a973b40fb93c732726c3b403d58d7c0058d3b40ef2fe09232003c40f5a0d661f1c73c4024ab0647fde43d408796856971543f4044c1e5bdd18540407a23dcff3a74414006674260554842400000000000003e40ab5d2f8915283d40e62481157cad3c409e8a216417a03c40bb85dec7b6013d408b4ee5ca45d23d40b224627f31143f401fb7ed3cd2654040863284ac917c414088174bb4dbc242400000000000004440"
+          },
+          "mask": {
+            "shape": [
+              9,
+              11
+            ],
+            "dtype": "bool",
+            "bytes": "000001010101010101000000000101010101010100000101010101010101010101010101010000000101010101010101000000010101010101010100000001010101010101010101010101010100000101010101010100000000010101010101010000"
+          }
+        },
+        "i0": {
+          "float64": "0000000000000000"
+        },
+        "j0": {
+          "float64": "0000000000000000"
+        },
+        "step": 1
+      }
+    },
+    "velocity_model": {
+      "value": [
+        {
+          "shape": [
+            3
+          ],
+          "dtype": "float64",
+          "bytes": "0000000000d097403433333333938c40000000000000f87f"
+        },
+        {
+          "shape": [
+            3
+          ],
+          "dtype": "float64",
+          "bytes": "000000000088c340000000000000f87f000000000000f87f"
+        }
+      ]
+    },
+    "velocity_bad_unit": {
+      "exception": "ValueError",
+      "message": "Unknown time unit 'us': choose ms or s."
+    },
+    "volumetrics": {
+      "value": {
+        "area_acres": {
+          "float64": "d0cf8c697f62ed3f"
+        },
+        "gross_af": null,
+        "net_af": {
+          "float64": "d302f472578c3b40"
+        },
+        "pore_af": {
+          "float64": "dc9b298fdf091640"
+        },
+        "hcpv_af": {
+          "float64": "660d07629fda0e40"
+        },
+        "in_place": {
+          "float64": "cdd7ead92160d740"
+        },
+        "recoverable": {
+          "float64": "0b13ef474eb3b240"
+        },
+        "cells": 4
+      }
+    },
+    "batch_zones": {
+      "value": [
+        {
+          "GROSS": [
+            {
+              "float64": "0000000000005440"
+            },
+            "ft"
+          ],
+          "NET": [
+            {
+              "float64": "0000000000003440"
+            },
+            "ft"
+          ],
+          "NTG": [
+            {
+              "float64": "000000000000d03f"
+            },
+            ""
+          ],
+          "PHIH": [
+            {
+              "float64": "3333333333330340"
+            },
+            "ft"
+          ],
+          "HCPV": [
+            {
+              "float64": "f6285c8fc2f5f83f"
+            },
+            "ft"
+          ],
+          "PHIA": [
+            {
+              "float64": "b81e85eb51b8be3f"
+            },
+            "v/v"
+          ],
+          "SWA": [
+            {
+              "float64": "666666666666d63f"
+            },
+            "v/v"
+          ],
+          "KH": [
+            {
+              "float64": "0000000000002440"
+            },
+            "mD\u00b7ft"
+          ],
+          "PERMA": [
+            {
+              "float64": "000000000000e03f"
+            },
+            "mD"
+          ],
+          "PERMG": [
+            {
+              "float64": "000000000000e03f"
+            },
+            "mD"
+          ]
+        },
+        {
+          "porosity": "PHIE",
+          "saturation": "SW",
+          "permeability": "PERM"
+        },
+        {
+          "top": {
+            "float64": "0000000000c6c140"
+          },
+          "base": {
+            "float64": "0000000000eec140"
+          },
+          "top_source": "XON",
+          "base_source": "XON",
+          "note": "",
+          "reference": "MD"
+        }
+      ]
+    },
+    "licensing_internal_global": {
+      "value": "/tmp/audit-clock-hook"
+    }
+  },
+  "signatures": {
+    "ogcore.licensing": {
+      "Status": "(*values)",
+      "LicenseResult": "(status: 'Status', detail: 'str' = '', license_id: 'str' = '', license_type: 'str' = '', licensee: 'str' = '', company: 'str' = '', perpetual: 'bool' = False, expires_at: 'datetime | None' = None, modules: 'frozenset' = frozenset(), path: 'str' = '', claims: 'MappingProxyType' = <factory>) -> None",
+      "strict_json": "(text: 'str')",
+      "parse_utc": "(text) -> 'datetime'",
+      "format_utc": "(value: 'datetime') -> 'str'",
+      "public_keys": "() -> 'dict'",
+      "owner_trust_enabled": "() -> 'bool'",
+      "owner_trust_path": "() -> 'Path'",
+      "valid_key_id": "(key_id) -> 'bool'",
+      "valid_public_key": "(text) -> 'bool'",
+      "read_owner_trust": "(path: 'Path | None' = None) -> 'dict'",
+      "owner_trusted_keys": "() -> 'dict'",
+      "verify_bytes": "(data: 'bytes', now: 'datetime | None' = None, keys: 'dict | None' = None, path='') -> 'LicenseResult'",
+      "user_license_path": "() -> 'Path'",
+      "machine_license_path": "() -> 'Path | None'",
+      "state_path": "() -> 'Path'",
+      "license_paths": "() -> 'list[Path]'",
+      "read_license": "(now=None, keys=None) -> 'LicenseResult'",
+      "install_license": "(source, target: 'Path | None' = None, now=None, keys=None) -> 'LicenseResult'",
+      "machine_id": "() -> 'str'",
+      "PlainProtector": "()",
+      "DpapiProtector": "()",
+      "default_protector": "()",
+      "ClockState": "(path: 'Path | None' = None, protector=None)",
+      "check": "(module: 'str', now: 'datetime | None' = None, keys=None, clock: 'ClockState | None' = None, license_result: 'LicenseResult | None' = None) -> 'LicenseResult'"
+    },
+    "ogcore.license_runtime": {
+      "State": "(*values)",
+      "LicenseBlocked": "(operation: 'str' = '')",
+      "now": "() -> 'datetime'",
+      "start": "(module: 'str', result: 'licensing.LicenseResult') -> 'None'",
+      "reset": "() -> 'None'",
+      "state": "() -> 'State'",
+      "restricted": "() -> 'bool'",
+      "module": "() -> 'str'",
+      "on_change": "(callback) -> 'None'",
+      "lapsed": "(result: 'licensing.LicenseResult | None' = None) -> 'None'",
+      "refresh": "() -> 'None'",
+      "may_start": "(operation: 'str') -> 'bool'",
+      "require": "(operation: 'str') -> 'None'",
+      "require_active_license": "(operation: 'str') -> 'None'",
+      "permitted": "(operation: 'str', parent=None, set_status=None) -> 'bool'",
+      "protected": "(operation: 'str')",
+      "guarded": "(operation: 'str')",
+      "saving": "()",
+      "saves": "(function)",
+      "register": "(connection: 'sqlite3.Connection', owner=None) -> 'None'",
+      "blocked_write": "(exc: 'BaseException') -> 'bool'",
+      "install_license": "(source) -> 'licensing.LicenseResult'",
+      "explain_blocked": "(parent=None, set_status=None) -> 'None'"
+    },
+    "ogcore.formulas": {
+      "FormulaError": "unavailable",
+      "check_expression": "(expression: 'str') -> 'ast.Expression'",
+      "names_in": "(expression: 'str', names: 'Mapping[str, Any] | None' = None) -> 'set[str]'",
+      "names_outside": "(expression: 'str', function: 'str', names: 'Mapping[str, Any] | None' = None) -> 'set[str]'",
+      "evaluate": "(expression: 'str', names: 'Mapping[str, Any]') -> 'Any'"
+    },
+    "ogcore.multimineral": {
+      "ModelError": "unavailable",
+      "electron_density": "(rhob)",
+      "volumetric_pe": "(pe, rho)",
+      "Model": "(minerals: 'list' = <factory>, endpoints: 'dict' = <factory>, measurements: 'list' = <factory>, weights: 'dict' = <factory>, sigmas: 'dict' = <factory>, shale_mode: 'str' = 'curve', shale_fixed: 'float' = 0.0, shale_bounds: 'tuple' = (0.0, 1.0), shale_tolerance: 'float | None' = None, shale_porosity: 'float' = 0.1, ambiguity_limit: 'float' = 0.1, residual_limit: 'float' = 3.0, name: 'str' = '') -> None",
+      "resolution": "(model: 'Model', measurements, rho_e=2.6) -> 'np.ndarray | None'",
+      "solve_sample": "(a, b, lo, hi, total=1.0, max_iter=60)",
+      "Result": "(curves: 'dict', qc: 'np.ndarray', model: 'Model', inputs: 'dict', interval_mask: 'np.ndarray', resolution: 'dict' = <factory>, notes: 'list' = <factory>) -> None",
+      "describe_qc": "(flag: 'int') -> 'str'",
+      "invert": "(model: 'Model', logs: 'dict', vsh=None, mask=None, inputs=None) -> 'Result'",
+      "forward": "(model: 'Model', volumes: 'dict', measurements=None) -> 'dict'",
+      "as_fraction": "(values, unit: 'str' = '', name: 'str' = '') -> 'tuple[np.ndarray, str]'",
+      "rw_apparent": "(resistivity, porosity, a: 'float' = 1.0, m: 'float' = 2.0)",
+      "compare_porosity": "(resistivity, porosities: 'dict', mask, a: 'float' = 1.0, m: 'float' = 2.0) -> 'dict'"
+    },
+    "ogcore.multivariate": {
+      "complete_rows": "(columns: 'list[np.ndarray]') -> 'np.ndarray'",
+      "Regression": "(target: 'str', inputs: 'list[str]', coefficients: 'np.ndarray', std_errors: 'np.ndarray', t_values: 'np.ndarray', beta: 'np.ndarray', r2: 'float', adjusted_r2: 'float', rmse: 'float', n: 'int', log_target: 'bool' = False, fitted: 'np.ndarray' = <factory>, observed: 'np.ndarray' = <factory>) -> None",
+      "linear_regression": "(target: 'np.ndarray', inputs: 'list[np.ndarray]', names, target_name='Y', log_target=False)",
+      "correlation_matrix": "(columns: 'list[np.ndarray]') -> 'tuple[np.ndarray, int]'",
+      "Clusters": "(inputs: 'list[str]', centers: 'np.ndarray', counts: 'np.ndarray', mean: 'np.ndarray', scale: 'np.ndarray', labels: 'np.ndarray') -> None",
+      "kmeans": "(columns: 'list[np.ndarray]', names, k: 'int', seed: 'int' = 0, restarts: 'int' = 6, max_iter: 'int' = 200)"
+    },
+    "ogcore.core_equations": {
+      "identifier": "(name: 'str') -> 'str'",
+      "identifiers": "(name: 'str') -> 'list[str]'",
+      "is_percent_fraction": "(name: 'str', unit: 'str', values) -> 'bool'",
+      "sample_at": "(grid, values, depths) -> 'np.ndarray'",
+      "values_at": "(points, depths, tolerance: 'float' = 0.05) -> 'np.ndarray'",
+      "sample_depths": "(points) -> 'np.ndarray'"
+    },
+    "ogcore.water": {
+      "to_f": "(t, unit: 'str')",
+      "from_f": "(t, unit: 'str')",
+      "gradient_from_bht": "(surface_temp: 'float', bht: 'float', bht_depth: 'float') -> 'float'",
+      "formation_temperature": "(depth, surface_temp: 'float', gradient_per_100: 'float')",
+      "arps": "(r1, t1, t2, unit: 'str' = 'F')",
+      "rw_from_salinity": "(ppm, temp, unit: 'str' = 'F')",
+      "salinity_from_rw": "(rw, temp, unit: 'str' = 'F')",
+      "rw_from_sp": "(ssp_mv: 'float', rmf: 'float', temp, unit: 'str' = 'F') -> 'dict'"
+    },
+    "petroworkbench.curve_ops": {
+      "CurveEditError": "unavailable",
+      "Edit": "(operation: 'str', source: 'str', values: 'np.ndarray', params: 'dict' = <factory>, interval: 'tuple | None' = None, depth: 'np.ndarray | None' = None, grid: 'tuple | None' = None, unit: 'str' = '', note: 'str' = '', inputs: 'list' = <factory>) -> None",
+      "well_grid": "(well) -> 'tuple | None'",
+      "curve_grid": "(well, name: 'str') -> 'tuple | None'",
+      "grid_problems": "(well, names, include_well: 'bool' = False, interval=None) -> 'dict'",
+      "GridMismatch": "(problems: 'dict', reference, unit: 'str' = '')",
+      "check_common_grid": "(well, names, include_well: 'bool' = True, interval=None) -> 'None'",
+      "reference_grid": "(well, names) -> 'tuple | None'",
+      "smooth_values": "(values, params) -> 'np.ndarray'",
+      "run": "(well, operation: 'str', params: 'dict', curves=None, units=None, normalize=None) -> 'Edit'",
+      "resample_edit": "(well, source: 'str', params: 'dict') -> 'Edit'",
+      "commit": "(well, edit: 'Edit', output: 'str | None' = None) -> 'str'",
+      "provenance": "(edit: 'Edit', well, output: 'str') -> 'dict'"
+    },
+    "ogcore.pay": {
+      "parse_criteria": "(text: 'str', available: 'Mapping[str, object]') -> 'list[dict]'",
+      "criteria_text": "(rows: 'list[dict]', separator: 'str' = '; ') -> 'str'",
+      "pay_mask": "(curves: 'Mapping[str, np.ndarray]', units: 'Mapping[str, str]', criteria: 'list[dict]', within) -> 'np.ndarray'",
+      "PaySummary": "(reference: 'str', gross: 'float', net: 'float', gross_md: 'float', net_md: 'float', porosity_curve: 'str | None' = None, porosity: 'float' = nan, saturation_curve: 'str | None' = None, saturation: 'float' = nan, phih: 'float' = nan, hcpt: 'float' = nan, permeability_curve: 'str | None' = None, permeability: 'float' = nan, permeability_geometric: 'float' = nan, kh: 'float' = nan, shale_curve: 'str | None' = None, shale: 'float' = nan) -> None",
+      "sample_support": "(depth, top: 'float', base: 'float', tvd_of_md: 'Callable | None' = None) -> 'np.ndarray'",
+      "zone_samples": "(depth, top: 'float', base: 'float') -> 'np.ndarray'",
+      "summarize": "(depth, pay, top: 'float', base: 'float', curves: 'Mapping[str, np.ndarray]', units: 'Mapping[str, str]', criteria: 'list[dict]' = (), tvd_of_md: 'Callable | None' = None, porosity_curve: 'str | None' = None, saturation_curve: 'str | None' = None, permeability_curve: 'str | None' = None, shale_curve: 'str | None' = None) -> 'PaySummary'"
+    },
+    "ogcore.batch_zones": {
+      "Cutoff": "(curve: 'str', minimum: 'float | None' = None, maximum: 'float | None' = None, enabled: 'bool' = True, min_percent: 'bool' = False, max_percent: 'bool' = False) -> None",
+      "Formula": "(attribute: 'str', expression: 'str', units: 'str' = '') -> None",
+      "Definition": "(name: 'str', zone: 'str' = '', interval: 'str' = 'tops', top_formation: 'str' = '', base_formation: 'str' = '', top_md: 'float | None' = None, base_md: 'float | None' = None, top_source: 'str' = '', boundary_fallback: 'bool' = False, wells: 'dict' = <factory>, inputs: 'dict' = <factory>, other_inputs: 'list' = <factory>, cutoffs: 'list' = <factory>, outputs: 'dict' = <factory>, formulas: 'list' = <factory>, constants: 'dict' = <factory>, source: 'str' = '', min_coverage: 'float' = 0.5) -> None",
+      "definitions": "(db) -> 'dict[str, Definition]'",
+      "save_definition": "(db, definition: 'Definition') -> 'None'",
+      "delete_definition": "(db, name: 'str') -> 'None'",
+      "runs": "(db) -> 'list[dict]'",
+      "aliases": "(db) -> 'dict[str, list[str]]'",
+      "polygons": "(db) -> 'list'",
+      "resolve_wells": "(db, rule: 'dict', current_well_id=None) -> 'list[int]'",
+      "section_wells": "(db) -> 'list[int]'",
+      "correlation_wells": "(db) -> 'list[int]'",
+      "Skip": "(category: 'str', reason: 'str')",
+      "WellResult": "(well_id: 'int', well: 'str', api: 'str' = '', status: 'str' = 'pending', category: 'str' = '', reason: 'str' = '', top: 'float | None' = None, base: 'float | None' = None, top_source: 'str' = '', base_source: 'str' = '', note: 'str' = '', reference: 'str' = '', curves: 'dict' = <factory>, values: 'dict' = <factory>, written: 'dict' = <factory>, kept: 'list' = <factory>, seconds: 'float' = 0.0) -> None",
+      "zone_boundaries": "(definition: 'Definition', picks: 'list[dict]', prefer: 'str | None') -> 'dict'",
+      "coverage": "(depth, values, top: 'float', base: 'float') -> 'float'",
+      "calculate_well": "(db, definition: 'Definition', well_id: 'int', picks, prefer, alias_map) -> 'tuple[dict, dict, dict]'",
+      "RunReport": "(definition: 'str', source: 'str', zone: 'str', run_id: 'str' = '', started: 'str' = '', seconds: 'float' = 0.0, selected: 'int' = 0, results: 'list' = <factory>, cancelled: 'bool' = False, policy: 'str' = 'skip', conflicts: 'int' = 0, kept_earlier: 'int' = 0) -> None",
+      "conflicts": "(db, definition: 'Definition', well_ids) -> 'dict[tuple[int, str], str]'",
+      "run": "(db, definition: 'Definition', well_ids=None, *, current_well_id=None, policy: 'str' = 'skip', rename_suffix: 'str' = '', progress=None, cancelled=None, record: 'bool' = True) -> 'RunReport'"
+    },
+    "ogcore.gridders": {
+      "Search": "(max_points: 'int' = 16, min_points: 'int' = 1, radius: 'float | None' = None) -> None",
+      "Neighbors": "(u, v)",
+      "segments_from": "(lines) -> 'np.ndarray'",
+      "blocked": "(qu, qv, pu, pv, segments: 'np.ndarray') -> 'np.ndarray'",
+      "anisotropic": "(u, v, azimuth: 'float | None', ratio: 'float | None', aspect: 'float' = 1.0)",
+      "variogram": "(h, model: 'str', range_: 'float', sill: 'float', nugget: 'float' = 0.0)",
+      "polynomial_fit": "(u, v, z, order: 'int')",
+      "Options": "(method: 'str' = 'least_squares', search: 'Search' = None, power: 'float' = 2.0, order: 'int' = 1, scope: 'str' = 'global', variogram: 'str' = 'spherical', range_: 'float | None' = None, nugget: 'float' = 0.0, tension: 'float' = 0.25, azimuth: 'float | None' = None, ratio: 'float' = 1.0, detrend: 'str' = 'none', extrapolate: 'bool' = True) -> None",
+      "interpolate": "(u, v, z, qu, qv, options: 'Options', barriers=(), exclude=None) -> 'np.ndarray'",
+      "grid_values": "(u, v, z, shape, options: 'Options', barriers=(), cancel=None, aspect: 'float' = 1.0) -> 'np.ndarray'",
+      "residual_stats": "(actual, gridded) -> 'dict'",
+      "leave_one_out": "(u, v, z, options: 'Options', barriers=(), limit: 'int' = 2000)"
+    },
+    "ogcore.gridding": {
+      "GridResult": "(values: 'np.ma.MaskedArray', i0: 'float', j0: 'float', step: 'int') -> None",
+      "grid_picks": "(picks: 'np.ndarray', present: 'np.ndarray | None' = None, max_cells: 'int' = 350, max_gap: 'float' = 0.25, method: 'str' = 'Minimum curvature', smoothing: 'int' = 0, tension: 'float' = 0.35, aspect: 'float' = 1.0, step: 'int | None' = None) -> 'GridResult | None'",
+      "polygon_window": "(affine, shape, polygon, margin: 'int' = 4, margin_fraction: 'float' = 0.1)",
+      "grid_picks_within": "(picks: 'np.ndarray', polygon, affine, present: 'np.ndarray | None' = None, max_gap: 'float' = 0.25, **kwargs) -> 'GridResult | None'",
+      "node_xy": "(result: 'GridResult', affine)",
+      "blank_inside": "(result: 'GridResult | None', polygons, affine) -> 'GridResult | None'",
+      "pick_display": "(grid: 'np.ndarray', widen: 'bool' = True) -> 'GridResult'",
+      "to_surface": "(result: 'GridResult', geometry, name: 'str' = '', unit: 'str' = '')",
+      "bin_aspect": "(geometry) -> 'float'",
+      "nice_interval": "(span: 'float', target: 'int' = 12) -> 'float'"
+    },
+    "ogcore.mincurv": {
+      "dct": "(x: 'np.ndarray', axis: 'int' = -1) -> 'np.ndarray'",
+      "idct": "(c: 'np.ndarray', axis: 'int' = -1) -> 'np.ndarray'",
+      "sample": "(grid: 'np.ndarray', u, v) -> 'np.ndarray'",
+      "min_curvature": "(u, v, z, shape, tension: 'float' = 0.25, aspect: 'float' = 1.0, tol: 'float' = 0.0001, max_iter: 'int' = 2000, passes: 'int' = 4, exact: 'bool' = True, cancel=None) -> 'np.ndarray'",
+      "smooth": "(grid: 'np.ndarray', passes: 'int' = 1) -> 'np.ndarray'",
+      "honor": "(grid: 'np.ndarray', u, v, z, tension: 'float' = 0.7, aspect: 'float' = 1.0) -> 'np.ndarray'",
+      "misfit": "(grid: 'np.ndarray', u, v, z) -> 'np.ndarray'",
+      "distance_mask": "(shape, rows, cols, radius: 'float', aspect: 'float' = 1.0) -> 'np.ndarray'",
+      "self_check": "() -> 'None'"
+    },
+    "ogcore.velocity_model": {
+      "datum_code": "(text) -> 'str'",
+      "ensure_schema": "(db) -> 'None'",
+      "seconds": "(twt, time_units: 'str') -> 'np.ndarray'",
+      "length_factor": "(from_unit: 'str', to_unit: 'str') -> 'float'",
+      "velocity_length": "(velocity_units: 'str') -> 'str'",
+      "depth_below_datum": "(velocity, twt, time_units: 'str', velocity_units: 'str', depth_units: 'str') -> 'np.ndarray'",
+      "average_velocity": "(depth, twt, time_units: 'str', depth_units: 'str', velocity_units: 'str') -> 'np.ndarray'",
+      "VelocityModel": "(name: 'str', model_type: 'str' = 'constant', time_units: 'str' = 'ms', velocity_units: 'str' = 'ft/s', depth_units: 'str' = 'ft', datum: 'str' = 'TVDSS', datum_elevation: 'float' = 0.0, settings: 'dict' = <factory>, provenance: 'dict' = <factory>, is_default: 'bool' = False, notes: 'str' = '', id: 'int | None' = None, created_at: 'str' = '', modified_at: 'str' = '') -> None",
+      "Control": "(x: 'float', y: 'float', twt: 'float', tvdss: 'float | None' = None, tvd: 'float | None' = None, well_id: 'int | None' = None, label: 'str' = '', source: 'str' = '', td_model_id: 'int | None' = None, td_point_id: 'int | None' = None, confidence: 'float' = 1.0, use: 'bool' = True, note: 'str' = '', id: 'int | None' = None, formation: 'str' = '', depth_datum: 'str' = 'TVDSS', depth_units: 'str' = '', time_units: 'str' = 'ms') -> None",
+      "models": "(db) -> 'list[VelocityModel]'",
+      "load": "(db, model_id: 'int') -> 'VelocityModel | None'",
+      "by_name": "(db, name: 'str') -> 'VelocityModel | None'",
+      "default_model": "(db) -> 'VelocityModel | None'",
+      "check_units": "(model: 'VelocityModel') -> 'None'",
+      "save": "(db, model: 'VelocityModel') -> 'int'",
+      "touch": "(db, model_id: 'int') -> 'None'",
+      "set_default": "(db, model_id: 'int | None') -> 'None'",
+      "delete": "(db, model_id: 'int') -> 'None'",
+      "duplicate": "(db, model_id: 'int', name: 'str | None' = None) -> 'int'",
+      "controls": "(db, model_id: 'int') -> 'list[Control]'",
+      "add_control": "(db, model_id: 'int', c: 'Control') -> 'int'",
+      "remove_control": "(db, control_id: 'int') -> 'None'",
+      "set_use": "(db, control_ids, use: 'bool') -> 'None'",
+      "well_time_depth_controls": "(db, well_ids=None, active_only: 'bool' = True) -> 'list[Control]'",
+      "formations": "(db) -> 'list[str]'",
+      "top_controls": "(db, formation: 'str', time_surface, time_units: 'str', time_source: 'str', well_ids=None, skipped: 'list | None' = None) -> 'list[Control]'",
+      "control_depth_below_datum": "(model: 'VelocityModel', c: 'Control') -> 'float | None'",
+      "control_velocity": "(model: 'VelocityModel', c: 'Control') -> 'float'",
+      "grid_velocity_unit": "(unit_text) -> 'str | None'",
+      "velocity_grid_unit": "(db, model: 'VelocityModel') -> 'str'",
+      "velocity_grid": "(db, model: 'VelocityModel')",
+      "velocity_at": "(db, model: 'VelocityModel', x, y, time_at=None, extent=None, ctrl=None, extrapolate=None) -> 'np.ndarray'",
+      "to_output": "(model: 'VelocityModel', below_datum, datum: 'str', depth_units: 'str') -> 'np.ndarray'",
+      "convert_surface": "(db, model: 'VelocityModel', surface, time_units: 'str', datum: 'str', depth_units: 'str', extrapolate=None)",
+      "convert_grid": "(db, model: 'VelocityModel', source_surface, source_name: 'str', output_name: 'str', time_units: 'str', datum: 'str | None' = None, depth_units: 'str | None' = None, extrapolate=None, source_grid_id: 'int | None' = None, source_kind: 'str' = 'map grid', display: 'dict | None' = None) -> 'int'",
+      "conversions": "(db) -> 'list[dict]'",
+      "qc": "(db, model: 'VelocityModel', ctrl: 'list[Control] | None' = None) -> 'dict'",
+      "validate": "(db, model: 'VelocityModel') -> 'list[str]'",
+      "status": "(db, model: 'VelocityModel') -> 'str'"
+    },
+    "ogvol.engine": {
+      "VolumetricsError": "unavailable",
+      "Input": "(kind: 'str' = 'none', surface: 'object' = None, value: 'float | None' = None, unit: 'str' = '', label: 'str' = '', convention: 'str' = 'depth') -> None",
+      "Case": "(fluid: 'str' = 'oil', inputs: 'dict' = <factory>, rf: 'float' = 0.0, boundary: 'tuple | None' = None, compartments: 'list | None' = None, fault_compartments: 'bool' = False, faults: 'list' = <factory>, barrier_lines: 'list' = <factory>, metres_per_unit: 'float' = 0.3048, cutoffs: 'list' = <factory>, method: 'str' = 'cell', mode: 'str' = 'grid', area: 'float | None' = None, area_unit: 'str' = 'acres') -> None",
+      "Totals": "(area_acres: 'float' = 0.0, gross_af: 'float | None' = None, net_af: 'float' = 0.0, pore_af: 'float' = 0.0, hcpv_af: 'float' = 0.0, in_place: 'float' = 0.0, recoverable: 'float' = 0.0, cells: 'int' = 0) -> None",
+      "Result": "(fluid: 'str', totals: 'Totals', compartments: 'list', cutoffs: 'list', cutoff_unit: 'str', sources: 'dict', rf: 'float', method: 'str', frame: 'object' = None, grids: 'dict' = <factory>, notes: 'list' = <factory>, mode: 'str' = 'grid', area_source: 'str' = '', properties: 'dict' = <factory>, uniform: 'bool' = False) -> None",
+      "to_feet": "(values, unit: 'str')",
+      "area_to_acres": "(value, unit: 'str') -> 'float'",
+      "to_fraction": "(values, unit: 'str')",
+      "cell_area_acres": "(frame, metres_per_unit: 'float') -> 'float'",
+      "cell_values": "(node_values)",
+      "cell_frame": "(frame)",
+      "compute": "(case: 'Case') -> 'Result'",
+      "check_polygon": "(label: 'str', xy, metres_per_unit=0.3048) -> 'None'",
+      "check_geometry": "(case: 'Case') -> 'None'",
+      "validate_constants": "(case: 'Case', unused: 'str' = '') -> 'None'",
+      "cell_validity": "(net, gross, phi, sw, fvf, ntg=None) -> 'tuple[np.ndarray, np.ndarray, dict]'"
+    }
+  }
+}

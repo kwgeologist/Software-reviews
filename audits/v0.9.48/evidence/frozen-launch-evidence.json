@@ -1,0 +1,52 @@
+[
+  {
+    "name": "OandG_Workbench",
+    "mode": "unlicensed",
+    "exit_code": 3
+  },
+  {
+    "name": "OandG_Workbench",
+    "mode": "owner_trust_rejected",
+    "exit_code": 3
+  },
+  {
+    "name": "PetroWorkbench",
+    "mode": "unlicensed",
+    "exit_code": 3
+  },
+  {
+    "name": "PetroWorkbench",
+    "mode": "owner_trust_rejected",
+    "exit_code": 3
+  },
+  {
+    "name": "SeismicWorkbench",
+    "mode": "unlicensed",
+    "exit_code": 3
+  },
+  {
+    "name": "SeismicWorkbench",
+    "mode": "owner_trust_rejected",
+    "exit_code": 3
+  },
+  {
+    "name": "GeosteeringWorkbench",
+    "mode": "unlicensed",
+    "exit_code": 3
+  },
+  {
+    "name": "GeosteeringWorkbench",
+    "mode": "owner_trust_rejected",
+    "exit_code": 3
+  },
+  {
+    "name": "CorrelationWorkbench",
+    "mode": "unlicensed",
+    "exit_code": 3
+  },
+  {
+    "name": "CorrelationWorkbench",
+    "mode": "owner_trust_rejected",
+    "exit_code": 3
+  }
+]

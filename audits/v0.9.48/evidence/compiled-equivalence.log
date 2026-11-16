@@ -1,0 +1,5 @@
+<equation>:1: RuntimeWarning: divide by zero encountered in divide
+<equation>:1: RuntimeWarning: divide by zero encountered in log10
+<equation>:1: RuntimeWarning: invalid value encountered in log10
+<equation>:1: RuntimeWarning: invalid value encountered in sqrt
+cases 24 exceptions [('formulas:1/0', {'exception': 'ZeroDivisionError', 'message': 'division by zero'}), ('formulas:A + MISSING', {'exception': 'FormulaError', 'message': "'MISSING' is not a curve, core measurement or constant."}), ('velocity_bad_unit', {'exception': 'ValueError', 'message': "Unknown time unit 'us': choose ms or s."})]

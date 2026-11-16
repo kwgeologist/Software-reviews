@@ -1,0 +1,63 @@
+[
+  {
+    "id": "B48-01",
+    "category": "B",
+    "kind": "confirmed verification defect",
+    "title": "Protected-source gate misses nested and non-PYZ copies",
+    "confidence": "High",
+    "files": [
+      "tools/release/check_protected.py",
+      "tools/release/inventory.py",
+      "Build_Windows_EXE.bat"
+    ],
+    "evidence": [
+      "protection-negative-evidence.json",
+      "customer-protected-check.log",
+      "owner-archive-evidence.json"
+    ]
+  },
+  {
+    "id": "B48-02",
+    "category": "B",
+    "kind": "confirmed feature defect",
+    "title": "Standalone Petro API search/sort reads the wrong state field",
+    "confidence": "High",
+    "files": [
+      "petroworkbench/project_tree.py",
+      "petroworkbench/workspace.py"
+    ],
+    "evidence": [
+      "petro-independent-evidence.json"
+    ]
+  },
+  {
+    "id": "B48-03",
+    "category": "B",
+    "kind": "requirements risk; unchanged constrained fitting confirmed",
+    "title": "Manual fault acceptance still invokes constrained fitting with automatic UI disabled",
+    "confidence": "High for code path; Medium for intended boundary",
+    "files": [
+      "geosteering/app.py",
+      "geosteering/job.py",
+      "geosteering/model.py"
+    ],
+    "evidence": [
+      "geosteering-independent-evidence.json"
+    ]
+  },
+  {
+    "id": "B48-04",
+    "category": "B",
+    "kind": "confirmed verification gap",
+    "title": "Renamed Petra fixture passes payload inventory",
+    "confidence": "High",
+    "files": [
+      "release/manifest.json",
+      "tools/release/inventory.py",
+      "tests/test_v0948_fixes.py"
+    ],
+    "evidence": [
+      "wsd-payload-evidence.json"
+    ]
+  }
+]

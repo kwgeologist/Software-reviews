@@ -1,0 +1,3633 @@
+{
+  "original_files": 899,
+  "python_files": 604,
+  "python_lines": 250836,
+  "syntax_errors": [],
+  "test_files": 252,
+  "files": [
+    {
+      "file": "app.py",
+      "lines": 15,
+      "functions": 0,
+      "classes": 0
+    },
+    {
+      "file": "bulk_import.py",
+      "lines": 773,
+      "functions": 25,
+      "classes": 2
+    },
+    {
+      "file": "correlation_app.py",
+      "lines": 19,
+      "functions": 0,
+      "classes": 0
+    },
+    {
+      "file": "correlationworkbench/__init__.py",
+      "lines": 4,
+      "functions": 0,
+      "classes": 0
+    },
+    {
+      "file": "correlationworkbench/app.py",
+      "lines": 1639,
+      "functions": 117,
+      "classes": 1
+    },
+    {
+      "file": "correlationworkbench/colour_intervals.py",
+      "lines": 19,
+      "functions": 0,
+      "classes": 0
+    },
+    {
+      "file": "correlationworkbench/dialogs.py",
+      "lines": 1371,
+      "functions": 92,
+      "classes": 10
+    },
+    {
+      "file": "correlationworkbench/digital.py",
+      "lines": 205,
+      "functions": 8,
+      "classes": 0
+    },
+    {
+      "file": "correlationworkbench/model.py",
+      "lines": 601,
+      "functions": 32,
+      "classes": 10
+    },
+    {
+      "file": "correlationworkbench/panels.py",
+      "lines": 362,
+      "functions": 26,
+      "classes": 4
+    },
+    {
+      "file": "correlationworkbench/store.py",
+      "lines": 402,
+      "functions": 35,
+      "classes": 2
+    },
+    {
+      "file": "correlationworkbench/table.py",
+      "lines": 1551,
+      "functions": 93,
+      "classes": 2
+    },
+    {
+      "file": "correlationworkbench/template_editor.py",
+      "lines": 958,
+      "functions": 56,
+      "classes": 1
+    },
+    {
+      "file": "database.py",
+      "lines": 5067,
+      "functions": 200,
+      "classes": 4
+    },
+    {
+      "file": "export_manager.py",
+      "lines": 885,
+      "functions": 27,
+      "classes": 3
+    },
+    {
+      "file": "geosteer_app.py",
+      "lines": 24,
+      "functions": 0,
+      "classes": 0
+    },
+    {
+      "file": "geosteering/__init__.py",
+      "lines": 22,
+      "functions": 0,
+      "classes": 0
+    },
+    {
+      "file": "geosteering/app.py",
+      "lines": 2841,
+      "functions": 177,
+      "classes": 3
+    },
+    {
+      "file": "geosteering/demo.py",
+      "lines": 154,
+      "functions": 4,
+      "classes": 0
+    },
+    {
+      "file": "geosteering/dialogs.py",
+      "lines": 2125,
+      "functions": 151,
+      "classes": 24
+    },
+    {
+      "file": "geosteering/drawing.py",
+      "lines": 1356,
+      "functions": 56,
+      "classes": 4
+    },
+    {
+      "file": "geosteering/job.py",
+      "lines": 1109,
+      "functions": 72,
+      "classes": 4
+    },
+    {
+      "file": "geosteering/model.py",
+      "lines": 1095,
+      "functions": 69,
+      "classes": 5
+    },
+    {
+      "file": "geosteering/project.py",
+      "lines": 812,
+      "functions": 28,
+      "classes": 0
+    },
+    {
+      "file": "geosteering/report.py",
+      "lines": 129,
+      "functions": 4,
+      "classes": 0
+    },
+    {
+      "file": "geosteering/wells.py",
+      "lines": 590,
+      "functions": 36,
+      "classes": 3
+    },
+    {
+      "file": "geoworkbench/__init__.py",
+      "lines": 4,
+      "functions": 0,
+      "classes": 0
+    },
+    {
+      "file": "geoworkbench/common.py",
+      "lines": 156,
+      "functions": 13,
+      "classes": 2
+    },
+    {
+      "file": "geoworkbench/core_tab.py",
+      "lines": 453,
+      "functions": 21,
+      "classes": 1
+    },
+    {
+      "file": "geoworkbench/crs.py",
+      "lines": 413,
+      "functions": 17,
+      "classes": 2
+    },
+    {
+      "file": "geoworkbench/faults_tab.py",
+      "lines": 228,
+      "functions": 12,
+      "classes": 1
+    },
+    {
+      "file": "geoworkbench/formation_tab.py",
+      "lines": 176,
+      "functions": 8,
+      "classes": 1
+    },
+    {
+      "file": "geoworkbench/import_dialogs.py",
+      "lines": 506,
+      "functions": 22,
+      "classes": 2
+    },
+    {
+      "file": "geoworkbench/interpretation_dialogs.py",
+      "lines": 376,
+      "functions": 20,
+      "classes": 4
+    },
+    {
+      "file": "geoworkbench/las_loader.py",
+      "lines": 278,
+      "functions": 13,
+      "classes": 1
+    },
+    {
+      "file": "geoworkbench/las_tab.py",
+      "lines": 374,
+      "functions": 20,
+      "classes": 1
+    },
+    {
+      "file": "geoworkbench/location.py",
+      "lines": 523,
+      "functions": 17,
+      "classes": 2
+    },
+    {
+      "file": "geoworkbench/main_window.py",
+      "lines": 2745,
+      "functions": 145,
+      "classes": 2
+    },
+    {
+      "file": "geoworkbench/production_tab.py",
+      "lines": 525,
+      "functions": 26,
+      "classes": 3
+    },
+    {
+      "file": "geoworkbench/raster_tab.py",
+      "lines": 412,
+      "functions": 25,
+      "classes": 1
+    },
+    {
+      "file": "geoworkbench/spreadsheet.py",
+      "lines": 1291,
+      "functions": 96,
+      "classes": 4
+    },
+    {
+      "file": "geoworkbench/survey_bulk_dialog.py",
+      "lines": 382,
+      "functions": 18,
+      "classes": 1
+    },
+    {
+      "file": "geoworkbench/symbol_catalog_dialog.py",
+      "lines": 523,
+      "functions": 32,
+      "classes": 1
+    },
+    {
+      "file": "geoworkbench/symbol_picker.py",
+      "lines": 126,
+      "functions": 6,
+      "classes": 1
+    },
+    {
+      "file": "geoworkbench/tables.py",
+      "lines": 494,
+      "functions": 34,
+      "classes": 1
+    },
+    {
+      "file": "geoworkbench/tests_tab.py",
+      "lines": 864,
+      "functions": 44,
+      "classes": 1
+    },
+    {
+      "file": "geoworkbench/time_depth_tab.py",
+      "lines": 287,
+      "functions": 17,
+      "classes": 2
+    },
+    {
+      "file": "geoworkbench/treatments_tab.py",
+      "lines": 114,
+      "functions": 5,
+      "classes": 1
+    },
+    {
+      "file": "geoworkbench/well_tab.py",
+      "lines": 370,
+      "functions": 17,
+      "classes": 2
+    },
+    {
+      "file": "geoworkbench/zones_tab.py",
+      "lines": 325,
+      "functions": 18,
+      "classes": 1
+    },
+    {
+      "file": "license_manager/__init__.py",
+      "lines": 5,
+      "functions": 0,
+      "classes": 0
+    },
+    {
+      "file": "license_manager/__main__.py",
+      "lines": 145,
+      "functions": 3,
+      "classes": 0
+    },
+    {
+      "file": "license_manager/gui.py",
+      "lines": 566,
+      "functions": 41,
+      "classes": 2
+    },
+    {
+      "file": "license_manager/issuer.py",
+      "lines": 402,
+      "functions": 25,
+      "classes": 1
+    },
+    {
+      "file": "license_manager/self_test.py",
+      "lines": 109,
+      "functions": 4,
+      "classes": 0
+    },
+    {
+      "file": "mapped_import.py",
+      "lines": 919,
+      "functions": 21,
+      "classes": 2
+    },
+    {
+      "file": "ogcore/__init__.py",
+      "lines": 40,
+      "functions": 0,
+      "classes": 0
+    },
+    {
+      "file": "ogcore/api.py",
+      "lines": 210,
+      "functions": 10,
+      "classes": 0
+    },
+    {
+      "file": "ogcore/assistant/__init__.py",
+      "lines": 38,
+      "functions": 0,
+      "classes": 0
+    },
+    {
+      "file": "ogcore/assistant/catalog.py",
+      "lines": 309,
+      "functions": 11,
+      "classes": 4
+    },
+    {
+      "file": "ogcore/assistant/context.py",
+      "lines": 123,
+      "functions": 4,
+      "classes": 1
+    },
+    {
+      "file": "ogcore/assistant/credentials.py",
+      "lines": 87,
+      "functions": 5,
+      "classes": 1
+    },
+    {
+      "file": "ogcore/assistant/engine.py",
+      "lines": 227,
+      "functions": 7,
+      "classes": 2
+    },
+    {
+      "file": "ogcore/assistant/provider.py",
+      "lines": 109,
+      "functions": 5,
+      "classes": 4
+    },
+    {
+      "file": "ogcore/assistant/validate.py",
+      "lines": 87,
+      "functions": 1,
+      "classes": 1
+    },
+    {
+      "file": "ogcore/assistant_ui.py",
+      "lines": 387,
+      "functions": 22,
+      "classes": 2
+    },
+    {
+      "file": "ogcore/attribute_index.py",
+      "lines": 387,
+      "functions": 25,
+      "classes": 1
+    },
+    {
+      "file": "ogcore/autoreg/__init__.py",
+      "lines": 28,
+      "functions": 1,
+      "classes": 0
+    },
+    {
+      "file": "ogcore/autoreg/__main__.py",
+      "lines": 49,
+      "functions": 1,
+      "classes": 0
+    },
+    {
+      "file": "ogcore/autoreg/diagnostics.py",
+      "lines": 252,
+      "functions": 9,
+      "classes": 0
+    },
+    {
+      "file": "ogcore/autoreg/digits.py",
+      "lines": 88,
+      "functions": 6,
+      "classes": 1
+    },
+    {
+      "file": "ogcore/autoreg/engine.py",
+      "lines": 830,
+      "functions": 26,
+      "classes": 2
+    },
+    {
+      "file": "ogcore/autoreg/lines.py",
+      "lines": 1106,
+      "functions": 48,
+      "classes": 2
+    },
+    {
+      "file": "ogcore/autoreg/model.py",
+      "lines": 266,
+      "functions": 16,
+      "classes": 8
+    },
+    {
+      "file": "ogcore/autoreg/ocr.py",
+      "lines": 583,
+      "functions": 25,
+      "classes": 2
+    },
+    {
+      "file": "ogcore/autoreg/progression.py",
+      "lines": 487,
+      "functions": 16,
+      "classes": 3
+    },
+    {
+      "file": "ogcore/autoreg/sections.py",
+      "lines": 538,
+      "functions": 14,
+      "classes": 2
+    },
+    {
+      "file": "ogcore/autoreg/source.py",
+      "lines": 60,
+      "functions": 6,
+      "classes": 2
+    },
+    {
+      "file": "ogcore/autotrace.py",
+      "lines": 790,
+      "functions": 34,
+      "classes": 5
+    },
+    {
+      "file": "ogcore/background.py",
+      "lines": 203,
+      "functions": 11,
+      "classes": 2
+    },
+    {
+      "file": "ogcore/batch_curves.py",
+      "lines": 382,
+      "functions": 18,
+      "classes": 2
+    },
+    {
+      "file": "ogcore/batch_ui.py",
+      "lines": 1218,
+      "functions": 73,
+      "classes": 5
+    },
+    {
+      "file": "ogcore/batch_zones.py",
+      "lines": 1059,
+      "functions": 54,
+      "classes": 7
+    },
+    {
+      "file": "ogcore/bhl_repair.py",
+      "lines": 147,
+      "functions": 4,
+      "classes": 1
+    },
+    {
+      "file": "ogcore/binlisting.py",
+      "lines": 270,
+      "functions": 9,
+      "classes": 2
+    },
+    {
+      "file": "ogcore/branding.py",
+      "lines": 75,
+      "functions": 5,
+      "classes": 0
+    },
+    {
+      "file": "ogcore/cache.py",
+      "lines": 211,
+      "functions": 14,
+      "classes": 1
+    },
+    {
+      "file": "ogcore/cancel.py",
+      "lines": 33,
+      "functions": 5,
+      "classes": 2
+    },
+    {
+      "file": "ogcore/cell_editor.py",
+      "lines": 166,
+      "functions": 11,
+      "classes": 1
+    },
+    {
+      "file": "ogcore/cfb.py",
+      "lines": 165,
+      "functions": 11,
+      "classes": 3
+    },
+    {
+      "file": "ogcore/color_bar_files.py",
+      "lines": 114,
+      "functions": 7,
+      "classes": 0
+    },
+    {
+      "file": "ogcore/colour_bars.py",
+      "lines": 665,
+      "functions": 42,
+      "classes": 0
+    },
+    {
+      "file": "ogcore/colour_intervals.py",
+      "lines": 516,
+      "functions": 36,
+      "classes": 2
+    },
+    {
+      "file": "ogcore/core_data.py",
+      "lines": 278,
+      "functions": 17,
+      "classes": 3
+    },
+    {
+      "file": "ogcore/core_equations.py",
+      "lines": 91,
+      "functions": 6,
+      "classes": 0
+    },
+    {
+      "file": "ogcore/core_series.py",
+      "lines": 130,
+      "functions": 5,
+      "classes": 0
+    },
+    {
+      "file": "ogcore/curve_aliases.py",
+      "lines": 237,
+      "functions": 23,
+      "classes": 0
+    },
+    {
+      "file": "ogcore/curve_aliases_ui.py",
+      "lines": 263,
+      "functions": 23,
+      "classes": 1
+    },
+    {
+      "file": "ogcore/curve_calc.py",
+      "lines": 202,
+      "functions": 12,
+      "classes": 2
+    },
+    {
+      "file": "ogcore/curve_grids.py",
+      "lines": 125,
+      "functions": 8,
+      "classes": 0
+    },
+    {
+      "file": "ogcore/curve_store.py",
+      "lines": 671,
+      "functions": 28,
+      "classes": 1
+    },
+    {
+      "file": "ogcore/curve_values.py",
+      "lines": 175,
+      "functions": 10,
+      "classes": 1
+    },
+    {
+      "file": "ogcore/curves.py",
+      "lines": 173,
+      "functions": 7,
+      "classes": 0
+    },
+    {
+      "file": "ogcore/depth.py",
+      "lines": 299,
+      "functions": 17,
+      "classes": 1
+    },
+    {
+      "file": "ogcore/digitize.py",
+      "lines": 1423,
+      "functions": 92,
+      "classes": 3
+    },
+    {
+      "file": "ogcore/errorlog.py",
+      "lines": 87,
+      "functions": 6,
+      "classes": 0
+    },
+    {
+      "file": "ogcore/existing_wells.py",
+      "lines": 38,
+      "functions": 3,
+      "classes": 0
+    },
+    {
+      "file": "ogcore/filedrop.py",
+      "lines": 102,
+      "functions": 5,
+      "classes": 0
+    },
+    {
+      "file": "ogcore/flowbar.py",
+      "lines": 100,
+      "functions": 5,
+      "classes": 1
+    },
+    {
+      "file": "ogcore/formulas.py",
+      "lines": 226,
+      "functions": 9,
+      "classes": 1
+    },
+    {
+      "file": "ogcore/gridders.py",
+      "lines": 560,
+      "functions": 24,
+      "classes": 3
+    },
+    {
+      "file": "ogcore/gridding.py",
+      "lines": 330,
+      "functions": 17,
+      "classes": 1
+    },
+    {
+      "file": "ogcore/handoff.py",
+      "lines": 300,
+      "functions": 23,
+      "classes": 0
+    },
+    {
+      "file": "ogcore/icons.py",
+      "lines": 325,
+      "functions": 15,
+      "classes": 0
+    },
+    {
+      "file": "ogcore/ihs297.py",
+      "lines": 1046,
+      "functions": 30,
+      "classes": 6
+    },
+    {
+      "file": "ogcore/ihs298.py",
+      "lines": 583,
+      "functions": 19,
+      "classes": 5
+    },
+    {
+      "file": "ogcore/import_preview.py",
+      "lines": 193,
+      "functions": 7,
+      "classes": 2
+    },
+    {
+      "file": "ogcore/interp_integrity.py",
+      "lines": 116,
+      "functions": 9,
+      "classes": 1
+    },
+    {
+      "file": "ogcore/las.py",
+      "lines": 437,
+      "functions": 28,
+      "classes": 3
+    },
+    {
+      "file": "ogcore/license_gate.py",
+      "lines": 239,
+      "functions": 12,
+      "classes": 1
+    },
+    {
+      "file": "ogcore/license_runtime.py",
+      "lines": 361,
+      "functions": 30,
+      "classes": 3
+    },
+    {
+      "file": "ogcore/licensing.py",
+      "lines": 629,
+      "functions": 43,
+      "classes": 7
+    },
+    {
+      "file": "ogcore/licensing_keys.py",
+      "lines": 29,
+      "functions": 1,
+      "classes": 0
+    },
+    {
+      "file": "ogcore/lru.py",
+      "lines": 88,
+      "functions": 9,
+      "classes": 1
+    },
+    {
+      "file": "ogcore/mincurv.py",
+      "lines": 517,
+      "functions": 22,
+      "classes": 1
+    },
+    {
+      "file": "ogcore/multimineral.py",
+      "lines": 667,
+      "functions": 29,
+      "classes": 3
+    },
+    {
+      "file": "ogcore/multivariate.py",
+      "lines": 186,
+      "functions": 7,
+      "classes": 2
+    },
+    {
+      "file": "ogcore/pay.py",
+      "lines": 259,
+      "functions": 10,
+      "classes": 1
+    },
+    {
+      "file": "ogcore/pay_sets.py",
+      "lines": 717,
+      "functions": 41,
+      "classes": 3
+    },
+    {
+      "file": "ogcore/pay_ui.py",
+      "lines": 805,
+      "functions": 48,
+      "classes": 3
+    },
+    {
+      "file": "ogcore/petra_grid.py",
+      "lines": 268,
+      "functions": 9,
+      "classes": 2
+    },
+    {
+      "file": "ogcore/petra_ppf.py",
+      "lines": 1657,
+      "functions": 49,
+      "classes": 4
+    },
+    {
+      "file": "ogcore/plss.py",
+      "lines": 196,
+      "functions": 13,
+      "classes": 0
+    },
+    {
+      "file": "ogcore/production.py",
+      "lines": 907,
+      "functions": 42,
+      "classes": 3
+    },
+    {
+      "file": "ogcore/project.py",
+      "lines": 566,
+      "functions": 31,
+      "classes": 4
+    },
+    {
+      "file": "ogcore/project_ui.py",
+      "lines": 187,
+      "functions": 12,
+      "classes": 2
+    },
+    {
+      "file": "ogcore/raster.py",
+      "lines": 1113,
+      "functions": 66,
+      "classes": 5
+    },
+    {
+      "file": "ogcore/recovery.py",
+      "lines": 545,
+      "functions": 32,
+      "classes": 4
+    },
+    {
+      "file": "ogcore/recovery_ui.py",
+      "lines": 188,
+      "functions": 12,
+      "classes": 1
+    },
+    {
+      "file": "ogcore/repositories.py",
+      "lines": 499,
+      "functions": 42,
+      "classes": 5
+    },
+    {
+      "file": "ogcore/repository_ui.py",
+      "lines": 532,
+      "functions": 35,
+      "classes": 4
+    },
+    {
+      "file": "ogcore/resample.py",
+      "lines": 189,
+      "functions": 11,
+      "classes": 0
+    },
+    {
+      "file": "ogcore/safeio.py",
+      "lines": 296,
+      "functions": 23,
+      "classes": 2
+    },
+    {
+      "file": "ogcore/scrollframe.py",
+      "lines": 308,
+      "functions": 18,
+      "classes": 1
+    },
+    {
+      "file": "ogcore/seg_p1.py",
+      "lines": 1015,
+      "functions": 52,
+      "classes": 7
+    },
+    {
+      "file": "ogcore/segy.py",
+      "lines": 981,
+      "functions": 52,
+      "classes": 4
+    },
+    {
+      "file": "ogcore/segy2d.py",
+      "lines": 195,
+      "functions": 9,
+      "classes": 1
+    },
+    {
+      "file": "ogcore/seis_ties.py",
+      "lines": 518,
+      "functions": 31,
+      "classes": 3
+    },
+    {
+      "file": "ogcore/seismic_attributes.py",
+      "lines": 493,
+      "functions": 14,
+      "classes": 0
+    },
+    {
+      "file": "ogcore/sheet.py",
+      "lines": 511,
+      "functions": 36,
+      "classes": 2
+    },
+    {
+      "file": "ogcore/slider.py",
+      "lines": 77,
+      "functions": 8,
+      "classes": 1
+    },
+    {
+      "file": "ogcore/smoothing.py",
+      "lines": 180,
+      "functions": 10,
+      "classes": 1
+    },
+    {
+      "file": "ogcore/sources_ui.py",
+      "lines": 281,
+      "functions": 24,
+      "classes": 2
+    },
+    {
+      "file": "ogcore/startup_timing.py",
+      "lines": 115,
+      "functions": 10,
+      "classes": 2
+    },
+    {
+      "file": "ogcore/surface.py",
+      "lines": 722,
+      "functions": 43,
+      "classes": 2
+    },
+    {
+      "file": "ogcore/survey_bulk.py",
+      "lines": 383,
+      "functions": 21,
+      "classes": 3
+    },
+    {
+      "file": "ogcore/survey_files.py",
+      "lines": 333,
+      "functions": 17,
+      "classes": 3
+    },
+    {
+      "file": "ogcore/symbol_catalog.py",
+      "lines": 493,
+      "functions": 25,
+      "classes": 5
+    },
+    {
+      "file": "ogcore/synthetic.py",
+      "lines": 280,
+      "functions": 17,
+      "classes": 2
+    },
+    {
+      "file": "ogcore/task_progress.py",
+      "lines": 437,
+      "functions": 41,
+      "classes": 2
+    },
+    {
+      "file": "ogcore/text_style.py",
+      "lines": 355,
+      "functions": 29,
+      "classes": 3
+    },
+    {
+      "file": "ogcore/theme.py",
+      "lines": 168,
+      "functions": 4,
+      "classes": 0
+    },
+    {
+      "file": "ogcore/toggle.py",
+      "lines": 46,
+      "functions": 4,
+      "classes": 1
+    },
+    {
+      "file": "ogcore/tooltip.py",
+      "lines": 55,
+      "functions": 4,
+      "classes": 1
+    },
+    {
+      "file": "ogcore/units.py",
+      "lines": 81,
+      "functions": 6,
+      "classes": 0
+    },
+    {
+      "file": "ogcore/velocity_model.py",
+      "lines": 949,
+      "functions": 46,
+      "classes": 2
+    },
+    {
+      "file": "ogcore/water.py",
+      "lines": 80,
+      "functions": 8,
+      "classes": 0
+    },
+    {
+      "file": "ogcore/well_fields.py",
+      "lines": 26,
+      "functions": 0,
+      "classes": 0
+    },
+    {
+      "file": "ogcore/well_filter_ui.py",
+      "lines": 145,
+      "functions": 9,
+      "classes": 1
+    },
+    {
+      "file": "ogcore/well_geometry.py",
+      "lines": 495,
+      "functions": 27,
+      "classes": 1
+    },
+    {
+      "file": "ogcore/well_list_builder.py",
+      "lines": 1513,
+      "functions": 75,
+      "classes": 3
+    },
+    {
+      "file": "ogcore/well_list_files.py",
+      "lines": 234,
+      "functions": 10,
+      "classes": 3
+    },
+    {
+      "file": "ogcore/well_names.py",
+      "lines": 52,
+      "functions": 6,
+      "classes": 1
+    },
+    {
+      "file": "ogcore/well_query.py",
+      "lines": 1157,
+      "functions": 56,
+      "classes": 1
+    },
+    {
+      "file": "ogcore/well_selection.py",
+      "lines": 443,
+      "functions": 31,
+      "classes": 1
+    },
+    {
+      "file": "ogcore/well_tests.py",
+      "lines": 864,
+      "functions": 31,
+      "classes": 3
+    },
+    {
+      "file": "ogcore/xyz.py",
+      "lines": 378,
+      "functions": 21,
+      "classes": 3
+    },
+    {
+      "file": "ogmap/__init__.py",
+      "lines": 5,
+      "functions": 0,
+      "classes": 0
+    },
+    {
+      "file": "ogmap/bubble_dialog.py",
+      "lines": 1079,
+      "functions": 72,
+      "classes": 4
+    },
+    {
+      "file": "ogmap/bubbles.py",
+      "lines": 597,
+      "functions": 36,
+      "classes": 3
+    },
+    {
+      "file": "ogmap/changes.py",
+      "lines": 106,
+      "functions": 2,
+      "classes": 0
+    },
+    {
+      "file": "ogmap/color_scale.py",
+      "lines": 507,
+      "functions": 39,
+      "classes": 1
+    },
+    {
+      "file": "ogmap/colorbar_editor.py",
+      "lines": 770,
+      "functions": 42,
+      "classes": 1
+    },
+    {
+      "file": "ogmap/contour_dialog.py",
+      "lines": 349,
+      "functions": 17,
+      "classes": 2
+    },
+    {
+      "file": "ogmap/contours.py",
+      "lines": 181,
+      "functions": 9,
+      "classes": 0
+    },
+    {
+      "file": "ogmap/control_points.py",
+      "lines": 79,
+      "functions": 3,
+      "classes": 0
+    },
+    {
+      "file": "ogmap/coverage.py",
+      "lines": 421,
+      "functions": 30,
+      "classes": 3
+    },
+    {
+      "file": "ogmap/culture.py",
+      "lines": 835,
+      "functions": 39,
+      "classes": 3
+    },
+    {
+      "file": "ogmap/cursors.py",
+      "lines": 215,
+      "functions": 10,
+      "classes": 0
+    },
+    {
+      "file": "ogmap/datastore.py",
+      "lines": 586,
+      "functions": 37,
+      "classes": 3
+    },
+    {
+      "file": "ogmap/digitized.py",
+      "lines": 211,
+      "functions": 9,
+      "classes": 1
+    },
+    {
+      "file": "ogmap/drawing_tab.py",
+      "lines": 1296,
+      "functions": 75,
+      "classes": 3
+    },
+    {
+      "file": "ogmap/drawings.py",
+      "lines": 389,
+      "functions": 28,
+      "classes": 1
+    },
+    {
+      "file": "ogmap/georef.py",
+      "lines": 487,
+      "functions": 30,
+      "classes": 4
+    },
+    {
+      "file": "ogmap/georef_dialog.py",
+      "lines": 422,
+      "functions": 33,
+      "classes": 1
+    },
+    {
+      "file": "ogmap/grid_dialogs.py",
+      "lines": 1213,
+      "functions": 54,
+      "classes": 3
+    },
+    {
+      "file": "ogmap/grids.py",
+      "lines": 820,
+      "functions": 44,
+      "classes": 1
+    },
+    {
+      "file": "ogmap/icons.py",
+      "lines": 58,
+      "functions": 3,
+      "classes": 0
+    },
+    {
+      "file": "ogmap/isopach.py",
+      "lines": 555,
+      "functions": 30,
+      "classes": 4
+    },
+    {
+      "file": "ogmap/isopach_dialog.py",
+      "lines": 383,
+      "functions": 17,
+      "classes": 1
+    },
+    {
+      "file": "ogmap/labels.py",
+      "lines": 136,
+      "functions": 20,
+      "classes": 2
+    },
+    {
+      "file": "ogmap/layer_dialog.py",
+      "lines": 144,
+      "functions": 8,
+      "classes": 1
+    },
+    {
+      "file": "ogmap/layer_groups.py",
+      "lines": 216,
+      "functions": 16,
+      "classes": 0
+    },
+    {
+      "file": "ogmap/layer_target.py",
+      "lines": 121,
+      "functions": 4,
+      "classes": 0
+    },
+    {
+      "file": "ogmap/layers.py",
+      "lines": 174,
+      "functions": 25,
+      "classes": 7
+    },
+    {
+      "file": "ogmap/legal.py",
+      "lines": 149,
+      "functions": 9,
+      "classes": 1
+    },
+    {
+      "file": "ogmap/lod.py",
+      "lines": 66,
+      "functions": 2,
+      "classes": 1
+    },
+    {
+      "file": "ogmap/measure.py",
+      "lines": 157,
+      "functions": 13,
+      "classes": 0
+    },
+    {
+      "file": "ogmap/palettes.py",
+      "lines": 387,
+      "functions": 17,
+      "classes": 0
+    },
+    {
+      "file": "ogmap/perf.py",
+      "lines": 324,
+      "functions": 40,
+      "classes": 3
+    },
+    {
+      "file": "ogmap/point_sets.py",
+      "lines": 86,
+      "functions": 6,
+      "classes": 0
+    },
+    {
+      "file": "ogmap/polygon_dialog.py",
+      "lines": 75,
+      "functions": 6,
+      "classes": 1
+    },
+    {
+      "file": "ogmap/polygon_stats.py",
+      "lines": 272,
+      "functions": 13,
+      "classes": 2
+    },
+    {
+      "file": "ogmap/posting.py",
+      "lines": 308,
+      "functions": 14,
+      "classes": 3
+    },
+    {
+      "file": "ogmap/project.py",
+      "lines": 1014,
+      "functions": 50,
+      "classes": 2
+    },
+    {
+      "file": "ogmap/scale.py",
+      "lines": 186,
+      "functions": 13,
+      "classes": 0
+    },
+    {
+      "file": "ogmap/scrollbars.py",
+      "lines": 109,
+      "functions": 7,
+      "classes": 1
+    },
+    {
+      "file": "ogmap/setups.py",
+      "lines": 82,
+      "functions": 10,
+      "classes": 0
+    },
+    {
+      "file": "ogmap/shape_export.py",
+      "lines": 205,
+      "functions": 6,
+      "classes": 1
+    },
+    {
+      "file": "ogmap/side_panel.py",
+      "lines": 49,
+      "functions": 4,
+      "classes": 0
+    },
+    {
+      "file": "ogmap/sources.py",
+      "lines": 577,
+      "functions": 23,
+      "classes": 1
+    },
+    {
+      "file": "ogmap/spatial.py",
+      "lines": 172,
+      "functions": 13,
+      "classes": 2
+    },
+    {
+      "file": "ogmap/stack.py",
+      "lines": 262,
+      "functions": 24,
+      "classes": 0
+    },
+    {
+      "file": "ogmap/symbols.py",
+      "lines": 151,
+      "functions": 9,
+      "classes": 0
+    },
+    {
+      "file": "ogmap/textpaths.py",
+      "lines": 263,
+      "functions": 11,
+      "classes": 0
+    },
+    {
+      "file": "ogmap/view.py",
+      "lines": 3979,
+      "functions": 195,
+      "classes": 4
+    },
+    {
+      "file": "ogmap/well_maps.py",
+      "lines": 113,
+      "functions": 8,
+      "classes": 1
+    },
+    {
+      "file": "ogmap/well_values.py",
+      "lines": 157,
+      "functions": 5,
+      "classes": 1
+    },
+    {
+      "file": "ogmap/wells_dialog.py",
+      "lines": 605,
+      "functions": 30,
+      "classes": 1
+    },
+    {
+      "file": "ogmap/window.py",
+      "lines": 4936,
+      "functions": 297,
+      "classes": 2
+    },
+    {
+      "file": "ogmap/xyz_dialog.py",
+      "lines": 210,
+      "functions": 8,
+      "classes": 1
+    },
+    {
+      "file": "ograster/__init__.py",
+      "lines": 4,
+      "functions": 0,
+      "classes": 0
+    },
+    {
+      "file": "ograster/autoreview.py",
+      "lines": 968,
+      "functions": 47,
+      "classes": 3
+    },
+    {
+      "file": "ograster/bulk_lic.py",
+      "lines": 399,
+      "functions": 11,
+      "classes": 3
+    },
+    {
+      "file": "ograster/calibrate.py",
+      "lines": 1364,
+      "functions": 79,
+      "classes": 2
+    },
+    {
+      "file": "ograster/digitize_ui.py",
+      "lines": 2287,
+      "functions": 119,
+      "classes": 3
+    },
+    {
+      "file": "ograster/importing.py",
+      "lines": 155,
+      "functions": 3,
+      "classes": 1
+    },
+    {
+      "file": "ograster/overlay.py",
+      "lines": 766,
+      "functions": 55,
+      "classes": 4
+    },
+    {
+      "file": "ograster/pdf_import.py",
+      "lines": 510,
+      "functions": 29,
+      "classes": 3
+    },
+    {
+      "file": "ograster/pdf_import_ui.py",
+      "lines": 384,
+      "functions": 25,
+      "classes": 1
+    },
+    {
+      "file": "ograster/progress.py",
+      "lines": 114,
+      "functions": 6,
+      "classes": 0
+    },
+    {
+      "file": "ogvol/__init__.py",
+      "lines": 4,
+      "functions": 0,
+      "classes": 0
+    },
+    {
+      "file": "ogvol/app.py",
+      "lines": 903,
+      "functions": 37,
+      "classes": 2
+    },
+    {
+      "file": "ogvol/building.py",
+      "lines": 101,
+      "functions": 5,
+      "classes": 0
+    },
+    {
+      "file": "ogvol/engine.py",
+      "lines": 741,
+      "functions": 28,
+      "classes": 5
+    },
+    {
+      "file": "ogvol/report.py",
+      "lines": 293,
+      "functions": 11,
+      "classes": 0
+    },
+    {
+      "file": "ogvol/scenarios.py",
+      "lines": 315,
+      "functions": 21,
+      "classes": 0
+    },
+    {
+      "file": "petro_app.py",
+      "lines": 21,
+      "functions": 0,
+      "classes": 0
+    },
+    {
+      "file": "petroworkbench/__init__.py",
+      "lines": 4,
+      "functions": 0,
+      "classes": 0
+    },
+    {
+      "file": "petroworkbench/analysis.py",
+      "lines": 1052,
+      "functions": 49,
+      "classes": 1
+    },
+    {
+      "file": "petroworkbench/app.py",
+      "lines": 572,
+      "functions": 20,
+      "classes": 1
+    },
+    {
+      "file": "petroworkbench/calculations.py",
+      "lines": 1233,
+      "functions": 59,
+      "classes": 1
+    },
+    {
+      "file": "petroworkbench/colors.py",
+      "lines": 906,
+      "functions": 42,
+      "classes": 1
+    },
+    {
+      "file": "petroworkbench/constants.py",
+      "lines": 56,
+      "functions": 0,
+      "classes": 0
+    },
+    {
+      "file": "petroworkbench/core_points.py",
+      "lines": 648,
+      "functions": 30,
+      "classes": 1
+    },
+    {
+      "file": "petroworkbench/curve_editor.py",
+      "lines": 360,
+      "functions": 27,
+      "classes": 1
+    },
+    {
+      "file": "petroworkbench/curve_editor_panel.py",
+      "lines": 950,
+      "functions": 58,
+      "classes": 1
+    },
+    {
+      "file": "petroworkbench/curve_ops.py",
+      "lines": 448,
+      "functions": 16,
+      "classes": 3
+    },
+    {
+      "file": "petroworkbench/curve_tools.py",
+      "lines": 486,
+      "functions": 21,
+      "classes": 1
+    },
+    {
+      "file": "petroworkbench/depth_entry.py",
+      "lines": 151,
+      "functions": 13,
+      "classes": 2
+    },
+    {
+      "file": "petroworkbench/geo_link.py",
+      "lines": 1868,
+      "functions": 81,
+      "classes": 1
+    },
+    {
+      "file": "petroworkbench/interpretation.py",
+      "lines": 1263,
+      "functions": 58,
+      "classes": 1
+    },
+    {
+      "file": "petroworkbench/las_files.py",
+      "lines": 652,
+      "functions": 21,
+      "classes": 3
+    },
+    {
+      "file": "petroworkbench/multimineral_ui.py",
+      "lines": 576,
+      "functions": 25,
+      "classes": 2
+    },
+    {
+      "file": "petroworkbench/multivariate.py",
+      "lines": 491,
+      "functions": 23,
+      "classes": 1
+    },
+    {
+      "file": "petroworkbench/multiwell.py",
+      "lines": 192,
+      "functions": 11,
+      "classes": 1
+    },
+    {
+      "file": "petroworkbench/pay_picking.py",
+      "lines": 377,
+      "functions": 25,
+      "classes": 1
+    },
+    {
+      "file": "petroworkbench/plot_editing.py",
+      "lines": 664,
+      "functions": 24,
+      "classes": 1
+    },
+    {
+      "file": "petroworkbench/plotting.py",
+      "lines": 1741,
+      "functions": 55,
+      "classes": 2
+    },
+    {
+      "file": "petroworkbench/project_tree.py",
+      "lines": 477,
+      "functions": 17,
+      "classes": 1
+    },
+    {
+      "file": "petroworkbench/rasters.py",
+      "lines": 496,
+      "functions": 33,
+      "classes": 1
+    },
+    {
+      "file": "petroworkbench/tracks.py",
+      "lines": 686,
+      "functions": 29,
+      "classes": 1
+    },
+    {
+      "file": "petroworkbench/well_data.py",
+      "lines": 237,
+      "functions": 13,
+      "classes": 1
+    },
+    {
+      "file": "petroworkbench/windows.py",
+      "lines": 293,
+      "functions": 29,
+      "classes": 1
+    },
+    {
+      "file": "petroworkbench/workspace.py",
+      "lines": 862,
+      "functions": 30,
+      "classes": 1
+    },
+    {
+      "file": "seismic_app.py",
+      "lines": 19,
+      "functions": 0,
+      "classes": 0
+    },
+    {
+      "file": "seismicworkbench/__init__.py",
+      "lines": 1,
+      "functions": 0,
+      "classes": 0
+    },
+    {
+      "file": "seismicworkbench/app.py",
+      "lines": 2855,
+      "functions": 156,
+      "classes": 1
+    },
+    {
+      "file": "seismicworkbench/cube.py",
+      "lines": 742,
+      "functions": 43,
+      "classes": 1
+    },
+    {
+      "file": "seismicworkbench/dialogs.py",
+      "lines": 847,
+      "functions": 38,
+      "classes": 6
+    },
+    {
+      "file": "seismicworkbench/fault_surface.py",
+      "lines": 219,
+      "functions": 11,
+      "classes": 0
+    },
+    {
+      "file": "seismicworkbench/grids_ui.py",
+      "lines": 371,
+      "functions": 19,
+      "classes": 1
+    },
+    {
+      "file": "seismicworkbench/interp_registry.py",
+      "lines": 314,
+      "functions": 22,
+      "classes": 1
+    },
+    {
+      "file": "seismicworkbench/interpretation.py",
+      "lines": 435,
+      "functions": 35,
+      "classes": 2
+    },
+    {
+      "file": "seismicworkbench/kingdom.py",
+      "lines": 955,
+      "functions": 38,
+      "classes": 8
+    },
+    {
+      "file": "seismicworkbench/kingdom_native.py",
+      "lines": 401,
+      "functions": 17,
+      "classes": 5
+    },
+    {
+      "file": "seismicworkbench/layers_ui.py",
+      "lines": 224,
+      "functions": 15,
+      "classes": 1
+    },
+    {
+      "file": "seismicworkbench/layout.py",
+      "lines": 348,
+      "functions": 15,
+      "classes": 0
+    },
+    {
+      "file": "seismicworkbench/legacy.py",
+      "lines": 144,
+      "functions": 4,
+      "classes": 2
+    },
+    {
+      "file": "seismicworkbench/linepath.py",
+      "lines": 86,
+      "functions": 3,
+      "classes": 0
+    },
+    {
+      "file": "seismicworkbench/lines2d.py",
+      "lines": 490,
+      "functions": 36,
+      "classes": 3
+    },
+    {
+      "file": "seismicworkbench/lines2d_ui.py",
+      "lines": 358,
+      "functions": 14,
+      "classes": 2
+    },
+    {
+      "file": "seismicworkbench/mapping.py",
+      "lines": 1704,
+      "functions": 106,
+      "classes": 3
+    },
+    {
+      "file": "seismicworkbench/mistie.py",
+      "lines": 144,
+      "functions": 10,
+      "classes": 1
+    },
+    {
+      "file": "seismicworkbench/nav_import.py",
+      "lines": 440,
+      "functions": 15,
+      "classes": 3
+    },
+    {
+      "file": "seismicworkbench/picking.py",
+      "lines": 397,
+      "functions": 19,
+      "classes": 1
+    },
+    {
+      "file": "seismicworkbench/picks_io.py",
+      "lines": 1025,
+      "functions": 35,
+      "classes": 6
+    },
+    {
+      "file": "seismicworkbench/picks_ui.py",
+      "lines": 307,
+      "functions": 16,
+      "classes": 2
+    },
+    {
+      "file": "seismicworkbench/project.py",
+      "lines": 554,
+      "functions": 35,
+      "classes": 3
+    },
+    {
+      "file": "seismicworkbench/section2d.py",
+      "lines": 813,
+      "functions": 55,
+      "classes": 1
+    },
+    {
+      "file": "seismicworkbench/sections.py",
+      "lines": 1464,
+      "functions": 66,
+      "classes": 1
+    },
+    {
+      "file": "seismicworkbench/slices.py",
+      "lines": 1031,
+      "functions": 51,
+      "classes": 2
+    },
+    {
+      "file": "seismicworkbench/synthetic.py",
+      "lines": 399,
+      "functions": 18,
+      "classes": 1
+    },
+    {
+      "file": "seismicworkbench/ties_ui.py",
+      "lines": 1278,
+      "functions": 67,
+      "classes": 6
+    },
+    {
+      "file": "seismicworkbench/time_depth_ui.py",
+      "lines": 777,
+      "functions": 45,
+      "classes": 5
+    },
+    {
+      "file": "seismicworkbench/wells.py",
+      "lines": 709,
+      "functions": 30,
+      "classes": 3
+    },
+    {
+      "file": "seismicworkbench/windows.py",
+      "lines": 290,
+      "functions": 24,
+      "classes": 1
+    },
+    {
+      "file": "tests/autoreg_synth.py",
+      "lines": 598,
+      "functions": 28,
+      "classes": 2
+    },
+    {
+      "file": "tests/autotrace_fixtures.py",
+      "lines": 55,
+      "functions": 5,
+      "classes": 0
+    },
+    {
+      "file": "tests/conftest.py",
+      "lines": 144,
+      "functions": 10,
+      "classes": 0
+    },
+    {
+      "file": "tests/correlation_fixtures.py",
+      "lines": 116,
+      "functions": 5,
+      "classes": 0
+    },
+    {
+      "file": "tests/segy_fixtures.py",
+      "lines": 130,
+      "functions": 6,
+      "classes": 0
+    },
+    {
+      "file": "tests/test_ambiguous_well_names.py",
+      "lines": 93,
+      "functions": 7,
+      "classes": 2
+    },
+    {
+      "file": "tests/test_api_uniqueness.py",
+      "lines": 203,
+      "functions": 11,
+      "classes": 5
+    },
+    {
+      "file": "tests/test_assistant.py",
+      "lines": 323,
+      "functions": 29,
+      "classes": 6
+    },
+    {
+      "file": "tests/test_assistant_ui.py",
+      "lines": 181,
+      "functions": 9,
+      "classes": 2
+    },
+    {
+      "file": "tests/test_atomic_edits.py",
+      "lines": 184,
+      "functions": 17,
+      "classes": 2
+    },
+    {
+      "file": "tests/test_attribute_index.py",
+      "lines": 173,
+      "functions": 14,
+      "classes": 2
+    },
+    {
+      "file": "tests/test_audit_assets.py",
+      "lines": 325,
+      "functions": 24,
+      "classes": 7
+    },
+    {
+      "file": "tests/test_audit_cleanup.py",
+      "lines": 132,
+      "functions": 6,
+      "classes": 5
+    },
+    {
+      "file": "tests/test_audit_depth_units.py",
+      "lines": 112,
+      "functions": 7,
+      "classes": 1
+    },
+    {
+      "file": "tests/test_audit_fraction_scale.py",
+      "lines": 62,
+      "functions": 4,
+      "classes": 1
+    },
+    {
+      "file": "tests/test_audit_invalidation.py",
+      "lines": 125,
+      "functions": 4,
+      "classes": 2
+    },
+    {
+      "file": "tests/test_audit_ownership_schema.py",
+      "lines": 118,
+      "functions": 8,
+      "classes": 2
+    },
+    {
+      "file": "tests/test_audit_performance.py",
+      "lines": 301,
+      "functions": 17,
+      "classes": 4
+    },
+    {
+      "file": "tests/test_audit_robustness.py",
+      "lines": 128,
+      "functions": 10,
+      "classes": 4
+    },
+    {
+      "file": "tests/test_audit_v0858.py",
+      "lines": 996,
+      "functions": 69,
+      "classes": 16
+    },
+    {
+      "file": "tests/test_audit_v095.py",
+      "lines": 1226,
+      "functions": 100,
+      "classes": 17
+    },
+    {
+      "file": "tests/test_auto_trace.py",
+      "lines": 786,
+      "functions": 66,
+      "classes": 12
+    },
+    {
+      "file": "tests/test_auto_trace_real.py",
+      "lines": 113,
+      "functions": 9,
+      "classes": 1
+    },
+    {
+      "file": "tests/test_autoreg.py",
+      "lines": 588,
+      "functions": 58,
+      "classes": 7
+    },
+    {
+      "file": "tests/test_autoreg_real.py",
+      "lines": 95,
+      "functions": 2,
+      "classes": 1
+    },
+    {
+      "file": "tests/test_axis_tolerance.py",
+      "lines": 54,
+      "functions": 5,
+      "classes": 1
+    },
+    {
+      "file": "tests/test_background_work.py",
+      "lines": 154,
+      "functions": 17,
+      "classes": 1
+    },
+    {
+      "file": "tests/test_batch_curves.py",
+      "lines": 156,
+      "functions": 8,
+      "classes": 3
+    },
+    {
+      "file": "tests/test_batch_exact_samples.py",
+      "lines": 153,
+      "functions": 13,
+      "classes": 1
+    },
+    {
+      "file": "tests/test_batch_ui.py",
+      "lines": 294,
+      "functions": 13,
+      "classes": 3
+    },
+    {
+      "file": "tests/test_batch_zones.py",
+      "lines": 444,
+      "functions": 17,
+      "classes": 3
+    },
+    {
+      "file": "tests/test_batch_zones_grids.py",
+      "lines": 86,
+      "functions": 6,
+      "classes": 1
+    },
+    {
+      "file": "tests/test_bhl_and_scale_units.py",
+      "lines": 250,
+      "functions": 19,
+      "classes": 4
+    },
+    {
+      "file": "tests/test_bhl_validation.py",
+      "lines": 255,
+      "functions": 17,
+      "classes": 5
+    },
+    {
+      "file": "tests/test_bin_listing.py",
+      "lines": 74,
+      "functions": 3,
+      "classes": 1
+    },
+    {
+      "file": "tests/test_branding.py",
+      "lines": 108,
+      "functions": 9,
+      "classes": 3
+    },
+    {
+      "file": "tests/test_bubble_audit_fixes.py",
+      "lines": 214,
+      "functions": 11,
+      "classes": 3
+    },
+    {
+      "file": "tests/test_bubble_definitions.py",
+      "lines": 373,
+      "functions": 21,
+      "classes": 2
+    },
+    {
+      "file": "tests/test_bubble_linear_render.py",
+      "lines": 229,
+      "functions": 14,
+      "classes": 3
+    },
+    {
+      "file": "tests/test_bubbles.py",
+      "lines": 466,
+      "functions": 17,
+      "classes": 2
+    },
+    {
+      "file": "tests/test_build_test_license.py",
+      "lines": 113,
+      "functions": 10,
+      "classes": 2
+    },
+    {
+      "file": "tests/test_bulk_lic.py",
+      "lines": 132,
+      "functions": 8,
+      "classes": 2
+    },
+    {
+      "file": "tests/test_calculated_curve_concurrency.py",
+      "lines": 147,
+      "functions": 14,
+      "classes": 2
+    },
+    {
+      "file": "tests/test_cell_editor.py",
+      "lines": 92,
+      "functions": 5,
+      "classes": 1
+    },
+    {
+      "file": "tests/test_close_project.py",
+      "lines": 85,
+      "functions": 3,
+      "classes": 1
+    },
+    {
+      "file": "tests/test_color_range.py",
+      "lines": 114,
+      "functions": 7,
+      "classes": 2
+    },
+    {
+      "file": "tests/test_colorbar_overflow.py",
+      "lines": 124,
+      "functions": 10,
+      "classes": 1
+    },
+    {
+      "file": "tests/test_contouring.py",
+      "lines": 1484,
+      "functions": 62,
+      "classes": 8
+    },
+    {
+      "file": "tests/test_core_unit_groups.py",
+      "lines": 80,
+      "functions": 6,
+      "classes": 2
+    },
+    {
+      "file": "tests/test_correlation.py",
+      "lines": 1988,
+      "functions": 79,
+      "classes": 10
+    },
+    {
+      "file": "tests/test_correlation_session.py",
+      "lines": 193,
+      "functions": 10,
+      "classes": 1
+    },
+    {
+      "file": "tests/test_curve_aliases.py",
+      "lines": 231,
+      "functions": 9,
+      "classes": 2
+    },
+    {
+      "file": "tests/test_curve_editor_v096.py",
+      "lines": 584,
+      "functions": 52,
+      "classes": 8
+    },
+    {
+      "file": "tests/test_curve_precedence.py",
+      "lines": 79,
+      "functions": 5,
+      "classes": 1
+    },
+    {
+      "file": "tests/test_curve_series_project.py",
+      "lines": 194,
+      "functions": 16,
+      "classes": 1
+    },
+    {
+      "file": "tests/test_curve_store.py",
+      "lines": 440,
+      "functions": 26,
+      "classes": 6
+    },
+    {
+      "file": "tests/test_cython_build.py",
+      "lines": 128,
+      "functions": 7,
+      "classes": 2
+    },
+    {
+      "file": "tests/test_data_posting.py",
+      "lines": 227,
+      "functions": 14,
+      "classes": 3
+    },
+    {
+      "file": "tests/test_data_safety.py",
+      "lines": 241,
+      "functions": 15,
+      "classes": 3
+    },
+    {
+      "file": "tests/test_database.py",
+      "lines": 551,
+      "functions": 29,
+      "classes": 1
+    },
+    {
+      "file": "tests/test_dh_symbol_fallback.py",
+      "lines": 83,
+      "functions": 5,
+      "classes": 1
+    },
+    {
+      "file": "tests/test_digitize.py",
+      "lines": 512,
+      "functions": 49,
+      "classes": 7
+    },
+    {
+      "file": "tests/test_digitize_ui.py",
+      "lines": 441,
+      "functions": 14,
+      "classes": 1
+    },
+    {
+      "file": "tests/test_digitized_save.py",
+      "lines": 156,
+      "functions": 15,
+      "classes": 3
+    },
+    {
+      "file": "tests/test_directional_cache.py",
+      "lines": 98,
+      "functions": 5,
+      "classes": 1
+    },
+    {
+      "file": "tests/test_duplicate_survey_names.py",
+      "lines": 71,
+      "functions": 5,
+      "classes": 1
+    },
+    {
+      "file": "tests/test_export_las_axes.py",
+      "lines": 59,
+      "functions": 5,
+      "classes": 1
+    },
+    {
+      "file": "tests/test_fault_pieces.py",
+      "lines": 116,
+      "functions": 8,
+      "classes": 1
+    },
+    {
+      "file": "tests/test_fault_reimport.py",
+      "lines": 116,
+      "functions": 7,
+      "classes": 1
+    },
+    {
+      "file": "tests/test_fault_surface.py",
+      "lines": 64,
+      "functions": 6,
+      "classes": 1
+    },
+    {
+      "file": "tests/test_fill_amount_units.py",
+      "lines": 84,
+      "functions": 8,
+      "classes": 2
+    },
+    {
+      "file": "tests/test_geo_tabs.py",
+      "lines": 957,
+      "functions": 37,
+      "classes": 4
+    },
+    {
+      "file": "tests/test_geosteer_display.py",
+      "lines": 619,
+      "functions": 24,
+      "classes": 5
+    },
+    {
+      "file": "tests/test_geosteer_reload_license.py",
+      "lines": 102,
+      "functions": 5,
+      "classes": 1
+    },
+    {
+      "file": "tests/test_geosteering.py",
+      "lines": 1389,
+      "functions": 67,
+      "classes": 7
+    },
+    {
+      "file": "tests/test_geosteering_depth_frame.py",
+      "lines": 72,
+      "functions": 6,
+      "classes": 1
+    },
+    {
+      "file": "tests/test_geosteering_own_depths.py",
+      "lines": 65,
+      "functions": 5,
+      "classes": 1
+    },
+    {
+      "file": "tests/test_geosteering_project.py",
+      "lines": 564,
+      "functions": 23,
+      "classes": 4
+    },
+    {
+      "file": "tests/test_geosteering_publish.py",
+      "lines": 206,
+      "functions": 17,
+      "classes": 2
+    },
+    {
+      "file": "tests/test_geosteering_run_depths.py",
+      "lines": 64,
+      "functions": 4,
+      "classes": 1
+    },
+    {
+      "file": "tests/test_geosteering_run_units.py",
+      "lines": 71,
+      "functions": 6,
+      "classes": 1
+    },
+    {
+      "file": "tests/test_grid_display_and_stops.py",
+      "lines": 301,
+      "functions": 22,
+      "classes": 3
+    },
+    {
+      "file": "tests/test_grid_display_save.py",
+      "lines": 68,
+      "functions": 3,
+      "classes": 1
+    },
+    {
+      "file": "tests/test_grid_export_atomic.py",
+      "lines": 67,
+      "functions": 8,
+      "classes": 1
+    },
+    {
+      "file": "tests/test_grid_prognosis_units.py",
+      "lines": 89,
+      "functions": 9,
+      "classes": 2
+    },
+    {
+      "file": "tests/test_gridding.py",
+      "lines": 193,
+      "functions": 14,
+      "classes": 2
+    },
+    {
+      "file": "tests/test_gridding_methods.py",
+      "lines": 239,
+      "functions": 16,
+      "classes": 2
+    },
+    {
+      "file": "tests/test_header_post_styles.py",
+      "lines": 264,
+      "functions": 16,
+      "classes": 3
+    },
+    {
+      "file": "tests/test_help_catalog.py",
+      "lines": 167,
+      "functions": 14,
+      "classes": 3
+    },
+    {
+      "file": "tests/test_ihs_fill_only.py",
+      "lines": 150,
+      "functions": 12,
+      "classes": 2
+    },
+    {
+      "file": "tests/test_import_well_modes.py",
+      "lines": 127,
+      "functions": 10,
+      "classes": 1
+    },
+    {
+      "file": "tests/test_injection_units.py",
+      "lines": 46,
+      "functions": 3,
+      "classes": 1
+    },
+    {
+      "file": "tests/test_isopach.py",
+      "lines": 458,
+      "functions": 27,
+      "classes": 3
+    },
+    {
+      "file": "tests/test_kingdom_native.py",
+      "lines": 323,
+      "functions": 24,
+      "classes": 6
+    },
+    {
+      "file": "tests/test_kingdom_native_full.py",
+      "lines": 87,
+      "functions": 2,
+      "classes": 2
+    },
+    {
+      "file": "tests/test_las_depth_precision.py",
+      "lines": 95,
+      "functions": 6,
+      "classes": 2
+    },
+    {
+      "file": "tests/test_las_time_index.py",
+      "lines": 75,
+      "functions": 7,
+      "classes": 1
+    },
+    {
+      "file": "tests/test_legal_location.py",
+      "lines": 160,
+      "functions": 7,
+      "classes": 1
+    },
+    {
+      "file": "tests/test_lic_flat.py",
+      "lines": 243,
+      "functions": 19,
+      "classes": 2
+    },
+    {
+      "file": "tests/test_license_manager_gui.py",
+      "lines": 337,
+      "functions": 23,
+      "classes": 8
+    },
+    {
+      "file": "tests/test_license_runtime.py",
+      "lines": 449,
+      "functions": 22,
+      "classes": 7
+    },
+    {
+      "file": "tests/test_license_runtime_memory.py",
+      "lines": 505,
+      "functions": 22,
+      "classes": 6
+    },
+    {
+      "file": "tests/test_licensing.py",
+      "lines": 657,
+      "functions": 49,
+      "classes": 8
+    },
+    {
+      "file": "tests/test_map_change_kinds.py",
+      "lines": 186,
+      "functions": 13,
+      "classes": 2
+    },
+    {
+      "file": "tests/test_map_collections.py",
+      "lines": 82,
+      "functions": 5,
+      "classes": 1
+    },
+    {
+      "file": "tests/test_map_culture_order.py",
+      "lines": 294,
+      "functions": 18,
+      "classes": 1
+    },
+    {
+      "file": "tests/test_map_culture_visibility.py",
+      "lines": 142,
+      "functions": 7,
+      "classes": 1
+    },
+    {
+      "file": "tests/test_map_datastore.py",
+      "lines": 186,
+      "functions": 8,
+      "classes": 2
+    },
+    {
+      "file": "tests/test_map_dependencies.py",
+      "lines": 117,
+      "functions": 5,
+      "classes": 2
+    },
+    {
+      "file": "tests/test_map_drawing_objects.py",
+      "lines": 305,
+      "functions": 17,
+      "classes": 3
+    },
+    {
+      "file": "tests/test_map_dynamic_layer.py",
+      "lines": 89,
+      "functions": 5,
+      "classes": 1
+    },
+    {
+      "file": "tests/test_map_grid_population.py",
+      "lines": 140,
+      "functions": 9,
+      "classes": 1
+    },
+    {
+      "file": "tests/test_map_images.py",
+      "lines": 412,
+      "functions": 24,
+      "classes": 5
+    },
+    {
+      "file": "tests/test_map_label_scaling.py",
+      "lines": 71,
+      "functions": 6,
+      "classes": 1
+    },
+    {
+      "file": "tests/test_map_labels.py",
+      "lines": 128,
+      "functions": 8,
+      "classes": 3
+    },
+    {
+      "file": "tests/test_map_layer_order.py",
+      "lines": 451,
+      "functions": 27,
+      "classes": 5
+    },
+    {
+      "file": "tests/test_map_layer_speed.py",
+      "lines": 90,
+      "functions": 5,
+      "classes": 1
+    },
+    {
+      "file": "tests/test_map_layer_stack.py",
+      "lines": 341,
+      "functions": 21,
+      "classes": 3
+    },
+    {
+      "file": "tests/test_map_layers.py",
+      "lines": 105,
+      "functions": 6,
+      "classes": 2
+    },
+    {
+      "file": "tests/test_map_layers_panel.py",
+      "lines": 405,
+      "functions": 19,
+      "classes": 2
+    },
+    {
+      "file": "tests/test_map_lifecycle.py",
+      "lines": 102,
+      "functions": 7,
+      "classes": 3
+    },
+    {
+      "file": "tests/test_map_lod.py",
+      "lines": 121,
+      "functions": 7,
+      "classes": 2
+    },
+    {
+      "file": "tests/test_map_logical_layers.py",
+      "lines": 240,
+      "functions": 12,
+      "classes": 3
+    },
+    {
+      "file": "tests/test_map_many_wells.py",
+      "lines": 111,
+      "functions": 7,
+      "classes": 1
+    },
+    {
+      "file": "tests/test_map_navigation.py",
+      "lines": 335,
+      "functions": 16,
+      "classes": 2
+    },
+    {
+      "file": "tests/test_map_next_pass.py",
+      "lines": 311,
+      "functions": 15,
+      "classes": 4
+    },
+    {
+      "file": "tests/test_map_open.py",
+      "lines": 172,
+      "functions": 4,
+      "classes": 2
+    },
+    {
+      "file": "tests/test_map_overlay_speed.py",
+      "lines": 363,
+      "functions": 24,
+      "classes": 2
+    },
+    {
+      "file": "tests/test_map_perf_probe.py",
+      "lines": 118,
+      "functions": 7,
+      "classes": 2
+    },
+    {
+      "file": "tests/test_map_punch_list.py",
+      "lines": 554,
+      "functions": 40,
+      "classes": 7
+    },
+    {
+      "file": "tests/test_map_spatial.py",
+      "lines": 101,
+      "functions": 9,
+      "classes": 3
+    },
+    {
+      "file": "tests/test_map_startup.py",
+      "lines": 333,
+      "functions": 16,
+      "classes": 3
+    },
+    {
+      "file": "tests/test_map_text_rule.py",
+      "lines": 321,
+      "functions": 19,
+      "classes": 3
+    },
+    {
+      "file": "tests/test_map_ui_cleanup.py",
+      "lines": 266,
+      "functions": 11,
+      "classes": 2
+    },
+    {
+      "file": "tests/test_map_well_markers.py",
+      "lines": 218,
+      "functions": 13,
+      "classes": 2
+    },
+    {
+      "file": "tests/test_mm_compare_grid.py",
+      "lines": 121,
+      "functions": 11,
+      "classes": 1
+    },
+    {
+      "file": "tests/test_multimineral.py",
+      "lines": 415,
+      "functions": 26,
+      "classes": 2
+    },
+    {
+      "file": "tests/test_multivariate.py",
+      "lines": 70,
+      "functions": 6,
+      "classes": 1
+    },
+    {
+      "file": "tests/test_native_ihs297.py",
+      "lines": 375,
+      "functions": 24,
+      "classes": 4
+    },
+    {
+      "file": "tests/test_native_ihs298.py",
+      "lines": 284,
+      "functions": 24,
+      "classes": 5
+    },
+    {
+      "file": "tests/test_native_kingdom.py",
+      "lines": 265,
+      "functions": 22,
+      "classes": 5
+    },
+    {
+      "file": "tests/test_native_petra.py",
+      "lines": 219,
+      "functions": 13,
+      "classes": 4
+    },
+    {
+      "file": "tests/test_ogcore.py",
+      "lines": 526,
+      "functions": 46,
+      "classes": 14
+    },
+    {
+      "file": "tests/test_owner_local_trust.py",
+      "lines": 151,
+      "functions": 12,
+      "classes": 1
+    },
+    {
+      "file": "tests/test_owner_tools_build.py",
+      "lines": 120,
+      "functions": 7,
+      "classes": 2
+    },
+    {
+      "file": "tests/test_pay.py",
+      "lines": 395,
+      "functions": 16,
+      "classes": 2
+    },
+    {
+      "file": "tests/test_pay_correlation.py",
+      "lines": 285,
+      "functions": 9,
+      "classes": 1
+    },
+    {
+      "file": "tests/test_pay_petro.py",
+      "lines": 307,
+      "functions": 15,
+      "classes": 1
+    },
+    {
+      "file": "tests/test_pay_raster.py",
+      "lines": 142,
+      "functions": 5,
+      "classes": 2
+    },
+    {
+      "file": "tests/test_pay_support.py",
+      "lines": 127,
+      "functions": 9,
+      "classes": 1
+    },
+    {
+      "file": "tests/test_pay_xsection.py",
+      "lines": 323,
+      "functions": 12,
+      "classes": 2
+    },
+    {
+      "file": "tests/test_pdf_log_import.py",
+      "lines": 215,
+      "functions": 12,
+      "classes": 2
+    },
+    {
+      "file": "tests/test_pdf_packaging.py",
+      "lines": 203,
+      "functions": 14,
+      "classes": 3
+    },
+    {
+      "file": "tests/test_performance_fixes.py",
+      "lines": 299,
+      "functions": 21,
+      "classes": 2
+    },
+    {
+      "file": "tests/test_petra_ppf.py",
+      "lines": 977,
+      "functions": 67,
+      "classes": 11
+    },
+    {
+      "file": "tests/test_petra_recovery_identity.py",
+      "lines": 86,
+      "functions": 8,
+      "classes": 1
+    },
+    {
+      "file": "tests/test_petro_api_search.py",
+      "lines": 174,
+      "functions": 13,
+      "classes": 2
+    },
+    {
+      "file": "tests/test_petro_as_loaded_export.py",
+      "lines": 71,
+      "functions": 6,
+      "classes": 1
+    },
+    {
+      "file": "tests/test_petro_canonical_curves.py",
+      "lines": 324,
+      "functions": 19,
+      "classes": 1
+    },
+    {
+      "file": "tests/test_petro_export_paths.py",
+      "lines": 93,
+      "functions": 6,
+      "classes": 2
+    },
+    {
+      "file": "tests/test_petro_external_curves.py",
+      "lines": 73,
+      "functions": 4,
+      "classes": 1
+    },
+    {
+      "file": "tests/test_petro_integration.py",
+      "lines": 2417,
+      "functions": 108,
+      "classes": 3
+    },
+    {
+      "file": "tests/test_petro_own_axis_conflicts.py",
+      "lines": 101,
+      "functions": 5,
+      "classes": 1
+    },
+    {
+      "file": "tests/test_petro_roster.py",
+      "lines": 121,
+      "functions": 7,
+      "classes": 1
+    },
+    {
+      "file": "tests/test_petro_selection.py",
+      "lines": 74,
+      "functions": 4,
+      "classes": 1
+    },
+    {
+      "file": "tests/test_plss.py",
+      "lines": 80,
+      "functions": 5,
+      "classes": 1
+    },
+    {
+      "file": "tests/test_polygon_area.py",
+      "lines": 195,
+      "functions": 11,
+      "classes": 2
+    },
+    {
+      "file": "tests/test_pre_v1_additions.py",
+      "lines": 491,
+      "functions": 31,
+      "classes": 5
+    },
+    {
+      "file": "tests/test_production.py",
+      "lines": 420,
+      "functions": 17,
+      "classes": 3
+    },
+    {
+      "file": "tests/test_production_key.py",
+      "lines": 102,
+      "functions": 7,
+      "classes": 1
+    },
+    {
+      "file": "tests/test_project_assets.py",
+      "lines": 288,
+      "functions": 14,
+      "classes": 7
+    },
+    {
+      "file": "tests/test_project_cache.py",
+      "lines": 156,
+      "functions": 10,
+      "classes": 1
+    },
+    {
+      "file": "tests/test_project_folders.py",
+      "lines": 271,
+      "functions": 14,
+      "classes": 2
+    },
+    {
+      "file": "tests/test_raster.py",
+      "lines": 991,
+      "functions": 66,
+      "classes": 10
+    },
+    {
+      "file": "tests/test_raster_overlay.py",
+      "lines": 307,
+      "functions": 16,
+      "classes": 1
+    },
+    {
+      "file": "tests/test_recovery_copy.py",
+      "lines": 104,
+      "functions": 5,
+      "classes": 1
+    },
+    {
+      "file": "tests/test_recovery_hot_journal.py",
+      "lines": 106,
+      "functions": 5,
+      "classes": 1
+    },
+    {
+      "file": "tests/test_recovery_las_snapshot.py",
+      "lines": 102,
+      "functions": 4,
+      "classes": 2
+    },
+    {
+      "file": "tests/test_recovery_live_writer.py",
+      "lines": 141,
+      "functions": 9,
+      "classes": 1
+    },
+    {
+      "file": "tests/test_regional_depth_units.py",
+      "lines": 202,
+      "functions": 13,
+      "classes": 7
+    },
+    {
+      "file": "tests/test_release_payload.py",
+      "lines": 267,
+      "functions": 18,
+      "classes": 5
+    },
+    {
+      "file": "tests/test_release_security.py",
+      "lines": 60,
+      "functions": 2,
+      "classes": 2
+    },
+    {
+      "file": "tests/test_repositories.py",
+      "lines": 621,
+      "functions": 38,
+      "classes": 10
+    },
+    {
+      "file": "tests/test_repository.py",
+      "lines": 27,
+      "functions": 1,
+      "classes": 1
+    },
+    {
+      "file": "tests/test_save_as_nested.py",
+      "lines": 49,
+      "functions": 4,
+      "classes": 1
+    },
+    {
+      "file": "tests/test_scrolling.py",
+      "lines": 183,
+      "functions": 14,
+      "classes": 2
+    },
+    {
+      "file": "tests/test_scrolling_geo.py",
+      "lines": 98,
+      "functions": 6,
+      "classes": 1
+    },
+    {
+      "file": "tests/test_scrolling_map.py",
+      "lines": 242,
+      "functions": 22,
+      "classes": 2
+    },
+    {
+      "file": "tests/test_scrolling_petro.py",
+      "lines": 206,
+      "functions": 19,
+      "classes": 2
+    },
+    {
+      "file": "tests/test_scrolling_seis.py",
+      "lines": 277,
+      "functions": 18,
+      "classes": 3
+    },
+    {
+      "file": "tests/test_section_navigation_perf.py",
+      "lines": 145,
+      "functions": 6,
+      "classes": 2
+    },
+    {
+      "file": "tests/test_seg_p1.py",
+      "lines": 280,
+      "functions": 23,
+      "classes": 6
+    },
+    {
+      "file": "tests/test_segy.py",
+      "lines": 189,
+      "functions": 14,
+      "classes": 1
+    },
+    {
+      "file": "tests/test_seismic_2d_interpretation.py",
+      "lines": 796,
+      "functions": 42,
+      "classes": 7
+    },
+    {
+      "file": "tests/test_seismic_2d_lines.py",
+      "lines": 329,
+      "functions": 23,
+      "classes": 3
+    },
+    {
+      "file": "tests/test_seismic_2d_shared_undo.py",
+      "lines": 125,
+      "functions": 10,
+      "classes": 1
+    },
+    {
+      "file": "tests/test_seismic_app.py",
+      "lines": 2693,
+      "functions": 90,
+      "classes": 2
+    },
+    {
+      "file": "tests/test_seismic_attributes_more.py",
+      "lines": 255,
+      "functions": 22,
+      "classes": 6
+    },
+    {
+      "file": "tests/test_seismic_export_atomic.py",
+      "lines": 125,
+      "functions": 11,
+      "classes": 4
+    },
+    {
+      "file": "tests/test_seismic_external_delete.py",
+      "lines": 60,
+      "functions": 5,
+      "classes": 1
+    },
+    {
+      "file": "tests/test_seismic_grids_access.py",
+      "lines": 210,
+      "functions": 6,
+      "classes": 1
+    },
+    {
+      "file": "tests/test_seismic_interp_preservation.py",
+      "lines": 308,
+      "functions": 17,
+      "classes": 2
+    },
+    {
+      "file": "tests/test_seismic_legacy.py",
+      "lines": 118,
+      "functions": 10,
+      "classes": 1
+    },
+    {
+      "file": "tests/test_seismic_map_layers.py",
+      "lines": 180,
+      "functions": 10,
+      "classes": 1
+    },
+    {
+      "file": "tests/test_seismic_picking.py",
+      "lines": 315,
+      "functions": 32,
+      "classes": 7
+    },
+    {
+      "file": "tests/test_seismic_picks_io.py",
+      "lines": 388,
+      "functions": 12,
+      "classes": 3
+    },
+    {
+      "file": "tests/test_seismic_project.py",
+      "lines": 619,
+      "functions": 38,
+      "classes": 1
+    },
+    {
+      "file": "tests/test_seismic_robustness.py",
+      "lines": 230,
+      "functions": 10,
+      "classes": 4
+    },
+    {
+      "file": "tests/test_seismic_slices.py",
+      "lines": 138,
+      "functions": 12,
+      "classes": 2
+    },
+    {
+      "file": "tests/test_seismic_tie_crs.py",
+      "lines": 175,
+      "functions": 17,
+      "classes": 3
+    },
+    {
+      "file": "tests/test_shape_export_collisions.py",
+      "lines": 72,
+      "functions": 7,
+      "classes": 1
+    },
+    {
+      "file": "tests/test_shapefile_cache.py",
+      "lines": 238,
+      "functions": 16,
+      "classes": 2
+    },
+    {
+      "file": "tests/test_shared_color_bars.py",
+      "lines": 358,
+      "functions": 23,
+      "classes": 4
+    },
+    {
+      "file": "tests/test_shared_curve_readers.py",
+      "lines": 76,
+      "functions": 5,
+      "classes": 1
+    },
+    {
+      "file": "tests/test_sl_bhl.py",
+      "lines": 285,
+      "functions": 16,
+      "classes": 2
+    },
+    {
+      "file": "tests/test_sources.py",
+      "lines": 488,
+      "functions": 23,
+      "classes": 4
+    },
+    {
+      "file": "tests/test_spreadsheet.py",
+      "lines": 288,
+      "functions": 14,
+      "classes": 3
+    },
+    {
+      "file": "tests/test_standalone_las_index.py",
+      "lines": 59,
+      "functions": 4,
+      "classes": 1
+    },
+    {
+      "file": "tests/test_startup.py",
+      "lines": 281,
+      "functions": 17,
+      "classes": 5
+    },
+    {
+      "file": "tests/test_survey_files.py",
+      "lines": 265,
+      "functions": 13,
+      "classes": 2
+    },
+    {
+      "file": "tests/test_synthetic.py",
+      "lines": 62,
+      "functions": 3,
+      "classes": 1
+    },
+    {
+      "file": "tests/test_synthetic_depth_units.py",
+      "lines": 45,
+      "functions": 5,
+      "classes": 1
+    },
+    {
+      "file": "tests/test_task_progress.py",
+      "lines": 241,
+      "functions": 14,
+      "classes": 4
+    },
+    {
+      "file": "tests/test_text_style.py",
+      "lines": 524,
+      "functions": 26,
+      "classes": 8
+    },
+    {
+      "file": "tests/test_time_depth_ui.py",
+      "lines": 240,
+      "functions": 7,
+      "classes": 3
+    },
+    {
+      "file": "tests/test_ui_consistency.py",
+      "lines": 305,
+      "functions": 11,
+      "classes": 7
+    },
+    {
+      "file": "tests/test_ui_lag.py",
+      "lines": 226,
+      "functions": 12,
+      "classes": 3
+    },
+    {
+      "file": "tests/test_ui_standard.py",
+      "lines": 183,
+      "functions": 9,
+      "classes": 4
+    },
+    {
+      "file": "tests/test_v0936_fixes.py",
+      "lines": 413,
+      "functions": 30,
+      "classes": 8
+    },
+    {
+      "file": "tests/test_v0937_fixes.py",
+      "lines": 283,
+      "functions": 22,
+      "classes": 4
+    },
+    {
+      "file": "tests/test_v0938_fixes.py",
+      "lines": 306,
+      "functions": 23,
+      "classes": 5
+    },
+    {
+      "file": "tests/test_v0939_fixes.py",
+      "lines": 293,
+      "functions": 18,
+      "classes": 3
+    },
+    {
+      "file": "tests/test_v0940_fixes.py",
+      "lines": 334,
+      "functions": 20,
+      "classes": 7
+    },
+    {
+      "file": "tests/test_v0941_fixes.py",
+      "lines": 379,
+      "functions": 26,
+      "classes": 4
+    },
+    {
+      "file": "tests/test_v0942_fixes.py",
+      "lines": 170,
+      "functions": 11,
+      "classes": 3
+    },
+    {
+      "file": "tests/test_v0943_fixes.py",
+      "lines": 110,
+      "functions": 7,
+      "classes": 3
+    },
+    {
+      "file": "tests/test_v0944_fixes.py",
+      "lines": 188,
+      "functions": 13,
+      "classes": 1
+    },
+    {
+      "file": "tests/test_v0945_fixes.py",
+      "lines": 288,
+      "functions": 23,
+      "classes": 1
+    },
+    {
+      "file": "tests/test_v0948_fixes.py",
+      "lines": 224,
+      "functions": 20,
+      "classes": 3
+    },
+    {
+      "file": "tests/test_velocity_model.py",
+      "lines": 288,
+      "functions": 14,
+      "classes": 2
+    },
+    {
+      "file": "tests/test_volumetrics.py",
+      "lines": 805,
+      "functions": 44,
+      "classes": 7
+    },
+    {
+      "file": "tests/test_well_list_builder.py",
+      "lines": 948,
+      "functions": 51,
+      "classes": 3
+    },
+    {
+      "file": "tests/test_well_list_builder_files.py",
+      "lines": 210,
+      "functions": 9,
+      "classes": 2
+    },
+    {
+      "file": "tests/test_well_list_files.py",
+      "lines": 188,
+      "functions": 9,
+      "classes": 2
+    },
+    {
+      "file": "tests/test_well_manager_merge.py",
+      "lines": 99,
+      "functions": 7,
+      "classes": 1
+    },
+    {
+      "file": "tests/test_well_manager_sheets.py",
+      "lines": 465,
+      "functions": 29,
+      "classes": 3
+    },
+    {
+      "file": "tests/test_well_selection.py",
+      "lines": 588,
+      "functions": 30,
+      "classes": 3
+    },
+    {
+      "file": "tests/test_well_symbols.py",
+      "lines": 413,
+      "functions": 38,
+      "classes": 7
+    },
+    {
+      "file": "tests/test_well_test_concurrency.py",
+      "lines": 143,
+      "functions": 13,
+      "classes": 2
+    },
+    {
+      "file": "tests/test_well_tests.py",
+      "lines": 621,
+      "functions": 35,
+      "classes": 5
+    },
+    {
+      "file": "tests/test_well_value_units.py",
+      "lines": 65,
+      "functions": 6,
+      "classes": 1
+    },
+    {
+      "file": "tests/test_wells_posting.py",
+      "lines": 311,
+      "functions": 14,
+      "classes": 2
+    },
+    {
+      "file": "tests/test_windows_reserved_names.py",
+      "lines": 42,
+      "functions": 2,
+      "classes": 1
+    },
+    {
+      "file": "tests/test_xsection.py",
+      "lines": 2263,
+      "functions": 98,
+      "classes": 9
+    },
+    {
+      "file": "tests/test_xsection_fills.py",
+      "lines": 355,
+      "functions": 18,
+      "classes": 3
+    },
+    {
+      "file": "tests/test_xyz.py",
+      "lines": 290,
+      "functions": 24,
+      "classes": 3
+    },
+    {
+      "file": "tests/test_zone_track_units.py",
+      "lines": 58,
+      "functions": 5,
+      "classes": 2
+    },
+    {
+      "file": "tests/xsection_fixtures.py",
+      "lines": 165,
+      "functions": 5,
+      "classes": 0
+    },
+    {
+      "file": "tools/bhl_compare.py",
+      "lines": 80,
+      "functions": 4,
+      "classes": 0
+    },
+    {
+      "file": "tools/dump_ui_labels.py",
+      "lines": 178,
+      "functions": 5,
+      "classes": 0
+    },
+    {
+      "file": "tools/help_catalog_source.py",
+      "lines": 1894,
+      "functions": 3,
+      "classes": 0
+    },
+    {
+      "file": "tools/make_icons.py",
+      "lines": 82,
+      "functions": 3,
+      "classes": 0
+    },
+    {
+      "file": "tools/make_map_project.py",
+      "lines": 131,
+      "functions": 2,
+      "classes": 0
+    },
+    {
+      "file": "tools/make_native_fixtures.py",
+      "lines": 234,
+      "functions": 6,
+      "classes": 0
+    },
+    {
+      "file": "tools/map_overlay_benchmark.py",
+      "lines": 252,
+      "functions": 17,
+      "classes": 0
+    },
+    {
+      "file": "tools/map_perf.py",
+      "lines": 499,
+      "functions": 34,
+      "classes": 0
+    },
+    {
+      "file": "tools/release/build_cython.py",
+      "lines": 76,
+      "functions": 3,
+      "classes": 0
+    },
+    {
+      "file": "tools/release/build_help_html.py",
+      "lines": 73,
+      "functions": 2,
+      "classes": 0
+    },
+    {
+      "file": "tools/release/check_protected.py",
+      "lines": 78,
+      "functions": 3,
+      "classes": 0
+    },
+    {
+      "file": "tools/release/check_python.py",
+      "lines": 31,
+      "functions": 1,
+      "classes": 0
+    },
+    {
+      "file": "tools/release/cython_modules.py",
+      "lines": 74,
+      "functions": 3,
+      "classes": 0
+    },
+    {
+      "file": "tools/release/inventory.py",
+      "lines": 165,
+      "functions": 6,
+      "classes": 0
+    },
+    {
+      "file": "tools/release/make_version_info.py",
+      "lines": 84,
+      "functions": 2,
+      "classes": 0
+    },
+    {
+      "file": "tools/release/merge_dist.py",
+      "lines": 97,
+      "functions": 3,
+      "classes": 0
+    },
+    {
+      "file": "tools/release/provision_test_license.py",
+      "lines": 89,
+      "functions": 4,
+      "classes": 0
+    },
+    {
+      "file": "tools/release/stage.py",
+      "lines": 78,
+      "functions": 2,
+      "classes": 0
+    },
+    {
+      "file": "tools/release/third_party_notices.py",
+      "lines": 141,
+      "functions": 3,
+      "classes": 0
+    },
+    {
+      "file": "tools/render_symbol_sheet.py",
+      "lines": 33,
+      "functions": 1,
+      "classes": 0
+    },
+    {
+      "file": "tools/section_perf.py",
+      "lines": 182,
+      "functions": 9,
+      "classes": 0
+    },
+    {
+      "file": "tools/startup_probe.py",
+      "lines": 274,
+      "functions": 10,
+      "classes": 0
+    },
+    {
+      "file": "tools/train_digit_model.py",
+      "lines": 370,
+      "functions": 12,
+      "classes": 0
+    },
+    {
+      "file": "tools/validate_kingdom_native.py",
+      "lines": 246,
+      "functions": 10,
+      "classes": 1
+    },
+    {
+      "file": "tools/validate_p1_navigation.py",
+      "lines": 158,
+      "functions": 3,
+      "classes": 0
+    },
+    {
+      "file": "tools/validate_petra_ppf.py",
+      "lines": 65,
+      "functions": 1,
+      "classes": 0
+    },
+    {
+      "file": "well_symbols.py",
+      "lines": 765,
+      "functions": 35,
+      "classes": 7
+    },
+    {
+      "file": "xsection/__init__.py",
+      "lines": 50,
+      "functions": 1,
+      "classes": 0
+    },
+    {
+      "file": "xsection/dialogs.py",
+      "lines": 1573,
+      "functions": 73,
+      "classes": 12
+    },
+    {
+      "file": "xsection/export.py",
+      "lines": 297,
+      "functions": 11,
+      "classes": 0
+    },
+    {
+      "file": "xsection/geometry.py",
+      "lines": 392,
+      "functions": 19,
+      "classes": 2
+    },
+    {
+      "file": "xsection/layout.py",
+      "lines": 549,
+      "functions": 45,
+      "classes": 3
+    },
+    {
+      "file": "xsection/log_display.py",
+      "lines": 1684,
+      "functions": 97,
+      "classes": 1
+    },
+    {
+      "file": "xsection/model.py",
+      "lines": 770,
+      "functions": 51,
+      "classes": 16
+    },
+    {
+      "file": "xsection/patterns.py",
+      "lines": 75,
+      "functions": 5,
+      "classes": 0
+    },
+    {
+      "file": "xsection/render.py",
+      "lines": 1416,
+      "functions": 50,
+      "classes": 2
+    },
+    {
+      "file": "xsection/store.py",
+      "lines": 440,
+      "functions": 36,
+      "classes": 2
+    },
+    {
+      "file": "xsection/widgets.py",
+      "lines": 328,
+      "functions": 34,
+      "classes": 5
+    },
+    {
+      "file": "xsection/window.py",
+      "lines": 2715,
+      "functions": 165,
+      "classes": 1
+    }
+  ]
+}

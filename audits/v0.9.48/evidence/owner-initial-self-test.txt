@@ -1,0 +1,11 @@
+License Manager self-test in /tmp/audit0948-owner-workflow
+frozen: True
+FAILED:
+Traceback (most recent call last):
+  File "license_manager/self_test.py", line 36, in run
+  File "license_manager/self_test.py", line 52, in _workflow
+  File "pyimod02_importers.py", line 457, in exec_module
+  File "tkinter/__init__.py", line 38, in <module>
+ImportError: libtcl9tk9.0.so: cannot open shared object file: No such file or directory
+
+FAILED
