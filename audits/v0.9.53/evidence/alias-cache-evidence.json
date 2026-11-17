@@ -1,0 +1,42 @@
+{
+  "before_alias_change": [
+    100.0
+  ],
+  "fresh_after_explicit_reassignment": [
+    1000.0
+  ],
+  "cached_after_explicit_reassignment": [
+    100.0
+  ],
+  "cached_after_project_reopen": [
+    100.0
+  ],
+  "revisions_before": {
+    "wells": 2,
+    "tops": 8,
+    "logs": 0,
+    "zones": 0,
+    "lists": 0,
+    "seismic": 0,
+    "map": 0,
+    "production": 0,
+    "tests": 0,
+    "steering": 0,
+    "map_display": 0,
+    "settings": 1
+  },
+  "revisions_after": {
+    "wells": 2,
+    "tops": 8,
+    "logs": 0,
+    "zones": 0,
+    "lists": 0,
+    "seismic": 0,
+    "map": 0,
+    "production": 0,
+    "tests": 0,
+    "steering": 0,
+    "map_display": 0,
+    "settings": 1
+  }
+}

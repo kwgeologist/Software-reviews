@@ -1,0 +1,47 @@
+{
+  "vertical_survey": {
+    "md": 1000,
+    "inc": 0,
+    "azi": 90,
+    "tvd": 1000.0,
+    "ns": 0.0,
+    "ew": 0.0
+  },
+  "quarter_circle_survey": {
+    "actual": {
+      "md": 1000,
+      "inc": 90,
+      "azi": 90,
+      "tvd": 636.6197723675813,
+      "ns": 3.8981718325193754e-14,
+      "ew": 636.6197723675813
+    },
+    "expected_vertical_and_east": 636.6197723675814
+  },
+  "md_tvd_tvdss": [
+    1000.0,
+    800.0,
+    -300.0
+  ],
+  "constant_sonic_ft": [
+    100.0,
+    200.0,
+    300.0
+  ],
+  "constant_sonic_m": [
+    99.9999999996,
+    199.99999999920004,
+    299.9999999988
+  ],
+  "seismic_depth_m_with_100m_datum": [
+    1100.000000004
+  ],
+  "zmap_roundtrip": {
+    "shape": [
+      5,
+      6
+    ],
+    "max_error": 0.0
+  },
+  "status": "passed"
+}

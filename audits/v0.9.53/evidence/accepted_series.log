@@ -1,0 +1,46 @@
+invalid command name "140122633145536poll"
+    while executing
+"140122633145536poll"
+    ("after" script)
+{
+  "external_full_series_preserved_during_preview": {
+    "axis": [
+      1010.25,
+      1010.75,
+      1011.25,
+      1011.75,
+      1012.25
+    ],
+    "axis_unit": "ft",
+    "values": [
+      11.0,
+      12.0,
+      13.0,
+      14.0,
+      15.0
+    ],
+    "curve_unit": "%",
+    "description": "new accepted description"
+  },
+  "after_discard": {
+    "axis": [
+      1010.25,
+      1010.75,
+      1011.25,
+      1011.75,
+      1012.25
+    ],
+    "axis_unit": "ft",
+    "values": [
+      11.0,
+      12.0,
+      13.0,
+      14.0,
+      15.0
+    ],
+    "curve_unit": "%",
+    "description": "new accepted description"
+  },
+  "after_external_delete_save_discard_save": null,
+  "status": "passed"
+}

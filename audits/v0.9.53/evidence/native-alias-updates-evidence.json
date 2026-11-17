@@ -1,0 +1,86 @@
+{
+  "ihs": {
+    "input_corrected_MD": 885.0,
+    "before": [
+      {
+        "formation": "Canonical renamed IHS",
+        "measured_depth": 860.0,
+        "source": "IHS 297 3"
+      },
+      {
+        "formation": "Canonical renamed IHS",
+        "measured_depth": 860.0,
+        "source": "IHS 297 4"
+      }
+    ],
+    "after": [
+      {
+        "formation": "Canonical renamed IHS",
+        "measured_depth": 860.0,
+        "source": "IHS 297 3"
+      },
+      {
+        "formation": "Canonical renamed IHS",
+        "measured_depth": 860.0,
+        "source": "IHS 297 4"
+      }
+    ],
+    "counts": {
+      "wells updated": 1,
+      "tops updated": 14,
+      "cores updated": 1
+    },
+    "diagnostics": [
+      {
+        "category": "duplicate",
+        "record": "ET formation top",
+        "count": 2,
+        "sample": "42423000010000 MDWY 885 || 42423000010000 MDWY 860",
+        "message": "This well already has a Canonical renamed IHS pick from IHS 297 3."
+      },
+      {
+        "category": "unmatched",
+        "record": "status without a well symbol",
+        "count": 1,
+        "sample": "D&A-O",
+        "message": "No IHS mapping (Wells > Well Symbols... > Status mappings): an existing well keeps its symbol, a new well gets the default."
+      }
+    ]
+  },
+  "ppf": {
+    "input_corrected_MD": 7650,
+    "before": [
+      {
+        "formation": "Canonical renamed PPF",
+        "measured_depth": 7607.97622295704,
+        "source": "LO"
+      }
+    ],
+    "after": [
+      {
+        "formation": "Canonical renamed PPF",
+        "measured_depth": 7607.97622295704,
+        "source": "LO"
+      }
+    ],
+    "counts": {
+      "wells updated": 1,
+      "locations": 1,
+      "directional surveys": 1,
+      "tops updated": 4,
+      "tests updated": 1,
+      "treatments updated": 1,
+      "perforations already in the project": 1,
+      "zone values": 2
+    },
+    "diagnostics": [
+      {
+        "category": "duplicate",
+        "record": "top",
+        "count": 1,
+        "sample": "05067090230000 DAKOTA: This well already has a Canonical renamed PPF pick from LO.",
+        "message": ""
+      }
+    ]
+  }
+}

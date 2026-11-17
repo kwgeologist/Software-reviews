@@ -1,0 +1,20 @@
+{
+  "interleaving": [
+    "A committed; B saves before A promotes"
+  ],
+  "both_saves_returned_success": true,
+  "db_row": {
+    "id": 1,
+    "unit": "ft",
+    "updated_at": "2026-11-17T12:40:46.251778+00:00",
+    "source": "{\"kind\": \"top\", \"top\": \"Niobrara\", \"measure\": \"TVDSS\"}"
+  },
+  "loaded_file": {
+    "unit": "m",
+    "updated_at": "2026-11-17T12:40:46.250896+00:00",
+    "value": 2000.0,
+    "notes": "Writer A"
+  },
+  "writer_A_updated_at": "2026-11-17T12:40:46.250896+00:00",
+  "writer_B_updated_at": "2026-11-17T12:40:46.251778+00:00"
+}

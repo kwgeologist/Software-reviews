@@ -1,0 +1,20 @@
+{
+  "reader_after_commit": [
+    {
+      "value": 9000.0,
+      "unit": "m"
+    }
+  ],
+  "save_error": null,
+  "reopened_row": {
+    "id": 1,
+    "unit": "m",
+    "updated_at": "2026-11-17T12:41:57.742447+00:00",
+    "file_path": "Grids/Niobrara Structure.ogwgrid"
+  },
+  "reopened_grid": {
+    "value": 9000.0,
+    "unit": "m",
+    "notes": "new accepted interpretation"
+  }
+}

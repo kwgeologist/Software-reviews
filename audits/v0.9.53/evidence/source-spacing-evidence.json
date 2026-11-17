@@ -1,0 +1,37 @@
+{
+  "import_errors": [],
+  "stored_sources": [
+    {
+      "formation": "A",
+      "source": "ACME ENERGY"
+    },
+    {
+      "formation": "B",
+      "source": "ACME  ENERGY"
+    }
+  ],
+  "enumerated_sources": [
+    {
+      "source": "ACME ENERGY",
+      "picks": 1,
+      "tops": 1
+    },
+    {
+      "source": "ACME ENERGY",
+      "picks": 1,
+      "tops": 1
+    }
+  ],
+  "rename_displayed_source_count": 1,
+  "sources_after_rename": [
+    {
+      "formation": "A",
+      "source": "RENAMED"
+    },
+    {
+      "formation": "B",
+      "source": "ACME  ENERGY"
+    }
+  ],
+  "manager_open_error": "TclError: Item ACME ENERGY already exists"
+}

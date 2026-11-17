@@ -1,0 +1,20 @@
+{
+  "interleaving": "A checks alias owner; B adds and commits alias; A completes using its earlier check",
+  "events": [
+    {
+      "after_B_add_returned": "success",
+      "alias_owner": "B"
+    },
+    {
+      "after_A_add_returned": "success",
+      "alias_owner": "A"
+    }
+  ],
+  "final_aliases": [
+    {
+      "alias": "Shared legacy",
+      "definition_id": 1,
+      "name": "A"
+    }
+  ]
+}

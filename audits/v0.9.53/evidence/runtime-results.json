@@ -1,0 +1,142 @@
+[
+  {
+    "label": "owner-protection",
+    "exit_code": 0,
+    "seconds": 0.16458179799519712
+  },
+  {
+    "label": "customer-protection",
+    "exit_code": 0,
+    "seconds": 0.4149262630016892
+  },
+  {
+    "label": "owner-self-test",
+    "exit_code": 0,
+    "seconds": 0.6178624700041837
+  },
+  {
+    "label": "source-unlicensed-OandG_Workbench",
+    "exit_code": 3,
+    "seconds": 2.0230082359994412
+  },
+  {
+    "label": "source-licensed-OandG_Workbench",
+    "exit_code": 0,
+    "seconds": 3.4278318649958237
+  },
+  {
+    "label": "compiled-licensed-OandG_Workbench",
+    "exit_code": 0,
+    "seconds": 3.3903480869994382
+  },
+  {
+    "label": "frozen-unlicensed-OandG_Workbench",
+    "exit_code": 3,
+    "seconds": 1.8227294600001187
+  },
+  {
+    "label": "frozen-owner-trust-OandG_Workbench",
+    "exit_code": 3,
+    "seconds": 1.7784662590056541
+  },
+  {
+    "label": "source-unlicensed-PetroWorkbench",
+    "exit_code": 3,
+    "seconds": 1.1716117260002648
+  },
+  {
+    "label": "source-licensed-PetroWorkbench",
+    "exit_code": 0,
+    "seconds": 1.3752771200015559
+  },
+  {
+    "label": "compiled-licensed-PetroWorkbench",
+    "exit_code": 0,
+    "seconds": 1.4201610870004515
+  },
+  {
+    "label": "frozen-unlicensed-PetroWorkbench",
+    "exit_code": 3,
+    "seconds": 1.6214587240028777
+  },
+  {
+    "label": "frozen-owner-trust-PetroWorkbench",
+    "exit_code": 3,
+    "seconds": 1.6238507649977691
+  },
+  {
+    "label": "source-unlicensed-SeismicWorkbench",
+    "exit_code": 3,
+    "seconds": 0.9695947130021523
+  },
+  {
+    "label": "source-licensed-SeismicWorkbench",
+    "exit_code": 0,
+    "seconds": 2.243141379003646
+  },
+  {
+    "label": "compiled-licensed-SeismicWorkbench",
+    "exit_code": 0,
+    "seconds": 1.9781284439959563
+  },
+  {
+    "label": "frozen-unlicensed-SeismicWorkbench",
+    "exit_code": 3,
+    "seconds": 1.5251711750024697
+  },
+  {
+    "label": "frozen-owner-trust-SeismicWorkbench",
+    "exit_code": 3,
+    "seconds": 1.6832009490026394
+  },
+  {
+    "label": "source-unlicensed-GeosteeringWorkbench",
+    "exit_code": 3,
+    "seconds": 0.6722812489970238
+  },
+  {
+    "label": "source-licensed-GeosteeringWorkbench",
+    "exit_code": 0,
+    "seconds": 3.9341111409958103
+  },
+  {
+    "label": "compiled-licensed-GeosteeringWorkbench",
+    "exit_code": 0,
+    "seconds": 3.9377017919978243
+  },
+  {
+    "label": "frozen-unlicensed-GeosteeringWorkbench",
+    "exit_code": 3,
+    "seconds": 1.8051386040024227
+  },
+  {
+    "label": "frozen-owner-trust-GeosteeringWorkbench",
+    "exit_code": 3,
+    "seconds": 2.1979776069929358
+  },
+  {
+    "label": "source-unlicensed-CorrelationWorkbench",
+    "exit_code": 3,
+    "seconds": 0.7203364559973124
+  },
+  {
+    "label": "source-licensed-CorrelationWorkbench",
+    "exit_code": 0,
+    "seconds": 2.3353809350010124
+  },
+  {
+    "label": "compiled-licensed-CorrelationWorkbench",
+    "exit_code": 0,
+    "seconds": 1.7886456539999926
+  },
+  {
+    "label": "frozen-unlicensed-CorrelationWorkbench",
+    "exit_code": 3,
+    "seconds": 2.260499043004529
+  },
+  {
+    "label": "frozen-owner-trust-CorrelationWorkbench",
+    "exit_code": 3,
+    "seconds": 2.2470430480025243
+  }
+]

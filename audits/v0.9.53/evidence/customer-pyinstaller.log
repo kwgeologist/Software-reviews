@@ -1,0 +1,793 @@
+85 INFO: PyInstaller: 6.22.3, contrib hooks: 2026.10
+85 INFO: Python: 3.12.14
+87 INFO: Platform: Linux-6.18.57-x86_64-with-glibc2.41
+87 INFO: Python environment: /workspace/audit-tooling-v048
+2007 INFO: Module search paths (PYTHONPATH):
+['/workspace/audit-v0.9.53/compiled-worktree/tools/release',
+ '/workspace/audit-v0.9.53/compiled-worktree',
+ '/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python312.zip',
+ '/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12',
+ '/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/lib-dynload',
+ '/workspace/audit-tooling-v048/lib/python3.12/site-packages',
+ '/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages',
+ '/workspace/audit-v0.9.53/compiled-worktree']
+2287 INFO: Appending 'binaries' from .spec
+2287 INFO: Appending 'datas' from .spec
+2292 INFO: checking Analysis
+2293 INFO: Building Analysis because Analysis-00.toc is non existent
+2293 INFO: Looking for Python shared library...
+2306 INFO: Using Python shared library: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/libpython3.12.so.1.0
+2306 INFO: Running Analysis Analysis-00.toc
+2306 INFO: Target bytecode optimization level: 0
+2306 INFO: Initializing module dependency graph...
+2307 INFO: Initializing module graph hook caches...
+2313 INFO: Analyzing modules for base_library.zip ...
+3125 INFO: Processing standard module hook 'hook-encodings.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+3385 INFO: Processing standard module hook 'hook-math.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+4183 INFO: Processing standard module hook 'hook-pickle.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+4933 INFO: Processing standard module hook 'hook-heapq.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+5183 INFO: Caching module dependency graph...
+5219 INFO: Analyzing /workspace/audit-v0.9.53/compiled-worktree/app.py
+5225 INFO: Processing pre-find-module-path hook 'hook-tkinter.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks/pre_find_module_path'
+5226 INFO: TclTkInfo: initializing cached Tcl/Tk info...
+5443 INFO: Processing standard module hook 'hook-_tkinter.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+5492 INFO: Processing standard module hook 'hook-numpy.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+5959 INFO: Processing standard module hook 'hook-difflib.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+6189 INFO: Processing standard module hook 'hook-multiprocessing.util.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+6377 INFO: Processing standard module hook 'hook-xml.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+6683 INFO: Processing standard module hook 'hook-_ctypes.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+7556 INFO: Processing standard module hook 'hook-sysconfig.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+7659 INFO: Processing standard module hook 'hook-platform.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+8229 INFO: Processing standard module hook 'hook-webbrowser.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+8291 INFO: Processing standard module hook 'hook-psutil.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+9391 INFO: Processing pre-safe-import-module hook 'hook-typing_extensions.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks/pre_safe_import_module'
+9392 INFO: SetuptoolsInfo: initializing cached setuptools info...
+10408 INFO: Processing standard module hook 'hook-charset_normalizer.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+10935 INFO: Processing standard module hook 'hook-sqlite3.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+11181 INFO: Processing standard module hook 'hook-cryptography.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+11544 INFO: hook-cryptography: cryptography does not seem to be using dynamically linked OpenSSL.
+12459 INFO: Processing standard module hook 'hook-matplotlib.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+mkdir -p failed for path /home/agent/.config/matplotlib: [Errno 30] Read-only file system: '/home/agent/.config/matplotlib'
+Matplotlib created a temporary cache directory at /tmp/matplotlib-zj25uqxt because there was an issue with the default path (/home/agent/.config/matplotlib); it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+12884 INFO: Processing pre-safe-import-module hook 'hook-packaging.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks/pre_safe_import_module'
+12994 INFO: Processing pre-safe-import-module hook 'hook-gi.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks/pre_safe_import_module'
+13321 INFO: Processing standard module hook 'hook-matplotlib.backend_bases.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+13456 INFO: Processing standard module hook 'hook-PIL.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+13602 INFO: Processing standard module hook 'hook-PIL.Image.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+13982 INFO: Processing standard module hook 'hook-xml.etree.cElementTree.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+14190 INFO: Processing standard module hook 'hook-PIL.ImageFilter.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+15256 INFO: Processing standard module hook 'hook-matplotlib.backends.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+15362 INFO: Processing standard module hook 'hook-matplotlib.pyplot.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+15724 INFO: Processing standard module hook 'hook-matplotlib.figure.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+16489 INFO: Processing standard module hook 'hook-dateutil.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+16587 INFO: Processing pre-safe-import-module hook 'hook-six.moves.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks/pre_safe_import_module'
+18027 INFO: Processing standard module hook 'hook-certifi.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+18201 INFO: Processing standard module hook 'hook-pyproj.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+18777 INFO: Processing standard module hook 'hook-openpyxl.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+18828 INFO: Processing standard module hook 'hook-lxml.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+19088 INFO: Processing standard module hook 'hook-lxml.etree.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+20172 INFO: Processing standard module hook 'hook-pandas.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+21502 INFO: Processing standard module hook 'hook-pytz.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+21668 INFO: Processing standard module hook 'hook-scipy.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+23571 INFO: Processing standard module hook 'hook-pygments.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+25206 INFO: Processing pre-safe-import-module hook 'hook-distutils.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks/pre_safe_import_module'
+25358 INFO: Processing standard module hook 'hook-pycparser.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+26010 INFO: Processing standard module hook 'hook-scipy.linalg.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+26101 INFO: Processing standard module hook 'hook-scipy.special._ufuncs.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+27067 INFO: Processing standard module hook 'hook-scipy.spatial._ckdtree.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+27564 INFO: Processing standard module hook 'hook-scipy.spatial.transform.rotation.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+28227 INFO: Processing standard module hook 'hook-scipy.stats._stats.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+28601 INFO: Processing standard module hook 'hook-scipy.sparse.csgraph.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+29315 INFO: Processing standard module hook 'hook-scipy.special._ellip_harm_2.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+31123 INFO: Processing standard module hook 'hook-pandas.io.formats.style.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+32758 INFO: Processing standard module hook 'hook-pandas.plotting.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+34199 INFO: Processing standard module hook 'hook-pandas.io.clipboard.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+34436 INFO: Processing standard module hook 'hook-xml.dom.domreg.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+35751 INFO: Processing standard module hook 'hook-pypdfium2.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+35759 INFO: Processing standard module hook 'hook-pypdfium2_raw.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+37802 INFO: Analyzing hidden import 'matplotlib.backends.backend_pdf'
+39523 INFO: Analyzing hidden import 'matplotlib.backends.backend_svg'
+39550 INFO: Analyzing hidden import 'pypdfium2.__main__'
+39556 INFO: Analyzing hidden import 'pypdfium2_raw.libpdfium'
+39556 INFO: Analyzing hidden import 'ogcore.core_equations'
+39559 INFO: Analyzing hidden import 'ogcore.curves'
+39564 INFO: Analyzing hidden import 'ogcore.multimineral'
+39586 INFO: Analyzing hidden import 'ogcore.multivariate'
+39593 INFO: Analyzing hidden import 'ogcore.velocity_model'
+39615 INFO: Analyzing hidden import 'ogcore.water'
+39618 INFO: Analyzing hidden import 'petroworkbench.curve_ops'
+39632 INFO: Processing module hooks (post-graph stage)...
+39635 WARNING: Hidden import "pycparser.lextab" not found!
+39635 WARNING: Hidden import "pycparser.yacctab" not found!
+39795 INFO: Processing standard module hook 'hook-lxml.isoschematron.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+39804 WARNING: Hidden import "distutils.util" not found!
+39991 INFO: Processing standard module hook 'hook-PIL.SpiderImagePlugin.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+40016 WARNING: Hidden import "scipy.special._cdflib" not found!
+40028 INFO: Processing standard module hook 'hook-_tkinter.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+41718 INFO: Processing standard module hook 'hook-matplotlib.backends.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+41719 INFO: Matplotlib backend selection method: automatic discovery of used backends
+mkdir -p failed for path /home/agent/.config/matplotlib: [Errno 30] Read-only file system: '/home/agent/.config/matplotlib'
+Matplotlib created a temporary cache directory at /tmp/matplotlib-ndvfktxg because there was an issue with the default path (/home/agent/.config/matplotlib); it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+42207 INFO: Trying determine the default backend as first importable candidate from the list: ['QtAgg', 'Qt5Agg', 'Gtk4Agg', 'Gtk3Agg', 'TkAgg', 'WxAgg']
+mkdir -p failed for path /home/agent/.config/matplotlib: [Errno 30] Read-only file system: '/home/agent/.config/matplotlib'
+Matplotlib created a temporary cache directory at /tmp/matplotlib-cqz8nthh because there was an issue with the default path (/home/agent/.config/matplotlib); it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+mkdir -p failed for path /home/agent/.config/matplotlib: [Errno 30] Read-only file system: '/home/agent/.config/matplotlib'
+Matplotlib created a temporary cache directory at /tmp/matplotlib-els05ddt because there was an issue with the default path (/home/agent/.config/matplotlib); it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+mkdir -p failed for path /home/agent/.config/matplotlib: [Errno 30] Read-only file system: '/home/agent/.config/matplotlib'
+Matplotlib created a temporary cache directory at /tmp/matplotlib-k9q31gww because there was an issue with the default path (/home/agent/.config/matplotlib); it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+mkdir -p failed for path /home/agent/.config/matplotlib: [Errno 30] Read-only file system: '/home/agent/.config/matplotlib'
+Matplotlib created a temporary cache directory at /tmp/matplotlib-0e6elilq because there was an issue with the default path (/home/agent/.config/matplotlib); it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Fontconfig error: No writable cache directories
+mkdir -p failed for path /home/agent/.config/matplotlib: [Errno 30] Read-only file system: '/home/agent/.config/matplotlib'
+Matplotlib created a temporary cache directory at /tmp/matplotlib-b36fm2ku because there was an issue with the default path (/home/agent/.config/matplotlib); it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Fontconfig error: No writable cache directories
+mkdir -p failed for path /home/agent/.config/matplotlib: [Errno 30] Read-only file system: '/home/agent/.config/matplotlib'
+Matplotlib created a temporary cache directory at /tmp/matplotlib-dj_zehno because there was an issue with the default path (/home/agent/.config/matplotlib); it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Fontconfig error: No writable cache directories
+48222 INFO: Selected matplotlib backends: ['TkAgg']
+48222 INFO: Extra dists for selected matplotlib backends: []
+48276 INFO: Processing standard module hook 'hook-lxml.objectify.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+48375 INFO: Performing binary vs. data reclassification (1336 entries)
+48495 INFO: Looking for ctypes DLLs
+48724 WARNING: Library user32 required via ctypes not found
+48965 WARNING: Library msvcrt required via ctypes not found
+49016 INFO: Analyzing run-time hooks ...
+49032 INFO: Including run-time hook 'pyi_rth_inspect.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks/rthooks'
+49034 INFO: Including run-time hook 'pyi_rth__tkinter.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks/rthooks'
+49035 INFO: Including run-time hook 'pyi_rth_pkgutil.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks/rthooks'
+49037 INFO: Including run-time hook 'pyi_rth_mplconfig.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks/rthooks'
+49039 INFO: Processing pre-find-module-path hook 'hook-_pyi_rth_utils.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks/pre_find_module_path'
+49040 INFO: Processing standard module hook 'hook-_pyi_rth_utils.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+49042 INFO: Including run-time hook 'pyi_rth_pyproj.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/rthooks'
+49043 INFO: Including run-time hook 'pyi_rth_traitlets.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/rthooks'
+49044 INFO: Including run-time hook 'pyi_rth_cryptography_openssl.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/rthooks'
+49045 INFO: Including run-time hook 'pyi_rth_multiprocessing.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks/rthooks'
+49100 INFO: Creating base_library.zip...
+49117 INFO: Looking for dynamic libraries
+51405 INFO: Warnings written to /workspace/audit-v0.9.53/customer-build-work/OandG_Workbench/warn-OandG_Workbench.txt
+51528 INFO: Graph cross-reference written to /workspace/audit-v0.9.53/customer-build-work/OandG_Workbench/xref-OandG_Workbench.html
+51582 INFO: Module search paths (PYTHONPATH):
+['/workspace/audit-v0.9.53/compiled-worktree/tools/release',
+ '/workspace/audit-v0.9.53/compiled-worktree',
+ '/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python312.zip',
+ '/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12',
+ '/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/lib-dynload',
+ '/workspace/audit-tooling-v048/lib/python3.12/site-packages',
+ '/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages',
+ '/workspace/audit-v0.9.53/compiled-worktree',
+ '/workspace/audit-v0.9.53/compiled-worktree']
+51942 INFO: Appending 'binaries' from .spec
+51943 INFO: Appending 'datas' from .spec
+51947 INFO: checking Analysis
+51947 INFO: Building Analysis because Analysis-01.toc is non existent
+51947 INFO: Looking for Python shared library...
+51959 INFO: Using Python shared library: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/libpython3.12.so.1.0
+51959 INFO: Running Analysis Analysis-01.toc
+51959 INFO: Target bytecode optimization level: 0
+51959 INFO: Reusing cached module dependency graph...
+51979 INFO: Initializing module graph hook caches...
+51988 INFO: Analyzing /workspace/audit-v0.9.53/compiled-worktree/petro_app.py
+52016 INFO: Processing standard module hook 'hook-sqlite3.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+52296 INFO: Processing standard module hook 'hook-cryptography.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+52810 INFO: hook-cryptography: cryptography does not seem to be using dynamically linked OpenSSL.
+52884 INFO: Processing standard module hook 'hook-platform.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+52896 INFO: Processing standard module hook 'hook-_ctypes.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+52914 INFO: Processing standard module hook 'hook-numpy.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+53001 INFO: Processing standard module hook 'hook-pickle.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+53026 INFO: Processing standard module hook 'hook-math.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+53322 INFO: Processing standard module hook 'hook-difflib.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+53323 INFO: Processing standard module hook 'hook-heapq.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+53620 INFO: Processing standard module hook 'hook-multiprocessing.util.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+53824 INFO: Processing standard module hook 'hook-xml.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+55021 INFO: Processing standard module hook 'hook-sysconfig.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+55588 INFO: Processing standard module hook 'hook-webbrowser.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+55656 INFO: Processing standard module hook 'hook-psutil.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+56916 INFO: Processing pre-safe-import-module hook 'hook-typing_extensions.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks/pre_safe_import_module'
+57644 INFO: Processing standard module hook 'hook-charset_normalizer.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+57725 INFO: Processing standard module hook 'hook-encodings.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+58142 INFO: Processing pre-find-module-path hook 'hook-tkinter.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks/pre_find_module_path'
+58292 INFO: Processing standard module hook 'hook-_tkinter.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+58362 INFO: Processing standard module hook 'hook-matplotlib.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+mkdir -p failed for path /home/agent/.config/matplotlib: [Errno 30] Read-only file system: '/home/agent/.config/matplotlib'
+Matplotlib created a temporary cache directory at /tmp/matplotlib-h97k4c0b because there was an issue with the default path (/home/agent/.config/matplotlib); it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+58658 INFO: Processing pre-safe-import-module hook 'hook-packaging.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks/pre_safe_import_module'
+58783 INFO: Processing pre-safe-import-module hook 'hook-gi.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks/pre_safe_import_module'
+59108 INFO: Processing standard module hook 'hook-matplotlib.backend_bases.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+59256 INFO: Processing standard module hook 'hook-PIL.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+59415 INFO: Processing standard module hook 'hook-PIL.Image.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+59709 INFO: Processing standard module hook 'hook-xml.etree.cElementTree.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+59927 INFO: Processing standard module hook 'hook-PIL.ImageFilter.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+61009 INFO: Processing standard module hook 'hook-matplotlib.backends.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+61108 INFO: Processing standard module hook 'hook-matplotlib.pyplot.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+61472 INFO: Processing standard module hook 'hook-matplotlib.figure.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+62251 INFO: Processing standard module hook 'hook-dateutil.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+62339 INFO: Processing pre-safe-import-module hook 'hook-six.moves.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks/pre_safe_import_module'
+63901 INFO: Processing standard module hook 'hook-certifi.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+64848 INFO: Processing standard module hook 'hook-pyproj.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+65158 INFO: Processing standard module hook 'hook-openpyxl.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+65188 INFO: Processing standard module hook 'hook-lxml.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+65405 INFO: Processing standard module hook 'hook-lxml.etree.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+66586 INFO: Processing standard module hook 'hook-pandas.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+68017 INFO: Processing standard module hook 'hook-pytz.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+68186 INFO: Processing standard module hook 'hook-scipy.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+70087 INFO: Processing standard module hook 'hook-pygments.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+71255 INFO: Processing pre-safe-import-module hook 'hook-distutils.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks/pre_safe_import_module'
+71477 INFO: Processing standard module hook 'hook-pycparser.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+72396 INFO: Processing standard module hook 'hook-scipy.linalg.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+72499 INFO: Processing standard module hook 'hook-scipy.special._ufuncs.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+73956 INFO: Processing standard module hook 'hook-scipy.spatial._ckdtree.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+74365 INFO: Processing standard module hook 'hook-scipy.spatial.transform.rotation.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+75133 INFO: Processing standard module hook 'hook-scipy.stats._stats.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+75669 INFO: Processing standard module hook 'hook-scipy.sparse.csgraph.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+76456 INFO: Processing standard module hook 'hook-scipy.special._ellip_harm_2.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+78653 INFO: Processing standard module hook 'hook-pandas.io.formats.style.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+80626 INFO: Processing standard module hook 'hook-pandas.plotting.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+82464 INFO: Processing standard module hook 'hook-pandas.io.clipboard.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+82711 INFO: Processing standard module hook 'hook-xml.dom.domreg.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+85878 INFO: Analyzing hidden import 'matplotlib.backends.backend_pdf'
+89455 INFO: Analyzing hidden import 'matplotlib.backends.backend_svg'
+89501 INFO: Analyzing hidden import 'pypdfium2_raw.bindings'
+89502 INFO: Processing standard module hook 'hook-pypdfium2_raw.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+89653 INFO: Analyzing hidden import 'pypdfium2'
+89653 INFO: Processing standard module hook 'hook-pypdfium2.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+89775 INFO: Analyzing hidden import 'pypdfium2.__main__'
+89784 INFO: Analyzing hidden import 'pypdfium2_raw.libpdfium'
+89785 INFO: Analyzing hidden import 'ogcore.velocity_model'
+89820 INFO: Analyzing hidden import 'ogmap.polygon_stats'
+89986 INFO: Analyzing hidden import 'ogvol.engine'
+90020 INFO: Processing module hooks (post-graph stage)...
+90026 WARNING: Hidden import "pycparser.lextab" not found!
+90026 WARNING: Hidden import "pycparser.yacctab" not found!
+90325 INFO: Processing standard module hook 'hook-lxml.isoschematron.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+90365 WARNING: Hidden import "distutils.util" not found!
+90805 INFO: Processing standard module hook 'hook-PIL.SpiderImagePlugin.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+90862 WARNING: Hidden import "scipy.special._cdflib" not found!
+90878 INFO: Processing standard module hook 'hook-_tkinter.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+93874 INFO: Processing standard module hook 'hook-matplotlib.backends.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+93874 INFO: Matplotlib backend selection method: automatic discovery of used backends
+93902 INFO: Discovered Matplotlib backend(s) via `matplotlib.use()` call in module 'petroworkbench.app': ['TkAgg']
+94011 INFO: The following Matplotlib backends were discovered by scanning for `matplotlib.use()` calls: ['TkAgg']. If your backend of choice is not in this list, either add a `matplotlib.use()` call to your code, or configure the backend collection via hook options (see: https://pyinstaller.org/en/stable/hooks-config.html#matplotlib-hooks).
+mkdir -p failed for path /home/agent/.config/matplotlib: [Errno 30] Read-only file system: '/home/agent/.config/matplotlib'
+Matplotlib created a temporary cache directory at /tmp/matplotlib-9kohglz1 because there was an issue with the default path (/home/agent/.config/matplotlib); it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+94557 INFO: Selected matplotlib backends: ['TkAgg']
+94557 INFO: Extra dists for selected matplotlib backends: []
+94570 INFO: Processing standard module hook 'hook-lxml.objectify.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+94608 INFO: Performing binary vs. data reclassification (1336 entries)
+94665 INFO: Looking for ctypes DLLs
+94777 WARNING: Library user32 required via ctypes not found
+95026 WARNING: Library msvcrt required via ctypes not found
+95126 INFO: Analyzing run-time hooks ...
+95168 INFO: Including run-time hook 'pyi_rth_inspect.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks/rthooks'
+95170 INFO: Including run-time hook 'pyi_rth__tkinter.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks/rthooks'
+95171 INFO: Including run-time hook 'pyi_rth_pkgutil.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks/rthooks'
+95173 INFO: Including run-time hook 'pyi_rth_mplconfig.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks/rthooks'
+95174 INFO: Processing pre-find-module-path hook 'hook-_pyi_rth_utils.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks/pre_find_module_path'
+95175 INFO: Processing standard module hook 'hook-_pyi_rth_utils.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+95177 INFO: Including run-time hook 'pyi_rth_pyproj.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/rthooks'
+95178 INFO: Including run-time hook 'pyi_rth_traitlets.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/rthooks'
+95178 INFO: Including run-time hook 'pyi_rth_cryptography_openssl.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/rthooks'
+95179 INFO: Including run-time hook 'pyi_rth_multiprocessing.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks/rthooks'
+95273 INFO: Creating base_library.zip...
+95293 INFO: Looking for dynamic libraries
+99215 INFO: Warnings written to /workspace/audit-v0.9.53/customer-build-work/OandG_Workbench/warn-OandG_Workbench.txt
+99373 INFO: Graph cross-reference written to /workspace/audit-v0.9.53/customer-build-work/OandG_Workbench/xref-OandG_Workbench.html
+99470 INFO: Module search paths (PYTHONPATH):
+['/workspace/audit-v0.9.53/compiled-worktree/tools/release',
+ '/workspace/audit-v0.9.53/compiled-worktree',
+ '/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python312.zip',
+ '/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12',
+ '/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/lib-dynload',
+ '/workspace/audit-tooling-v048/lib/python3.12/site-packages',
+ '/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages',
+ '/workspace/audit-v0.9.53/compiled-worktree',
+ '/workspace/audit-v0.9.53/compiled-worktree',
+ '/workspace/audit-v0.9.53/compiled-worktree']
+99881 INFO: Appending 'binaries' from .spec
+99881 INFO: Appending 'datas' from .spec
+99887 INFO: checking Analysis
+99887 INFO: Building Analysis because Analysis-02.toc is non existent
+99887 INFO: Looking for Python shared library...
+99896 INFO: Using Python shared library: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/libpython3.12.so.1.0
+99896 INFO: Running Analysis Analysis-02.toc
+99896 INFO: Target bytecode optimization level: 0
+99896 INFO: Reusing cached module dependency graph...
+99928 INFO: Initializing module graph hook caches...
+99944 INFO: Analyzing /workspace/audit-v0.9.53/compiled-worktree/seismic_app.py
+100348 INFO: Processing standard module hook 'hook-sqlite3.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+100579 INFO: Processing standard module hook 'hook-cryptography.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+100978 INFO: hook-cryptography: cryptography does not seem to be using dynamically linked OpenSSL.
+101033 INFO: Processing standard module hook 'hook-platform.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+101046 INFO: Processing standard module hook 'hook-_ctypes.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+101061 INFO: Processing standard module hook 'hook-numpy.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+101140 INFO: Processing standard module hook 'hook-pickle.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+101166 INFO: Processing standard module hook 'hook-math.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+101365 INFO: Processing standard module hook 'hook-difflib.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+101366 INFO: Processing standard module hook 'hook-heapq.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+101498 INFO: Processing standard module hook 'hook-multiprocessing.util.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+101612 INFO: Processing standard module hook 'hook-xml.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+102412 INFO: Processing standard module hook 'hook-sysconfig.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+102866 INFO: Processing standard module hook 'hook-webbrowser.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+102899 INFO: Processing standard module hook 'hook-psutil.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+103565 INFO: Processing pre-safe-import-module hook 'hook-typing_extensions.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks/pre_safe_import_module'
+104031 INFO: Processing standard module hook 'hook-charset_normalizer.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+104075 INFO: Processing standard module hook 'hook-encodings.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+104437 INFO: Processing pre-find-module-path hook 'hook-tkinter.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks/pre_find_module_path'
+104513 INFO: Processing standard module hook 'hook-_tkinter.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+105084 INFO: Processing standard module hook 'hook-matplotlib.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+mkdir -p failed for path /home/agent/.config/matplotlib: [Errno 30] Read-only file system: '/home/agent/.config/matplotlib'
+Matplotlib created a temporary cache directory at /tmp/matplotlib-cbuduk_i because there was an issue with the default path (/home/agent/.config/matplotlib); it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+105377 INFO: Processing pre-safe-import-module hook 'hook-packaging.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks/pre_safe_import_module'
+105452 INFO: Processing pre-safe-import-module hook 'hook-gi.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks/pre_safe_import_module'
+105656 INFO: Processing standard module hook 'hook-matplotlib.backend_bases.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+105732 INFO: Processing standard module hook 'hook-PIL.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+105810 INFO: Processing standard module hook 'hook-PIL.Image.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+106054 INFO: Processing standard module hook 'hook-xml.etree.cElementTree.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+106167 INFO: Processing standard module hook 'hook-PIL.ImageFilter.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+107000 INFO: Processing standard module hook 'hook-matplotlib.backends.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+107106 INFO: Processing standard module hook 'hook-matplotlib.pyplot.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+107464 INFO: Processing standard module hook 'hook-matplotlib.figure.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+108038 INFO: Processing standard module hook 'hook-dateutil.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+108084 INFO: Processing pre-safe-import-module hook 'hook-six.moves.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks/pre_safe_import_module'
+109768 INFO: Processing standard module hook 'hook-certifi.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+109957 INFO: Processing standard module hook 'hook-pyproj.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+110619 INFO: Processing standard module hook 'hook-openpyxl.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+110694 INFO: Processing standard module hook 'hook-lxml.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+110966 INFO: Processing standard module hook 'hook-lxml.etree.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+112897 INFO: Processing standard module hook 'hook-pandas.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+114012 INFO: Processing standard module hook 'hook-pytz.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+114338 INFO: Processing standard module hook 'hook-scipy.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+117513 INFO: Processing standard module hook 'hook-pygments.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+119341 INFO: Processing pre-safe-import-module hook 'hook-distutils.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks/pre_safe_import_module'
+119623 INFO: Processing standard module hook 'hook-pycparser.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+120938 INFO: Processing standard module hook 'hook-scipy.linalg.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+121036 INFO: Processing standard module hook 'hook-scipy.special._ufuncs.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+121834 INFO: Processing standard module hook 'hook-scipy.spatial._ckdtree.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+122195 INFO: Processing standard module hook 'hook-scipy.spatial.transform.rotation.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+123136 INFO: Processing standard module hook 'hook-scipy.stats._stats.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+123492 INFO: Processing standard module hook 'hook-scipy.sparse.csgraph.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+124048 INFO: Processing standard module hook 'hook-scipy.special._ellip_harm_2.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+127397 INFO: Processing standard module hook 'hook-pandas.io.formats.style.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+129723 INFO: Processing standard module hook 'hook-pandas.plotting.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+131172 INFO: Processing standard module hook 'hook-pandas.io.clipboard.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+131394 INFO: Processing standard module hook 'hook-xml.dom.domreg.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+134585 INFO: Analyzing hidden import 'matplotlib.backends.backend_pdf'
+136402 INFO: Analyzing hidden import 'matplotlib.backends.backend_svg'
+136433 INFO: Analyzing hidden import 'pypdfium2_raw.bindings'
+136434 INFO: Processing standard module hook 'hook-pypdfium2_raw.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+136504 INFO: Analyzing hidden import 'pypdfium2'
+136505 INFO: Processing standard module hook 'hook-pypdfium2.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+136576 INFO: Analyzing hidden import 'pypdfium2.__main__'
+136583 INFO: Analyzing hidden import 'pypdfium2_raw.libpdfium'
+136583 INFO: Analyzing hidden import 'ogcore.core_equations'
+136587 INFO: Analyzing hidden import 'ogcore.curves'
+136592 INFO: Analyzing hidden import 'ogcore.multimineral'
+136614 INFO: Analyzing hidden import 'ogcore.multivariate'
+136621 INFO: Analyzing hidden import 'ogcore.smoothing'
+136626 INFO: Analyzing hidden import 'ogcore.water'
+136628 INFO: Analyzing hidden import 'petroworkbench.curve_ops'
+136641 INFO: Processing module hooks (post-graph stage)...
+136645 WARNING: Hidden import "pycparser.lextab" not found!
+136645 WARNING: Hidden import "pycparser.yacctab" not found!
+136804 INFO: Processing standard module hook 'hook-lxml.isoschematron.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+136813 WARNING: Hidden import "distutils.util" not found!
+136994 INFO: Processing standard module hook 'hook-PIL.SpiderImagePlugin.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+137019 WARNING: Hidden import "scipy.special._cdflib" not found!
+137030 INFO: Processing standard module hook 'hook-_tkinter.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+139533 INFO: Processing standard module hook 'hook-matplotlib.backends.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+139534 INFO: Matplotlib backend selection method: automatic discovery of used backends
+mkdir -p failed for path /home/agent/.config/matplotlib: [Errno 30] Read-only file system: '/home/agent/.config/matplotlib'
+Matplotlib created a temporary cache directory at /tmp/matplotlib-z32ekida because there was an issue with the default path (/home/agent/.config/matplotlib); it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+139935 INFO: Trying determine the default backend as first importable candidate from the list: ['QtAgg', 'Qt5Agg', 'Gtk4Agg', 'Gtk3Agg', 'TkAgg', 'WxAgg']
+mkdir -p failed for path /home/agent/.config/matplotlib: [Errno 30] Read-only file system: '/home/agent/.config/matplotlib'
+Matplotlib created a temporary cache directory at /tmp/matplotlib-h0_xilk5 because there was an issue with the default path (/home/agent/.config/matplotlib); it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+mkdir -p failed for path /home/agent/.config/matplotlib: [Errno 30] Read-only file system: '/home/agent/.config/matplotlib'
+Matplotlib created a temporary cache directory at /tmp/matplotlib-tuz8ndhh because there was an issue with the default path (/home/agent/.config/matplotlib); it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+mkdir -p failed for path /home/agent/.config/matplotlib: [Errno 30] Read-only file system: '/home/agent/.config/matplotlib'
+Matplotlib created a temporary cache directory at /tmp/matplotlib-tmi32y9q because there was an issue with the default path (/home/agent/.config/matplotlib); it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+mkdir -p failed for path /home/agent/.config/matplotlib: [Errno 30] Read-only file system: '/home/agent/.config/matplotlib'
+Matplotlib created a temporary cache directory at /tmp/matplotlib-tadsp4xr because there was an issue with the default path (/home/agent/.config/matplotlib); it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Fontconfig error: No writable cache directories
+mkdir -p failed for path /home/agent/.config/matplotlib: [Errno 30] Read-only file system: '/home/agent/.config/matplotlib'
+Matplotlib created a temporary cache directory at /tmp/matplotlib-5otpn6ns because there was an issue with the default path (/home/agent/.config/matplotlib); it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Fontconfig error: No writable cache directories
+mkdir -p failed for path /home/agent/.config/matplotlib: [Errno 30] Read-only file system: '/home/agent/.config/matplotlib'
+Matplotlib created a temporary cache directory at /tmp/matplotlib-8hpxwhty because there was an issue with the default path (/home/agent/.config/matplotlib); it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Fontconfig error: No writable cache directories
+144409 INFO: Selected matplotlib backends: ['TkAgg']
+144409 INFO: Extra dists for selected matplotlib backends: []
+144427 INFO: Processing standard module hook 'hook-lxml.objectify.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+144469 INFO: Performing binary vs. data reclassification (1336 entries)
+144489 INFO: Looking for ctypes DLLs
+144558 WARNING: Library user32 required via ctypes not found
+144661 WARNING: Library msvcrt required via ctypes not found
+144706 INFO: Analyzing run-time hooks ...
+144720 INFO: Including run-time hook 'pyi_rth_inspect.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks/rthooks'
+144723 INFO: Including run-time hook 'pyi_rth__tkinter.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks/rthooks'
+144723 INFO: Including run-time hook 'pyi_rth_pkgutil.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks/rthooks'
+144725 INFO: Including run-time hook 'pyi_rth_pyproj.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/rthooks'
+144726 INFO: Including run-time hook 'pyi_rth_mplconfig.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks/rthooks'
+144727 INFO: Processing pre-find-module-path hook 'hook-_pyi_rth_utils.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks/pre_find_module_path'
+144727 INFO: Processing standard module hook 'hook-_pyi_rth_utils.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+144729 INFO: Including run-time hook 'pyi_rth_traitlets.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/rthooks'
+144729 INFO: Including run-time hook 'pyi_rth_cryptography_openssl.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/rthooks'
+144730 INFO: Including run-time hook 'pyi_rth_multiprocessing.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks/rthooks'
+144781 INFO: Creating base_library.zip...
+144800 INFO: Looking for dynamic libraries
+147041 INFO: Warnings written to /workspace/audit-v0.9.53/customer-build-work/OandG_Workbench/warn-OandG_Workbench.txt
+147141 INFO: Graph cross-reference written to /workspace/audit-v0.9.53/customer-build-work/OandG_Workbench/xref-OandG_Workbench.html
+147193 INFO: Module search paths (PYTHONPATH):
+['/workspace/audit-v0.9.53/compiled-worktree/tools/release',
+ '/workspace/audit-v0.9.53/compiled-worktree',
+ '/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python312.zip',
+ '/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12',
+ '/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/lib-dynload',
+ '/workspace/audit-tooling-v048/lib/python3.12/site-packages',
+ '/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages',
+ '/workspace/audit-v0.9.53/compiled-worktree',
+ '/workspace/audit-v0.9.53/compiled-worktree',
+ '/workspace/audit-v0.9.53/compiled-worktree',
+ '/workspace/audit-v0.9.53/compiled-worktree']
+147507 INFO: Appending 'binaries' from .spec
+147507 INFO: Appending 'datas' from .spec
+147512 INFO: checking Analysis
+147512 INFO: Building Analysis because Analysis-03.toc is non existent
+147512 INFO: Looking for Python shared library...
+147520 INFO: Using Python shared library: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/libpython3.12.so.1.0
+147520 INFO: Running Analysis Analysis-03.toc
+147520 INFO: Target bytecode optimization level: 0
+147520 INFO: Reusing cached module dependency graph...
+147540 INFO: Initializing module graph hook caches...
+147548 INFO: Analyzing /workspace/audit-v0.9.53/compiled-worktree/geosteer_app.py
+147658 INFO: Processing standard module hook 'hook-sqlite3.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+147831 INFO: Processing standard module hook 'hook-cryptography.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+148200 INFO: hook-cryptography: cryptography does not seem to be using dynamically linked OpenSSL.
+148264 INFO: Processing standard module hook 'hook-platform.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+148276 INFO: Processing standard module hook 'hook-_ctypes.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+148293 INFO: Processing standard module hook 'hook-numpy.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+148373 INFO: Processing standard module hook 'hook-pickle.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+148399 INFO: Processing standard module hook 'hook-math.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+148757 INFO: Processing standard module hook 'hook-difflib.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+148758 INFO: Processing standard module hook 'hook-heapq.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+148889 INFO: Processing standard module hook 'hook-multiprocessing.util.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+148996 INFO: Processing standard module hook 'hook-xml.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+149640 INFO: Processing standard module hook 'hook-sysconfig.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+149992 INFO: Processing standard module hook 'hook-webbrowser.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+150033 INFO: Processing standard module hook 'hook-psutil.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+150867 INFO: Processing pre-safe-import-module hook 'hook-typing_extensions.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks/pre_safe_import_module'
+151298 INFO: Processing standard module hook 'hook-charset_normalizer.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+151343 INFO: Processing standard module hook 'hook-encodings.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+151714 INFO: Processing pre-find-module-path hook 'hook-tkinter.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks/pre_find_module_path'
+151801 INFO: Processing standard module hook 'hook-_tkinter.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+151870 INFO: Processing standard module hook 'hook-matplotlib.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+mkdir -p failed for path /home/agent/.config/matplotlib: [Errno 30] Read-only file system: '/home/agent/.config/matplotlib'
+Matplotlib created a temporary cache directory at /tmp/matplotlib-qcxgdn8m because there was an issue with the default path (/home/agent/.config/matplotlib); it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+152209 INFO: Processing pre-safe-import-module hook 'hook-packaging.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks/pre_safe_import_module'
+152283 INFO: Processing pre-safe-import-module hook 'hook-gi.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks/pre_safe_import_module'
+152492 INFO: Processing standard module hook 'hook-matplotlib.backend_bases.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+152570 INFO: Processing standard module hook 'hook-PIL.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+152661 INFO: Processing standard module hook 'hook-PIL.Image.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+152913 INFO: Processing standard module hook 'hook-xml.etree.cElementTree.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+153034 INFO: Processing standard module hook 'hook-PIL.ImageFilter.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+153796 INFO: Processing standard module hook 'hook-matplotlib.backends.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+153853 INFO: Processing standard module hook 'hook-matplotlib.pyplot.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+154059 INFO: Processing standard module hook 'hook-matplotlib.figure.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+154481 INFO: Processing standard module hook 'hook-dateutil.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+154525 INFO: Processing pre-safe-import-module hook 'hook-six.moves.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks/pre_safe_import_module'
+155470 INFO: Processing standard module hook 'hook-certifi.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+155895 INFO: Processing standard module hook 'hook-openpyxl.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+155927 INFO: Processing standard module hook 'hook-lxml.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+156105 INFO: Processing standard module hook 'hook-lxml.etree.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+157742 INFO: Processing standard module hook 'hook-pyproj.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+158441 INFO: Processing standard module hook 'hook-pandas.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+160141 INFO: Processing standard module hook 'hook-pytz.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+160306 INFO: Processing standard module hook 'hook-scipy.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+162394 INFO: Processing standard module hook 'hook-pygments.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+163598 INFO: Processing pre-safe-import-module hook 'hook-distutils.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks/pre_safe_import_module'
+163768 INFO: Processing standard module hook 'hook-pycparser.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+164781 INFO: Processing standard module hook 'hook-scipy.linalg.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+165207 INFO: Processing standard module hook 'hook-scipy.special._ufuncs.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+166207 INFO: Processing standard module hook 'hook-scipy.spatial._ckdtree.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+166565 INFO: Processing standard module hook 'hook-scipy.spatial.transform.rotation.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+167456 INFO: Processing standard module hook 'hook-scipy.stats._stats.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+168194 INFO: Processing standard module hook 'hook-scipy.sparse.csgraph.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+168968 INFO: Processing standard module hook 'hook-scipy.special._ellip_harm_2.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+171776 INFO: Processing standard module hook 'hook-pandas.io.formats.style.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+173853 INFO: Processing standard module hook 'hook-pandas.plotting.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+176001 INFO: Processing standard module hook 'hook-pandas.io.clipboard.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+176553 INFO: Processing standard module hook 'hook-xml.dom.domreg.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+178997 INFO: Analyzing hidden import 'matplotlib.backends.backend_pdf'
+180965 INFO: Analyzing hidden import 'matplotlib.backends.backend_svg'
+180995 INFO: Analyzing hidden import 'pypdfium2_raw.bindings'
+180996 INFO: Processing standard module hook 'hook-pypdfium2_raw.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+181072 INFO: Analyzing hidden import 'pypdfium2'
+181073 INFO: Processing standard module hook 'hook-pypdfium2.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+181144 INFO: Analyzing hidden import 'pypdfium2.__main__'
+181150 INFO: Analyzing hidden import 'pypdfium2_raw.libpdfium'
+181150 INFO: Analyzing hidden import 'ogcore.core_equations'
+181153 INFO: Analyzing hidden import 'ogcore.curves'
+181158 INFO: Analyzing hidden import 'ogcore.multimineral'
+181179 INFO: Analyzing hidden import 'ogcore.multivariate'
+181186 INFO: Analyzing hidden import 'ogcore.smoothing'
+181191 INFO: Analyzing hidden import 'ogcore.velocity_model'
+181214 INFO: Analyzing hidden import 'ogcore.water'
+181216 INFO: Analyzing hidden import 'petroworkbench.curve_ops'
+181230 INFO: Processing module hooks (post-graph stage)...
+181234 WARNING: Hidden import "pycparser.lextab" not found!
+181234 WARNING: Hidden import "pycparser.yacctab" not found!
+181390 INFO: Processing standard module hook 'hook-lxml.isoschematron.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+181399 WARNING: Hidden import "distutils.util" not found!
+181582 INFO: Processing standard module hook 'hook-PIL.SpiderImagePlugin.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+181607 WARNING: Hidden import "scipy.special._cdflib" not found!
+181618 INFO: Processing standard module hook 'hook-_tkinter.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+183347 INFO: Processing standard module hook 'hook-matplotlib.backends.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+183347 INFO: Matplotlib backend selection method: automatic discovery of used backends
+mkdir -p failed for path /home/agent/.config/matplotlib: [Errno 30] Read-only file system: '/home/agent/.config/matplotlib'
+Matplotlib created a temporary cache directory at /tmp/matplotlib-gd68idg7 because there was an issue with the default path (/home/agent/.config/matplotlib); it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+183719 INFO: Trying determine the default backend as first importable candidate from the list: ['QtAgg', 'Qt5Agg', 'Gtk4Agg', 'Gtk3Agg', 'TkAgg', 'WxAgg']
+mkdir -p failed for path /home/agent/.config/matplotlib: [Errno 30] Read-only file system: '/home/agent/.config/matplotlib'
+Matplotlib created a temporary cache directory at /tmp/matplotlib-2ls2n1uq because there was an issue with the default path (/home/agent/.config/matplotlib); it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+mkdir -p failed for path /home/agent/.config/matplotlib: [Errno 30] Read-only file system: '/home/agent/.config/matplotlib'
+Matplotlib created a temporary cache directory at /tmp/matplotlib-vtfowmoo because there was an issue with the default path (/home/agent/.config/matplotlib); it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+mkdir -p failed for path /home/agent/.config/matplotlib: [Errno 30] Read-only file system: '/home/agent/.config/matplotlib'
+Matplotlib created a temporary cache directory at /tmp/matplotlib-ucia_yef because there was an issue with the default path (/home/agent/.config/matplotlib); it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+mkdir -p failed for path /home/agent/.config/matplotlib: [Errno 30] Read-only file system: '/home/agent/.config/matplotlib'
+Matplotlib created a temporary cache directory at /tmp/matplotlib-91urthl1 because there was an issue with the default path (/home/agent/.config/matplotlib); it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Fontconfig error: No writable cache directories
+mkdir -p failed for path /home/agent/.config/matplotlib: [Errno 30] Read-only file system: '/home/agent/.config/matplotlib'
+Matplotlib created a temporary cache directory at /tmp/matplotlib-49l8yyqf because there was an issue with the default path (/home/agent/.config/matplotlib); it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Fontconfig error: No writable cache directories
+mkdir -p failed for path /home/agent/.config/matplotlib: [Errno 30] Read-only file system: '/home/agent/.config/matplotlib'
+Matplotlib created a temporary cache directory at /tmp/matplotlib-foygsiir because there was an issue with the default path (/home/agent/.config/matplotlib); it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Fontconfig error: No writable cache directories
+188078 INFO: Selected matplotlib backends: ['TkAgg']
+188078 INFO: Extra dists for selected matplotlib backends: []
+188089 INFO: Processing standard module hook 'hook-lxml.objectify.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+188124 INFO: Performing binary vs. data reclassification (1336 entries)
+188153 INFO: Looking for ctypes DLLs
+188221 WARNING: Library user32 required via ctypes not found
+188326 WARNING: Library msvcrt required via ctypes not found
+188367 INFO: Analyzing run-time hooks ...
+188377 INFO: Including run-time hook 'pyi_rth_inspect.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks/rthooks'
+188378 INFO: Including run-time hook 'pyi_rth__tkinter.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks/rthooks'
+188379 INFO: Including run-time hook 'pyi_rth_pkgutil.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks/rthooks'
+188381 INFO: Including run-time hook 'pyi_rth_mplconfig.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks/rthooks'
+188382 INFO: Processing pre-find-module-path hook 'hook-_pyi_rth_utils.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks/pre_find_module_path'
+188382 INFO: Processing standard module hook 'hook-_pyi_rth_utils.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+188384 INFO: Including run-time hook 'pyi_rth_pyproj.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/rthooks'
+188384 INFO: Including run-time hook 'pyi_rth_traitlets.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/rthooks'
+188385 INFO: Including run-time hook 'pyi_rth_cryptography_openssl.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/rthooks'
+188385 INFO: Including run-time hook 'pyi_rth_multiprocessing.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks/rthooks'
+188434 INFO: Creating base_library.zip...
+188452 INFO: Looking for dynamic libraries
+190783 INFO: Warnings written to /workspace/audit-v0.9.53/customer-build-work/OandG_Workbench/warn-OandG_Workbench.txt
+190890 INFO: Graph cross-reference written to /workspace/audit-v0.9.53/customer-build-work/OandG_Workbench/xref-OandG_Workbench.html
+190947 INFO: Module search paths (PYTHONPATH):
+['/workspace/audit-v0.9.53/compiled-worktree/tools/release',
+ '/workspace/audit-v0.9.53/compiled-worktree',
+ '/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python312.zip',
+ '/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12',
+ '/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/lib-dynload',
+ '/workspace/audit-tooling-v048/lib/python3.12/site-packages',
+ '/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages',
+ '/workspace/audit-v0.9.53/compiled-worktree',
+ '/workspace/audit-v0.9.53/compiled-worktree',
+ '/workspace/audit-v0.9.53/compiled-worktree',
+ '/workspace/audit-v0.9.53/compiled-worktree',
+ '/workspace/audit-v0.9.53/compiled-worktree']
+191262 INFO: Appending 'binaries' from .spec
+191262 INFO: Appending 'datas' from .spec
+191270 INFO: checking Analysis
+191270 INFO: Building Analysis because Analysis-04.toc is non existent
+191270 INFO: Looking for Python shared library...
+191281 INFO: Using Python shared library: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/libpython3.12.so.1.0
+191281 INFO: Running Analysis Analysis-04.toc
+191281 INFO: Target bytecode optimization level: 0
+191281 INFO: Reusing cached module dependency graph...
+191300 INFO: Initializing module graph hook caches...
+191308 INFO: Analyzing /workspace/audit-v0.9.53/compiled-worktree/correlation_app.py
+191376 INFO: Processing standard module hook 'hook-sqlite3.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+191756 INFO: Processing standard module hook 'hook-cryptography.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+192166 INFO: hook-cryptography: cryptography does not seem to be using dynamically linked OpenSSL.
+192224 INFO: Processing standard module hook 'hook-platform.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+192237 INFO: Processing standard module hook 'hook-_ctypes.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+192255 INFO: Processing standard module hook 'hook-numpy.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+192341 INFO: Processing standard module hook 'hook-pickle.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+192369 INFO: Processing standard module hook 'hook-math.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+192587 INFO: Processing standard module hook 'hook-difflib.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+192587 INFO: Processing standard module hook 'hook-heapq.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+192723 INFO: Processing standard module hook 'hook-multiprocessing.util.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+192897 INFO: Processing standard module hook 'hook-xml.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+193573 INFO: Processing standard module hook 'hook-sysconfig.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+194159 INFO: Processing standard module hook 'hook-webbrowser.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+194196 INFO: Processing standard module hook 'hook-psutil.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+194864 INFO: Processing pre-safe-import-module hook 'hook-typing_extensions.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks/pre_safe_import_module'
+195306 INFO: Processing standard module hook 'hook-charset_normalizer.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+195355 INFO: Processing standard module hook 'hook-encodings.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+195630 INFO: Processing pre-find-module-path hook 'hook-tkinter.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks/pre_find_module_path'
+195711 INFO: Processing standard module hook 'hook-_tkinter.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+196366 INFO: Processing standard module hook 'hook-matplotlib.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+mkdir -p failed for path /home/agent/.config/matplotlib: [Errno 30] Read-only file system: '/home/agent/.config/matplotlib'
+Matplotlib created a temporary cache directory at /tmp/matplotlib-e3n7rlun because there was an issue with the default path (/home/agent/.config/matplotlib); it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+196712 INFO: Processing pre-safe-import-module hook 'hook-packaging.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks/pre_safe_import_module'
+196789 INFO: Processing pre-safe-import-module hook 'hook-gi.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks/pre_safe_import_module'
+196973 INFO: Processing standard module hook 'hook-matplotlib.backend_bases.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+197051 INFO: Processing standard module hook 'hook-PIL.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+197119 INFO: Processing standard module hook 'hook-PIL.Image.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+197306 INFO: Processing standard module hook 'hook-xml.etree.cElementTree.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+197423 INFO: Processing standard module hook 'hook-PIL.ImageFilter.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+197963 INFO: Processing standard module hook 'hook-matplotlib.backends.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+198026 INFO: Processing standard module hook 'hook-matplotlib.pyplot.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+198252 INFO: Processing standard module hook 'hook-matplotlib.figure.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+198650 INFO: Processing standard module hook 'hook-dateutil.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+198695 INFO: Processing pre-safe-import-module hook 'hook-six.moves.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks/pre_safe_import_module'
+199861 INFO: Processing standard module hook 'hook-certifi.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+199970 INFO: Processing standard module hook 'hook-pyproj.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+200301 INFO: Processing standard module hook 'hook-openpyxl.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+200337 INFO: Processing standard module hook 'hook-lxml.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+200484 INFO: Processing standard module hook 'hook-lxml.etree.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+201599 INFO: Processing standard module hook 'hook-pandas.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+202626 INFO: Processing standard module hook 'hook-pytz.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+202815 INFO: Processing standard module hook 'hook-scipy.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+205028 INFO: Processing standard module hook 'hook-pygments.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+207164 INFO: Processing pre-safe-import-module hook 'hook-distutils.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks/pre_safe_import_module'
+207291 INFO: Processing standard module hook 'hook-pycparser.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+207914 INFO: Processing standard module hook 'hook-scipy.linalg.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+208263 INFO: Processing standard module hook 'hook-scipy.special._ufuncs.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+209100 INFO: Processing standard module hook 'hook-scipy.spatial._ckdtree.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+209486 INFO: Processing standard module hook 'hook-scipy.spatial.transform.rotation.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+210617 INFO: Processing standard module hook 'hook-scipy.stats._stats.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+210994 INFO: Processing standard module hook 'hook-scipy.sparse.csgraph.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+211645 INFO: Processing standard module hook 'hook-scipy.special._ellip_harm_2.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+214300 INFO: Processing standard module hook 'hook-pandas.io.formats.style.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+216105 INFO: Processing standard module hook 'hook-pandas.plotting.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+218044 INFO: Processing standard module hook 'hook-pandas.io.clipboard.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+218439 INFO: Processing standard module hook 'hook-xml.dom.domreg.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+219806 INFO: Analyzing hidden import 'matplotlib.backends.backend_pdf'
+221986 INFO: Analyzing hidden import 'matplotlib.backends.backend_svg'
+222019 INFO: Analyzing hidden import 'pypdfium2_raw.bindings'
+222020 INFO: Processing standard module hook 'hook-pypdfium2_raw.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+222094 INFO: Analyzing hidden import 'pypdfium2'
+222095 INFO: Processing standard module hook 'hook-pypdfium2.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+222169 INFO: Analyzing hidden import 'pypdfium2.__main__'
+222175 INFO: Analyzing hidden import 'pypdfium2_raw.libpdfium'
+222175 INFO: Analyzing hidden import 'ogcore.batch_zones'
+222224 INFO: Analyzing hidden import 'ogcore.core_equations'
+222227 INFO: Analyzing hidden import 'ogcore.curves'
+222233 INFO: Analyzing hidden import 'ogcore.multimineral'
+222255 INFO: Analyzing hidden import 'ogcore.multivariate'
+222263 INFO: Analyzing hidden import 'ogcore.smoothing'
+222268 INFO: Analyzing hidden import 'ogcore.velocity_model'
+222291 INFO: Analyzing hidden import 'ogcore.water'
+222294 INFO: Analyzing hidden import 'ogmap.polygon_stats'
+222359 INFO: Analyzing hidden import 'ogvol.engine'
+222384 INFO: Analyzing hidden import 'petroworkbench.curve_ops'
+222398 INFO: Processing module hooks (post-graph stage)...
+222402 WARNING: Hidden import "pycparser.lextab" not found!
+222402 WARNING: Hidden import "pycparser.yacctab" not found!
+222574 INFO: Processing standard module hook 'hook-lxml.isoschematron.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+222584 WARNING: Hidden import "distutils.util" not found!
+222792 INFO: Processing standard module hook 'hook-PIL.SpiderImagePlugin.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+222820 WARNING: Hidden import "scipy.special._cdflib" not found!
+222833 INFO: Processing standard module hook 'hook-_tkinter.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+224704 INFO: Processing standard module hook 'hook-matplotlib.backends.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+224704 INFO: Matplotlib backend selection method: automatic discovery of used backends
+mkdir -p failed for path /home/agent/.config/matplotlib: [Errno 30] Read-only file system: '/home/agent/.config/matplotlib'
+Matplotlib created a temporary cache directory at /tmp/matplotlib-n_jzt3ix because there was an issue with the default path (/home/agent/.config/matplotlib); it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+225069 INFO: Trying determine the default backend as first importable candidate from the list: ['QtAgg', 'Qt5Agg', 'Gtk4Agg', 'Gtk3Agg', 'TkAgg', 'WxAgg']
+mkdir -p failed for path /home/agent/.config/matplotlib: [Errno 30] Read-only file system: '/home/agent/.config/matplotlib'
+Matplotlib created a temporary cache directory at /tmp/matplotlib-ypzulorh because there was an issue with the default path (/home/agent/.config/matplotlib); it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+mkdir -p failed for path /home/agent/.config/matplotlib: [Errno 30] Read-only file system: '/home/agent/.config/matplotlib'
+Matplotlib created a temporary cache directory at /tmp/matplotlib-tk2lx51v because there was an issue with the default path (/home/agent/.config/matplotlib); it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+mkdir -p failed for path /home/agent/.config/matplotlib: [Errno 30] Read-only file system: '/home/agent/.config/matplotlib'
+Matplotlib created a temporary cache directory at /tmp/matplotlib-ri9rsjzy because there was an issue with the default path (/home/agent/.config/matplotlib); it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+mkdir -p failed for path /home/agent/.config/matplotlib: [Errno 30] Read-only file system: '/home/agent/.config/matplotlib'
+Matplotlib created a temporary cache directory at /tmp/matplotlib-8pxsann1 because there was an issue with the default path (/home/agent/.config/matplotlib); it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Fontconfig error: No writable cache directories
+mkdir -p failed for path /home/agent/.config/matplotlib: [Errno 30] Read-only file system: '/home/agent/.config/matplotlib'
+Matplotlib created a temporary cache directory at /tmp/matplotlib-z_yv0gev because there was an issue with the default path (/home/agent/.config/matplotlib); it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Fontconfig error: No writable cache directories
+mkdir -p failed for path /home/agent/.config/matplotlib: [Errno 30] Read-only file system: '/home/agent/.config/matplotlib'
+Matplotlib created a temporary cache directory at /tmp/matplotlib-p60wioxj because there was an issue with the default path (/home/agent/.config/matplotlib); it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Fontconfig error: No writable cache directories
+229682 INFO: Selected matplotlib backends: ['TkAgg']
+229682 INFO: Extra dists for selected matplotlib backends: []
+229702 INFO: Processing standard module hook 'hook-lxml.objectify.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+229758 INFO: Performing binary vs. data reclassification (1336 entries)
+229785 INFO: Looking for ctypes DLLs
+229872 WARNING: Library user32 required via ctypes not found
+230049 WARNING: Library msvcrt required via ctypes not found
+230128 INFO: Analyzing run-time hooks ...
+230144 INFO: Including run-time hook 'pyi_rth_inspect.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks/rthooks'
+230148 INFO: Including run-time hook 'pyi_rth__tkinter.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks/rthooks'
+230149 INFO: Including run-time hook 'pyi_rth_pkgutil.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks/rthooks'
+230151 INFO: Including run-time hook 'pyi_rth_mplconfig.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks/rthooks'
+230152 INFO: Processing pre-find-module-path hook 'hook-_pyi_rth_utils.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks/pre_find_module_path'
+230153 INFO: Processing standard module hook 'hook-_pyi_rth_utils.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks'
+230155 INFO: Including run-time hook 'pyi_rth_pyproj.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/rthooks'
+230156 INFO: Including run-time hook 'pyi_rth_traitlets.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/rthooks'
+230157 INFO: Including run-time hook 'pyi_rth_cryptography_openssl.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/rthooks'
+230158 INFO: Including run-time hook 'pyi_rth_multiprocessing.py' from '/workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/hooks/rthooks'
+230241 INFO: Creating base_library.zip...
+230271 INFO: Looking for dynamic libraries
+232582 INFO: Warnings written to /workspace/audit-v0.9.53/customer-build-work/OandG_Workbench/warn-OandG_Workbench.txt
+232685 INFO: Graph cross-reference written to /workspace/audit-v0.9.53/customer-build-work/OandG_Workbench/xref-OandG_Workbench.html
+233247 INFO: checking PYZ
+233247 INFO: Building PYZ because PYZ-00.toc is non existent
+233247 INFO: Building PYZ (ZlibArchive) /workspace/audit-v0.9.53/customer-build-work/OandG_Workbench/PYZ-00.pyz
+235929 INFO: Building PYZ (ZlibArchive) /workspace/audit-v0.9.53/customer-build-work/OandG_Workbench/PYZ-00.pyz completed successfully.
+235969 INFO: checking PKG
+235969 INFO: Building PKG because PKG-00.toc is non existent
+235969 INFO: Building PKG (CArchive) OandG_Workbench.pkg
+236055 INFO: Building PKG (CArchive) OandG_Workbench.pkg completed successfully.
+236055 INFO: Bootloader /workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/bootloader/Linux-64bit-intel/run
+236055 INFO: checking EXE
+236055 INFO: Building EXE because EXE-00.toc is non existent
+236055 INFO: Building EXE from EXE-00.toc
+236055 INFO: Copying bootloader EXE to /workspace/audit-v0.9.53/customer-build-work/OandG_Workbench/OandG_Workbench
+236056 INFO: Appending PKG archive to custom ELF section in EXE
+236309 INFO: Building EXE from EXE-00.toc completed successfully.
+236322 INFO: checking PYZ
+236322 INFO: Building PYZ because PYZ-01.toc is non existent
+236322 INFO: Building PYZ (ZlibArchive) /workspace/audit-v0.9.53/customer-build-work/OandG_Workbench/PYZ-01.pyz
+238824 INFO: Building PYZ (ZlibArchive) /workspace/audit-v0.9.53/customer-build-work/OandG_Workbench/PYZ-01.pyz completed successfully.
+238862 INFO: checking PKG
+238862 INFO: Building PKG because PKG-01.toc is non existent
+238862 INFO: Building PKG (CArchive) PetroWorkbench.pkg
+238946 INFO: Building PKG (CArchive) PetroWorkbench.pkg completed successfully.
+238947 INFO: Bootloader /workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/bootloader/Linux-64bit-intel/run
+238947 INFO: checking EXE
+238947 INFO: Building EXE because EXE-01.toc is non existent
+238947 INFO: Building EXE from EXE-01.toc
+238947 INFO: Copying bootloader EXE to /workspace/audit-v0.9.53/customer-build-work/OandG_Workbench/PetroWorkbench
+238947 INFO: Appending PKG archive to custom ELF section in EXE
+239101 INFO: Building EXE from EXE-01.toc completed successfully.
+239133 INFO: checking PYZ
+239133 INFO: Building PYZ because PYZ-02.toc is non existent
+239133 INFO: Building PYZ (ZlibArchive) /workspace/audit-v0.9.53/customer-build-work/OandG_Workbench/PYZ-02.pyz
+241844 INFO: Building PYZ (ZlibArchive) /workspace/audit-v0.9.53/customer-build-work/OandG_Workbench/PYZ-02.pyz completed successfully.
+241884 INFO: checking PKG
+241884 INFO: Building PKG because PKG-02.toc is non existent
+241884 INFO: Building PKG (CArchive) SeismicWorkbench.pkg
+242008 INFO: Building PKG (CArchive) SeismicWorkbench.pkg completed successfully.
+242008 INFO: Bootloader /workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/bootloader/Linux-64bit-intel/run
+242008 INFO: checking EXE
+242008 INFO: Building EXE because EXE-02.toc is non existent
+242008 INFO: Building EXE from EXE-02.toc
+242008 INFO: Copying bootloader EXE to /workspace/audit-v0.9.53/customer-build-work/OandG_Workbench/SeismicWorkbench
+242009 INFO: Appending PKG archive to custom ELF section in EXE
+242321 INFO: Building EXE from EXE-02.toc completed successfully.
+242336 INFO: checking PYZ
+242336 INFO: Building PYZ because PYZ-03.toc is non existent
+242336 INFO: Building PYZ (ZlibArchive) /workspace/audit-v0.9.53/customer-build-work/OandG_Workbench/PYZ-03.pyz
+244848 INFO: Building PYZ (ZlibArchive) /workspace/audit-v0.9.53/customer-build-work/OandG_Workbench/PYZ-03.pyz completed successfully.
+244888 INFO: checking PKG
+244888 INFO: Building PKG because PKG-03.toc is non existent
+244888 INFO: Building PKG (CArchive) GeosteeringWorkbench.pkg
+245003 INFO: Building PKG (CArchive) GeosteeringWorkbench.pkg completed successfully.
+245004 INFO: Bootloader /workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/bootloader/Linux-64bit-intel/run
+245004 INFO: checking EXE
+245004 INFO: Building EXE because EXE-03.toc is non existent
+245004 INFO: Building EXE from EXE-03.toc
+245004 INFO: Copying bootloader EXE to /workspace/audit-v0.9.53/customer-build-work/OandG_Workbench/GeosteeringWorkbench
+245004 INFO: Appending PKG archive to custom ELF section in EXE
+245224 INFO: Building EXE from EXE-03.toc completed successfully.
+245236 INFO: checking PYZ
+245236 INFO: Building PYZ because PYZ-04.toc is non existent
+245236 INFO: Building PYZ (ZlibArchive) /workspace/audit-v0.9.53/customer-build-work/OandG_Workbench/PYZ-04.pyz
+247617 INFO: Building PYZ (ZlibArchive) /workspace/audit-v0.9.53/customer-build-work/OandG_Workbench/PYZ-04.pyz completed successfully.
+247658 INFO: checking PKG
+247658 INFO: Building PKG because PKG-04.toc is non existent
+247658 INFO: Building PKG (CArchive) CorrelationWorkbench.pkg
+247767 INFO: Building PKG (CArchive) CorrelationWorkbench.pkg completed successfully.
+247768 INFO: Bootloader /workspace/audit-tooling-v048/lib/python3.12/site-packages/PyInstaller/bootloader/Linux-64bit-intel/run
+247768 INFO: checking EXE
+247768 INFO: Building EXE because EXE-04.toc is non existent
+247768 INFO: Building EXE from EXE-04.toc
+247768 INFO: Copying bootloader EXE to /workspace/audit-v0.9.53/customer-build-work/OandG_Workbench/CorrelationWorkbench
+247768 INFO: Appending PKG archive to custom ELF section in EXE
+247973 INFO: Building EXE from EXE-04.toc completed successfully.
+248024 INFO: checking COLLECT
+248024 INFO: Building COLLECT because COLLECT-00.toc is non existent
+248024 INFO: Building COLLECT COLLECT-00.toc
+251067 INFO: Building COLLECT COLLECT-00.toc completed successfully.
+251101 INFO: Build complete! The results are available in: /workspace/audit-v0.9.53/customer-build

@@ -1,5 +1,17 @@
 # Software reviews
 
+## O&G Workbench v0.9.53
+
+Fresh full release-candidate audit: **Clean except for listed material risks; fix listed items first.** Six category B findings; no established A blocker or demonstrated Cython numerical discrepancy. The report separates normal fixes from remaining concurrency, cache, native importer, source normalization and archive-limit defects.
+
+- [Read the report](audits/v0.9.53/OandG_Workbench_v0.9.53_Audit.md)
+- [Download PDF](https://github.com/kwgeologist/Software-reviews/raw/refs/heads/main/audits/v0.9.53/OandG_Workbench_v0.9.53_Audit.pdf)
+- [Download report and evidence ZIP](https://github.com/kwgeologist/Software-reviews/raw/refs/heads/main/audits/v0.9.53/OandG_Workbench_v0.9.53_Audit_Bundle.zip)
+- [Evidence](audits/v0.9.53/evidence)
+- [Structured findings](audits/v0.9.53/findings.json)
+
+Full serial suite: **2,730 passed / 4 failed / 19 skipped**, plus 715 passing subtests. Failures and the difference from the supplied baseline are explained in the report. Compiled reference tests: 219 passed / 1 skipped; compiled integration: 76 passed. Actual Linux customer/owner builds and CLI checks completed; native Windows qualification remains incomplete. Historical Tk crashes remain unresolved. All **905 supplied files remain unchanged**; only audit deliverables are published.
+
 ## O&G Workbench v0.9.52
 
 Fresh full pre-release audit: **Not ready for Windows validation.** One release blocker (alias ownership can silently select a different geological top) and five material defects/risks. No demonstrated Cython numerical discrepancy. Historical Tk segmentation faults remain unresolved; none reproduced in the current serial or parallel full run.

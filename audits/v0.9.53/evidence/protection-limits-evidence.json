@@ -1,0 +1,13 @@
+{
+  "test_limit_bytes": 128,
+  "default_limit_bytes": 536870912,
+  "fixture_archive_bytes": 1158,
+  "normal_size_detection": [
+    "ogcore.formulas: as source or bytecode in program2.pkg (resources/data.bin) (ogcore/formulas.py)"
+  ],
+  "oversize_magic_only_result": [],
+  "oversize_archive_named_result": [
+    "program3.pkg (resources/data.zip): cannot be read as an archive (File is not a zip file)"
+  ],
+  "scope": "reduced limit exercises exact production oversize branch; no 512MB artifact allocated"
+}

@@ -1,0 +1,84 @@
+{
+  "source_after_locked_rename": {
+    "1": [
+      {
+        "kind": "top",
+        "formation": "Gallup Sandstone",
+        "measure": "TVDSS"
+      },
+      {
+        "kind": "top",
+        "formation": "Gallup Sandstone",
+        "measure": "TVDSS"
+      },
+      {
+        "kind": "top",
+        "formation": "Gallup",
+        "measure": "TVDSS"
+      }
+    ],
+    "2": [
+      {
+        "kind": "isopach",
+        "top": "Gallup Sandstone",
+        "base": "Dakota",
+        "measure": "TVD"
+      },
+      {
+        "kind": "isopach",
+        "top": "Gallup Sandstone",
+        "base": "Dakota",
+        "measure": "TVD"
+      },
+      {
+        "kind": "isopach",
+        "top": "Gallup",
+        "base": "Dakota",
+        "measure": "TVD"
+      }
+    ]
+  },
+  "content_unchanged": {
+    "1": true,
+    "2": true
+  },
+  "source_after_reopen": {
+    "1": [
+      {
+        "kind": "top",
+        "formation": "Gallup Sandstone",
+        "measure": "TVDSS"
+      },
+      {
+        "kind": "top",
+        "formation": "Gallup Sandstone",
+        "measure": "TVDSS"
+      },
+      {
+        "kind": "top",
+        "formation": "Gallup",
+        "measure": "TVDSS"
+      }
+    ],
+    "2": [
+      {
+        "kind": "isopach",
+        "top": "Gallup Sandstone",
+        "base": "Dakota",
+        "measure": "TVD"
+      },
+      {
+        "kind": "isopach",
+        "top": "Gallup Sandstone",
+        "base": "Dakota",
+        "measure": "TVD"
+      },
+      {
+        "kind": "isopach",
+        "top": "Gallup",
+        "base": "Dakota",
+        "measure": "TVD"
+      }
+    ]
+  }
+}

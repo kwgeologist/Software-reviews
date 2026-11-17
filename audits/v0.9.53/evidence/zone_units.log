@@ -1,0 +1,41 @@
+{
+  "published": [
+    {
+      "well": "Feet",
+      "unit": "ft",
+      "expected_net_own_unit": 100.0,
+      "published_net": [
+        100.0,
+        "ft"
+      ]
+    },
+    {
+      "well": "Metres",
+      "unit": "m",
+      "expected_net_own_unit": 30.48,
+      "published_net": [
+        30.48,
+        "m"
+      ]
+    }
+  ],
+  "stored": [
+    {
+      "well_name": "Feet",
+      "name": "SAME_PAY net",
+      "units": "ft",
+      "value_number": 100.0
+    },
+    {
+      "well_name": "Metres",
+      "name": "SAME_PAY net",
+      "units": "ft",
+      "value_number": 99.99999999999999
+    }
+  ],
+  "map_unit": "ft",
+  "map_values": [
+    100.0,
+    99.99999999999999
+  ]
+}

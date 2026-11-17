@@ -1,0 +1,60 @@
+{
+  "method": "Scope/traceability record; not a statement of exhaustive line coverage",
+  "areas": [
+    {
+      "area": "Core project/database, migrations, concurrency",
+      "source_paths": "database.py; ogcore/project.py; tests/test_database.py; tests/test_data_safety.py; tests/test_v0950_fixes.py; tests/test_v0951_fixes.py; tests/test_v0953_fixes.py",
+      "evidence": "Full serial suite, targeted current fixes, project-switch/recovery/alias probes"
+    },
+    {
+      "area": "Well Manager tabs and imports",
+      "source_paths": "geoworkbench; bulk_import.py; mapped_import.py; ogcore/ihs297.py; ogcore/petra_ppf.py; ogcore/production.py",
+      "evidence": "Full collected tests; persisted-value switch probes; real importer alias correction/spacing probes"
+    },
+    {
+      "area": "FM Tops and sources",
+      "source_paths": "database.py; geoworkbench/interpretation_dialogs.py; correlationworkbench/store.py; ogcore/batch_zones.py",
+      "evidence": "Actual manager and held Batch window; source snapshots; concurrent ownership and persistent cache probes"
+    },
+    {
+      "area": "Map/grids/isopach",
+      "source_paths": "ogmap; ogcore/attribute_index.py; ogcore/background.py",
+      "evidence": "Full collected tests; before/after-commit kill; reader/writer and writer/writer ordering; locked source metadata; same-name file registration"
+    },
+    {
+      "area": "Petro",
+      "source_paths": "petroworkbench; test_petro_api_search; test_petro_integration; pay/curve/scientific suites",
+      "evidence": "5002-workspace identity/filter probe; current source and compiled GUI cohorts; self-tests"
+    },
+    {
+      "area": "Correlation/Cross Section",
+      "source_paths": "correlationworkbench; xsection",
+      "evidence": "Current collected GUI/data tests, migration/rename settings tests, Correlation licensed CLI smoke"
+    },
+    {
+      "area": "Geosteering",
+      "source_paths": "geosteering; geosteer_app.py",
+      "evidence": "Current collected numerical/UI/manual cases; direct auto self-test; manual fault dialog fit-call probe"
+    },
+    {
+      "area": "Seismic",
+      "source_paths": "seismicworkbench",
+      "evidence": "Collected SEG-Y/native Kingdom/coordinate/display tests, fresh rename and numerical reference probes, licensed CLI smoke; full external truth absent"
+    },
+    {
+      "area": "Raster/digitizer/LAS",
+      "source_paths": "ograster; LAS publishing paths",
+      "evidence": "Collected registration/digitizer/wrap/Auto Trace/overlay/persistence tests and fresh accepted-curve probes; unavailable real scan tests remain skipped"
+    },
+    {
+      "area": "Scientific/Cython",
+      "source_paths": "15 protected modules; tools/release/build_cython.py",
+      "evidence": "219 compiled reference tests; 24 cold-process source/compiled cases and signatures; independent survey/units/pay references"
+    },
+    {
+      "area": "Licensing/security/packaging",
+      "source_paths": "licensing, license_runtime; release specs/manifest; Build_Windows_EXE.bat; inventory/check_protected",
+      "evidence": "Actual Linux customer and owner builds/protection, staged inventory, licensed/unlicensed/trust CLI probes, bounded archive fixtures; no native Windows validation"
+    }
+  ]
+}

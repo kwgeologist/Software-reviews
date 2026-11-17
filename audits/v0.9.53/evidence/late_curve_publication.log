@@ -1,0 +1,14 @@
+{
+  "late_edit_after_reconcile": {
+    "accepted_X_all_zero": true,
+    "accepted_description": "new accepted zero curve",
+    "net": 0.0
+  },
+  "next_save": {
+    "accepted_X_all_zero": true,
+    "accepted_description": "new accepted zero curve",
+    "net": 0.0
+  },
+  "unaccepted_previews": [],
+  "expected_net_for_zero_curve": 0
+}

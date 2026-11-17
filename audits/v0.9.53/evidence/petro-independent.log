@@ -1,0 +1,41 @@
+mkdir -p failed for path /home/agent/.config/matplotlib: [Errno 30] Read-only file system: '/home/agent/.config/matplotlib'
+Matplotlib created a temporary cache directory at /tmp/matplotlib-uf2_gyat because there was an issue with the default path (/home/agent/.config/matplotlib); it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Fontconfig error: No writable cache directories
+Could not save window positions: [Errno 30] Read-only file system: '/home/agent/PetroWorkbench'
+{
+  "standalone_before": {
+    "well_api": "42401123450000",
+    "stored_api": "42401123450000",
+    "tree_rows": [
+      [
+        "well_0",
+        "42401123450000"
+      ]
+    ],
+    "labels": [
+      "[API MISSING] Standalone API well  \u2014 ACTIVE"
+    ]
+  },
+  "standalone_search_count": 1,
+  "large_filter": {
+    "wells": 5002,
+    "seconds": 0.09318463399540633,
+    "matches": 14,
+    "restored": 5002,
+    "stable_rows": true,
+    "switched": [],
+    "active": "w0"
+  },
+  "duplicate_api_identity": [
+    {
+      "iid": "well_10",
+      "expected": "w1",
+      "actual": "w1"
+    },
+    {
+      "iid": "well_11",
+      "expected": "tie1",
+      "actual": "tie1"
+    }
+  ]
+}

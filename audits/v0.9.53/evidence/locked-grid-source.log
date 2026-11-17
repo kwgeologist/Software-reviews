@@ -1,0 +1,99 @@
+Could not update grid files after a top rename
+Traceback (most recent call last):
+  File "/workspace/audit-v0.9.53/OandG_Workbench_v0.9.53/database.py", line 3242, in _retarget_grid_files
+    grids.retarget_top_files(self, old_names, new_name)
+  File "/workspace/audit-v0.9.53/OandG_Workbench_v0.9.53/ogmap/grids.py", line 298, in retarget_top_files
+    files.promote()
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/unittest/mock.py", line 1139, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/unittest/mock.py", line 1143, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/unittest/mock.py", line 1198, in _execute_mock_call
+    raise effect
+PermissionError: audit injected locked target
+{
+  "source_after_locked_rename": {
+    "1": [
+      {
+        "kind": "top",
+        "formation": "Gallup Sandstone",
+        "measure": "TVDSS"
+      },
+      {
+        "kind": "top",
+        "formation": "Gallup Sandstone",
+        "measure": "TVDSS"
+      },
+      {
+        "kind": "top",
+        "formation": "Gallup",
+        "measure": "TVDSS"
+      }
+    ],
+    "2": [
+      {
+        "kind": "isopach",
+        "top": "Gallup Sandstone",
+        "base": "Dakota",
+        "measure": "TVD"
+      },
+      {
+        "kind": "isopach",
+        "top": "Gallup Sandstone",
+        "base": "Dakota",
+        "measure": "TVD"
+      },
+      {
+        "kind": "isopach",
+        "top": "Gallup",
+        "base": "Dakota",
+        "measure": "TVD"
+      }
+    ]
+  },
+  "content_unchanged": {
+    "1": true,
+    "2": true
+  },
+  "source_after_reopen": {
+    "1": [
+      {
+        "kind": "top",
+        "formation": "Gallup Sandstone",
+        "measure": "TVDSS"
+      },
+      {
+        "kind": "top",
+        "formation": "Gallup Sandstone",
+        "measure": "TVDSS"
+      },
+      {
+        "kind": "top",
+        "formation": "Gallup",
+        "measure": "TVDSS"
+      }
+    ],
+    "2": [
+      {
+        "kind": "isopach",
+        "top": "Gallup Sandstone",
+        "base": "Dakota",
+        "measure": "TVD"
+      },
+      {
+        "kind": "isopach",
+        "top": "Gallup Sandstone",
+        "base": "Dakota",
+        "measure": "TVD"
+      },
+      {
+        "kind": "isopach",
+        "top": "Gallup",
+        "base": "Dakota",
+        "measure": "TVD"
+      }
+    ]
+  }
+}

@@ -1,0 +1,163 @@
+{
+  "normal_global_manager_rename": {
+    "map_MD_before": [
+      1000.0
+    ],
+    "map_MD_after": [
+      1000.0
+    ],
+    "merge_confirmation_calls": 0,
+    "definitions": [
+      "A",
+      "B"
+    ],
+    "alias_owner": "B"
+  },
+  "normal_manager_delete": {
+    "before_close": [
+      "A",
+      "B"
+    ],
+    "after_reopen": [
+      "A",
+      "B"
+    ]
+  },
+  "batch_before": {
+    "values": {
+      "GROSS": [
+        80.0,
+        "ft"
+      ],
+      "NET": [
+        20.0,
+        "ft"
+      ],
+      "NTG": [
+        0.25,
+        ""
+      ],
+      "PHIA": [
+        0.12,
+        "v/v"
+      ],
+      "SWA": [
+        0.35,
+        "v/v"
+      ],
+      "PHIH": [
+        2.4,
+        "ft"
+      ],
+      "KH": [
+        10.0,
+        "mD\u00b7ft"
+      ],
+      "HCPV": [
+        1.56,
+        "ft"
+      ],
+      "PERMA": [
+        0.5,
+        "mD"
+      ],
+      "PERMG": [
+        0.5,
+        "mD"
+      ]
+    }
+  },
+  "batch_after_rename": {
+    "live_top_var": "Haynesville",
+    "alias_resolution": "Haynesville New",
+    "current_saved_top": "Haynesville New",
+    "live_result": {
+      "values": {
+        "GROSS": [
+          80.0,
+          "ft"
+        ],
+        "NET": [
+          20.0,
+          "ft"
+        ],
+        "NTG": [
+          0.25,
+          ""
+        ],
+        "PHIA": [
+          0.12,
+          "v/v"
+        ],
+        "SWA": [
+          0.35,
+          "v/v"
+        ],
+        "PHIH": [
+          2.4,
+          "ft"
+        ],
+        "KH": [
+          10.0,
+          "mD\u00b7ft"
+        ],
+        "HCPV": [
+          1.56,
+          "ft"
+        ],
+        "PERMA": [
+          0.5,
+          "mD"
+        ],
+        "PERMG": [
+          0.5,
+          "mD"
+        ]
+      }
+    },
+    "reloaded_result": {
+      "values": {
+        "GROSS": [
+          80.0,
+          "ft"
+        ],
+        "HCPV": [
+          1.56,
+          "ft"
+        ],
+        "KH": [
+          10.0,
+          "mD\u00b7ft"
+        ],
+        "NET": [
+          20.0,
+          "ft"
+        ],
+        "NTG": [
+          0.25,
+          ""
+        ],
+        "PERMA": [
+          0.5,
+          "mD"
+        ],
+        "PERMG": [
+          0.5,
+          "mD"
+        ],
+        "PHIH": [
+          2.4,
+          "ft"
+        ],
+        "PHIA": [
+          0.12,
+          "v/v"
+        ],
+        "SWA": [
+          0.35,
+          "v/v"
+        ]
+      }
+    }
+  }
+}

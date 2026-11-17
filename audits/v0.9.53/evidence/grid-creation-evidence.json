@@ -1,0 +1,17 @@
+{
+  "errors": [],
+  "grids": {
+    "A": {
+      "id": 1,
+      "name": "Same",
+      "file": "Same.ogwgrid",
+      "value": 1000.0
+    },
+    "B": {
+      "id": 2,
+      "name": "Same (2)",
+      "file": "Same (2).ogwgrid",
+      "value": 9000.0
+    }
+  }
+}

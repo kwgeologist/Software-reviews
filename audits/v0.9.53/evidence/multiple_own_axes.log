@@ -1,0 +1,37 @@
+Petro zone results: PAY in REF: not published - its curves have no depths in common that keep every cut-off sample: X (own depths), PHIE (own depths), SW (own depths)
+Petro zone results: PAY in REF: not published - its curves have no depths in common that keep every cut-off sample: X (own depths), PHIE (own depths), SW (own depths)
+{
+  "workflow": "X, PHIE and SW initially on independent 0.5-ft axes shifted 0.25 ft from the well; only constant PHIE resampled to 1 ft at origin 0.25",
+  "before": {
+    "PAY gross": 2.0,
+    "PAY net": 1.0,
+    "PAY N:G": 0.5,
+    "PAY avg porosity": 0.2,
+    "PAY avg Sw": 0.5,
+    "PAY phi-h": 0.2,
+    "PAY HCPT": 0.1
+  },
+  "after": {},
+  "X_scientific_axis_and_values_unchanged": true,
+  "chosen_axis_in_zone": [],
+  "chosen_X_values": [],
+  "accepted_X_fine_zone_depths": [
+    1010.25,
+    1010.75,
+    1011.25,
+    1011.75,
+    1012.25
+  ],
+  "accepted_X_fine_zone_values": [
+    0.0,
+    1.0,
+    0.0,
+    1.0,
+    0.0
+  ],
+  "refusals": [
+    "PAY in REF: not published - its curves have no depths in common that keep every cut-off sample: X (own depths), PHIE (own depths), SW (own depths)"
+  ],
+  "previews": [],
+  "analytical_pay_support_ft": 1.0
+}

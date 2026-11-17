@@ -1,0 +1,17 @@
+Petro zone results: OWN in REF: not published - its curves have no depths in common that keep every cut-off sample: X (the well depths), PHIE (own depths), SW (the well depths)
+{
+  "workflow": "Curve Editor Resample PHIE to 1 ft, overwrite and Accept; X/SW remain on 0.5-ft axis",
+  "published": {},
+  "analytical_constant_curve_reference": {
+    "net": 2.0,
+    "porosity": 0.2,
+    "Sw": 0.5,
+    "phi_h": 0.4,
+    "HCPT": 0.2
+  },
+  "refusals": [
+    "OWN in REF: not published - its curves have no depths in common that keep every cut-off sample: X (the well depths), PHIE (own depths), SW (the well depths)"
+  ],
+  "previews": [],
+  "PHIE_step": 1.0
+}

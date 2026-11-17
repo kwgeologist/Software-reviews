@@ -1,0 +1,62 @@
+mkdir -p failed for path /home/agent/.config/matplotlib: [Errno 30] Read-only file system: '/home/agent/.config/matplotlib'
+Matplotlib created a temporary cache directory at /tmp/matplotlib-gngu3ewn because there was an issue with the default path (/home/agent/.config/matplotlib); it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Fontconfig error: No writable cache directories
+invalid command name "140061218407296poll"
+    while executing
+"140061218407296poll"
+    ("after" script)
+invalid command name "140061048566912idle_draw"
+    while executing
+"140061048566912idle_draw"
+    ("after" script)
+{
+  "toolbar_False": [
+    "Lateral\u2026",
+    "Type well\u2026",
+    "Map\u2026",
+    "Job\u2026",
+    "Start",
+    "Extend to bit",
+    "Fault\u2026",
+    "Undo",
+    "Redo",
+    "Type Well Tops\u2026",
+    "Lateral Horizons\u2026",
+    "Curves\u2026",
+    "Track\u2026",
+    "Points\u2026",
+    "Color Bar\u2026",
+    "Report\u2026"
+  ],
+  "hidden_ui_manual_fault": {
+    "calls": [],
+    "faults": [
+      [
+        1,
+        14245.0,
+        7.5
+      ]
+    ]
+  },
+  "geosteering_self_test_body_exit": 0,
+  "toolbar_True": [
+    "Lateral\u2026",
+    "Type well\u2026",
+    "Map\u2026",
+    "Job\u2026",
+    "Start",
+    "Auto-steer\u2026",
+    "Fit segment",
+    "Extend to bit",
+    "Fault\u2026",
+    "Undo",
+    "Redo",
+    "Type Well Tops\u2026",
+    "Lateral Horizons\u2026",
+    "Curves\u2026",
+    "Track\u2026",
+    "Points\u2026",
+    "Color Bar\u2026",
+    "Report\u2026"
+  ]
+}
