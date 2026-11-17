@@ -1,0 +1,710 @@
+# O&G Workbench v0.9.52 — Full Pre-Release Audit
+
+## Baseline
+Audit current **v0.9.52** on `release/1.0`.
+
+Current commit:
+
+`e0255cb`
+
+Do **not** treat v0.9.45 as a trusted baseline.
+
+Too many release-critical areas have changed since then.
+
+Audit the **entire current codebase as the release candidate**.
+
+Do not modify code.
+
+---
+
+# Objective
+
+Determine whether v0.9.52 is ready to proceed to:
+
+1. Windows Cython/PyInstaller build;
+2. packaged Windows smoke testing;
+3. final security/package audit;
+4. v1.0 release hardening.
+
+Focus on:
+
+- correctness;
+- regressions;
+- data integrity;
+- cross-module consistency;
+- scientific equivalence;
+- packaging/build reliability;
+- licensing/security enforcement;
+- release readiness.
+
+Do not perform stylistic review or propose unnecessary refactoring.
+
+---
+
+# 1. Well Manager / Core Well Data
+
+Audit:
+
+- create/edit/save existing wells;
+- repeated edits;
+- optimistic concurrency;
+- `well_type`;
+- well symbol persistence;
+- location editing;
+- lat/lon and X/Y clearing;
+- change-history tracking;
+- deletion;
+- project reopen persistence.
+
+Verify specifically:
+
+- no false `well_type changed elsewhere` conflict;
+- legitimate external changes still produce a conflict;
+- repeated location saves do not hit `well_changes.well_id`;
+- clearing location values persists;
+- bad coordinates can be corrected on the same well;
+- old projects refresh corrected triggers correctly;
+- import/upsert paths are safe.
+
+---
+
+# 2. PetroWorkbench Project Tree
+
+Audit:
+
+- API sorting;
+- 10/14-digit normalization;
+- partial API search;
+- standalone Petro API fallback;
+- Geo-linked APIs;
+- scrollbar;
+- Ctrl+F;
+- selection identity;
+- active-well state;
+- 4,000+ well behavior.
+
+Verify search/filtering:
+
+- does not load curves;
+- does not trigger calculations;
+- does not alter selected well;
+- works for standalone LAS/Petro workspaces;
+- does not confuse duplicate or missing APIs.
+
+---
+
+# 3. FM Tops Architecture
+
+This is now a major release area.
+
+Audit the complete project-level FM Tops architecture.
+
+## Core Rule
+One geological top definition per project.
+
+All project-connected modules must use the same canonical top definition.
+
+Audit:
+
+- canonical definitions;
+- aliases;
+- stratigraphic order;
+- rename;
+- merge;
+- delete;
+- duplicate detection;
+- migration of older projects;
+- project reopen;
+- pick preservation;
+- source/provenance preservation.
+
+Verify that rename/merge does not lose or corrupt:
+
+- MD;
+- TVD;
+- TVDSS;
+- source;
+- notes;
+- well references.
+
+---
+
+# 4. FM Tops Cross-Module Integration
+
+Audit actual top behavior across:
+
+- Well Manager / GeoWorkbench;
+- Correlation Workbench;
+- PetroWorkbench;
+- Cross Section Workbench;
+- Map/top workflows;
+- batch zones;
+- top importers;
+- Seismic where it reads project picks;
+- Geosteering where it reads project picks.
+
+Do not invent integrations with components that do not actually use project tops.
+
+Verify:
+
+- creating a top in one project-connected workflow makes it available everywhere;
+- no module creates its own duplicate project definition;
+- imports reuse canonical names and aliases;
+- renamed tops remain canonical across modules;
+- merged-away names continue resolving through aliases;
+- no stale references remain in module settings.
+
+---
+
+# 5. Global FM Tops Manager
+
+Audit:
+
+- New Top;
+- Rename;
+- Merge Selected;
+- Delete;
+- Find Likely Duplicates;
+- Move Up;
+- Move Down;
+- Order by Depth;
+- Other Names / aliases.
+
+Verify:
+
+- destructive actions warn appropriately;
+- merge is user-controlled;
+- no automatic fuzzy merge destroys legitimate geological distinctions;
+- order persists;
+- aliases persist;
+- reopening the project produces the same state.
+
+---
+
+# 6. Map Grid / FM Top Integration
+
+Audit both:
+
+- database-stored grid source metadata;
+- project-folder `grid.json` source metadata.
+
+Verify rename/merge propagation for:
+
+- structure grids;
+- isopach grids.
+
+Confirm:
+
+- DB source updates;
+- file source updates;
+- values remain unchanged;
+- grid geometry remains unchanged;
+- display/settings/control points remain unchanged;
+- project reopen preserves new canonical name;
+- alias fallback still resolves legacy names.
+
+Review the locked-file fallback:
+
+- if `grid.json` cannot be rewritten, DB metadata remains authoritative;
+- grid still loads correctly;
+- stale file metadata cannot override the current project definition.
+
+Flag only if this fallback presents a real data-integrity or release risk.
+
+---
+
+# 7. Geosteering
+
+Audit the current commercial UI behavior.
+
+Automatic code remains intentionally present in the software.
+
+Verify there is no normal user-facing access to:
+
+- Auto-steer;
+- automatic segment fitting;
+- automatic fault fitting.
+
+Check:
+
+- toolbar;
+- menus;
+- context menus;
+- fault dialogs;
+- section right-click;
+- keyboard shortcuts;
+- help;
+- alternate UI paths.
+
+Verify the underlying automatic code still exists and works when called directly.
+
+Also verify:
+
+- manual fault insertion is truly manual;
+- manually entered throw is applied exactly;
+- no hidden fit routine runs;
+- no segment end auto-sliding occurs;
+- manual stretch/squeeze/dip/fault workflows remain intact.
+
+---
+
+# 8. Well Symbols
+
+Audit the native Workbench symbol catalog.
+
+Verify:
+
+- all 29 built-in entries are correct;
+- no runtime dependency on Petra `well symbols.WSD`;
+- no `.WSD` file ships;
+- release inventory rejects any `.wsd`;
+- WSD import/export interoperability tests use only the fixture;
+- existing project symbol codes/numbers remain compatible;
+- glyph geometry is unchanged.
+
+---
+
+# 9. Cython Conversion
+
+Audit the actual limited Cython conversion, not just the scripts.
+
+Expected protected modules: **15**.
+
+### Licensing
+- `ogcore.licensing`
+- `ogcore.license_runtime`
+
+### Petrophysics
+- `ogcore.formulas`
+- `ogcore.multimineral`
+- `ogcore.multivariate`
+- `ogcore.core_equations`
+- `ogcore.water`
+- `petroworkbench.curve_ops`
+
+### Pay / Zones
+- `ogcore.pay`
+- `ogcore.batch_zones`
+
+### Gridding / Depth
+- `ogcore.gridders`
+- `ogcore.gridding`
+- `ogcore.mincurv`
+- `ogcore.velocity_model`
+
+### Volumetrics
+- `ogvol.engine`
+
+Verify:
+
+- exactly these modules are compiled;
+- no unintended UI/plumbing modules were added;
+- imports/public interfaces remain unchanged;
+- no Python semantic changes were introduced;
+- scientific calculations remain equivalent;
+- exception behavior remains equivalent;
+- annotations are not being interpreted as unintended C types;
+- keyword arguments, division, `None`, globals and Python objects behave correctly.
+
+Any meaningful numerical difference is a release blocker.
+
+---
+
+# 10. Protected-Source Enforcement
+
+Audit `tools/release/check_protected.py`.
+
+Verify it fails on protected:
+
+- `.py`
+- `.pyw`
+- `.pyi`
+- `.pyx`
+- `.pxd`
+- `.c`
+- `.cpp`
+- `.pyc`
+- `.pyo`
+
+at any path depth.
+
+Also verify detection inside:
+
+- PYZ;
+- program module/package/script entries;
+- embedded ZIPs;
+- `.pyz`;
+- `.zip`;
+- `.egg`;
+- `.whl`;
+- `base_library.zip`;
+- Owner License Manager packaging.
+
+Verify:
+
+- every expected compiled module must exist;
+- unreadable PyInstaller archives fail closed;
+- release cannot silently fall back to protected Python source.
+
+---
+
+# 11. PyInstaller / Release Build Infrastructure
+
+Audit:
+
+- `Build_Windows_EXE.bat`
+- PyInstaller specs;
+- Cython build script;
+- release manifest;
+- inventory checks;
+- owner License Manager build;
+- dependencies/constraints;
+- runtime data files.
+
+Identify any likely Windows-specific failures involving:
+
+- `.pyd` discovery;
+- DLLs;
+- compiler assumptions;
+- quoting/path handling;
+- architecture;
+- package-relative imports;
+- hidden imports;
+- Visual Studio Build Tools.
+
+Do not claim Windows validation is complete.
+
+Classify unresolved platform issues as **Windows validation items**.
+
+---
+
+# 12. Licensing
+
+Audit:
+
+- license signature verification;
+- clock rollback protection;
+- license store;
+- licensed/unlicensed startup;
+- owner License Manager;
+- date-dependent test isolation;
+- Cythonized licensing modules.
+
+Verify:
+
+- actual licensing behavior was not weakened by test fixes;
+- licensed self-tests exit `0`;
+- unlicensed self-tests exit `3`;
+- owner tooling uses compiled protected licensing code as intended.
+
+---
+
+# 13. Scientific / Numerical Modules
+
+Audit scientific consistency across:
+
+- petrophysics;
+- pay;
+- batch zones;
+- multimineral;
+- water;
+- minimum curvature;
+- gridding;
+- velocity/depth conversion;
+- volumetrics.
+
+Look for:
+
+- rounding changes;
+- NaN behavior;
+- divide-by-zero differences;
+- float/integer conversion issues;
+- Cython-induced type effects;
+- changed defaults;
+- changed exceptions.
+
+Do not redesign equations.
+
+---
+
+# 14. Importers / Data Integrity
+
+Audit current import paths for interactions with:
+
+- well locations;
+- FM tops;
+- canonical aliases;
+- project top definitions;
+- well-change triggers;
+- APIs;
+- existing wells.
+
+Verify bulk and mapped imports do not:
+
+- recreate canonical top duplicates;
+- fail repeated location updates;
+- lose pick provenance;
+- overwrite unrelated well data.
+
+---
+
+# 15. Project Migration / Compatibility
+
+Audit current-project upgrade behavior.
+
+Verify old projects safely receive:
+
+- corrected revision/change triggers;
+- FM top order column;
+- alias table;
+- top-trigger updates;
+- migration of Correlation-only tops.
+
+Migration must be:
+
+- idempotent;
+- non-destructive;
+- safe on repeated open;
+- not alter existing picks/depths/source unexpectedly.
+
+---
+
+# 16. Help / UI Consistency
+
+Audit help and labels for current release behavior.
+
+Check:
+
+- removed automatic geosteering controls are not documented as available;
+- Global FM Tops Manager is documented correctly;
+- renamed menu labels match help;
+- no stale WSD references;
+- no stale top-manager terminology;
+- no broken UI label references.
+
+---
+
+# 17. Test Quality
+
+Audit the tests themselves.
+
+Do not accept passing counts blindly.
+
+Review especially:
+
+- v0.9.46 Petro tests;
+- Cython build/protection tests;
+- v0.9.48 tests;
+- v0.9.49 tests;
+- v0.9.50 location tests;
+- v0.9.51 FM top tests;
+- v0.9.52 grid tests;
+- licensing tests;
+- packaging tests.
+
+Flag tests that:
+
+- assert implementation rather than behavior;
+- cannot actually fail when the feature breaks;
+- use the wrong source/runtime path;
+- accidentally test source instead of packaged behavior;
+- hide migration problems;
+- falsely prove Cython equivalence.
+
+---
+
+# 18. Parallel Tk Test Crashes
+
+This needs explicit review.
+
+Recent full-suite runs have shown **segmentation faults in different Tk GUI tests under parallel workers**, while those same test files pass when run alone.
+
+Investigate:
+
+- whether Tk tests are being executed concurrently;
+- whether GUI tests share Tcl/Tk state across workers;
+- whether test isolation is unsafe;
+- whether these are product crashes or test-harness crashes.
+
+Determine whether Tk-dependent GUI tests should:
+
+- run serially;
+- be marked to exclude them from parallel workers;
+- use a dedicated worker group.
+
+Do not dismiss the crashes merely because individual files pass.
+
+Classify clearly:
+
+- product defect;
+- test-harness defect;
+- unresolved.
+
+---
+
+# 19. Full Test Suite
+
+Run the full suite.
+
+Current reported result:
+
+- **2,718 passed**
+- **4 skipped**
+- **1 failed due to parallel Tk segmentation crash**
+
+Do not assume that result is acceptable until the Tk issue is classified.
+
+Also run relevant targeted suites serially where necessary.
+
+---
+
+# 20. Self-Tests
+
+Run:
+
+- Geo
+- Petro
+- Seismic
+- Geosteering
+- Correlation
+
+Expected:
+
+Licensed: `exit 0`
+
+Unlicensed: `exit 3`
+
+Verify self-tests exercise meaningful runtime paths.
+
+---
+
+# 21. Full-Code Regression Review
+
+This is **not a delta audit**.
+
+Review the entire current release candidate for:
+
+- stale assumptions;
+- dead integration paths;
+- incorrect cross-module references;
+- duplicate data models;
+- hidden breakage introduced by cumulative changes;
+- release packaging inconsistencies.
+
+Use prior versions only for historical context.
+
+Do not skip stable-looking code solely because it predates v0.9.45.
+
+---
+
+# 22. Scope Discipline
+
+Do not:
+
+- make code changes;
+- refactor;
+- redesign UI;
+- add features;
+- optimize algorithms;
+- alter scientific formulas;
+- alter project formats without identifying a concrete defect;
+- reopen resolved design decisions without evidence of a current bug.
+
+Flag real issues only.
+
+---
+
+# 23. Required Classification
+
+Classify each finding as:
+
+## A. Release Blocker
+Must be fixed before v1.0.
+
+## B. Material Pre-Release Defect / Risk
+Should be fixed before v1.0 unless there is a strong reason not to.
+
+## C. Windows Validation Item
+Cannot be confirmed until actual Windows build/package test.
+
+## D. Post-v1.0 / No Action
+Valid observation that should not destabilize the release.
+
+---
+
+# 24. Required Output
+
+Return exactly these sections:
+
+## 1. Executive Result
+Choose one:
+
+- **Clean for Windows validation**
+- **Clean except for listed material risks**
+- **Not ready for Windows validation**
+
+## 2. Release Blockers
+For each:
+
+- file/module;
+- exact issue;
+- evidence;
+- impact;
+- smallest safe fix.
+
+If none, state:
+
+**None found.**
+
+## 3. Material Pre-Release Defects / Risks
+
+## 4. Windows Validation Items
+
+## 5. Tk / Parallel Test-Harness Assessment
+Explicitly classify the segmentation faults.
+
+## 6. Cython Audit Result
+State:
+
+- module-selection assessment;
+- semantic-equivalence assessment;
+- scientific-equivalence assessment;
+- protected-source-check assessment;
+- PyInstaller assessment;
+- remaining Windows uncertainty.
+
+## 7. FM Tops Audit Result
+State:
+
+- canonical architecture assessment;
+- cross-module consistency;
+- alias behavior;
+- rename/merge behavior;
+- map/grid propagation;
+- migration safety;
+- manager behavior.
+
+## 8. Data Integrity / Migration Result
+
+## 9. Test Results
+Report:
+
+- targeted tests;
+- serial GUI tests;
+- full suite;
+- skips/failures;
+- misleading/weak tests if found.
+
+## 10. Self-Test Results
+
+## 11. No-Action Observations
+Only meaningful items.
+
+## 12. Final Recommendation
+Choose one:
+
+- proceed to Windows build;
+- fix listed items first;
+- stop release due to blocker.
+
+Do not change code.

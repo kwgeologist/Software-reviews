@@ -1,0 +1,51 @@
+{
+  "toolbar_False": [
+    "Lateral\u2026",
+    "Type well\u2026",
+    "Map\u2026",
+    "Job\u2026",
+    "Start",
+    "Extend to bit",
+    "Fault\u2026",
+    "Undo",
+    "Redo",
+    "Type Well Tops\u2026",
+    "Lateral Horizons\u2026",
+    "Curves\u2026",
+    "Track\u2026",
+    "Points\u2026",
+    "Color Bar\u2026",
+    "Report\u2026"
+  ],
+  "hidden_ui_manual_fault": {
+    "calls": [],
+    "faults": [
+      [
+        1,
+        14245.0,
+        7.5
+      ]
+    ]
+  },
+  "geosteering_self_test_body_exit": 0,
+  "toolbar_True": [
+    "Lateral\u2026",
+    "Type well\u2026",
+    "Map\u2026",
+    "Job\u2026",
+    "Start",
+    "Auto-steer\u2026",
+    "Fit segment",
+    "Extend to bit",
+    "Fault\u2026",
+    "Undo",
+    "Redo",
+    "Type Well Tops\u2026",
+    "Lateral Horizons\u2026",
+    "Curves\u2026",
+    "Track\u2026",
+    "Points\u2026",
+    "Color Bar\u2026",
+    "Report\u2026"
+  ]
+}

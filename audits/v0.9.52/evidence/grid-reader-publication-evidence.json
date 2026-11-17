@@ -1,0 +1,20 @@
+{
+  "reader_after_commit": [
+    {
+      "value": 9000.0,
+      "unit": "m"
+    }
+  ],
+  "save_error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/tmppk_hdalk/Race/Grids/.Niobrara Structure.ogwgrid.4f986516a766412ebc26e6bbd801c4b6.new' -> '/tmp/tmppk_hdalk/Race/Grids/Niobrara Structure.ogwgrid'",
+  "reopened_row": {
+    "id": 1,
+    "unit": "ft",
+    "updated_at": "2026-11-17T00:39:46.171690+00:00",
+    "file_path": "Grids/Niobrara Structure.ogwgrid"
+  },
+  "reopened_grid": {
+    "value": 9000.0,
+    "unit": "m",
+    "notes": "new accepted interpretation"
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "bulk": [
+    {
+      "errors": [],
+      "rows": [
+        {
+          "id": 1,
+          "well_id": 1,
+          "definition_id": 1,
+          "formation": "Canonical",
+          "measured_depth": 100.0,
+          "source": "XON"
+        },
+        {
+          "id": 2,
+          "well_id": 1,
+          "definition_id": 1,
+          "formation": "Canonical",
+          "measured_depth": 100.0,
+          "source": "XON"
+        }
+      ]
+    },
+    {
+      "errors": [],
+      "rows": [
+        {
+          "id": 1,
+          "well_id": 1,
+          "definition_id": 1,
+          "formation": "Canonical",
+          "measured_depth": 100.0,
+          "source": "XON"
+        },
+        {
+          "id": 2,
+          "well_id": 1,
+          "definition_id": 1,
+          "formation": "Canonical",
+          "measured_depth": 100.0,
+          "source": "XON"
+        },
+        {
+          "id": 3,
+          "well_id": 1,
+          "definition_id": 1,
+          "formation": "Canonical",
+          "measured_depth": 100.0,
+          "source": "XON"
+        }
+      ]
+    }
+  ],
+  "mapped": [
+    {
+      "errors": [],
+      "rows": [
+        {
+          "id": 1,
+          "well_id": 1,
+          "definition_id": 1,
+          "formation": "Canonical",
+          "measured_depth": 100.0,
+          "source": "XON"
+        },
+        {
+          "id": 2,
+          "well_id": 1,
+          "definition_id": 1,
+          "formation": "Canonical",
+          "measured_depth": 100.0,
+          "source": "XON"
+        }
+      ]
+    },
+    {
+      "errors": [],
+      "rows": [
+        {
+          "id": 1,
+          "well_id": 1,
+          "definition_id": 1,
+          "formation": "Canonical",
+          "measured_depth": 100.0,
+          "source": "XON"
+        },
+        {
+          "id": 2,
+          "well_id": 1,
+          "definition_id": 1,
+          "formation": "Canonical",
+          "measured_depth": 100.0,
+          "source": "XON"
+        },
+        {
+          "id": 3,
+          "well_id": 1,
+          "definition_id": 1,
+          "formation": "Canonical",
+          "measured_depth": 100.0,
+          "source": "XON"
+        }
+      ]
+    }
+  ]
+}

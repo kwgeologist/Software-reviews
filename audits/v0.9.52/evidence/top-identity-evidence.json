@@ -1,0 +1,38 @@
+{
+  "before_alias_rename": {
+    "alias": "B",
+    "picks": [
+      {
+        "formation": "A",
+        "measured_depth": 100.0
+      },
+      {
+        "formation": "B",
+        "measured_depth": 1000.0
+      }
+    ]
+  },
+  "after_alias_rename": {
+    "alias": "B old",
+    "definitions": [
+      "B old",
+      "B"
+    ],
+    "picks": [
+      {
+        "formation": "B old",
+        "measured_depth": 100.0
+      },
+      {
+        "formation": "B",
+        "measured_depth": 1000.0
+      }
+    ]
+  },
+  "alias_before_reassignment": "A",
+  "alias_after_reassignment": "B",
+  "after_delete": [],
+  "after_reopen": [
+    "Corr-only"
+  ]
+}

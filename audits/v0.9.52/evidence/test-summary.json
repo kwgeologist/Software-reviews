@@ -1,0 +1,56 @@
+{
+  "full": {
+    "summary": "4 failed, 2700 passed, 19 skipped, 2 warnings, 701 subtests passed in 1605.20s (0:26:45)",
+    "passed": 2700,
+    "failed": 4,
+    "skipped": 19,
+    "errors": 0,
+    "subtests_passed": 701,
+    "xml_testcases": 2723
+  },
+  "parallel_full": {
+    "summary": "4 failed, 2700 passed, 19 skipped, 4 warnings, 701 subtests passed in 903.14s (0:15:03)",
+    "passed": 2700,
+    "failed": 4,
+    "skipped": 19,
+    "errors": 0,
+    "subtests_passed": 701,
+    "xml_testcases": 2723
+  },
+  "targeted": {
+    "summary": "78 passed, 1 skipped, 1 warning, 48 subtests passed in 17.06s",
+    "passed": 78,
+    "failed": 0,
+    "skipped": 1,
+    "errors": 0,
+    "subtests_passed": 48,
+    "xml_testcases": 79
+  },
+  "compiled": {
+    "summary": "219 passed, 1 skipped, 1 warning, 60 subtests passed in 110.13s (0:01:50)",
+    "passed": 219,
+    "failed": 0,
+    "skipped": 1,
+    "errors": 0,
+    "subtests_passed": 60,
+    "xml_testcases": 220
+  },
+  "parallel_gui": {
+    "summary": "1 failed, 72 passed, 3 warnings in 93.87s (0:01:33)",
+    "passed": 72,
+    "failed": 1,
+    "skipped": 0,
+    "errors": 0,
+    "subtests_passed": 0,
+    "xml_testcases": 73
+  },
+  "parallel_gui_extended": {
+    "summary": "178 passed, 3 warnings, 48 subtests passed in 119.71s (0:01:59)",
+    "passed": 178,
+    "failed": 0,
+    "skipped": 0,
+    "errors": 0,
+    "subtests_passed": 48,
+    "xml_testcases": 178
+  }
+}

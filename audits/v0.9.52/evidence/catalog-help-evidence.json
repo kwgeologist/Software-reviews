@@ -1,0 +1,27 @@
+{
+  "version": "0.9.52",
+  "catalog_count": 29,
+  "fixture_metadata_order_equal": true,
+  "protected_modules": [
+    "ogcore.licensing",
+    "ogcore.license_runtime",
+    "ogcore.formulas",
+    "ogcore.multimineral",
+    "ogcore.multivariate",
+    "ogcore.core_equations",
+    "ogcore.water",
+    "petroworkbench.curve_ops",
+    "ogcore.pay",
+    "ogcore.batch_zones",
+    "ogcore.gridders",
+    "ogcore.gridding",
+    "ogcore.mincurv",
+    "ogcore.velocity_model",
+    "ogvol.engine"
+  ],
+  "historical_context_only": true,
+  "glyph_definitions_changed_vs_historical": [],
+  "help_removed_control_labels_found": [],
+  "help_version_correct": true,
+  "staged_wsd": []
+}

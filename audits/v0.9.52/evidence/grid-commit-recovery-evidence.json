@@ -1,0 +1,24 @@
+{
+  "before": {
+    "files_before_load": [
+      ".Niobrara Structure.ogwgrid.126c2e2822b8453cbdd11317fe302d3b.new",
+      "Niobrara Structure.ogwgrid"
+    ],
+    "row_updated_at": "2026-11-17T00:20:16.867076+00:00",
+    "file_updated_at": "2026-11-17T00:20:16.867076+00:00",
+    "value_first": 1.0,
+    "notes": "",
+    "old_bytes_preserved": true
+  },
+  "after": {
+    "files_before_load": [
+      ".Niobrara Structure.ogwgrid.774490c0eeb746b981d45297927e3a9f.new",
+      "Niobrara Structure.ogwgrid"
+    ],
+    "row_updated_at": "2026-11-17T00:20:17.928119+00:00",
+    "file_updated_at": "2026-11-17T00:20:17.928119+00:00",
+    "value_first": 901.0,
+    "notes": "committed",
+    "old_bytes_preserved": false
+  }
+}

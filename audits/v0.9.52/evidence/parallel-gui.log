@@ -1,0 +1,68 @@
+bringing up nodes...
+bringing up nodes...
+
+.........................................................F.............. [ 40%]
+.
+=================================== FAILURES ===================================
+_____________ SeismicAppTests.test_grid_and_contours_are_separate ______________
+[gw0] linux -- Python 3.12.14 /workspace/audit-tooling-v048/bin/python
+
+self = <test_seismic_app.SeismicAppTests testMethod=test_grid_and_contours_are_separate>
+
+    def test_grid_and_contours_are_separate(self):
+        app = self.app
+        m = self._picked_horizon()
+        self.assertFalse(app.map_contours.get())  # Show contours: off by default
+        texts = [" ".join(str(w.cget("text")).split()) for w in m.surface_bar.winfo_children() if "text" in w.keys()]
+        for text in ("Picks", "Grid", "Contours", "Grid Settings…", "Color Bar"):
+            self.assertIn(text, texts)
+        self.assertFalse(any("contours" in t.lower() and "grid" in t.lower() for t in texts))
+        # v0.9.13: one Contours control - the toolbar button (no plain-text check box beside it),
+        # pressed in while contours show; its settings and the overlay in its drop-down.
+        kinds = [
+            (w.winfo_class(), " ".join(str(w.cget("text")).split()))
+            for w in m.surface_bar.winfo_children()
+            if "text" in w.keys()
+        ]
+        self.assertEqual([k for k in kinds if k[1] == "Contours"], [("TButton", "Contours")])
+        self.assertFalse([k for k in kinds if k[0] == "TCheckbutton"])
+        menu = m.contours_menu
+        entries = [menu.entrycget(k, "label") for k in range(menu.index("end") + 1) if menu.type(k) != "separator"]
+        self.assertEqual(entries, ["Show Contours", "Contour Settings…", "Overlay Contours Of", "Overlay Interval…"])
+        self.assertEqual(m.contours_button.cget("style"), "Icon1.TButton")
+        # v0.9.14: the dedicated multicolour contour artwork, as an icon in the suite's button.
+        from ogcore import icons
+    
+        self.assertIn("contours", icons.NAMES)
+        self.assertIsNotNone(icons.image(m.contours_button, "contours"))
+        self.assertTrue(str(m.contours_button.cget("image")))
+        self.assertIs(m.contours_button.image, icons.image(m.contours_button, "contours"))
+        self.assertEqual(str(m.contours_button.cget("compound")), "top")  # the label beneath, as its neighbours
+>       self.toolbar_v0919(m)
+
+tests/test_seismic_app.py:1976: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_seismic_app.py:1905: in toolbar_v0919
+    self.assertEqual(len(m.surface_flow.rows), 1)
+E   AssertionError: 2 != 1
+----------------------------- Captured stderr call -----------------------------
+invalid command name "139771629743424poll"
+    while executing
+"139771629743424poll"
+    ("after" script)
+=============================== warnings summary ===============================
+../../../opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/anyio/pytest_plugin.py:14
+../../../opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/anyio/pytest_plugin.py:14
+../../../opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/anyio/pytest_plugin.py:14
+  /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/anyio/pytest_plugin.py:14: PytestRemovedIn10Warning: _pytest.python.CallSpec2 has been renamed to CallSpec.
+  The CallSpec2 alias will be removed in pytest 10.
+  Update imports to use CallSpec instead.
+  See https://docs.pytest.org/en/stable/deprecations.html#callspec2-renamed
+    from _pytest.python import CallSpec2
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED tests/test_seismic_app.py::SeismicAppTests::test_grid_and_contours_are_separate
+!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!! xdist.dsession.Interrupted: stopping after 1 failures !!!!!!!!!!!!!
+1 failed, 72 passed, 3 warnings in 93.87s (0:01:33)

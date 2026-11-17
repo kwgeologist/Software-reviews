@@ -1,0 +1,264 @@
+.......................................................................................................................................................................................................................................................ssss..... [  9%]
+............................................s........................... [ 12%]
+................................................................................ [ 14%]
+................................................................. [ 17%]
+................................................................... [ 19%]
+............................................................ [ 22%]
+......sss................................................ [ 24%]
+..........................................ssssss........................ [ 26%]
+......................s..................................... [ 28%]
+....................................................................................................................... [ 33%]
+..................................................................... [ 35%]
+s................................................. [ 37%]
+........................................s........................................................................................... [ 42%]
+...................................................................................... [ 45%]
+................................................................... [ 48%]
+........................................................................ [ 50%]
+.......................................................F................ [ 53%]
+..................................s..................................... [ 56%]
+......................................... [ 57%]
+.................................................................... [ 60%]
+..........................................................F............. [ 62%]
+...................................................................... [ 65%]
+.................................................................. [ 67%]
+............................................................ [ 69%]
+........................................................................ [ 72%]
+...........F..................................................... [ 74%]
+................................................................................................................................... [ 79%]
+........................................................... [ 81%]
+..............F.................................... [ 83%]
+.................................................................s.... [ 86%]
+................................................................................................ [ 89%]
+......................... [ 90%]
+..................................................................... [ 93%]
+.................................................................... [ 95%]
+........................................................................ [ 98%]
+........................................                                 [100%]
+=================================== FAILURES ===================================
+_________ OwnerToolBuild.test_the_owner_spec_is_in_the_source_package __________
+
+self = <test_owner_tools_build.OwnerToolBuild testMethod=test_the_owner_spec_is_in_the_source_package>
+
+    def test_the_owner_spec_is_in_the_source_package(self):
+        # (v0.9.31: it was on disk but ignored by git, so a source zip - git archive - lacked it.)
+        tracked = subprocess.run(
+            ["git", "ls-files", "--error-unmatch", "release/OwnerTools_LicenseManager.spec"],
+            cwd=ROOT,
+            capture_output=True,
+            text=True,
+        )
+>       self.assertEqual(tracked.returncode, 0, tracked.stderr)
+E       AssertionError: 128 != 0 : fatal: not a git repository (or any of the parent directories): .git
+
+tests/test_owner_tools_build.py:39: AssertionError
+_________ ProductionKey.test_no_private_key_material_in_the_repository _________
+
+self = <test_production_key.ProductionKey testMethod=test_no_private_key_material_in_the_repository>
+
+    def test_no_private_key_material_in_the_repository(self):
+        import subprocess
+    
+>       files = subprocess.run(["git", "ls-files"], cwd=ROOT, capture_output=True, text=True, check=True).stdout
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_production_key.py:90: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+input = None, capture_output = True, timeout = None, check = True
+popenargs = (['git', 'ls-files'],)
+kwargs = {'cwd': PosixPath('/workspace/audit-v0.9.52/OandG_Workbench_v0.9.52'), 'text': True, 'stdout': -1, 'stderr': -1}
+
+    def run(*popenargs,
+            input=None, capture_output=False, timeout=None, check=False, **kwargs):
+        """Run command with arguments and return a CompletedProcess instance.
+    
+        The returned instance will have attributes args, returncode, stdout and
+        stderr. By default, stdout and stderr are not captured, and those attributes
+        will be None. Pass stdout=PIPE and/or stderr=PIPE in order to capture them,
+        or pass capture_output=True to capture both.
+    
+        If check is True and the exit code was non-zero, it raises a
+        CalledProcessError. The CalledProcessError object will have the return code
+        in the returncode attribute, and output & stderr attributes if those streams
+        were captured.
+    
+        If timeout (seconds) is given and the process takes too long,
+         a TimeoutExpired exception will be raised.
+    
+        There is an optional argument "input", allowing you to
+        pass bytes or a string to the subprocess's stdin.  If you use this argument
+        you may not also use the Popen constructor's "stdin" argument, as
+        it will be used internally.
+    
+        By default, all communication is in bytes, and therefore any "input" should
+        be bytes, and the stdout and stderr will be bytes. If in text mode, any
+        "input" should be a string, and stdout and stderr will be strings decoded
+        according to locale encoding, or by "encoding" if set. Text mode is
+        triggered by setting any of text, encoding, errors or universal_newlines.
+    
+        The other arguments are the same as for the Popen constructor.
+        """
+        if input is not None:
+            if kwargs.get('stdin') is not None:
+                raise ValueError('stdin and input arguments may not both be used.')
+            kwargs['stdin'] = PIPE
+    
+        if capture_output:
+            if kwargs.get('stdout') is not None or kwargs.get('stderr') is not None:
+                raise ValueError('stdout and stderr arguments may not be used '
+                                 'with capture_output.')
+            kwargs['stdout'] = PIPE
+            kwargs['stderr'] = PIPE
+    
+        with Popen(*popenargs, **kwargs) as process:
+            try:
+                stdout, stderr = process.communicate(input, timeout=timeout)
+            except TimeoutExpired as exc:
+                process.kill()
+                if _mswindows:
+                    # Windows accumulates the output in a single blocking
+                    # read() call run on child threads, with the timeout
+                    # being done in a join() on those threads.  communicate()
+                    # _after_ kill() is required to collect that and add it
+                    # to the exception.
+                    exc.stdout, exc.stderr = process.communicate()
+                else:
+                    # POSIX _communicate already populated the output so
+                    # far into the TimeoutExpired exception.
+                    process.wait()
+                raise
+            except:  # Including KeyboardInterrupt, communicate handled that.
+                process.kill()
+                # We don't call process.wait() as .__exit__ does that for us.
+                raise
+            retcode = process.poll()
+            if check and retcode:
+>               raise CalledProcessError(retcode, process.args,
+                                         output=stdout, stderr=stderr)
+E               subprocess.CalledProcessError: Command '['git', 'ls-files']' returned non-zero exit status 128.
+
+/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/subprocess.py:571: CalledProcessError
+_____________ SeismicAppTests.test_grid_and_contours_are_separate ______________
+
+self = <test_seismic_app.SeismicAppTests testMethod=test_grid_and_contours_are_separate>
+
+    def test_grid_and_contours_are_separate(self):
+        app = self.app
+        m = self._picked_horizon()
+        self.assertFalse(app.map_contours.get())  # Show contours: off by default
+        texts = [" ".join(str(w.cget("text")).split()) for w in m.surface_bar.winfo_children() if "text" in w.keys()]
+        for text in ("Picks", "Grid", "Contours", "Grid Settings…", "Color Bar"):
+            self.assertIn(text, texts)
+        self.assertFalse(any("contours" in t.lower() and "grid" in t.lower() for t in texts))
+        # v0.9.13: one Contours control - the toolbar button (no plain-text check box beside it),
+        # pressed in while contours show; its settings and the overlay in its drop-down.
+        kinds = [
+            (w.winfo_class(), " ".join(str(w.cget("text")).split()))
+            for w in m.surface_bar.winfo_children()
+            if "text" in w.keys()
+        ]
+        self.assertEqual([k for k in kinds if k[1] == "Contours"], [("TButton", "Contours")])
+        self.assertFalse([k for k in kinds if k[0] == "TCheckbutton"])
+        menu = m.contours_menu
+        entries = [menu.entrycget(k, "label") for k in range(menu.index("end") + 1) if menu.type(k) != "separator"]
+        self.assertEqual(entries, ["Show Contours", "Contour Settings…", "Overlay Contours Of", "Overlay Interval…"])
+        self.assertEqual(m.contours_button.cget("style"), "Icon1.TButton")
+        # v0.9.14: the dedicated multicolour contour artwork, as an icon in the suite's button.
+        from ogcore import icons
+    
+        self.assertIn("contours", icons.NAMES)
+        self.assertIsNotNone(icons.image(m.contours_button, "contours"))
+        self.assertTrue(str(m.contours_button.cget("image")))
+        self.assertIs(m.contours_button.image, icons.image(m.contours_button, "contours"))
+        self.assertEqual(str(m.contours_button.cget("compound")), "top")  # the label beneath, as its neighbours
+>       self.toolbar_v0919(m)
+
+tests/test_seismic_app.py:1976: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_seismic_app.py:1905: in toolbar_v0919
+    self.assertEqual(len(m.surface_flow.rows), 1)
+E   AssertionError: 2 != 1
+----------------------------- Captured stderr call -----------------------------
+invalid command name "139875011255680poll"
+    while executing
+"139875011255680poll"
+    ("after" script)
+______________ ControlTests.test_the_common_control_and_tk_fonts _______________
+
+self = <test_text_style.ControlTests testMethod=test_the_common_control_and_tk_fonts>
+
+    def test_the_common_control_and_tk_fonts(self):
+        root = tk.Tk()
+        self.addCleanup(root.destroy)
+        font = other_font()
+        controls = text_style.style_controls(root, TextStyle(font=font, size=9, bold=True, color="#00ff00"))
+        self.assertEqual(controls.style(), TextStyle(font=font, size=9.0, bold=True, italic=False, color="#00ff00"))
+        changed = []
+        row = text_style.FontRow(root, MISSING_FONT, False, True, on_change=lambda: changed.append(1))
+        self.assertEqual(row.value(), (MISSING_FONT, False, True))  # a missing font kept, not lost
+        self.assertEqual(row.font.get(), MISSING_FONT + text_style.MISSING)
+        row.set(font, True, False)
+        self.assertEqual((row.value(), changed), ((font, True, False), []))  # set quietly
+        row.bold_check.invoke()
+        self.assertEqual((row.value(), changed), ((font, False, False), [1]))
+        a = text_style.tk_font(root, TextStyle(font=font, size=9, bold=True))
+        self.assertIs(a, text_style.tk_font(root, TextStyle(font=font, size=9, bold=True)))  # cached
+>       self.assertEqual((a.actual("weight"), a.actual("slant")), ("bold", "roman"))
+E       AssertionError: Tuples differ: ('normal', 'roman') != ('bold', 'roman')
+E       
+E       First differing element 0:
+E       'normal'
+E       'bold'
+E       
+E       - ('normal', 'roman')
+E       ?   ^ ---
+E       
+E       + ('bold', 'roman')
+E       ?   ^  +
+
+tests/test_text_style.py:154: AssertionError
+=============================== warnings summary ===============================
+../../../opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/anyio/pytest_plugin.py:14
+  /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/anyio/pytest_plugin.py:14: PytestRemovedIn10Warning: _pytest.python.CallSpec2 has been renamed to CallSpec.
+  The CallSpec2 alias will be removed in pytest 10.
+  Update imports to use CallSpec instead.
+  See https://docs.pytest.org/en/stable/deprecations.html#callspec2-renamed
+    from _pytest.python import CallSpec2
+
+tests/test_petro_integration.py::PetroIntegrationTests::test_crossplot_custom_line_ends_on_double_click
+  /workspace/audit-v0.9.52/OandG_Workbench_v0.9.52/petroworkbench/analysis.py:864: UserWarning: No artists with labels found to put in legend.  Note that artists whose label start with an underscore are ignored when legend() is called with no argument.
+    axis.legend(loc="best", fontsize=8)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+============================= slowest 25 durations =============================
+21.34s call     tests/test_gridding_methods.py::MethodTests::test_barriers_stop_the_gridding_across_them
+19.56s call     tests/test_xsection.py::PunchListWindowTests::test_pick_and_edit_tops
+15.85s call     tests/test_map_text_rule.py::CultureTextTests::test_sizes_follow_the_map_and_every_label_is_drawn
+14.88s call     tests/test_geosteering.py::WindowTests::test_steer_drag_keys_and_undo
+13.59s call     tests/test_ui_consistency.py::StyleOwnershipTests::test_one_icon_for_one_action
+13.40s call     tests/test_v0948_fixes.py::AutomaticSteeringHasNoControl::test_the_automatic_tools_are_still_in_the_program
+12.87s call     tests/test_gridding_methods.py::MethodTests::test_density_blanking_search_holes_and_trend
+12.40s call     tests/test_geosteer_display.py::FillTests::test_lateral_curves_and_type_log_fill_the_same_ways
+12.38s call     tests/test_scrolling_seis.py::SeismicScrollingTests::test_dialogs_scroll_with_their_buttons_in_view
+11.17s call     tests/test_petro_integration.py::PetroIntegrationTests::test_raster_shown_in_a_track
+10.74s call     tests/test_xsection.py::WindowTests::test_correlations_faults_and_fills
+10.57s call     tests/test_volumetrics.py::ScenarioTests::test_digitized_map_to_grid_to_volume_and_regenerate
+9.65s call     tests/test_petro_integration.py::PetroIntegrationTests::test_core_datasets_switched_on_and_off_with_a_tick
+9.39s call     tests/test_geosteer_display.py::FillTests::test_every_fill_mode_on_the_gr
+9.00s call     tests/test_geosteering.py::WindowTests::test_segments_on_and_off_in_the_correlation_window
+8.67s call     tests/test_petro_integration.py::PetroIntegrationTests::test_multivariate_analysis
+8.63s call     tests/test_petro_canonical_curves.py::CanonicalCurveTests::test_accepting_over_an_own_axis_curve_keeps_its_samples
+7.78s call     tests/test_petro_integration.py::PetroIntegrationTests::test_an_alias_made_once_applies_to_every_well
+7.59s call     tests/test_xsection.py::PunchListWindowTests::test_settings_hold_from_one_session_to_the_next
+7.27s call     tests/test_petro_integration.py::PetroIntegrationTests::test_wells_removed_in_geo_leave_petro
+7.15s call     tests/test_petro_integration.py::PetroIntegrationTests::test_equations_use_curves_as_stored
+6.88s call     tests/test_xsection.py::PunchListWindowTests::test_depth_basis_and_depth_track
+6.62s call     tests/test_petro_integration.py::PetroIntegrationTests::test_a_curve_changed_in_petro_and_by_a_batch_run_keeps_both
+6.60s call     tests/test_seismic_app.py::SeismicAppTests::test_horizon_map_is_gridded_in_the_background_and_saved_as_a_grid
+6.54s call     tests/test_petro_integration.py::PetroIntegrationTests::test_depths_typed_in_tvdss_use_the_geo_survey_and_kb
+=========================== short test summary info ============================
+FAILED tests/test_owner_tools_build.py::OwnerToolBuild::test_the_owner_spec_is_in_the_source_package
+FAILED tests/test_production_key.py::ProductionKey::test_no_private_key_material_in_the_repository
+FAILED tests/test_seismic_app.py::SeismicAppTests::test_grid_and_contours_are_separate
+FAILED tests/test_text_style.py::ControlTests::test_the_common_control_and_tk_fonts
+4 failed, 2700 passed, 19 skipped, 2 warnings, 701 subtests passed in 1605.20s (0:26:45)

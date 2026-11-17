@@ -1,0 +1,21 @@
+{
+  "actual_accepted_axis": [
+    1010.0,
+    1011.0,
+    1012.0
+  ],
+  "accepted_values": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "published": {
+    "OWN gross": 2.0,
+    "OWN net": 2.0,
+    "OWN N:G": 1.0
+  },
+  "own_axis_reference_net": 2.0,
+  "analytical_constant_pay_interval": 2.0,
+  "zone_refusals": [],
+  "previews": []
+}

@@ -1,0 +1,194 @@
+[
+  {
+    "mode": "ip",
+    "route": "file-save",
+    "answer": true,
+    "current_project": "B",
+    "switch_prompts": 1,
+    "loaded_state_fully_cleared": true,
+    "empty_editor_save_refused": true,
+    "forced_stale_whole_editor_refused": true,
+    "forced_stale_child_refused": true,
+    "A_reopened_science": {
+      "ip_oil_bbl_d": 999.0,
+      "acid_gal": 900.0,
+      "fm_bhp_psi": 2403.0,
+      "oil_recovery_bbl": 12.3
+    },
+    "B_reopened_science": {
+      "ip_oil_bbl_d": 469.0,
+      "acid_gal": 500.0,
+      "fm_bhp_psi": 2403.0,
+      "oil_recovery_bbl": 12.3
+    },
+    "errors_during_normal_open": 0
+  },
+  {
+    "mode": "ip",
+    "route": "file-discard",
+    "answer": false,
+    "current_project": "B",
+    "switch_prompts": 1,
+    "loaded_state_fully_cleared": true,
+    "empty_editor_save_refused": true,
+    "forced_stale_whole_editor_refused": true,
+    "forced_stale_child_refused": true,
+    "A_reopened_science": {
+      "ip_oil_bbl_d": 469.0,
+      "acid_gal": 500.0,
+      "fm_bhp_psi": 2403.0,
+      "oil_recovery_bbl": 12.3
+    },
+    "B_reopened_science": {
+      "ip_oil_bbl_d": 469.0,
+      "acid_gal": 500.0,
+      "fm_bhp_psi": 2403.0,
+      "oil_recovery_bbl": 12.3
+    },
+    "errors_during_normal_open": 0
+  },
+  {
+    "mode": "ip",
+    "route": "file-cancel",
+    "answer": null,
+    "current_project": "A",
+    "switch_prompts": 1,
+    "loaded_state_fully_cleared": false,
+    "empty_editor_save_refused": null,
+    "forced_stale_whole_editor_refused": null,
+    "forced_stale_child_refused": null,
+    "A_reopened_science": {
+      "ip_oil_bbl_d": 469.0,
+      "acid_gal": 500.0,
+      "fm_bhp_psi": 2403.0,
+      "oil_recovery_bbl": 12.3
+    },
+    "B_reopened_science": {
+      "ip_oil_bbl_d": 469.0,
+      "acid_gal": 500.0,
+      "fm_bhp_psi": 2403.0,
+      "oil_recovery_bbl": 12.3
+    },
+    "errors_during_normal_open": 0
+  },
+  {
+    "mode": "ip",
+    "route": "recent-discard",
+    "answer": false,
+    "current_project": "B",
+    "switch_prompts": 1,
+    "loaded_state_fully_cleared": true,
+    "empty_editor_save_refused": true,
+    "forced_stale_whole_editor_refused": true,
+    "forced_stale_child_refused": true,
+    "A_reopened_science": {
+      "ip_oil_bbl_d": 469.0,
+      "acid_gal": 500.0,
+      "fm_bhp_psi": 2403.0,
+      "oil_recovery_bbl": 12.3
+    },
+    "B_reopened_science": {
+      "ip_oil_bbl_d": 469.0,
+      "acid_gal": 500.0,
+      "fm_bhp_psi": 2403.0,
+      "oil_recovery_bbl": 12.3
+    },
+    "errors_during_normal_open": 0
+  },
+  {
+    "mode": "fm",
+    "route": "file-save",
+    "answer": true,
+    "current_project": "B",
+    "switch_prompts": 1,
+    "loaded_state_fully_cleared": true,
+    "empty_editor_save_refused": true,
+    "forced_stale_whole_editor_refused": true,
+    "forced_stale_child_refused": true,
+    "A_reopened_science": {
+      "ip_oil_bbl_d": 469.0,
+      "acid_gal": 500.0,
+      "fm_bhp_psi": 3000.0,
+      "oil_recovery_bbl": 55.0
+    },
+    "B_reopened_science": {
+      "ip_oil_bbl_d": 469.0,
+      "acid_gal": 500.0,
+      "fm_bhp_psi": 2403.0,
+      "oil_recovery_bbl": 12.3
+    },
+    "errors_during_normal_open": 0
+  },
+  {
+    "mode": "fm",
+    "route": "file-discard",
+    "answer": false,
+    "current_project": "B",
+    "switch_prompts": 1,
+    "loaded_state_fully_cleared": true,
+    "empty_editor_save_refused": true,
+    "forced_stale_whole_editor_refused": true,
+    "forced_stale_child_refused": true,
+    "A_reopened_science": {
+      "ip_oil_bbl_d": 469.0,
+      "acid_gal": 500.0,
+      "fm_bhp_psi": 2403.0,
+      "oil_recovery_bbl": 12.3
+    },
+    "B_reopened_science": {
+      "ip_oil_bbl_d": 469.0,
+      "acid_gal": 500.0,
+      "fm_bhp_psi": 2403.0,
+      "oil_recovery_bbl": 12.3
+    },
+    "errors_during_normal_open": 0
+  },
+  {
+    "mode": "fm",
+    "route": "file-cancel",
+    "answer": null,
+    "current_project": "A",
+    "switch_prompts": 1,
+    "loaded_state_fully_cleared": false,
+    "empty_editor_save_refused": null,
+    "forced_stale_whole_editor_refused": null,
+    "forced_stale_child_refused": null,
+    "A_reopened_science": {
+      "ip_oil_bbl_d": 469.0,
+      "acid_gal": 500.0,
+      "fm_bhp_psi": 2403.0,
+      "oil_recovery_bbl": 12.3
+    },
+    "B_reopened_science": {
+      "ip_oil_bbl_d": 469.0,
+      "acid_gal": 500.0,
+      "fm_bhp_psi": 2403.0,
+      "oil_recovery_bbl": 12.3
+    },
+    "errors_during_normal_open": 0
+  },
+  {
+    "mode": "fm",
+    "route": "recent-discard",
+    "answer": false,
+    "current_project": "B",
+    "switch_prompts": 1,
+    "loaded_state_fully_cleared": true,
+    "empty_editor_save_refused": true,
+    "forced_stale_whole_editor_refused": true,
+    "forced_stale_child_refused": true,
+    "A_reopened_science": {
+      "ip_oil_bbl_d": 469.0,
+      "acid_gal": 500.0,
+      "fm_bhp_psi": 2403.0,
+      "oil_recovery_bbl": 12.3
+    },
+    "B_reopened_science": {
+      "ip_oil_bbl_d": 469.0,
+      "acid_gal": 500.0,
+      "fm_bhp_psi": 2403.0,
+      "oil_recovery_bbl": 12.3
+    },
+    "errors_during_normal_open": 0
+  }
+]

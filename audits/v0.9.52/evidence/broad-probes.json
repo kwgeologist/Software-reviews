@@ -1,0 +1,112 @@
+[
+  {
+    "probe": "own_axis_pay.py",
+    "exit_code": 0,
+    "seconds": 3.73148614099955
+  },
+  {
+    "probe": "own_axis_phih.py",
+    "exit_code": 0,
+    "seconds": 3.186659597999096
+  },
+  {
+    "probe": "multiple_own_axes.py",
+    "exit_code": 0,
+    "seconds": 3.817773983999359
+  },
+  {
+    "probe": "manual_pay_flag.py",
+    "exit_code": 0,
+    "seconds": 4.583430431999659
+  },
+  {
+    "probe": "thin_bed_pay.py",
+    "exit_code": 0,
+    "seconds": 4.180933621000804
+  },
+  {
+    "probe": "coarsest_axis_pay.py",
+    "exit_code": 0,
+    "seconds": 3.3500481360006233
+  },
+  {
+    "probe": "late_curve_publication.py",
+    "exit_code": 0,
+    "seconds": 2.725036284999078
+  },
+  {
+    "probe": "preview_zone.py",
+    "exit_code": 0,
+    "seconds": 5.734499043999676
+  },
+  {
+    "probe": "accepted_series.py",
+    "exit_code": 0,
+    "seconds": 6.061020839000776
+  },
+  {
+    "probe": "volumetrics_content.py",
+    "exit_code": 0,
+    "seconds": 1.3340729970004759
+  },
+  {
+    "probe": "zone_units.py",
+    "exit_code": 0,
+    "seconds": 0.7160736940004426
+  },
+  {
+    "probe": "scientific_references.py",
+    "exit_code": 0,
+    "seconds": 0.9748735889988893
+  },
+  {
+    "probe": "grid_reader_publication.py",
+    "exit_code": 0,
+    "seconds": 0.5801681409993762
+  },
+  {
+    "probe": "grid_commit_recovery.py",
+    "exit_code": 0,
+    "seconds": 1.8869253630000458
+  },
+  {
+    "probe": "grid_unlisted.py",
+    "exit_code": 0,
+    "seconds": 0.5664948979992914
+  },
+  {
+    "probe": "grid_creation.py",
+    "exit_code": 0,
+    "seconds": 0.9744900160003453
+  },
+  {
+    "probe": "header_transition_matrix.py",
+    "exit_code": 0,
+    "seconds": 4.877812473998347
+  },
+  {
+    "probe": "tests_transition_matrix.py",
+    "exit_code": 0,
+    "seconds": 7.669808579999881
+  },
+  {
+    "probe": "other_editor_transition.py",
+    "exit_code": 0,
+    "seconds": 2.029636909999681
+  },
+  {
+    "probe": "archive_security.py",
+    "exit_code": 0,
+    "seconds": 0.11533569499988516
+  },
+  {
+    "probe": "seismic_rename.py",
+    "exit_code": 0,
+    "seconds": 0.4199903379994794
+  },
+  {
+    "probe": "image_opacity.py",
+    "exit_code": 0,
+    "seconds": 0.9887919910015626
+  }
+]

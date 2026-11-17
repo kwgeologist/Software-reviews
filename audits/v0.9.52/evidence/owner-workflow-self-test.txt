@@ -1,0 +1,15 @@
+License Manager self-test in /tmp/audit0952-owner-workflow
+frozen: True
+O&G Workbench 0.9.52; cryptography 50.0.0
+ok   1. no key yet: Set Up Production Key offered
+ok   2. production key made, encrypted
+ok   3. trusted for local owner use
+ok      private key unchanged
+ok      status shows local owner trust
+ok   4. owner license signed and saved
+ok      confirmation: ready to import on this computer
+ok   5. imported into the Workbench's license folder
+ok      owner license, every module
+   license file: /tmp/audit0952-owner-workflow/local/OandG_Workbench/Licensing/license.ogwlic
+ok      a built program ignores local owner trust
+PASSED

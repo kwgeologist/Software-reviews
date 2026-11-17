@@ -1,0 +1,76 @@
+running build_ext
+building 'ogcore.licensing' extension
+gcc -fno-strict-overflow -Wsign-compare -Wunreachable-code -DNDEBUG -g -O3 -Wall -O3 -fstack-protector -fstack-clash-protection -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -fPIC -fPIC -I/workspace/audit-tooling-v048/include -I/opt/codex/runtimes/codex-primary-runtime/dependencies/python/include/python3.12 -c build/cython/c/ogcore/licensing.c -o /workspace/audit-v0.9.52/compiled-worktree/build/cython/temp/build/cython/c/ogcore/licensing.o -g0
+gcc -shared /workspace/audit-v0.9.52/compiled-worktree/build/cython/temp/build/cython/c/ogcore/licensing.o -L/install/lib -o /workspace/audit-v0.9.52/compiled-worktree/build/cython/lib/ogcore/licensing.cpython-312-x86_64-linux-gnu.so
+building 'ogcore.license_runtime' extension
+gcc -fno-strict-overflow -Wsign-compare -Wunreachable-code -DNDEBUG -g -O3 -Wall -O3 -fstack-protector -fstack-clash-protection -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -fPIC -fPIC -I/workspace/audit-tooling-v048/include -I/opt/codex/runtimes/codex-primary-runtime/dependencies/python/include/python3.12 -c build/cython/c/ogcore/license_runtime.c -o /workspace/audit-v0.9.52/compiled-worktree/build/cython/temp/build/cython/c/ogcore/license_runtime.o -g0
+gcc -shared /workspace/audit-v0.9.52/compiled-worktree/build/cython/temp/build/cython/c/ogcore/license_runtime.o -L/install/lib -o /workspace/audit-v0.9.52/compiled-worktree/build/cython/lib/ogcore/license_runtime.cpython-312-x86_64-linux-gnu.so
+building 'ogcore.formulas' extension
+gcc -fno-strict-overflow -Wsign-compare -Wunreachable-code -DNDEBUG -g -O3 -Wall -O3 -fstack-protector -fstack-clash-protection -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -fPIC -fPIC -I/workspace/audit-tooling-v048/include -I/opt/codex/runtimes/codex-primary-runtime/dependencies/python/include/python3.12 -c build/cython/c/ogcore/formulas.c -o /workspace/audit-v0.9.52/compiled-worktree/build/cython/temp/build/cython/c/ogcore/formulas.o -g0
+gcc -shared /workspace/audit-v0.9.52/compiled-worktree/build/cython/temp/build/cython/c/ogcore/formulas.o -L/install/lib -o /workspace/audit-v0.9.52/compiled-worktree/build/cython/lib/ogcore/formulas.cpython-312-x86_64-linux-gnu.so
+building 'ogcore.multimineral' extension
+gcc -fno-strict-overflow -Wsign-compare -Wunreachable-code -DNDEBUG -g -O3 -Wall -O3 -fstack-protector -fstack-clash-protection -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -fPIC -fPIC -I/workspace/audit-tooling-v048/include -I/opt/codex/runtimes/codex-primary-runtime/dependencies/python/include/python3.12 -c build/cython/c/ogcore/multimineral.c -o /workspace/audit-v0.9.52/compiled-worktree/build/cython/temp/build/cython/c/ogcore/multimineral.o -g0
+gcc -shared /workspace/audit-v0.9.52/compiled-worktree/build/cython/temp/build/cython/c/ogcore/multimineral.o -L/install/lib -o /workspace/audit-v0.9.52/compiled-worktree/build/cython/lib/ogcore/multimineral.cpython-312-x86_64-linux-gnu.so
+building 'ogcore.multivariate' extension
+gcc -fno-strict-overflow -Wsign-compare -Wunreachable-code -DNDEBUG -g -O3 -Wall -O3 -fstack-protector -fstack-clash-protection -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -fPIC -fPIC -I/workspace/audit-tooling-v048/include -I/opt/codex/runtimes/codex-primary-runtime/dependencies/python/include/python3.12 -c build/cython/c/ogcore/multivariate.c -o /workspace/audit-v0.9.52/compiled-worktree/build/cython/temp/build/cython/c/ogcore/multivariate.o -g0
+gcc -shared /workspace/audit-v0.9.52/compiled-worktree/build/cython/temp/build/cython/c/ogcore/multivariate.o -L/install/lib -o /workspace/audit-v0.9.52/compiled-worktree/build/cython/lib/ogcore/multivariate.cpython-312-x86_64-linux-gnu.so
+building 'ogcore.core_equations' extension
+gcc -fno-strict-overflow -Wsign-compare -Wunreachable-code -DNDEBUG -g -O3 -Wall -O3 -fstack-protector -fstack-clash-protection -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -fPIC -fPIC -I/workspace/audit-tooling-v048/include -I/opt/codex/runtimes/codex-primary-runtime/dependencies/python/include/python3.12 -c build/cython/c/ogcore/core_equations.c -o /workspace/audit-v0.9.52/compiled-worktree/build/cython/temp/build/cython/c/ogcore/core_equations.o -g0
+gcc -shared /workspace/audit-v0.9.52/compiled-worktree/build/cython/temp/build/cython/c/ogcore/core_equations.o -L/install/lib -o /workspace/audit-v0.9.52/compiled-worktree/build/cython/lib/ogcore/core_equations.cpython-312-x86_64-linux-gnu.so
+building 'ogcore.water' extension
+gcc -fno-strict-overflow -Wsign-compare -Wunreachable-code -DNDEBUG -g -O3 -Wall -O3 -fstack-protector -fstack-clash-protection -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -fPIC -fPIC -I/workspace/audit-tooling-v048/include -I/opt/codex/runtimes/codex-primary-runtime/dependencies/python/include/python3.12 -c build/cython/c/ogcore/water.c -o /workspace/audit-v0.9.52/compiled-worktree/build/cython/temp/build/cython/c/ogcore/water.o -g0
+gcc -shared /workspace/audit-v0.9.52/compiled-worktree/build/cython/temp/build/cython/c/ogcore/water.o -L/install/lib -o /workspace/audit-v0.9.52/compiled-worktree/build/cython/lib/ogcore/water.cpython-312-x86_64-linux-gnu.so
+building 'petroworkbench.curve_ops' extension
+gcc -fno-strict-overflow -Wsign-compare -Wunreachable-code -DNDEBUG -g -O3 -Wall -O3 -fstack-protector -fstack-clash-protection -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -fPIC -fPIC -I/workspace/audit-tooling-v048/include -I/opt/codex/runtimes/codex-primary-runtime/dependencies/python/include/python3.12 -c build/cython/c/petroworkbench/curve_ops.c -o /workspace/audit-v0.9.52/compiled-worktree/build/cython/temp/build/cython/c/petroworkbench/curve_ops.o -g0
+gcc -shared /workspace/audit-v0.9.52/compiled-worktree/build/cython/temp/build/cython/c/petroworkbench/curve_ops.o -L/install/lib -o /workspace/audit-v0.9.52/compiled-worktree/build/cython/lib/petroworkbench/curve_ops.cpython-312-x86_64-linux-gnu.so
+building 'ogcore.pay' extension
+gcc -fno-strict-overflow -Wsign-compare -Wunreachable-code -DNDEBUG -g -O3 -Wall -O3 -fstack-protector -fstack-clash-protection -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -fPIC -fPIC -I/workspace/audit-tooling-v048/include -I/opt/codex/runtimes/codex-primary-runtime/dependencies/python/include/python3.12 -c build/cython/c/ogcore/pay.c -o /workspace/audit-v0.9.52/compiled-worktree/build/cython/temp/build/cython/c/ogcore/pay.o -g0
+gcc -shared /workspace/audit-v0.9.52/compiled-worktree/build/cython/temp/build/cython/c/ogcore/pay.o -L/install/lib -o /workspace/audit-v0.9.52/compiled-worktree/build/cython/lib/ogcore/pay.cpython-312-x86_64-linux-gnu.so
+building 'ogcore.batch_zones' extension
+gcc -fno-strict-overflow -Wsign-compare -Wunreachable-code -DNDEBUG -g -O3 -Wall -O3 -fstack-protector -fstack-clash-protection -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -fPIC -fPIC -I/workspace/audit-tooling-v048/include -I/opt/codex/runtimes/codex-primary-runtime/dependencies/python/include/python3.12 -c build/cython/c/ogcore/batch_zones.c -o /workspace/audit-v0.9.52/compiled-worktree/build/cython/temp/build/cython/c/ogcore/batch_zones.o -g0
+gcc -shared /workspace/audit-v0.9.52/compiled-worktree/build/cython/temp/build/cython/c/ogcore/batch_zones.o -L/install/lib -o /workspace/audit-v0.9.52/compiled-worktree/build/cython/lib/ogcore/batch_zones.cpython-312-x86_64-linux-gnu.so
+building 'ogcore.gridders' extension
+gcc -fno-strict-overflow -Wsign-compare -Wunreachable-code -DNDEBUG -g -O3 -Wall -O3 -fstack-protector -fstack-clash-protection -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -fPIC -fPIC -I/workspace/audit-tooling-v048/include -I/opt/codex/runtimes/codex-primary-runtime/dependencies/python/include/python3.12 -c build/cython/c/ogcore/gridders.c -o /workspace/audit-v0.9.52/compiled-worktree/build/cython/temp/build/cython/c/ogcore/gridders.o -g0
+gcc -shared /workspace/audit-v0.9.52/compiled-worktree/build/cython/temp/build/cython/c/ogcore/gridders.o -L/install/lib -o /workspace/audit-v0.9.52/compiled-worktree/build/cython/lib/ogcore/gridders.cpython-312-x86_64-linux-gnu.so
+building 'ogcore.gridding' extension
+gcc -fno-strict-overflow -Wsign-compare -Wunreachable-code -DNDEBUG -g -O3 -Wall -O3 -fstack-protector -fstack-clash-protection -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -fPIC -fPIC -I/workspace/audit-tooling-v048/include -I/opt/codex/runtimes/codex-primary-runtime/dependencies/python/include/python3.12 -c build/cython/c/ogcore/gridding.c -o /workspace/audit-v0.9.52/compiled-worktree/build/cython/temp/build/cython/c/ogcore/gridding.o -g0
+gcc -shared /workspace/audit-v0.9.52/compiled-worktree/build/cython/temp/build/cython/c/ogcore/gridding.o -L/install/lib -o /workspace/audit-v0.9.52/compiled-worktree/build/cython/lib/ogcore/gridding.cpython-312-x86_64-linux-gnu.so
+building 'ogcore.mincurv' extension
+gcc -fno-strict-overflow -Wsign-compare -Wunreachable-code -DNDEBUG -g -O3 -Wall -O3 -fstack-protector -fstack-clash-protection -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -fPIC -fPIC -I/workspace/audit-tooling-v048/include -I/opt/codex/runtimes/codex-primary-runtime/dependencies/python/include/python3.12 -c build/cython/c/ogcore/mincurv.c -o /workspace/audit-v0.9.52/compiled-worktree/build/cython/temp/build/cython/c/ogcore/mincurv.o -g0
+gcc -shared /workspace/audit-v0.9.52/compiled-worktree/build/cython/temp/build/cython/c/ogcore/mincurv.o -L/install/lib -o /workspace/audit-v0.9.52/compiled-worktree/build/cython/lib/ogcore/mincurv.cpython-312-x86_64-linux-gnu.so
+building 'ogcore.velocity_model' extension
+gcc -fno-strict-overflow -Wsign-compare -Wunreachable-code -DNDEBUG -g -O3 -Wall -O3 -fstack-protector -fstack-clash-protection -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -fPIC -fPIC -I/workspace/audit-tooling-v048/include -I/opt/codex/runtimes/codex-primary-runtime/dependencies/python/include/python3.12 -c build/cython/c/ogcore/velocity_model.c -o /workspace/audit-v0.9.52/compiled-worktree/build/cython/temp/build/cython/c/ogcore/velocity_model.o -g0
+gcc -shared /workspace/audit-v0.9.52/compiled-worktree/build/cython/temp/build/cython/c/ogcore/velocity_model.o -L/install/lib -o /workspace/audit-v0.9.52/compiled-worktree/build/cython/lib/ogcore/velocity_model.cpython-312-x86_64-linux-gnu.so
+building 'ogvol.engine' extension
+gcc -fno-strict-overflow -Wsign-compare -Wunreachable-code -DNDEBUG -g -O3 -Wall -O3 -fstack-protector -fstack-clash-protection -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -fPIC -fPIC -I/workspace/audit-tooling-v048/include -I/opt/codex/runtimes/codex-primary-runtime/dependencies/python/include/python3.12 -c build/cython/c/ogvol/engine.c -o /workspace/audit-v0.9.52/compiled-worktree/build/cython/temp/build/cython/c/ogvol/engine.o -g0
+gcc -shared /workspace/audit-v0.9.52/compiled-worktree/build/cython/temp/build/cython/c/ogvol/engine.o -L/install/lib -o /workspace/audit-v0.9.52/compiled-worktree/build/cython/lib/ogvol/engine.cpython-312-x86_64-linux-gnu.so
+copying /workspace/audit-v0.9.52/compiled-worktree/build/cython/lib/ogcore/licensing.cpython-312-x86_64-linux-gnu.so -> ogcore
+copying /workspace/audit-v0.9.52/compiled-worktree/build/cython/lib/ogcore/license_runtime.cpython-312-x86_64-linux-gnu.so -> ogcore
+copying /workspace/audit-v0.9.52/compiled-worktree/build/cython/lib/ogcore/formulas.cpython-312-x86_64-linux-gnu.so -> ogcore
+copying /workspace/audit-v0.9.52/compiled-worktree/build/cython/lib/ogcore/multimineral.cpython-312-x86_64-linux-gnu.so -> ogcore
+copying /workspace/audit-v0.9.52/compiled-worktree/build/cython/lib/ogcore/multivariate.cpython-312-x86_64-linux-gnu.so -> ogcore
+copying /workspace/audit-v0.9.52/compiled-worktree/build/cython/lib/ogcore/core_equations.cpython-312-x86_64-linux-gnu.so -> ogcore
+copying /workspace/audit-v0.9.52/compiled-worktree/build/cython/lib/ogcore/water.cpython-312-x86_64-linux-gnu.so -> ogcore
+copying /workspace/audit-v0.9.52/compiled-worktree/build/cython/lib/petroworkbench/curve_ops.cpython-312-x86_64-linux-gnu.so -> petroworkbench
+copying /workspace/audit-v0.9.52/compiled-worktree/build/cython/lib/ogcore/pay.cpython-312-x86_64-linux-gnu.so -> ogcore
+copying /workspace/audit-v0.9.52/compiled-worktree/build/cython/lib/ogcore/batch_zones.cpython-312-x86_64-linux-gnu.so -> ogcore
+copying /workspace/audit-v0.9.52/compiled-worktree/build/cython/lib/ogcore/gridders.cpython-312-x86_64-linux-gnu.so -> ogcore
+copying /workspace/audit-v0.9.52/compiled-worktree/build/cython/lib/ogcore/gridding.cpython-312-x86_64-linux-gnu.so -> ogcore
+copying /workspace/audit-v0.9.52/compiled-worktree/build/cython/lib/ogcore/mincurv.cpython-312-x86_64-linux-gnu.so -> ogcore
+copying /workspace/audit-v0.9.52/compiled-worktree/build/cython/lib/ogcore/velocity_model.cpython-312-x86_64-linux-gnu.so -> ogcore
+copying /workspace/audit-v0.9.52/compiled-worktree/build/cython/lib/ogvol/engine.cpython-312-x86_64-linux-gnu.so -> ogvol
+compiled ogcore.licensing: ogcore/licensing.cpython-312-x86_64-linux-gnu.so
+compiled ogcore.license_runtime: ogcore/license_runtime.cpython-312-x86_64-linux-gnu.so
+compiled ogcore.formulas: ogcore/formulas.cpython-312-x86_64-linux-gnu.so
+compiled ogcore.multimineral: ogcore/multimineral.cpython-312-x86_64-linux-gnu.so
+compiled ogcore.multivariate: ogcore/multivariate.cpython-312-x86_64-linux-gnu.so
+compiled ogcore.core_equations: ogcore/core_equations.cpython-312-x86_64-linux-gnu.so
+compiled ogcore.water: ogcore/water.cpython-312-x86_64-linux-gnu.so
+compiled petroworkbench.curve_ops: petroworkbench/curve_ops.cpython-312-x86_64-linux-gnu.so
+compiled ogcore.pay: ogcore/pay.cpython-312-x86_64-linux-gnu.so
+compiled ogcore.batch_zones: ogcore/batch_zones.cpython-312-x86_64-linux-gnu.so
+compiled ogcore.gridders: ogcore/gridders.cpython-312-x86_64-linux-gnu.so
+compiled ogcore.gridding: ogcore/gridding.cpython-312-x86_64-linux-gnu.so
+compiled ogcore.mincurv: ogcore/mincurv.cpython-312-x86_64-linux-gnu.so
+compiled ogcore.velocity_model: ogcore/velocity_model.cpython-312-x86_64-linux-gnu.so
+compiled ogvol.engine: ogvol/engine.cpython-312-x86_64-linux-gnu.so
