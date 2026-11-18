@@ -1,0 +1,67 @@
+[
+  {
+    "id": "A56-W01",
+    "classification": "A. Release Blocker",
+    "type": "Security baseline",
+    "title": "Actual customer and owner runtimes are below the declared release security floor",
+    "files": "dist/OandG_Workbench/_internal/python312.dll; dist/Owner Tools/O&G Workbench License Manager.exe; release/manifest.json:222; Build_Windows_EXE.bat:14; tools/release/check_python.py:17",
+    "current_behavior": "The customer Python DLL identifies itself as 3.12.5. The owner executable embeds the same Python version. The repository requires at least 3.12.16 for a release, but its version check runs only when OGW_RELEASE=1. A successful default qualification build is therefore not proof this gate ran.",
+    "evidence": "pe-versions.json records the actual PE ProductVersion/FileVersion and architecture; baseline-verification.json records the owner-extracted DLL version and manifest floor. Both runtimes are 3.12.5; all six owned EXEs independently identify as application version 0.9.56.",
+    "impact_and_scenario": "This exact payload fails its own declared security baseline. Functional/DPAPI/PDF success does not establish an adequately patched interpreter and bundled standard library. No specific reachable vulnerability or exploit is claimed from the version alone.",
+    "smallest_safe_recommendation": "Rebuild using a supported, security-patched Windows Python consistent with an approved release baseline, and run the strict release gate. If the floor itself is inaccurate, reconcile it with current vendor security evidence rather than silently bypassing or lowering it. Recompile the 15 extensions and regenerate both distributions.",
+    "validation": "Read PE versions from the final customer and embedded owner DLLs, require the approved floor, rerun protected-source/inventory checks and relevant Windows licensed/unlicensed/PDF smoke qualification after rebuilding.",
+    "confidence": "High"
+  },
+  {
+    "id": "A56-W02",
+    "classification": "A. Release Blocker",
+    "type": "Redistribution compliance, not a software vulnerability",
+    "title": "segyio\u2019s LGPL redistribution materials are incomplete in the staged payload",
+    "files": "build/stage/OandG_Workbench_v0.9.56/THIRD_PARTY_NOTICES.txt:4585; release/legal/THIRD_PARTY_NOTICES.txt:4585; tools/release/third_party_notices.py:115; release/OandG_Workbench.spec:29",
+    "current_behavior": "The installed metadata says segyio 1.9.15; its notice is only the version, LGPL-3.0-or-later label and homepage. No full LGPLv3 text was found in the staged license/text files. GPLv3 text does exist elsewhere in the notices/NumPy licenses. Readable segyio Python files and segyio.cpp are bundled, but not the complete C core/build sources or recipient source/replacement instructions.",
+    "evidence": "third-party-evidence.json and segyio-layout-evidence.json describe actual files, not just specs. The exact upstream v1.9.15 tag resolves to 2e420216119f0d509ddac1a581cba24d6dbf9186; its License.md is LGPLv3 and incorporates GPLv3. LGPLv3 section 4(b) requires the license documents; section 4(d) addresses replacement/relinking. The supplied native wrapper imports no separate segyio C DLL; the partial C++ file alone is not a complete buildable source package.",
+    "impact_and_scenario": "The current materials do not establish compliant commercial conveyance of the LGPL library. A homepage URL does not supply the missing LGPL text or clear corresponding-source access. This does not mean the proprietary Workbench application must be made open source.",
+    "smallest_safe_recommendation": "Add the full LGPLv3 text and clear library copyright/license notices and references to the already-present GPLv3 text. Provide exact corresponding library source/build information (including any wheel patches), either with the release or via a maintained equivalent source-access route with explicit directions. Document and test an appropriate compatible-library replacement or relinking route, and preserve the LGPL modification/reverse-engineering rights in the approved EULA.",
+    "validation": "Inspect the finished installer\u2019s extracted license/source-access materials; build an interface-compatible replacement and demonstrate that the intended Windows package actually uses it. Check the Python/PYZ collection behavior as well as the external _segyio.pyd. Retain hashes/version provenance for the library and source route.",
+    "confidence": "High"
+  },
+  {
+    "id": "B56-W03",
+    "classification": "B. Material Security / Packaging Risk",
+    "type": "Confirmed gate gaps; no actual leak found",
+    "title": "Source backup names and Windows case variants evade release inspection",
+    "files": "tools/release/check_protected.py:49; tools/release/inventory.py:61,89,99,111; release/manifest.json prohibited rules",
+    "current_behavior": "Protected-file recognition depends on the final suffix, so formulas.py.bak is not recognized as protected source. Inventory also uses case-sensitive ownership/name/suffix checks and an exact .py comparison. Uppercase proprietary source, .GIT and project-database suffixes can be accepted.",
+    "evidence": "inventory-case-evidence.json: an exact copy of current ogcore/formulas.py placed at _internal/ogcore/formulas.py.bak yields no inventory or protected-tree problem. Lowercase owned extra.py is rejected; extra.PY, _internal/OGCORE/userdata.PY, .GIT/config and archive.OGWDB are not. The fixture\u2019s clean baseline passes, and all changes are outside the supplied input.",
+    "impact_and_scenario": "A common editor/backup copy or Windows case variation can evade the checks intended to keep proprietary source/development material out of release output. This is a demonstrated checker weakness, not evidence that those files are present in the inspected customer package. Ordinary runtime dependency source is not being classified as a leak.",
+    "smallest_safe_recommendation": "Normalize relevant ownership, names and suffix rules for the supported Windows filesystem. Reject normal source-backup variants and independently detect exact protected source copies regardless of an extra backup suffix. Preserve explicit third-party/runtime exceptions.",
+    "validation": "Add paired lowercase/uppercase and .py.bak cases for protected and other owned code, Git metadata and project files; retain clean actual-package positive controls. Rerun checks against final Windows artifacts after fixes.",
+    "confidence": "High"
+  },
+  {
+    "id": "B56-W04",
+    "classification": "B. Material Security / Packaging Risk",
+    "type": "Conditional path/privacy risk",
+    "title": "Relative application-data variables still direct default writes into the working folder",
+    "files": "ogcore/userdata.py:57; ogcore/licensing.py:418; license_manager/issuer.py:37; other APPDATA-based preference roots",
+    "current_behavior": "The new APPDATA fallback helper validates an absolute path, but primary LOCALAPPDATA values are accepted merely when nonempty. Owner home and several existing APPDATA consumers likewise accept a relative value. LOCALAPPDATA=. and APPDATA=. resolve under the current directory.",
+    "evidence": "security-boundaries-evidence.json: with those relative variables in a temporary working directory, write_preference succeeds there, licensing state resolves there and issuer.home resolves there. The probe does not write a signing key or alter the host clock. The actual userdata bytecode/constants match current source in all five packaged EXEs.",
+    "impact_and_scenario": "A wrapper or misconfigured session using relative variables can put preferences/state into a project or executable working folder, contradicting the documented never-working-folder guarantee. If owner key setup is invoked in that configuration, its encrypted-key destination follows that misplaced root. This requires nonstandard environment configuration; no privilege escalation or actual production-key leak was demonstrated.",
+    "smallest_safe_recommendation": "Validate primary default application-data roots as absolute, using the same normalization as the existing fallback. On invalid roots, continue to the intended valid home/absolute fallback or raise the clear location error. Apply consistently to owner default storage; preserve deliberate explicit override semantics.",
+    "validation": "Test absolute, blank, whitespace and relative roots with and without a usable home; run from project/executable CWDs and assert no default files appear there. Repeat stripped-environment Windows startup and per-user license/owner storage checks.",
+    "confidence": "High"
+  },
+  {
+    "id": "B56-W05",
+    "classification": "B. Material Security / Packaging Risk",
+    "type": "Confirmed intentional security limitation",
+    "title": "Expired launches do not advance the rollback watermark",
+    "files": "ogcore/licensing.py:605\u2013621; tests/test_licensing.py Clock tests",
+    "current_behavior": "Clock state records only successful valid checks and caps time at expiry; an expired check does not advance it. Restoring the OS clock to the last valid time can make the same license valid again without changing state or signatures. Current tests intentionally preserve that capped-watermark behavior.",
+    "evidence": "security-boundaries-evidence.json uses a genuinely signed synthetic evaluation and the unmodified source check path with an explicitly supplied test key: valid at Nov 6, expired at Nov 21, then valid again at Nov 6; the watermark remains Nov 6. No host clock was actually changed, no state was deleted, and no test key was inserted into shipped trust.",
+    "impact_and_scenario": "A customer who controls the machine clock can replay a valid date after an observed expiry. This is a practical limitation of the current offline expiry/rollback policy, not a signature forgery, production-key compromise or OGW_BUILD_TEST_LICENSE bypass. Locked-down users without clock control are outside this scenario.",
+    "smallest_safe_recommendation": "Before relying on strict evaluation/time limits, explicitly accept this threat-model limitation or harden how authenticated expired observations affect the watermark, with a safe recovery policy for an accidentally fast clock. Do not promise tamper-proof time enforcement from local DPAPI alone or add a new licensing architecture during this audit.",
+    "validation": "Add valid\u2192expired\u2192backward sequences with unchanged state and test accidental forward-clock recovery. Document the separate limitation that a machine administrator can manipulate local time/state; a narrow watermark fix cannot establish trusted external time.",
+    "confidence": "High"
+  }
+]

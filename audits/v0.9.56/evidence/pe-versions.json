@@ -1,0 +1,107 @@
+[
+  {
+    "path": "dist/OandG_Workbench/OandG_Workbench.exe",
+    "machine": "0x8664",
+    "version": {
+      "CompanyName": "O&G Workbench",
+      "FileDescription": "O&G Workbench - Geo Workbench",
+      "FileVersion": "0.9.56",
+      "InternalName": "OandG_Workbench",
+      "LegalCopyright": "Copyright \u00a9 2026 O&G Workbench. All rights reserved.",
+      "OriginalFilename": "OandG_Workbench.exe",
+      "ProductName": "O&G Workbench",
+      "ProductVersion": "0.9.56"
+    },
+    "certificate_bytes": 0
+  },
+  {
+    "path": "dist/OandG_Workbench/GeosteeringWorkbench.exe",
+    "machine": "0x8664",
+    "version": {
+      "CompanyName": "O&G Workbench",
+      "FileDescription": "O&G Workbench - Geosteering Workbench",
+      "FileVersion": "0.9.56",
+      "InternalName": "GeosteeringWorkbench",
+      "LegalCopyright": "Copyright \u00a9 2026 O&G Workbench. All rights reserved.",
+      "OriginalFilename": "GeosteeringWorkbench.exe",
+      "ProductName": "O&G Workbench",
+      "ProductVersion": "0.9.56"
+    },
+    "certificate_bytes": 0
+  },
+  {
+    "path": "dist/OandG_Workbench/CorrelationWorkbench.exe",
+    "machine": "0x8664",
+    "version": {
+      "CompanyName": "O&G Workbench",
+      "FileDescription": "O&G Workbench - Correlation Workbench",
+      "FileVersion": "0.9.56",
+      "InternalName": "CorrelationWorkbench",
+      "LegalCopyright": "Copyright \u00a9 2026 O&G Workbench. All rights reserved.",
+      "OriginalFilename": "CorrelationWorkbench.exe",
+      "ProductName": "O&G Workbench",
+      "ProductVersion": "0.9.56"
+    },
+    "certificate_bytes": 0
+  },
+  {
+    "path": "dist/OandG_Workbench/PetroWorkbench.exe",
+    "machine": "0x8664",
+    "version": {
+      "CompanyName": "O&G Workbench",
+      "FileDescription": "O&G Workbench - Petro Workbench",
+      "FileVersion": "0.9.56",
+      "InternalName": "PetroWorkbench",
+      "LegalCopyright": "Copyright \u00a9 2026 O&G Workbench. All rights reserved.",
+      "OriginalFilename": "PetroWorkbench.exe",
+      "ProductName": "O&G Workbench",
+      "ProductVersion": "0.9.56"
+    },
+    "certificate_bytes": 0
+  },
+  {
+    "path": "dist/OandG_Workbench/SeismicWorkbench.exe",
+    "machine": "0x8664",
+    "version": {
+      "CompanyName": "O&G Workbench",
+      "FileDescription": "O&G Workbench - Seismic Workbench",
+      "FileVersion": "0.9.56",
+      "InternalName": "SeismicWorkbench",
+      "LegalCopyright": "Copyright \u00a9 2026 O&G Workbench. All rights reserved.",
+      "OriginalFilename": "SeismicWorkbench.exe",
+      "ProductName": "O&G Workbench",
+      "ProductVersion": "0.9.56"
+    },
+    "certificate_bytes": 0
+  },
+  {
+    "path": "dist/OandG_Workbench/_internal/python312.dll",
+    "machine": "0x8664",
+    "version": {
+      "CompanyName": "Python Software Foundation",
+      "FileDescription": "Python Core",
+      "FileVersion": "3.12.5",
+      "InternalName": "Python DLL",
+      "LegalCopyright": "Copyright \u00a9 2001-2023 Python Software Foundation. Copyright \u00a9 2000 BeOpen.com. Copyright \u00a9 1995-2001 CNRI. Copyright \u00a9 1991-1995 SMC.",
+      "OriginalFilename": "python312.dll",
+      "ProductName": "Python",
+      "ProductVersion": "3.12.5"
+    },
+    "certificate_bytes": 12056
+  },
+  {
+    "path": "dist/Owner Tools/O&G Workbench License Manager.exe",
+    "machine": "0x8664",
+    "version": {
+      "CompanyName": "O&G Workbench",
+      "FileDescription": "O&G Workbench License Manager (owner only)",
+      "FileVersion": "0.9.56",
+      "InternalName": "OandG_Workbench_License_Manager",
+      "LegalCopyright": "Copyright \u00a9 2026 O&G Workbench. All rights reserved.",
+      "OriginalFilename": "O&G Workbench License Manager.exe",
+      "ProductName": "O&G Workbench",
+      "ProductVersion": "0.9.56"
+    },
+    "certificate_bytes": 0
+  }
+]

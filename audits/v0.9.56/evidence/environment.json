@@ -1,0 +1,12 @@
+{
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "versions": {
+    "pyinstaller": "6.22.3",
+    "pefile": "2024.8.26",
+    "pytest": "9.2.0",
+    "cryptography": "50.0.0",
+    "reportlab": "4.4.9"
+  },
+  "input_read_only": "No source or artifact modifications; audit scripts under a separate folder"
+}

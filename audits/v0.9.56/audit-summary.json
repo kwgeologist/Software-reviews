@@ -1,0 +1,23 @@
+{
+  "version": "0.9.56",
+  "audit": "Actual WindowsQualified security/package audit",
+  "date": "2026-11-17",
+  "executive_result": "Not ready for release",
+  "recommendation": "stop release of current payload; targeted hardening",
+  "findings": {
+    "A": 2,
+    "B": 3
+  },
+  "input_archive_sha256": "f377692f7b555e189d30a5d1e5cea45c94ad0d78f9176d798c8e269f0b67d3e1",
+  "protected_modules": 15,
+  "customer_protected_source_problems": 0,
+  "production_private_key_found_in_customer": false,
+  "security_tests": {
+    "passed": 69,
+    "skipped": 6,
+    "subtests": 12
+  },
+  "native_windows_execution_in_this_audit": false,
+  "input_files": 5862,
+  "input_unchanged": true
+}

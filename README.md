@@ -1,5 +1,17 @@
 # Software reviews
 
+## O&G Workbench v0.9.56 — Windows security/package audit
+
+Actual WindowsQualified artifacts inspected read-only: **Not ready for release — 2 release blockers, 3 material risks.** All 15 protected Windows x64 modules are present, with no demonstrated source leak or production private key in the customer package. Main blockers: bundled Python 3.12.5 below the declared release security floor, and incomplete segyio LGPL redistribution materials.
+
+- [Read the report](audits/v0.9.56/OandG_Workbench_v0.9.56_Security_Package_Audit.md)
+- [Download PDF](https://github.com/kwgeologist/Software-reviews/raw/refs/heads/main/audits/v0.9.56/OandG_Workbench_v0.9.56_Security_Package_Audit.pdf)
+- [Download report and evidence ZIP](https://github.com/kwgeologist/Software-reviews/raw/refs/heads/main/audits/v0.9.56/OandG_Workbench_v0.9.56_Security_Package_Audit_Bundle.zip)
+- [Structured findings](audits/v0.9.56/findings.json)
+- [Evidence](audits/v0.9.56/evidence)
+
+All **5,862 supplied files remain unchanged**. Focused source security checks: 69 passed / 6 skips, 12 passing subtests. No general functionality/scientific re-audit or new native Windows execution is claimed; actual Windows PE/CArchive/PYZ/staging files were independently inspected. Only reports/curated evidence are published, never the input ZIP, private keys or licenses.
+
 ## O&G Workbench v0.9.53
 
 Fresh full release-candidate audit: **Clean except for listed material risks; fix listed items first.** Six category B findings; no established A blocker or demonstrated Cython numerical discrepancy. The report separates normal fixes from remaining concurrency, cache, native importer, source normalization and archive-limit defects.

@@ -1,0 +1,79 @@
+{
+  "clean_presence_fixture": [],
+  "path:_internal/ogcore/formulas.py": true,
+  "path:_internal/backup/sub/ogcore/formulas.py": true,
+  "path:_internal/backup/ogcore/__pycache__/formulas.cpython-312.py": true,
+  "path:_internal/ogcore/formulas.pyw": true,
+  "path:_internal/backup/sub/ogcore/formulas.pyw": true,
+  "path:_internal/backup/ogcore/__pycache__/formulas.cpython-312.pyw": true,
+  "path:_internal/ogcore/formulas.pyi": true,
+  "path:_internal/backup/sub/ogcore/formulas.pyi": true,
+  "path:_internal/backup/ogcore/__pycache__/formulas.cpython-312.pyi": true,
+  "path:_internal/ogcore/formulas.pyx": true,
+  "path:_internal/backup/sub/ogcore/formulas.pyx": true,
+  "path:_internal/backup/ogcore/__pycache__/formulas.cpython-312.pyx": true,
+  "path:_internal/ogcore/formulas.pxd": true,
+  "path:_internal/backup/sub/ogcore/formulas.pxd": true,
+  "path:_internal/backup/ogcore/__pycache__/formulas.cpython-312.pxd": true,
+  "path:_internal/ogcore/formulas.c": true,
+  "path:_internal/backup/sub/ogcore/formulas.c": true,
+  "path:_internal/backup/ogcore/__pycache__/formulas.cpython-312.c": true,
+  "path:_internal/ogcore/formulas.cpp": true,
+  "path:_internal/backup/sub/ogcore/formulas.cpp": true,
+  "path:_internal/backup/ogcore/__pycache__/formulas.cpython-312.cpp": true,
+  "path:_internal/ogcore/formulas.pyc": true,
+  "path:_internal/backup/sub/ogcore/formulas.pyc": true,
+  "path:_internal/backup/ogcore/__pycache__/formulas.cpython-312.pyc": true,
+  "path:_internal/ogcore/formulas.pyo": true,
+  "path:_internal/backup/sub/ogcore/formulas.pyo": true,
+  "path:_internal/backup/ogcore/__pycache__/formulas.cpython-312.pyo": true,
+  "standalone_zip": [
+    "ogcore.formulas: as source or bytecode in _internal/base_library.zip (backup/ogcore/formulas.py)"
+  ],
+  "standalone_egg": [
+    "ogcore.formulas: as source or bytecode in _internal/base_library.egg (backup/ogcore/formulas.py)"
+  ],
+  "standalone_whl": [
+    "ogcore.formulas: as source or bytecode in _internal/base_library.whl (backup/ogcore/formulas.py)"
+  ],
+  "standalone_pyz": [
+    "ogcore.formulas: bundled as Python in _internal/standalone.pyz"
+  ],
+  "embedded_PYZ": [
+    "ogcore.formulas: bundled as Python in OandG_Workbench (PYZ PYZ.pyz)"
+  ],
+  "raw_m": [
+    "ogcore.formulas: bundled as Python in OandG_Workbench (module)"
+  ],
+  "raw_M": [
+    "ogcore.formulas: bundled as Python in OandG_Workbench (module)"
+  ],
+  "raw_s": [
+    "ogcore.formulas: bundled as Python in OandG_Workbench (script)"
+  ],
+  "embedded_zip_type_Z": [
+    "ogcore.formulas: as source or bytecode in OandG_Workbench (zip payload.zip) (ogcore/formulas.py)"
+  ],
+  "embedded_zip_type_x": [
+    "ogcore.formulas: as source or bytecode in OandG_Workbench (payload.zip) (ogcore/formulas.py)"
+  ],
+  "nested_zip": [
+    "ogcore.formulas: as source or bytecode in _internal/outer.zip/nested.zip (ogcore/formulas.py)"
+  ],
+  "case_variant": [
+    "protected source in the build: _internal/OGCORE/FORMULAS.PY"
+  ],
+  "owner_embedded_zip_Z": [
+    "ogcore.formulas: as source or bytecode in owner (zip payload.zip) (ogcore/formulas.py)"
+  ],
+  "owner_embedded_zip_x": [
+    "ogcore.formulas: as source or bytecode in owner (payload.zip) (ogcore/formulas.py)"
+  ],
+  "unreadable_executable": [
+    "OandG_Workbench: cannot be read as a PyInstaller archive (Could not find COOKIE magic pattern!)"
+  ],
+  "missing_extension": [
+    "ogcore.formulas: no compiled module in _internal/ogcore",
+    "OandG_Workbench: cannot be read as a PyInstaller archive (Could not find COOKIE magic pattern!)"
+  ]
+}

@@ -1,0 +1,11 @@
+2303 files, 250.3 MB
+  warning: path-like text '/Users/' in a third-party file: _internal/base_library.zip
+  warning: path-like text '/Users/' in a third-party file: _internal/python312.dll
+  warning: path-like text 'C:/Users/' in a third-party file: _internal/base_library.zip
+  warning: path-like text 'C:/Users/' in a third-party file: _internal/python312.dll
+  warning: path-like text 'C:\\Users\\' in a third-party file: _internal/cryptography/hazmat/bindings/_rust.pyd
+  FAIL: required resource missing: Docs/Workbench_Help.html
+  FAIL: required resource missing: EULA.txt
+  FAIL: required resource missing: OandG_Workbench.ico
+  FAIL: required resource missing: THIRD_PARTY_NOTICES.txt
+release payload: REFUSED

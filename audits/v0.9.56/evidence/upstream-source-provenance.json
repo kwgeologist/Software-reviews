@@ -1,0 +1,10 @@
+{
+  "repository": "https://github.com/equinor/segyio",
+  "tag": "v1.9.15",
+  "commit": "2e420216119f0d509ddac1a581cba24d6dbf9186",
+  "files_used": [
+    "License.md",
+    "python/segyio/__init__.py"
+  ],
+  "purpose": "Audit evidence only; no customer package changes"
+}

@@ -1,0 +1,39 @@
+{
+  "passed": 69,
+  "skipped": 6,
+  "subtests_passed": 12,
+  "failures": 0,
+  "seconds": 4.71,
+  "skips": [
+    {
+      "class": "tests.test_licensing.Clock",
+      "test": "test_dpapi_round_trip",
+      "reason": "DPAPI is Windows' (a Windows qualification item)"
+    },
+    {
+      "class": "tests.test_licensing.Gate",
+      "test": "test_an_evaluation_shows_in_the_title",
+      "reason": "needs a display"
+    },
+    {
+      "class": "tests.test_licensing.Gate",
+      "test": "test_importing_a_license_from_the_dialog_starts_the_program",
+      "reason": "needs a display"
+    },
+    {
+      "class": "tests.test_licensing.Gate",
+      "test": "test_invalid_and_expired_licenses_offer_recovery_access",
+      "reason": "needs a display"
+    },
+    {
+      "class": "tests.test_licensing.Gate",
+      "test": "test_the_dialog_is_never_a_dead_end",
+      "reason": "needs a display"
+    },
+    {
+      "class": "tests.test_licensing.RecoveryAccess",
+      "test": "test_the_recovery_window_reads_exports_and_closes_without_writing",
+      "reason": "needs a display"
+    }
+  ]
+}

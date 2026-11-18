@@ -1,0 +1,23 @@
+{
+  "application_version": "0.9.56",
+  "source_expected_commit": "500ba84 (feature/artifact baseline, no Git metadata required)",
+  "userdata_present": true,
+  "owner_embedded_python_version": "3.12.5",
+  "manifest_python_min": "3.12.16",
+  "customer_python_version": "3.12.5",
+  "passes_declared_runtime_floor": false,
+  "baseline_features_and_packaged_pure_modules_match": true,
+  "source_state_is_unmodified": true,
+  "windows_execution_in_this_audit": false,
+  "reported_windows_qualification": [
+    "Build_Windows_EXE success",
+    "15 modules compiled; customer/owner protection passed",
+    "owner self-test passed",
+    "all Workbench windows/project launch",
+    "DPAPI passed",
+    "Explorer drop passed",
+    "packaged PDF/license tests 9 passed",
+    "full serial 2800 passed"
+  ],
+  "independent_windows_binary_and_archive_inspection": true
+}

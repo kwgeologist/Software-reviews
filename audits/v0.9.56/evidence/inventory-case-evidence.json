@@ -1,0 +1,33 @@
+{
+  "baseline_inventory_failures": [],
+  "_internal/ogcore/formulas.py.bak": {
+    "inventory_failures": [],
+    "protected_tree_problems": []
+  },
+  "_internal/geoworkbench/extra.py": {
+    "inventory_failures": [
+      "owned source in the payload: _internal/geoworkbench/extra.py"
+    ],
+    "protected_tree_problems": []
+  },
+  "_internal/geoworkbench/extra.PY": {
+    "inventory_failures": [],
+    "protected_tree_problems": []
+  },
+  "_internal/geoworkbench/extra.py.bak": {
+    "inventory_failures": [],
+    "protected_tree_problems": []
+  },
+  "_internal/OGCORE/userdata.PY": {
+    "inventory_failures": [],
+    "protected_tree_problems": []
+  },
+  "_internal/data/archive.OGWDB": {
+    "inventory_failures": [],
+    "protected_tree_problems": []
+  },
+  "_internal/.GIT/config": {
+    "inventory_failures": [],
+    "protected_tree_problems": []
+  }
+}

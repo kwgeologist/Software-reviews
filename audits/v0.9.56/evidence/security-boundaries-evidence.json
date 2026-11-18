@@ -1,0 +1,36 @@
+{
+  "relative_appdata": {
+    "preferences": "/tmp/tmpam_9vp5t/OandG_Workbench/.audit-prefs",
+    "licensing_state": "/tmp/tmpam_9vp5t/OandG_Workbench/Licensing/state.bin",
+    "owner_home": "/tmp/tmpam_9vp5t/OandG_Workbench_License_Manager",
+    "write_succeeded": true,
+    "current_project_folder": "/tmp/tmpam_9vp5t",
+    "files_created": [
+      "OandG_Workbench/.audit-prefs"
+    ]
+  },
+  "expired_then_clock_restored": {
+    "results": [
+      {
+        "simulated_clock": "2026-11-06 00:00:00+00:00",
+        "status": "valid",
+        "watermark": "2026-11-06 00:00:00+00:00"
+      },
+      {
+        "simulated_clock": "2026-11-21 00:00:00+00:00",
+        "status": "expired",
+        "watermark": "2026-11-06 00:00:00+00:00"
+      },
+      {
+        "simulated_clock": "2026-11-06 00:00:00+00:00",
+        "status": "valid",
+        "watermark": "2026-11-06 00:00:00+00:00"
+      }
+    ],
+    "signature_required": true,
+    "explicit_test_key_injection_only": true,
+    "state_deleted_or_modified": false,
+    "host_clock_changed": false,
+    "scope": "pure source algorithm; no test key added to shipped trust"
+  }
+}

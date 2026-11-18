@@ -1,0 +1,3 @@
+from pathlib import Path
+import json,hashlib
+B=Path('/workspace/audit-v0.9.56-windows');base=json.loads((B/'original-files.json').read_text());R=Path(base['root']);expected=base['files'];actual={str(p.relative_to(R)):hashlib.sha256(p.read_bytes()).hexdigest()for p in R.rglob('*')if p.is_file()};out={'archive_sha256':'f377692f7b555e189d30a5d1e5cea45c94ad0d78f9176d798c8e269f0b67d3e1','original_files':len(expected),'missing':sorted(set(expected)-set(actual)),'added':sorted(set(actual)-set(expected)),'changed':sorted(p for p in expected if p in actual and expected[p]!=actual[p])};(B/'input-integrity.json').write_text(json.dumps(out,indent=2));print(json.dumps(out,indent=2));assert not any(out[k]for k in ['missing','added','changed'])

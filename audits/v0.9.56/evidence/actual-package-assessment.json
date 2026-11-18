@@ -1,0 +1,380 @@
+{
+  "customer_protection_problems": [],
+  "modules": [
+    {
+      "module": "ogcore.licensing",
+      "files": [
+        {
+          "path": "_internal/ogcore/licensing.cp312-win_amd64.pyd",
+          "machine": "0x8664",
+          "sha256": "a4d835ae56634d2e0ecd0ab6bb64c614421aec6231534f6ed53e64d63f348f1c",
+          "imports": [
+            "python312.dll",
+            "KERNEL32.dll",
+            "VCRUNTIME140.dll",
+            "api-ms-win-crt-runtime-l1-1-0.dll"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "ogcore.license_runtime",
+      "files": [
+        {
+          "path": "_internal/ogcore/license_runtime.cp312-win_amd64.pyd",
+          "machine": "0x8664",
+          "sha256": "d64e6175e205523a67ddf266f1be3c0b644886bb8c8b7a6736d8542e40492e17",
+          "imports": [
+            "python312.dll",
+            "KERNEL32.dll",
+            "VCRUNTIME140.dll",
+            "api-ms-win-crt-runtime-l1-1-0.dll"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "ogcore.formulas",
+      "files": [
+        {
+          "path": "_internal/ogcore/formulas.cp312-win_amd64.pyd",
+          "machine": "0x8664",
+          "sha256": "c7493705312a0a6cdb36a02d7e90a34650be13c67acc105975c4a7cbbbed501e",
+          "imports": [
+            "python312.dll",
+            "KERNEL32.dll",
+            "VCRUNTIME140.dll",
+            "api-ms-win-crt-runtime-l1-1-0.dll"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "ogcore.multimineral",
+      "files": [
+        {
+          "path": "_internal/ogcore/multimineral.cp312-win_amd64.pyd",
+          "machine": "0x8664",
+          "sha256": "67147dfa2748f6fba18d86d4345c836dc45798d5145d6d43c03222cf4a0dd9ae",
+          "imports": [
+            "python312.dll",
+            "KERNEL32.dll",
+            "VCRUNTIME140.dll",
+            "api-ms-win-crt-runtime-l1-1-0.dll"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "ogcore.multivariate",
+      "files": [
+        {
+          "path": "_internal/ogcore/multivariate.cp312-win_amd64.pyd",
+          "machine": "0x8664",
+          "sha256": "202ac20a2d36a3d29247f6c14f7cb11d7b8d01e5312274cbdeaa1b06f30069a5",
+          "imports": [
+            "python312.dll",
+            "KERNEL32.dll",
+            "VCRUNTIME140.dll",
+            "api-ms-win-crt-runtime-l1-1-0.dll"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "ogcore.core_equations",
+      "files": [
+        {
+          "path": "_internal/ogcore/core_equations.cp312-win_amd64.pyd",
+          "machine": "0x8664",
+          "sha256": "ae83e94c5f5e1ddf01ba8927acd68a82b1225a09a09f05a6352acd6aacdff6cb",
+          "imports": [
+            "python312.dll",
+            "KERNEL32.dll",
+            "VCRUNTIME140.dll",
+            "api-ms-win-crt-runtime-l1-1-0.dll"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "ogcore.water",
+      "files": [
+        {
+          "path": "_internal/ogcore/water.cp312-win_amd64.pyd",
+          "machine": "0x8664",
+          "sha256": "facbff78447d3b71de3b34266236720e5fc10f38d0be5916abdda079d454195f",
+          "imports": [
+            "python312.dll",
+            "KERNEL32.dll",
+            "VCRUNTIME140.dll",
+            "api-ms-win-crt-runtime-l1-1-0.dll",
+            "api-ms-win-crt-math-l1-1-0.dll"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "petroworkbench.curve_ops",
+      "files": [
+        {
+          "path": "_internal/petroworkbench/curve_ops.cp312-win_amd64.pyd",
+          "machine": "0x8664",
+          "sha256": "efbe58aa0810dfdbdf81dbba6dd3cfe17b63965aaf457cb15f364b20e14f5b4a",
+          "imports": [
+            "python312.dll",
+            "KERNEL32.dll",
+            "VCRUNTIME140.dll",
+            "api-ms-win-crt-runtime-l1-1-0.dll"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "ogcore.pay",
+      "files": [
+        {
+          "path": "_internal/ogcore/pay.cp312-win_amd64.pyd",
+          "machine": "0x8664",
+          "sha256": "ea2246eedcbff0cf958cad67b716e71c628f125a7a8942507b76dfc7e2d36883",
+          "imports": [
+            "python312.dll",
+            "KERNEL32.dll",
+            "VCRUNTIME140.dll",
+            "api-ms-win-crt-runtime-l1-1-0.dll"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "ogcore.batch_zones",
+      "files": [
+        {
+          "path": "_internal/ogcore/batch_zones.cp312-win_amd64.pyd",
+          "machine": "0x8664",
+          "sha256": "ce20cf9a119859a2c580419f1dc9ea3848eca2d6946121a3344a2bc74e9e6ec6",
+          "imports": [
+            "python312.dll",
+            "KERNEL32.dll",
+            "VCRUNTIME140.dll",
+            "api-ms-win-crt-runtime-l1-1-0.dll"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "ogcore.gridders",
+      "files": [
+        {
+          "path": "_internal/ogcore/gridders.cp312-win_amd64.pyd",
+          "machine": "0x8664",
+          "sha256": "8c287e711d5d07e1cc5bcd473258649e9760a306a7ba00f171affd83aeec68be",
+          "imports": [
+            "python312.dll",
+            "KERNEL32.dll",
+            "VCRUNTIME140.dll",
+            "api-ms-win-crt-runtime-l1-1-0.dll"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "ogcore.gridding",
+      "files": [
+        {
+          "path": "_internal/ogcore/gridding.cp312-win_amd64.pyd",
+          "machine": "0x8664",
+          "sha256": "6a38729164b52c534ead586dc7dcee0102aa0d79d4efd69b0f971a72d53bc455",
+          "imports": [
+            "python312.dll",
+            "KERNEL32.dll",
+            "VCRUNTIME140.dll",
+            "api-ms-win-crt-runtime-l1-1-0.dll"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "ogcore.mincurv",
+      "files": [
+        {
+          "path": "_internal/ogcore/mincurv.cp312-win_amd64.pyd",
+          "machine": "0x8664",
+          "sha256": "c6a480b162e7c0ab11375250a66f4a8319722220a3da55f97be89128e9126c82",
+          "imports": [
+            "python312.dll",
+            "KERNEL32.dll",
+            "VCRUNTIME140.dll",
+            "api-ms-win-crt-runtime-l1-1-0.dll"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "ogcore.velocity_model",
+      "files": [
+        {
+          "path": "_internal/ogcore/velocity_model.cp312-win_amd64.pyd",
+          "machine": "0x8664",
+          "sha256": "47dc22c92940d849967fb8a90a2b507025a5edde5673d8351bb693584f1dafea",
+          "imports": [
+            "python312.dll",
+            "KERNEL32.dll",
+            "VCRUNTIME140.dll",
+            "api-ms-win-crt-runtime-l1-1-0.dll"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "ogvol.engine",
+      "files": [
+        {
+          "path": "_internal/ogvol/engine.cp312-win_amd64.pyd",
+          "machine": "0x8664",
+          "sha256": "7a3d8413035f290b5be0a54c55b15d6aea267b4a097d28d47b44a7d08bb0d56c",
+          "imports": [
+            "python312.dll",
+            "KERNEL32.dll",
+            "VCRUNTIME140.dll",
+            "api-ms-win-crt-runtime-l1-1-0.dll"
+          ]
+        }
+      ]
+    }
+  ],
+  "executables": [
+    {
+      "name": "OandG_Workbench.exe",
+      "carchive_entries": 15,
+      "pyz_entries": 2094,
+      "owner_or_tests_modules": [],
+      "protected_pyz_names": [],
+      "source_consistency": {
+        "ogcore.userdata": {
+          "bytecode_and_constants_match": true,
+          "source": "ogcore/userdata.py"
+        },
+        "ogcore.licensing_keys": {
+          "bytecode_and_constants_match": true,
+          "source": "ogcore/licensing_keys.py"
+        },
+        "ogcore": {
+          "bytecode_and_constants_match": true,
+          "source": "ogcore/__init__.py"
+        }
+      }
+    },
+    {
+      "name": "PetroWorkbench.exe",
+      "carchive_entries": 15,
+      "pyz_entries": 2020,
+      "owner_or_tests_modules": [],
+      "protected_pyz_names": [],
+      "source_consistency": {
+        "ogcore.userdata": {
+          "bytecode_and_constants_match": true,
+          "source": "ogcore/userdata.py"
+        },
+        "ogcore.licensing_keys": {
+          "bytecode_and_constants_match": true,
+          "source": "ogcore/licensing_keys.py"
+        },
+        "ogcore": {
+          "bytecode_and_constants_match": true,
+          "source": "ogcore/__init__.py"
+        }
+      }
+    },
+    {
+      "name": "SeismicWorkbench.exe",
+      "carchive_entries": 15,
+      "pyz_entries": 2054,
+      "owner_or_tests_modules": [],
+      "protected_pyz_names": [],
+      "source_consistency": {
+        "ogcore.userdata": {
+          "bytecode_and_constants_match": true,
+          "source": "ogcore/userdata.py"
+        },
+        "ogcore.licensing_keys": {
+          "bytecode_and_constants_match": true,
+          "source": "ogcore/licensing_keys.py"
+        },
+        "ogcore": {
+          "bytecode_and_constants_match": true,
+          "source": "ogcore/__init__.py"
+        }
+      }
+    },
+    {
+      "name": "GeosteeringWorkbench.exe",
+      "carchive_entries": 15,
+      "pyz_entries": 2026,
+      "owner_or_tests_modules": [],
+      "protected_pyz_names": [],
+      "source_consistency": {
+        "ogcore.userdata": {
+          "bytecode_and_constants_match": true,
+          "source": "ogcore/userdata.py"
+        },
+        "ogcore.licensing_keys": {
+          "bytecode_and_constants_match": true,
+          "source": "ogcore/licensing_keys.py"
+        },
+        "ogcore": {
+          "bytecode_and_constants_match": true,
+          "source": "ogcore/__init__.py"
+        }
+      }
+    },
+    {
+      "name": "CorrelationWorkbench.exe",
+      "carchive_entries": 15,
+      "pyz_entries": 1984,
+      "owner_or_tests_modules": [],
+      "protected_pyz_names": [],
+      "source_consistency": {
+        "ogcore.userdata": {
+          "bytecode_and_constants_match": true,
+          "source": "ogcore/userdata.py"
+        },
+        "ogcore.licensing_keys": {
+          "bytecode_and_constants_match": true,
+          "source": "ogcore/licensing_keys.py"
+        },
+        "ogcore": {
+          "bytecode_and_constants_match": true,
+          "source": "ogcore/__init__.py"
+        }
+      }
+    }
+  ],
+  "stage_comparison": {
+    "OandG_Workbench.exe": true,
+    "_internal/ogcore/licensing.cp312-win_amd64.pyd": true,
+    "_internal/ogcore/license_runtime.cp312-win_amd64.pyd": true,
+    "_internal/ogcore/formulas.cp312-win_amd64.pyd": true,
+    "_internal/ogcore/multimineral.cp312-win_amd64.pyd": true,
+    "_internal/ogcore/multivariate.cp312-win_amd64.pyd": true,
+    "_internal/ogcore/core_equations.cp312-win_amd64.pyd": true,
+    "_internal/ogcore/water.cp312-win_amd64.pyd": true,
+    "_internal/petroworkbench/curve_ops.cp312-win_amd64.pyd": true,
+    "_internal/ogcore/pay.cp312-win_amd64.pyd": true,
+    "_internal/ogcore/batch_zones.cp312-win_amd64.pyd": true,
+    "_internal/ogcore/gridders.cp312-win_amd64.pyd": true,
+    "_internal/ogcore/gridding.cp312-win_amd64.pyd": true,
+    "_internal/ogcore/mincurv.cp312-win_amd64.pyd": true,
+    "_internal/ogcore/velocity_model.cp312-win_amd64.pyd": true,
+    "_internal/ogvol/engine.cp312-win_amd64.pyd": true,
+    "PetroWorkbench.exe": true,
+    "SeismicWorkbench.exe": true,
+    "GeosteeringWorkbench.exe": true,
+    "CorrelationWorkbench.exe": true
+  },
+  "owner_protection_problems": [],
+  "owner_archive_python_dlls": [
+    "python3.dll",
+    "python312.dll"
+  ]
+}

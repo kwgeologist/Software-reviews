@@ -1,0 +1,7 @@
+{
+  "source_bytecode_generated_C_reference_files": 30,
+  "exact_source_or_bytecode_hits": [],
+  "newline_normalized_source_hits": [],
+  "zip_member_hits": [],
+  "scope": "actual loose customer files and ZIP members; separate checker covered CArchive/PYZ names and nested archives"
+}

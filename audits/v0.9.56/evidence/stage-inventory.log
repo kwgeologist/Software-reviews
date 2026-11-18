@@ -1,0 +1,8 @@
+2309 files, 250.7 MB
+  warning: path-like text '/Users/' in a third-party file: _internal/base_library.zip
+  warning: path-like text '/Users/' in a third-party file: _internal/python312.dll
+  warning: path-like text 'C:/Users/' in a third-party file: _internal/base_library.zip
+  warning: path-like text 'C:/Users/' in a third-party file: _internal/python312.dll
+  warning: path-like text 'C:\\Users\\' in a third-party file: _internal/cryptography/hazmat/bindings/_rust.pyd
+  FAIL: EULA.txt is the placeholder: the owner must supply the license agreement
+release payload: REFUSED

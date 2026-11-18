@@ -1,0 +1,412 @@
+# O&G Workbench v0.9.56 — Final Security & Package Audit
+
+## Audit Input
+Audit this exact archive:
+
+`OandG_Workbench_v0.9.56_WindowsQualified.zip`
+
+It was created from the exact Windows folder used for local build and qualification:
+
+`D:\OandG_Workbench\OandG_Workbench_v0.9.56`
+
+This is the release-candidate tree that was built and tested on Windows.
+
+Do not audit an earlier v0.9.56 ZIP.
+
+Do not modify code.
+
+---
+
+## Baseline
+
+Expected application version:
+
+**v0.9.56**
+
+Expected source state corresponds to release commit:
+
+`500ba84`
+
+The ZIP may not contain `.git`, so do **not** require Git metadata to verify the baseline.
+
+Instead verify that the archive contains the final v0.9.56 changes, including:
+
+- `ogcore/userdata.py`
+- the final Windows user-data/path handling
+- v0.9.56 version metadata/changelog
+- actual Windows `dist` output
+- Windows-built protected `.pyd` modules
+
+If those do not match the final v0.9.56 release candidate, stop and report the mismatch.
+
+---
+
+# Objective
+
+Perform the final independent **security and distribution audit** before v1.0 release hardening.
+
+This is not another general functional audit.
+
+Focus on:
+
+- actual Windows package contents;
+- source protection;
+- licensing/key security;
+- customer/owner separation;
+- accidental secrets or development material;
+- third-party redistribution compliance;
+- release staging/inventory;
+- installer/distribution risks.
+
+---
+
+# 1. Audit the Actual Windows Build
+
+Inspect the Windows artifacts contained in the archive, especially:
+
+`dist\OandG_Workbench`
+
+and
+
+`dist\Owner Tools`
+
+Do not limit the audit to PyInstaller specs or source rules.
+
+Inspect the actual packaged binaries, archives and bundled files.
+
+Confirm the package identifies itself as v0.9.56 and is consistent with the source tree supplied.
+
+---
+
+# 2. Protected Modules
+
+Expected protected-module count:
+
+**15**
+
+Verify all intended protected modules are represented by compiled Windows `.pyd` modules and are usable by the packaged application.
+
+Confirm protected implementation is not also distributed in readable form as:
+
+- `.py`
+- `.pyw`
+- `.pyi`
+- `.pyx`
+- `.pxd`
+- generated `.c` / `.cpp`
+- `.pyc`
+- `.pyo`
+
+Inspect both loose files and embedded package contents including:
+
+- PYZ;
+- CArchive;
+- embedded ZIP/data entries;
+- nested ZIP/PYZ;
+- `.egg`;
+- `.whl`;
+- `base_library.zip`;
+- case-varied names.
+
+Audit `tools/release/check_protected.py` against the **actual Windows packages**.
+
+Determine whether any practical bypass remains.
+
+---
+
+# 3. Customer Distribution Contents
+
+Audit `dist\OandG_Workbench` for material that should not ship to customers.
+
+Look specifically for:
+
+- protected source;
+- unneeded source code;
+- tests;
+- test fixtures;
+- developer utilities;
+- build scripts;
+- `.git` or Git metadata;
+- scratch files;
+- temporary files;
+- debug artifacts;
+- development databases/projects;
+- logs;
+- WSD files;
+- client/customer data;
+- test licenses;
+- private keys;
+- owner-only material;
+- obsolete release files.
+
+Do not flag ordinary runtime Python dependencies merely because they contain Python code. The concern is Workbench proprietary source or inappropriate release material.
+
+---
+
+# 4. Owner Tool Separation
+
+Audit `dist\Owner Tools` separately.
+
+Verify:
+
+- Owner License Manager is not contained in the customer package;
+- customer software cannot issue/sign licenses;
+- production private keys are not embedded in the customer build;
+- private signing material is not accidentally bundled elsewhere;
+- owner-trust files cannot grant customer software owner privileges;
+- owner-only functionality is meaningfully separated from customer runtime.
+
+---
+
+# 5. Licensing / Key Security
+
+Audit the final licensing implementation and actual packaged binaries.
+
+Review:
+
+- signature verification;
+- public-key trust;
+- unknown-key rejection;
+- expiry;
+- time-limited/evaluation behavior;
+- machine binding;
+- DPAPI;
+- clock rollback protection;
+- owner licenses;
+- production-key setup;
+- owner trust;
+- imported-license handling.
+
+Pay special attention to:
+
+- `OGW_LICENSE_FILE`
+- `OGW_BUILD_TEST_LICENSE`
+- `ogw-selftest-*`
+- test/build licenses
+- owner-trusted-key files
+
+Determine whether any build/test mechanism can be used by a normal customer to bypass licensing.
+
+Do not treat the existence of test infrastructure itself as a vulnerability unless it creates an actual bypass in the distributed software.
+
+---
+
+# 6. User-Data / Runtime Paths
+
+Audit final v0.9.56 path handling, including:
+
+`ogcore/userdata.py`
+
+Verify:
+
+- `%LOCALAPPDATA%\OandG_Workbench` is used appropriately;
+- home fallback is safe;
+- `%APPDATA%\OandG_Workbench` fallback is safe;
+- there is no fallback to working directory;
+- there is no unintended executable-directory write;
+- there is no unintended project-directory write;
+- stripped-environment startup does not weaken licensing or file security;
+- preference/state files cannot overwrite program files.
+
+Also verify the final fixes were actually incorporated into the Windows package.
+
+---
+
+# 7. Build / Staging / Release Inventory
+
+Audit:
+
+- `Build_Windows_EXE.bat`
+- PyInstaller specs
+- staging scripts
+- release merge/inventory utilities
+- version metadata
+- prohibited-file checks
+- customer/owner output separation
+
+Compare the rules with the actual contents of `dist`.
+
+Look for files generated outside the checked inventory that could accidentally enter a release.
+
+---
+
+# 8. Secrets / Sensitive Material
+
+Search both source and packaged Windows artifacts for:
+
+- private signing keys;
+- passwords;
+- API tokens;
+- credentials;
+- connection strings;
+- secrets;
+- customer information;
+- client data;
+- unintended local paths;
+- personally identifying build-machine information where materially sensitive.
+
+Distinguish:
+
+- public keys;
+- harmless test constants;
+- ordinary build paths
+
+from actual secrets/security problems.
+
+---
+
+# 9. Third-Party Redistribution Compliance
+
+Audit the third-party software actually bundled in the Windows distribution.
+
+Pay particular attention to:
+
+**segyio 1.9.15 — LGPL-3.0-or-later**
+
+Determine precisely what must accompany the commercial distribution.
+
+Check whether the release currently provides, as applicable:
+
+- copyright notices;
+- full LGPL/GPL license text;
+- third-party notice;
+- source-access information;
+- relinking/replacement rights required by the LGPL;
+- sufficient information for the recipient to exercise those rights.
+
+Do not assume that a homepage URL or the text `LGPL-3.0-or-later` alone satisfies the obligation.
+
+Also identify any other bundled dependency with redistribution requirements that are not currently satisfied.
+
+Classify legal-compliance findings separately from software vulnerabilities.
+
+---
+
+# 10. Installer Readiness
+
+Review any installer scripts/configuration that already exist.
+
+Determine whether the eventual installer could accidentally:
+
+- include Owner License Manager;
+- include private keys;
+- include proprietary source;
+- include test/development files;
+- overwrite user projects;
+- install licenses incorrectly;
+- require developer/build tools;
+- depend on the build machine's paths.
+
+If the final installer has not yet been built, classify these as **Installer Validation Items**, not current package defects.
+
+---
+
+# 11. Windows Qualification Evidence
+
+The following were completed on the actual Windows v0.9.56 tree:
+
+- `Build_Windows_EXE.bat` completed successfully;
+- Windows Cython build completed;
+- customer protected-source check passed;
+- Owner License Manager protected-source check passed;
+- Owner License Manager self-test passed;
+- packaged customer EXE launched;
+- real project opened;
+- Well Manager opened;
+- PetroWorkbench opened;
+- SeismicWorkbench opened;
+- Geosteering opened;
+- Map opened;
+- Correlation Workbench opened;
+- Cross Section Workbench opened;
+- Windows DPAPI test passed;
+- Explorer LAS drag/drop test passed;
+- packaging test with valid production-signed license: **9 passed, 0 failed**;
+- full serial suite on final v0.9.56 source: **2800 passed, 0 failed**.
+
+Do not simply accept these as proof of security.
+
+Use them as qualification evidence and identify anything security-relevant that remains untested.
+
+---
+
+# 12. Do Not Re-Audit
+
+Do not spend time redoing:
+
+- scientific formula validation;
+- FM Tops workflow validation;
+- general usability;
+- ordinary Map/grid behavior;
+- Petro numerical equivalence;
+- routine functional regression testing.
+
+Only revisit those areas if they expose a security or distribution issue.
+
+---
+
+# Finding Classification
+
+Classify each finding as:
+
+### A. Release Blocker
+Must be corrected before v1.0 can be distributed.
+
+### B. Material Security / Packaging Risk
+Should be corrected before v1.0.
+
+### C. Installer / Final Distribution Validation Item
+Requires inspection of the finished installer or final release payload.
+
+### D. No Action / Post-v1.0
+Real observation that does not justify destabilizing this release.
+
+Do not inflate theoretical issues without a plausible release impact.
+
+---
+
+# Required Report
+
+Return exactly these sections:
+
+## 1. Executive Result
+Choose one:
+
+- **Security/package clean for v1.0 hardening**
+- **Clean except for listed material risks**
+- **Not ready for release**
+
+## 2. Baseline Verification
+State what evidence confirms this is the final v0.9.56 Windows-qualified tree.
+
+## 3. Release Blockers
+
+## 4. Material Security / Packaging Risks
+
+## 5. Actual Windows Package Assessment
+
+## 6. Protected-Code Assessment
+
+## 7. Licensing / Key-Security Assessment
+
+## 8. Customer vs Owner Package Separation
+
+## 9. Secrets / Sensitive-Material Assessment
+
+## 10. Third-Party Redistribution Assessment
+Give a specific conclusion for segyio.
+
+## 11. Build / Release Inventory Assessment
+
+## 12. Installer Validation Items
+
+## 13. Remaining Security Validation Gaps
+
+## 14. Final Recommendation
+Choose one:
+
+- proceed to final installer/v1.0 hardening;
+- fix listed items first;
+- stop release.
+
+Do not modify code.
