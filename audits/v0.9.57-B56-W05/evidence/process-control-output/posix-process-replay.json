@@ -1,0 +1,20 @@
+{
+  "classification": "Linux Python source only, POSIX locking and PlainProtector; no Windows package execution",
+  "package": "/workspace/verify-v0.9.57-B56-W05/input/OandG_Workbench_v0.9.57/dist/OandG_Workbench",
+  "checkout": "/workspace/verify-v0.9.57-B56-W05/checkout",
+  "host_clock_changed": false,
+  "source_or_package_modified": false,
+  "cases": {
+    "POSIX_plain_restart_reimport_renewal_original_denied": "passed",
+    "POSIX_plain_concurrent_processes": "passed",
+    "POSIX_plain_real_lock_timeout": {
+      "expired_status": "expired",
+      "wait_seconds": 10.04487989199697,
+      "record_present_before_holder_release": true,
+      "record_present_after_holder_release": false,
+      "rollback_status": "valid",
+      "reproduced": true
+    }
+  },
+  "verdict_for_timeout_probe": "still reproducible"
+}

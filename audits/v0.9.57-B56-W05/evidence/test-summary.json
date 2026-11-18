@@ -1,0 +1,41 @@
+{
+  "repository-check": {
+    "cases": 1,
+    "failed": 0,
+    "skipped": []
+  },
+  "source": {
+    "cases": 49,
+    "failed": 0,
+    "skipped": [
+      {
+        "test": "test_dpapi_round_trip",
+        "reason": "DPAPI is Windows' (a Windows qualification item)"
+      },
+      {
+        "test": "test_an_evaluation_shows_in_the_title",
+        "reason": "needs a display"
+      },
+      {
+        "test": "test_importing_a_license_from_the_dialog_starts_the_program",
+        "reason": "needs a display"
+      },
+      {
+        "test": "test_invalid_and_expired_licenses_offer_recovery_access",
+        "reason": "needs a display"
+      },
+      {
+        "test": "test_the_dialog_is_never_a_dead_end",
+        "reason": "needs a display"
+      },
+      {
+        "test": "test_the_recovery_window_reads_exports_and_closes_without_writing",
+        "reason": "needs a display"
+      },
+      {
+        "test": "test_dpapi",
+        "reason": "DPAPI is Windows' (a Windows qualification item)"
+      }
+    ]
+  }
+}

@@ -1,5 +1,16 @@
 # Software reviews
 
+## O&G Workbench v0.9.57 — B56-W05 independent verification
+
+**Still reproducible in the verified source at ed117d8.** A lock-timeout interleaving can erase the expiry record and allow the original license after simulated rollback. Normal paths pass; native Windows extensions/DPAPI and the customer executable were not independently executed here.
+
+- [Read the focused verification report](audits/v0.9.57-B56-W05/OandG_Workbench_v0.9.57_B56-W05_Verification.md)
+- [Download PDF](https://github.com/kwgeologist/Software-reviews/raw/refs/heads/main/audits/v0.9.57-B56-W05/OandG_Workbench_v0.9.57_B56-W05_Verification.pdf)
+- [Download report, evidence and Windows helper ZIP](https://github.com/kwgeologist/Software-reviews/raw/refs/heads/main/audits/v0.9.57-B56-W05/OandG_Workbench_v0.9.57_B56-W05_Verification_Bundle.zip)
+- [Windows follow-up instructions](audits/v0.9.57-B56-W05/README_WINDOWS.md)
+
+Repository check: **1 passed**, with Git returning **913 tracked files** first. Both source files: **42 passed / 0 failed / 7 skipped**, plus 5 passing subtests. Supplied Windows results remain separately identified. All **5,932 supplied files** and the exact Git checkout remain unchanged. This verification covers only B56-W05.
+
 ## O&G Workbench v0.9.56 — Windows security/package audit
 
 Actual WindowsQualified artifacts inspected read-only: **Not ready for release — 2 release blockers, 3 material risks.** All 15 protected Windows x64 modules are present, with no demonstrated source leak or production private key in the customer package. Main blockers: bundled Python 3.12.5 below the declared release security floor, and incomplete segyio LGPL redistribution materials.

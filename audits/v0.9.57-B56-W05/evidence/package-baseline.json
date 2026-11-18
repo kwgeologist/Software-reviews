@@ -1,0 +1,38 @@
+{
+  "modules": [
+    {
+      "module": "ogcore.licensing",
+      "path": "dist/OandG_Workbench/_internal/ogcore/licensing.cp312-win_amd64.pyd",
+      "bytes": 362496,
+      "sha256": "0df011b565ec4be36f9beefc56044be6214896443850a06a1c7d587c872d2bc6",
+      "machine": "0x8664",
+      "imports": [
+        "python312.dll",
+        "KERNEL32.dll",
+        "VCRUNTIME140.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll"
+      ],
+      "matches_root_built_extension": true,
+      "new_expiry_symbols_present": true
+    },
+    {
+      "module": "ogcore.license_runtime",
+      "path": "dist/OandG_Workbench/_internal/ogcore/license_runtime.cp312-win_amd64.pyd",
+      "bytes": 168448,
+      "sha256": "d89050dca5aab2379e5e44bbdc6ab1d752bdf6e481f8553a6f01fd5944ad1e20",
+      "machine": "0x8664",
+      "imports": [
+        "python312.dll",
+        "KERNEL32.dll",
+        "VCRUNTIME140.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll"
+      ],
+      "matches_root_built_extension": true,
+      "new_expiry_symbols_present": null
+    }
+  ],
+  "package_exe_sha256": "e89baa9a53015c51b1277ce2523b8f3dfe3f55d8087818b4cc72e4c06e47f52e",
+  "package_tree_sha256_definition": "SHA256 of sorted relative path, NUL, file SHA256, LF",
+  "package_tree_files": 2303,
+  "package_tree_sha256": "b49657887becc05e46aa822d643f4bef5d31bcd8747db034e7b19223ce282700"
+}

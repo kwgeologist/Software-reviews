@@ -1,0 +1,44 @@
+{
+  "repository": "https://github.com/kwgeologist/O-G-WorkBench",
+  "head": "ed117d8bbf66d7be9e67827831fb33dae2cb7a23",
+  "git_ls_files_exit": 0,
+  "tracked_files_count": 913,
+  "tracked_list_sha256": "13d6dfe381b4fdb063267848b013871d1fa7c0ac0a8bdbfc7c3cce98ac1aece8",
+  "targeted_source_comparison": {
+    "ogcore/licensing.py": {
+      "checkout_sha256": "8cfb91145c24810bde53ceaf62799d0d1a689b88168f7b32bc34723718a6221b",
+      "archive_sha256": "8cfb91145c24810bde53ceaf62799d0d1a689b88168f7b32bc34723718a6221b",
+      "equal_after_CRLF_normalization": true
+    },
+    "ogcore/license_runtime.py": {
+      "checkout_sha256": "b9191829b6d795b00d48b2087b27c1846db4bacc2177853bc21860028e0ff79c",
+      "archive_sha256": "b9191829b6d795b00d48b2087b27c1846db4bacc2177853bc21860028e0ff79c",
+      "equal_after_CRLF_normalization": true
+    },
+    "ogcore/licensing_keys.py": {
+      "checkout_sha256": "7a932568e4425096e7daeffa631080f285c03ac84544d93b02627b4bd15e045c",
+      "archive_sha256": "7a932568e4425096e7daeffa631080f285c03ac84544d93b02627b4bd15e045c",
+      "equal_after_CRLF_normalization": true
+    },
+    "ogcore/__init__.py": {
+      "checkout_sha256": "6f63e619b0f9e38a7f140df2cc589669f1f328d427e0bee8cdf772c634c4e51b",
+      "archive_sha256": "6f63e619b0f9e38a7f140df2cc589669f1f328d427e0bee8cdf772c634c4e51b",
+      "equal_after_CRLF_normalization": true
+    },
+    "tests/test_licensing.py": {
+      "checkout_sha256": "4065e7a59ee0eeaebe0e6a8d4306417e981742cd11b470c4f59a062c6664f4e5",
+      "archive_sha256": "4065e7a59ee0eeaebe0e6a8d4306417e981742cd11b470c4f59a062c6664f4e5",
+      "equal_after_CRLF_normalization": true
+    },
+    "tests/test_v0957_fixes.py": {
+      "checkout_sha256": "35d8d849fe58513dc4f7a21cb4678329d7567ea56f6591013b61bf3639ed669f",
+      "archive_sha256": "35d8d849fe58513dc4f7a21cb4678329d7567ea56f6591013b61bf3639ed669f",
+      "equal_after_CRLF_normalization": true
+    },
+    "tools/release/build_cython.py": {
+      "checkout_sha256": "086e248a618b8a080b7190637d365c7c8d57ae780a6d447caaf19747cfab3424",
+      "archive_sha256": "086e248a618b8a080b7190637d365c7c8d57ae780a6d447caaf19747cfab3424",
+      "equal_after_CRLF_normalization": true
+    }
+  }
+}

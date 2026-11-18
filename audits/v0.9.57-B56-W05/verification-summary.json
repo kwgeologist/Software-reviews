@@ -1,0 +1,30 @@
+{
+  "finding": "B56-W05",
+  "version": "0.9.57",
+  "commit": "ed117d8bbf66d7be9e67827831fb33dae2cb7a23",
+  "verdict": "still reproducible",
+  "reproduction_scope": "Verified Linux source; concurrent lock-timeout expiry loss",
+  "native_windows_extensions_executed_here": false,
+  "customer_executable_executed_here": false,
+  "repository_check": {
+    "passed": 1,
+    "failed": 0,
+    "skipped": 0,
+    "git_ls_files_entries": 913
+  },
+  "source_files_suite": {
+    "passed": 42,
+    "failed": 0,
+    "skipped": 7,
+    "subtests": 5
+  },
+  "supplied_windows": {
+    "passed": 48,
+    "failed": 1,
+    "subtests": 5,
+    "failure": "could not launch git"
+  },
+  "archive_sha256": "ae4939dd89300cd619c276eab530d754fafa8edd30722084c5f77c376f643dec",
+  "package_tree_sha256": "b49657887becc05e46aa822d643f4bef5d31bcd8747db034e7b19223ce282700",
+  "input_files_unchanged": 5932
+}

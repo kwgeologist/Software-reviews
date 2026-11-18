@@ -1,0 +1,14 @@
+{
+  "checkout_commit": "ed117d8bbf66d7be9e67827831fb33dae2cb7a23",
+  "runtime": "Linux Python source, PlainProtector",
+  "licensing_origin": "/workspace/verify-v0.9.57-B56-W05/checkout/ogcore/licensing.py",
+  "expired_check_status": "expired",
+  "expired_write_wait_seconds": 10.001153821998741,
+  "expiry_record_present_before_old_writer_finishes": true,
+  "expiry_record_present_after_old_writer_finishes": false,
+  "rollback_status": "valid",
+  "writer_errors": [],
+  "state_or_license_tampered": false,
+  "host_clock_changed": false,
+  "ordering_hook": "paused one writer after reading state while holding its lock; production lock timeout unchanged"
+}
