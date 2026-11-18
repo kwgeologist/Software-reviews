@@ -1,0 +1,43 @@
+{
+  "package_path": "/workspace/verify-v0.9.58-B56-W05/input/OandG_Workbench",
+  "package_files": 2303,
+  "package_tree_sha256": "23ed36df39ebc4733b929f48dce45117880f94d491c62bbfe50286d134842e32",
+  "package_tree_sha256_definition": "SHA256 of sorted relative path, NUL, file SHA256, LF",
+  "package_exe_sha256": "06ca4fddebd249dfb363db1d1405428d068ebd44340ea72ed55a04714b0e21cb",
+  "modules": [
+    {
+      "module": "ogcore.licensing",
+      "path": "_internal/ogcore/licensing.cp312-win_amd64.pyd",
+      "bytes": 403968,
+      "sha256": "e56244f96c476886533a6274341ff69e390c601d05f67f8537b23afabcbd3700",
+      "machine": "0x8664",
+      "imports": [
+        "python312.dll",
+        "KERNEL32.dll",
+        "VCRUNTIME140.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll"
+      ],
+      "v0958_symbol_strings": {
+        "LicenseStateBusy": true,
+        "STATE_LOCK_TIMEOUT": true,
+        "_keep_pending": true,
+        "_merge_pending": true,
+        "flush_pending": true,
+        "record_expired": true
+      }
+    },
+    {
+      "module": "ogcore.license_runtime",
+      "path": "_internal/ogcore/license_runtime.cp312-win_amd64.pyd",
+      "bytes": 168448,
+      "sha256": "e1b0b1773754fceb00d8598039c830c904ebf0202761a6a28a4a33f694ec77d2",
+      "machine": "0x8664",
+      "imports": [
+        "python312.dll",
+        "KERNEL32.dll",
+        "VCRUNTIME140.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll"
+      ]
+    }
+  ]
+}

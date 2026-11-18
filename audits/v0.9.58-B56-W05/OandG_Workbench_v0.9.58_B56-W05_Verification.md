@@ -6,7 +6,7 @@
 
 **Windows packaged behavior still unverified. B56-W05 is not yet fully closed.** The previously demonstrated held-lock defect is corrected in the exact final source commit: the independent process regression now passes, including the older writer finishing, restart, simulated rollback, reimport, signed renewal and continued denial of the original license. No remaining reproduction was found in the tested source paths.
 
-The remaining gap is evidence for the actual Windows customer package. The attachment could not be transferred into this environment because it exceeds the available file-transfer tool's **32 MiB limit**. No customer ZIP hash, extension hash, package inspection or packaged execution is claimed for this recheck. A request for a GitHub Release asset link to the same ZIP has been sent. This is a transfer limitation of the audit environment, not evidence that the uploaded ZIP is invalid.
+The customer package is now independently inspected: the published **v0.958-WindowsCustomer** release ZIP downloaded successfully, its SHA-256 matches GitHub's displayed digest, and ZIP CRC passed. The remaining gap is **native execution with the exact pinned Windows package extensions and/or the frozen customer executable**. This Linux audit did not execute either. The earlier attachment-transfer blocker is resolved by the release asset; the supplied Windows results remain separate evidence.
 
 ## Verified inputs and provenance
 
@@ -14,8 +14,18 @@ The remaining gap is evidence for the actual Windows customer package. The attac
 - Branch fetched: release/1.0; exact detached worktree: **104bf4f32cbc66ab2f01ca865f388ea016cc7922**.
 - Checkout: /workspace/verify-v0.9.58-B56-W05/checkout.
 - git ls-files -z succeeded with exit 0 and **914 nonempty tracked entries** before accepting the repository test. The tracked list and file hashes are in the evidence.
-- Requested customer input: **OandG_Workbench_v0.9.58_WindowsCustomer.zip**, uploaded file ID file_00000000d9a08212b7d5f10802a76c14. Transfer failed before contents could be accessed. No previous v0.9.57 package was substituted.
-- Packaged ogcore/licensing and ogcore/license_runtime extensions: **not inspected, hashes pending**. Old hashes are not reused.
+- Actual customer input: **OandG_Workbench_v0.9.58_WindowsCustomer.zip**, **156,107,560 bytes**, downloaded from https://github.com/kwgeologist/Software-reviews/releases/download/v0.958-WindowsCustomer/OandG_Workbench_v0.9.58_WindowsCustomer.zip.
+- Archive SHA-256: **355d4caee6bf2eda2796662aec3790bf8f8f399d51fafb0ba078fde12b1d1914**; matches the published release digest. ZIP CRC: passed. No previous v0.9.57 artifact was substituted.
+- Customer root in the ZIP: **OandG_Workbench/**; extracted as /workspace/verify-v0.9.58-B56-W05/input/OandG_Workbench. The customer-only ZIP contains no source checkout or Git metadata. The release tag points to the audit repository, so it is not evidence of Workbench source provenance; the source was independently verified against the actual Workbench Git checkout.
+- Customer tree: **2,303 files**; deterministic tree SHA-256 **23ed36df39ebc4733b929f48dce45117880f94d491c62bbfe50286d134842e32** (sorted relative path + NUL + each file SHA256 + LF, then SHA256).
+- Customer OandG_Workbench.exe SHA-256: **06ca4fddebd249dfb363db1d1405428d068ebd44340ea72ed55a04714b0e21cb**.
+
+**Packaged extensions inspected:**
+
+- _internal/ogcore/licensing.cp312-win_amd64.pyd — **403,968 bytes**, SHA-256 **e56244f96c476886533a6274341ff69e390c601d05f67f8537b23afabcbd3700**.
+- _internal/ogcore/license_runtime.cp312-win_amd64.pyd — **168,448 bytes**, SHA-256 **e1b0b1773754fceb00d8598039c830c904ebf0202761a6a28a4a33f694ec77d2**.
+
+Both are PE machine 0x8664 (Windows x64), importing python312.dll. licensing.pyd contains the new LicenseStateBusy, STATE_LOCK_TIMEOUT, _keep_pending, _merge_pending, flush_pending and record_expired symbol strings. Both hashes differ from v0.9.57. Static symbol presence is consistent with the new fix but is not a runtime behavior test or a reproducible-build proof linking native bytes to the checkout. The updated Windows helper now pins these exact release-PYD hashes.
 
 ## Independent results
 
@@ -76,12 +86,12 @@ The source control's package argument is an unused label inherited from the earl
 
 An updated Windows helper, **windows_verify_B56_W05_v0958.py**, is included with README_WINDOWS.md and the exact PowerShell command. It pins relevant source/support/test files to 104bf4f, refuses source fallback for both licensing modules, records loaded-module origins and hashes, repeats the held-lock sequence under real Windows locking/DPAPI, and reruns all three licensing files with the customer-package PYDs preloaded in pytest and its child interpreters. Only the independently passed Git-only case is deselected.
 
-Because the ZIP is not yet independently accessible, this helper **records hashes on the Windows machine rather than claiming a previously verified package digest**. Those records must subsequently be matched to the same supplied customer ZIP. It has been syntax-checked, but has not been executed on Windows here. An actual native helper pass is still needed; expected counts are not fabricated as results.
+The helper now **requires the exact two PYD hashes independently inspected in the customer release ZIP**, refusing a different build or a source-module fallback. It records parent/child module origins and hashes. The independent ZIP and PE inspections are not counted as native runtime passes. It has been syntax-checked, but has not been executed on Windows here. An actual native helper pass is still needed; expected counts are not fabricated as results.
 
 Return the output folder's summary, PYD hashes, origin records, pytest log and XML. For an actual customer executable clock test, use only a disposable Windows VM with the unchanged package, existing embedded trust, legitimate production-signed test licenses and retained profile/disk/DPAPI state. Do not roll back the VM disk between expiry and clock rollback, change the real PC clock, or inject alternate trust. Compiled extensions in a Python test host and the customer executable are separate verification layers.
 
 ## Read-only integrity and disposition
 
-All **914 tracked source files remain byte-identical** and the final checkout is clean at 104bf4f32cbc66ab2f01ca865f388ea016cc7922. No code, tests, source licensing keys, customer binaries, licenses or release artifacts were modified. The customer ZIP was not accessible to modify. Only this report, audit evidence and the external follow-up helper are published to Software-reviews.
+All **914 tracked source files and all 2,303 extracted customer files remain byte-identical**; the final checkout is clean at 104bf4f32cbc66ab2f01ca865f388ea016cc7922. No code, tests, source licensing keys, customer binaries, licenses or release artifacts were modified. The original ZIP hash was rechecked after inspection and is unchanged. Only this report, audit evidence and the external follow-up helper are published to Software-reviews.
 
-**Disposition:** source fix verified for B56-W05, including the independent held-lock regression; full Windows customer-package closure remains pending artifact inspection and native origin-confirmed results. No other release findings were audited.
+**Disposition:** source fix verified for B56-W05, including the independent held-lock regression; actual Windows customer-package artifact inspection is complete, while closure remains pending native origin-confirmed runtime results. The customer executable has not been exercised in a disposable VM. No other release findings were audited.

@@ -1,0 +1,7 @@
+{
+  "release_tag": "v0.958-WindowsCustomer",
+  "release_url": "https://github.com/kwgeologist/Software-reviews/releases/tag/v0.958-WindowsCustomer",
+  "asset_url": "https://github.com/kwgeologist/Software-reviews/releases/download/v0.958-WindowsCustomer/OandG_Workbench_v0.9.58_WindowsCustomer.zip",
+  "release_displayed_sha256": "355d4caee6bf2eda2796662aec3790bf8f8f399d51fafb0ba078fde12b1d1914",
+  "note": "Release tag is an audit-repository tag, not Workbench commit provenance; Workbench source independently pinned to 104bf4f32cbc66ab2f01ca865f388ea016cc7922"
+}

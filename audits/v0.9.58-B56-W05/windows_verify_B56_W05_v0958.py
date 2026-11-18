@@ -6,7 +6,7 @@ from pathlib import Path
 import argparse,sys,os,json,hashlib,subprocess,tempfile,time,traceback
 from contextlib import contextmanager
 from datetime import datetime,timedelta,timezone
-EXPECTED={}  # v0.9.58 hashes recorded locally; customer ZIP transfer pending independent inspection
+EXPECTED={'licensing': 'e56244f96c476886533a6274341ff69e390c601d05f67f8537b23afabcbd3700', 'license_runtime': 'e1b0b1773754fceb00d8598039c830c904ebf0202761a6a28a4a33f694ec77d2'}  # Independently inspected customer release ZIP
 SOURCE_HASHES={'ogcore/licensing.py': 'e8b1abebfae454d0154b3fb3753cd4e8ddd79b7eaa3a39003cb8952472ee0f28', 'ogcore/license_runtime.py': 'b9191829b6d795b00d48b2087b27c1846db4bacc2177853bc21860028e0ff79c', 'ogcore/licensing_keys.py': '7a932568e4425096e7daeffa631080f285c03ac84544d93b02627b4bd15e045c', 'ogcore/__init__.py': '19819cda2e8a3a3609c021729d469a5597e1e3d61a50871daa693248497757f4', 'ogcore/safeio.py': '3cd313c10bba613815d0ad1496d95a6c5658210503cb69eb88cebf8ecbd6230d', 'ogcore/userdata.py': 'bb773050349d1e16f7a436be9b8cde1f980a396ad5153166af49cc9ca3537949', 'tests/test_licensing.py': '4065e7a59ee0eeaebe0e6a8d4306417e981742cd11b470c4f59a062c6664f4e5', 'tests/test_v0957_fixes.py': '35d8d849fe58513dc4f7a21cb4678329d7567ea56f6591013b61bf3639ed669f', 'tests/test_v0958_fixes.py': '7ff101d09caa5d79bdbc322f54f5e3e94ac0ddfd9d9bfc61cbdc0b9cbb5c4ea3'}
 if not __debug__:raise SystemExit('Run without Python optimization (-O/PYTHONOPTIMIZE).')
 BEFORE=datetime(2027,2,1,tzinfo=timezone.utc);AFTER=datetime(2027,3,15,tzinfo=timezone.utc)
@@ -34,10 +34,9 @@ if O.is_relative_to(C) or O.is_relative_to(D):raise SystemExit('Output must be o
 O.mkdir(parents=True,exist_ok=True)
 if sys.platform!='win32':raise SystemExit('Native Windows required; this helper will not claim a Linux/emulation pass.')
 if sys.version_info[:2]!=(3,12):raise SystemExit('Use py -3.12: the pinned package extensions are cp312-win_amd64.')
-EXPECTED={stem:sha(D/'_internal/ogcore'/f'{stem}.cp312-win_amd64.pyd') for stem in ['licensing','license_runtime']}
 L,LR=bootstrap(C,D,O)
 assert L.STATE_LOCK_TIMEOUT==10.0 and hasattr(L,'LicenseStateBusy'),'Missing v0.9.58 lock fix'
-(O/'package-licensing-hashes.json').write_text(json.dumps({'independently_pinned_to_uploaded_zip':False,'recorded_on_windows_host':EXPECTED},indent=2))
+(O/'package-licensing-hashes.json').write_text(json.dumps({'independently_pinned_to_release_zip':True,'archive_sha256':'355d4caee6bf2eda2796662aec3790bf8f8f399d51fafb0ba078fde12b1d1914','recorded_on_windows_host':EXPECTED},indent=2))
 def clock(path):return L.ClockState(path,L.DpapiProtector())
 def check(path,data,keys,when):return L.check('geo',now=when,clock=clock(path),license_result=L.verify_bytes(data,now=when,keys=keys))
 if a.role!='parent':
@@ -59,7 +58,7 @@ if a.role!='parent':
   with original(path,*args,**kw)as h:yield h
  safeio.atomic_write=held
  clock(state).remember(BEFORE+timedelta(minutes=1));raise SystemExit(0)
-result={'classification':'Windows compiled-extension tests; customer EXE not executed; extension hashes recorded locally, uploaded ZIP not independently inspected','package':str(D),'checkout':str(C),'host_clock_changed':False,'source_or_package_modified':False,'cases':{}}
+result={'classification':'Windows compiled-extension tests; customer EXE not executed; extension hashes pinned to independently inspected release ZIP','package':str(D),'checkout':str(C),'host_clock_changed':False,'source_or_package_modified':False,'cases':{}}
 try:
  with tempfile.TemporaryDirectory(prefix='B56-W05-')as td:
   T=Path(td);os.environ.update(PYTHONDONTWRITEBYTECODE='1',LOCALAPPDATA=str(T/'Local'),APPDATA=str(T/'Roaming'))
