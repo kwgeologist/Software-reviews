@@ -1,5 +1,16 @@
 # Software reviews
 
+## O&G Workbench v0.9.58 — B56-W05 recheck
+
+**Source held-lock regression passed at 104bf4f; Windows packaged behavior still unverified.** Expiry survives the older writer finishing, restart, simulated rollback and reimport; renewal works while the original remains denied. The attached WindowsCustomer ZIP exceeded the audit environment's 32 MiB transfer limit, so package/PYD hashes and packaged execution remain pending. A GitHub Release asset link to the same ZIP is needed.
+
+- [Read the focused report](audits/v0.9.58-B56-W05/OandG_Workbench_v0.9.58_B56-W05_Verification.md)
+- [Download PDF](https://github.com/kwgeologist/Software-reviews/raw/refs/heads/main/audits/v0.9.58-B56-W05/OandG_Workbench_v0.9.58_B56-W05_Verification.pdf)
+- [Download report, evidence and updated Windows helper](https://github.com/kwgeologist/Software-reviews/raw/refs/heads/main/audits/v0.9.58-B56-W05/OandG_Workbench_v0.9.58_B56-W05_Verification_Bundle.zip)
+- [Exact Windows follow-up command](audits/v0.9.58-B56-W05/README_WINDOWS.md)
+
+Independent source suite: **49 passed, 8 skipped, 5 passing subtests**. Repository check: **1 passed**, with **914 tracked files** verified first. Supplied Windows evidence: **56 passed, 1 deselected, 5 passing subtests**, zero failures/skips. All 914 tracked source files remain unchanged. Review limited to B56-W05.
+
 ## O&G Workbench v0.9.57 — B56-W05 independent verification
 
 **Still reproducible in the verified source at ed117d8.** A lock-timeout interleaving can erase the expiry record and allow the original license after simulated rollback. Normal paths pass; native Windows extensions/DPAPI and the customer executable were not independently executed here.

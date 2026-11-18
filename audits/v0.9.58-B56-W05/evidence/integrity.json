@@ -1,0 +1,8 @@
+{
+  "checkout_head": "104bf4f32cbc66ab2f01ca865f388ea016cc7922",
+  "tracked_files": 914,
+  "changed": [],
+  "git_status_porcelain": "",
+  "attachment_transfer": "failed: file exceeds executor transfer limit of 32 MiB",
+  "customer_package_files_accessed": false
+}

@@ -1,0 +1,29 @@
+{
+  "finding": "B56-W05",
+  "version": "0.9.58",
+  "commit": "104bf4f32cbc66ab2f01ca865f388ea016cc7922",
+  "verdict": "Windows packaged behavior still unverified",
+  "source_held_lock_regression": "passed",
+  "source_tests": {
+    "passed": 49,
+    "failed": 0,
+    "skipped": 8,
+    "passing_subtests": 5
+  },
+  "repository_check": {
+    "passed": 1,
+    "failed": 0,
+    "skipped": 0,
+    "git_ls_files_count": 914
+  },
+  "supplied_windows": {
+    "passed": 56,
+    "failed": 0,
+    "skipped": 0,
+    "deselected": 1,
+    "passing_subtests": 5
+  },
+  "package_inspection": "blocked by attachment transfer limit",
+  "packaged_extensions_executed_here": false,
+  "customer_executable_executed_here": false
+}

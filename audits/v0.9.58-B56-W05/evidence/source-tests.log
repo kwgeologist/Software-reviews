@@ -1,0 +1,20 @@
+..................s...ssss....s............s...........s.           [100%]
+=============================== warnings summary ===============================
+../../../opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/anyio/pytest_plugin.py:14
+  /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/anyio/pytest_plugin.py:14: PytestRemovedIn10Warning: _pytest.python.CallSpec2 has been renamed to CallSpec.
+  The CallSpec2 alias will be removed in pytest 10.
+  Update imports to use CallSpec instead.
+  See https://docs.pytest.org/en/stable/deprecations.html#callspec2-renamed
+    from _pytest.python import CallSpec2
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+SKIPPED [1] tests/test_licensing.py:384: DPAPI is Windows' (a Windows qualification item)
+SKIPPED [1] tests/test_licensing.py:467: needs a display
+SKIPPED [1] tests/test_licensing.py:451: needs a display
+SKIPPED [1] tests/test_licensing.py:412: needs a display
+SKIPPED [1] tests/test_licensing.py:432: needs a display
+SKIPPED [1] tests/test_licensing.py:547: needs a display
+SKIPPED [1] tests/test_v0957_fixes.py:268: DPAPI is Windows' (a Windows qualification item)
+SKIPPED [1] tests/test_v0958_fixes.py:254: DPAPI is Windows' (a Windows qualification item)
+49 passed, 8 skipped, 1 warning, 5 subtests passed in 50.05s

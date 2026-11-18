@@ -1,0 +1,27 @@
+{
+  "classification": "Linux Python source only, POSIX locking and PlainProtector; no Windows package execution",
+  "package": "/workspace/verify-v0.9.58-B56-W05/package-not-yet-accessible",
+  "checkout": "/workspace/verify-v0.9.58-B56-W05/checkout",
+  "host_clock_changed": false,
+  "source_or_package_modified": false,
+  "cases": {
+    "POSIX_plain_restart_reimport_renewal_original_denied": "passed",
+    "POSIX_plain_concurrent_processes": "passed",
+    "POSIX_plain_real_lock_timeout": {
+      "expired_status": "expired",
+      "detail": "The license expired on 2027-03-01 00:00 UTC. This computer could not save the expiry in its licensing state just now (the licensing state is in use by another program (its lock was not free after 10 s)); it is kept beside it and saved there at the next check. The license stays denied.",
+      "wait_seconds": 10.046658656996442,
+      "record_present_before_holder_release": true,
+      "record_present_after_holder_release": true,
+      "restart_status": "expired",
+      "rollback_status": "expired",
+      "reimport_status": "expired",
+      "renewal_status": "valid",
+      "original_after_renewal": "expired",
+      "renewal_check_status": "valid",
+      "pending_files_after_merge": 0,
+      "reproduced": false
+    }
+  },
+  "verdict_for_timeout_probe": "held-lock regression passed"
+}
