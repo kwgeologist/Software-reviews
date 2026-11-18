@@ -1,0 +1,141 @@
+{
+  "verdict": "closed for the shipped Windows licensing extensions",
+  "source_commit": "104bf4f32cbc66ab2f01ca865f388ea016cc7922",
+  "results_zip_sha256": "a7ce052bc7d7a833c39c29ffab31c8e858aa69a3941ad3d3846e183710dc3c11",
+  "all_origin_records_match": true,
+  "helper_origin_records": 8,
+  "pytest_origin_records": 15,
+  "origins": [
+    {
+      "file": "origins-31748.json",
+      "module_hashes_match": true,
+      "package_paths_match": true
+    },
+    {
+      "file": "origins-35572.json",
+      "module_hashes_match": true,
+      "package_paths_match": true
+    },
+    {
+      "file": "origins-38180.json",
+      "module_hashes_match": true,
+      "package_paths_match": true
+    },
+    {
+      "file": "origins-39784.json",
+      "module_hashes_match": true,
+      "package_paths_match": true
+    },
+    {
+      "file": "origins-41584.json",
+      "module_hashes_match": true,
+      "package_paths_match": true
+    },
+    {
+      "file": "origins-4936.json",
+      "module_hashes_match": true,
+      "package_paths_match": true
+    },
+    {
+      "file": "origins-69232.json",
+      "module_hashes_match": true,
+      "package_paths_match": true
+    },
+    {
+      "file": "origins-9596.json",
+      "module_hashes_match": true,
+      "package_paths_match": true
+    },
+    {
+      "file": "pytest-origins-11352.json",
+      "module_hashes_match": true,
+      "package_paths_match": true
+    },
+    {
+      "file": "pytest-origins-18168.json",
+      "module_hashes_match": true,
+      "package_paths_match": true
+    },
+    {
+      "file": "pytest-origins-18888.json",
+      "module_hashes_match": true,
+      "package_paths_match": true
+    },
+    {
+      "file": "pytest-origins-24256.json",
+      "module_hashes_match": true,
+      "package_paths_match": true
+    },
+    {
+      "file": "pytest-origins-30968.json",
+      "module_hashes_match": true,
+      "package_paths_match": true
+    },
+    {
+      "file": "pytest-origins-33484.json",
+      "module_hashes_match": true,
+      "package_paths_match": true
+    },
+    {
+      "file": "pytest-origins-39204.json",
+      "module_hashes_match": true,
+      "package_paths_match": true
+    },
+    {
+      "file": "pytest-origins-42496.json",
+      "module_hashes_match": true,
+      "package_paths_match": true
+    },
+    {
+      "file": "pytest-origins-48292.json",
+      "module_hashes_match": true,
+      "package_paths_match": true
+    },
+    {
+      "file": "pytest-origins-48500.json",
+      "module_hashes_match": true,
+      "package_paths_match": true
+    },
+    {
+      "file": "pytest-origins-56508.json",
+      "module_hashes_match": true,
+      "package_paths_match": true
+    },
+    {
+      "file": "pytest-origins-56652.json",
+      "module_hashes_match": true,
+      "package_paths_match": true
+    },
+    {
+      "file": "pytest-origins-57456.json",
+      "module_hashes_match": true,
+      "package_paths_match": true
+    },
+    {
+      "file": "pytest-origins-63172.json",
+      "module_hashes_match": true,
+      "package_paths_match": true
+    },
+    {
+      "file": "pytest-origins-7904.json",
+      "module_hashes_match": true,
+      "package_paths_match": true
+    }
+  ],
+  "timeout_seconds": 10.015999999945052,
+  "all_requested_lifecycle_checks_passed": true,
+  "pytest": {
+    "passed": 56,
+    "passing_subtests": 5,
+    "deselected": 1,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 0,
+    "exit_code": 0,
+    "xml_suite_tests": 61,
+    "xml_testcase_elements": 56,
+    "explanation": "Suite count 61 comprises 56 tests plus five passing subtests; XML contains 56 testcase elements."
+  },
+  "customer_executable_executed": false,
+  "evidence_provenance": "User-executed Windows run; independently reconciled here against prior customer ZIP inspection, not rerun on this Linux host."
+}

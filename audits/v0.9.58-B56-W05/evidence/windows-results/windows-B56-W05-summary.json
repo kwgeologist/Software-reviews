@@ -1,0 +1,45 @@
+{
+  "classification": "Windows compiled-extension tests; customer EXE not executed; extension hashes pinned to independently inspected release ZIP",
+  "package": "D:\\OandG_Workbench_v0.9.58\\dist\\OandG_Workbench",
+  "checkout": "D:\\OandG_Workbench_v0.9.58",
+  "host_clock_changed": false,
+  "source_or_package_modified": false,
+  "cases": {
+    "DPAPI_restart_reimport_renewal_original_denied": "passed",
+    "DPAPI_concurrent_processes": "passed",
+    "DPAPI_real_lock_timeout": {
+      "expired_status": "expired",
+      "detail": "The license expired on 2027-03-01 00:00 UTC. This computer could not save the expiry in its licensing state just now (the licensing state is in use by another program (its lock was not free after 10 s)); it is kept beside it and saved there at the next check. The license stays denied.",
+      "wait_seconds": 10.015999999945052,
+      "record_present_before_holder_release": true,
+      "record_present_after_holder_release": true,
+      "restart_status": "expired",
+      "rollback_status": "expired",
+      "reimport_status": "expired",
+      "renewal_status": "valid",
+      "original_after_renewal": "expired",
+      "renewal_check_status": "valid",
+      "pending_files_after_merge": 0,
+      "reproduced": false
+    }
+  },
+  "pytest_command": [
+    "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+    "-m",
+    "pytest",
+    "-q",
+    "-p",
+    "no:cacheprovider",
+    "D:\\OandG_Workbench_v0.9.58\\tests\\test_licensing.py",
+    "D:\\OandG_Workbench_v0.9.58\\tests\\test_v0957_fixes.py",
+    "D:\\OandG_Workbench_v0.9.58\\tests\\test_v0958_fixes.py",
+    "-k",
+    "not test_the_manager_never_enters_a_program_and_no_private_key_is_in_the_repository",
+    "--junitxml=C:\\Users\\Admin\\Desktop\\B56-W05-v0958-results\\windows-compiled-results.xml"
+  ],
+  "pytest_exit_code": 0,
+  "pytest_summary": [
+    "56 passed, 1 deselected, 5 subtests passed in 73.22s (0:01:13)"
+  ],
+  "verdict_for_timeout_probe": "held-lock regression passed"
+}

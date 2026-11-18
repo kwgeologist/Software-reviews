@@ -1,0 +1,16 @@
+{
+  "pid": 69232,
+  "python": "3.12.5 (tags/v3.12.5:ff3bc82, Aug  6 2024, 20:45:27) [MSC v.1940 64 bit (AMD64)]",
+  "modules": {
+    "licensing": {
+      "path": "D:\\OandG_Workbench_v0.9.58\\dist\\OandG_Workbench\\_internal\\ogcore\\licensing.cp312-win_amd64.pyd",
+      "sha256": "e56244f96c476886533a6274341ff69e390c601d05f67f8537b23afabcbd3700",
+      "loader": "ExtensionFileLoader"
+    },
+    "license_runtime": {
+      "path": "D:\\OandG_Workbench_v0.9.58\\dist\\OandG_Workbench\\_internal\\ogcore\\license_runtime.cp312-win_amd64.pyd",
+      "sha256": "e1b0b1773754fceb00d8598039c830c904ebf0202761a6a28a4a33f694ec77d2",
+      "loader": "ExtensionFileLoader"
+    }
+  }
+}

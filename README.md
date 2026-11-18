@@ -1,15 +1,15 @@
 # Software reviews
 
-## O&G Workbench v0.9.58 — B56-W05 recheck
+## O&G Workbench v0.9.58 — B56-W05 closed for shipped licensing extensions
 
-**Source held-lock regression passed at 104bf4f; Windows packaged behavior still unverified.** Expiry survives the older writer finishing, restart, simulated rollback and reimport; renewal works while the original remains denied. The actual WindowsCustomer release ZIP is now independently downloaded, CRC-checked and hashed; both packaged licensing PYDs were inspected and the updated helper pins their exact hashes. Native packaged runtime verification remains pending.
+**Closed at 104bf4f for the shipped Windows licensing extensions.** The user's native Windows evidence was independently reconciled: all 8 helper and 15 pytest process-origin records match both inspected customer PYD hashes. The original held-lock regression crossed the production timeout (10.016 s); expiry survived the older writer, restart, rollback and reimport. Renewal worked while the original stayed expired; pending expiry merged and DPAPI/concurrency checks passed.
 
-- [Read the focused report](audits/v0.9.58-B56-W05/OandG_Workbench_v0.9.58_B56-W05_Verification.md)
+- [Read the focused closure report](audits/v0.9.58-B56-W05/OandG_Workbench_v0.9.58_B56-W05_Verification.md)
 - [Download PDF](https://github.com/kwgeologist/Software-reviews/raw/refs/heads/main/audits/v0.9.58-B56-W05/OandG_Workbench_v0.9.58_B56-W05_Verification.pdf)
-- [Download report, evidence and updated Windows helper](https://github.com/kwgeologist/Software-reviews/raw/refs/heads/main/audits/v0.9.58-B56-W05/OandG_Workbench_v0.9.58_B56-W05_Verification_Bundle.zip)
-- [Exact Windows follow-up command](audits/v0.9.58-B56-W05/README_WINDOWS.md)
+- [Download report, evidence and verification helper](https://github.com/kwgeologist/Software-reviews/raw/refs/heads/main/audits/v0.9.58-B56-W05/OandG_Workbench_v0.9.58_B56-W05_Verification_Bundle.zip)
+- [Windows evidence reconciliation](audits/v0.9.58-B56-W05/evidence/windows-evidence-reconciliation.json)
 
-Independent source suite: **49 passed, 8 skipped, 5 passing subtests**. Repository check: **1 passed**, with **914 tracked files** verified first. Supplied Windows evidence: **56 passed, 1 deselected, 5 passing subtests**, zero failures/skips. All 914 tracked source files and 2,303 customer files remain unchanged. Review limited to B56-W05.
+Accepted Windows result: **56 passed, 1 Git-only test deselected, 5 passing subtests, zero failures/skips, pytest exit 0**. The repository check passed independently after Git returned 914 tracked files. All 914 source files and 2,303 customer files remain unchanged. **Frozen customer EXE execution remains untested separately**; no further native run is needed for this scoped extension-level closure. Other release findings are unaffected.
 
 ## O&G Workbench v0.9.57 — B56-W05 independent verification
 

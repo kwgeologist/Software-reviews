@@ -4,9 +4,11 @@
 
 ## Verdict and closure status
 
-**Windows packaged behavior still unverified. B56-W05 is not yet fully closed.** The previously demonstrated held-lock defect is corrected in the exact final source commit: the independent process regression now passes, including the older writer finishing, restart, simulated rollback, reimport, signed renewal and continued denial of the original license. No remaining reproduction was found in the tested source paths.
+**B56-W05 closed for the shipped Windows licensing extensions** at commit **104bf4f32cbc66ab2f01ca865f388ea016cc7922**. The supplied Windows results now establish that the exact two licensing PYDs independently inspected in the v0.9.58 customer ZIP passed the original held-lock regression with real Windows locking and DPAPI, plus restart, simulated rollback, reimport, signed renewal and continued original-license denial.
 
-The customer package is now independently inspected: the published **v0.958-WindowsCustomer** release ZIP downloaded successfully, its SHA-256 matches GitHub's displayed digest, and ZIP CRC passed. The remaining gap is **native execution with the exact pinned Windows package extensions and/or the frozen customer executable**. This Linux audit did not execute either. The earlier attachment-transfer blocker is resolved by the release asset; the supplied Windows results remain separate evidence.
+The Windows run was executed by the user and independently reconciled here against the prior package inspection, known verification helper, all module-origin records, summary, pytest log and XML. It was not rerun on this Linux audit host. No conflicting artifact hash or test outcome was found.
+
+**Frozen customer EXE execution remains untested.** This is a separate coverage boundary, not a blocker for closure of this specific extension-level expiry-persistence finding. The completed checks exercise the affected shipped implementation and Windows persistence mechanisms directly. They do not establish frozen-EXE startup/dispatch or integration with its embedded production trust. No additional EXE-specific expiry defect is demonstrated; this closure is not a claim of full executable or release qualification. No further Windows run is requested for this scoped disposition.
 
 ## Verified inputs and provenance
 
@@ -34,17 +36,25 @@ Both are PE machine 0x8664 (Windows x64), importing python312.dll. licensing.pyd
 - Independent ordinary source restart/reimport/renewal/original-denial scenario: **passed**.
 - Independent ordinary source concurrent-process scenario: **passed**.
 - Independent real-timeout held-lock source regression: **passed**, wait **10.046658656996442 seconds**. Production timeout remained ten seconds.
-- Native Windows packaged-extension checks performed here: **none**. Customer executable checks performed here: **none**. Unexecuted platform checks are not counted as passes.
+- Native Windows packaged-extension checks: **user-executed results independently reconciled and accepted below**. No native Windows process was launched on this Linux host. Customer executable checks: **none**.
 
 These independently executed results used Python 3.12 on Linux, pure-Python source, POSIX process locking and PlainProtector. They establish the source counterexample is fixed; they do not substitute for Windows DPAPI/locking or frozen-executable validation.
 
-## Supplied Windows evidence
+## Reconciled Windows evidence
 
-The user reports **56 passed, 0 failed, 0 skipped, 1 Git-only test deselected, 5 passing subtests**. The attached screenshot shows the three licensing files, 56 passed / 1 deselected / 5 subtests passed in 75.72 seconds, and a successful Windows build.
+Input: **B56-W05-v0958-results.zip**, **13,913 bytes**, SHA-256 **a7ce052bc7d7a833c39c29ffab31c8e858aa69a3941ad3d3846e183710dc3c11**. ZIP CRC passed. The 27 supplied files are preserved under evidence/windows-results; the original small results archive is included as evidence. These are test records, not application or production-license files.
 
-The supplied command was: py -3.12 -m pytest -q tests/test_licensing.py tests/test_v0957_fixes.py tests/test_v0958_fixes.py --tb=short -rs -k "not test_the_manager_never_enters_a_program_and_no_private_key_is_in_the_repository".
+**Module provenance:** package-licensing-hashes.json names the independently inspected customer archive hash and both exact PYD hashes listed above. Every one of **8 origins-*.json records** and **15 pytest-origins-*.json records** names both modules under **D:\OandG_Workbench_v0.9.58\dist\OandG_Workbench\_internal\ogcore** and matches both prior SHA-256 values. The eight helper records explicitly identify ExtensionFileLoader and Python 3.12.5 Windows AMD64. The known pytest bootstrap checks ExtensionFileLoader before writing its origin records. No inspected record reports a .py source fallback, different directory or different binary hash. This covers the helper's parent/child process records and pytest's process records.
 
-This is supplied Windows evidence, not a run independently observed here. The screenshot does not capture actual licensing module origins/hashes, so it does not independently establish that those tests loaded the exact extensions from the customer ZIP. The owner's licensing-tool self-test shown in the build output is not an actual customer EXE clock-rollback test.
+**Held-lock behavior:** windows-B56-W05-summary.json records a **10.015999999945052-second** wait, crossing the unchanged production ten-second timeout. The record was present before the older writer resumed and still present after it finished. The original payload's restart, rollback and reimport statuses are all **expired**. Renewal installation and its subsequent check are **valid**; the original after renewal remains **expired**. pending_files_after_merge is **0**. The known helper's ordering and these statuses establish that the pending expiry survived and was merged into persistent state. reproduced is false and the timeout verdict is held-lock regression passed.
+
+**Windows-specific checks:** DPAPI_restart_reimport_renewal_original_denied and DPAPI_concurrent_processes both report **passed**, with no error or traceback. The helper uses real Windows DPAPI and OS locks, isolated test state and simulated dates. host_clock_changed and source_or_package_modified are false. This did not change the real PC clock or customer trust.
+
+**Test reconciliation:** windows-compiled-tests.log and the summary agree exactly: **56 passed, 1 deselected, 5 subtests passed in 73.22 seconds**. The summary records pytest_exit_code **0**. The XML contains **56 testcase elements**, **zero failures, errors or skips**; its suite count is **61**, accounting for the 56 tests plus five passing subtests. All eight v0.9.58 cases are represented. The Git-only case is absent from XML as expected from the exact -k deselection in the recorded command. It had already passed separately in the verified checkout after Git returned 914 tracked entries. Do not count the XML subtest-inclusive suite total as 61 independent top-level passes, or add the separate overlapping repository test to the source-suite pass count.
+
+The earlier supplied screenshot's 56-pass run in 75.72 seconds remains historical supplied evidence. The accepted origin-confirmed follow-up is the 73.22-second run in this results ZIP. Neither is an executable-level clock test.
+
+Independent reconciliation command: **python /workspace/verify-v0.9.58-B56-W05/reconcile_windows_evidence.py**. Exit 0. The script checks all recorded paths/hashes and the required lifecycle/count assertions; its structured result is evidence/windows-evidence-reconciliation.json. It reads the supplied Windows records without executing instructions from them.
 
 ## What changed and why the regression now passes
 
@@ -82,16 +92,18 @@ PYTHONDONTWRITEBYTECODE=1 /workspace/audit-v0.9.56-windows/tooling/bin/python /w
 
 The source control's package argument is an unused label inherited from the earlier harness; that nonexistent path was not opened, imported or treated as an inspected artifact. Its module-origin logs identify the exact source checkout. Probe exit code: 0. Tests and all probes were kept outside the application source/package; bytecode/cache writes were disabled for test execution.
 
-## Native follow-up and next closure evidence
+## Accepted native command and execution boundary
 
-An updated Windows helper, **windows_verify_B56_W05_v0958.py**, is included with README_WINDOWS.md and the exact PowerShell command. It pins relevant source/support/test files to 104bf4f, refuses source fallback for both licensing modules, records loaded-module origins and hashes, repeats the held-lock sequence under real Windows locking/DPAPI, and reruns all three licensing files with the customer-package PYDs preloaded in pytest and its child interpreters. Only the independently passed Git-only case is deselected.
+The included **windows_verify_B56_W05_v0958.py** pins relevant source/support/test files to 104bf4f, requires the two exact release-PYD hashes, refuses source fallback, and records parent/child module origins. Its Windows run now supplied and reconciled used the following command (output location and source/package paths agree with the records):
 
-The helper now **requires the exact two PYD hashes independently inspected in the customer release ZIP**, refusing a different build or a source-module fallback. It records parent/child module origins and hashes. The independent ZIP and PE inspections are not counted as native runtime passes. It has been syntax-checked, but has not been executed on Windows here. An actual native helper pass is still needed; expected counts are not fabricated as results.
+py -3.12 -B .\windows_verify_B56_W05_v0958.py --checkout "D:\OandG_Workbench_v0.9.58" --package "D:\OandG_Workbench_v0.9.58\dist\OandG_Workbench" --out "C:\Users\Admin\Desktop\B56-W05-v0958-results"
 
-Return the output folder's summary, PYD hashes, origin records, pytest log and XML. For an actual customer executable clock test, use only a disposable Windows VM with the unchanged package, existing embedded trust, legitimate production-signed test licenses and retained profile/disk/DPAPI state. Do not roll back the VM disk between expiry and clock rollback, change the real PC clock, or inject alternate trust. Compiled extensions in a Python test host and the customer executable are separate verification layers.
+The recorded pytest subprocess uses C:\Users\Admin\AppData\Local\Programs\Python\Python312\python.exe -m pytest -q -p no:cacheprovider, the three full-path licensing test files, -k "not test_the_manager_never_enters_a_program_and_no_private_key_is_in_the_repository", and --junitxml=C:\Users\Admin\Desktop\B56-W05-v0958-results\windows-compiled-results.xml. The exact argument array is preserved in the supplied summary. The summary records pytest exit 0 and successful helper cases with no helper error; a separate outer-shell helper exit record is not included. The known helper returns 0 for precisely those successful conditions.
+
+This is a test of **shipped compiled extensions in a normal Python host**, using generated signed test payloads through explicit API keys and isolated state. The frozen customer EXE and its existing embedded production trust were not executed or changed. A future executable-level clock qualification, if separately requested, should use a disposable Windows VM with unchanged customer artifacts and retained profile/disk/DPAPI state. It is not required as an additional condition of this narrowly scoped extension-level closure.
 
 ## Read-only integrity and disposition
 
 All **914 tracked source files and all 2,303 extracted customer files remain byte-identical**; the final checkout is clean at 104bf4f32cbc66ab2f01ca865f388ea016cc7922. No code, tests, source licensing keys, customer binaries, licenses or release artifacts were modified. The original ZIP hash was rechecked after inspection and is unchanged. Only this report, audit evidence and the external follow-up helper are published to Software-reviews.
 
-**Disposition:** source fix verified for B56-W05, including the independent held-lock regression; actual Windows customer-package artifact inspection is complete, while closure remains pending native origin-confirmed runtime results. The customer executable has not been exercised in a disposable VM. No other release findings were audited.
+**Disposition: B56-W05 closed for the shipped Windows licensing extensions.** Exact source commit and customer PYD hashes are verified; the original held-lock failure passes on the final source and on the hash-matched shipped modules under Windows DPAPI/locking. Frozen customer EXE execution remains explicitly untested. No other release findings were audited or cleared.
