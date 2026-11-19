@@ -1,0 +1,35 @@
+[
+  {
+    "id": "XS-01",
+    "title": "Saved Cross Section top styles bypass current canonical membership",
+    "severity": "Medium",
+    "classification": "confirmed defect",
+    "confidence": "High",
+    "files": [
+      "xsection/dialogs.py:351",
+      "xsection/dialogs.py:481",
+      "xsection/dialogs.py:591",
+      "xsection/window.py:641",
+      "xsection/window.py:222",
+      "xsection/model.py:727",
+      "xsection/store.py:424"
+    ],
+    "observed": "Global deletion removes definitions, aliases and picks; both UI list paths and saved state retain deleted styles. Reproduced all twelve example names with only LO/BMB sources.",
+    "fix": "Reconcile style/list/state membership to current global definitions at load, refresh, list assembly, dialog accept and persistence; preserve surviving styles and valid unpicked definitions.",
+    "regression": "Actual global delete -> focus refresh -> both lists -> dialog accept -> save/reopen, plus stale explicit source and surviving unpicked definitions."
+  },
+  {
+    "id": "XS-02",
+    "title": "Pending local pick targets can survive removal from the global definition set",
+    "severity": "Medium",
+    "classification": "confirmed conditional path, not established screenshot cause",
+    "confidence": "High for code path",
+    "files": [
+      "xsection/window.py:974",
+      "xsection/window.py:999"
+    ],
+    "observed": "_new_tops entries absent globally are retained and appended to pick targets; direct helper execution confirms ASTN remains offered when seeded as a pending draft.",
+    "fix": "Reconcile draft lifecycle against explicit definition creation/deletion; require deliberate recreation rather than silently offering a deleted global target.",
+    "regression": "New draft -> first pick -> delete global definition before target rebuild -> no deleted target after refresh; explicit later New top may create definition."
+  }
+]

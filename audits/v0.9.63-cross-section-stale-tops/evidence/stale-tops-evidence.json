@@ -1,0 +1,129 @@
+{
+  "baseline_commit": "42d8e330cc6013c73cedd1ca4f2cf4bae1cadc01",
+  "project_kind": "temporary synthetic; no client database supplied",
+  "global_manager_delete_method_executed": true,
+  "deleted_names": [
+    "ASTN",
+    "605ASTN",
+    "ASTNB",
+    "605ASTNB",
+    "CRCSL",
+    "602CRCSL",
+    "BUDA",
+    "602BUDA",
+    "GRGN",
+    "602GRGN",
+    "FRWR",
+    "602FRWR"
+  ],
+  "canonical_after_delete": [
+    "Surviving LO",
+    "Surviving BMB"
+  ],
+  "current_sources_after_delete": [
+    "BMB",
+    "LO"
+  ],
+  "aliases_after_delete": [],
+  "deleted_source_pick_count": 0,
+  "render_before_delete": [
+    "602BUDA",
+    "602CRCSL",
+    "602FRWR",
+    "602GRGN",
+    "605ASTN",
+    "605ASTNB",
+    "ASTN",
+    "ASTNB",
+    "BUDA",
+    "CRCSL",
+    "FRWR",
+    "GRGN",
+    "Surviving BMB",
+    "Surviving LO"
+  ],
+  "render_after_delete_before_pick_refresh": [
+    "602BUDA",
+    "602CRCSL",
+    "602FRWR",
+    "602GRGN",
+    "605ASTN",
+    "605ASTNB",
+    "ASTN",
+    "ASTNB",
+    "BUDA",
+    "CRCSL",
+    "FRWR",
+    "GRGN",
+    "Surviving BMB",
+    "Surviving LO"
+  ],
+  "render_after_pick_refresh": [
+    "Surviving BMB",
+    "Surviving LO"
+  ],
+  "tops_dialog_all_sources": [
+    "ASTN",
+    "605ASTN",
+    "ASTNB",
+    "605ASTNB",
+    "CRCSL",
+    "602CRCSL",
+    "BUDA",
+    "602BUDA",
+    "GRGN",
+    "602GRGN",
+    "FRWR",
+    "602FRWR"
+  ],
+  "tops_dialog_LO_without_explicit_style": [],
+  "tops_dialog_explicit_LO_style_without_LO_pick": true,
+  "display_manager_deleted_rows": [
+    "ASTN",
+    "605ASTN",
+    "ASTNB",
+    "605ASTNB",
+    "CRCSL",
+    "602CRCSL",
+    "BUDA",
+    "602BUDA",
+    "GRGN",
+    "602GRGN",
+    "FRWR",
+    "602FRWR"
+  ],
+  "canonical_after_reopen": [
+    "Surviving LO",
+    "Surviving BMB"
+  ],
+  "saved_deleted_styles_after_reopen": [
+    "ASTN",
+    "605ASTN",
+    "ASTNB",
+    "605ASTNB",
+    "CRCSL",
+    "602CRCSL",
+    "BUDA",
+    "602BUDA",
+    "GRGN",
+    "602GRGN",
+    "FRWR",
+    "602FRWR"
+  ],
+  "dialog_deleted_rows_after_reopen": [
+    "ASTN",
+    "605ASTN",
+    "ASTNB",
+    "605ASTNB",
+    "CRCSL",
+    "602CRCSL",
+    "BUDA",
+    "602BUDA",
+    "GRGN",
+    "602GRGN",
+    "FRWR",
+    "602FRWR"
+  ],
+  "conditional_draft_target_survives_delete": true,
+  "methodology": "Actual database/manager deletion, Store, model, renderer, _list_manager and _ok methods; no Tk display. Dialog data-assembly AST extracted unchanged before first widget access; tree collection uses UI sinks."
+}

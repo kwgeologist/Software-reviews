@@ -1,0 +1,44 @@
+.......ss.......ss....................................s....sssssssssssss [ 84%]
+sssssssssssss                                                            [100%]
+=============================== warnings summary ===============================
+../../../opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/anyio/pytest_plugin.py:14
+  /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/anyio/pytest_plugin.py:14: PytestRemovedIn10Warning: _pytest.python.CallSpec2 has been renamed to CallSpec.
+  The CallSpec2 alias will be removed in pytest 10.
+  Update imports to use CallSpec instead.
+  See https://docs.pytest.org/en/stable/deprecations.html#callspec2-renamed
+    from _pytest.python import CallSpec2
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+SKIPPED [1] tests/test_v0951_fixes.py:229: needs a display
+SKIPPED [1] tests/test_v0951_fixes.py:268: needs a display
+SKIPPED [1] tests/test_v0962_xsection.py:225: needs a display
+SKIPPED [1] tests/test_v0962_xsection.py:254: needs a display
+SKIPPED [1] tests/test_xsection.py:805: needs a display
+SKIPPED [1] tests/test_xsection.py:1081: needs a display
+SKIPPED [1] tests/test_xsection.py:1615: needs a display
+SKIPPED [1] tests/test_xsection.py:1226: needs a display
+SKIPPED [1] tests/test_xsection.py:1398: needs a display
+SKIPPED [1] tests/test_xsection.py:1416: needs a display
+SKIPPED [1] tests/test_xsection.py:1582: needs a display
+SKIPPED [1] tests/test_xsection.py:1061: needs a display
+SKIPPED [1] tests/test_xsection.py:1010: needs a display
+SKIPPED [1] tests/test_xsection.py:1034: needs a display
+SKIPPED [1] tests/test_xsection.py:1381: needs a display
+SKIPPED [1] tests/test_xsection.py:1322: needs a display
+SKIPPED [1] tests/test_xsection.py:1140: needs a display
+SKIPPED [1] tests/test_xsection.py:1567: needs a display
+SKIPPED [1] tests/test_xsection.py:1115: needs a display
+SKIPPED [1] tests/test_xsection.py:1183: needs a display
+SKIPPED [1] tests/test_xsection.py:1938: needs a display
+SKIPPED [1] tests/test_xsection.py:2120: needs a display
+SKIPPED [1] tests/test_xsection.py:2082: needs a display
+SKIPPED [1] tests/test_xsection.py:1807: needs a display
+SKIPPED [1] tests/test_xsection.py:1966: needs a display
+SKIPPED [1] tests/test_xsection.py:2157: needs a display
+SKIPPED [1] tests/test_xsection.py:1994: needs a display
+SKIPPED [1] tests/test_xsection.py:1863: needs a display
+SKIPPED [1] tests/test_xsection.py:1754: needs a display
+SKIPPED [1] tests/test_xsection.py:2064: needs a display
+SKIPPED [1] tests/test_xsection.py:2223: needs a display
+54 passed, 31 skipped, 1 warning in 15.34s

@@ -1,0 +1,27 @@
+{
+  "commit": "42d8e330cc6013c73cedd1ca4f2cf4bae1cadc01",
+  "read_only": true,
+  "root_cause": "Saved Section.tops styles retained and consumed without canonical definition membership validation",
+  "current_sources_in_reproduction": [
+    "BMB",
+    "LO"
+  ],
+  "global_deletion_succeeded": true,
+  "stale_dialog_and_manager_reproduced": true,
+  "stale_saved_state_reproduced": true,
+  "deleted_render_marks_after_pick_refresh": false,
+  "focused_tests": {
+    "passed": 54,
+    "failed": 0,
+    "skipped": 31
+  },
+  "migration_test": {
+    "passed": 1,
+    "failed": 0,
+    "skipped": 0
+  },
+  "independent_probe_exit_code": 0,
+  "native_ui_executed": false,
+  "client_database_supplied": false,
+  "curve_visibility_observation": "Individual hide controls already exist in both Scale tabs; eye buttons are a discoverability enhancement."
+}

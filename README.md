@@ -1,5 +1,15 @@
 # Software reviews
 
+## O&G Workbench v0.9.63 — Cross Section stale formation tops
+
+**Confirmed at 42d8e33:** global deletion removes definitions, aliases and picks, but Cross Section's Tops dialog and Display Manager retain saved top styles without validating canonical membership. All twelve examples reproduced with **only LO/BMB sources**, including save/reopen. After pick refresh, deleted top marks no longer render. No code changed.
+
+- [Read the targeted audit](audits/v0.9.63-cross-section-stale-tops/OandG_Workbench_v0.9.63_Cross_Section_Stale_Tops_Audit.md)
+- [Download PDF](https://github.com/kwgeologist/Software-reviews/raw/refs/heads/main/audits/v0.9.63-cross-section-stale-tops/OandG_Workbench_v0.9.63_Cross_Section_Stale_Tops_Audit.pdf)
+- [Download report and evidence](https://github.com/kwgeologist/Software-reviews/raw/refs/heads/main/audits/v0.9.63-cross-section-stale-tops/OandG_Workbench_v0.9.63_Cross_Section_Stale_Tops_Audit_Bundle.zip)
+
+Focused suite: **54 passed, 31 skipped**; migration check: **1 passed**; independent synthetic reproduction confirmed. All 940 source files remain unchanged. Additional curve-visibility inspection found existing individual hide controls in both Scale tabs; eye controls would improve discoverability.
+
 ## O&G Workbench v0.9.58 — B56-W05 closed for shipped licensing extensions
 
 **Closed at 104bf4f for the shipped Windows licensing extensions.** The user's native Windows evidence was independently reconciled: all 8 helper and 15 pytest process-origin records match both inspected customer PYD hashes. The original held-lock regression crossed the production timeout (10.016 s); expiry survived the older writer, restart, rollback and reimport. Renewal worked while the original stayed expired; pending expiry merged and DPAPI/concurrency checks passed.

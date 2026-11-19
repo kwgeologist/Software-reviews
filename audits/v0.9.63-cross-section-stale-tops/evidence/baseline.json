@@ -1,0 +1,43 @@
+{
+  "commit": "42d8e330cc6013c73cedd1ca4f2cf4bae1cadc01",
+  "branch_at_audit_start": "release/1.0",
+  "archive": "OandG_Workbench_v0.9.63.zip",
+  "archive_bytes": 11824837,
+  "archive_sha256": "0582c6ddb8aa81f4ca88df52ac68aa8365daf931ddd038791ef5461faba28b58",
+  "archive_crc": "passed",
+  "tracked_files": 940,
+  "targeted_archive_source_comparison": {
+    "database.py": {
+      "archive_path": "OandG_Workbench_v0.9.63/database.py",
+      "identical_after_CRLF_normalization": true
+    },
+    "geoworkbench/interpretation_dialogs.py": {
+      "archive_path": "OandG_Workbench_v0.9.63/geoworkbench/interpretation_dialogs.py",
+      "identical_after_CRLF_normalization": true
+    },
+    "xsection/window.py": {
+      "archive_path": "OandG_Workbench_v0.9.63/xsection/window.py",
+      "identical_after_CRLF_normalization": true
+    },
+    "xsection/dialogs.py": {
+      "archive_path": "OandG_Workbench_v0.9.63/xsection/dialogs.py",
+      "identical_after_CRLF_normalization": true
+    },
+    "xsection/model.py": {
+      "archive_path": "OandG_Workbench_v0.9.63/xsection/model.py",
+      "identical_after_CRLF_normalization": true
+    },
+    "xsection/store.py": {
+      "archive_path": "OandG_Workbench_v0.9.63/xsection/store.py",
+      "identical_after_CRLF_normalization": true
+    },
+    "xsection/render.py": {
+      "archive_path": "OandG_Workbench_v0.9.63/xsection/render.py",
+      "identical_after_CRLF_normalization": true
+    },
+    "xsection/layout.py": {
+      "archive_path": "OandG_Workbench_v0.9.63/xsection/layout.py",
+      "identical_after_CRLF_normalization": true
+    }
+  }
+}
