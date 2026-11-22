@@ -1,0 +1,17 @@
+{
+  "correlation_close_failed_session": {
+    "closed": true,
+    "after_close_stored_spacing": 1.25,
+    "unsaved_spacing": 7.25
+  },
+  "xsection_close_failed_save": {
+    "window_destroyed": true,
+    "stored_top": 111,
+    "unsaved_top": 222
+  },
+  "geosteering_close_failed_save": {
+    "database_closed": true,
+    "stored_job_name": "Saved",
+    "unsaved_job_name": "Unsaved"
+  }
+}

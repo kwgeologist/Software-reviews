@@ -1,0 +1,48 @@
+Fontconfig error: No writable cache directories
+Could not save the Correlation session
+Traceback (most recent call last):
+  File "/workspace/audit-v0.9.70-integrity/checkout/correlationworkbench/app.py", line 533, in close_project
+    self.store.save_session(self.layout)
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/unittest/mock.py", line 1139, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/unittest/mock.py", line 1143, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/unittest/mock.py", line 1198, in _execute_mock_call
+    raise effect
+sqlite3.OperationalError: injected disk full
+invalid command name "140402215160320idle_draw"
+    while executing
+"140402215160320idle_draw"
+    ("after" script)
+Could not save the last cross section
+Traceback (most recent call last):
+  File "/workspace/audit-v0.9.70-integrity/checkout/xsection/window.py", line 2642, in _autosave
+    self.store.save_section(self.section)
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/unittest/mock.py", line 1139, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/unittest/mock.py", line 1143, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/unittest/mock.py", line 1198, in _execute_mock_call
+    raise effect
+sqlite3.OperationalError: injected disk full
+{
+  "correlation_close_failed_session": {
+    "closed": true,
+    "after_close_stored_spacing": 1.25,
+    "unsaved_spacing": 7.25
+  },
+  "xsection_close_failed_save": {
+    "window_destroyed": true,
+    "stored_top": 111,
+    "unsaved_top": 222
+  },
+  "geosteering_close_failed_save": {
+    "database_closed": true,
+    "stored_job_name": "Saved",
+    "unsaved_job_name": "Unsaved"
+  }
+}

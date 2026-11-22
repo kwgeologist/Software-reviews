@@ -1,0 +1,20 @@
+{
+  "las_run_cache": {
+    "runs": 8,
+    "reported_cache_bytes": 512,
+    "actual_unique_numpy_bytes": 3840384,
+    "configured_max_bytes": 268435456,
+    "max_items": null,
+    "evictions": 0,
+    "one_entry_accounting_bytes": [
+      64,
+      64,
+      64,
+      64,
+      64,
+      64,
+      64,
+      64
+    ]
+  }
+}

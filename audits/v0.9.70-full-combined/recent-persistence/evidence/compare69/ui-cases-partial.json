@@ -1,0 +1,14 @@
+{
+  "seismic_close_failed_save": {
+    "closed_despite_save_error": true,
+    "saved_before": 1000,
+    "unsaved_edit": 1200,
+    "after_reopen": 1000.0
+  },
+  "geo_save_and_exit_dirty_header": {
+    "dirty_before_save": true,
+    "after_save_project": "Tab Well",
+    "after_exit_reopen": "Tab Well",
+    "dirty_prompt_calls": 0
+  }
+}

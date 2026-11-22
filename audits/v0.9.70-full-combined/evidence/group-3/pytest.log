@@ -1,0 +1,52 @@
+........................................................................ [  8%]
+........................................................................ [ 16%]
+.....................s......................................... [ 23%]
+........................................................................ [ 32%]
+...................................................................................................................................... [ 47%]
+........................................................................................................ [ 59%]
+.........s...................F......F................................... [ 68%]
+.....................................s.................................. [ 76%]
+...................................................................... [ 84%]
+................s........................................ [ 91%]
+............................................................. [ 98%]
+...............                                               [100%]
+=================================== FAILURES ===================================
+_______________________ RendererFonts.test_tk_only_font ________________________
+tests/test_v0969_fonts_audit.py:69: in test_tk_only_font
+    self.check(name, self.tk_names[name.casefold()], exact=True)  # Tk draws it
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests/test_v0969_fonts_audit.py:47: in check
+    self.assertEqual(actual["family"].casefold(), family.casefold(), (style, bold, italic))
+E   AssertionError: 'urw gothic l' != 'avant garde gothic'
+E   - urw gothic l
+E   + avant garde gothic
+E    : ('avant garde gothic', False, False)
+____________ LayoutSettles.test_natural_and_resized_manager_settles ____________
+tests/test_v0970_tk_lifecycle.py:131: in test_natural_and_resized_manager_settles
+    self.settled(win, f"scaling {scaling}")
+tests/test_v0970_tk_lifecycle.py:103: in settled
+    self.assertLess(drain(win), 20000, f"the layout never settled ({what})")
+E   AssertionError: 20000 not less than 20000 : the layout never settled (scaling 1.25)
+=============================== warnings summary ===============================
+../../../opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/anyio/pytest_plugin.py:14
+  /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/anyio/pytest_plugin.py:14: PytestRemovedIn10Warning: _pytest.python.CallSpec2 has been renamed to CallSpec.
+  The CallSpec2 alias will be removed in pytest 10.
+  Update imports to use CallSpec instead.
+  See https://docs.pytest.org/en/stable/deprecations.html#callspec2-renamed
+    from _pytest.python import CallSpec2
+
+tests/test_map_logical_layers.py::LogicalLayers::test_geometry_must_match
+  /workspace/audit-v0.9.68-full/deps/shapefile.py:2993: PossiblyCorruptFileHeader: Declared file size in /tmp/tmp3cm057zj/src/Roads.dbf header: 87 smaller than actual file size: 101 (both in bytes)
+    warnings.warn(msg, category=PossiblyCorruptFileHeader)
+
+tests/test_map_culture_visibility.py::CultureVisibilityTests::test_off_on_off_renders_as_off
+  /workspace/audit-v0.9.68-full/deps/shapefile.py:2993: PossiblyCorruptFileHeader: Declared file size in /tmp/tmpkpggpv4j/State.dbf header: 87 smaller than actual file size: 101 (both in bytes)
+    warnings.warn(msg, category=PossiblyCorruptFileHeader)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+SKIPPED [1] tests/test_v0958_fixes.py:254: DPAPI is Windows' (a Windows qualification item)
+SKIPPED [1] tests/test_licensing.py:389: DPAPI is Windows' (a Windows qualification item)
+SKIPPED [1] tests/test_pdf_packaging.py:208: slow packaged build: set OGW_PACKAGING_TEST=1
+SKIPPED [1] tests/test_v0957_fixes.py:268: DPAPI is Windows' (a Windows qualification item)
+2 failed, 858 passed, 4 skipped, 3 warnings, 98 subtests passed in 590.14s (0:09:50)

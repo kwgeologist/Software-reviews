@@ -1,0 +1,899 @@
+diff --git a/CHANGELOG.md b/CHANGELOG.md
+index 926f487..052e06b 100644
+--- a/CHANGELOG.md
++++ b/CHANGELOG.md
+@@ -4,6 +4,13 @@ Newest first. O&G Workbench combines Geo Workbench (well data manager, with Cros
+ 
+ ## O&G Workbench (Geo + Petro + Seismic)
+ 
++### Integrated v0.9.70 — Seismic Map drawings stability: layout that settles, no hang after Finish, panels and windows that clean up after themselves
++
++- **No hang after a fault polygon's Finish (TK-AUD-001).** The Map drawings panel's hints wrapped to their own width, and with the panel's natural size and its scroll bar that could keep asking for another layout pass; the project tree's rebuild after a polygon's Finish then waited on Tk's idle work, which never ran out - the polygon was saved, but the panel flashed and Seismic stopped responding. The hints now wrap to the width the panel shows, a scroll bar that would only come and go is held shown, and the tree's scroll position is restored by one callback when Tk is next idle instead of waiting there. The workflow is unchanged: open Map drawings, edit a polygon's vertices, Finish - it saves, the panel stays open, the map and tree refresh.
++- **A closed Map drawings panel lets go (TK-AUD-002).** Each panel bound Enter, Esc, Delete and Backspace on the Seismic window and never unbound them: every panel ever opened kept answering those keys and kept its tab, map and figure alive. Each panel now keeps its own bindings and removes only those, however it closes (its X, its map, the project or Seismic closed, the map's window destroyed first, or while a polygon is being edited - the edit is cancelled, nothing saved). Fifty opens and closes leave the Seismic window's bindings as they were.
++- **Nothing left waiting for a closed window (TK-AUD-003).** Closing a project now cancels each map's waiting redraws and closes its Map drawings panel before the windows go, as closing a map does; a scroll frame's waiting layout pass is cancelled when it is destroyed; the application's own waiting callbacks (the tree's scroll, the well filter) and the close-request watch go with its window. A closed project's map is let go (its figure with it).
++- **Variable traces go with their owners (TK-AUD-004).** Seismic's Find well box and Cross Section's property fields left their variable traces behind, holding destroyed windows - and their Tk interpreters - alive. Their traces are now removed when the window goes.
++
+ ### Integrated v0.9.69 — Audit corrections: stale Seismic deletes, atomic horizon delete, typed Undo, appended shapefiles, native-axis statistics, zone collisions, nested transactions
+ 
+ - **A Seismic deletion deletes only what it deleted (AUD-001).** A horizon or fault is now deleted by the object this window loaded - its project identity, its stored row and its picks - never by its name. A window that deleted H could, on its next save, delete a new H another window (or program) had made and saved since; now that save is refused as a conflict (Reload keeps the newer H; Overwrite deletes it only by your explicit choice), and **Delete** in the tree refuses an object changed, replaced or made again elsewhere since it was loaded ("was not deleted ... Nothing was changed"). Applies to horizons and faults.
+diff --git a/README.md b/README.md
+index 90ecf91..25d27fe 100644
+--- a/README.md
++++ b/README.md
+@@ -181,7 +181,7 @@ Porosity and Sw can be stored as decimals (0–1) or percent (0–100). The prog
+ 
+   To grid only an area, right-click inside a polygon drawn on the maps ▸ **Grid only inside …**, choose one (or draw one) under **Grid inside a polygon**, pick it in **Grid settings…**, or right-click the polygon in the project tree. The map stays on the picks: the polygon's grid is filled in inside it, in the same colors as the picks (contoured when **Contours** is on), and the picks show all around it (**Show the picks over the gridded area** puts them on top too). Only the bins round the polygon are gridded, so its cells are finer and the picks just outside shape its edge. Shown gridded, nothing outside it is drawn or exported. **(the whole survey)** goes back. A saved map keeps its polygon. **Save … as a map grid** keeps a grid in the project for Geo's map (contour editing, fault polygons and export). The cursor is linked: moving over a section marks the spot on the map, and moving over the map marks the trace on the sections.
+   - **Fault polygons belong to a horizon**: one drawn on a Seismic map belongs to the horizon the map shows, and each horizon's map shows only its own (the same fault cuts each horizon in a different place). In the project tree they are listed under their horizon (Fault polygons ▸ Amph B ▸ …). **Copy Fault Polygons From Horizon…** (Interpretation menu, or right-click a map) copies another horizon's fault polygons to the active horizon as independent new polygons; if it has some already, **Copy Anyway** adds them beside those (nothing is replaced). Deleting a horizon asks whether to delete its fault polygons or keep them Unassigned; the horizon, its picks and that choice are carried out together or not at all, and a horizon or fault changed or made again elsewhere since this window loaded it is never deleted by its name (the delete is refused and nothing changes). Fault polygons from before v0.9.68 are **Unassigned** (shown on every horizon's map, as before) until right-click ▸ **Assign to horizon**; nothing is guessed. Geo's map shows every fault polygon, as before.
+-  - **Drawings in the project tree**: the lines, polygons and fault polygons drawn on the maps (shared with Geo's map) are listed under **Drawings**. Double-click one to edit its shape; right-click to edit its shape, set a fault polygon's dip direction, show or hide it, zoom to it, rename it, change its color, grid inside it (or the whole survey again) or delete it. The polygon a map is gridded inside is marked. The project tree scrolls, and keeps its place and its open and closed folders as you work.
++  - **Drawings in the project tree**: the lines, polygons and fault polygons drawn on the maps (shared with Geo's map) are listed under **Drawings**. Double-click one to edit its shape; right-click to edit its shape, set a fault polygon's dip direction, show or hide it, zoom to it, rename it, change its color, grid inside it (or the whole survey again) or delete it. The polygon a map is gridded inside is marked. The project tree scrolls, and keeps its place and its open and closed folders as you work. The **Map drawings** panel can stay open while you work: after **Finish** the polygon is saved and the panel, the map and the tree carry on at once, and closing the panel (or its map, the project or Seismic) closes it cleanly, an edit in progress cancelled.
+ - **Saved maps**: right-click a map ▸ **Save map…** keeps it under a name in the project tree's **Maps**: the horizon and how it is shown (picks or grid, colors, contours on or off, the grid and contour settings), the area in view, wells on or off, and the lines and polygons drawn on it. Double-click it to open it again (the horizon as picked now); right-click to rename or delete it.
+   - Faults picked on arbitrary lines show on the map too, where they cut the horizon.
+ - **Time and depth slices** (**Slice** button, or **Window > New time / depth slice**): the amplitude at one time (or depth) across the survey, in map view with the survey outline, wells and culture.
+diff --git a/ogcore/__init__.py b/ogcore/__init__.py
+index 6718add..f07828c 100644
+--- a/ogcore/__init__.py
++++ b/ogcore/__init__.py
+@@ -37,4 +37,4 @@ scrollframe (a window body that scrolls), filedrop (files dropped from Windows E
+ and errorlog.
+ """
+ 
+-__version__ = "0.9.69"  # O&G Workbench release (Geo, Petro, Seismic, Geosteering and Correlation)
++__version__ = "0.9.70"  # O&G Workbench release (Geo, Petro, Seismic, Geosteering and Correlation)
+diff --git a/ogcore/handoff.py b/ogcore/handoff.py
+index 3962eba..9d97b4b 100644
+--- a/ogcore/handoff.py
++++ b/ogcore/handoff.py
+@@ -279,8 +279,10 @@ def watch_close(window, get_db, on_close, poll_ms: int = CLOSE_POLL_MS) -> None:
+     """Close ``window`` (``on_close()``, which saves) when Geo asks the workbenches on its
+     project to close; ``get_db()`` gives the project open now (None: none)."""
+     started = time.time()
++    job = [None]  # the poll waiting: cancelled when the window goes (v0.9.70, TK-AUD-003)
+ 
+     def poll():
++        job[0] = None
+         db = None
+         try:
+             db = get_db()
+@@ -293,8 +295,18 @@ def watch_close(window, get_db, on_close, poll_ms: int = CLOSE_POLL_MS) -> None:
+                 log.warning("The close request's callback failed", exc_info=True)
+             return
+         try:
+-            window.after(poll_ms, poll)
++            job[0] = window.after(poll_ms, poll)
+         except Exception:
+             pass  # the window is gone
+ 
+-    window.after(poll_ms, poll)
++    def cancel(event):
++        if event.widget is window and job[0] is not None:
++            pending, job[0] = job[0], None
++            try:
++                window.after_cancel(pending)
++            except Exception:
++                pass
++
++    job[0] = window.after(poll_ms, poll)
++    if hasattr(window, "bind"):
++        window.bind("<Destroy>", cancel, add="+")
+diff --git a/ogcore/scrollframe.py b/ogcore/scrollframe.py
+index bcf3375..ea3d7ae 100644
+--- a/ogcore/scrollframe.py
++++ b/ogcore/scrollframe.py
+@@ -19,6 +19,7 @@ from __future__ import annotations
+ 
+ import re
+ import sys
++import time
+ import tkinter as tk
+ from tkinter import ttk
+ 
+@@ -35,6 +36,7 @@ WHEEL_CLASSES = {
+     "TScale",
+ }
+ SCREEN_SHARE = 0.88  # the most of the screen a window opens at
++BAR_FLIPS, BAR_FLIP_SECONDS = 4, 0.5  # a bar shown and hidden this often this quickly stays shown (v0.9.70)
+ 
+ 
+ class ScrollFrame(ttk.Frame):
+@@ -72,6 +74,7 @@ class ScrollFrame(ttk.Frame):
+         self.body = ttk.Frame(self.canvas, padding=padding)
+         self._item = self.canvas.create_window((0, 0), window=self.body, anchor="nw")
+         self._pending = None
++        self._flips: list[tuple] = []  # when the vertical bar last came and went (v0.9.70, TK-AUD-001)
+         self.body.bind("<Configure>", lambda _e: self._schedule(), add="+")
+         self.canvas.bind("<Configure>", lambda _e: self._schedule(), add="+")
+         install_wheel(self.winfo_toplevel())
+@@ -83,10 +86,39 @@ class ScrollFrame(ttk.Frame):
+         if self._pending is None:
+             self._pending = self.after_idle(self.update_layout)
+ 
++    def cancel_layout(self) -> None:
++        """Cancel a layout pass still waiting (v0.9.70, TK-AUD-003); harmless when there is none."""
++        pending, self._pending = self._pending, None
++        if pending is not None:
++            try:
++                self.after_cancel(pending)
++            except tk.TclError:
++                pass
++
++    def destroy(self) -> None:
++        """A layout pass still waiting never runs on the destroyed frame (v0.9.70, TK-AUD-003)."""
++        self.cancel_layout()
++        super().destroy()
++
++    def _bar_flipping(self) -> bool:
++        """The vertical bar has come and gone ``BAR_FLIPS`` times within ``BAR_FLIP_SECONDS``: a
++        body whose height follows its width (wrapped text) can otherwise show and hide the bar
++        for ever, each pass asking for another (v0.9.70, TK-AUD-001).  The bar then stays shown
++        until the flipping stops."""
++        now = time.monotonic()
++        self._flips = [f for f in self._flips if now - f[0] < BAR_FLIP_SECONDS]
++        sizes = {f[1] for f in self._flips[-BAR_FLIPS:]}
++        # Flipping while the frame's own size goes back and forth between the same one or two
++        # sizes - not a window being resized by hand.
++        return len(self._flips) >= BAR_FLIPS and len(sizes) <= 2
++
+     def update_layout(self) -> None:
+         """Size the body to the space shown, and show each bar only while it is needed."""
+         self._pending = None
+-        if not self.winfo_exists():
++        try:
++            if not self.winfo_exists():
++                return
++        except tk.TclError:  # (the interpreter itself is gone)
+             return
+         need_w, need_h = self.body.winfo_reqwidth(), self.body.winfo_reqheight()
+         if self.fit:
+@@ -100,6 +132,8 @@ class ScrollFrame(ttk.Frame):
+             return
+         wide = self.horizontal and need_w > shown_w + 1
+         tall = need_h > shown_h + 1
++        if not tall and self.vbar.winfo_manager() and self._bar_flipping():
++            tall = True  # held shown while it would only come straight back
+         self.canvas.itemconfigure(self._item, width=need_w if wide else shown_w, height=max(need_h, shown_h))
+         self.canvas.configure(scrollregion=(0, 0, need_w if wide else shown_w, max(need_h, shown_h)))
+         for bar, needed, axis in (
+@@ -108,9 +142,13 @@ class ScrollFrame(ttk.Frame):
+         ):
+             if needed and not bar.winfo_manager():
+                 bar.grid()
++                if bar is self.vbar:
++                    self._flips.append((time.monotonic(), (self.winfo_width(), self.winfo_height())))
+             elif not needed and bar.winfo_manager():
+                 bar.grid_remove()
+                 axis(0)
++                if bar is self.vbar:
++                    self._flips.append((time.monotonic(), (self.winfo_width(), self.winfo_height())))
+ 
+     @property
+     def scrolling(self) -> bool:
+diff --git a/ogmap/drawing_tab.py b/ogmap/drawing_tab.py
+index 745285b..d688e0e 100644
+--- a/ogmap/drawing_tab.py
++++ b/ogmap/drawing_tab.py
+@@ -140,14 +140,29 @@ class DrawingsTab(ttk.Frame):
+             ],
+         )
+         self.functions.pack(anchor="w", pady=(4, 0))
+-        hint(
++        about = hint(
+             panel,
+             "Click a drawing's eye to show or hide it. Double-click it here for its properties, on the map to "
+             "edit its vertices. Fault polygons blank the grids inside them, and each fault block is gridded "
+             "from its own data, so contours stop at the fault.",
+-        ).pack(anchor="w", fill="x", pady=(8, 0))
++        )
++        about.pack(anchor="w", fill="x", pady=(8, 0))
++        # The hints wrap to the width the panel shows - never to their own width, which their own
++        # wrapping changes: fed back through the panel's natural size and its scroll bar, that
++        # never settled and kept the window resizing (v0.9.70, TK-AUD-001).
++        self._hints = (self.hint, about)
++        for label in self._hints:
++            label.unbind("<Configure>")
++        self._hint_pad = 2 * 8  # the body's padding, left and right
++        scroller.canvas.bind("<Configure>", lambda e: self._wrap_hints(e.width), add="+")
+         self._show_finish(False)
+ 
++    def _wrap_hints(self, shown: int) -> None:
++        width = max(100, int(shown) - self._hint_pad)
++        for label in self._hints:
++            if int(str(label.cget("wraplength")) or 0) != width:
++                label.configure(wraplength=width)
++
+     def _show_finish(self, on: bool, text: str = "") -> None:
+         """Finish / Cancel and the tool's hint while a tool has the mouse; hidden otherwise."""
+         if on:
+diff --git a/seismicworkbench/app.py b/seismicworkbench/app.py
+index ab6687b..f17fdbe 100644
+--- a/seismicworkbench/app.py
++++ b/seismicworkbench/app.py
+@@ -298,7 +298,7 @@ class SeismicWorkbench(PickingMixin, Lines2DMixin, TiesMixin, MapLayersMixin, Pi
+         ttk.Checkbutton(
+             find, text="On sections", variable=self.well_shown_only, command=self._well_filter_changed
+         ).pack(side="left", padx=(4, 0))
+-        self.well_find.trace_add("write", lambda *_a: self._well_filter_soon())
++        self._well_find_trace = self.well_find.trace_add("write", lambda *_a: self._well_filter_soon())
+         self.find_entry.bind("<Escape>", lambda _e: self.well_find.set(""))
+         self.find_entry.bind("<Return>", lambda _e: self._find_first_well())
+         self._well_filter_job = None
+@@ -502,6 +502,11 @@ class SeismicWorkbench(PickingMixin, Lines2DMixin, TiesMixin, MapLayersMixin, Pi
+             layout.save(self)  # the windows as they are, to open them so next time
+         self.save_now()
+         self.close_survey()
++        # Each map's waiting redraws and its Map drawings panel (with its key bindings on this
++        # window) go before the windows do, as when a map is closed (v0.9.70, TK-AUD-003).
++        for m in self.maps:
++            m.cancel_jobs()
++        self.cancel_jobs()
+         for window in self._windows():
+             window.destroy()
+         for tie_view in list(self.__dict__.get("_tie_views", [])):  # (2-D and tie windows belong to the project)
+@@ -512,6 +517,7 @@ class SeismicWorkbench(PickingMixin, Lines2DMixin, TiesMixin, MapLayersMixin, Pi
+         self.__dict__.update(_tie_views=[], _sections2d=[], project_active={}, _geometry2d={}, active_2d=None)
+         self.selected_2d = None
+         self.sections, self.maps, self.active_section, self.active_slice = [], [], None, None
++        self.active_map = None  # (a closed map, and its figure, let go: v0.9.70)
+         self.cubes = []
+         if self.lock is not None:
+             self.lock.release()
+@@ -2427,8 +2433,36 @@ class SeismicWorkbench(PickingMixin, Lines2DMixin, TiesMixin, MapLayersMixin, Pi
+         self._fill_tree()
+         for item in self._tree_folders():
+             tree.item(item, open=folders.get(item, item in self.FOLDERS_OPEN or item.startswith("drawings:")))
+-        tree.update_idletasks()
+-        tree.yview_moveto(scrolled)
++        self._restore_tree_scroll(scrolled)
++
++    def _restore_tree_scroll(self, scrolled: float) -> None:
++        """Scroll the rebuilt tree back to where it was - once, when Tk is next idle, never by
++        draining Tk's idle work here (v0.9.70, TK-AUD-001): a window whose layout keeps asking for
++        more idle work (the Map drawings panel did) never let ``update_idletasks`` return, and a
++        polygon's Finish hung after its save.  Rebuilds before then share the one callback."""
++        self._tree_scroll_to = scrolled
++        if self.__dict__.get("_tree_scroll_job") is None:
++            self._tree_scroll_job = self.after_idle(self._tree_scroll_now)
++
++    def _tree_scroll_now(self) -> None:
++        self._tree_scroll_job = None
++        try:
++            if self.tree.winfo_exists():
++                self.tree.yview_moveto(self._tree_scroll_to)
++        except tk.TclError:  # (closed meanwhile)
++            pass
++
++    def cancel_jobs(self) -> None:
++        """The application's own waiting callbacks cancelled - the tree's scroll and the well
++        filter (v0.9.70, TK-AUD-003); harmless to call again."""
++        for attr in ("_tree_scroll_job", "_well_filter_job"):
++            job = self.__dict__.get(attr)
++            self.__dict__[attr] = None
++            if job is not None:
++                try:
++                    self.after_cancel(job)
++                except tk.TclError:
++                    pass
+ 
+     def _tree_folders(self) -> list:
+         """The tree's folders: the top level, and the groups inside them that hold items."""
+@@ -3001,6 +3035,24 @@ class SeismicWorkbench(PickingMixin, Lines2DMixin, TiesMixin, MapLayersMixin, Pi
+         finally:
+             self.destroy()
+ 
++    def destroy(self) -> None:
++        """The application's waiting callbacks and its Find well trace go with it (v0.9.70,
++        TK-AUD-003/004): the trace's callback held the application, keeping a destroyed one -
++        and its Tk interpreter - alive.  Harmless to call again."""
++        for m in list(self.__dict__.get("maps") or []):
++            try:
++                m.cancel_jobs()
++            except tk.TclError:
++                pass
++        self.cancel_jobs()
++        trace, self._well_find_trace = self.__dict__.get("_well_find_trace"), None
++        if trace is not None:
++            try:
++                self.well_find.trace_remove("write", trace)
++            except tk.TclError:
++                pass
++        super().destroy()
++
+ 
+ def library_report(path) -> None:
+     """Write which segyio the program loaded (``--library-report``, v0.9.59): its version, and the
+diff --git a/seismicworkbench/mapping.py b/seismicworkbench/mapping.py
+index fe93e32..2fc4a5e 100644
+--- a/seismicworkbench/mapping.py
++++ b/seismicworkbench/mapping.py
+@@ -1063,7 +1063,9 @@ class SeismicMap:
+         return (name, id(picks), getattr(picks, "version", None))
+ 
+     def cancel_jobs(self) -> None:
+-        """Stop polling for pending redraws and gridding (the panel is closing)."""
++        """Stop polling for pending redraws and gridding (the panel is closing); its Map drawings
++        panel closes too (v0.9.70)."""
++        self.dispose_drawings()
+         for attr in ("_pending", "_poll"):
+             job = getattr(self, attr)
+             if job is not None:
+@@ -1739,25 +1741,61 @@ class SeismicMap:
+ 
+         win = tk.Toplevel(self.panel)
+         win.title("Map drawings")
+-        win.transient(self.panel.winfo_toplevel())
++        parent = self.panel.winfo_toplevel()
++        win.transient(parent)
+         tab = DrawingsTab(win, DrawingHost(self))
+         tab.pack(fill="both", expand=True)
+-
+-        def close():
+-            tab.cancel()
+-            self.drawing_window = self.drawing_tab = None
+-            win.destroy()
+-
+-        win.protocol("WM_DELETE_WINDOW", close)
+-        for widget in (win, self.panel.winfo_toplevel()):
+-            widget.bind("<Return>", lambda _e: tab.finish() if tab.active else None, add="+")
+-            widget.bind("<Escape>", lambda _e: tab.cancel() if tab.active else None, add="+")
+-            for key in ("<Delete>", "<BackSpace>"):
+-                widget.bind(key, lambda e: "break" if self._key(e.keysym) else None, add="+")
++        win.protocol("WM_DELETE_WINDOW", self.dispose_drawings)
++        # The keys work in the panel and in the Seismic window.  The ones bound on the Seismic
++        # window are this panel's own: their ids are kept, and only they are unbound when the
++        # panel goes (v0.9.70, TK-AUD-002) - left behind, every panel ever opened kept answering
++        # the keys and kept its closed tab, map and figure alive.
++        owned = []
++        for widget in (win, parent):
++            for key, handler in (
++                ("<Return>", lambda _e: tab.finish() if tab.active else None),
++                ("<Escape>", lambda _e: tab.cancel() if tab.active else None),
++                ("<Delete>", lambda e: "break" if self._key(e.keysym) else None),
++                ("<BackSpace>", lambda e: "break" if self._key(e.keysym) else None),
++            ):
++                funcid = widget.bind(key, handler, add="+")
++                if widget is parent:
++                    owned.append((key, funcid))
++        self._drawing_bindings = (parent, owned)
++        # However the panel goes - its X, its map or project closed, Seismic closed, or the map's
++        # window destroyed first - the same clean-up runs.
++        win.bind("<Destroy>", lambda e: self.dispose_drawings() if e.widget is win else None, add="+")
+         self.drawing_window, self.drawing_tab = win, tab
+         tab.refresh()
+         return tab
+ 
++    def dispose_drawings(self) -> None:
++        """Close the Map drawings panel: an edit in progress is cancelled (nothing saved), its
++        key bindings on the Seismic window are unbound - only its own - and the window goes.
++        Harmless to call again, or when the window is already destroyed (v0.9.70, TK-AUD-002)."""
++        win, tab = self.drawing_window, self.drawing_tab
++        self.drawing_window = self.drawing_tab = None
++        bound, self._drawing_bindings = self.__dict__.get("_drawing_bindings"), None
++        try:
++            if tab is not None:
++                tab.cancel()  # (as the panel's X always did)
++        except tk.TclError:
++            pass
++        finally:
++            if bound is not None:
++                parent, owned = bound
++                for key, funcid in owned:
++                    try:
++                        parent.unbind(key, funcid)
++                    except tk.TclError:  # (the Seismic window already destroyed: its bindings went with it)
++                        pass
++            if win is not None:
++                try:
++                    if win.winfo_exists():
++                        win.destroy()
++                except tk.TclError:
++                    pass
++
+     def contours_for_export(self):
+         """(label, contour lines, major interval) of the horizon shown, gridded as the map grids
+         it and contoured as the contour settings have it (whether or not they are shown)."""
+diff --git a/tests/test_v0970_tk_lifecycle.py b/tests/test_v0970_tk_lifecycle.py
+new file mode 100644
+index 0000000..f0db858
+--- /dev/null
++++ b/tests/test_v0970_tk_lifecycle.py
+@@ -0,0 +1,465 @@
++"""v0.9.70: Tk lifecycle of Seismic's Map drawings panel and its neighbours (targeted Tk/Seismic
++audit).
++
++TK-AUD-001  the Map drawings panel's layout settles (its hints wrap to the width shown, never to
++            their own; a scroll bar that would only flip on and off stays on), and the project
++            tree's rebuild after a polygon's Finish no longer drains Tk's idle work - Finish
++            returns at once even while a layout is still busy.
++TK-AUD-002  each Map drawings panel unbinds its own keys from the Seismic window when it goes, on
++            every way it can go; nothing of a closed panel stays alive.
++TK-AUD-003  callbacks waiting for a map, a scroll frame or the application are cancelled before
++            their owner is destroyed.
++TK-AUD-004  the Find well trace and the Cross Section Fields traces go with their owners; destroyed
++            Tk roots can be collected.
++
++Event processing here is bounded (``drain``: one event at a time, a fixed number at most), so a
++layout that never settles fails the test instead of hanging it."""
++
++from __future__ import annotations
++
++import gc
++import sys
++import time
++import tkinter as tk
++import unittest
++import weakref
++from pathlib import Path
++from unittest import mock
++
++sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
++sys.path.insert(0, str(Path(__file__).resolve().parent))
++
++import _tkinter  # noqa: E402
++
++import test_v0968_seismic as base  # noqa: E402
++from test_v0968_seismic import outline  # noqa: E402
++
++from ogcore import scrollframe  # noqa: E402
++
++HAVE_DISPLAY = base.HAVE_DISPLAY
++EVENTS = _tkinter.ALL_EVENTS | _tkinter.DONT_WAIT
++
++
++def drain(widget, limit: int = 20000) -> int:
++    """Process Tk's waiting events one at a time until none is left; the number processed, or
++    ``limit`` if they never ran out (a layout that never settles)."""
++    for n in range(limit):
++        if not widget.tk.dooneevent(EVENTS):
++            return n
++    return limit
++
++
++def pending_scripts(widget) -> list[str]:
++    """The scripts of the callbacks waiting in this interpreter (``after info``)."""
++    out = []
++    for job in widget.tk.splitlist(widget.tk.call("after", "info")):
++        try:
++            out.append(str(widget.tk.splitlist(widget.tk.call("after", "info", job))[0]))
++        except tk.TclError:
++            pass
++    return out
++
++
++def key_bindings(top) -> int:
++    return sum(
++        len([line for line in top.bind(k).split("\n") if line.strip()])
++        for k in ("<Return>", "<Escape>", "<Delete>", "<BackSpace>")
++    )
++
++
++def collected(refs) -> int:
++    gc.collect()
++    return sum(r() is not None for r in refs)
++
++
++class _Seismic(base._AppCase):
++    def setUp(self):
++        super().setUp()
++        self.app.tk.eval("proc bgerror {message} {lappend ::v0970_bgerrors $message}")
++
++    def bgerrors(self) -> list[str]:
++        try:
++            return list(self.app.tk.splitlist(self.app.tk.eval("set ::v0970_bgerrors")))
++        except tk.TclError:
++            return []
++
++    def fault(self, m, name="FP1", at=1):
++        app = self.app
++        if not app.registry.id_of("Horizon", "H1"):
++            app.new_object("Horizon", "H1")
++        app.set_active("Horizon", "H1")
++        tab = m.open_drawings()
++        tab.start("fault")
++        tab.nodes = [tuple(map(float, p)) for p in outline(at, at + 1, 2, 8)]
++        return tab.finish(name=name)
++
++    def manager(self, m):
++        return m.drawing_window, m.drawing_tab, m.drawing_tab.panel.scroll_frame
++
++
++# ---------------------------------------------------------------------------- TK-AUD-001
++class LayoutSettles(_Seismic):
++    def settled(self, win, what):
++        self.assertLess(drain(win), 20000, f"the layout never settled ({what})")
++        _w, _t, scroller = self.manager(self.m)
++        self.assertIsNone(scroller._pending, what)
++        self.assertFalse([s for s in pending_scripts(win) if "update_layout" in s], what)
++
++    def test_natural_and_resized_manager_settles(self):
++        self.m = m = self.the_map()
++        d = self.fault(m)
++        win, tab, scroller = self.manager(m)
++        self.settled(win, "opened")
++        natural = win.winfo_reqwidth()
++        # The hints follow the width shown: never wider than the body leaves them.
++        for label in tab._hints:
++            self.assertEqual(int(str(label.cget("wraplength"))), max(100, scroller.canvas.winfo_width() - 16))
++            self.assertLessEqual(label.winfo_reqwidth(), scroller.body.winfo_width())
++        # Long and short hint text (a tool's instructions shown and taken away): the same width.
++        tab.select(d.id)
++        tab.edit()
++        self.settled(win, "editing (long hint)")
++        self.assertTrue(tab.hint.cget("text"))
++        self.assertEqual(win.winfo_reqwidth(), natural)
++        tab.cancel()
++        self.settled(win, "hint cleared")
++        self.assertEqual(win.winfo_reqwidth(), natural)
++        # Display scalings, natural size, and widths and heights either side of the scroll bar.
++        for scaling in (1.0, 1.25, 1.5, 1.75, 2.0, 1.0):
++            self.app.tk.call("tk", "scaling", scaling)
++            win.geometry("")
++            self.settled(win, f"scaling {scaling}")
++            for width, height in ((natural - 40, 260), (natural + 3, 900), (natural - 1, 420), (natural + 60, 300)):
++                win.geometry(f"{width}x{height}")
++                self.settled(win, f"{width}x{height} at {scaling}")
++        win.geometry(f"{natural}x200")  # short: the bar is shown
++        self.settled(win, "scroll bar on")
++        self.assertTrue(scroller.scrolling)
++        win.geometry(f"{natural}x900")  # tall: the bar is gone
++        self.settled(win, "scroll bar off")
++        self.assertFalse(scroller.scrolling)
++
++    def test_a_flipping_scroll_bar_stays_on(self):
++        """A body whose height follows the bar the wrong way (taller without the bar, shorter
++        with it) used to show and hide it for ever; it is held shown and the layout stops."""
++        root = self.app
++        top = tk.Toplevel(root)
++        top.geometry("300x300")
++        frame = scrollframe.ScrollFrame(top, fit=False)
++        frame.pack(fill="both", expand=True)
++        block = tk.Frame(frame.body, width=200, height=200)
++        block.pack()
++
++        def follow(_e=None):
++            block.configure(height=150 if frame.vbar.winfo_manager() else 400)
++
++        frame.canvas.bind("<Configure>", follow, add="+")
++        top.update_idletasks()
++        follow()
++        self.assertLess(drain(top), 20000)
++        self.assertTrue(frame.scrolling)
++        self.assertIsNone(frame._pending)
++        top.destroy()
++
++    def test_finish_returns_at_once_and_the_tree_is_not_drained(self):
++        app = self.app
++        self.m = m = self.the_map()
++        d = self.fault(m)
++        win, tab, scroller = self.manager(m)
++        drain(win)
++        # A layout that is still busy when Finish comes: every pass asks for another.
++        passes = []
++
++        def busy():
++            passes.append(1)
++            scroller._pending = None
++            scroller._schedule()
++
++        with mock.patch.object(scroller, "update_layout", side_effect=busy), mock.patch.object(
++            app.tree, "update_idletasks", side_effect=AssertionError("the tree's idle work drained")
++        ), mock.patch.object(app, "update_idletasks", side_effect=AssertionError("idle work drained")):
++            scroller._schedule()
++            tab.select(d.id)
++            tab.edit()
++            tab.edit_xy = [(x + 10.0, y + 10.0) for x, y in tab.edit_xy]
++            started = time.monotonic()
++            saved = tab.finish()
++            self.assertLess(time.monotonic() - started, 2.0)  # returned, never waiting on the layout
++            for _ in range(50):
++                app.tk.dooneevent(EVENTS)
++        self.assertIsNotNone(saved)
++        self.assertTrue(passes)  # (the layout really was still busy)
++        drain(win)
++        self.assertTrue(win.winfo_exists())  # the panel stays open
++        self.assertIs(m.drawing_tab, tab)
++        moved = [tuple(p) for p in saved.xy]
++        from ogmap import drawings
++
++        self.assertEqual([tuple(p) for p in drawings.load(app.db, d.id).xy], moved)
++        self.reopen()
++        self.assertEqual([tuple(p) for p in drawings.load(self.app.db, d.id).xy], moved)  # persisted
++
++    def test_tree_scroll_restored_once_when_idle(self):
++        app = self.app
++        self.m = self.the_map()
++        for k in range(12):
++            self.fault(self.m, name=f"FP{k}", at=1 + k % 6)
++        app.geometry("1500x330")  # the tree shorter than its items
++        drain(app)
++        app.tree.yview_moveto(0.5)
++        drain(app)
++        where = app.tree.yview()[0]
++        self.assertGreater(where, 0)
++        with mock.patch.object(app.tree, "update_idletasks", side_effect=AssertionError("drained")):
++            for _ in range(3):
++                app.refresh_tree()
++        self.assertEqual(len([s for s in pending_scripts(app) if "_tree_scroll_now" in s]), 1)  # coalesced
++        drain(app)
++        self.assertAlmostEqual(app.tree.yview()[0], where, places=6)
++        self.assertIsNone(app._tree_scroll_job)
++
++
++# ---------------------------------------------------------------------------- TK-AUD-002
++class PanelBindings(_Seismic):
++    def test_fifty_opens_and_closes(self):
++        app = self.app
++        m = self.the_map()
++        top = m.panel.winfo_toplevel()
++        drain(app)
++        before, commands = key_bindings(top), len(top._tclCommands or [])
++        tabs = []
++        for _ in range(50):
++            tab = m.open_drawings()
++            tabs.append(weakref.ref(tab))
++            self.assertEqual(key_bindings(top), before + 4)
++            app.tk.call(m.drawing_window.protocol("WM_DELETE_WINDOW"))  # the panel's X
++            del tab
++        drain(app)
++        self.assertEqual(key_bindings(top), before)
++        self.assertEqual(len(top._tclCommands or []), commands)
++        self.assertEqual(collected(tabs), 0)
++        from ogmap.drawing_tab import DrawingsTab
++
++        with mock.patch.object(DrawingsTab, "finish") as finish, mock.patch.object(DrawingsTab, "cancel") as cancel:
++            for key in ("<Return>", "<Escape>", "<Delete>", "<BackSpace>"):
++                top.event_generate(key, when="now")
++            drain(app)
++        finish.assert_not_called()
++        cancel.assert_not_called()
++        self.assertEqual(self.bgerrors(), [])
++
++    def test_every_way_it_closes(self):
++        app = self.app
++        m = self.the_map()
++        top = m.panel.winfo_toplevel()
++        drain(app)
++        before = key_bindings(top)
++        # Others' bindings on the same keys are kept.
++        others = []
++        top.bind("<Return>", lambda _e: others.append(1), add="+")
++        before += 1
++
++        def opened(mm):
++            mm.open_drawings()
++            self.assertEqual(key_bindings(top), before + 4)
++            return mm.drawing_window
++
++        # The X.
++        win = opened(m)
++        app.tk.call(win.protocol("WM_DELETE_WINDOW"))
++        self.assertEqual(key_bindings(top), before)
++        m.dispose_drawings()  # again: harmless
++        # Closed while a polygon's vertices are being edited: the edit is cancelled, nothing saved.
++        d = self.fault(m)
++        from ogmap import drawings
++
++        xy = drawings.load(app.db, d.id).xy.copy()
++        m.drawing_tab.select(d.id)
++        m.drawing_tab.edit()
++        m.drawing_tab.edit_xy = [(x + 50.0, y) for x, y in m.drawing_tab.edit_xy]
++        app.tk.call(m.drawing_window.protocol("WM_DELETE_WINDOW"))
++        self.assertEqual(key_bindings(top), before)
++        self.assertEqual(drawings.load(app.db, d.id).xy.tolist(), xy.tolist())
++        # The map's window closed (its panel with it).
++        mm = app.new_map()
++        drain(app)
++        opened(mm)
++        mm.panel.close()
++        drain(app)
++        self.assertEqual(key_bindings(top), before)
++        self.assertIsNone(mm.drawing_window)
++        # The map's window destroyed first (the panel is its child).
++        mm = app.new_map()
++        drain(app)
++        win = opened(mm)
++        mm.panel.destroy()
++        drain(app)
++        self.assertEqual(key_bindings(top), before)
++        self.assertFalse(win.winfo_exists())
++        self.assertIsNone(mm.drawing_tab)
++        # A failure while closing still unbinds.
++        win = opened(m)
++        with mock.patch.object(m.drawing_tab, "cancel", side_effect=tk.TclError("injected")):
++            m.dispose_drawings()
++        self.assertEqual(key_bindings(top), before)
++        self.assertFalse(win.winfo_exists())
++        # The project closed.
++        opened(m)
++        app.close_project()
++        self.assertEqual(key_bindings(top), before)
++        top.event_generate("<Return>", when="now")
++        self.assertEqual(others, [1])  # the other binding still answers
++        self.assertEqual(self.bgerrors(), [])
++
++    def test_project_closed_with_the_panel_open(self):
++        app = self.app
++        m = self.the_map()
++        tab = weakref.ref(m.open_drawings())
++        refs = [weakref.ref(m), weakref.ref(m.view.fig)]
++        drain(app)
++        app.close_project()  # Seismic stays open
++        del m
++        self.assertEqual(collected([tab] + refs), 0)  # the closed map, its figure and panel let go
++
++
++# ---------------------------------------------------------------------------- TK-AUD-003
++class WaitingCallbacks(_Seismic):
++    def ours(self, scripts):
++        return [s for s in scripts if any(k in s for k in ("_run_pending", "update_layout", "_tree_scroll_now", "_well_filter"))]
++
++    def test_map_closed_right_after_a_refresh_is_asked_for(self):
++        app = self.app
++        m = self.the_map()
++        m.open_drawings()
++        drain(app)
++        m.schedule_horizon(5000)
++        m.drawing_tab.panel.scroll_frame._schedule()
++        self.assertTrue(self.ours(pending_scripts(app)))
++        m.panel.close()
++        self.assertEqual(self.ours(pending_scripts(app)), [])
++        drain(app)
++        self.assertEqual(self.bgerrors(), [])
++
++    def test_project_closed_right_after_a_refresh_is_asked_for(self):
++        app = self.app
++        m = self.the_map()
++        m.open_drawings()
++        drain(app)
++        m.schedule_horizon(5000)
++        app.well_find.set("W")
++        app.refresh_tree()
++        m.drawing_tab.panel.scroll_frame._schedule()
++        app.close_project()
++        self.assertEqual(self.ours(pending_scripts(app)), [])
++        # What is left is the application's own close-request watch, which lives as long as it does.
++        self.assertTrue(all("poll" in s for s in pending_scripts(app)), pending_scripts(app))
++        drain(app)
++        self.assertEqual(self.bgerrors(), [])
++
++    def test_panel_closed_during_a_pending_layout(self):
++        app = self.app
++        m = self.the_map()
++        m.open_drawings()
++        drain(app)
++        scroller = m.drawing_tab.panel.scroll_frame
++        scroller._schedule()
++        job = scroller._pending
++        self.assertIsNotNone(job)
++        m.dispose_drawings()
++        self.assertIsNone(scroller._pending)
++        self.assertNotIn(job, app.tk.splitlist(app.tk.call("after", "info")))
++        drain(app)
++        self.assertEqual(self.bgerrors(), [])
++
++    def test_destroyed_application_leaves_nothing_waiting(self):
++        from seismicworkbench.app import SeismicWorkbench
++
++        other = SeismicWorkbench()
++        other.update()
++        other.well_find.set("x")  # the filter's callback waits 200 ms
++        other.refresh_tree()
++        self.assertTrue(pending_scripts(other))
++        other.destroy()
++        self.assertEqual(pending_scripts(other), [])
++
++
++# ---------------------------------------------------------------------------- TK-AUD-004
++@unittest.skipUnless(HAVE_DISPLAY, "needs a display")
++class Traces(unittest.TestCase):
++    def test_seismic_roots_are_collected(self):
++        from seismicworkbench.app import SeismicWorkbench
++
++        refs, traced = [], []
++        for _ in range(10):
++            app = SeismicWorkbench()
++            app.update()
++            info = app.well_find.trace_info()
++            self.assertEqual(len(info), 1)
++            command = info[0][1]
++            app.destroy()
++            self.assertEqual(app.well_find.trace_info(), [])  # the trace is gone ...
++            traced.append(bool(int(app.tk.call("info", "commands", command) != "")))  # ... and its command
++            refs.append(weakref.ref(app))
++            del app
++        self.assertEqual(traced, [False] * 10)
++        self.assertEqual(collected(refs), 0)
++
++    def test_cross_section_fields(self):
++        from xsection.widgets import Fields
++
++        class Shown:
++            name = "a"
++            on = True
++
++        fields, roots = [], []
++        for _ in range(10):
++            root = tk.Tk()
++            window = tk.Toplevel(root)
++            changes = []
++            f = Fields(window, changes.append)
++            name, on = f.var("name"), f.var("on", "bool")
++            f.load(Shown())
++            name.set("b")
++            self.assertEqual(changes, ["name"])
++            window.destroy()
++            self.assertEqual((name.trace_info(), on.trace_info()), ([], []))
++            name.set("c")  # no callback on the destroyed owner
++            self.assertEqual(changes, ["name"])
++            f.dispose()  # again: harmless
++            fields.append(weakref.ref(f))
++            roots.append(weakref.ref(root))
++            root.destroy()
++            del root, window, f, name, on
++        self.assertEqual(collected(fields), 0)
++        self.assertEqual(collected(roots), 0)
++
++    def test_cross_section_dialog_fields(self):
++        """A real Cross Section dialog's fields go with it."""
++        import test_xsection as xs
++
++        if not getattr(xs, "HAVE_DISPLAY", True):
++            self.skipTest("needs a display")
++        from xsection import dialogs
++
++        root = tk.Tk()
++        root.withdraw()
++        try:
++            section = xs.Section() if hasattr(xs, "Section") else None
++            if section is None:
++                from xsection.model import Section
++
++                section = Section()
++            dialog = dialogs.TopsDialog(root, section, ["Gas Sand"], "Gas Sand")
++            f = weakref.ref(dialog.fields)
++            variables = [v for v, _k, _c in dialog.fields._vars.values()]
++            self.assertTrue(variables)
++            dialog.destroy()
++            self.assertTrue(all(v.trace_info() == [] for v in variables))
++            del dialog, variables
++            self.assertEqual(collected([f]), 0)
++        finally:
++            root.destroy()
++
++
++if __name__ == "__main__":
++    unittest.main()
+diff --git a/xsection/widgets.py b/xsection/widgets.py
+index 115cb87..b61dac4 100644
+--- a/xsection/widgets.py
++++ b/xsection/widgets.py
+@@ -159,15 +159,30 @@ class Fields:
+         self.loading = False
+         self._vars: dict[str, tuple] = {}
+         self._widgets: list[tuple] = []
++        self._traces: list[tuple] = []  # (variable, trace id): removed by dispose (v0.9.70, TK-AUD-004)
++        # The variables' traces go with the window the fields are in: each trace's callback holds
++        # these Fields, the object shown and - through them - the window and its Tk interpreter.
++        master.bind("<Destroy>", lambda e: self.dispose() if e.widget is master else None, add="+")
+ 
+     def var(self, attr: str, kind: str = "str", choices: dict | None = None):
+         """A variable for ``attr``: kind "str", "bool", "float", "int", "optional" (a number or
+         blank for None) or "choice" (``choices``: value -> the text shown)."""
+         v = (tk.BooleanVar if kind == "bool" else tk.StringVar)(master=self.master)
+         self._vars[attr] = (v, kind, choices or {})
+-        v.trace_add("write", lambda *_a: self._write(attr))
++        self._traces.append((v, v.trace_add("write", lambda *_a: self._write(attr))))
+         return v
+ 
++    def dispose(self) -> None:
++        """Remove the variables' traces and let go of the object shown; harmless to call again."""
++        traces, self._traces = self._traces, []
++        for v, trace in traces:
++            try:
++                v.trace_remove("write", trace)
++            except tk.TclError:  # (the interpreter already gone: its traces with it)
++                pass
++        self.obj = None
++        self.on_change = None
++
+     def widget(self, attr: str, setter) -> None:
+         """A widget that is not a variable (a colour button, an opacity slider): ``setter(value)``
+         shows the attribute's value when an object is loaded; it writes back with ``set``."""

@@ -1,0 +1,15 @@
+{
+  "command": [
+    "/workspace/audit-v0.9.56-windows/tooling/bin/python",
+    "-m",
+    "pytest",
+    "-q",
+    "-p",
+    "no:cacheprovider",
+    "tests/test_correlation.py::CorrelationAppTests::test_correlation_box_over_digital_logs_never_pans",
+    "tests/test_v0970_tk_lifecycle.py::LayoutSettles::test_natural_and_resized_manager_settles",
+    "--tb=short",
+    "--junitxml=/workspace/audit-v0.9.70-full/isolated-rechecks.xml"
+  ],
+  "exit_code": 1
+}

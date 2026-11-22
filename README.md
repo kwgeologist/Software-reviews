@@ -1,5 +1,21 @@
 # Software reviews
 
+## O&G Workbench v0.9.70 — Full suite audit and consolidated persistence findings
+
+Read-only audit of **1e0867f** across the suite, incorporating the recent persistence investigation. **17 entries: 2 Critical, 8 High, 4 Medium, 1 Low and 2 Cleanup.** Full suite across all 287 test modules: **3,116 passed, 3 failed, 9 skipped, 1,165 passed subtests**, in four isolated processes.
+
+The urgent issues include failed-save close paths, incorrect inverse TVD-to-MD and inconsistent TVD pay net/gross on undulating surveys, and LAS-run cache accounting. The Galveston incident is not proven without client files. Native Windows/customer-EXE qualification remains outstanding. All 961 tracked software files and the source ZIP are unchanged.
+
+- [Read the combined report](audits/v0.9.70-full-combined/OandG_Workbench_v0.9.70_Full_Combined_Audit.md)
+- [Download PDF](https://github.com/kwgeologist/Software-reviews/raw/refs/heads/main/audits/v0.9.70-full-combined/OandG_Workbench_v0.9.70_Full_Combined_Audit.pdf)
+- [Download complete audit and evidence ZIP](https://github.com/kwgeologist/Software-reviews/raw/refs/heads/main/audits/v0.9.70-full-combined/OandG_Workbench_v0.9.70_Full_Combined_Audit_Bundle.zip)
+- [Findings CSV](audits/v0.9.70-full-combined/OandG_Workbench_v0.9.70_Combined_Findings.csv)
+- [Evidence, commands and limitations](audits/v0.9.70-full-combined/OandG_Workbench_v0.9.70_Full_Audit_Evidence.md)
+- [Review-coverage ledger](audits/v0.9.70-full-combined/OandG_Workbench_v0.9.70_Review_Coverage.csv)
+
+Only audit artifacts are published here; no software fixes or release changes were made.
+
+
 ## O&G Workbench v0.9.63 — Cross Section stale formation tops
 
 **Confirmed at 42d8e33:** global deletion removes definitions, aliases and picks, but Cross Section's Tops dialog and Display Manager retain saved top styles without validating canonical membership. All twelve examples reproduced with **only LO/BMB sources**, including save/reopen. After pick refresh, deleted top marks no longer render. No code changed.

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="1" time="3.061" timestamp="2026-11-22T22:26:32.710319+00:00" hostname="92eca82e4988"><testcase classname="tests.test_v0970_tk_lifecycle.LayoutSettles" name="test_natural_and_resized_manager_settles" time="2.850"><failure message="AssertionError: 20000 not less than 20000 : the layout never settled (scaling 1.25)">tests/test_v0970_tk_lifecycle.py:131: in test_natural_and_resized_manager_settles
+    self.settled(win, f"scaling {scaling}")
+tests/test_v0970_tk_lifecycle.py:103: in settled
+    self.assertLess(drain(win), 20000, f"the layout never settled ({what})")
+E   AssertionError: 20000 not less than 20000 : the layout never settled (scaling 1.25)</failure></testcase></testsuite></testsuites>

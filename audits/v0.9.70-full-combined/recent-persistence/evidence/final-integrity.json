@@ -1,0 +1,22 @@
+{
+  "source_files_rehashed": 961,
+  "changed_or_missing": [],
+  "commit": "1e0867ff44516b6cf13dfdbf8b8e6391b6fbf4fa",
+  "git_status": "",
+  "archive_sha256_after": "a1043496dc4fd868ce95817887fecbbb2e02a4012cca00834d70b6fbd85a6797",
+  "compare_commit": "020a48defc83204b8ea28275d44cb7e18fefaa36",
+  "compare_git_status": "",
+  "Software_reviews_commit": "ba5d6a37253fe437f4b2044360c061d9b2511846",
+  "Software_reviews_status": "",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "sqlite": "3.53.1",
+  "versions": {
+    "numpy": "2.5.5",
+    "scipy": "1.18.1",
+    "matplotlib": "3.11.2",
+    "pytest": "9.2.0",
+    "Tcl_patchlevel": "9.0.4",
+    "Tk_major": 9.0
+  }
+}

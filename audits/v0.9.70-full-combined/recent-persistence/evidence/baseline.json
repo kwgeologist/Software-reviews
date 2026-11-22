@@ -1,0 +1,11 @@
+{
+  "version": "0.9.70",
+  "commit": "1e0867ff44516b6cf13dfdbf8b8e6391b6fbf4fa",
+  "compare": "020a48defc83204b8ea28275d44cb7e18fefaa36",
+  "archive_bytes": 11987621,
+  "archive_sha256": "a1043496dc4fd868ce95817887fecbbb2e02a4012cca00834d70b6fbd85a6797",
+  "zip_crc": "passed",
+  "python_files_compared": 652,
+  "differences": [],
+  "tracked_files": 961
+}

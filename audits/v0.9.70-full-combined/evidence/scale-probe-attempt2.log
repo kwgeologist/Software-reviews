@@ -1,0 +1,4 @@
+  File "/workspace/audit-v0.9.70-full/probes/scale_probe.py", line 14
+    con.executemany('insert into wells(well_name,api_uwi,well_uid,created_at,updated_at)values(?,?,?,'2026-11-22','2026-11-22')',((f'Synthetic {k:06}',f'42{k:012}',f'synthetic-{k}')for k in range(n)))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?

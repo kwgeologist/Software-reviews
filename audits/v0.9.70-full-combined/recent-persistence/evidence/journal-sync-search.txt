@@ -1,0 +1,2 @@
+ogcore/repositories.py:3:each calls its Dropbox or data drive.
+ogcore/recovery.py:202:            con.execute("PRAGMA wal_checkpoint(TRUNCATE)")

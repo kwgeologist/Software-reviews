@@ -1,0 +1,48 @@
+{
+  "nonmonotonic_inverse": {
+    "survey": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        1000.0,
+        1000.0
+      ],
+      [
+        2000.0,
+        900.0
+      ],
+      [
+        3000.0,
+        1100.0
+      ]
+    ],
+    "requested_TVD": 1050,
+    "returned_MD": 2000.0,
+    "forward_TVD_at_returned_MD": 900.0,
+    "correct_unique_crossing_MD": 2750.0
+  },
+  "geosteering_inverse_for_comparison": {
+    "first_crossing_MD": 2750.0000000000005
+  },
+  "pay_nonmonotonic": {
+    "gross_TVD": 100.0,
+    "net_TVD_all_samples_pay": 275.0,
+    "net_gross_ratio": 2.75,
+    "gross_MD": 2000.0,
+    "net_MD": 2000.0
+  },
+  "eur_without_months": {
+    "eur": 100000,
+    "gross_span": 1000,
+    "eur_per_ft": null,
+    "expected": 100.0
+  },
+  "production_reference": {
+    "cum_boe": 200.0,
+    "gor": 6000.0,
+    "water_cut": 0.3333333333333333,
+    "eur_per_ft": 100.0
+  }
+}

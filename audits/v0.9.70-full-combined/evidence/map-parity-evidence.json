@@ -1,0 +1,661 @@
+{
+  "commit": "1e0867ff44516b6cf13dfdbf8b8e6391b6fbf4fa",
+  "synthetic_only": true,
+  "ui_executed": false,
+  "cases": [
+    {
+      "crs": "EPSG:32613",
+      "depth_units": "m",
+      "name": "vertical",
+      "mode": "surface",
+      "stick_start": null,
+      "stick_end": null,
+      "regular_symbol": [
+        500000.0,
+        3200000.0
+      ],
+      "seismic_symbol": [
+        500000.0,
+        3200000.0
+      ],
+      "maps_agree": true,
+      "separation_map_units": 0.0,
+      "regular_bottom_post": [
+        500000.0,
+        3200000.0
+      ]
+    },
+    {
+      "crs": "EPSG:32613",
+      "depth_units": "m",
+      "name": "conflicting_BHL",
+      "mode": "surface",
+      "stick_start": [
+        500000.0,
+        3200000.0
+      ],
+      "stick_end": [
+        500600.0,
+        3200800.0
+      ],
+      "regular_symbol": [
+        500000.0,
+        3200000.0
+      ],
+      "seismic_symbol": [
+        500000.0,
+        3200000.0
+      ],
+      "maps_agree": true,
+      "separation_map_units": 0.0,
+      "regular_bottom_post": [
+        501000.0,
+        3201200.0
+      ]
+    },
+    {
+      "crs": "EPSG:32613",
+      "depth_units": "m",
+      "name": "survey_no_BHL",
+      "mode": "surface",
+      "stick_start": [
+        500000.0,
+        3200000.0
+      ],
+      "stick_end": [
+        500600.0,
+        3200800.0
+      ],
+      "regular_symbol": [
+        500000.0,
+        3200000.0
+      ],
+      "seismic_symbol": [
+        500000.0,
+        3200000.0
+      ],
+      "maps_agree": true,
+      "separation_map_units": 0.0,
+      "regular_bottom_post": [
+        500600.0,
+        3200800.0
+      ]
+    },
+    {
+      "crs": "EPSG:32613",
+      "depth_units": "m",
+      "name": "typed_no_survey",
+      "mode": "surface",
+      "stick_start": [
+        500000.0,
+        3200000.0
+      ],
+      "stick_end": [
+        501000.0,
+        3201200.0
+      ],
+      "regular_symbol": [
+        500000.0,
+        3200000.0
+      ],
+      "seismic_symbol": [
+        500000.0,
+        3200000.0
+      ],
+      "maps_agree": true,
+      "separation_map_units": 0.0,
+      "regular_bottom_post": [
+        501000.0,
+        3201200.0
+      ]
+    },
+    {
+      "crs": "EPSG:32613",
+      "depth_units": "m",
+      "name": "BHL_only",
+      "mode": "surface",
+      "stick_start": null,
+      "stick_end": null,
+      "regular_symbol": [
+        501000.0,
+        3201200.0
+      ],
+      "seismic_symbol": [
+        501000.0,
+        3201200.0
+      ],
+      "maps_agree": true,
+      "separation_map_units": 0.0,
+      "regular_bottom_post": [
+        501000.0,
+        3201200.0
+      ]
+    },
+    {
+      "crs": "EPSG:32613",
+      "depth_units": "m",
+      "name": "invalid_BHL",
+      "mode": "surface",
+      "stick_start": [
+        500000.0,
+        3200000.0
+      ],
+      "stick_end": [
+        500600.0,
+        3200800.0
+      ],
+      "regular_symbol": [
+        500000.0,
+        3200000.0
+      ],
+      "seismic_symbol": [
+        500000.0,
+        3200000.0
+      ],
+      "maps_agree": true,
+      "separation_map_units": 0.0,
+      "regular_bottom_post": [
+        500600.0,
+        3200800.0
+      ]
+    },
+    {
+      "crs": "EPSG:32613",
+      "depth_units": "m",
+      "name": "vertical",
+      "mode": "bottom hole",
+      "stick_start": null,
+      "stick_end": null,
+      "regular_symbol": [
+        500000.0,
+        3200000.0
+      ],
+      "seismic_symbol": [
+        500000.0,
+        3200000.0
+      ],
+      "maps_agree": true,
+      "separation_map_units": 0.0,
+      "regular_bottom_post": [
+        500000.0,
+        3200000.0
+      ]
+    },
+    {
+      "crs": "EPSG:32613",
+      "depth_units": "m",
+      "name": "conflicting_BHL",
+      "mode": "bottom hole",
+      "stick_start": [
+        500000.0,
+        3200000.0
+      ],
+      "stick_end": [
+        500600.0,
+        3200800.0
+      ],
+      "regular_symbol": [
+        500600.0,
+        3200800.0
+      ],
+      "seismic_symbol": [
+        500600.0,
+        3200800.0
+      ],
+      "maps_agree": true,
+      "separation_map_units": 0.0,
+      "regular_bottom_post": [
+        501000.0,
+        3201200.0
+      ]
+    },
+    {
+      "crs": "EPSG:32613",
+      "depth_units": "m",
+      "name": "survey_no_BHL",
+      "mode": "bottom hole",
+      "stick_start": [
+        500000.0,
+        3200000.0
+      ],
+      "stick_end": [
+        500600.0,
+        3200800.0
+      ],
+      "regular_symbol": [
+        500600.0,
+        3200800.0
+      ],
+      "seismic_symbol": [
+        500600.0,
+        3200800.0
+      ],
+      "maps_agree": true,
+      "separation_map_units": 0.0,
+      "regular_bottom_post": [
+        500600.0,
+        3200800.0
+      ]
+    },
+    {
+      "crs": "EPSG:32613",
+      "depth_units": "m",
+      "name": "typed_no_survey",
+      "mode": "bottom hole",
+      "stick_start": [
+        500000.0,
+        3200000.0
+      ],
+      "stick_end": [
+        501000.0,
+        3201200.0
+      ],
+      "regular_symbol": [
+        501000.0,
+        3201200.0
+      ],
+      "seismic_symbol": [
+        501000.0,
+        3201200.0
+      ],
+      "maps_agree": true,
+      "separation_map_units": 0.0,
+      "regular_bottom_post": [
+        501000.0,
+        3201200.0
+      ]
+    },
+    {
+      "crs": "EPSG:32613",
+      "depth_units": "m",
+      "name": "BHL_only",
+      "mode": "bottom hole",
+      "stick_start": null,
+      "stick_end": null,
+      "regular_symbol": [
+        501000.0,
+        3201200.0
+      ],
+      "seismic_symbol": [
+        501000.0,
+        3201200.0
+      ],
+      "maps_agree": true,
+      "separation_map_units": 0.0,
+      "regular_bottom_post": [
+        501000.0,
+        3201200.0
+      ]
+    },
+    {
+      "crs": "EPSG:32613",
+      "depth_units": "m",
+      "name": "invalid_BHL",
+      "mode": "bottom hole",
+      "stick_start": [
+        500000.0,
+        3200000.0
+      ],
+      "stick_end": [
+        500600.0,
+        3200800.0
+      ],
+      "regular_symbol": [
+        500600.0,
+        3200800.0
+      ],
+      "seismic_symbol": [
+        500600.0,
+        3200800.0
+      ],
+      "maps_agree": true,
+      "separation_map_units": 0.0,
+      "regular_bottom_post": [
+        500600.0,
+        3200800.0
+      ]
+    },
+    {
+      "crs": "EPSG:2278",
+      "depth_units": "ft",
+      "name": "vertical",
+      "mode": "surface",
+      "stick_start": null,
+      "stick_end": null,
+      "regular_symbol": [
+        500000.0,
+        3200000.0
+      ],
+      "seismic_symbol": [
+        500000.0,
+        3200000.0
+      ],
+      "maps_agree": true,
+      "separation_map_units": 0.0,
+      "regular_bottom_post": [
+        500000.0,
+        3200000.0
+      ]
+    },
+    {
+      "crs": "EPSG:2278",
+      "depth_units": "ft",
+      "name": "conflicting_BHL",
+      "mode": "surface",
+      "stick_start": [
+        500000.0,
+        3200000.0
+      ],
+      "stick_end": [
+        500599.9988,
+        3200799.9984
+      ],
+      "regular_symbol": [
+        500000.0,
+        3200000.0
+      ],
+      "seismic_symbol": [
+        500000.0,
+        3200000.0
+      ],
+      "maps_agree": true,
+      "separation_map_units": 0.0,
+      "regular_bottom_post": [
+        501000.0,
+        3201200.0
+      ]
+    },
+    {
+      "crs": "EPSG:2278",
+      "depth_units": "ft",
+      "name": "survey_no_BHL",
+      "mode": "surface",
+      "stick_start": [
+        500000.0,
+        3200000.0
+      ],
+      "stick_end": [
+        500599.9988,
+        3200799.9984
+      ],
+      "regular_symbol": [
+        500000.0,
+        3200000.0
+      ],
+      "seismic_symbol": [
+        500000.0,
+        3200000.0
+      ],
+      "maps_agree": true,
+      "separation_map_units": 0.0,
+      "regular_bottom_post": [
+        500599.9988,
+        3200799.9984
+      ]
+    },
+    {
+      "crs": "EPSG:2278",
+      "depth_units": "ft",
+      "name": "typed_no_survey",
+      "mode": "surface",
+      "stick_start": [
+        500000.0,
+        3200000.0
+      ],
+      "stick_end": [
+        501000.0,
+        3201200.0
+      ],
+      "regular_symbol": [
+        500000.0,
+        3200000.0
+      ],
+      "seismic_symbol": [
+        500000.0,
+        3200000.0
+      ],
+      "maps_agree": true,
+      "separation_map_units": 0.0,
+      "regular_bottom_post": [
+        501000.0,
+        3201200.0
+      ]
+    },
+    {
+      "crs": "EPSG:2278",
+      "depth_units": "ft",
+      "name": "BHL_only",
+      "mode": "surface",
+      "stick_start": null,
+      "stick_end": null,
+      "regular_symbol": [
+        501000.0,
+        3201200.0
+      ],
+      "seismic_symbol": [
+        501000.0,
+        3201200.0
+      ],
+      "maps_agree": true,
+      "separation_map_units": 0.0,
+      "regular_bottom_post": [
+        501000.0,
+        3201200.0
+      ]
+    },
+    {
+      "crs": "EPSG:2278",
+      "depth_units": "ft",
+      "name": "invalid_BHL",
+      "mode": "surface",
+      "stick_start": [
+        500000.0,
+        3200000.0
+      ],
+      "stick_end": [
+        500599.9988,
+        3200799.9984
+      ],
+      "regular_symbol": [
+        500000.0,
+        3200000.0
+      ],
+      "seismic_symbol": [
+        500000.0,
+        3200000.0
+      ],
+      "maps_agree": true,
+      "separation_map_units": 0.0,
+      "regular_bottom_post": [
+        500599.9988,
+        3200799.9984
+      ]
+    },
+    {
+      "crs": "EPSG:2278",
+      "depth_units": "ft",
+      "name": "vertical",
+      "mode": "bottom hole",
+      "stick_start": null,
+      "stick_end": null,
+      "regular_symbol": [
+        500000.0,
+        3200000.0
+      ],
+      "seismic_symbol": [
+        500000.0,
+        3200000.0
+      ],
+      "maps_agree": true,
+      "separation_map_units": 0.0,
+      "regular_bottom_post": [
+        500000.0,
+        3200000.0
+      ]
+    },
+    {
+      "crs": "EPSG:2278",
+      "depth_units": "ft",
+      "name": "conflicting_BHL",
+      "mode": "bottom hole",
+      "stick_start": [
+        500000.0,
+        3200000.0
+      ],
+      "stick_end": [
+        500599.9988,
+        3200799.9984
+      ],
+      "regular_symbol": [
+        500599.9988,
+        3200799.9984
+      ],
+      "seismic_symbol": [
+        500599.9988,
+        3200799.9984
+      ],
+      "maps_agree": true,
+      "separation_map_units": 0.0,
+      "regular_bottom_post": [
+        501000.0,
+        3201200.0
+      ]
+    },
+    {
+      "crs": "EPSG:2278",
+      "depth_units": "ft",
+      "name": "survey_no_BHL",
+      "mode": "bottom hole",
+      "stick_start": [
+        500000.0,
+        3200000.0
+      ],
+      "stick_end": [
+        500599.9988,
+        3200799.9984
+      ],
+      "regular_symbol": [
+        500599.9988,
+        3200799.9984
+      ],
+      "seismic_symbol": [
+        500599.9988,
+        3200799.9984
+      ],
+      "maps_agree": true,
+      "separation_map_units": 0.0,
+      "regular_bottom_post": [
+        500599.9988,
+        3200799.9984
+      ]
+    },
+    {
+      "crs": "EPSG:2278",
+      "depth_units": "ft",
+      "name": "typed_no_survey",
+      "mode": "bottom hole",
+      "stick_start": [
+        500000.0,
+        3200000.0
+      ],
+      "stick_end": [
+        501000.0,
+        3201200.0
+      ],
+      "regular_symbol": [
+        501000.0,
+        3201200.0
+      ],
+      "seismic_symbol": [
+        501000.0,
+        3201200.0
+      ],
+      "maps_agree": true,
+      "separation_map_units": 0.0,
+      "regular_bottom_post": [
+        501000.0,
+        3201200.0
+      ]
+    },
+    {
+      "crs": "EPSG:2278",
+      "depth_units": "ft",
+      "name": "BHL_only",
+      "mode": "bottom hole",
+      "stick_start": null,
+      "stick_end": null,
+      "regular_symbol": [
+        501000.0,
+        3201200.0
+      ],
+      "seismic_symbol": [
+        501000.0,
+        3201200.0
+      ],
+      "maps_agree": true,
+      "separation_map_units": 0.0,
+      "regular_bottom_post": [
+        501000.0,
+        3201200.0
+      ]
+    },
+    {
+      "crs": "EPSG:2278",
+      "depth_units": "ft",
+      "name": "invalid_BHL",
+      "mode": "bottom hole",
+      "stick_start": [
+        500000.0,
+        3200000.0
+      ],
+      "stick_end": [
+        500599.9988,
+        3200799.9984
+      ],
+      "regular_symbol": [
+        500599.9988,
+        3200799.9984
+      ],
+      "seismic_symbol": [
+        500599.9988,
+        3200799.9984
+      ],
+      "maps_agree": true,
+      "separation_map_units": 0.0,
+      "regular_bottom_post": [
+        500599.9988,
+        3200799.9984
+      ]
+    }
+  ],
+  "refresh_reopen": [
+    {
+      "crs": "EPSG:32613",
+      "changed_well_reloaded": true,
+      "survey_end_changed": [
+        500650.0,
+        3200800.0
+      ],
+      "prior_display_symbol": [
+        500600.0,
+        3200800.0
+      ],
+      "display_symbol_tracks_changed_endpoint_after_reopen": true
+    },
+    {
+      "crs": "EPSG:2278",
+      "changed_well_reloaded": true,
+      "survey_end_changed": [
+        500649.9987,
+        3200799.9984
+      ],
+      "prior_display_symbol": [
+        500599.9988,
+        3200799.9984
+      ],
+      "display_symbol_tracks_changed_endpoint_after_reopen": true
+    }
+  ],
+  "path_parity_assertions": 24,
+  "mismatch_cases": 0
+}

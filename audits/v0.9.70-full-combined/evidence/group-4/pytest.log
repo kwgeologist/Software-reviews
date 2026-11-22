@@ -1,0 +1,88 @@
+.............................................. [  6%]
+............................................................................................. [ 18%]
+....F.................................. [ 24%]
+.............................................................................. [ 34%]
+...................s.................................................... [ 44%]
+................................................................................................. [ 57%]
+................................................................................................................................................................................................ [ 83%]
+...................................................................... [ 92%]
+..............................s..................... [100%]
+=================================== FAILURES ===================================
+____ CorrelationAppTests.test_correlation_box_over_digital_logs_never_pans _____
+tests/test_correlation.py:635: in test_correlation_box_over_digital_logs_never_pans
+    self.assertAlmostEqual(wide.width, end - (p.x0 + 0.3), places=6)
+E   AssertionError: 6.296937045548732 != 6.300000000000001 within 6 places (0.0030629544512690288 difference)
+----------------------------- Captured stderr call -----------------------------
+invalid command name "139757479714112idle_draw"
+    while executing
+"139757479714112idle_draw"
+    ("after" script)
+=============================== warnings summary ===============================
+../../../opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/anyio/pytest_plugin.py:14
+  /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/anyio/pytest_plugin.py:14: PytestRemovedIn10Warning: _pytest.python.CallSpec2 has been renamed to CallSpec.
+  The CallSpec2 alias will be removed in pytest 10.
+  Update imports to use CallSpec instead.
+  See https://docs.pytest.org/en/stable/deprecations.html#callspec2-renamed
+    from _pytest.python import CallSpec2
+
+tests/test_seismic_map_layers.py::SeismicMapLayerTests::test_rename_move_zoom_delete_persist
+  /workspace/audit-v0.9.68-full/deps/shapefile.py:2993: PossiblyCorruptFileHeader: Declared file size in /tmp/tmpo_897fgt/Leases.dbf header: 87 smaller than actual file size: 101 (both in bytes)
+    warnings.warn(msg, category=PossiblyCorruptFileHeader)
+
+tests/test_seismic_map_layers.py::SeismicMapLayerTests::test_rename_move_zoom_delete_persist
+  /workspace/audit-v0.9.68-full/deps/shapefile.py:2993: PossiblyCorruptFileHeader: Declared file size in /tmp/tmpo_897fgt/Roads.dbf header: 87 smaller than actual file size: 101 (both in bytes)
+    warnings.warn(msg, category=PossiblyCorruptFileHeader)
+
+tests/test_seismic_map_layers.py::SeismicMapLayerTests::test_rename_move_zoom_delete_persist
+  /workspace/audit-v0.9.68-full/deps/shapefile.py:2993: PossiblyCorruptFileHeader: Declared file size in /tmp/tmpo_897fgt/Wells pad.dbf header: 87 smaller than actual file size: 101 (both in bytes)
+    warnings.warn(msg, category=PossiblyCorruptFileHeader)
+
+tests/test_seismic_map_layers.py::SeismicMapLayerTests::test_style_dialog_is_geos_and_the_style_is_shared
+  /workspace/audit-v0.9.68-full/deps/shapefile.py:2993: PossiblyCorruptFileHeader: Declared file size in /tmp/tmpkore99r0/Leases.dbf header: 87 smaller than actual file size: 101 (both in bytes)
+    warnings.warn(msg, category=PossiblyCorruptFileHeader)
+
+tests/test_seismic_map_layers.py::SeismicMapLayerTests::test_style_dialog_is_geos_and_the_style_is_shared
+  /workspace/audit-v0.9.68-full/deps/shapefile.py:2993: PossiblyCorruptFileHeader: Declared file size in /tmp/tmpkore99r0/Roads.dbf header: 87 smaller than actual file size: 101 (both in bytes)
+    warnings.warn(msg, category=PossiblyCorruptFileHeader)
+
+tests/test_seismic_map_layers.py::SeismicMapLayerTests::test_style_dialog_is_geos_and_the_style_is_shared
+  /workspace/audit-v0.9.68-full/deps/shapefile.py:2993: PossiblyCorruptFileHeader: Declared file size in /tmp/tmpkore99r0/Wells pad.dbf header: 87 smaller than actual file size: 101 (both in bytes)
+    warnings.warn(msg, category=PossiblyCorruptFileHeader)
+
+tests/test_seismic_map_layers.py::SeismicMapLayerTests::test_tree_lists_layers_top_first_with_a_right_click_menu
+  /workspace/audit-v0.9.68-full/deps/shapefile.py:2993: PossiblyCorruptFileHeader: Declared file size in /tmp/tmph78836ip/Leases.dbf header: 87 smaller than actual file size: 101 (both in bytes)
+    warnings.warn(msg, category=PossiblyCorruptFileHeader)
+
+tests/test_seismic_map_layers.py::SeismicMapLayerTests::test_tree_lists_layers_top_first_with_a_right_click_menu
+  /workspace/audit-v0.9.68-full/deps/shapefile.py:2993: PossiblyCorruptFileHeader: Declared file size in /tmp/tmph78836ip/Roads.dbf header: 87 smaller than actual file size: 101 (both in bytes)
+    warnings.warn(msg, category=PossiblyCorruptFileHeader)
+
+tests/test_seismic_map_layers.py::SeismicMapLayerTests::test_tree_lists_layers_top_first_with_a_right_click_menu
+  /workspace/audit-v0.9.68-full/deps/shapefile.py:2993: PossiblyCorruptFileHeader: Declared file size in /tmp/tmph78836ip/Wells pad.dbf header: 87 smaller than actual file size: 101 (both in bytes)
+    warnings.warn(msg, category=PossiblyCorruptFileHeader)
+
+tests/test_seismic_map_layers.py::SeismicMapLayerTests::test_visibility_box_and_menu
+  /workspace/audit-v0.9.68-full/deps/shapefile.py:2993: PossiblyCorruptFileHeader: Declared file size in /tmp/tmpl7n4nvqk/Leases.dbf header: 87 smaller than actual file size: 101 (both in bytes)
+    warnings.warn(msg, category=PossiblyCorruptFileHeader)
+
+tests/test_seismic_map_layers.py::SeismicMapLayerTests::test_visibility_box_and_menu
+  /workspace/audit-v0.9.68-full/deps/shapefile.py:2993: PossiblyCorruptFileHeader: Declared file size in /tmp/tmpl7n4nvqk/Roads.dbf header: 87 smaller than actual file size: 101 (both in bytes)
+    warnings.warn(msg, category=PossiblyCorruptFileHeader)
+
+tests/test_seismic_map_layers.py::SeismicMapLayerTests::test_visibility_box_and_menu
+  /workspace/audit-v0.9.68-full/deps/shapefile.py:2993: PossiblyCorruptFileHeader: Declared file size in /tmp/tmpl7n4nvqk/Wells pad.dbf header: 87 smaller than actual file size: 101 (both in bytes)
+    warnings.warn(msg, category=PossiblyCorruptFileHeader)
+
+tests/test_v0969_shapes_audit.py::AppendedSources::test_intentionally_external_source_is_kept_and_listed
+  /workspace/audit-v0.9.68-full/deps/shapefile.py:2993: PossiblyCorruptFileHeader: Declared file size in /tmp/tmp4ivn2yf5/Shared GIS/far.dbf header: 87 smaller than actual file size: 101 (both in bytes)
+    warnings.warn(msg, category=PossiblyCorruptFileHeader)
+
+tests/test_map_layer_speed.py::MapLayerSpeedTests::test_an_unchanged_file_is_not_read_again
+  /workspace/audit-v0.9.68-full/deps/shapefile.py:2993: PossiblyCorruptFileHeader: Declared file size in /tmp/tmprn19f8gr/sections.dbf header: 81 smaller than actual file size: 101 (both in bytes)
+    warnings.warn(msg, category=PossiblyCorruptFileHeader)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+SKIPPED [1] tests/test_geo_tabs.py:580: Explorer drops are a Windows message
+SKIPPED [1] tests/test_kingdom_native_full.py:22: full Kingdom files not supplied (OGW_KINGDOM_NATIVE / OGW_KINGDOM_TRUTH)
+1 failed, 736 passed, 2 skipped, 15 warnings, 557 subtests passed in 458.04s (0:07:38)

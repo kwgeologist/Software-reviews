@@ -1,0 +1,101 @@
+ogmap/drawings.py:79:    def closed(self) -> bool:
+ogmap/drawings.py:132:    except (ValueError, TypeError):
+ogmap/drawings.py:136:    except (ValueError, TypeError):
+ogmap/drawings.py:146:    except Exception:  # a project from before drawings
+ogmap/drawings.py:156:def save(db, drawing: Drawing) -> int:
+ogmap/grids.py:111:    except (TypeError, ValueError):
+ogmap/grids.py:182:    except (TypeError, ValueError):
+ogmap/grids.py:197:    except (OSError, KeyError, ValueError, zipfile.BadZipFile) as exc:
+ogmap/grids.py:205:    except (AttributeError, IndexError, KeyError, TypeError, ValueError) as exc:
+ogmap/grids.py:261:        except ValueError as exc:  # gone, or not readable: listed, with nothing to draw
+ogmap/grids.py:314:            except (OSError, KeyError, ValueError, zipfile.BadZipFile):
+ogmap/grids.py:327:            except BaseException:
+ogmap/grids.py:389:    except OSError:
+ogmap/grids.py:399:    except (TypeError, ValueError, sqlite3.Error):
+ogmap/grids.py:427:    except ProcessLookupError:
+ogmap/grids.py:429:    except PermissionError:
+ogmap/grids.py:431:    except OSError:
+ogmap/grids.py:447:        except (TypeError, ValueError):
+ogmap/grids.py:451:    except (TypeError, ValueError):
+ogmap/grids.py:482:            except Exception as exc:
+ogmap/grids.py:512:    except (OSError, KeyError, ValueError, zipfile.BadZipFile):
+ogmap/grids.py:528:    except OSError:
+ogmap/grids.py:550:    except (sqlite3.Error, OSError):
+ogmap/grids.py:592:def save(db, grid: ProjectGrid, _refresh=None) -> int:
+ogmap/grids.py:644:        except BaseException:
+ogmap/grids.py:723:def save_display(db, grid: ProjectGrid) -> None:
+ogmap/grids.py:742:            except ValueError:
+ogmap/grids.py:765:    except OSError:
+ogmap/grids.py:773:    except FileNotFoundError:
+ogmap/grids.py:806:        except ValueError:
+seismicworkbench/layout.py:31:    except Exception:  # Windows and macOS: wm_state is "zoomed"
+seismicworkbench/layout.py:35:    except Exception:
+seismicworkbench/layout.py:148:        except Exception:  # a window half torn down: left out, never a reason not to close
+seismicworkbench/layout.py:155:def save(app) -> None:
+seismicworkbench/layout.py:163:    except Exception:  # a read-only project: the next session opens as new
+seismicworkbench/layout.py:172:    except (ValueError, TypeError, KeyError, AttributeError):
+seismicworkbench/layout.py:181:    except (ValueError, TypeError):
+seismicworkbench/layout.py:193:    except (ValueError, TypeError):
+seismicworkbench/layout.py:204:            except Exception:
+seismicworkbench/layout.py:206:    except Exception:
+seismicworkbench/layout.py:216:    except Exception:
+seismicworkbench/layout.py:226:        except Exception:  # a line or horizon that no longer exists: that window is left out
+geosteering/project.py:221:        except Exception as exc:
+geosteering/project.py:283:def save_job(db, job: SteeringJob, st=None) -> None:
+geosteering/project.py:336:    except ValueError:
+geosteering/project.py:386:        except ValueError:
+geosteering/project.py:439:    except Exception:
+geosteering/project.py:524:    except ValueError as exc:
+geosteering/project.py:574:        except ValueError as exc:
+geosteering/project.py:605:        except Exception as exc:
+geosteering/project.py:792:    except BaseException:
+geosteering/project.py:804:        except OSError:
+geosteering/project.py:810:        except OSError:
+ogcore/recovery.py:82:        except FileNotFoundError:
+ogcore/recovery.py:101:        except (OSError, ValueError, KeyError, TypeError) as exc:
+ogcore/recovery.py:148:            except sqlite3.OperationalError as exc:
+ogcore/recovery.py:159:            except sqlite3.DatabaseError as exc:
+ogcore/recovery.py:172:        except _Changing:
+ogcore/recovery.py:175:        except Exception as exc:
+ogcore/recovery.py:219:    def close(self) -> None:
+ogcore/recovery.py:222:        except Exception:
+ogcore/recovery.py:388:        except BaseException:
+ogcore/recovery.py:518:    except (IndexError, KeyError):
+petroworkbench/geo_link.py:85:    def _close_geo_db(self):
+petroworkbench/geo_link.py:91:            except Exception:
+petroworkbench/geo_link.py:97:        except Exception:
+petroworkbench/geo_link.py:107:            except Exception:
+petroworkbench/geo_link.py:197:            except Exception as exc:
+petroworkbench/geo_link.py:391:            except Exception:
+petroworkbench/geo_link.py:409:        except Exception as exc:
+petroworkbench/geo_link.py:421:    def _save_geo_workspace(self, key):
+petroworkbench/geo_link.py:532:            except Exception as exc:  # the curves are saved; the zone results follow next time
+petroworkbench/geo_link.py:553:            except Exception:
+petroworkbench/geo_link.py:924:            except Exception:
+petroworkbench/geo_link.py:953:        except Exception:
+petroworkbench/geo_link.py:989:        except Exception:
+petroworkbench/geo_link.py:1118:        except Exception:
+petroworkbench/geo_link.py:1158:                except (KeyError, ValueError):
+petroworkbench/geo_link.py:1175:    def save_geo_project(self):
+petroworkbench/geo_link.py:1190:            except Exception as exc:
+petroworkbench/geo_link.py:1225:        except (TypeError, ValueError):
+petroworkbench/geo_link.py:1689:        except Exception:
+petroworkbench/geo_link.py:1771:                except Exception:
+petroworkbench/geo_link.py:1779:        except OSError:
+petroworkbench/geo_link.py:1784:    def load_ogw_project(self, path, selected_well_id=None, prefer_saved=True):
+petroworkbench/geo_link.py:1830:            except Exception as exc:
+petroworkbench/geo_link.py:1843:        except OSError as exc:  # a read-only folder: work continues without the marker
+ogcore/project.py:137:        except KeyError as exc:
+ogcore/project.py:173:        except (OSError, ValueError) as exc:
+ogcore/project.py:207:        except ValueError:
+ogcore/project.py:217:    def save_manifest(self) -> Path:
+ogcore/project.py:234:        except OSError:
+ogcore/project.py:256:            except OSError:
+ogcore/project.py:261:                except ProjectError:
+ogcore/project.py:303:    except OSError:
+ogcore/project.py:350:    except ValueError:
+ogcore/project.py:433:                except sqlite3.OperationalError:
+ogcore/project.py:472:    except BaseException:
+ogcore/project.py:501:    except Exception:  # (the grids stay in the database until then)
+ogcore/project.py:530:    except sqlite3.OperationalError:
+ogcore/project.py:569:    except OSError:

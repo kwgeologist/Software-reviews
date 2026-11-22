@@ -1,0 +1,182 @@
+{
+  "passed": 3116,
+  "failed": 3,
+  "skipped": 9,
+  "subtests_passed": 1165,
+  "groups": [
+    {
+      "group": 1,
+      "passed": 826,
+      "failed": 0,
+      "skipped": 0,
+      "subtests_passed": 235,
+      "exit_code": 0,
+      "xml": {
+        "name": "pytest",
+        "errors": "0",
+        "failures": "0",
+        "skipped": "0",
+        "tests": "1061",
+        "time": "835.124",
+        "timestamp": "2026-11-22T22:40:19.193788+00:00",
+        "hostname": "92eca82e4988"
+      }
+    },
+    {
+      "group": 2,
+      "passed": 696,
+      "failed": 0,
+      "skipped": 3,
+      "subtests_passed": 275,
+      "exit_code": 0,
+      "xml": {
+        "name": "pytest",
+        "errors": "0",
+        "failures": "0",
+        "skipped": "3",
+        "tests": "974",
+        "time": "332.968",
+        "timestamp": "2026-11-22T22:40:19.439218+00:00",
+        "hostname": "92eca82e4988"
+      }
+    },
+    {
+      "group": 3,
+      "passed": 858,
+      "failed": 2,
+      "skipped": 4,
+      "subtests_passed": 98,
+      "exit_code": 1,
+      "xml": {
+        "name": "pytest",
+        "errors": "0",
+        "failures": "2",
+        "skipped": "4",
+        "tests": "962",
+        "time": "590.111",
+        "timestamp": "2026-11-22T22:40:19.636628+00:00",
+        "hostname": "92eca82e4988"
+      }
+    },
+    {
+      "group": 4,
+      "passed": 736,
+      "failed": 1,
+      "skipped": 2,
+      "subtests_passed": 557,
+      "exit_code": 1,
+      "xml": {
+        "name": "pytest",
+        "errors": "0",
+        "failures": "1",
+        "skipped": "2",
+        "tests": "1296",
+        "time": "458.025",
+        "timestamp": "2026-11-22T22:40:19.812395+00:00",
+        "hostname": "92eca82e4988"
+      }
+    }
+  ],
+  "failures": [
+    {
+      "group": 3,
+      "class": "tests.test_v0969_fonts_audit.RendererFonts",
+      "test": "test_tk_only_font",
+      "type": "failure",
+      "message": "AssertionError: 'urw gothic l' != 'avant garde gothic'\n- urw gothic l\n+ avant garde gothic\n : ('avant garde gothic', False, False)",
+      "text": "tests/test_v0969_fonts_audit.py:69: in test_tk_only_font\n    self.check(name, self.tk_names[name.casefold()], exact=True)  # Tk draws it\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\ntests/test_v0969_fonts_audit.py:47: in check\n    self.assertEqual(actual[\"family\"].casefold(), family.casefold(), (style, bold, italic))\nE   AssertionError: 'urw gothic l' != 'avant garde gothic'\nE   - urw gothic l\nE   + avant garde gothic\nE    : ('avant garde gothic', False, False)"
+    },
+    {
+      "group": 3,
+      "class": "tests.test_v0970_tk_lifecycle.LayoutSettles",
+      "test": "test_natural_and_resized_manager_settles",
+      "type": "failure",
+      "message": "AssertionError: 20000 not less than 20000 : the layout never settled (scaling 1.25)",
+      "text": "tests/test_v0970_tk_lifecycle.py:131: in test_natural_and_resized_manager_settles\n    self.settled(win, f\"scaling {scaling}\")\ntests/test_v0970_tk_lifecycle.py:103: in settled\n    self.assertLess(drain(win), 20000, f\"the layout never settled ({what})\")\nE   AssertionError: 20000 not less than 20000 : the layout never settled (scaling 1.25)"
+    },
+    {
+      "group": 4,
+      "class": "tests.test_correlation.CorrelationAppTests",
+      "test": "test_correlation_box_over_digital_logs_never_pans",
+      "type": "failure",
+      "message": "AssertionError: 6.296937045548732 != 6.300000000000001 within 6 places (0.0030629544512690288 difference)",
+      "text": "tests/test_correlation.py:635: in test_correlation_box_over_digital_logs_never_pans\n    self.assertAlmostEqual(wide.width, end - (p.x0 + 0.3), places=6)\nE   AssertionError: 6.296937045548732 != 6.300000000000001 within 6 places (0.0030629544512690288 difference)"
+    }
+  ],
+  "skips": [
+    {
+      "group": 2,
+      "class": "tests.test_cython_build.CompiledBuild",
+      "test": "test_a_patched_global_is_still_seen",
+      "type": "skipped",
+      "message": "the protected modules are not compiled (tools/release/build_cython.py)",
+      "text": "/workspace/audit-v0.9.70-integrity/checkout/tests/test_cython_build.py:115: the protected modules are not compiled (tools/release/build_cython.py)"
+    },
+    {
+      "group": 2,
+      "class": "tests.test_cython_build.CompiledBuild",
+      "test": "test_each_module_loads_as_its_extension",
+      "type": "skipped",
+      "message": "the protected modules are not compiled (tools/release/build_cython.py)",
+      "text": "/workspace/audit-v0.9.70-integrity/checkout/tests/test_cython_build.py:63: the protected modules are not compiled (tools/release/build_cython.py)"
+    },
+    {
+      "group": 2,
+      "class": "tests.test_cython_build.CompiledBuild",
+      "test": "test_same_results_as_the_python_source",
+      "type": "skipped",
+      "message": "the protected modules are not compiled (tools/release/build_cython.py)",
+      "text": "/workspace/audit-v0.9.70-integrity/checkout/tests/test_cython_build.py:69: the protected modules are not compiled (tools/release/build_cython.py)"
+    },
+    {
+      "group": 3,
+      "class": "tests.test_v0958_fixes.ExpiryNotSavedAtOnce",
+      "test": "test_dpapi_kept_expiry",
+      "type": "skipped",
+      "message": "DPAPI is Windows' (a Windows qualification item)",
+      "text": "/workspace/audit-v0.9.70-integrity/checkout/tests/test_v0958_fixes.py:254: DPAPI is Windows' (a Windows qualification item)"
+    },
+    {
+      "group": 3,
+      "class": "tests.test_licensing.Clock",
+      "test": "test_dpapi_round_trip",
+      "type": "skipped",
+      "message": "DPAPI is Windows' (a Windows qualification item)",
+      "text": "/workspace/audit-v0.9.70-integrity/checkout/tests/test_licensing.py:389: DPAPI is Windows' (a Windows qualification item)"
+    },
+    {
+      "group": 3,
+      "class": "tests.test_pdf_packaging.PackagedBuildTests",
+      "test": "test_packaged_pdf_import",
+      "type": "skipped",
+      "message": "slow packaged build: set OGW_PACKAGING_TEST=1",
+      "text": "/workspace/audit-v0.9.70-integrity/checkout/tests/test_pdf_packaging.py:208: slow packaged build: set OGW_PACKAGING_TEST=1"
+    },
+    {
+      "group": 3,
+      "class": "tests.test_v0957_fixes.ExistingState",
+      "test": "test_dpapi",
+      "type": "skipped",
+      "message": "DPAPI is Windows' (a Windows qualification item)",
+      "text": "/workspace/audit-v0.9.70-integrity/checkout/tests/test_v0957_fixes.py:268: DPAPI is Windows' (a Windows qualification item)"
+    },
+    {
+      "group": 4,
+      "class": "tests.test_geo_tabs.GeoTabTests",
+      "test": "test_files_dropped_from_explorer_reach_the_las_loader",
+      "type": "skipped",
+      "message": "Explorer drops are a Windows message",
+      "text": "/workspace/audit-v0.9.70-integrity/checkout/tests/test_geo_tabs.py:580: Explorer drops are a Windows message"
+    },
+    {
+      "group": 4,
+      "class": "tests.test_kingdom_native_full.FullKingdomValidation",
+      "test": "test_every_fault_and_horizon_matches_the_export",
+      "type": "skipped",
+      "message": "full Kingdom files not supplied (OGW_KINGDOM_NATIVE / OGW_KINGDOM_TRUTH)",
+      "text": "/workspace/audit-v0.9.70-integrity/checkout/tests/test_kingdom_native_full.py:22: full Kingdom files not supplied (OGW_KINGDOM_NATIVE / OGW_KINGDOM_TRUTH)"
+    }
+  ],
+  "modules_in_plan": 287,
+  "partitioned_not_serial": true
+}

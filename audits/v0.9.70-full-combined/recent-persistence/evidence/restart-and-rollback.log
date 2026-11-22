@@ -1,0 +1,92 @@
+{
+  "fresh_interpreter_original": {
+    "well_name": "Saved restart well",
+    "tops": 5,
+    "petro_values": [
+      1.0,
+      2.0,
+      3.0
+    ],
+    "horizon": 678.5,
+    "fault": [
+      {
+        "i": 1,
+        "j": 1,
+        "twt": 680.0,
+        "section": "IL 1"
+      }
+    ],
+    "polygon_vertices": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0
+      ],
+      [
+        1.0,
+        1.0
+      ],
+      [
+        0.0,
+        0.0
+      ]
+    ],
+    "correlation_spacing": 3.25,
+    "section_correlation": {
+      "1": 12001.0
+    },
+    "geosteer_job": "Restart job",
+    "integrity": "ok"
+  },
+  "fresh_interpreter_simulated_synced_copy": {
+    "well_name": "Saved restart well",
+    "tops": 5,
+    "petro_values": [
+      1.0,
+      2.0,
+      3.0
+    ],
+    "horizon": 678.5,
+    "fault": [
+      {
+        "i": 1,
+        "j": 1,
+        "twt": 680.0,
+        "section": "IL 1"
+      }
+    ],
+    "polygon_vertices": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0
+      ],
+      [
+        1.0,
+        1.0
+      ],
+      [
+        0.0,
+        0.0
+      ]
+    ],
+    "correlation_spacing": 3.25,
+    "section_correlation": {
+      "1": 12001.0
+    },
+    "geosteer_job": "Restart job",
+    "integrity": "ok"
+  },
+  "C_DELETE_uncommitted_crash_working_copy": {
+    "journal_preserved_before_recovery": true,
+    "previous_committed_rows_restored": 300,
+    "integrity": "ok",
+    "uncommitted_NEW_rows_not_expected_to_survive": true
+  }
+}

@@ -1,0 +1,18 @@
+Fontconfig error: No writable cache directories
+{
+  "seed_seconds": 1.2303438289964106,
+  "map_store_load_seconds": 0.786521319008898,
+  "map_one_well_refresh_seconds": 0.16136725299293175,
+  "map_refresh_changed_ids": [
+    1
+  ],
+  "seismic_wells_load_seconds": 0.6001791110029444,
+  "geo_load_project_including_list_seconds": 1.2695571079966612,
+  "geo_full_list_refresh_seconds": 0.985322669002926,
+  "geo_displayed_rows": 112000,
+  "wells": 112000,
+  "synthetic_only": true,
+  "no_LAS_or_raster_assets_in_scale_fixture": true,
+  "max_RSS_KiB": 380192,
+  "processes_competing_with_test_suite": true
+}

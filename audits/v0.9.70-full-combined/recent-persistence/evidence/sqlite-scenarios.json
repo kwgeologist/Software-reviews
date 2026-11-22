@@ -1,0 +1,49 @@
+{
+  "actual_config": {
+    "journal_mode": "delete",
+    "synchronous": 2,
+    "wal_autocheckpoint": 1000
+  },
+  "A_default_open_connection_main_only": {
+    "stored_value": 2.0,
+    "expected": 2
+  },
+  "B_clean_close_main_only": {
+    "value": 2
+  },
+  "D_independent_replicas": {
+    "desktop": 30.0,
+    "laptop": 40.0
+  },
+  "E_stale_generation_selected": {
+    "selected": 2.0,
+    "newer_preserved": 30.0,
+    "application_accepts_without_generation_error": true
+  },
+  "A_inherited_WAL_open_connection": {
+    "main_only": 30.0,
+    "committed_in_connection": 99.0,
+    "wal_bytes": 12392
+  },
+  "B_WAL_clean_close": {
+    "value": 99
+  },
+  "C_committed_WAL_abrupt_exit": {
+    "main_only": 99.0,
+    "expected_latest": 123,
+    "wal_present": true
+  },
+  "C_recovery_on_disposable_complete_pair": {
+    "value": 123
+  },
+  "recovery_readonly_sidecar": {
+    "created_files": [
+      "probe.ogwdb-shm"
+    ],
+    "value": 123.0
+  },
+  "advisory_lock": {
+    "foreign_holder_detected": true,
+    "acquire_still_overwrites_marker": true
+  }
+}

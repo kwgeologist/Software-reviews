@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="1" time="1.298" timestamp="2026-11-22T22:54:15.348940+00:00" hostname="92eca82e4988"><testcase classname="tests.test_v0969_fonts_audit.RendererFonts" name="test_tk_only_font" time="1.180"><failure message="AssertionError: 'urw gothic l' != 'avant garde gothic'&#10;- urw gothic l&#10;+ avant garde gothic&#10; : ('avant garde gothic', False, False)">tests/test_v0969_fonts_audit.py:69: in test_tk_only_font
+    self.check(name, self.tk_names[name.casefold()], exact=True)  # Tk draws it
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests/test_v0969_fonts_audit.py:47: in check
+    self.assertEqual(actual["family"].casefold(), family.casefold(), (style, bold, italic))
+E   AssertionError: 'urw gothic l' != 'avant garde gothic'
+E   - urw gothic l
+E   + avant garde gothic
+E    : ('avant garde gothic', False, False)</failure></testcase></testsuite></testsuites>

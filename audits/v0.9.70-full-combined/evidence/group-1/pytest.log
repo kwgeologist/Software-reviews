@@ -1,0 +1,54 @@
+...................................................................... [  8%]
+...................................................................... [ 16%]
+........................................................................ [ 25%]
+......................................... [ 30%]
+................................................................... [ 38%]
+.............................................................. [ 46%]
+..................................................................................................................... [ 60%]
+.................................................................... [ 68%]
+............................ [ 72%]
+...................................................................................... [ 82%]
+........................................................ [ 89%]
+.........................................................................................                    [100%]
+=============================== warnings summary ===============================
+../../../opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/anyio/pytest_plugin.py:14
+  /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/anyio/pytest_plugin.py:14: PytestRemovedIn10Warning: _pytest.python.CallSpec2 has been renamed to CallSpec.
+  The CallSpec2 alias will be removed in pytest 10.
+  Update imports to use CallSpec instead.
+  See https://docs.pytest.org/en/stable/deprecations.html#callspec2-renamed
+    from _pytest.python import CallSpec2
+
+tests/test_petro_integration.py::PetroIntegrationTests::test_crossplot_custom_line_ends_on_double_click
+  /workspace/audit-v0.9.70-integrity/checkout/petroworkbench/analysis.py:864: UserWarning: No artists with labels found to put in legend.  Note that artists whose label start with an underscore are ignored when legend() is called with no argument.
+    axis.legend(loc="best", fontsize=8)
+
+tests/test_contouring.py::ColorScaleTests::test_cells_presets_and_edits
+tests/test_contouring.py::MapWindowGridTests::test_colour_scale_on_the_map
+tests/test_colorbar_overflow.py::Overflow::test_a_colour_scale_has_its_lt_and_gt_ends_one_cell_long
+  /workspace/audit-v0.9.70-integrity/checkout/ogmap/color_scale.py:130: PendingDeprecationWarning: The set_under function will be deprecated in a future version. Use cmap.with_extremes(under=...) or Colormap(under=...) instead.
+    cmap.set_under(scale.get("under") or scale["colors"][0])
+
+tests/test_contouring.py::ColorScaleTests::test_cells_presets_and_edits
+tests/test_contouring.py::MapWindowGridTests::test_colour_scale_on_the_map
+tests/test_colorbar_overflow.py::Overflow::test_a_colour_scale_has_its_lt_and_gt_ends_one_cell_long
+  /workspace/audit-v0.9.70-integrity/checkout/ogmap/color_scale.py:131: PendingDeprecationWarning: The set_over function will be deprecated in a future version. Use cmap.with_extremes(over=...) or Colormap(over=...) instead.
+    cmap.set_over(scale.get("over") or scale["colors"][-1])
+
+tests/test_contouring.py::MapWindowGridTests::test_layer_order_moves_up_and_down
+  /workspace/audit-v0.9.68-full/deps/shapefile.py:2993: PossiblyCorruptFileHeader: Declared file size in /tmp/tmpip6hm76c/counties.dbf header: 87 smaller than actual file size: 101 (both in bytes)
+    warnings.warn(msg, category=PossiblyCorruptFileHeader)
+
+tests/test_contouring.py::MapWindowGridTests::test_layer_order_moves_up_and_down
+  /workspace/audit-v0.9.68-full/deps/shapefile.py:2993: PossiblyCorruptFileHeader: Declared file size in /tmp/tmpip6hm76c/sections.dbf header: 87 smaller than actual file size: 101 (both in bytes)
+    warnings.warn(msg, category=PossiblyCorruptFileHeader)
+
+tests/test_contouring.py::MapWindowGridTests::test_layer_order_moves_up_and_down
+  /workspace/audit-v0.9.68-full/deps/shapefile.py:2993: PossiblyCorruptFileHeader: Declared file size in /tmp/tmpip6hm76c/leases.dbf header: 87 smaller than actual file size: 101 (both in bytes)
+    warnings.warn(msg, category=PossiblyCorruptFileHeader)
+
+tests/test_contouring.py::MapWindowGridTests::test_text_from_shapefiles
+  /workspace/audit-v0.9.68-full/deps/shapefile.py:2993: PossiblyCorruptFileHeader: Declared file size in /tmp/tmpt59wf2h2/leases.dbf header: 87 smaller than actual file size: 101 (both in bytes)
+    warnings.warn(msg, category=PossiblyCorruptFileHeader)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+826 passed, 12 warnings, 235 subtests passed in 835.15s (0:13:55)

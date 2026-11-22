@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/workspace/audit-v0.9.70-full/probes/numerical_edges.py", line 14, in <module>
+    out['pay_nonmonotonic']={'gross_TVD':s.gross,'net_TVD_all_samples_pay':s.net,'net_gross_ratio':s.ratio,'gross_MD':s.gross_md,'net_MD':s.net_md};assert s.gross==100 and s.net==300 and s.ratio==3
+                                                                                                                                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

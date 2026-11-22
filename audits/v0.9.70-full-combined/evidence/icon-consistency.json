@@ -1,0 +1,251 @@
+{
+  "literal_icon_button_calls": 35,
+  "mismatches": [],
+  "uses": [
+    {
+      "file": "ogmap/window.py",
+      "line": 213,
+      "text": "Refresh",
+      "icon": "refresh",
+      "canonical": "refresh"
+    },
+    {
+      "file": "ogmap/window.py",
+      "line": 222,
+      "text": "Reservoir\nVolumetrics",
+      "icon": "volumetrics",
+      "canonical": "volumetrics"
+    },
+    {
+      "file": "petroworkbench/app.py",
+      "line": 351,
+      "text": "Add New Well",
+      "icon": "add",
+      "canonical": null
+    },
+    {
+      "file": "petroworkbench/app.py",
+      "line": 354,
+      "text": "Add LAS Run",
+      "icon": "import",
+      "canonical": null
+    },
+    {
+      "file": "petroworkbench/app.py",
+      "line": 357,
+      "text": "Reset View",
+      "icon": "full_extent",
+      "canonical": null
+    },
+    {
+      "file": "seismicworkbench/mapping.py",
+      "line": 788,
+      "text": "Contours",
+      "icon": "contours",
+      "canonical": null
+    },
+    {
+      "file": "seismicworkbench/mapping.py",
+      "line": 804,
+      "text": "Grid Settings\u2026",
+      "icon": "settings",
+      "canonical": null
+    },
+    {
+      "file": "seismicworkbench/app.py",
+      "line": 254,
+      "text": "New\u2026",
+      "icon": "new",
+      "canonical": "new"
+    },
+    {
+      "file": "seismicworkbench/app.py",
+      "line": 270,
+      "text": "Undo",
+      "icon": "undo",
+      "canonical": "undo"
+    },
+    {
+      "file": "seismicworkbench/app.py",
+      "line": 271,
+      "text": "Auto Pick\u2026",
+      "icon": "auto_pick",
+      "canonical": "auto_pick"
+    },
+    {
+      "file": "seismicworkbench/app.py",
+      "line": 272,
+      "text": "Seismic Attributes",
+      "icon": "extract",
+      "canonical": null
+    },
+    {
+      "file": "seismicworkbench/app.py",
+      "line": 275,
+      "text": "Slice",
+      "icon": "slice",
+      "canonical": null
+    },
+    {
+      "file": "seismicworkbench/app.py",
+      "line": 276,
+      "text": "Map",
+      "icon": "map",
+      "canonical": null
+    },
+    {
+      "file": "seismicworkbench/app.py",
+      "line": 277,
+      "text": "Crossline",
+      "icon": "crossline",
+      "canonical": "crossline"
+    },
+    {
+      "file": "seismicworkbench/app.py",
+      "line": 280,
+      "text": "Inline",
+      "icon": "inline",
+      "canonical": "inline"
+    },
+    {
+      "file": "ograster/autoreview.py",
+      "line": 123,
+      "text": "Auto register",
+      "icon": "auto_register",
+      "canonical": null
+    },
+    {
+      "file": "ograster/digitize_ui.py",
+      "line": 569,
+      "text": "Digitize",
+      "icon": "digitizing",
+      "canonical": null
+    },
+    {
+      "file": "ograster/digitize_ui.py",
+      "line": 592,
+      "text": "Clear edges",
+      "icon": "clear_edges",
+      "canonical": null
+    },
+    {
+      "file": "ograster/digitize_ui.py",
+      "line": 602,
+      "text": "Undo",
+      "icon": "undo",
+      "canonical": "undo"
+    },
+    {
+      "file": "ograster/digitize_ui.py",
+      "line": 603,
+      "text": "Redo",
+      "icon": "redo",
+      "canonical": "redo"
+    },
+    {
+      "file": "ograster/overlay.py",
+      "line": 529,
+      "text": "Overlays\u2026",
+      "icon": "overlays",
+      "canonical": null
+    },
+    {
+      "file": "ograster/calibrate.py",
+      "line": 287,
+      "text": "Display",
+      "icon": "display",
+      "canonical": null
+    },
+    {
+      "file": "ograster/calibrate.py",
+      "line": 289,
+      "text": "Pay\u2026",
+      "icon": "fill_color",
+      "canonical": null
+    },
+    {
+      "file": "ograster/calibrate.py",
+      "line": 296,
+      "text": "Cancel",
+      "icon": "cancel",
+      "canonical": null
+    },
+    {
+      "file": "ograster/calibrate.py",
+      "line": 297,
+      "text": "Save",
+      "icon": "save",
+      "canonical": "save"
+    },
+    {
+      "file": "geosteering/app.py",
+      "line": 342,
+      "text": "Reset view",
+      "icon": "full_extent",
+      "canonical": null
+    },
+    {
+      "file": "correlationworkbench/app.py",
+      "line": 270,
+      "text": "Select Wells",
+      "icon": "well_selection",
+      "canonical": null
+    },
+    {
+      "file": "correlationworkbench/app.py",
+      "line": 273,
+      "text": "Set Tracks",
+      "icon": "table",
+      "canonical": null
+    },
+    {
+      "file": "correlationworkbench/app.py",
+      "line": 298,
+      "text": "Log Display\u2026",
+      "icon": "curves",
+      "canonical": null
+    },
+    {
+      "file": "correlationworkbench/app.py",
+      "line": 304,
+      "text": "Pay\u2026",
+      "icon": "fill_color",
+      "canonical": null
+    },
+    {
+      "file": "correlationworkbench/app.py",
+      "line": 305,
+      "text": "Refresh Data",
+      "icon": "refresh",
+      "canonical": null
+    },
+    {
+      "file": "correlationworkbench/app.py",
+      "line": 313,
+      "text": "Tops\u2026",
+      "icon": "horizons_tops",
+      "canonical": null
+    },
+    {
+      "file": "correlationworkbench/app.py",
+      "line": 314,
+      "text": "Display\u2026",
+      "icon": "options",
+      "canonical": null
+    },
+    {
+      "file": "ogvol/app.py",
+      "line": 268,
+      "text": "Calculate",
+      "icon": "calculate",
+      "canonical": "calculate"
+    },
+    {
+      "file": "ogvol/app.py",
+      "line": 631,
+      "text": "Export Report",
+      "icon": "report",
+      "canonical": null
+    }
+  ]
+}

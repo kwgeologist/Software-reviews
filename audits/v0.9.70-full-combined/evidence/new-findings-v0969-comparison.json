@@ -1,0 +1,38 @@
+{
+  "ogcore/depth.py": {
+    "unchanged_from_v0969": true,
+    "v0970_sha256": "a0834f254bd5f3c6c286ffbc65aa66f6c9fdc4c453faa0c449881d745990164e"
+  },
+  "ogcore/pay.py": {
+    "unchanged_from_v0969": true,
+    "v0970_sha256": "e85c38a318b8671bf499d0fdfa9f55fe8351db31eb172dd58b3cd3cc0298c890"
+  },
+  "ogcore/lru.py": {
+    "unchanged_from_v0969": true,
+    "v0970_sha256": "cbb33ba6b71eb6d28bd91256c19653456aae1fe0aeb6a945d9e71b5cb00ee063"
+  },
+  "ogcore/curve_store.py": {
+    "unchanged_from_v0969": true,
+    "v0970_sha256": "807808d85ac4c00e5e80c2946761a3df946aa51680bf359e6ae2adb95de4eb26"
+  },
+  "ograster/digitize_ui.py": {
+    "unchanged_from_v0969": true,
+    "v0970_sha256": "6c733513e2983b75968d184bfea05dacd101e276d05ec07e441dbe2a2673c4cd"
+  },
+  "ograster/calibrate.py": {
+    "unchanged_from_v0969": true,
+    "v0970_sha256": "2b1cc2c9ea68a33ba1413f64ed28cfd60fba617f767bd88a1d0dfdd639ad88bd"
+  },
+  "ogcore/production.py": {
+    "unchanged_from_v0969": true,
+    "v0970_sha256": "00bdcaafef10bbef3edc34447185dc338b1a199f6d872da9bfd045d75f658d19"
+  },
+  "tests/test_correlation.py": {
+    "unchanged_from_v0969": true,
+    "v0970_sha256": "c59b97ca8a1de9c8d36bee1dd58d2ec3c91d3b44ee950aa2864eb4158f6a0a38"
+  },
+  "tests/test_v0969_fonts_audit.py": {
+    "unchanged_from_v0969": true,
+    "v0970_sha256": "34b2596822c7c4846036447a15b70676081cc52d2ec1417abf84c4933193f1f1"
+  }
+}

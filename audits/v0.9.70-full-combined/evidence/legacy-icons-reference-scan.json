@@ -1,0 +1,17 @@
+{
+  "tracked_files_scanned": 961,
+  "AST_runtime_imports": [],
+  "literal_references": [
+    {
+      "file": "release/records/security/bandit.json",
+      "line": 2527,
+      "category": "archived_scan"
+    },
+    {
+      "file": "release/records/security/semgrep.json",
+      "line": 1,
+      "category": "archived_scan"
+    }
+  ],
+  "scope": "tracked code/build/docs only; archived security records are not callers"
+}

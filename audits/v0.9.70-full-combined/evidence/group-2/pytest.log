@@ -1,0 +1,503 @@
+........................................................................ [ 10%]
+.................................................................. [ 19%]
+.............................................. [ 26%]
+......................................................... [ 34%]
+................................................................ [ 43%]
+............................................................... [ 52%]
+............................................................... [ 61%]
+............................................................ [ 70%]
+........................................................... [ 78%]
+................................................................ [ 87%]
+................................................sss..................................                                   [100%]
+=============================== warnings summary ===============================
+../../../opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/anyio/pytest_plugin.py:14
+  /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/anyio/pytest_plugin.py:14: PytestRemovedIn10Warning: _pytest.python.CallSpec2 has been renamed to CallSpec.
+  The CallSpec2 alias will be removed in pytest 10.
+  Update imports to use CallSpec instead.
+  See https://docs.pytest.org/en/stable/deprecations.html#callspec2-renamed
+    from _pytest.python import CallSpec2
+
+tests/test_seismic_app.py::SeismicAppTests::test_extraction_scale_and_colour_bar_can_be_changed
+tests/test_seismic_app.py::SeismicAppTests::test_extraction_scale_and_colour_bar_can_be_changed
+tests/test_seismic_app.py::SeismicAppTests::test_seismic_map_colour_scale
+tests/test_seismic_app.py::SeismicAppTests::test_seismic_map_colour_scale
+tests/test_seismic_app.py::SeismicAppTests::test_seismic_map_has_its_own_colour_bar_controls
+tests/test_seismic_app.py::SeismicAppTests::test_seismic_map_has_its_own_colour_bar_controls
+  /workspace/audit-v0.9.70-integrity/checkout/ogmap/color_scale.py:130: PendingDeprecationWarning: The set_under function will be deprecated in a future version. Use cmap.with_extremes(under=...) or Colormap(under=...) instead.
+    cmap.set_under(scale.get("under") or scale["colors"][0])
+
+tests/test_seismic_app.py::SeismicAppTests::test_extraction_scale_and_colour_bar_can_be_changed
+tests/test_seismic_app.py::SeismicAppTests::test_extraction_scale_and_colour_bar_can_be_changed
+tests/test_seismic_app.py::SeismicAppTests::test_seismic_map_colour_scale
+tests/test_seismic_app.py::SeismicAppTests::test_seismic_map_colour_scale
+tests/test_seismic_app.py::SeismicAppTests::test_seismic_map_has_its_own_colour_bar_controls
+tests/test_seismic_app.py::SeismicAppTests::test_seismic_map_has_its_own_colour_bar_controls
+  /workspace/audit-v0.9.70-integrity/checkout/ogmap/color_scale.py:131: PendingDeprecationWarning: The set_over function will be deprecated in a future version. Use cmap.with_extremes(over=...) or Colormap(over=...) instead.
+    cmap.set_over(scale.get("over") or scale["colors"][-1])
+
+tests/test_map_layers_panel.py::LayersPanelTests::test_adding_to_a_group_redraws_only_what_changes
+tests/test_map_layers_panel.py::LayersPanelTests::test_collapse_and_expand_all_reach_groups_grids_and_drawing_layers
+tests/test_map_layers_panel.py::LayersPanelTests::test_find_narrows_the_list_and_changes_nothing
+tests/test_map_layers_panel.py::LayersPanelTests::test_group_eye_hides_members_and_keeps_their_own_eyes
+tests/test_map_layers_panel.py::LayersPanelTests::test_groups_hold_layers_keep_ids_and_persist
+tests/test_map_layers_panel.py::LayersPanelTests::test_large_list_scrolls_by_itself_and_stays_quick
+tests/test_map_layers_panel.py::LayersPanelTests::test_multi_select_show_hide_move_delete
+tests/test_map_layers_panel.py::LayersPanelTests::test_rename_in_place_keeps_the_ids
+  /workspace/audit-v0.9.68-full/deps/shapefile.py:2993: PossiblyCorruptFileHeader: Declared file size in /tmp/tmptotudquh/culture_000.dbf header: 87 smaller than actual file size: 101 (both in bytes)
+    warnings.warn(msg, category=PossiblyCorruptFileHeader)
+
+tests/test_map_layers_panel.py::LayersPanelTests::test_adding_to_a_group_redraws_only_what_changes
+tests/test_map_layers_panel.py::LayersPanelTests::test_collapse_and_expand_all_reach_groups_grids_and_drawing_layers
+tests/test_map_layers_panel.py::LayersPanelTests::test_find_narrows_the_list_and_changes_nothing
+tests/test_map_layers_panel.py::LayersPanelTests::test_group_eye_hides_members_and_keeps_their_own_eyes
+tests/test_map_layers_panel.py::LayersPanelTests::test_groups_hold_layers_keep_ids_and_persist
+tests/test_map_layers_panel.py::LayersPanelTests::test_large_list_scrolls_by_itself_and_stays_quick
+tests/test_map_layers_panel.py::LayersPanelTests::test_multi_select_show_hide_move_delete
+tests/test_map_layers_panel.py::LayersPanelTests::test_rename_in_place_keeps_the_ids
+  /workspace/audit-v0.9.68-full/deps/shapefile.py:2993: PossiblyCorruptFileHeader: Declared file size in /tmp/tmptotudquh/culture_001.dbf header: 87 smaller than actual file size: 101 (both in bytes)
+    warnings.warn(msg, category=PossiblyCorruptFileHeader)
+
+tests/test_map_layers_panel.py::LayersPanelTests::test_adding_to_a_group_redraws_only_what_changes
+tests/test_map_layers_panel.py::LayersPanelTests::test_collapse_and_expand_all_reach_groups_grids_and_drawing_layers
+tests/test_map_layers_panel.py::LayersPanelTests::test_find_narrows_the_list_and_changes_nothing
+tests/test_map_layers_panel.py::LayersPanelTests::test_group_eye_hides_members_and_keeps_their_own_eyes
+tests/test_map_layers_panel.py::LayersPanelTests::test_groups_hold_layers_keep_ids_and_persist
+tests/test_map_layers_panel.py::LayersPanelTests::test_large_list_scrolls_by_itself_and_stays_quick
+tests/test_map_layers_panel.py::LayersPanelTests::test_multi_select_show_hide_move_delete
+tests/test_map_layers_panel.py::LayersPanelTests::test_rename_in_place_keeps_the_ids
+  /workspace/audit-v0.9.68-full/deps/shapefile.py:2993: PossiblyCorruptFileHeader: Declared file size in /tmp/tmptotudquh/culture_002.dbf header: 87 smaller than actual file size: 101 (both in bytes)
+    warnings.warn(msg, category=PossiblyCorruptFileHeader)
+
+tests/test_map_layers_panel.py::LayersPanelTests::test_adding_to_a_group_redraws_only_what_changes
+tests/test_map_layers_panel.py::LayersPanelTests::test_collapse_and_expand_all_reach_groups_grids_and_drawing_layers
+tests/test_map_layers_panel.py::LayersPanelTests::test_find_narrows_the_list_and_changes_nothing
+tests/test_map_layers_panel.py::LayersPanelTests::test_group_eye_hides_members_and_keeps_their_own_eyes
+tests/test_map_layers_panel.py::LayersPanelTests::test_groups_hold_layers_keep_ids_and_persist
+tests/test_map_layers_panel.py::LayersPanelTests::test_large_list_scrolls_by_itself_and_stays_quick
+tests/test_map_layers_panel.py::LayersPanelTests::test_multi_select_show_hide_move_delete
+tests/test_map_layers_panel.py::LayersPanelTests::test_rename_in_place_keeps_the_ids
+  /workspace/audit-v0.9.68-full/deps/shapefile.py:2993: PossiblyCorruptFileHeader: Declared file size in /tmp/tmptotudquh/culture_003.dbf header: 87 smaller than actual file size: 101 (both in bytes)
+    warnings.warn(msg, category=PossiblyCorruptFileHeader)
+
+tests/test_map_layers_panel.py::LayersPanelTests::test_adding_to_a_group_redraws_only_what_changes
+tests/test_map_layers_panel.py::LayersPanelTests::test_collapse_and_expand_all_reach_groups_grids_and_drawing_layers
+tests/test_map_layers_panel.py::LayersPanelTests::test_find_narrows_the_list_and_changes_nothing
+tests/test_map_layers_panel.py::LayersPanelTests::test_group_eye_hides_members_and_keeps_their_own_eyes
+tests/test_map_layers_panel.py::LayersPanelTests::test_groups_hold_layers_keep_ids_and_persist
+tests/test_map_layers_panel.py::LayersPanelTests::test_large_list_scrolls_by_itself_and_stays_quick
+tests/test_map_layers_panel.py::LayersPanelTests::test_multi_select_show_hide_move_delete
+tests/test_map_layers_panel.py::LayersPanelTests::test_rename_in_place_keeps_the_ids
+  /workspace/audit-v0.9.68-full/deps/shapefile.py:2993: PossiblyCorruptFileHeader: Declared file size in /tmp/tmptotudquh/culture_004.dbf header: 87 smaller than actual file size: 101 (both in bytes)
+    warnings.warn(msg, category=PossiblyCorruptFileHeader)
+
+tests/test_map_layers_panel.py::LayersPanelTests::test_adding_to_a_group_redraws_only_what_changes
+tests/test_map_layers_panel.py::LayersPanelTests::test_collapse_and_expand_all_reach_groups_grids_and_drawing_layers
+tests/test_map_layers_panel.py::LayersPanelTests::test_find_narrows_the_list_and_changes_nothing
+tests/test_map_layers_panel.py::LayersPanelTests::test_group_eye_hides_members_and_keeps_their_own_eyes
+tests/test_map_layers_panel.py::LayersPanelTests::test_groups_hold_layers_keep_ids_and_persist
+tests/test_map_layers_panel.py::LayersPanelTests::test_large_list_scrolls_by_itself_and_stays_quick
+tests/test_map_layers_panel.py::LayersPanelTests::test_multi_select_show_hide_move_delete
+tests/test_map_layers_panel.py::LayersPanelTests::test_rename_in_place_keeps_the_ids
+  /workspace/audit-v0.9.68-full/deps/shapefile.py:2993: PossiblyCorruptFileHeader: Declared file size in /tmp/tmptotudquh/culture_005.dbf header: 87 smaller than actual file size: 101 (both in bytes)
+    warnings.warn(msg, category=PossiblyCorruptFileHeader)
+
+tests/test_map_layers_panel.py::LayersPanelTests::test_adding_to_a_group_redraws_only_what_changes
+tests/test_map_layers_panel.py::LayersPanelTests::test_collapse_and_expand_all_reach_groups_grids_and_drawing_layers
+tests/test_map_layers_panel.py::LayersPanelTests::test_find_narrows_the_list_and_changes_nothing
+tests/test_map_layers_panel.py::LayersPanelTests::test_group_eye_hides_members_and_keeps_their_own_eyes
+tests/test_map_layers_panel.py::LayersPanelTests::test_groups_hold_layers_keep_ids_and_persist
+tests/test_map_layers_panel.py::LayersPanelTests::test_large_list_scrolls_by_itself_and_stays_quick
+tests/test_map_layers_panel.py::LayersPanelTests::test_multi_select_show_hide_move_delete
+tests/test_map_layers_panel.py::LayersPanelTests::test_rename_in_place_keeps_the_ids
+  /workspace/audit-v0.9.68-full/deps/shapefile.py:2993: PossiblyCorruptFileHeader: Declared file size in /tmp/tmptotudquh/culture_006.dbf header: 87 smaller than actual file size: 101 (both in bytes)
+    warnings.warn(msg, category=PossiblyCorruptFileHeader)
+
+tests/test_map_layers_panel.py::LayersPanelTests::test_adding_to_a_group_redraws_only_what_changes
+tests/test_map_layers_panel.py::LayersPanelTests::test_collapse_and_expand_all_reach_groups_grids_and_drawing_layers
+tests/test_map_layers_panel.py::LayersPanelTests::test_find_narrows_the_list_and_changes_nothing
+tests/test_map_layers_panel.py::LayersPanelTests::test_group_eye_hides_members_and_keeps_their_own_eyes
+tests/test_map_layers_panel.py::LayersPanelTests::test_groups_hold_layers_keep_ids_and_persist
+tests/test_map_layers_panel.py::LayersPanelTests::test_large_list_scrolls_by_itself_and_stays_quick
+tests/test_map_layers_panel.py::LayersPanelTests::test_multi_select_show_hide_move_delete
+tests/test_map_layers_panel.py::LayersPanelTests::test_rename_in_place_keeps_the_ids
+  /workspace/audit-v0.9.68-full/deps/shapefile.py:2993: PossiblyCorruptFileHeader: Declared file size in /tmp/tmptotudquh/culture_007.dbf header: 87 smaller than actual file size: 101 (both in bytes)
+    warnings.warn(msg, category=PossiblyCorruptFileHeader)
+
+tests/test_map_layers_panel.py::LayersPanelTests::test_adding_to_a_group_redraws_only_what_changes
+tests/test_map_layers_panel.py::LayersPanelTests::test_collapse_and_expand_all_reach_groups_grids_and_drawing_layers
+tests/test_map_layers_panel.py::LayersPanelTests::test_find_narrows_the_list_and_changes_nothing
+tests/test_map_layers_panel.py::LayersPanelTests::test_group_eye_hides_members_and_keeps_their_own_eyes
+tests/test_map_layers_panel.py::LayersPanelTests::test_groups_hold_layers_keep_ids_and_persist
+tests/test_map_layers_panel.py::LayersPanelTests::test_large_list_scrolls_by_itself_and_stays_quick
+tests/test_map_layers_panel.py::LayersPanelTests::test_multi_select_show_hide_move_delete
+tests/test_map_layers_panel.py::LayersPanelTests::test_rename_in_place_keeps_the_ids
+  /workspace/audit-v0.9.68-full/deps/shapefile.py:2993: PossiblyCorruptFileHeader: Declared file size in /tmp/tmptotudquh/culture_008.dbf header: 87 smaller than actual file size: 101 (both in bytes)
+    warnings.warn(msg, category=PossiblyCorruptFileHeader)
+
+tests/test_map_layers_panel.py::LayersPanelTests::test_adding_to_a_group_redraws_only_what_changes
+tests/test_map_layers_panel.py::LayersPanelTests::test_collapse_and_expand_all_reach_groups_grids_and_drawing_layers
+tests/test_map_layers_panel.py::LayersPanelTests::test_find_narrows_the_list_and_changes_nothing
+tests/test_map_layers_panel.py::LayersPanelTests::test_group_eye_hides_members_and_keeps_their_own_eyes
+tests/test_map_layers_panel.py::LayersPanelTests::test_groups_hold_layers_keep_ids_and_persist
+tests/test_map_layers_panel.py::LayersPanelTests::test_large_list_scrolls_by_itself_and_stays_quick
+tests/test_map_layers_panel.py::LayersPanelTests::test_multi_select_show_hide_move_delete
+tests/test_map_layers_panel.py::LayersPanelTests::test_rename_in_place_keeps_the_ids
+  /workspace/audit-v0.9.68-full/deps/shapefile.py:2993: PossiblyCorruptFileHeader: Declared file size in /tmp/tmptotudquh/culture_009.dbf header: 87 smaller than actual file size: 101 (both in bytes)
+    warnings.warn(msg, category=PossiblyCorruptFileHeader)
+
+tests/test_map_layers_panel.py::LayersPanelTests::test_adding_to_a_group_redraws_only_what_changes
+tests/test_map_layers_panel.py::LayersPanelTests::test_collapse_and_expand_all_reach_groups_grids_and_drawing_layers
+tests/test_map_layers_panel.py::LayersPanelTests::test_find_narrows_the_list_and_changes_nothing
+tests/test_map_layers_panel.py::LayersPanelTests::test_group_eye_hides_members_and_keeps_their_own_eyes
+tests/test_map_layers_panel.py::LayersPanelTests::test_groups_hold_layers_keep_ids_and_persist
+tests/test_map_layers_panel.py::LayersPanelTests::test_large_list_scrolls_by_itself_and_stays_quick
+tests/test_map_layers_panel.py::LayersPanelTests::test_multi_select_show_hide_move_delete
+tests/test_map_layers_panel.py::LayersPanelTests::test_rename_in_place_keeps_the_ids
+  /workspace/audit-v0.9.68-full/deps/shapefile.py:2993: PossiblyCorruptFileHeader: Declared file size in /tmp/tmptotudquh/culture_010.dbf header: 87 smaller than actual file size: 101 (both in bytes)
+    warnings.warn(msg, category=PossiblyCorruptFileHeader)
+
+tests/test_map_layers_panel.py::LayersPanelTests::test_adding_to_a_group_redraws_only_what_changes
+tests/test_map_layers_panel.py::LayersPanelTests::test_collapse_and_expand_all_reach_groups_grids_and_drawing_layers
+tests/test_map_layers_panel.py::LayersPanelTests::test_find_narrows_the_list_and_changes_nothing
+tests/test_map_layers_panel.py::LayersPanelTests::test_group_eye_hides_members_and_keeps_their_own_eyes
+tests/test_map_layers_panel.py::LayersPanelTests::test_groups_hold_layers_keep_ids_and_persist
+tests/test_map_layers_panel.py::LayersPanelTests::test_large_list_scrolls_by_itself_and_stays_quick
+tests/test_map_layers_panel.py::LayersPanelTests::test_multi_select_show_hide_move_delete
+tests/test_map_layers_panel.py::LayersPanelTests::test_rename_in_place_keeps_the_ids
+  /workspace/audit-v0.9.68-full/deps/shapefile.py:2993: PossiblyCorruptFileHeader: Declared file size in /tmp/tmptotudquh/culture_011.dbf header: 87 smaller than actual file size: 101 (both in bytes)
+    warnings.warn(msg, category=PossiblyCorruptFileHeader)
+
+tests/test_map_layers_panel.py::LayersPanelTests::test_adding_to_a_group_redraws_only_what_changes
+tests/test_map_layers_panel.py::LayersPanelTests::test_collapse_and_expand_all_reach_groups_grids_and_drawing_layers
+tests/test_map_layers_panel.py::LayersPanelTests::test_find_narrows_the_list_and_changes_nothing
+tests/test_map_layers_panel.py::LayersPanelTests::test_group_eye_hides_members_and_keeps_their_own_eyes
+tests/test_map_layers_panel.py::LayersPanelTests::test_groups_hold_layers_keep_ids_and_persist
+tests/test_map_layers_panel.py::LayersPanelTests::test_large_list_scrolls_by_itself_and_stays_quick
+tests/test_map_layers_panel.py::LayersPanelTests::test_multi_select_show_hide_move_delete
+tests/test_map_layers_panel.py::LayersPanelTests::test_rename_in_place_keeps_the_ids
+  /workspace/audit-v0.9.68-full/deps/shapefile.py:2993: PossiblyCorruptFileHeader: Declared file size in /tmp/tmptotudquh/culture_012.dbf header: 87 smaller than actual file size: 101 (both in bytes)
+    warnings.warn(msg, category=PossiblyCorruptFileHeader)
+
+tests/test_map_layers_panel.py::LayersPanelTests::test_adding_to_a_group_redraws_only_what_changes
+tests/test_map_layers_panel.py::LayersPanelTests::test_collapse_and_expand_all_reach_groups_grids_and_drawing_layers
+tests/test_map_layers_panel.py::LayersPanelTests::test_find_narrows_the_list_and_changes_nothing
+tests/test_map_layers_panel.py::LayersPanelTests::test_group_eye_hides_members_and_keeps_their_own_eyes
+tests/test_map_layers_panel.py::LayersPanelTests::test_groups_hold_layers_keep_ids_and_persist
+tests/test_map_layers_panel.py::LayersPanelTests::test_large_list_scrolls_by_itself_and_stays_quick
+tests/test_map_layers_panel.py::LayersPanelTests::test_multi_select_show_hide_move_delete
+tests/test_map_layers_panel.py::LayersPanelTests::test_rename_in_place_keeps_the_ids
+  /workspace/audit-v0.9.68-full/deps/shapefile.py:2993: PossiblyCorruptFileHeader: Declared file size in /tmp/tmptotudquh/culture_013.dbf header: 87 smaller than actual file size: 101 (both in bytes)
+    warnings.warn(msg, category=PossiblyCorruptFileHeader)
+
+tests/test_map_layers_panel.py::LayersPanelTests::test_adding_to_a_group_redraws_only_what_changes
+tests/test_map_layers_panel.py::LayersPanelTests::test_collapse_and_expand_all_reach_groups_grids_and_drawing_layers
+tests/test_map_layers_panel.py::LayersPanelTests::test_find_narrows_the_list_and_changes_nothing
+tests/test_map_layers_panel.py::LayersPanelTests::test_group_eye_hides_members_and_keeps_their_own_eyes
+tests/test_map_layers_panel.py::LayersPanelTests::test_groups_hold_layers_keep_ids_and_persist
+tests/test_map_layers_panel.py::LayersPanelTests::test_large_list_scrolls_by_itself_and_stays_quick
+tests/test_map_layers_panel.py::LayersPanelTests::test_multi_select_show_hide_move_delete
+tests/test_map_layers_panel.py::LayersPanelTests::test_rename_in_place_keeps_the_ids
+  /workspace/audit-v0.9.68-full/deps/shapefile.py:2993: PossiblyCorruptFileHeader: Declared file size in /tmp/tmptotudquh/culture_014.dbf header: 87 smaller than actual file size: 101 (both in bytes)
+    warnings.warn(msg, category=PossiblyCorruptFileHeader)
+
+tests/test_map_layers_panel.py::LayersPanelTests::test_adding_to_a_group_redraws_only_what_changes
+tests/test_map_layers_panel.py::LayersPanelTests::test_collapse_and_expand_all_reach_groups_grids_and_drawing_layers
+tests/test_map_layers_panel.py::LayersPanelTests::test_find_narrows_the_list_and_changes_nothing
+tests/test_map_layers_panel.py::LayersPanelTests::test_group_eye_hides_members_and_keeps_their_own_eyes
+tests/test_map_layers_panel.py::LayersPanelTests::test_groups_hold_layers_keep_ids_and_persist
+tests/test_map_layers_panel.py::LayersPanelTests::test_large_list_scrolls_by_itself_and_stays_quick
+tests/test_map_layers_panel.py::LayersPanelTests::test_multi_select_show_hide_move_delete
+tests/test_map_layers_panel.py::LayersPanelTests::test_rename_in_place_keeps_the_ids
+  /workspace/audit-v0.9.68-full/deps/shapefile.py:2993: PossiblyCorruptFileHeader: Declared file size in /tmp/tmptotudquh/culture_015.dbf header: 87 smaller than actual file size: 101 (both in bytes)
+    warnings.warn(msg, category=PossiblyCorruptFileHeader)
+
+tests/test_map_layers_panel.py::LayersPanelTests::test_adding_to_a_group_redraws_only_what_changes
+tests/test_map_layers_panel.py::LayersPanelTests::test_collapse_and_expand_all_reach_groups_grids_and_drawing_layers
+tests/test_map_layers_panel.py::LayersPanelTests::test_find_narrows_the_list_and_changes_nothing
+tests/test_map_layers_panel.py::LayersPanelTests::test_group_eye_hides_members_and_keeps_their_own_eyes
+tests/test_map_layers_panel.py::LayersPanelTests::test_groups_hold_layers_keep_ids_and_persist
+tests/test_map_layers_panel.py::LayersPanelTests::test_large_list_scrolls_by_itself_and_stays_quick
+tests/test_map_layers_panel.py::LayersPanelTests::test_multi_select_show_hide_move_delete
+tests/test_map_layers_panel.py::LayersPanelTests::test_rename_in_place_keeps_the_ids
+  /workspace/audit-v0.9.68-full/deps/shapefile.py:2993: PossiblyCorruptFileHeader: Declared file size in /tmp/tmptotudquh/culture_016.dbf header: 87 smaller than actual file size: 101 (both in bytes)
+    warnings.warn(msg, category=PossiblyCorruptFileHeader)
+
+tests/test_map_layers_panel.py::LayersPanelTests::test_adding_to_a_group_redraws_only_what_changes
+tests/test_map_layers_panel.py::LayersPanelTests::test_collapse_and_expand_all_reach_groups_grids_and_drawing_layers
+tests/test_map_layers_panel.py::LayersPanelTests::test_find_narrows_the_list_and_changes_nothing
+tests/test_map_layers_panel.py::LayersPanelTests::test_group_eye_hides_members_and_keeps_their_own_eyes
+tests/test_map_layers_panel.py::LayersPanelTests::test_groups_hold_layers_keep_ids_and_persist
+tests/test_map_layers_panel.py::LayersPanelTests::test_large_list_scrolls_by_itself_and_stays_quick
+tests/test_map_layers_panel.py::LayersPanelTests::test_multi_select_show_hide_move_delete
+tests/test_map_layers_panel.py::LayersPanelTests::test_rename_in_place_keeps_the_ids
+  /workspace/audit-v0.9.68-full/deps/shapefile.py:2993: PossiblyCorruptFileHeader: Declared file size in /tmp/tmptotudquh/culture_017.dbf header: 87 smaller than actual file size: 101 (both in bytes)
+    warnings.warn(msg, category=PossiblyCorruptFileHeader)
+
+tests/test_map_layers_panel.py::LayersPanelTests::test_adding_to_a_group_redraws_only_what_changes
+tests/test_map_layers_panel.py::LayersPanelTests::test_collapse_and_expand_all_reach_groups_grids_and_drawing_layers
+tests/test_map_layers_panel.py::LayersPanelTests::test_find_narrows_the_list_and_changes_nothing
+tests/test_map_layers_panel.py::LayersPanelTests::test_group_eye_hides_members_and_keeps_their_own_eyes
+tests/test_map_layers_panel.py::LayersPanelTests::test_groups_hold_layers_keep_ids_and_persist
+tests/test_map_layers_panel.py::LayersPanelTests::test_large_list_scrolls_by_itself_and_stays_quick
+tests/test_map_layers_panel.py::LayersPanelTests::test_multi_select_show_hide_move_delete
+tests/test_map_layers_panel.py::LayersPanelTests::test_rename_in_place_keeps_the_ids
+  /workspace/audit-v0.9.68-full/deps/shapefile.py:2993: PossiblyCorruptFileHeader: Declared file size in /tmp/tmptotudquh/culture_018.dbf header: 87 smaller than actual file size: 101 (both in bytes)
+    warnings.warn(msg, category=PossiblyCorruptFileHeader)
+
+tests/test_map_layers_panel.py::LayersPanelTests::test_adding_to_a_group_redraws_only_what_changes
+tests/test_map_layers_panel.py::LayersPanelTests::test_collapse_and_expand_all_reach_groups_grids_and_drawing_layers
+tests/test_map_layers_panel.py::LayersPanelTests::test_find_narrows_the_list_and_changes_nothing
+tests/test_map_layers_panel.py::LayersPanelTests::test_group_eye_hides_members_and_keeps_their_own_eyes
+tests/test_map_layers_panel.py::LayersPanelTests::test_groups_hold_layers_keep_ids_and_persist
+tests/test_map_layers_panel.py::LayersPanelTests::test_large_list_scrolls_by_itself_and_stays_quick
+tests/test_map_layers_panel.py::LayersPanelTests::test_multi_select_show_hide_move_delete
+tests/test_map_layers_panel.py::LayersPanelTests::test_rename_in_place_keeps_the_ids
+  /workspace/audit-v0.9.68-full/deps/shapefile.py:2993: PossiblyCorruptFileHeader: Declared file size in /tmp/tmptotudquh/culture_019.dbf header: 87 smaller than actual file size: 101 (both in bytes)
+    warnings.warn(msg, category=PossiblyCorruptFileHeader)
+
+tests/test_map_layers_panel.py::LayersPanelTests::test_adding_to_a_group_redraws_only_what_changes
+tests/test_map_layers_panel.py::LayersPanelTests::test_collapse_and_expand_all_reach_groups_grids_and_drawing_layers
+tests/test_map_layers_panel.py::LayersPanelTests::test_find_narrows_the_list_and_changes_nothing
+tests/test_map_layers_panel.py::LayersPanelTests::test_group_eye_hides_members_and_keeps_their_own_eyes
+tests/test_map_layers_panel.py::LayersPanelTests::test_groups_hold_layers_keep_ids_and_persist
+tests/test_map_layers_panel.py::LayersPanelTests::test_large_list_scrolls_by_itself_and_stays_quick
+tests/test_map_layers_panel.py::LayersPanelTests::test_multi_select_show_hide_move_delete
+tests/test_map_layers_panel.py::LayersPanelTests::test_rename_in_place_keeps_the_ids
+  /workspace/audit-v0.9.68-full/deps/shapefile.py:2993: PossiblyCorruptFileHeader: Declared file size in /tmp/tmptotudquh/culture_020.dbf header: 87 smaller than actual file size: 101 (both in bytes)
+    warnings.warn(msg, category=PossiblyCorruptFileHeader)
+
+tests/test_map_layers_panel.py::LayersPanelTests::test_adding_to_a_group_redraws_only_what_changes
+tests/test_map_layers_panel.py::LayersPanelTests::test_collapse_and_expand_all_reach_groups_grids_and_drawing_layers
+tests/test_map_layers_panel.py::LayersPanelTests::test_find_narrows_the_list_and_changes_nothing
+tests/test_map_layers_panel.py::LayersPanelTests::test_group_eye_hides_members_and_keeps_their_own_eyes
+tests/test_map_layers_panel.py::LayersPanelTests::test_groups_hold_layers_keep_ids_and_persist
+tests/test_map_layers_panel.py::LayersPanelTests::test_large_list_scrolls_by_itself_and_stays_quick
+tests/test_map_layers_panel.py::LayersPanelTests::test_multi_select_show_hide_move_delete
+tests/test_map_layers_panel.py::LayersPanelTests::test_rename_in_place_keeps_the_ids
+  /workspace/audit-v0.9.68-full/deps/shapefile.py:2993: PossiblyCorruptFileHeader: Declared file size in /tmp/tmptotudquh/culture_021.dbf header: 87 smaller than actual file size: 101 (both in bytes)
+    warnings.warn(msg, category=PossiblyCorruptFileHeader)
+
+tests/test_map_layers_panel.py::LayersPanelTests::test_adding_to_a_group_redraws_only_what_changes
+tests/test_map_layers_panel.py::LayersPanelTests::test_collapse_and_expand_all_reach_groups_grids_and_drawing_layers
+tests/test_map_layers_panel.py::LayersPanelTests::test_find_narrows_the_list_and_changes_nothing
+tests/test_map_layers_panel.py::LayersPanelTests::test_group_eye_hides_members_and_keeps_their_own_eyes
+tests/test_map_layers_panel.py::LayersPanelTests::test_groups_hold_layers_keep_ids_and_persist
+tests/test_map_layers_panel.py::LayersPanelTests::test_large_list_scrolls_by_itself_and_stays_quick
+tests/test_map_layers_panel.py::LayersPanelTests::test_multi_select_show_hide_move_delete
+tests/test_map_layers_panel.py::LayersPanelTests::test_rename_in_place_keeps_the_ids
+  /workspace/audit-v0.9.68-full/deps/shapefile.py:2993: PossiblyCorruptFileHeader: Declared file size in /tmp/tmptotudquh/culture_022.dbf header: 87 smaller than actual file size: 101 (both in bytes)
+    warnings.warn(msg, category=PossiblyCorruptFileHeader)
+
+tests/test_map_layers_panel.py::LayersPanelTests::test_adding_to_a_group_redraws_only_what_changes
+tests/test_map_layers_panel.py::LayersPanelTests::test_collapse_and_expand_all_reach_groups_grids_and_drawing_layers
+tests/test_map_layers_panel.py::LayersPanelTests::test_find_narrows_the_list_and_changes_nothing
+tests/test_map_layers_panel.py::LayersPanelTests::test_group_eye_hides_members_and_keeps_their_own_eyes
+tests/test_map_layers_panel.py::LayersPanelTests::test_groups_hold_layers_keep_ids_and_persist
+tests/test_map_layers_panel.py::LayersPanelTests::test_large_list_scrolls_by_itself_and_stays_quick
+tests/test_map_layers_panel.py::LayersPanelTests::test_multi_select_show_hide_move_delete
+tests/test_map_layers_panel.py::LayersPanelTests::test_rename_in_place_keeps_the_ids
+  /workspace/audit-v0.9.68-full/deps/shapefile.py:2993: PossiblyCorruptFileHeader: Declared file size in /tmp/tmptotudquh/culture_023.dbf header: 87 smaller than actual file size: 101 (both in bytes)
+    warnings.warn(msg, category=PossiblyCorruptFileHeader)
+
+tests/test_map_layers_panel.py::LayersPanelTests::test_adding_to_a_group_redraws_only_what_changes
+tests/test_map_layers_panel.py::LayersPanelTests::test_collapse_and_expand_all_reach_groups_grids_and_drawing_layers
+tests/test_map_layers_panel.py::LayersPanelTests::test_find_narrows_the_list_and_changes_nothing
+tests/test_map_layers_panel.py::LayersPanelTests::test_group_eye_hides_members_and_keeps_their_own_eyes
+tests/test_map_layers_panel.py::LayersPanelTests::test_groups_hold_layers_keep_ids_and_persist
+tests/test_map_layers_panel.py::LayersPanelTests::test_large_list_scrolls_by_itself_and_stays_quick
+tests/test_map_layers_panel.py::LayersPanelTests::test_multi_select_show_hide_move_delete
+tests/test_map_layers_panel.py::LayersPanelTests::test_rename_in_place_keeps_the_ids
+  /workspace/audit-v0.9.68-full/deps/shapefile.py:2993: PossiblyCorruptFileHeader: Declared file size in /tmp/tmptotudquh/culture_024.dbf header: 87 smaller than actual file size: 101 (both in bytes)
+    warnings.warn(msg, category=PossiblyCorruptFileHeader)
+
+tests/test_map_layers_panel.py::LayersPanelTests::test_adding_to_a_group_redraws_only_what_changes
+tests/test_map_layers_panel.py::LayersPanelTests::test_collapse_and_expand_all_reach_groups_grids_and_drawing_layers
+tests/test_map_layers_panel.py::LayersPanelTests::test_find_narrows_the_list_and_changes_nothing
+tests/test_map_layers_panel.py::LayersPanelTests::test_group_eye_hides_members_and_keeps_their_own_eyes
+tests/test_map_layers_panel.py::LayersPanelTests::test_groups_hold_layers_keep_ids_and_persist
+tests/test_map_layers_panel.py::LayersPanelTests::test_large_list_scrolls_by_itself_and_stays_quick
+tests/test_map_layers_panel.py::LayersPanelTests::test_multi_select_show_hide_move_delete
+tests/test_map_layers_panel.py::LayersPanelTests::test_rename_in_place_keeps_the_ids
+  /workspace/audit-v0.9.68-full/deps/shapefile.py:2993: PossiblyCorruptFileHeader: Declared file size in /tmp/tmptotudquh/culture_025.dbf header: 87 smaller than actual file size: 101 (both in bytes)
+    warnings.warn(msg, category=PossiblyCorruptFileHeader)
+
+tests/test_map_layers_panel.py::LayersPanelTests::test_adding_to_a_group_redraws_only_what_changes
+tests/test_map_layers_panel.py::LayersPanelTests::test_collapse_and_expand_all_reach_groups_grids_and_drawing_layers
+tests/test_map_layers_panel.py::LayersPanelTests::test_find_narrows_the_list_and_changes_nothing
+tests/test_map_layers_panel.py::LayersPanelTests::test_group_eye_hides_members_and_keeps_their_own_eyes
+tests/test_map_layers_panel.py::LayersPanelTests::test_groups_hold_layers_keep_ids_and_persist
+tests/test_map_layers_panel.py::LayersPanelTests::test_large_list_scrolls_by_itself_and_stays_quick
+tests/test_map_layers_panel.py::LayersPanelTests::test_multi_select_show_hide_move_delete
+tests/test_map_layers_panel.py::LayersPanelTests::test_rename_in_place_keeps_the_ids
+  /workspace/audit-v0.9.68-full/deps/shapefile.py:2993: PossiblyCorruptFileHeader: Declared file size in /tmp/tmptotudquh/culture_026.dbf header: 87 smaller than actual file size: 101 (both in bytes)
+    warnings.warn(msg, category=PossiblyCorruptFileHeader)
+
+tests/test_map_layers_panel.py::LayersPanelTests::test_adding_to_a_group_redraws_only_what_changes
+tests/test_map_layers_panel.py::LayersPanelTests::test_collapse_and_expand_all_reach_groups_grids_and_drawing_layers
+tests/test_map_layers_panel.py::LayersPanelTests::test_find_narrows_the_list_and_changes_nothing
+tests/test_map_layers_panel.py::LayersPanelTests::test_group_eye_hides_members_and_keeps_their_own_eyes
+tests/test_map_layers_panel.py::LayersPanelTests::test_groups_hold_layers_keep_ids_and_persist
+tests/test_map_layers_panel.py::LayersPanelTests::test_large_list_scrolls_by_itself_and_stays_quick
+tests/test_map_layers_panel.py::LayersPanelTests::test_multi_select_show_hide_move_delete
+tests/test_map_layers_panel.py::LayersPanelTests::test_rename_in_place_keeps_the_ids
+  /workspace/audit-v0.9.68-full/deps/shapefile.py:2993: PossiblyCorruptFileHeader: Declared file size in /tmp/tmptotudquh/culture_027.dbf header: 87 smaller than actual file size: 101 (both in bytes)
+    warnings.warn(msg, category=PossiblyCorruptFileHeader)
+
+tests/test_map_layers_panel.py::LayersPanelTests::test_adding_to_a_group_redraws_only_what_changes
+tests/test_map_layers_panel.py::LayersPanelTests::test_collapse_and_expand_all_reach_groups_grids_and_drawing_layers
+tests/test_map_layers_panel.py::LayersPanelTests::test_find_narrows_the_list_and_changes_nothing
+tests/test_map_layers_panel.py::LayersPanelTests::test_group_eye_hides_members_and_keeps_their_own_eyes
+tests/test_map_layers_panel.py::LayersPanelTests::test_groups_hold_layers_keep_ids_and_persist
+tests/test_map_layers_panel.py::LayersPanelTests::test_large_list_scrolls_by_itself_and_stays_quick
+tests/test_map_layers_panel.py::LayersPanelTests::test_multi_select_show_hide_move_delete
+tests/test_map_layers_panel.py::LayersPanelTests::test_rename_in_place_keeps_the_ids
+  /workspace/audit-v0.9.68-full/deps/shapefile.py:2993: PossiblyCorruptFileHeader: Declared file size in /tmp/tmptotudquh/culture_028.dbf header: 87 smaller than actual file size: 101 (both in bytes)
+    warnings.warn(msg, category=PossiblyCorruptFileHeader)
+
+tests/test_map_layers_panel.py::LayersPanelTests::test_adding_to_a_group_redraws_only_what_changes
+tests/test_map_layers_panel.py::LayersPanelTests::test_collapse_and_expand_all_reach_groups_grids_and_drawing_layers
+tests/test_map_layers_panel.py::LayersPanelTests::test_find_narrows_the_list_and_changes_nothing
+tests/test_map_layers_panel.py::LayersPanelTests::test_group_eye_hides_members_and_keeps_their_own_eyes
+tests/test_map_layers_panel.py::LayersPanelTests::test_groups_hold_layers_keep_ids_and_persist
+tests/test_map_layers_panel.py::LayersPanelTests::test_large_list_scrolls_by_itself_and_stays_quick
+tests/test_map_layers_panel.py::LayersPanelTests::test_multi_select_show_hide_move_delete
+tests/test_map_layers_panel.py::LayersPanelTests::test_rename_in_place_keeps_the_ids
+  /workspace/audit-v0.9.68-full/deps/shapefile.py:2993: PossiblyCorruptFileHeader: Declared file size in /tmp/tmptotudquh/culture_029.dbf header: 87 smaller than actual file size: 101 (both in bytes)
+    warnings.warn(msg, category=PossiblyCorruptFileHeader)
+
+tests/test_map_layers_panel.py::LayersPanelTests::test_adding_to_a_group_redraws_only_what_changes
+tests/test_map_layers_panel.py::LayersPanelTests::test_collapse_and_expand_all_reach_groups_grids_and_drawing_layers
+tests/test_map_layers_panel.py::LayersPanelTests::test_find_narrows_the_list_and_changes_nothing
+tests/test_map_layers_panel.py::LayersPanelTests::test_group_eye_hides_members_and_keeps_their_own_eyes
+tests/test_map_layers_panel.py::LayersPanelTests::test_groups_hold_layers_keep_ids_and_persist
+tests/test_map_layers_panel.py::LayersPanelTests::test_large_list_scrolls_by_itself_and_stays_quick
+tests/test_map_layers_panel.py::LayersPanelTests::test_multi_select_show_hide_move_delete
+tests/test_map_layers_panel.py::LayersPanelTests::test_rename_in_place_keeps_the_ids
+  /workspace/audit-v0.9.68-full/deps/shapefile.py:2993: PossiblyCorruptFileHeader: Declared file size in /tmp/tmptotudquh/culture_030.dbf header: 87 smaller than actual file size: 101 (both in bytes)
+    warnings.warn(msg, category=PossiblyCorruptFileHeader)
+
+tests/test_map_layers_panel.py::LayersPanelTests::test_adding_to_a_group_redraws_only_what_changes
+tests/test_map_layers_panel.py::LayersPanelTests::test_collapse_and_expand_all_reach_groups_grids_and_drawing_layers
+tests/test_map_layers_panel.py::LayersPanelTests::test_find_narrows_the_list_and_changes_nothing
+tests/test_map_layers_panel.py::LayersPanelTests::test_group_eye_hides_members_and_keeps_their_own_eyes
+tests/test_map_layers_panel.py::LayersPanelTests::test_groups_hold_layers_keep_ids_and_persist
+tests/test_map_layers_panel.py::LayersPanelTests::test_large_list_scrolls_by_itself_and_stays_quick
+tests/test_map_layers_panel.py::LayersPanelTests::test_multi_select_show_hide_move_delete
+tests/test_map_layers_panel.py::LayersPanelTests::test_rename_in_place_keeps_the_ids
+  /workspace/audit-v0.9.68-full/deps/shapefile.py:2993: PossiblyCorruptFileHeader: Declared file size in /tmp/tmptotudquh/culture_031.dbf header: 87 smaller than actual file size: 101 (both in bytes)
+    warnings.warn(msg, category=PossiblyCorruptFileHeader)
+
+tests/test_map_layers_panel.py::LayersPanelTests::test_adding_to_a_group_redraws_only_what_changes
+tests/test_map_layers_panel.py::LayersPanelTests::test_collapse_and_expand_all_reach_groups_grids_and_drawing_layers
+tests/test_map_layers_panel.py::LayersPanelTests::test_find_narrows_the_list_and_changes_nothing
+tests/test_map_layers_panel.py::LayersPanelTests::test_group_eye_hides_members_and_keeps_their_own_eyes
+tests/test_map_layers_panel.py::LayersPanelTests::test_groups_hold_layers_keep_ids_and_persist
+tests/test_map_layers_panel.py::LayersPanelTests::test_large_list_scrolls_by_itself_and_stays_quick
+tests/test_map_layers_panel.py::LayersPanelTests::test_multi_select_show_hide_move_delete
+tests/test_map_layers_panel.py::LayersPanelTests::test_rename_in_place_keeps_the_ids
+  /workspace/audit-v0.9.68-full/deps/shapefile.py:2993: PossiblyCorruptFileHeader: Declared file size in /tmp/tmptotudquh/culture_032.dbf header: 87 smaller than actual file size: 101 (both in bytes)
+    warnings.warn(msg, category=PossiblyCorruptFileHeader)
+
+tests/test_map_layers_panel.py::LayersPanelTests::test_adding_to_a_group_redraws_only_what_changes
+tests/test_map_layers_panel.py::LayersPanelTests::test_collapse_and_expand_all_reach_groups_grids_and_drawing_layers
+tests/test_map_layers_panel.py::LayersPanelTests::test_find_narrows_the_list_and_changes_nothing
+tests/test_map_layers_panel.py::LayersPanelTests::test_group_eye_hides_members_and_keeps_their_own_eyes
+tests/test_map_layers_panel.py::LayersPanelTests::test_groups_hold_layers_keep_ids_and_persist
+tests/test_map_layers_panel.py::LayersPanelTests::test_large_list_scrolls_by_itself_and_stays_quick
+tests/test_map_layers_panel.py::LayersPanelTests::test_multi_select_show_hide_move_delete
+tests/test_map_layers_panel.py::LayersPanelTests::test_rename_in_place_keeps_the_ids
+  /workspace/audit-v0.9.68-full/deps/shapefile.py:2993: PossiblyCorruptFileHeader: Declared file size in /tmp/tmptotudquh/culture_033.dbf header: 87 smaller than actual file size: 101 (both in bytes)
+    warnings.warn(msg, category=PossiblyCorruptFileHeader)
+
+tests/test_map_layers_panel.py::LayersPanelTests::test_adding_to_a_group_redraws_only_what_changes
+tests/test_map_layers_panel.py::LayersPanelTests::test_collapse_and_expand_all_reach_groups_grids_and_drawing_layers
+tests/test_map_layers_panel.py::LayersPanelTests::test_find_narrows_the_list_and_changes_nothing
+tests/test_map_layers_panel.py::LayersPanelTests::test_group_eye_hides_members_and_keeps_their_own_eyes
+tests/test_map_layers_panel.py::LayersPanelTests::test_groups_hold_layers_keep_ids_and_persist
+tests/test_map_layers_panel.py::LayersPanelTests::test_large_list_scrolls_by_itself_and_stays_quick
+tests/test_map_layers_panel.py::LayersPanelTests::test_multi_select_show_hide_move_delete
+tests/test_map_layers_panel.py::LayersPanelTests::test_rename_in_place_keeps_the_ids
+  /workspace/audit-v0.9.68-full/deps/shapefile.py:2993: PossiblyCorruptFileHeader: Declared file size in /tmp/tmptotudquh/culture_034.dbf header: 87 smaller than actual file size: 101 (both in bytes)
+    warnings.warn(msg, category=PossiblyCorruptFileHeader)
+
+tests/test_map_layers_panel.py::LayersPanelTests::test_adding_to_a_group_redraws_only_what_changes
+tests/test_map_layers_panel.py::LayersPanelTests::test_collapse_and_expand_all_reach_groups_grids_and_drawing_layers
+tests/test_map_layers_panel.py::LayersPanelTests::test_find_narrows_the_list_and_changes_nothing
+tests/test_map_layers_panel.py::LayersPanelTests::test_group_eye_hides_members_and_keeps_their_own_eyes
+tests/test_map_layers_panel.py::LayersPanelTests::test_groups_hold_layers_keep_ids_and_persist
+tests/test_map_layers_panel.py::LayersPanelTests::test_large_list_scrolls_by_itself_and_stays_quick
+tests/test_map_layers_panel.py::LayersPanelTests::test_multi_select_show_hide_move_delete
+tests/test_map_layers_panel.py::LayersPanelTests::test_rename_in_place_keeps_the_ids
+  /workspace/audit-v0.9.68-full/deps/shapefile.py:2993: PossiblyCorruptFileHeader: Declared file size in /tmp/tmptotudquh/culture_035.dbf header: 87 smaller than actual file size: 101 (both in bytes)
+    warnings.warn(msg, category=PossiblyCorruptFileHeader)
+
+tests/test_map_layers_panel.py::LayersPanelTests::test_adding_to_a_group_redraws_only_what_changes
+tests/test_map_layers_panel.py::LayersPanelTests::test_collapse_and_expand_all_reach_groups_grids_and_drawing_layers
+tests/test_map_layers_panel.py::LayersPanelTests::test_find_narrows_the_list_and_changes_nothing
+tests/test_map_layers_panel.py::LayersPanelTests::test_group_eye_hides_members_and_keeps_their_own_eyes
+tests/test_map_layers_panel.py::LayersPanelTests::test_groups_hold_layers_keep_ids_and_persist
+tests/test_map_layers_panel.py::LayersPanelTests::test_large_list_scrolls_by_itself_and_stays_quick
+tests/test_map_layers_panel.py::LayersPanelTests::test_multi_select_show_hide_move_delete
+tests/test_map_layers_panel.py::LayersPanelTests::test_rename_in_place_keeps_the_ids
+  /workspace/audit-v0.9.68-full/deps/shapefile.py:2993: PossiblyCorruptFileHeader: Declared file size in /tmp/tmptotudquh/culture_036.dbf header: 87 smaller than actual file size: 101 (both in bytes)
+    warnings.warn(msg, category=PossiblyCorruptFileHeader)
+
+tests/test_map_layers_panel.py::LayersPanelTests::test_adding_to_a_group_redraws_only_what_changes
+tests/test_map_layers_panel.py::LayersPanelTests::test_collapse_and_expand_all_reach_groups_grids_and_drawing_layers
+tests/test_map_layers_panel.py::LayersPanelTests::test_find_narrows_the_list_and_changes_nothing
+tests/test_map_layers_panel.py::LayersPanelTests::test_group_eye_hides_members_and_keeps_their_own_eyes
+tests/test_map_layers_panel.py::LayersPanelTests::test_groups_hold_layers_keep_ids_and_persist
+tests/test_map_layers_panel.py::LayersPanelTests::test_large_list_scrolls_by_itself_and_stays_quick
+tests/test_map_layers_panel.py::LayersPanelTests::test_multi_select_show_hide_move_delete
+tests/test_map_layers_panel.py::LayersPanelTests::test_rename_in_place_keeps_the_ids
+  /workspace/audit-v0.9.68-full/deps/shapefile.py:2993: PossiblyCorruptFileHeader: Declared file size in /tmp/tmptotudquh/culture_037.dbf header: 87 smaller than actual file size: 101 (both in bytes)
+    warnings.warn(msg, category=PossiblyCorruptFileHeader)
+
+tests/test_map_layers_panel.py::LayersPanelTests::test_adding_to_a_group_redraws_only_what_changes
+tests/test_map_layers_panel.py::LayersPanelTests::test_collapse_and_expand_all_reach_groups_grids_and_drawing_layers
+tests/test_map_layers_panel.py::LayersPanelTests::test_find_narrows_the_list_and_changes_nothing
+tests/test_map_layers_panel.py::LayersPanelTests::test_group_eye_hides_members_and_keeps_their_own_eyes
+tests/test_map_layers_panel.py::LayersPanelTests::test_groups_hold_layers_keep_ids_and_persist
+tests/test_map_layers_panel.py::LayersPanelTests::test_large_list_scrolls_by_itself_and_stays_quick
+tests/test_map_layers_panel.py::LayersPanelTests::test_multi_select_show_hide_move_delete
+tests/test_map_layers_panel.py::LayersPanelTests::test_rename_in_place_keeps_the_ids
+  /workspace/audit-v0.9.68-full/deps/shapefile.py:2993: PossiblyCorruptFileHeader: Declared file size in /tmp/tmptotudquh/culture_038.dbf header: 87 smaller than actual file size: 101 (both in bytes)
+    warnings.warn(msg, category=PossiblyCorruptFileHeader)
+
+tests/test_map_layers_panel.py::LayersPanelTests::test_adding_to_a_group_redraws_only_what_changes
+tests/test_map_layers_panel.py::LayersPanelTests::test_collapse_and_expand_all_reach_groups_grids_and_drawing_layers
+tests/test_map_layers_panel.py::LayersPanelTests::test_find_narrows_the_list_and_changes_nothing
+tests/test_map_layers_panel.py::LayersPanelTests::test_group_eye_hides_members_and_keeps_their_own_eyes
+tests/test_map_layers_panel.py::LayersPanelTests::test_groups_hold_layers_keep_ids_and_persist
+tests/test_map_layers_panel.py::LayersPanelTests::test_large_list_scrolls_by_itself_and_stays_quick
+tests/test_map_layers_panel.py::LayersPanelTests::test_multi_select_show_hide_move_delete
+tests/test_map_layers_panel.py::LayersPanelTests::test_rename_in_place_keeps_the_ids
+  /workspace/audit-v0.9.68-full/deps/shapefile.py:2993: PossiblyCorruptFileHeader: Declared file size in /tmp/tmptotudquh/culture_039.dbf header: 87 smaller than actual file size: 101 (both in bytes)
+    warnings.warn(msg, category=PossiblyCorruptFileHeader)
+
+tests/test_map_layer_stack.py::LayerStackWindowTests::test_drawing_needs_an_active_layer_and_goes_into_it
+  /workspace/audit-v0.9.68-full/deps/shapefile.py:2993: PossiblyCorruptFileHeader: Declared file size in /tmp/tmpr9ph4s2m/sections.dbf header: 87 smaller than actual file size: 101 (both in bytes)
+    warnings.warn(msg, category=PossiblyCorruptFileHeader)
+
+tests/test_map_layer_stack.py::LayerStackWindowTests::test_grids_each_in_the_stack_with_their_own_parts
+  /workspace/audit-v0.9.68-full/deps/shapefile.py:2993: PossiblyCorruptFileHeader: Declared file size in /tmp/tmp430kv1jt/sections.dbf header: 87 smaller than actual file size: 101 (both in bytes)
+    warnings.warn(msg, category=PossiblyCorruptFileHeader)
+
+tests/test_map_layer_stack.py::LayerStackWindowTests::test_list_order_is_the_drawing_order
+  /workspace/audit-v0.9.68-full/deps/shapefile.py:2993: PossiblyCorruptFileHeader: Declared file size in /tmp/tmpncgilyu2/sections.dbf header: 87 smaller than actual file size: 101 (both in bytes)
+    warnings.warn(msg, category=PossiblyCorruptFileHeader)
+
+tests/test_map_layer_stack.py::LayerStackWindowTests::test_move_buttons_move_grids_and_shapefiles
+  /workspace/audit-v0.9.68-full/deps/shapefile.py:2993: PossiblyCorruptFileHeader: Declared file size in /tmp/tmpajk1fhmj/sections.dbf header: 87 smaller than actual file size: 101 (both in bytes)
+    warnings.warn(msg, category=PossiblyCorruptFileHeader)
+
+tests/test_map_layer_stack.py::LayerStackWindowTests::test_older_drawings_are_put_in_a_layer_and_picked_from_the_map
+  /workspace/audit-v0.9.68-full/deps/shapefile.py:2993: PossiblyCorruptFileHeader: Declared file size in /tmp/tmppn_zf07b/sections.dbf header: 87 smaller than actual file size: 101 (both in bytes)
+    warnings.warn(msg, category=PossiblyCorruptFileHeader)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+SKIPPED [1] tests/test_cython_build.py:115: the protected modules are not compiled (tools/release/build_cython.py)
+SKIPPED [1] tests/test_cython_build.py:63: the protected modules are not compiled (tools/release/build_cython.py)
+SKIPPED [1] tests/test_cython_build.py:69: the protected modules are not compiled (tools/release/build_cython.py)
+696 passed, 3 skipped, 338 warnings, 275 subtests passed in 332.99s (0:05:32)

@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/workspace/audit-v0.9.70-full/probes/scale_probe.py", line 14, in <module>
+    con.executemany('insert into wells(well_name,api_uwi,well_uid)values(?,?,?)',((f'Synthetic {k:06}',f'42{k:012}',f'synthetic-{k}')for k in range(n)))
+sqlite3.IntegrityError: NOT NULL constraint failed: wells.created_at

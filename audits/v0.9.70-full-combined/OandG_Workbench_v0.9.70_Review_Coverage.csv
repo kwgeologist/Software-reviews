@@ -1,0 +1,359 @@
+file,lines,review_level,test_coverage_limit
+app.py,19,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+bulk_import.py,778,targeted_manual_path_review_and_AST,No line coverage measured; see subsystem tests and limits in report
+correlation_app.py,23,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+correlationworkbench/__init__.py,4,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+correlationworkbench/app.py,1651,targeted_manual_path_review_and_AST,No line coverage measured; see subsystem tests and limits in report
+correlationworkbench/colour_intervals.py,19,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+correlationworkbench/dialogs.py,1401,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+correlationworkbench/digital.py,249,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+correlationworkbench/model.py,622,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+correlationworkbench/panels.py,362,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+correlationworkbench/store.py,414,targeted_manual_path_review_and_AST,No line coverage measured; see subsystem tests and limits in report
+correlationworkbench/table.py,1603,targeted_manual_path_review_and_AST,No line coverage measured; see subsystem tests and limits in report
+correlationworkbench/template_editor.py,1007,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+database.py,5461,targeted_manual_path_review_and_AST,No line coverage measured; see subsystem tests and limits in report
+export_manager.py,885,targeted_manual_path_review_and_AST,No line coverage measured; see subsystem tests and limits in report
+geosteer_app.py,28,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+geosteering/__init__.py,22,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+geosteering/app.py,2850,targeted_manual_path_review_and_AST,No line coverage measured; see subsystem tests and limits in report
+geosteering/demo.py,154,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+geosteering/dialogs.py,2131,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+geosteering/drawing.py,1356,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+geosteering/job.py,1109,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+geosteering/model.py,1095,targeted_manual_path_review_and_AST,No line coverage measured; see subsystem tests and limits in report
+geosteering/project.py,812,targeted_manual_path_review_and_AST,No line coverage measured; see subsystem tests and limits in report
+geosteering/report.py,129,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+geosteering/wells.py,590,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+geoworkbench/__init__.py,4,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+geoworkbench/common.py,156,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+geoworkbench/core_tab.py,453,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+geoworkbench/crs.py,413,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+geoworkbench/faults_tab.py,228,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+geoworkbench/formation_tab.py,176,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+geoworkbench/import_dialogs.py,763,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+geoworkbench/interpretation_dialogs.py,592,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+geoworkbench/las_loader.py,278,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+geoworkbench/las_tab.py,374,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+geoworkbench/location.py,532,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+geoworkbench/main_window.py,2742,targeted_manual_path_review_and_AST,No line coverage measured; see subsystem tests and limits in report
+geoworkbench/production_tab.py,525,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+geoworkbench/raster_tab.py,412,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+geoworkbench/spreadsheet.py,1291,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+geoworkbench/survey_bulk_dialog.py,382,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+geoworkbench/symbol_catalog_dialog.py,523,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+geoworkbench/symbol_picker.py,126,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+geoworkbench/tables.py,494,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+geoworkbench/tests_tab.py,864,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+geoworkbench/time_depth_tab.py,287,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+geoworkbench/treatments_tab.py,114,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+geoworkbench/well_tab.py,376,targeted_manual_path_review_and_AST,No line coverage measured; see subsystem tests and limits in report
+geoworkbench/zones_tab.py,387,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+license_manager/__init__.py,5,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+license_manager/__main__.py,145,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+license_manager/gui.py,566,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+license_manager/issuer.py,402,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+license_manager/self_test.py,109,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+mapped_import.py,1192,targeted_manual_path_review_and_AST,No line coverage measured; see subsystem tests and limits in report
+ogcore/__init__.py,40,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogcore/api.py,210,targeted_manual_path_review_and_AST,No line coverage measured; see subsystem tests and limits in report
+ogcore/assistant/__init__.py,38,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogcore/assistant/catalog.py,309,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogcore/assistant/context.py,123,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogcore/assistant/credentials.py,87,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogcore/assistant/engine.py,227,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogcore/assistant/provider.py,109,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogcore/assistant/validate.py,87,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogcore/assistant_ui.py,387,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogcore/attribute_index.py,387,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogcore/autoreg/__init__.py,28,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogcore/autoreg/__main__.py,49,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogcore/autoreg/diagnostics.py,252,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogcore/autoreg/digits.py,88,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogcore/autoreg/engine.py,830,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogcore/autoreg/lines.py,1106,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogcore/autoreg/model.py,266,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogcore/autoreg/ocr.py,583,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogcore/autoreg/progression.py,487,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogcore/autoreg/sections.py,538,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogcore/autoreg/source.py,60,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogcore/autotrace.py,790,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogcore/background.py,203,targeted_manual_path_review_and_AST,No line coverage measured; see subsystem tests and limits in report
+ogcore/batch_curves.py,382,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogcore/batch_ui.py,1510,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogcore/batch_zones.py,1222,targeted_manual_path_review_and_AST,No line coverage measured; see subsystem tests and limits in report
+ogcore/bhl_repair.py,147,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogcore/binlisting.py,270,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogcore/branding.py,75,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogcore/cache.py,211,targeted_manual_path_review_and_AST,No line coverage measured; see subsystem tests and limits in report
+ogcore/cancel.py,33,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogcore/cell_editor.py,178,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogcore/cfb.py,165,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogcore/color_bar_files.py,114,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogcore/colour_bars.py,668,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogcore/colour_intervals.py,516,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogcore/core_data.py,278,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogcore/core_equations.py,91,targeted_manual_path_review_and_AST,No line coverage measured; see subsystem tests and limits in report
+ogcore/core_series.py,130,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogcore/curve_aliases.py,237,targeted_manual_path_review_and_AST,No line coverage measured; see subsystem tests and limits in report
+ogcore/curve_aliases_ui.py,263,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogcore/curve_calc.py,204,targeted_manual_path_review_and_AST,No line coverage measured; see subsystem tests and limits in report
+ogcore/curve_grids.py,125,targeted_manual_path_review_and_AST,No line coverage measured; see subsystem tests and limits in report
+ogcore/curve_store.py,671,targeted_manual_path_review_and_AST,No line coverage measured; see subsystem tests and limits in report
+ogcore/curve_values.py,175,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogcore/curves.py,173,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogcore/depth.py,299,targeted_manual_path_review_and_AST,No line coverage measured; see subsystem tests and limits in report
+ogcore/digitize.py,1423,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogcore/errorlog.py,87,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogcore/existing_wells.py,38,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogcore/filedrop.py,102,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogcore/flowbar.py,100,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogcore/formulas.py,226,targeted_manual_path_review_and_AST,No line coverage measured; see subsystem tests and limits in report
+ogcore/gridders.py,560,targeted_manual_path_review_and_AST,No line coverage measured; see subsystem tests and limits in report
+ogcore/gridding.py,330,targeted_manual_path_review_and_AST,No line coverage measured; see subsystem tests and limits in report
+ogcore/handoff.py,312,targeted_manual_path_review_and_AST,No line coverage measured; see subsystem tests and limits in report
+ogcore/icons.py,325,targeted_manual_path_review_and_AST,No line coverage measured; see subsystem tests and limits in report
+ogcore/ihs297.py,1065,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogcore/ihs298.py,583,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogcore/import_preview.py,193,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogcore/import_targets.py,261,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogcore/interp_integrity.py,116,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogcore/las.py,437,targeted_manual_path_review_and_AST,No line coverage measured; see subsystem tests and limits in report
+ogcore/license_gate.py,239,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogcore/license_runtime.py,369,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogcore/licensing.py,980,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogcore/licensing_keys.py,29,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogcore/lru.py,88,targeted_manual_path_review_and_AST,No line coverage measured; see subsystem tests and limits in report
+ogcore/mincurv.py,517,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogcore/multimineral.py,667,targeted_manual_path_review_and_AST,No line coverage measured; see subsystem tests and limits in report
+ogcore/multivariate.py,186,targeted_manual_path_review_and_AST,No line coverage measured; see subsystem tests and limits in report
+ogcore/pay.py,259,targeted_manual_path_review_and_AST,No line coverage measured; see subsystem tests and limits in report
+ogcore/pay_sets.py,717,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogcore/pay_ui.py,805,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogcore/petra_grid.py,268,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogcore/petra_ppf.py,1668,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogcore/plss.py,196,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogcore/production.py,907,targeted_manual_path_review_and_AST,No line coverage measured; see subsystem tests and limits in report
+ogcore/project.py,570,targeted_manual_path_review_and_AST,No line coverage measured; see subsystem tests and limits in report
+ogcore/project_ui.py,187,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogcore/raster.py,1123,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogcore/recovery.py,545,targeted_manual_path_review_and_AST,No line coverage measured; see subsystem tests and limits in report
+ogcore/recovery_ui.py,188,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogcore/repositories.py,500,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogcore/repository_ui.py,532,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogcore/resample.py,189,targeted_manual_path_review_and_AST,No line coverage measured; see subsystem tests and limits in report
+ogcore/safeio.py,296,targeted_manual_path_review_and_AST,No line coverage measured; see subsystem tests and limits in report
+ogcore/scrollframe.py,346,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogcore/seg_p1.py,1015,targeted_manual_path_review_and_AST,No line coverage measured; see subsystem tests and limits in report
+ogcore/segy.py,981,targeted_manual_path_review_and_AST,No line coverage measured; see subsystem tests and limits in report
+ogcore/segy2d.py,195,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogcore/seis_ties.py,518,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogcore/seismic_attributes.py,493,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogcore/sheet.py,514,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogcore/slider.py,77,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogcore/smoothing.py,180,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogcore/sources_ui.py,281,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogcore/startup_timing.py,115,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogcore/surface.py,1064,targeted_manual_path_review_and_AST,No line coverage measured; see subsystem tests and limits in report
+ogcore/survey_bulk.py,383,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogcore/survey_files.py,333,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogcore/symbol_catalog.py,494,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogcore/synthetic.py,280,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogcore/task_progress.py,437,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogcore/text_style.py,399,targeted_manual_path_review_and_AST,No line coverage measured; see subsystem tests and limits in report
+ogcore/theme.py,168,targeted_manual_path_review_and_AST,No line coverage measured; see subsystem tests and limits in report
+ogcore/toggle.py,46,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogcore/tooltip.py,55,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogcore/top_labels.py,86,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogcore/units.py,81,targeted_manual_path_review_and_AST,No line coverage measured; see subsystem tests and limits in report
+ogcore/userdata.py,153,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogcore/velocity_model.py,949,targeted_manual_path_review_and_AST,No line coverage measured; see subsystem tests and limits in report
+ogcore/water.py,80,targeted_manual_path_review_and_AST,No line coverage measured; see subsystem tests and limits in report
+ogcore/well_fields.py,26,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogcore/well_filter_ui.py,145,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogcore/well_geometry.py,495,targeted_manual_path_review_and_AST,No line coverage measured; see subsystem tests and limits in report
+ogcore/well_list_builder.py,1513,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogcore/well_list_files.py,234,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogcore/well_names.py,52,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogcore/well_query.py,1157,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogcore/well_selection.py,443,targeted_manual_path_review_and_AST,No line coverage measured; see subsystem tests and limits in report
+ogcore/well_tests.py,864,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogcore/xyz.py,378,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogcore/zone_destination.py,323,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogmap/__init__.py,5,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogmap/bubble_dialog.py,1079,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogmap/bubbles.py,597,targeted_manual_path_review_and_AST,No line coverage measured; see subsystem tests and limits in report
+ogmap/changes.py,106,targeted_manual_path_review_and_AST,No line coverage measured; see subsystem tests and limits in report
+ogmap/color_scale.py,507,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogmap/colorbar_editor.py,770,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogmap/contour_dialog.py,349,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogmap/contours.py,185,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogmap/control_point_dialog.py,339,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogmap/control_points.py,401,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogmap/coverage.py,421,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogmap/culture.py,835,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogmap/cursors.py,215,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogmap/datastore.py,597,targeted_manual_path_review_and_AST,No line coverage measured; see subsystem tests and limits in report
+ogmap/digitized.py,215,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogmap/drawing_tab.py,1323,targeted_manual_path_review_and_AST,No line coverage measured; see subsystem tests and limits in report
+ogmap/drawings.py,389,targeted_manual_path_review_and_AST,No line coverage measured; see subsystem tests and limits in report
+ogmap/georef.py,487,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogmap/georef_dialog.py,422,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogmap/grid_dialogs.py,1252,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogmap/grids.py,1096,targeted_manual_path_review_and_AST,No line coverage measured; see subsystem tests and limits in report
+ogmap/icons.py,58,targeted_manual_path_review_and_AST,No line coverage measured; see subsystem tests and limits in report
+ogmap/isopach.py,555,targeted_manual_path_review_and_AST,No line coverage measured; see subsystem tests and limits in report
+ogmap/isopach_dialog.py,383,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogmap/labels.py,136,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogmap/layer_dialog.py,144,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogmap/layer_groups.py,216,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogmap/layer_target.py,121,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogmap/layers.py,174,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogmap/legal.py,149,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogmap/lod.py,66,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogmap/measure.py,157,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogmap/palettes.py,387,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogmap/perf.py,324,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogmap/point_sets.py,86,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogmap/polygon_dialog.py,75,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogmap/polygon_stats.py,272,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogmap/posting.py,308,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogmap/project.py,1081,targeted_manual_path_review_and_AST,No line coverage measured; see subsystem tests and limits in report
+ogmap/scale.py,186,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogmap/scrollbars.py,109,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogmap/setups.py,82,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogmap/shape_export.py,205,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogmap/side_panel.py,49,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogmap/sources.py,601,targeted_manual_path_review_and_AST,No line coverage measured; see subsystem tests and limits in report
+ogmap/spatial.py,172,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogmap/stack.py,262,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogmap/symbols.py,151,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogmap/textpaths.py,263,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogmap/view.py,4164,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogmap/well_maps.py,113,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogmap/well_values.py,157,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogmap/wells_dialog.py,626,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogmap/window.py,5306,targeted_manual_path_review_and_AST,No line coverage measured; see subsystem tests and limits in report
+ogmap/xyz_dialog.py,210,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ograster/__init__.py,4,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ograster/autoreview.py,968,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ograster/bulk_lic.py,399,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ograster/calibrate.py,1364,targeted_manual_path_review_and_AST,No line coverage measured; see subsystem tests and limits in report
+ograster/digitize_ui.py,2287,targeted_manual_path_review_and_AST,No line coverage measured; see subsystem tests and limits in report
+ograster/importing.py,155,targeted_manual_path_review_and_AST,No line coverage measured; see subsystem tests and limits in report
+ograster/overlay.py,766,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ograster/pdf_import.py,510,targeted_manual_path_review_and_AST,No line coverage measured; see subsystem tests and limits in report
+ograster/pdf_import_ui.py,384,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ograster/progress.py,114,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogvol/__init__.py,4,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogvol/app.py,903,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogvol/building.py,113,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogvol/engine.py,741,targeted_manual_path_review_and_AST,No line coverage measured; see subsystem tests and limits in report
+ogvol/report.py,293,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+ogvol/scenarios.py,315,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+petro_app.py,25,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+petroworkbench/__init__.py,4,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+petroworkbench/analysis.py,1052,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+petroworkbench/app.py,571,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+petroworkbench/calculations.py,1244,targeted_manual_path_review_and_AST,No line coverage measured; see subsystem tests and limits in report
+petroworkbench/colors.py,906,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+petroworkbench/constants.py,56,targeted_manual_path_review_and_AST,No line coverage measured; see subsystem tests and limits in report
+petroworkbench/core_points.py,648,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+petroworkbench/curve_editor.py,360,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+petroworkbench/curve_editor_panel.py,950,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+petroworkbench/curve_ops.py,448,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+petroworkbench/curve_tools.py,486,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+petroworkbench/depth_entry.py,151,targeted_manual_path_review_and_AST,No line coverage measured; see subsystem tests and limits in report
+petroworkbench/geo_link.py,1868,targeted_manual_path_review_and_AST,No line coverage measured; see subsystem tests and limits in report
+petroworkbench/interpretation.py,1263,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+petroworkbench/las_files.py,652,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+petroworkbench/multimineral_ui.py,576,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+petroworkbench/multivariate.py,491,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+petroworkbench/multiwell.py,192,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+petroworkbench/pay_picking.py,377,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+petroworkbench/plot_editing.py,664,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+petroworkbench/plotting.py,1741,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+petroworkbench/project_tree.py,490,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+petroworkbench/rasters.py,496,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+petroworkbench/tracks.py,686,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+petroworkbench/well_data.py,237,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+petroworkbench/windows.py,293,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+petroworkbench/workspace.py,862,targeted_manual_path_review_and_AST,No line coverage measured; see subsystem tests and limits in report
+python_support.py,34,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+seismic_app.py,23,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+seismicworkbench/__init__.py,1,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+seismicworkbench/app.py,3177,targeted_manual_path_review_and_AST,No line coverage measured; see subsystem tests and limits in report
+seismicworkbench/cube.py,742,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+seismicworkbench/dialogs.py,907,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+seismicworkbench/fault_polygons.py,125,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+seismicworkbench/fault_surface.py,219,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+seismicworkbench/grid_cache.py,89,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+seismicworkbench/grids_ui.py,371,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+seismicworkbench/interp_registry.py,314,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+seismicworkbench/interpretation.py,523,targeted_manual_path_review_and_AST,No line coverage measured; see subsystem tests and limits in report
+seismicworkbench/kingdom.py,955,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+seismicworkbench/kingdom_native.py,401,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+seismicworkbench/layers_ui.py,224,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+seismicworkbench/layout.py,359,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+seismicworkbench/legacy.py,144,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+seismicworkbench/linepath.py,86,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+seismicworkbench/lines2d.py,490,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+seismicworkbench/lines2d_ui.py,358,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+seismicworkbench/mapping.py,1950,targeted_manual_path_review_and_AST,No line coverage measured; see subsystem tests and limits in report
+seismicworkbench/mistie.py,144,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+seismicworkbench/nav_import.py,440,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+seismicworkbench/picking.py,397,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+seismicworkbench/picks_io.py,1025,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+seismicworkbench/picks_ui.py,307,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+seismicworkbench/polygon_delete.py,112,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+seismicworkbench/project.py,616,targeted_manual_path_review_and_AST,No line coverage measured; see subsystem tests and limits in report
+seismicworkbench/section2d.py,813,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+seismicworkbench/sections.py,1558,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+seismicworkbench/slices.py,1031,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+seismicworkbench/synthetic.py,399,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+seismicworkbench/ties_ui.py,1278,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+seismicworkbench/time_depth_ui.py,777,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+seismicworkbench/wells.py,709,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+seismicworkbench/windows.py,325,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+tools/bhl_compare.py,80,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+tools/dump_ui_labels.py,178,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+tools/help_catalog_source.py,1915,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+tools/make_icons.py,82,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+tools/make_map_project.py,131,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+tools/make_native_fixtures.py,234,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+tools/map_overlay_benchmark.py,252,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+tools/map_perf.py,499,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+tools/release/build_cython.py,76,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+tools/release/build_help_html.py,73,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+tools/release/build_segyio.py,89,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+tools/release/check_protected.py,376,targeted_manual_path_review_and_AST,No line coverage measured; see subsystem tests and limits in report
+tools/release/check_python.py,52,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+tools/release/check_runtime.py,199,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+tools/release/cython_modules.py,74,targeted_manual_path_review_and_AST,No line coverage measured; see subsystem tests and limits in report
+tools/release/inventory.py,221,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+tools/release/lgpl_check.py,146,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+tools/release/make_version_info.py,84,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+tools/release/merge_dist.py,97,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+tools/release/provision_test_license.py,89,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+tools/release/stage.py,79,targeted_manual_path_review_and_AST,No line coverage measured; see subsystem tests and limits in report
+tools/release/third_party_notices.py,157,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+tools/render_symbol_sheet.py,33,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+tools/section_perf.py,182,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+tools/startup_probe.py,274,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+tools/train_digit_model.py,370,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+tools/validate_kingdom_native.py,246,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+tools/validate_p1_navigation.py,158,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+tools/validate_petra_ppf.py,65,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+well_symbols.py,765,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+xsection/__init__.py,50,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+xsection/dialogs.py,1632,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+xsection/export.py,297,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+xsection/geometry.py,392,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+xsection/layout.py,558,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+xsection/log_display.py,1694,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+xsection/model.py,849,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+xsection/patterns.py,75,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+xsection/render.py,1474,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+xsection/store.py,456,targeted_manual_path_review_and_AST,No line coverage measured; see subsystem tests and limits in report
+xsection/widgets.py,343,AST_import_and_risk_inventory; module-family tests,No line coverage measured; see subsystem tests and limits in report
+xsection/window.py,2789,targeted_manual_path_review_and_AST,No line coverage measured; see subsystem tests and limits in report

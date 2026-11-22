@@ -1,0 +1,14 @@
+{
+  "command": [
+    "/workspace/audit-v0.9.56-windows/tooling/bin/python",
+    "-m",
+    "pytest",
+    "-q",
+    "-p",
+    "no:cacheprovider",
+    "tests/test_v0969_fonts_audit.py::RendererFonts::test_tk_only_font",
+    "--tb=short",
+    "--junitxml=/workspace/audit-v0.9.70-full/font-recheck.xml"
+  ],
+  "exit_code": 1
+}

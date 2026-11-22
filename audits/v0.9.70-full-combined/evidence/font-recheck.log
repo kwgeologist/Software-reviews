@@ -1,0 +1,26 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+_______________________ RendererFonts.test_tk_only_font ________________________
+tests/test_v0969_fonts_audit.py:69: in test_tk_only_font
+    self.check(name, self.tk_names[name.casefold()], exact=True)  # Tk draws it
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests/test_v0969_fonts_audit.py:47: in check
+    self.assertEqual(actual["family"].casefold(), family.casefold(), (style, bold, italic))
+E   AssertionError: 'urw gothic l' != 'avant garde gothic'
+E   - urw gothic l
+E   + avant garde gothic
+E    : ('avant garde gothic', False, False)
+----------------------------- Captured stderr call -----------------------------
+Fontconfig error: No writable cache directories
+=============================== warnings summary ===============================
+../../../opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/anyio/pytest_plugin.py:14
+  /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/anyio/pytest_plugin.py:14: PytestRemovedIn10Warning: _pytest.python.CallSpec2 has been renamed to CallSpec.
+  The CallSpec2 alias will be removed in pytest 10.
+  Update imports to use CallSpec instead.
+  See https://docs.pytest.org/en/stable/deprecations.html#callspec2-renamed
+    from _pytest.python import CallSpec2
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED tests/test_v0969_fonts_audit.py::RendererFonts::test_tk_only_font - As...
+1 failed, 1 warning in 1.31s

@@ -1,0 +1,9 @@
+{
+  "synthetic_image": true,
+  "draft_nodes": 2,
+  "curve_already_exported": false,
+  "finish_allowed_after_store_failure": true,
+  "window_destroyed": true,
+  "status_before_close": "Could not keep the digitizing with the raster: injected disk full",
+  "database_digitizing_after_close": ""
+}

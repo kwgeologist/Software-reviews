@@ -1,0 +1,9 @@
+Fontconfig error: No writable cache directories
+Traceback (most recent call last):
+  File "/workspace/audit-v0.9.70-integrity/probes/ui_cases.py", line 10, in <module>
+    a.open_survey(a.db.rows('select * from seismic_surveys')[0]['id'])
+    ^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/tkinter/__init__.py", line 2433, in __getattr__
+    return getattr(self.tk, attr)
+           ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: '_tkinter.tkapp' object has no attribute 'open_survey'

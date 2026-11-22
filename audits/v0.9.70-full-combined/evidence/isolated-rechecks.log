@@ -1,0 +1,32 @@
+FF                                                                       [100%]
+=================================== FAILURES ===================================
+____ CorrelationAppTests.test_correlation_box_over_digital_logs_never_pans _____
+tests/test_correlation.py:635: in test_correlation_box_over_digital_logs_never_pans
+    self.assertAlmostEqual(wide.width, end - (p.x0 + 0.3), places=6)
+E   AssertionError: 6.296937045548732 != 6.300000000000001 within 6 places (0.0030629544512690288 difference)
+----------------------------- Captured stderr call -----------------------------
+Fontconfig error: No writable cache directories
+____________ LayoutSettles.test_natural_and_resized_manager_settles ____________
+tests/test_v0970_tk_lifecycle.py:131: in test_natural_and_resized_manager_settles
+    self.settled(win, f"scaling {scaling}")
+tests/test_v0970_tk_lifecycle.py:103: in settled
+    self.assertLess(drain(win), 20000, f"the layout never settled ({what})")
+E   AssertionError: 20000 not less than 20000 : the layout never settled (scaling 1.25)
+----------------------------- Captured stderr call -----------------------------
+invalid command name "140363293384448idle_draw"
+    while executing
+"140363293384448idle_draw"
+    ("after" script)
+=============================== warnings summary ===============================
+../../../opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/anyio/pytest_plugin.py:14
+  /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/anyio/pytest_plugin.py:14: PytestRemovedIn10Warning: _pytest.python.CallSpec2 has been renamed to CallSpec.
+  The CallSpec2 alias will be removed in pytest 10.
+  Update imports to use CallSpec instead.
+  See https://docs.pytest.org/en/stable/deprecations.html#callspec2-renamed
+    from _pytest.python import CallSpec2
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED tests/test_correlation.py::CorrelationAppTests::test_correlation_box_over_digital_logs_never_pans
+FAILED tests/test_v0970_tk_lifecycle.py::LayoutSettles::test_natural_and_resized_manager_settles
+2 failed, 1 warning in 5.44s
