@@ -1,0 +1,3204 @@
+{
+  "runs": [
+    {
+      "name": "A-86-1",
+      "Tk_requested": "86",
+      "observer": false,
+      "native": false,
+      "exit_code": 0,
+      "seconds": 62.113033056259155,
+      "parent_peak_RSS_KiB": 342252,
+      "timed_out": null,
+      "native_signals": [],
+      "fatal_markers": [],
+      "xml": {
+        "name": "pytest",
+        "errors": "0",
+        "failures": "0",
+        "skipped": "0",
+        "tests": "67",
+        "time": "60.352",
+        "timestamp": "2026-11-23T15:43:45.536154+00:00",
+        "hostname": "92eca82e4988"
+      },
+      "failures": []
+    },
+    {
+      "name": "A-86-2",
+      "Tk_requested": "86",
+      "observer": true,
+      "native": false,
+      "exit_code": 0,
+      "seconds": 117.3581748008728,
+      "parent_peak_RSS_KiB": 340960,
+      "timed_out": null,
+      "native_signals": [],
+      "fatal_markers": [],
+      "xml": {
+        "name": "pytest",
+        "errors": "0",
+        "failures": "0",
+        "skipped": "0",
+        "tests": "67",
+        "time": "115.032",
+        "timestamp": "2026-11-23T15:44:47.779510+00:00",
+        "hostname": "92eca82e4988"
+      },
+      "failures": [],
+      "observation_samples": 135,
+      "last_sample": {
+        "event": "sessionfinish 0",
+        "time": 1795448803.0464778,
+        "roots": [
+          {
+            "id": 139957099176512,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139957090539456,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139956977583360,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139956978195664,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139956973567296,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139956975460256,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139956989212192,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          }
+        ],
+        "counts": {
+          "made": 28,
+          "destroy": 28,
+          "gc": 7481,
+          "cross_thread_tk_calls": 0
+        },
+        "GC": [
+          30,
+          0,
+          0
+        ],
+        "gc_enabled": true,
+        "mpl_managers": 0,
+        "retained_figures": 6,
+        "retained_tk_widgets": 1138,
+        "rss_max_KiB": 340648,
+        "threads": [
+          "MainThread"
+        ]
+      },
+      "peak_roots_observed": 7,
+      "peak_figures_observed": 9,
+      "worker_gc_events": 0,
+      "worker_Tk_Python_entries": 0
+    },
+    {
+      "name": "A-86-3",
+      "Tk_requested": "86",
+      "observer": true,
+      "native": false,
+      "exit_code": 0,
+      "seconds": 112.2382607460022,
+      "parent_peak_RSS_KiB": 344272,
+      "timed_out": null,
+      "native_signals": [],
+      "fatal_markers": [],
+      "xml": {
+        "name": "pytest",
+        "errors": "0",
+        "failures": "0",
+        "skipped": "0",
+        "tests": "67",
+        "time": "109.114",
+        "timestamp": "2026-11-23T15:46:46.307493+00:00",
+        "hostname": "92eca82e4988"
+      },
+      "failures": [],
+      "observation_samples": 135,
+      "last_sample": {
+        "event": "sessionfinish 0",
+        "time": 1795448915.6247258,
+        "roots": [
+          {
+            "id": 140596408574816,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140596382152992,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140596415503472,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140596373931552,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140596378879088,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140596383007472,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140596375053776,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          }
+        ],
+        "counts": {
+          "made": 28,
+          "destroy": 28,
+          "gc": 7478,
+          "cross_thread_tk_calls": 0
+        },
+        "GC": [
+          30,
+          0,
+          0
+        ],
+        "gc_enabled": true,
+        "mpl_managers": 0,
+        "retained_figures": 6,
+        "retained_tk_widgets": 1138,
+        "rss_max_KiB": 343656,
+        "threads": [
+          "MainThread"
+        ]
+      },
+      "peak_roots_observed": 7,
+      "peak_figures_observed": 9,
+      "worker_gc_events": 0,
+      "worker_Tk_Python_entries": 0
+    },
+    {
+      "name": "A-9-1",
+      "Tk_requested": "9",
+      "observer": false,
+      "native": false,
+      "exit_code": 0,
+      "seconds": 62.117467403411865,
+      "parent_peak_RSS_KiB": 357188,
+      "timed_out": null,
+      "native_signals": [],
+      "fatal_markers": [],
+      "xml": {
+        "name": "pytest",
+        "errors": "0",
+        "failures": "0",
+        "skipped": "0",
+        "tests": "67",
+        "time": "60.461",
+        "timestamp": "2026-11-23T15:43:45.551072+00:00",
+        "hostname": "92eca82e4988"
+      },
+      "failures": []
+    },
+    {
+      "name": "A-9-2",
+      "Tk_requested": "9",
+      "observer": true,
+      "native": false,
+      "exit_code": 0,
+      "seconds": 115.55332088470459,
+      "parent_peak_RSS_KiB": 357896,
+      "timed_out": null,
+      "native_signals": [],
+      "fatal_markers": [],
+      "xml": {
+        "name": "pytest",
+        "errors": "0",
+        "failures": "0",
+        "skipped": "0",
+        "tests": "67",
+        "time": "113.269",
+        "timestamp": "2026-11-23T15:44:47.799534+00:00",
+        "hostname": "92eca82e4988"
+      },
+      "failures": [],
+      "observation_samples": 135,
+      "last_sample": {
+        "event": "sessionfinish 0",
+        "time": 1795448801.342913,
+        "roots": [
+          {
+            "id": 139704546526800,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139704513156432,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139704515108096,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139704534376640,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139704546952928,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139704546656432,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139704516273952,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          }
+        ],
+        "counts": {
+          "made": 28,
+          "destroy": 28,
+          "gc": 7485,
+          "cross_thread_tk_calls": 0
+        },
+        "GC": [
+          30,
+          0,
+          0
+        ],
+        "gc_enabled": true,
+        "mpl_managers": 0,
+        "retained_figures": 6,
+        "retained_tk_widgets": 1138,
+        "rss_max_KiB": 357248,
+        "threads": [
+          "MainThread"
+        ]
+      },
+      "peak_roots_observed": 7,
+      "peak_figures_observed": 9,
+      "worker_gc_events": 0,
+      "worker_Tk_Python_entries": 0
+    },
+    {
+      "name": "A-9-3",
+      "Tk_requested": "9",
+      "observer": true,
+      "native": false,
+      "exit_code": 0,
+      "seconds": 110.99502229690552,
+      "parent_peak_RSS_KiB": 357636,
+      "timed_out": null,
+      "native_signals": [],
+      "fatal_markers": [],
+      "xml": {
+        "name": "pytest",
+        "errors": "0",
+        "failures": "0",
+        "skipped": "0",
+        "tests": "67",
+        "time": "108.107",
+        "timestamp": "2026-11-23T15:46:44.476019+00:00",
+        "hostname": "92eca82e4988"
+      },
+      "failures": [],
+      "observation_samples": 135,
+      "last_sample": {
+        "event": "sessionfinish 0",
+        "time": 1795448912.799865,
+        "roots": [
+          {
+            "id": 139843269333776,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139843294988720,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139843306629280,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139843305783264,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139843299240336,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139843300052192,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139843269447648,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          }
+        ],
+        "counts": {
+          "made": 28,
+          "destroy": 28,
+          "gc": 7487,
+          "cross_thread_tk_calls": 0
+        },
+        "GC": [
+          30,
+          0,
+          0
+        ],
+        "gc_enabled": true,
+        "mpl_managers": 0,
+        "retained_figures": 6,
+        "retained_tk_widgets": 1138,
+        "rss_max_KiB": 357124,
+        "threads": [
+          "MainThread"
+        ]
+      },
+      "peak_roots_observed": 7,
+      "peak_figures_observed": 9,
+      "worker_gc_events": 0,
+      "worker_Tk_Python_entries": 0
+    },
+    {
+      "name": "C-86-serial-GUI",
+      "Tk_requested": "86",
+      "observer": true,
+      "native": false,
+      "exit_code": 0,
+      "seconds": 1337.2940649986267,
+      "parent_peak_RSS_KiB": 2640724,
+      "timed_out": null,
+      "native_signals": [],
+      "fatal_markers": [],
+      "xml": {
+        "name": "pytest",
+        "errors": "0",
+        "failures": "0",
+        "skipped": "1",
+        "tests": "301",
+        "time": "1324.663",
+        "timestamp": "2026-11-23T15:51:28.932643+00:00",
+        "hostname": "92eca82e4988"
+      },
+      "failures": [],
+      "observation_samples": 603,
+      "last_sample": {
+        "event": "sessionfinish 0",
+        "time": 1795450415.2395728,
+        "roots": [
+          {
+            "id": 139898227567328,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139898317435104,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139898164649792,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139898164655216,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139898164650656,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139898164653440,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139898159921392,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139898159174656,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139898158369344,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139898158774896,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139898159078992,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139898076410272,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139898076731904,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139898076999952,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139898090642544,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139898090103216,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139898088583440,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139898074262048,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139898165481488,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139898086551776,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139898089300112,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139898086023552,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139898086345904,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139898025677632,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139898026110624,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139898023755456,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139898075527312,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139897951964144,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139897948189904,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139898028667056,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139898025062192,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139897948621952,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139898029458112,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139897925240256,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139897954137440,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139897930881488,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139897919869616,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139897894307456,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139897908662768,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139897899614720,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139897905735456,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139897948617568,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139898024585520,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139897903363232,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139897881840816,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139897901652720,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139897899115696,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139897872468352,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139897895829472,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139897863030544,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139897901185888,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139897881063936,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139897856014960,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139897831603952,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139897829615968,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139897816592752,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139897817283904,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139897845550880,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139897839119120,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139897787391952,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139897875272368,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139897871299840,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139897850773232,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139897899032000,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139897790979472,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139897871114384,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139897781647600,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139897795638048,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139897762091696,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139897836303904,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139897773834752,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139897772918304,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139897752931840,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139897752131376,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139897811281120,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139897798282896,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139897742432288,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139897753914016,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139897756417776,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139897832273632,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139897803178976,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139897720943152,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139897731904672,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139897699534128,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139897690944240,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139897711099248,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139897825051856,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139897713291008,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139897726855904,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139897692004544,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139897677764544,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139897686051392,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139897655139776,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139897671582160,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139897716603648,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139897640585072,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139897655996304,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139897653496240,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139897676702512,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139897710824768,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139897638142896,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139897637649632,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139897644746560,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139897671509024,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139897643765344,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139897629987312,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139897619034816,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139897616148640,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139897594987104,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139897615919168,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139897593746624,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139897592689872,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139897593324816,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139897580157936,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139897588973344,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139897586667536,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139897613489824,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139897593207632,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139897592527856,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139897591692896,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139897458691488,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139897589712416,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139897590867696,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139897614616336,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139897593699920,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139897612186400,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139897450951072,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139897612183040,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139897396200176,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139897331783664,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139897591471408,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139897582489232,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139897399460496,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139897349961776,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139897362890480,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139897318928752,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          }
+        ],
+        "counts": {
+          "made": 267,
+          "destroy": 268,
+          "gc": 26693,
+          "cross_thread_tk_calls": 0
+        },
+        "GC": [
+          297,
+          0,
+          0
+        ],
+        "gc_enabled": true,
+        "mpl_managers": 0,
+        "retained_figures": 136,
+        "retained_tk_widgets": 19235,
+        "rss_max_KiB": 2640504,
+        "threads": [
+          "MainThread"
+        ]
+      },
+      "peak_roots_observed": 136,
+      "peak_figures_observed": 155,
+      "worker_gc_events": 8,
+      "worker_Tk_Python_entries": 0
+    },
+    {
+      "name": "C-9-serial-GUI",
+      "Tk_requested": "9",
+      "observer": true,
+      "native": false,
+      "exit_code": 1,
+      "seconds": 1342.1405808925629,
+      "parent_peak_RSS_KiB": 2809776,
+      "timed_out": null,
+      "native_signals": [],
+      "fatal_markers": [],
+      "xml": {
+        "name": "pytest",
+        "errors": "0",
+        "failures": "1",
+        "skipped": "1",
+        "tests": "301",
+        "time": "1329.013",
+        "timestamp": "2026-11-23T15:51:28.046660+00:00",
+        "hostname": "92eca82e4988"
+      },
+      "failures": [
+        {
+          "class": "tests.test_correlation.CorrelationAppTests",
+          "test": "test_correlation_box_over_digital_logs_never_pans",
+          "message": "AssertionError: 6.296937045548732 != 6.300000000000001 within 6 places (0.0030629544512690288 difference)"
+        }
+      ],
+      "observation_samples": 603,
+      "last_sample": {
+        "event": "sessionfinish 1",
+        "time": 1795450418.6649456,
+        "roots": [
+          {
+            "id": 140447405003200,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140447420643424,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140447227446192,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140447227455744,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140447225313712,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140447223609152,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140447224036000,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140447223628768,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140447241304016,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140447222786496,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140447223114608,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140447219586960,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140447219594304,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140447207435312,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140447221994880,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140447221414848,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140447219744848,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140447205433056,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140447218483168,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140447221523776,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140447218189952,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140447217613472,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140447217835360,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140447200254896,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140447200687456,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140447241149840,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140447218455264,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140447198259936,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140447205226400,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140447191546048,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140447207682560,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140447193826416,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140447064186832,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140447062703232,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140447073022464,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140447053946448,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140447049576096,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140447072789536,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140447048189232,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140447046628992,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140447042349024,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140447069039664,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140446965735664,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140446965206048,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140446958016304,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140447066538112,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140446936370352,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140446940939568,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140446951873408,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140446942938272,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140446940063952,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140446934191616,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140446917894768,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140446908687536,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140446898592400,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140446900431728,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140446940680640,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140446972850112,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140446946428640,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140446884635248,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140446909445424,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140446915072544,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140446887041968,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140446906060720,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140446852581568,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140446880294640,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140446862870000,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140446874141136,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140446853597424,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140446884006848,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140446879831616,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140446826233776,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140446871261344,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140446906225376,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140446805289216,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140446857899872,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140446837718384,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140446801119856,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140446834477872,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140446829473776,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140446843398112,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140446844804640,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140446823888608,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140446776328160,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140446772276128,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140446865523296,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140446798928432,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140446876523824,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140446788162080,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140446763042672,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140446780641200,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140446746549360,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140446731572656,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140446765490416,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140446751144656,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140446737811648,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140446780437040,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140446738683024,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140446724392816,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140446732488000,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140446766188976,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140446714383968,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140446720601280,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140446720453296,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140446693892432,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140446713004400,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140446696740224,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140446690785760,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140446676949696,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140446690480192,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140446672042848,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140446668997168,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140446669638400,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140446671259840,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140446665740208,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140446675996784,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140446672333152,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140446675162688,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140446680029984,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140446658601056,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140446693770736,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140446650485456,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140446689539712,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140446546999392,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140446660410352,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140446662141872,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140446489224848,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140446662083888,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140446665838176,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140446411483584,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140446451770928,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140446404493776,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140446422392784,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140446490713776,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140446426638688,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140446414296448,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          }
+        ],
+        "counts": {
+          "made": 267,
+          "destroy": 268,
+          "gc": 26537,
+          "cross_thread_tk_calls": 0
+        },
+        "GC": [
+          298,
+          0,
+          0
+        ],
+        "gc_enabled": true,
+        "mpl_managers": 0,
+        "retained_figures": 136,
+        "retained_tk_widgets": 19240,
+        "rss_max_KiB": 2809416,
+        "threads": [
+          "MainThread"
+        ]
+      },
+      "peak_roots_observed": 136,
+      "peak_figures_observed": 155,
+      "worker_gc_events": 8,
+      "worker_Tk_Python_entries": 0
+    },
+    {
+      "name": "D-86-after-correlation",
+      "Tk_requested": "86",
+      "observer": true,
+      "native": false,
+      "exit_code": 0,
+      "seconds": 65.74674892425537,
+      "parent_peak_RSS_KiB": 327596,
+      "timed_out": null,
+      "native_signals": [],
+      "fatal_markers": [],
+      "xml": {
+        "name": "pytest",
+        "errors": "0",
+        "failures": "0",
+        "skipped": "0",
+        "tests": "48",
+        "time": "64.607",
+        "timestamp": "2026-11-23T15:50:22.883583+00:00",
+        "hostname": "92eca82e4988"
+      },
+      "failures": [],
+      "observation_samples": 97,
+      "last_sample": {
+        "event": "sessionfinish 0",
+        "time": 1795449087.595093,
+        "roots": [
+          {
+            "id": 139831093623600,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139831067134336,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139831082512800,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139831083011296,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139831065800880,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139831082797680,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139830918048624,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139830947366528,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          }
+        ],
+        "counts": {
+          "made": 41,
+          "destroy": 41,
+          "gc": 3595,
+          "cross_thread_tk_calls": 0
+        },
+        "GC": [
+          30,
+          0,
+          0
+        ],
+        "gc_enabled": true,
+        "mpl_managers": 0,
+        "retained_figures": 8,
+        "retained_tk_widgets": 1955,
+        "rss_max_KiB": 326884,
+        "threads": [
+          "MainThread"
+        ]
+      },
+      "peak_roots_observed": 8,
+      "peak_figures_observed": 9,
+      "worker_gc_events": 6,
+      "worker_Tk_Python_entries": 0
+    },
+    {
+      "name": "D-86-after-map",
+      "Tk_requested": "86",
+      "observer": true,
+      "native": false,
+      "exit_code": 0,
+      "seconds": 22.850900650024414,
+      "parent_peak_RSS_KiB": 230552,
+      "timed_out": null,
+      "native_signals": [],
+      "fatal_markers": [],
+      "xml": {
+        "name": "pytest",
+        "errors": "0",
+        "failures": "0",
+        "skipped": "0",
+        "tests": "25",
+        "time": "21.889",
+        "timestamp": "2026-11-23T15:49:59.838801+00:00",
+        "hostname": "92eca82e4988"
+      },
+      "failures": [],
+      "observation_samples": 51,
+      "last_sample": {
+        "event": "sessionfinish 0",
+        "time": 1795449021.810698,
+        "roots": [
+          {
+            "id": 140429427433184,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140429439640224,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140429392456416,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          }
+        ],
+        "counts": {
+          "made": 29,
+          "destroy": 29,
+          "gc": 1789,
+          "cross_thread_tk_calls": 0
+        },
+        "GC": [
+          30,
+          0,
+          0
+        ],
+        "gc_enabled": true,
+        "mpl_managers": 0,
+        "retained_figures": 2,
+        "retained_tk_widgets": 551,
+        "rss_max_KiB": 229964,
+        "threads": [
+          "MainThread"
+        ]
+      },
+      "peak_roots_observed": 3,
+      "peak_figures_observed": 2,
+      "worker_gc_events": 0,
+      "worker_Tk_Python_entries": 0
+    },
+    {
+      "name": "D-86-after-seismic",
+      "Tk_requested": "86",
+      "observer": true,
+      "native": false,
+      "exit_code": 0,
+      "seconds": 65.75512099266052,
+      "parent_peak_RSS_KiB": 372388,
+      "timed_out": null,
+      "native_signals": [],
+      "fatal_markers": [],
+      "xml": {
+        "name": "pytest",
+        "errors": "0",
+        "failures": "0",
+        "skipped": "0",
+        "tests": "65",
+        "time": "64.348",
+        "timestamp": "2026-11-23T15:48:54.158161+00:00",
+        "hostname": "92eca82e4988"
+      },
+      "failures": [],
+      "observation_samples": 131,
+      "last_sample": {
+        "event": "sessionfinish 0",
+        "time": 1795448998.590144,
+        "roots": [
+          {
+            "id": 139860173715504,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139860172335840,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139860168862192,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139860095116080,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          }
+        ],
+        "counts": {
+          "made": 70,
+          "destroy": 70,
+          "gc": 4127,
+          "cross_thread_tk_calls": 0
+        },
+        "GC": [
+          47,
+          0,
+          0
+        ],
+        "gc_enabled": true,
+        "mpl_managers": 0,
+        "retained_figures": 2,
+        "retained_tk_widgets": 1230,
+        "rss_max_KiB": 372092,
+        "threads": [
+          "MainThread"
+        ]
+      },
+      "peak_roots_observed": 4,
+      "peak_figures_observed": 3,
+      "worker_gc_events": 0,
+      "worker_Tk_Python_entries": 0
+    },
+    {
+      "name": "D-86-first",
+      "Tk_requested": "86",
+      "observer": true,
+      "native": false,
+      "exit_code": 0,
+      "seconds": 15.892874240875244,
+      "parent_peak_RSS_KiB": 201972,
+      "timed_out": null,
+      "native_signals": [],
+      "fatal_markers": [],
+      "xml": {
+        "name": "pytest",
+        "errors": "0",
+        "failures": "0",
+        "skipped": "0",
+        "tests": "2",
+        "time": "14.597",
+        "timestamp": "2026-11-23T15:48:37.924608+00:00",
+        "hostname": "92eca82e4988"
+      },
+      "failures": [],
+      "observation_samples": 5,
+      "last_sample": {
+        "event": "sessionfinish 0",
+        "time": 1795448932.586743,
+        "roots": [
+          {
+            "id": 140028967918752,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          }
+        ],
+        "counts": {
+          "made": 3,
+          "destroy": 3,
+          "gc": 1393,
+          "cross_thread_tk_calls": 0
+        },
+        "GC": [
+          25,
+          0,
+          0
+        ],
+        "gc_enabled": true,
+        "mpl_managers": 0,
+        "retained_figures": 0,
+        "retained_tk_widgets": 362,
+        "rss_max_KiB": 201760,
+        "threads": [
+          "MainThread"
+        ]
+      },
+      "peak_roots_observed": 1,
+      "peak_figures_observed": 0,
+      "worker_gc_events": 0,
+      "worker_Tk_Python_entries": 0
+    },
+    {
+      "name": "D-9-after-correlation",
+      "Tk_requested": "9",
+      "observer": true,
+      "native": false,
+      "exit_code": 1,
+      "seconds": 64.3442931175232,
+      "parent_peak_RSS_KiB": 346256,
+      "timed_out": null,
+      "native_signals": [],
+      "fatal_markers": [],
+      "xml": {
+        "name": "pytest",
+        "errors": "0",
+        "failures": "1",
+        "skipped": "0",
+        "tests": "48",
+        "time": "63.060",
+        "timestamp": "2026-11-23T15:50:23.618471+00:00",
+        "hostname": "92eca82e4988"
+      },
+      "failures": [
+        {
+          "class": "tests.test_correlation.CorrelationAppTests",
+          "test": "test_correlation_box_over_digital_logs_never_pans",
+          "message": "AssertionError: 6.296937045548732 != 6.300000000000001 within 6 places (0.0030629544512690288 difference)"
+        }
+      ],
+      "observation_samples": 97,
+      "last_sample": {
+        "event": "sessionfinish 1",
+        "time": 1795449086.7895303,
+        "roots": [
+          {
+            "id": 140409426913248,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140409414847088,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140409417052288,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140409399978624,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140409401875376,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140409414311744,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140409251049360,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140409216634992,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          }
+        ],
+        "counts": {
+          "made": 41,
+          "destroy": 41,
+          "gc": 3436,
+          "cross_thread_tk_calls": 0
+        },
+        "GC": [
+          30,
+          0,
+          0
+        ],
+        "gc_enabled": true,
+        "mpl_managers": 0,
+        "retained_figures": 8,
+        "retained_tk_widgets": 1959,
+        "rss_max_KiB": 345736,
+        "threads": [
+          "MainThread"
+        ]
+      },
+      "peak_roots_observed": 8,
+      "peak_figures_observed": 9,
+      "worker_gc_events": 62,
+      "worker_Tk_Python_entries": 0
+    },
+    {
+      "name": "D-9-after-map",
+      "Tk_requested": "9",
+      "observer": true,
+      "native": false,
+      "exit_code": 0,
+      "seconds": 24.047266244888306,
+      "parent_peak_RSS_KiB": 234604,
+      "timed_out": null,
+      "native_signals": [],
+      "fatal_markers": [],
+      "xml": {
+        "name": "pytest",
+        "errors": "0",
+        "failures": "0",
+        "skipped": "0",
+        "tests": "25",
+        "time": "23.052",
+        "timestamp": "2026-11-23T15:49:59.281828+00:00",
+        "hostname": "92eca82e4988"
+      },
+      "failures": [],
+      "observation_samples": 51,
+      "last_sample": {
+        "event": "sessionfinish 0",
+        "time": 1795449022.4053688,
+        "roots": [
+          {
+            "id": 139776062904736,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139776074546448,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139775883047760,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          }
+        ],
+        "counts": {
+          "made": 29,
+          "destroy": 29,
+          "gc": 1793,
+          "cross_thread_tk_calls": 0
+        },
+        "GC": [
+          30,
+          0,
+          0
+        ],
+        "gc_enabled": true,
+        "mpl_managers": 0,
+        "retained_figures": 2,
+        "retained_tk_widgets": 553,
+        "rss_max_KiB": 234108,
+        "threads": [
+          "MainThread"
+        ]
+      },
+      "peak_roots_observed": 3,
+      "peak_figures_observed": 2,
+      "worker_gc_events": 0,
+      "worker_Tk_Python_entries": 0
+    },
+    {
+      "name": "D-9-after-seismic",
+      "Tk_requested": "9",
+      "observer": true,
+      "native": false,
+      "exit_code": 0,
+      "seconds": 67.58415341377258,
+      "parent_peak_RSS_KiB": 421500,
+      "timed_out": null,
+      "native_signals": [],
+      "fatal_markers": [],
+      "xml": {
+        "name": "pytest",
+        "errors": "0",
+        "failures": "0",
+        "skipped": "0",
+        "tests": "65",
+        "time": "66.472",
+        "timestamp": "2026-11-23T15:48:51.646589+00:00",
+        "hostname": "92eca82e4988"
+      },
+      "failures": [],
+      "observation_samples": 131,
+      "last_sample": {
+        "event": "sessionfinish 0",
+        "time": 1795448998.1824338,
+        "roots": [
+          {
+            "id": 139912638671872,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139912638725056,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139912481266416,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 139912482230096,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          }
+        ],
+        "counts": {
+          "made": 70,
+          "destroy": 70,
+          "gc": 4126,
+          "cross_thread_tk_calls": 0
+        },
+        "GC": [
+          45,
+          0,
+          0
+        ],
+        "gc_enabled": true,
+        "mpl_managers": 0,
+        "retained_figures": 2,
+        "retained_tk_widgets": 1231,
+        "rss_max_KiB": 420924,
+        "threads": [
+          "MainThread"
+        ]
+      },
+      "peak_roots_observed": 4,
+      "peak_figures_observed": 3,
+      "worker_gc_events": 0,
+      "worker_Tk_Python_entries": 0
+    },
+    {
+      "name": "D-9-first",
+      "Tk_requested": "9",
+      "observer": true,
+      "native": false,
+      "exit_code": 0,
+      "seconds": 16.490520000457764,
+      "parent_peak_RSS_KiB": 203296,
+      "timed_out": null,
+      "native_signals": [],
+      "fatal_markers": [],
+      "xml": {
+        "name": "pytest",
+        "errors": "0",
+        "failures": "0",
+        "skipped": "0",
+        "tests": "2",
+        "time": "15.230",
+        "timestamp": "2026-11-23T15:48:34.835585+00:00",
+        "hostname": "92eca82e4988"
+      },
+      "failures": [],
+      "observation_samples": 5,
+      "last_sample": {
+        "event": "sessionfinish 0",
+        "time": 1795448930.1530437,
+        "roots": [
+          {
+            "id": 139628603891664,
+            "query_error": "cannot invoke \"winfo\" command: application has been destroyed"
+          }
+        ],
+        "counts": {
+          "made": 3,
+          "destroy": 3,
+          "gc": 1404,
+          "cross_thread_tk_calls": 0
+        },
+        "GC": [
+          25,
+          0,
+          0
+        ],
+        "gc_enabled": true,
+        "mpl_managers": 0,
+        "retained_figures": 0,
+        "retained_tk_widgets": 362,
+        "rss_max_KiB": 203092,
+        "threads": [
+          "MainThread"
+        ]
+      },
+      "peak_roots_observed": 1,
+      "peak_figures_observed": 0,
+      "worker_gc_events": 0,
+      "worker_Tk_Python_entries": 0
+    },
+    {
+      "name": "F-86-native-xsection",
+      "Tk_requested": "86",
+      "observer": true,
+      "native": true,
+      "exit_code": 0,
+      "seconds": 126.24210214614868,
+      "parent_peak_RSS_KiB": 115184,
+      "timed_out": null,
+      "native_signals": [],
+      "fatal_markers": [],
+      "xml": {
+        "name": "pytest",
+        "errors": "0",
+        "failures": "0",
+        "skipped": "0",
+        "tests": "67",
+        "time": "123.362",
+        "timestamp": "2026-11-23T15:44:57.757941+00:00",
+        "hostname": "92eca82e4988"
+      },
+      "failures": [],
+      "observation_samples": 135,
+      "last_sample": {
+        "event": "sessionfinish 0",
+        "time": 1795448821.3651292,
+        "roots": [
+          {
+            "id": 140737169849664,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140737078800176,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140737168737392,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140737070915104,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140737161583968,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140737079661328,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          },
+          {
+            "id": 140737169843856,
+            "query_error": "can't invoke \"winfo\" command: application has been destroyed"
+          }
+        ],
+        "counts": {
+          "made": 28,
+          "destroy": 28,
+          "gc": 7481,
+          "cross_thread_tk_calls": 0
+        },
+        "GC": [
+          30,
+          0,
+          0
+        ],
+        "gc_enabled": true,
+        "mpl_managers": 0,
+        "retained_figures": 6,
+        "retained_tk_widgets": 1138,
+        "rss_max_KiB": 342668,
+        "threads": [
+          "MainThread"
+        ]
+      },
+      "peak_roots_observed": 7,
+      "peak_figures_observed": 9,
+      "worker_gc_events": 0,
+      "worker_Tk_Python_entries": 0
+    }
+  ],
+  "original_SIGSEGV_reproduced": false,
+  "pytest_totals": {
+    "tests": 1351,
+    "failures": 2,
+    "errors": 0,
+    "skipped": 2
+  },
+  "controlled_native": [
+    {
+      "file": "runs/minimal/native-auto-worker-86.log",
+      "signals": [
+        "SIGABRT"
+      ],
+      "Tkapp_Dealloc": true,
+      "Tcl_AsyncDelete": true
+    },
+    {
+      "file": "runs/minimal/native-detailed-9.log",
+      "signals": [
+        "SIGILL"
+      ],
+      "Tkapp_Dealloc": true,
+      "Tcl_AsyncDelete": true
+    },
+    {
+      "file": "runs/minimal/native-gc-9-worker.log",
+      "signals": [
+        "SIGILL"
+      ],
+      "Tkapp_Dealloc": true,
+      "Tcl_AsyncDelete": true
+    },
+    {
+      "file": "runs/minimal/native-detailed-86.log",
+      "signals": [
+        "SIGABRT"
+      ],
+      "Tkapp_Dealloc": true,
+      "Tcl_AsyncDelete": true
+    },
+    {
+      "file": "runs/minimal/native-gc-86-worker.log",
+      "signals": [
+        "SIGABRT"
+      ],
+      "Tkapp_Dealloc": true,
+      "Tcl_AsyncDelete": true
+    }
+  ],
+  "lifecycle": {
+    "86": {
+      "normal": [
+        {
+          "runtime": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+          "tk": "8.6.16",
+          "tk_pkg": "8.6.16",
+          "extension": "/workspace/audit-v0.9.70-tk-segfault/tk86-extension/_tkinter.cpython-312-x86_64-linux-gnu.so",
+          "mode": "normal"
+        },
+        {
+          "iteration": 0,
+          "mode": "normal",
+          "roots_in_gc": 1,
+          "widgets_in_gc": 1,
+          "figures_in_gc": 0,
+          "retained_closed_sections": 0,
+          "after": [],
+          "commands": 157,
+          "gc": [
+            206,
+            3,
+            3
+          ],
+          "rss_max_KiB": 109360,
+          "callback_errors": []
+        },
+        {
+          "iteration": 20,
+          "mode": "normal",
+          "roots_in_gc": 1,
+          "widgets_in_gc": 119,
+          "figures_in_gc": 2,
+          "retained_closed_sections": 2,
+          "after": [],
+          "commands": 194,
+          "gc": [
+            1,
+            2,
+            5
+          ],
+          "rss_max_KiB": 164568,
+          "callback_errors": []
+        },
+        {
+          "iteration": 40,
+          "mode": "normal",
+          "roots_in_gc": 1,
+          "widgets_in_gc": 178,
+          "figures_in_gc": 3,
+          "retained_closed_sections": 3,
+          "after": [],
+          "commands": 211,
+          "gc": [
+            1,
+            3,
+            6
+          ],
+          "rss_max_KiB": 170464,
+          "callback_errors": []
+        },
+        {
+          "iteration": 60,
+          "mode": "normal",
+          "roots_in_gc": 1,
+          "widgets_in_gc": 178,
+          "figures_in_gc": 3,
+          "retained_closed_sections": 3,
+          "after": [],
+          "commands": 211,
+          "gc": [
+            1,
+            3,
+            7
+          ],
+          "rss_max_KiB": 170464,
+          "callback_errors": []
+        },
+        {
+          "iteration": 80,
+          "mode": "normal",
+          "roots_in_gc": 1,
+          "widgets_in_gc": 178,
+          "figures_in_gc": 3,
+          "retained_closed_sections": 3,
+          "after": [],
+          "commands": 211,
+          "gc": [
+            1,
+            1,
+            8
+          ],
+          "rss_max_KiB": 170464,
+          "callback_errors": []
+        },
+        {
+          "iteration": 100,
+          "mode": "normal",
+          "roots_in_gc": 1,
+          "widgets_in_gc": 237,
+          "figures_in_gc": 4,
+          "retained_closed_sections": 4,
+          "after": [],
+          "commands": 228,
+          "gc": [
+            1,
+            0,
+            9
+          ],
+          "rss_max_KiB": 173004,
+          "callback_errors": []
+        },
+        {
+          "iteration": 120,
+          "mode": "normal",
+          "roots_in_gc": 1,
+          "widgets_in_gc": 237,
+          "figures_in_gc": 4,
+          "retained_closed_sections": 4,
+          "after": [],
+          "commands": 228,
+          "gc": [
+            1,
+            0,
+            10
+          ],
+          "rss_max_KiB": 173004,
+          "callback_errors": []
+        },
+        {
+          "iteration": 140,
+          "mode": "normal",
+          "roots_in_gc": 1,
+          "widgets_in_gc": 237,
+          "figures_in_gc": 4,
+          "retained_closed_sections": 4,
+          "after": [],
+          "commands": 228,
+          "gc": [
+            1,
+            10,
+            10
+          ],
+          "rss_max_KiB": 173004,
+          "callback_errors": []
+        },
+        {
+          "iteration": 160,
+          "mode": "normal",
+          "roots_in_gc": 1,
+          "widgets_in_gc": 60,
+          "figures_in_gc": 1,
+          "retained_closed_sections": 1,
+          "after": [],
+          "commands": 177,
+          "gc": [
+            1,
+            9,
+            0
+          ],
+          "rss_max_KiB": 173004,
+          "callback_errors": []
+        },
+        {
+          "iteration": 180,
+          "mode": "normal",
+          "roots_in_gc": 1,
+          "widgets_in_gc": 60,
+          "figures_in_gc": 1,
+          "retained_closed_sections": 1,
+          "after": [],
+          "commands": 177,
+          "gc": [
+            1,
+            9,
+            1
+          ],
+          "rss_max_KiB": 173004,
+          "callback_errors": []
+        },
+        {
+          "iteration": 200,
+          "mode": "normal",
+          "roots_in_gc": 1,
+          "widgets_in_gc": 60,
+          "figures_in_gc": 1,
+          "retained_closed_sections": 1,
+          "after": [],
+          "commands": 177,
+          "gc": [
+            1,
+            7,
+            2
+          ],
+          "rss_max_KiB": 173004,
+          "callback_errors": []
+        },
+        {
+          "iteration": 200,
+          "mode": "normal",
+          "roots_in_gc": 1,
+          "widgets_in_gc": 60,
+          "figures_in_gc": 1,
+          "retained_closed_sections": 1,
+          "after": [],
+          "commands": 177,
+          "gc": [
+            1,
+            7,
+            2
+          ],
+          "rss_max_KiB": 173004,
+          "callback_errors": []
+        },
+        {
+          "iteration": "after_main_thread_gc",
+          "mode": "normal",
+          "roots_in_gc": 1,
+          "widgets_in_gc": 1,
+          "figures_in_gc": 0,
+          "retained_closed_sections": 0,
+          "after": [],
+          "commands": 160,
+          "gc": [
+            4,
+            0,
+            0
+          ],
+          "rss_max_KiB": 173004,
+          "callback_errors": []
+        },
+        {
+          "collected_after_cycles": 14924,
+          "complete": true
+        }
+      ],
+      "destroy": [
+        {
+          "runtime": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+          "tk": "8.6.16",
+          "tk_pkg": "8.6.16",
+          "extension": "/workspace/audit-v0.9.70-tk-segfault/tk86-extension/_tkinter.cpython-312-x86_64-linux-gnu.so",
+          "mode": "destroy"
+        },
+        {
+          "iteration": 0,
+          "mode": "destroy",
+          "roots_in_gc": 1,
+          "widgets_in_gc": 1,
+          "figures_in_gc": 0,
+          "retained_closed_sections": 0,
+          "after": [],
+          "commands": 157,
+          "gc": [
+            206,
+            10,
+            4
+          ],
+          "rss_max_KiB": 108912,
+          "callback_errors": []
+        },
+        {
+          "iteration": 20,
+          "mode": "destroy",
+          "roots_in_gc": 1,
+          "widgets_in_gc": 237,
+          "figures_in_gc": 4,
+          "retained_closed_sections": 4,
+          "after": [],
+          "commands": 228,
+          "gc": [
+            1,
+            0,
+            10
+          ],
+          "rss_max_KiB": 168920,
+          "callback_errors": []
+        },
+        {
+          "iteration": 40,
+          "mode": "destroy",
+          "roots_in_gc": 1,
+          "widgets_in_gc": 119,
+          "figures_in_gc": 2,
+          "retained_closed_sections": 2,
+          "after": [],
+          "commands": 194,
+          "gc": [
+            1,
+            5,
+            3
+          ],
+          "rss_max_KiB": 168920,
+          "callback_errors": []
+        },
+        {
+          "iteration": 60,
+          "mode": "destroy",
+          "roots_in_gc": 1,
+          "widgets_in_gc": 178,
+          "figures_in_gc": 3,
+          "retained_closed_sections": 3,
+          "after": [],
+          "commands": 211,
+          "gc": [
+            1,
+            11,
+            7
+          ],
+          "rss_max_KiB": 169208,
+          "callback_errors": []
+        },
+        {
+          "iteration": 80,
+          "mode": "destroy",
+          "roots_in_gc": 1,
+          "widgets_in_gc": 60,
+          "figures_in_gc": 1,
+          "retained_closed_sections": 1,
+          "after": [],
+          "commands": 177,
+          "gc": [
+            1,
+            4,
+            1
+          ],
+          "rss_max_KiB": 169208,
+          "callback_errors": []
+        },
+        {
+          "iteration": 100,
+          "mode": "destroy",
+          "roots_in_gc": 1,
+          "widgets_in_gc": 119,
+          "figures_in_gc": 2,
+          "retained_closed_sections": 2,
+          "after": [],
+          "commands": 194,
+          "gc": [
+            1,
+            10,
+            5
+          ],
+          "rss_max_KiB": 171140,
+          "callback_errors": []
+        },
+        {
+          "iteration": 120,
+          "mode": "destroy",
+          "roots_in_gc": 1,
+          "widgets_in_gc": 237,
+          "figures_in_gc": 4,
+          "retained_closed_sections": 4,
+          "after": [],
+          "commands": 228,
+          "gc": [
+            1,
+            3,
+            10
+          ],
+          "rss_max_KiB": 171140,
+          "callback_errors": []
+        },
+        {
+          "iteration": 140,
+          "mode": "destroy",
+          "roots_in_gc": 1,
+          "widgets_in_gc": 119,
+          "figures_in_gc": 2,
+          "retained_closed_sections": 2,
+          "after": [],
+          "commands": 194,
+          "gc": [
+            1,
+            10,
+            3
+          ],
+          "rss_max_KiB": 171144,
+          "callback_errors": []
+        },
+        {
+          "iteration": 160,
+          "mode": "destroy",
+          "roots_in_gc": 1,
+          "widgets_in_gc": 178,
+          "figures_in_gc": 3,
+          "retained_closed_sections": 3,
+          "after": [],
+          "commands": 211,
+          "gc": [
+            1,
+            2,
+            8
+          ],
+          "rss_max_KiB": 171144,
+          "callback_errors": []
+        },
+        {
+          "iteration": 180,
+          "mode": "destroy",
+          "roots_in_gc": 1,
+          "widgets_in_gc": 60,
+          "figures_in_gc": 1,
+          "retained_closed_sections": 1,
+          "after": [],
+          "commands": 177,
+          "gc": [
+            1,
+            8,
+            1
+          ],
+          "rss_max_KiB": 171144,
+          "callback_errors": []
+        },
+        {
+          "iteration": 200,
+          "mode": "destroy",
+          "roots_in_gc": 1,
+          "widgets_in_gc": 178,
+          "figures_in_gc": 3,
+          "retained_closed_sections": 3,
+          "after": [],
+          "commands": 211,
+          "gc": [
+            1,
+            1,
+            6
+          ],
+          "rss_max_KiB": 171144,
+          "callback_errors": []
+        },
+        {
+          "iteration": 200,
+          "mode": "destroy",
+          "roots_in_gc": 1,
+          "widgets_in_gc": 178,
+          "figures_in_gc": 3,
+          "retained_closed_sections": 3,
+          "after": [],
+          "commands": 211,
+          "gc": [
+            1,
+            1,
+            6
+          ],
+          "rss_max_KiB": 171144,
+          "callback_errors": []
+        },
+        {
+          "iteration": "after_main_thread_gc",
+          "mode": "destroy",
+          "roots_in_gc": 1,
+          "widgets_in_gc": 1,
+          "figures_in_gc": 0,
+          "retained_closed_sections": 0,
+          "after": [],
+          "commands": 160,
+          "gc": [
+            4,
+            0,
+            0
+          ],
+          "rss_max_KiB": 171144,
+          "callback_errors": []
+        },
+        {
+          "collected_after_cycles": 44420,
+          "complete": true
+        }
+      ]
+    },
+    "9": {
+      "normal": [
+        {
+          "runtime": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+          "tk": "9.0.4",
+          "tk_pkg": "9.0.4",
+          "extension": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/lib-dynload/_tkinter.cpython-312-x86_64-linux-gnu.so",
+          "mode": "normal"
+        },
+        {
+          "iteration": 0,
+          "mode": "normal",
+          "roots_in_gc": 1,
+          "widgets_in_gc": 1,
+          "figures_in_gc": 0,
+          "retained_closed_sections": 0,
+          "after": [],
+          "commands": 166,
+          "gc": [
+            206,
+            6,
+            2
+          ],
+          "rss_max_KiB": 109844,
+          "callback_errors": []
+        },
+        {
+          "iteration": 20,
+          "mode": "normal",
+          "roots_in_gc": 1,
+          "widgets_in_gc": 119,
+          "figures_in_gc": 2,
+          "retained_closed_sections": 2,
+          "after": [],
+          "commands": 203,
+          "gc": [
+            1,
+            7,
+            4
+          ],
+          "rss_max_KiB": 165888,
+          "callback_errors": []
+        },
+        {
+          "iteration": 40,
+          "mode": "normal",
+          "roots_in_gc": 1,
+          "widgets_in_gc": 119,
+          "figures_in_gc": 2,
+          "retained_closed_sections": 2,
+          "after": [],
+          "commands": 203,
+          "gc": [
+            1,
+            5,
+            5
+          ],
+          "rss_max_KiB": 165888,
+          "callback_errors": []
+        },
+        {
+          "iteration": 60,
+          "mode": "normal",
+          "roots_in_gc": 1,
+          "widgets_in_gc": 178,
+          "figures_in_gc": 3,
+          "retained_closed_sections": 3,
+          "after": [],
+          "commands": 220,
+          "gc": [
+            1,
+            5,
+            6
+          ],
+          "rss_max_KiB": 167052,
+          "callback_errors": []
+        },
+        {
+          "iteration": 80,
+          "mode": "normal",
+          "roots_in_gc": 1,
+          "widgets_in_gc": 178,
+          "figures_in_gc": 3,
+          "retained_closed_sections": 3,
+          "after": [],
+          "commands": 220,
+          "gc": [
+            1,
+            5,
+            7
+          ],
+          "rss_max_KiB": 167052,
+          "callback_errors": []
+        },
+        {
+          "iteration": 100,
+          "mode": "normal",
+          "roots_in_gc": 1,
+          "widgets_in_gc": 178,
+          "figures_in_gc": 3,
+          "retained_closed_sections": 3,
+          "after": [],
+          "commands": 220,
+          "gc": [
+            1,
+            3,
+            8
+          ],
+          "rss_max_KiB": 167052,
+          "callback_errors": []
+        },
+        {
+          "iteration": 120,
+          "mode": "normal",
+          "roots_in_gc": 1,
+          "widgets_in_gc": 237,
+          "figures_in_gc": 4,
+          "retained_closed_sections": 4,
+          "after": [],
+          "commands": 237,
+          "gc": [
+            1,
+            2,
+            9
+          ],
+          "rss_max_KiB": 167076,
+          "callback_errors": []
+        },
+        {
+          "iteration": 140,
+          "mode": "normal",
+          "roots_in_gc": 1,
+          "widgets_in_gc": 237,
+          "figures_in_gc": 4,
+          "retained_closed_sections": 4,
+          "after": [],
+          "commands": 237,
+          "gc": [
+            1,
+            2,
+            10
+          ],
+          "rss_max_KiB": 167160,
+          "callback_errors": []
+        },
+        {
+          "iteration": 160,
+          "mode": "normal",
+          "roots_in_gc": 1,
+          "widgets_in_gc": 237,
+          "figures_in_gc": 4,
+          "retained_closed_sections": 4,
+          "after": [],
+          "commands": 237,
+          "gc": [
+            1,
+            0,
+            11
+          ],
+          "rss_max_KiB": 167160,
+          "callback_errors": []
+        },
+        {
+          "iteration": 180,
+          "mode": "normal",
+          "roots_in_gc": 1,
+          "widgets_in_gc": 60,
+          "figures_in_gc": 1,
+          "retained_closed_sections": 1,
+          "after": [],
+          "commands": 186,
+          "gc": [
+            1,
+            11,
+            0
+          ],
+          "rss_max_KiB": 167160,
+          "callback_errors": []
+        },
+        {
+          "iteration": 200,
+          "mode": "normal",
+          "roots_in_gc": 1,
+          "widgets_in_gc": 60,
+          "figures_in_gc": 1,
+          "retained_closed_sections": 1,
+          "after": [],
+          "commands": 186,
+          "gc": [
+            1,
+            11,
+            1
+          ],
+          "rss_max_KiB": 167168,
+          "callback_errors": []
+        },
+        {
+          "iteration": 200,
+          "mode": "normal",
+          "roots_in_gc": 1,
+          "widgets_in_gc": 60,
+          "figures_in_gc": 1,
+          "retained_closed_sections": 1,
+          "after": [],
+          "commands": 186,
+          "gc": [
+            1,
+            11,
+            1
+          ],
+          "rss_max_KiB": 167168,
+          "callback_errors": []
+        },
+        {
+          "iteration": "after_main_thread_gc",
+          "mode": "normal",
+          "roots_in_gc": 1,
+          "widgets_in_gc": 1,
+          "figures_in_gc": 0,
+          "retained_closed_sections": 0,
+          "after": [],
+          "commands": 169,
+          "gc": [
+            4,
+            0,
+            0
+          ],
+          "rss_max_KiB": 167168,
+          "callback_errors": []
+        },
+        {
+          "collected_after_cycles": 14909,
+          "complete": true
+        }
+      ],
+      "destroy": [
+        {
+          "runtime": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+          "tk": "9.0.4",
+          "tk_pkg": "9.0.4",
+          "extension": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/lib-dynload/_tkinter.cpython-312-x86_64-linux-gnu.so",
+          "mode": "destroy"
+        },
+        {
+          "iteration": 0,
+          "mode": "destroy",
+          "roots_in_gc": 1,
+          "widgets_in_gc": 1,
+          "figures_in_gc": 0,
+          "retained_closed_sections": 0,
+          "after": [],
+          "commands": 166,
+          "gc": [
+            206,
+            5,
+            4
+          ],
+          "rss_max_KiB": 110004,
+          "callback_errors": []
+        },
+        {
+          "iteration": 20,
+          "mode": "destroy",
+          "roots_in_gc": 1,
+          "widgets_in_gc": 237,
+          "figures_in_gc": 4,
+          "retained_closed_sections": 4,
+          "after": [],
+          "commands": 237,
+          "gc": [
+            1,
+            9,
+            9
+          ],
+          "rss_max_KiB": 165924,
+          "callback_errors": []
+        },
+        {
+          "iteration": 40,
+          "mode": "destroy",
+          "roots_in_gc": 1,
+          "widgets_in_gc": 119,
+          "figures_in_gc": 2,
+          "retained_closed_sections": 2,
+          "after": [],
+          "commands": 203,
+          "gc": [
+            1,
+            1,
+            3
+          ],
+          "rss_max_KiB": 165924,
+          "callback_errors": []
+        },
+        {
+          "iteration": 60,
+          "mode": "destroy",
+          "roots_in_gc": 1,
+          "widgets_in_gc": 178,
+          "figures_in_gc": 3,
+          "retained_closed_sections": 3,
+          "after": [],
+          "commands": 220,
+          "gc": [
+            1,
+            8,
+            7
+          ],
+          "rss_max_KiB": 166036,
+          "callback_errors": []
+        },
+        {
+          "iteration": 80,
+          "mode": "destroy",
+          "roots_in_gc": 1,
+          "widgets_in_gc": 60,
+          "figures_in_gc": 1,
+          "retained_closed_sections": 1,
+          "after": [],
+          "commands": 186,
+          "gc": [
+            1,
+            1,
+            1
+          ],
+          "rss_max_KiB": 168032,
+          "callback_errors": []
+        },
+        {
+          "iteration": 100,
+          "mode": "destroy",
+          "roots_in_gc": 1,
+          "widgets_in_gc": 119,
+          "figures_in_gc": 2,
+          "retained_closed_sections": 2,
+          "after": [],
+          "commands": 203,
+          "gc": [
+            1,
+            5,
+            5
+          ],
+          "rss_max_KiB": 168032,
+          "callback_errors": []
+        },
+        {
+          "iteration": 120,
+          "mode": "destroy",
+          "roots_in_gc": 1,
+          "widgets_in_gc": 237,
+          "figures_in_gc": 4,
+          "retained_closed_sections": 4,
+          "after": [],
+          "commands": 237,
+          "gc": [
+            1,
+            11,
+            9
+          ],
+          "rss_max_KiB": 168032,
+          "callback_errors": []
+        },
+        {
+          "iteration": 140,
+          "mode": "destroy",
+          "roots_in_gc": 1,
+          "widgets_in_gc": 119,
+          "figures_in_gc": 2,
+          "retained_closed_sections": 2,
+          "after": [],
+          "commands": 203,
+          "gc": [
+            1,
+            4,
+            3
+          ],
+          "rss_max_KiB": 168032,
+          "callback_errors": []
+        },
+        {
+          "iteration": 160,
+          "mode": "destroy",
+          "roots_in_gc": 1,
+          "widgets_in_gc": 178,
+          "figures_in_gc": 3,
+          "retained_closed_sections": 3,
+          "after": [],
+          "commands": 220,
+          "gc": [
+            1,
+            8,
+            7
+          ],
+          "rss_max_KiB": 168032,
+          "callback_errors": []
+        },
+        {
+          "iteration": 180,
+          "mode": "destroy",
+          "roots_in_gc": 1,
+          "widgets_in_gc": 60,
+          "figures_in_gc": 1,
+          "retained_closed_sections": 1,
+          "after": [],
+          "commands": 186,
+          "gc": [
+            1,
+            1,
+            1
+          ],
+          "rss_max_KiB": 168032,
+          "callback_errors": []
+        },
+        {
+          "iteration": 200,
+          "mode": "destroy",
+          "roots_in_gc": 1,
+          "widgets_in_gc": 119,
+          "figures_in_gc": 2,
+          "retained_closed_sections": 2,
+          "after": [],
+          "commands": 203,
+          "gc": [
+            1,
+            6,
+            5
+          ],
+          "rss_max_KiB": 168032,
+          "callback_errors": []
+        },
+        {
+          "iteration": 200,
+          "mode": "destroy",
+          "roots_in_gc": 1,
+          "widgets_in_gc": 119,
+          "figures_in_gc": 2,
+          "retained_closed_sections": 2,
+          "after": [],
+          "commands": 203,
+          "gc": [
+            1,
+            6,
+            5
+          ],
+          "rss_max_KiB": 168032,
+          "callback_errors": []
+        },
+        {
+          "iteration": "after_main_thread_gc",
+          "mode": "destroy",
+          "roots_in_gc": 1,
+          "widgets_in_gc": 1,
+          "figures_in_gc": 0,
+          "retained_closed_sections": 0,
+          "after": [],
+          "commands": 169,
+          "gc": [
+            4,
+            0,
+            0
+          ],
+          "rss_max_KiB": 168032,
+          "callback_errors": []
+        },
+        {
+          "collected_after_cycles": 30023,
+          "complete": true
+        }
+      ]
+    }
+  }
+}

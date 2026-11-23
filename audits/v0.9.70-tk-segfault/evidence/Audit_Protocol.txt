@@ -1,0 +1,264 @@
+# CODEX PROTOCOL — O&G WORKBENCH v0.9.70
+## Focused Tkinter Segmentation Fault Audit
+
+**Priority:** Critical — Pre-v1.0 stability investigation  
+**Baseline:** v0.9.70  
+**Commit:** `1e0867f`  
+**Branch:** `release/1.0`  
+**Audit type:** Read-only forensic investigation
+
+### 1. Objective
+
+Investigate the recurring intermittent segmentation fault occurring during Tkinter GUI testing, particularly in Cross Section.
+
+The crash has appeared across versions v0.9.67, v0.9.69, v0.9.71, and v0.9.72, generally during extended Tk 8.6 test runs.
+
+Most recent failure:
+
+```
+Fatal Python error: Segmentation fault
+
+File "/usr/lib/python3.12/tkinter/__init__.py",
+line 1372, in update
+
+File "tests/test_xsection.py", line 1870, in open_on
+
+File "tests/test_xsection.py", line 1919,
+in test_settings_hold_from_one_session_to_the_next
+
+EXIT 139
+```
+
+The failures occur intermittently, sometimes in different Cross Section tests. Subsequent runs may pass.
+
+**Goal:** Determine the actual underlying cause or narrow it to evidence-supported hypotheses, rather than attributing it to Tk without investigation.
+
+### 2. Restrictions
+
+- Do not modify production code.
+- Do not modify existing tests.
+- Do not update dependencies in the project.
+- Do not modify release files.
+- Do not change versions.
+- Do not run tests against live client projects.
+- Do not access personal drives or project data.
+- Use isolated temporary test environments.
+- Do not commit changes to the Workbench repository.
+
+Diagnostic scripts, logs, and reports may be created separately.
+
+### 3. Investigation Scope
+
+Examine the complete Tkinter lifecycle across:
+
+- Cross Section
+- SeismicWorkbench
+- GeoWorkbench
+- Correlation
+- Map / Map Drawings
+- PetroWorkbench
+- Raster Workbench
+- Geosteering
+- Shared Tk utilities
+
+Focus particularly on:
+
+**A. Tk root and window lifecycle**
+
+- Multiple root creation and destruction.
+- Improper `Toplevel` ownership.
+- Destroyed interpreters retaining live Python references.
+- Calls to Tk after widget destruction.
+- Repeated window opening and closing.
+
+**B. Pending callbacks**
+
+- `after()` and `after_idle()` callbacks surviving their owners.
+- Tcl commands referencing destroyed widgets.
+- Callback cancellation failures.
+- Nested event loops and `update()` calls.
+
+**C. Matplotlib/Tk integration**
+
+- FigureCanvasTkAgg lifecycle.
+- Toolbar destruction.
+- FigureManager references.
+- Matplotlib event connections.
+- Cleanup ordering between figures, canvases, and Tk windows.
+
+**D. Python garbage collection**
+
+- Tk widgets collected after interpreter destruction.
+- Cyclic references.
+- Tcl command finalizers.
+- Python object destruction during event processing.
+
+**E. Thread safety**
+
+- Tk operations outside the main thread.
+- Background work invoking Tk callbacks.
+- Tcl interpreter access from worker threads.
+
+**F. C extensions**
+
+Review interaction risks involving:
+
+- NumPy
+- Matplotlib
+- Cython-compiled modules
+- Tcl/Tk native libraries
+
+Do not presume a particular library is responsible.
+
+### 4. Reproduction Strategy
+
+Run the following experiments using the exact v0.9.70 code.
+
+**Test A — Cross Section in isolation**
+
+Repeatedly execute the Cross Section GUI tests in fresh processes.
+
+Record crashes, test identity, memory, and Tk state.
+
+**Test B — Repeated window lifecycle**
+
+Open, close, and recreate Cross Section windows hundreds of times in an isolated synthetic project.
+
+Monitor pending callbacks, interpreters, figures, Tcl commands, and retained widget objects.
+
+**Test C — Full GUI sequence**
+
+Execute GUI test modules sequentially in one long-running process.
+
+Determine whether Cross Section failures become more likely after other modules have created and destroyed Tk objects.
+
+**Test D — Test ordering**
+
+Compare:
+
+- Cross Section first.
+- Cross Section after Seismic.
+- Cross Section after Map.
+- Cross Section after Correlation.
+- Cross Section after the complete preceding GUI test sequence.
+
+**Test E — Tk versions**
+
+Compare Tk 8.6 and Tk 9 environments without changing production code.
+
+Record actual Python, Tcl/Tk, Matplotlib, NumPy, operating-system, and display-server versions.
+
+**Test F — Native diagnostics**
+
+Where available, use faulthandler, gdb, native stack traces, and core dumps.
+
+Capture the native C stack at the crash. A Python traceback ending in `tkinter.update()` is not sufficient to establish the cause.
+
+### 5. Specific Cross Section Investigation
+
+Inspect the Cross Section tests implicated in previous crashes.
+
+Include:
+
+- `test_settings_hold_from_one_session_to_the_next`
+- `test_wells_chosen_on_the_map_open_a_section`
+- Any other documented crash locations from earlier runs.
+
+Determine whether test fixtures:
+
+- Create multiple Tk roots.
+- Leave windows alive.
+- Reuse destroyed interpreters.
+- Destroy parent windows before child canvases.
+- Leave pending idle callbacks.
+- Trigger garbage collection during Tk event processing.
+- Share process-global Matplotlib or Tk state between tests.
+
+Compare findings with v0.9.69 and earlier relevant versions to determine whether the failure predates v0.9.70.
+
+### 6. Required Evidence
+
+For every reproduced crash, record:
+
+- Exact test and test order.
+- Python and Tk versions.
+- Operating system.
+- Exit code.
+- Python traceback.
+- Native backtrace, when available.
+- Number of live Tk roots and windows.
+- Pending callbacks.
+- Matplotlib figure count.
+- Memory usage.
+- Relevant garbage-collection state.
+
+For runs without crashes, record the same available measurements.
+
+Do not interpret a successful rerun as proof that the defect has disappeared.
+
+### 7. Root-Cause Assessment
+
+Classify findings as:
+
+- **Confirmed root cause**
+- **Strongly supported hypothesis**
+- **Possible contributing factor**
+- **Ruled out by evidence**
+- **Unresolved**
+
+Distinguish among:
+
+1. Production-code defects.
+2. Test-harness defects.
+3. Tcl/Tk library issues.
+4. Matplotlib/Tk integration issues.
+5. Environment-specific failures.
+
+If possible, create a minimal standalone reproduction that fails without the full Workbench suite.
+
+### 8. Required Deliverables
+
+Create:
+
+`audits/v0.9.70-tk-segfault/`
+
+Required files:
+
+- `OandG_Workbench_v0.9.70_Tk_Segfault_Audit.md`
+- `OandG_Workbench_v0.9.70_Tk_Crash_Evidence.md`
+- `OandG_Workbench_v0.9.70_Tk_Lifecycle_Findings.csv`
+- `OandG_Workbench_v0.9.70_Tk_Reproduction_Instructions.md`
+- `OandG_Workbench_v0.9.70_Tk_Recommended_Fixes.md`
+
+Include native traces and diagnostic logs when available.
+
+Publish the audit under the existing `Software-reviews` repository, using the established audit-document conventions.
+
+Do not change the Workbench application repository.
+
+### 9. Final Questions to Answer
+
+1. What is the most likely cause of the intermittent segmentation fault?
+2. Is it triggered by production code, test infrastructure, or both?
+3. Why does it appear during long GUI test runs?
+4. Why does it occur in different Cross Section tests?
+5. Does it affect Tk 8.6, Tk 9, or both?
+6. Can the fault affect actual Windows users?
+7. Is there evidence of leaked or improperly destroyed Tk interpreters?
+8. Are Matplotlib canvases or figures implicated?
+9. What minimal corrections are recommended?
+10. What tests would demonstrate that the corrections are effective?
+
+### STOP RULE
+
+**Audit only. No implementation.**
+
+Do not modify Workbench source, tests, dependencies, or release artifacts.
+
+Do not advance the version or create a release.
+
+Deliver a detailed root-cause investigation with supporting evidence and recommended corrective actions.
+
+If the crash cannot be reproduced, report the exact testing performed and the remaining uncertainty. Do not declare the issue fixed.
+
+**The objective is to identify and eliminate the underlying Tk segmentation fault risk before O&G Workbench v1.0.**

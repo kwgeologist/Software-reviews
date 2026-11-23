@@ -1,0 +1,11 @@
+{"iteration": 1, "mode": "tk-only", "pending_before_close": [], "rss_max_KiB": 23068, "gc": [0, 0, 0]}
+{"iteration": 21, "mode": "tk-only", "pending_before_close": [], "rss_max_KiB": 23068, "gc": [0, 0, 0]}
+{"iteration": 41, "mode": "tk-only", "pending_before_close": [], "rss_max_KiB": 23068, "gc": [0, 0, 0]}
+{"iteration": 61, "mode": "tk-only", "pending_before_close": [], "rss_max_KiB": 23068, "gc": [0, 0, 0]}
+{"iteration": 81, "mode": "tk-only", "pending_before_close": [], "rss_max_KiB": 23068, "gc": [0, 0, 0]}
+{"iteration": 101, "mode": "tk-only", "pending_before_close": [], "rss_max_KiB": 23068, "gc": [0, 0, 0]}
+{"iteration": 121, "mode": "tk-only", "pending_before_close": [], "rss_max_KiB": 23068, "gc": [0, 0, 0]}
+{"iteration": 141, "mode": "tk-only", "pending_before_close": [], "rss_max_KiB": 23068, "gc": [0, 0, 0]}
+{"iteration": 161, "mode": "tk-only", "pending_before_close": [], "rss_max_KiB": 23068, "gc": [0, 0, 0]}
+{"iteration": 181, "mode": "tk-only", "pending_before_close": [], "rss_max_KiB": 23068, "gc": [0, 0, 0]}
+{"complete": true, "cycles": 200, "mode": "tk-only"}

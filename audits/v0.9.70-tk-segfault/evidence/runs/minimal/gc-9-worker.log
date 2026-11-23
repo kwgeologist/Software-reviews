@@ -1,0 +1,15 @@
+{"tk": 9.0, "mode": "worker", "controlled_cycle": true, "automatic_gc_disabled": true}
+Tcl_AsyncDelete: async handler deleted by the wrong thread
+Fatal Python error: Illegal instruction
+
+Current thread 0x00007f56194126c0 (most recent call first):
+  Garbage-collecting
+  File "/workspace/audit-v0.9.70-tk-segfault/probes/minimal_gc.py", line 7 in <lambda>
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/threading.py", line 1012 in run
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/threading.py", line 1075 in _bootstrap_inner
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/threading.py", line 1032 in _bootstrap
+
+Thread 0x00007f561c7b5740 (most recent call first):
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/threading.py", line 1169 in _wait_for_tstate_lock
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/threading.py", line 1149 in join
+  File "/workspace/audit-v0.9.70-tk-segfault/probes/minimal_gc.py", line 7 in <module>

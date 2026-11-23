@@ -1,0 +1,30 @@
+{
+  "name": "C-9-serial-GUI",
+  "Tk_requested": "9",
+  "command": [
+    "/workspace/audit-v0.9.56-windows/tooling/bin/python",
+    "-X",
+    "faulthandler",
+    "-m",
+    "pytest",
+    "-q",
+    "-p",
+    "no:cacheprovider",
+    "-p",
+    "tk_observer",
+    "tests/test_geo_tabs.py",
+    "tests/test_map_drawing_objects.py",
+    "tests/test_petro_integration.py",
+    "tests/test_digitize_ui.py",
+    "tests/test_geosteering_project.py",
+    "tests/test_seismic_app.py",
+    "tests/test_correlation.py",
+    "tests/test_xsection.py",
+    "--tb=short",
+    "-rs",
+    "--junitxml=/workspace/audit-v0.9.70-tk-segfault/runs/C-9-serial-GUI/results.xml"
+  ],
+  "observer": true,
+  "native": false,
+  "start": 1795449087.6797073
+}

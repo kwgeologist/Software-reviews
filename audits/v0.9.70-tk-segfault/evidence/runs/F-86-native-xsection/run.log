@@ -1,0 +1,26 @@
+
+warning: Loadable section ".dynstr" outside of ELF segments
+  in /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12
+warning: opening /proc/self/mem file failed: Read-only file system (30)
+warning: opening /proc/PID/mem file for lwp 427240.427240 failed: Read-only file system (30)
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+warning: opening /proc/PID/mem file for lwp 427254.427254 failed: Read-only file system (30)
+[Detaching after vfork from child process 427254]
+warning: opening /proc/PID/mem file for lwp 427255.427255 failed: Read-only file system (30)
+[Detaching after vfork from child process 427255]
+...................................................................      [100%]
+=============================== warnings summary ===============================
+../../../opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/anyio/pytest_plugin.py:14
+  /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/anyio/pytest_plugin.py:14: PytestRemovedIn10Warning: _pytest.python.CallSpec2 has been renamed to CallSpec.
+  The CallSpec2 alias will be removed in pytest 10.
+  Update imports to use CallSpec instead.
+  See https://docs.pytest.org/en/stable/deprecations.html#callspec2-renamed
+    from _pytest.python import CallSpec2
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+67 passed, 1 warning in 123.61s (0:02:03)
+[Inferior 1 (process 427240) exited normally]
+From                To                  Syms Read   Shared Object Library
+0x00007ffff7fc8000  0x00007ffff7fef3d1  Yes (*)     /lib64/ld-linux-x86-64.so.2
+(*): Shared library is missing debugging information.

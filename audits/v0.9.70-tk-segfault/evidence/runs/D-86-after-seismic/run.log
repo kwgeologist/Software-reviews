@@ -1,0 +1,29 @@
+.................................................................        [100%]
+=============================== warnings summary ===============================
+../../../opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/anyio/pytest_plugin.py:14
+  /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/anyio/pytest_plugin.py:14: PytestRemovedIn10Warning: _pytest.python.CallSpec2 has been renamed to CallSpec.
+  The CallSpec2 alias will be removed in pytest 10.
+  Update imports to use CallSpec instead.
+  See https://docs.pytest.org/en/stable/deprecations.html#callspec2-renamed
+    from _pytest.python import CallSpec2
+
+tests/test_seismic_app.py::SeismicAppTests::test_extraction_scale_and_colour_bar_can_be_changed
+tests/test_seismic_app.py::SeismicAppTests::test_extraction_scale_and_colour_bar_can_be_changed
+tests/test_seismic_app.py::SeismicAppTests::test_seismic_map_colour_scale
+tests/test_seismic_app.py::SeismicAppTests::test_seismic_map_colour_scale
+tests/test_seismic_app.py::SeismicAppTests::test_seismic_map_has_its_own_colour_bar_controls
+tests/test_seismic_app.py::SeismicAppTests::test_seismic_map_has_its_own_colour_bar_controls
+  /workspace/audit-v0.9.70-integrity/checkout/ogmap/color_scale.py:130: PendingDeprecationWarning: The set_under function will be deprecated in a future version. Use cmap.with_extremes(under=...) or Colormap(under=...) instead.
+    cmap.set_under(scale.get("under") or scale["colors"][0])
+
+tests/test_seismic_app.py::SeismicAppTests::test_extraction_scale_and_colour_bar_can_be_changed
+tests/test_seismic_app.py::SeismicAppTests::test_extraction_scale_and_colour_bar_can_be_changed
+tests/test_seismic_app.py::SeismicAppTests::test_seismic_map_colour_scale
+tests/test_seismic_app.py::SeismicAppTests::test_seismic_map_colour_scale
+tests/test_seismic_app.py::SeismicAppTests::test_seismic_map_has_its_own_colour_bar_controls
+tests/test_seismic_app.py::SeismicAppTests::test_seismic_map_has_its_own_colour_bar_controls
+  /workspace/audit-v0.9.70-integrity/checkout/ogmap/color_scale.py:131: PendingDeprecationWarning: The set_over function will be deprecated in a future version. Use cmap.with_extremes(over=...) or Colormap(over=...) instead.
+    cmap.set_over(scale.get("over") or scale["colors"][-1])
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+65 passed, 13 warnings in 64.44s (0:01:04)

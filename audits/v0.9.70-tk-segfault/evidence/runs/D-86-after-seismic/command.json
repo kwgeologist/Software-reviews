@@ -1,0 +1,25 @@
+{
+  "name": "D-86-after-seismic",
+  "Tk_requested": "86",
+  "command": [
+    "/workspace/audit-v0.9.56-windows/tooling/bin/python",
+    "-X",
+    "faulthandler",
+    "-m",
+    "pytest",
+    "-q",
+    "-p",
+    "no:cacheprovider",
+    "-p",
+    "tk_observer",
+    "tests/test_seismic_app.py",
+    "tests/test_xsection.py::PunchListWindowTests::test_settings_hold_from_one_session_to_the_next",
+    "tests/test_xsection.py::GeoCrossSectionTests::test_wells_chosen_on_the_map_open_a_section",
+    "--tb=short",
+    "-rs",
+    "--junitxml=/workspace/audit-v0.9.70-tk-segfault/runs/D-86-after-seismic/results.xml"
+  ],
+  "observer": true,
+  "native": false,
+  "start": 1795448933.5142272
+}

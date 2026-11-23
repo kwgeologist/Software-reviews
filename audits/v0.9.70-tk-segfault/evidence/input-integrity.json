@@ -1,0 +1,10 @@
+{
+  "checkout": "/workspace/audit-v0.9.70-integrity/checkout",
+  "commit": "1e0867ff44516b6cf13dfdbf8b8e6391b6fbf4fa",
+  "tracked_files_checked": 961,
+  "changed_or_missing": [],
+  "git_status": "",
+  "source_zip_sha256": "a1043496dc4fd868ce95817887fecbbb2e02a4012cca00834d70b6fbd85a6797",
+  "source_zip_expected": "a1043496dc4fd868ce95817887fecbbb2e02a4012cca00834d70b6fbd85a6797",
+  "historical_checkout_status": ""
+}

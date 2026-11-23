@@ -1,0 +1,9 @@
+{
+  "archive": "OandG_Workbench_v0.9.70_Tk_Segfault_Audit_Bundle.zip",
+  "bytes": 565119,
+  "sha256": "62a7c14e29c344a62f0ae5237a33abda44f26bf8fa8c8fac1382535eb000e571",
+  "bundled_files": 192,
+  "crc_check": "passed",
+  "all_manifest_hashes": "passed",
+  "required_deliverables": "5/5"
+}

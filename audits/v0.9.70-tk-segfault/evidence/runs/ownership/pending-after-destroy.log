@@ -1,0 +1,953 @@
+{
+  "root_referrers": [
+    {
+      "type": "dict",
+      "keys_referring_to_root": [
+        "app"
+      ]
+    },
+    {
+      "type": "TreatmentsTab"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "ProductionTab"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "Frame"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "DoubleVar"
+    },
+    {
+      "type": "Menu"
+    },
+    {
+      "type": "method",
+      "method": "WellDataManagerApp._selection_changed"
+    },
+    {
+      "type": "cell",
+      "cell_contents_type": "WellDataManagerApp"
+    },
+    {
+      "type": "Frame"
+    },
+    {
+      "type": "Frame"
+    },
+    {
+      "type": "Panedwindow"
+    },
+    {
+      "type": "CallWrapper"
+    },
+    {
+      "type": "Menu"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "dict",
+      "keys_referring_to_root": [
+        "app"
+      ]
+    },
+    {
+      "type": "IntVar"
+    },
+    {
+      "type": "ChildTableTab"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "CallWrapper"
+    },
+    {
+      "type": "CallWrapper"
+    },
+    {
+      "type": "CallWrapper"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "CallWrapper"
+    },
+    {
+      "type": "CallWrapper"
+    },
+    {
+      "type": "CallWrapper"
+    },
+    {
+      "type": "CallWrapper"
+    },
+    {
+      "type": "CallWrapper"
+    },
+    {
+      "type": "CallWrapper"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "WellTab"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "LocationTab"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "CallWrapper"
+    },
+    {
+      "type": "CallWrapper"
+    },
+    {
+      "type": "CallWrapper"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "dict",
+      "keys_referring_to_root": [
+        "app"
+      ]
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "CallWrapper"
+    },
+    {
+      "type": "CallWrapper"
+    },
+    {
+      "type": "CallWrapper"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "dict",
+      "keys_referring_to_root": [
+        "app"
+      ]
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "RasterTab"
+    },
+    {
+      "type": "CoreTab"
+    },
+    {
+      "type": "ChildTableTab"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "CallWrapper"
+    },
+    {
+      "type": "CallWrapper"
+    },
+    {
+      "type": "CallWrapper"
+    },
+    {
+      "type": "CallWrapper"
+    },
+    {
+      "type": "CallWrapper"
+    },
+    {
+      "type": "CallWrapper"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "ZonesTab"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "TimeDepthTab"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "BooleanVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "BooleanVar"
+    },
+    {
+      "type": "BooleanVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "BooleanVar"
+    },
+    {
+      "type": "BooleanVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "StringVar"
+    },
+    {
+      "type": "dict",
+      "keys_referring_to_root": [
+        "a"
+      ]
+    }
+  ],
+  "live_variable_traces_after_destroy": [
+    {
+      "name": "PY_VAR0",
+      "traces": [
+        [
+          [
+            "write"
+          ],
+          "139892431659456<lambda>"
+        ]
+      ]
+    },
+    {
+      "name": "PY_VAR10",
+      "traces": [
+        [
+          [
+            "write"
+          ],
+          "139892426497344<lambda>"
+        ]
+      ]
+    },
+    {
+      "name": "PY_VAR11",
+      "traces": [
+        [
+          [
+            "write"
+          ],
+          "139892426496896<lambda>"
+        ]
+      ]
+    },
+    {
+      "name": "PY_VAR12",
+      "traces": [
+        [
+          [
+            "write"
+          ],
+          "139892426496448<lambda>"
+        ]
+      ]
+    },
+    {
+      "name": "PY_VAR13",
+      "traces": [
+        [
+          [
+            "write"
+          ],
+          "139892426496000<lambda>"
+        ]
+      ]
+    },
+    {
+      "name": "PY_VAR14",
+      "traces": [
+        [
+          [
+            "write"
+          ],
+          "139892426495488<lambda>"
+        ]
+      ]
+    },
+    {
+      "name": "PY_VAR9",
+      "traces": [
+        [
+          [
+            "write"
+          ],
+          "139892426498112<lambda>"
+        ]
+      ]
+    },
+    {
+      "name": "PY_VAR3",
+      "traces": [
+        [
+          [
+            "write"
+          ],
+          "139892426824064<lambda>"
+        ]
+      ]
+    },
+    {
+      "name": "PY_VAR4",
+      "traces": [
+        [
+          [
+            "write"
+          ],
+          "139892426832256<lambda>"
+        ]
+      ]
+    },
+    {
+      "name": "PY_VAR5",
+      "traces": [
+        [
+          [
+            "write"
+          ],
+          "139892426831872<lambda>"
+        ]
+      ]
+    },
+    {
+      "name": "PY_VAR25",
+      "traces": [
+        [
+          [
+            "write"
+          ],
+          "139892428817088<lambda>"
+        ]
+      ]
+    },
+    {
+      "name": "PY_VAR26",
+      "traces": [
+        [
+          [
+            "write"
+          ],
+          "139892428819328<lambda>"
+        ]
+      ]
+    },
+    {
+      "name": "PY_VAR27",
+      "traces": [
+        [
+          [
+            "write"
+          ],
+          "139892428819456<lambda>"
+        ]
+      ]
+    },
+    {
+      "name": "PY_VAR67",
+      "traces": [
+        [
+          [
+            "write"
+          ],
+          "139892428257024<lambda>"
+        ]
+      ]
+    },
+    {
+      "name": "PY_VAR68",
+      "traces": [
+        [
+          [
+            "write"
+          ],
+          "139892428256192<lambda>"
+        ]
+      ]
+    },
+    {
+      "name": "PY_VAR69",
+      "traces": [
+        [
+          [
+            "write"
+          ],
+          "139892428255936<lambda>"
+        ]
+      ]
+    },
+    {
+      "name": "PY_VAR78",
+      "traces": [
+        [
+          [
+            "write"
+          ],
+          "139892427204032<lambda>"
+        ]
+      ]
+    },
+    {
+      "name": "PY_VAR79",
+      "traces": [
+        [
+          [
+            "write"
+          ],
+          "139892427201664<lambda>"
+        ]
+      ]
+    },
+    {
+      "name": "PY_VAR80",
+      "traces": [
+        [
+          [
+            "write"
+          ],
+          "139892427201088<lambda>"
+        ]
+      ]
+    },
+    {
+      "name": "PY_VAR81",
+      "traces": [
+        [
+          [
+            "write"
+          ],
+          "139892427200704<lambda>"
+        ]
+      ]
+    },
+    {
+      "name": "PY_VAR82",
+      "traces": [
+        [
+          [
+            "write"
+          ],
+          "139892427200320<lambda>"
+        ]
+      ]
+    },
+    {
+      "name": "PY_VAR77",
+      "traces": [
+        [
+          [
+            "write"
+          ],
+          "139892427203456<lambda>"
+        ]
+      ]
+    }
+  ],
+  "selection_listeners": 1,
+  "after_after_destroy": [
+    {
+      "id": "after#1",
+      "info": [
+        "139892428174464_poll_requests",
+        "timer"
+      ],
+      "script_command_exists": false
+    },
+    {
+      "id": "after#0",
+      "info": [
+        "139892428174656startup_project",
+        "timer"
+      ],
+      "script_command_exists": false
+    }
+  ]
+}

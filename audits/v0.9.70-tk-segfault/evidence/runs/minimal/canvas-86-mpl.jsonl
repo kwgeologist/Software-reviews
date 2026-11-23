@@ -1,0 +1,11 @@
+{"iteration": 1, "mode": "mpl", "pending_before_close": [], "rss_max_KiB": 73872, "gc": [0, 0, 0]}
+{"iteration": 21, "mode": "mpl", "pending_before_close": [], "rss_max_KiB": 107664, "gc": [0, 0, 0]}
+{"iteration": 41, "mode": "mpl", "pending_before_close": [], "rss_max_KiB": 141072, "gc": [0, 0, 0]}
+{"iteration": 61, "mode": "mpl", "pending_before_close": [], "rss_max_KiB": 174352, "gc": [0, 0, 0]}
+{"iteration": 81, "mode": "mpl", "pending_before_close": [], "rss_max_KiB": 207632, "gc": [0, 0, 0]}
+{"iteration": 101, "mode": "mpl", "pending_before_close": [], "rss_max_KiB": 240912, "gc": [0, 0, 0]}
+{"iteration": 121, "mode": "mpl", "pending_before_close": [], "rss_max_KiB": 274192, "gc": [0, 0, 0]}
+{"iteration": 141, "mode": "mpl", "pending_before_close": [], "rss_max_KiB": 307600, "gc": [0, 0, 0]}
+{"iteration": 161, "mode": "mpl", "pending_before_close": [], "rss_max_KiB": 340752, "gc": [0, 0, 0]}
+{"iteration": 181, "mode": "mpl", "pending_before_close": [], "rss_max_KiB": 374160, "gc": [0, 0, 0]}
+{"complete": true, "cycles": 200, "mode": "mpl"}

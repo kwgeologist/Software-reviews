@@ -1,0 +1,10 @@
+Area,Files/examples,Review/evidence,Limits
+Cross Section,xsection/window.py; xsection/widgets.py; tests/test_xsection.py,All 67 test cases repeated; 800 window cycles; owner/job/canvas teardown inspection,No exact original SIGSEGV reproduction
+Geo,geoworkbench/main_window.py; geoworkbench/common.py; ogcore/well_selection.py,Trace/listener/timer controls and long serial test module,Normal close versus raw destroy distinguished
+Petro,petroworkbench/app.py; tests/test_petro_integration.py,Trace retention control and long serial module,No Windows package test
+Seismic,seismicworkbench/app.py; seismicworkbench/mapping.py; tests/test_seismic_app.py,Historical trace comparison; worker/close inspection; ordering and serial tests,Numeric workers sampled; no exhaustive closure proof
+Map/Drawings,ogmap/window.py; tests/test_map_drawing_objects.py; tests/test_scrolling_map.py,Worker inspection; after-Map ordering; drawing tests in serial workload,Not every production drawing scenario
+Correlation,tests/test_correlation.py; Correlation GUI lifecycle paths,Ordering and serial existing tests,Assertion failure separate from native signals
+Raster/Digitizer,tests/test_digitize_ui.py; ograster/progress.py,Serial GUI and shared progress lifecycle inspection,Synthetic inputs only
+Geosteering,tests/test_geosteering_project.py,Serial project GUI tests,Synthetic projects only
+Shared/runtime,ogcore/background.py; ogcore/task_progress.py; assistant workers; CPython _tkinter; Tcl/Tk; Matplotlib _backend_tk,"Thread-site inventory, minimal root/canvas/native GC controls, gdb stacks",Original failing runtime/native stack unavailable

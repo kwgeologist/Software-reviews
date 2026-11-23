@@ -1,0 +1,24 @@
+[
+  {
+    "version": "86",
+    "exit_code": -6,
+    "command": [
+      "/workspace/audit-v0.9.56-windows/tooling/bin/python",
+      "-X",
+      "faulthandler",
+      "/workspace/audit-v0.9.70-tk-segfault/probes/minimal_gc.py",
+      "auto-worker"
+    ]
+  },
+  {
+    "version": "9",
+    "exit_code": -4,
+    "command": [
+      "/workspace/audit-v0.9.56-windows/tooling/bin/python",
+      "-X",
+      "faulthandler",
+      "/workspace/audit-v0.9.70-tk-segfault/probes/minimal_gc.py",
+      "auto-worker"
+    ]
+  }
+]

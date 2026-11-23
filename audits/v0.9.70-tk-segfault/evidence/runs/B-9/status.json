@@ -1,0 +1,30 @@
+[
+  {
+    "mode": "normal",
+    "command": [
+      "/workspace/audit-v0.9.56-windows/tooling/bin/python",
+      "-X",
+      "faulthandler",
+      "/workspace/audit-v0.9.70-tk-segfault/probes/lifecycle.py",
+      "normal",
+      "200",
+      "/workspace/audit-v0.9.70-tk-segfault/runs/B-9/normal.jsonl"
+    ],
+    "exit_code": 0,
+    "seconds": 123.38125991821289
+  },
+  {
+    "mode": "destroy",
+    "command": [
+      "/workspace/audit-v0.9.56-windows/tooling/bin/python",
+      "-X",
+      "faulthandler",
+      "/workspace/audit-v0.9.70-tk-segfault/probes/lifecycle.py",
+      "destroy",
+      "200",
+      "/workspace/audit-v0.9.70-tk-segfault/runs/B-9/destroy.jsonl"
+    ],
+    "exit_code": 0,
+    "seconds": 130.1480107307434
+  }
+]

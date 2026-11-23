@@ -1,0 +1,26 @@
+{
+  "name": "A-9-2",
+  "Tk_requested": "9",
+  "command": [
+    "/workspace/audit-v0.9.56-windows/tooling/bin/python",
+    "-X",
+    "faulthandler",
+    "-m",
+    "pytest",
+    "-q",
+    "-p",
+    "no:cacheprovider",
+    "-p",
+    "tk_observer",
+    "tests/test_xsection.py",
+    "--tb=short",
+    "-rs",
+    "--junitxml=/workspace/audit-v0.9.70-tk-segfault/runs/A-9-2/results.xml"
+  ],
+  "observer": true,
+  "native": false,
+  "start": 1795448687.3996503,
+  "exit_code": 0,
+  "seconds": 115.55332088470459,
+  "parent_peak_RSS_KiB": 357896
+}

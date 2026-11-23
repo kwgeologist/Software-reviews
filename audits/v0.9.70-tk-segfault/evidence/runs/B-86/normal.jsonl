@@ -1,0 +1,15 @@
+{"runtime": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]", "tk": "8.6.16", "tk_pkg": "8.6.16", "extension": "/workspace/audit-v0.9.70-tk-segfault/tk86-extension/_tkinter.cpython-312-x86_64-linux-gnu.so", "mode": "normal"}
+{"iteration": 0, "mode": "normal", "roots_in_gc": 1, "widgets_in_gc": 1, "figures_in_gc": 0, "retained_closed_sections": 0, "after": [], "commands": 157, "gc": [206, 3, 3], "rss_max_KiB": 109360, "callback_errors": []}
+{"iteration": 20, "mode": "normal", "roots_in_gc": 1, "widgets_in_gc": 119, "figures_in_gc": 2, "retained_closed_sections": 2, "after": [], "commands": 194, "gc": [1, 2, 5], "rss_max_KiB": 164568, "callback_errors": []}
+{"iteration": 40, "mode": "normal", "roots_in_gc": 1, "widgets_in_gc": 178, "figures_in_gc": 3, "retained_closed_sections": 3, "after": [], "commands": 211, "gc": [1, 3, 6], "rss_max_KiB": 170464, "callback_errors": []}
+{"iteration": 60, "mode": "normal", "roots_in_gc": 1, "widgets_in_gc": 178, "figures_in_gc": 3, "retained_closed_sections": 3, "after": [], "commands": 211, "gc": [1, 3, 7], "rss_max_KiB": 170464, "callback_errors": []}
+{"iteration": 80, "mode": "normal", "roots_in_gc": 1, "widgets_in_gc": 178, "figures_in_gc": 3, "retained_closed_sections": 3, "after": [], "commands": 211, "gc": [1, 1, 8], "rss_max_KiB": 170464, "callback_errors": []}
+{"iteration": 100, "mode": "normal", "roots_in_gc": 1, "widgets_in_gc": 237, "figures_in_gc": 4, "retained_closed_sections": 4, "after": [], "commands": 228, "gc": [1, 0, 9], "rss_max_KiB": 173004, "callback_errors": []}
+{"iteration": 120, "mode": "normal", "roots_in_gc": 1, "widgets_in_gc": 237, "figures_in_gc": 4, "retained_closed_sections": 4, "after": [], "commands": 228, "gc": [1, 0, 10], "rss_max_KiB": 173004, "callback_errors": []}
+{"iteration": 140, "mode": "normal", "roots_in_gc": 1, "widgets_in_gc": 237, "figures_in_gc": 4, "retained_closed_sections": 4, "after": [], "commands": 228, "gc": [1, 10, 10], "rss_max_KiB": 173004, "callback_errors": []}
+{"iteration": 160, "mode": "normal", "roots_in_gc": 1, "widgets_in_gc": 60, "figures_in_gc": 1, "retained_closed_sections": 1, "after": [], "commands": 177, "gc": [1, 9, 0], "rss_max_KiB": 173004, "callback_errors": []}
+{"iteration": 180, "mode": "normal", "roots_in_gc": 1, "widgets_in_gc": 60, "figures_in_gc": 1, "retained_closed_sections": 1, "after": [], "commands": 177, "gc": [1, 9, 1], "rss_max_KiB": 173004, "callback_errors": []}
+{"iteration": 200, "mode": "normal", "roots_in_gc": 1, "widgets_in_gc": 60, "figures_in_gc": 1, "retained_closed_sections": 1, "after": [], "commands": 177, "gc": [1, 7, 2], "rss_max_KiB": 173004, "callback_errors": []}
+{"iteration": 200, "mode": "normal", "roots_in_gc": 1, "widgets_in_gc": 60, "figures_in_gc": 1, "retained_closed_sections": 1, "after": [], "commands": 177, "gc": [1, 7, 2], "rss_max_KiB": 173004, "callback_errors": []}
+{"iteration": "after_main_thread_gc", "mode": "normal", "roots_in_gc": 1, "widgets_in_gc": 1, "figures_in_gc": 0, "retained_closed_sections": 0, "after": [], "commands": 160, "gc": [4, 0, 0], "rss_max_KiB": 173004, "callback_errors": []}
+{"collected_after_cycles": 14924, "complete": true}

@@ -1,0 +1,103 @@
+
+warning: Loadable section ".dynstr" outside of ELF segments
+  in /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12
+warning: opening /proc/self/mem file failed: Read-only file system (30)
+warning: opening /proc/PID/mem file for lwp 432601.432601 failed: Read-only file system (30)
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+warning: opening /proc/PID/mem file for lwp 432604.432604 failed: Read-only file system (30)
+[Detaching after vfork from child process 432604]
+warning: opening /proc/PID/mem file for lwp 432605.432605 failed: Read-only file system (30)
+[Detaching after vfork from child process 432605]
+warning: opening /proc/PID/mem file for lwp 432606.432606 failed: Read-only file system (30)
+[Detaching after vfork from child process 432606]
+warning: opening /proc/PID/mem file for lwp 432607.432607 failed: Read-only file system (30)
+[Detaching after vfork from child process 432607]
+warning: opening /proc/PID/mem file for lwp 432608.432608 failed: Read-only file system (30)
+[Detaching after vfork from child process 432608]
+warning: opening /proc/PID/mem file for lwp 432609.432609 failed: Read-only file system (30)
+[Detaching after vfork from child process 432609]
+warning: opening /proc/PID/mem file for lwp 432610.432610 failed: Read-only file system (30)
+[Detaching after vfork from child process 432610]
+warning: opening /proc/PID/mem file for lwp 432611.432611 failed: Read-only file system (30)
+[Detaching after vfork from child process 432611]
+warning: opening /proc/PID/mem file for lwp 432612.432612 failed: Read-only file system (30)
+[Detaching after vfork from child process 432612]
+warning: opening /proc/PID/mem file for lwp 432613.432613 failed: Read-only file system (30)
+[Detaching after vfork from child process 432613]
+{"tk": 9.0, "mode": "worker", "controlled_cycle": true, "automatic_gc_disabled": true}
+[New Thread 0x7ffff48fa6c0 (LWP 432614)]
+Tcl_AsyncDelete: async handler deleted by the wrong thread
+
+Thread 2 "python" received signal SIGILL, Illegal instruction.
+[Switching to Thread 0x7ffff48fa6c0 (LWP 432614)]
+0x00007ffff734b257 in Tcl_Panic () from /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/../lib/libtcl9.0.so
+
+Thread 2 (Thread 0x7ffff48fa6c0 (LWP 432614) "python"):
+#0  0x00007ffff734b257 in Tcl_Panic () from /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/../lib/libtcl9.0.so
+#1  0x00007ffff726228f in Tcl_AsyncDelete () from /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/../lib/libtcl9.0.so
+#2  0x00007ffff7265022 in DeleteInterpProc () from /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/../lib/libtcl9.0.so
+#3  0x00007ffff7fa7fdb in Tkapp_Dealloc () from /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/lib-dynload/_tkinter.cpython-312-x86_64-linux-gnu.so
+#4  0x00000000018721e6 in _PyObject_ClearManagedDict ()
+#5  0x0000000001871fea in subtype_clear ()
+#6  0x0000000001871537 in gc_collect_main.llvm ()
+#7  0x000000000197b0d1 in gc_collect ()
+#8  0x0000000001824abf in cfunction_vectorcall_FASTCALL_KEYWORDS.llvm.2305966719422422379 ()
+#9  0x000000000181740a in _PyEval_EvalFrameDefault ()
+#10 0x000000000181090b in method_vectorcall.llvm ()
+#11 0x00000000019864d4 in thread_run ()
+#12 0x0000000001986424 in pythread_wrapper.llvm ()
+#13 0x00007ffff7d328bb in ?? () from /lib/x86_64-linux-gnu/libc.so.6
+#14 0x00007ffff7db0538 in ?? () from /lib/x86_64-linux-gnu/libc.so.6
+
+Thread 1 (Thread 0x7ffff7c9d740 (LWP 432601) "python"):
+#0  0x00007ffff7d3a72e in ?? () from /lib/x86_64-linux-gnu/libc.so.6
+#1  0x00007ffff7d2f388 in ?? () from /lib/x86_64-linux-gnu/libc.so.6
+#2  0x00007ffff7d2f9ac in ?? () from /lib/x86_64-linux-gnu/libc.so.6
+#3  0x00007ffff7d3a660 in ?? () from /lib/x86_64-linux-gnu/libc.so.6
+#4  0x0000000001b5c7a5 in PyThread_acquire_lock_timed.cold ()
+#5  0x00000000018817e6 in acquire_timed ()
+#6  0x000000000188156c in lock_PyThread_acquire_lock ()
+#7  0x0000000001853575 in method_vectorcall_VARARGS_KEYWORDS.llvm.2054067849976140293 ()
+#8  0x000000000181740a in _PyEval_EvalFrameDefault ()
+#9  0x00000000018a84f2 in PyEval_EvalCode ()
+#10 0x00000000018a8049 in run_mod.llvm ()
+#11 0x00000000019dce85 in pyrun_file ()
+#12 0x00000000019dcc46 in _PyRun_SimpleFileObject ()
+#13 0x00000000019dc9ca in _PyRun_AnyFileObject ()
+#14 0x00000000019dc950 in pymain_run_file_obj ()
+#15 0x00000000019dc85d in pymain_run_file ()
+#16 0x0000000001ad7763 in Py_RunMain.warm ()
+#17 0x000000000197d35f in pymain_main.llvm ()
+#18 0x000000000197d16c in main ()
+From                To                  Syms Read   Shared Object Library
+0x00007ffff7fc8000  0x00007ffff7fef3d1  Yes (*)     /lib64/ld-linux-x86-64.so.2
+0x00007ffff7f96040  0x00007ffff7f96101  Yes (*)     /lib/x86_64-linux-gnu/libpthread.so.0
+0x00007ffff7f91040  0x00007ffff7f91101  Yes (*)     /lib/x86_64-linux-gnu/libdl.so.2
+0x00007ffff7f8c040  0x00007ffff7f8c101  Yes (*)     /lib/x86_64-linux-gnu/libutil.so.1
+0x00007ffff7eac2c0  0x00007ffff7f28dc6  Yes (*)     /lib/x86_64-linux-gnu/libm.so.6
+0x00007ffff7e95060  0x00007ffff7e95251  Yes (*)     /lib/x86_64-linux-gnu/librt.so.1
+0x00007ffff7cc8400  0x00007ffff7e2a63d  Yes (*)     /lib/x86_64-linux-gnu/libc.so.6
+0x00007ffff7fa6a20  0x00007ffff7fad545  Yes (*)     /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/lib-dynload/_tkinter.cpython-312-x86_64-linux-gnu.so
+0x00007ffff746c090  0x00007ffff760325a  Yes (*)     /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/../lib/libtcl9tk9.0.so
+0x00007ffff7244f90  0x00007ffff73cbd8b  Yes (*)     /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/../lib/libtcl9.0.so
+0x00007ffff79b4880  0x00007ffff79b87e1  Yes (*)     /lib/x86_64-linux-gnu/libnotify.so.4
+0x00007ffff7866080  0x00007ffff787ed79  Yes (*)     /lib/x86_64-linux-gnu/libgdk_pixbuf-2.0.so.0
+0x00007ffff780a8c0  0x00007ffff783e9be  Yes (*)     /lib/x86_64-linux-gnu/libgobject-2.0.so.0
+0x00007ffff70de000  0x00007ffff717dc0e  Yes (*)     /lib/x86_64-linux-gnu/libglib-2.0.so.0
+0x00007ffff6f07e40  0x00007ffff7021a34  Yes (*)     /lib/x86_64-linux-gnu/libgio-2.0.so.0
+0x00007ffff7f9d2a0  0x00007ffff7f9e38b  Yes (*)     /lib/x86_64-linux-gnu/libgmodule-2.0.so.0
+0x00007ffff6e93940  0x00007ffff6eb8365  Yes (*)     /lib/x86_64-linux-gnu/libpng16.so.16
+0x00007ffff6dfa540  0x00007ffff6e480d9  Yes (*)     /lib/x86_64-linux-gnu/libjpeg.so.62
+0x00007ffff79a5300  0x00007ffff79ab36a  Yes (*)     /lib/x86_64-linux-gnu/libffi.so.8
+0x00007ffff799b0c0  0x00007ffff799dfdc  Yes (*)     /lib/x86_64-linux-gnu/libatomic.so.1
+0x00007ffff6d4a280  0x00007ffff6dc44dc  Yes (*)     /lib/x86_64-linux-gnu/libpcre2-8.so.0
+0x00007ffff6d2a340  0x00007ffff6d3d113  Yes (*)     /lib/x86_64-linux-gnu/libz.so.1
+0x00007ffff6cb9c00  0x00007ffff6d08ed0  Yes (*)     /lib/x86_64-linux-gnu/libmount.so.1
+0x00007ffff6c7ee00  0x00007ffff6c9d291  Yes (*)     /lib/x86_64-linux-gnu/libselinux.so.1
+0x00007ffff6c20f00  0x00007ffff6c5c110  Yes (*)     /lib/x86_64-linux-gnu/libblkid.so.1
+0x00007ffff6a60500  0x00007ffff6b6a5f8  Yes (*)     /lib/x86_64-linux-gnu/libicuuc.so.76
+0x00007ffff4b8f040  0x00007ffff4b8f0f9  Yes (*)     /lib/x86_64-linux-gnu/libicudata.so.76
+0x00007ffff49c9240  0x00007ffff4aeda5e  Yes (*)     /lib/x86_64-linux-gnu/libstdc++.so.6
+0x00007ffff48ff3c0  0x00007ffff4921f95  Yes (*)     /lib/x86_64-linux-gnu/libgcc_s.so.1
+(*): Shared library is missing debugging information.

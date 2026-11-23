@@ -1,0 +1,15 @@
+{"tk": 9.0, "mode": "auto-worker", "controlled_cycle": true, "automatic_gc_disabled": true, "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]", "extension": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/lib-dynload/_tkinter.cpython-312-x86_64-linux-gnu.so", "Tcl_patch": "9.0.4", "Tk_patch": "9.0.4", "pending_after_destroy": [], "roots_in_gc": 1, "figures_in_gc": 0, "rss_max_KiB": 22044, "gc_count": [9, 11, 0]}
+Tcl_AsyncDelete: async handler deleted by the wrong thread
+Fatal Python error: Illegal instruction
+
+Current thread 0x00007f24742bd6c0 (most recent call first):
+  Garbage-collecting
+  File "/workspace/audit-v0.9.70-tk-segfault/probes/minimal_gc.py", line 9 in allocate
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/threading.py", line 1012 in run
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/threading.py", line 1075 in _bootstrap_inner
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/threading.py", line 1032 in _bootstrap
+
+Thread 0x00007f2477660740 (most recent call first):
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/threading.py", line 1169 in _wait_for_tstate_lock
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/threading.py", line 1149 in join
+  File "/workspace/audit-v0.9.70-tk-segfault/probes/minimal_gc.py", line 10 in <module>

@@ -1,0 +1,35 @@
+{
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "distribution": "Debian GNU/Linux 13 (trixie)",
+  "python": "CPython 3.12.14",
+  "Tk86": {
+    "Tcl": "8.6.16",
+    "Tk": "8.6.16",
+    "extension": "/workspace/audit-v0.9.70-tk-segfault/tk86-extension/_tkinter.cpython-312-x86_64-linux-gnu.so",
+    "build": "CPython v3.12.14 upstream Modules source; cc -shared -fPIC -O0 -g; isolated overlay"
+  },
+  "Tk9": {
+    "Tcl": "9.0.4",
+    "Tk": "9.0.4",
+    "extension": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/lib-dynload/_tkinter.cpython-312-x86_64-linux-gnu.so"
+  },
+  "NumPy": "2.5.5",
+  "Matplotlib": "3.11.2",
+  "SciPy": "1.18.1",
+  "pytest": "9.2.0",
+  "Xvfb": "2:21.1.16-1.3+deb13u4",
+  "gdb": "16.3-1",
+  "thread_controls": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1"
+  },
+  "hashes": {
+    "/workspace/audit-v0.9.56-windows/tooling/bin/python": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+    "/workspace/audit-v0.9.70-tk-segfault/tk86-extension/_tkinter.cpython-312-x86_64-linux-gnu.so": "fdd6fea19f07f8d5087d5b6ae525cba5dbd62fbc91ab520b7a130cdfbb44b650",
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/lib-dynload/_tkinter.cpython-312-x86_64-linux-gnu.so": "1e01ab445d909465cb154985f9d091ba70f9ec1deb487de8eea6f95060f2beaa",
+    "/workspace/audit-v0.9.68-full/xserver/root/usr/bin/Xvfb": "16667b1eaafbe0b09527c2152e45f81b4b8e977012281062fc2fb2427afa66ce",
+    "/workspace/audit-v0.9.70-tk-segfault/tk86-extension/tkinter.h": "229776646f467c4ed9ec1460a14b756bc2de5e5bd70ead431a495d21305f7675",
+    "/workspace/audit-v0.9.70-tk-segfault/tk86-extension/_tkinter.c": "c484afe880de65c628f5376adf0be413eae2f0d339d5ef5f33365c14ba59eca3",
+    "/workspace/audit-v0.9.70-tk-segfault/tk86-extension/clinic/_tkinter.c.h": "2a6f1f61b004e88fbb8769650699747119004076c45eb7d430beb0be93325658"
+  }
+}

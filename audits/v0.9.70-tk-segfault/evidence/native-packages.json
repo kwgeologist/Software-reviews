@@ -1,0 +1,56 @@
+[
+  {
+    "Package": "libbabeltrace1",
+    "Version": "1.5.11-4+b2",
+    "SHA256": "ae7119a21627f296fa28a46ece67b01b1cbc87e32e971f8fd7629d0f42d1d4b1",
+    "Filename": "pool/main/b/babeltrace/libbabeltrace1_1.5.11-4+b2_amd64.deb"
+  },
+  {
+    "Package": "libboost-regex1.83.0",
+    "Version": "1.83.0-4.2",
+    "SHA256": "e4d58b5ae30bb30a7701016dc25dd316878001a8e1a76e5afadd49ccc8d425d3",
+    "Filename": "pool/main/b/boost1.83/libboost-regex1.83.0_1.83.0-4.2_amd64.deb"
+  },
+  {
+    "Package": "libdebuginfod1t64",
+    "Version": "0.192-4",
+    "SHA256": "399d156a8a631889c71b1fdeb853d8effc40f812870a0b7b0eb09e04eb0dfa5e",
+    "Filename": "pool/main/e/elfutils/libdebuginfod1t64_0.192-4_amd64.deb"
+  },
+  {
+    "Package": "gdb",
+    "Version": "16.3-1",
+    "SHA256": "f0cd9b3e7b47685cbc43ebfe3207760830cb7b570e615daee6dc91e50040c127",
+    "Filename": "pool/main/g/gdb/gdb_16.3-1_amd64.deb"
+  },
+  {
+    "Package": "libipt2",
+    "Version": "2.1.2-1",
+    "SHA256": "33cfc9090194a993bfab1da4a70a03b4a2d2863894c1d4b506dd4ac093a0073e",
+    "Filename": "pool/main/i/intel-processor-trace/libipt2_2.1.2-1_amd64.deb"
+  },
+  {
+    "Package": "libpython3.13",
+    "Version": "3.13.5-2+deb13u5",
+    "SHA256": "aa4cdb7e15f5f445ab268160d428518a4daf2a086ee3e6ea30f6082785236dea",
+    "Filename": "pool/main/p/python3.13/libpython3.13_3.13.5-2+deb13u5_amd64.deb"
+  },
+  {
+    "Package": "libsource-highlight4t64",
+    "Version": "3.1.9-4.3+b1",
+    "SHA256": "6d69c221c44345f33af52cc849c5d39438590d5b2030224a6fdb3e6e660f815a",
+    "Filename": "pool/main/s/source-highlight/libsource-highlight4t64_3.1.9-4.3+b1_amd64.deb"
+  },
+  {
+    "Package": "tcl8.6-dev",
+    "Version": "8.6.16+dfsg-1",
+    "SHA256": "678693f4e23a5f42323f28820204f85ef85c12a0502362d89f796365b45f5d2f",
+    "Filename": "pool/main/t/tcl8.6/tcl8.6-dev_8.6.16+dfsg-1_amd64.deb"
+  },
+  {
+    "Package": "tk8.6-dev",
+    "Version": "8.6.16-1",
+    "SHA256": "20da5ac8d144e97683951bb74c6d7444df7039d280a8d43e1f5bc76b7bce7c8b",
+    "Filename": "pool/main/t/tk8.6/tk8.6-dev_8.6.16-1_amd64.deb"
+  }
+]

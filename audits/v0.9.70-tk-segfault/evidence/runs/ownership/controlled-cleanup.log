@@ -1,0 +1,138 @@
+{
+  "raw_destroy_cycles": [
+    {
+      "cycle": 1,
+      "retained_Geo_roots": 1,
+      "well_selection_listener_count": 1,
+      "listener_owner_classes": [
+        "WellDataManagerApp"
+      ]
+    },
+    {
+      "cycle": 2,
+      "retained_Geo_roots": 2,
+      "well_selection_listener_count": 2,
+      "listener_owner_classes": [
+        "WellDataManagerApp",
+        "WellDataManagerApp"
+      ]
+    },
+    {
+      "cycle": 3,
+      "retained_Geo_roots": 3,
+      "well_selection_listener_count": 3,
+      "listener_owner_classes": [
+        "WellDataManagerApp",
+        "WellDataManagerApp",
+        "WellDataManagerApp"
+      ]
+    },
+    {
+      "cycle": 4,
+      "retained_Geo_roots": 4,
+      "well_selection_listener_count": 4,
+      "listener_owner_classes": [
+        "WellDataManagerApp",
+        "WellDataManagerApp",
+        "WellDataManagerApp",
+        "WellDataManagerApp"
+      ]
+    },
+    {
+      "cycle": 5,
+      "retained_Geo_roots": 5,
+      "well_selection_listener_count": 5,
+      "listener_owner_classes": [
+        "WellDataManagerApp",
+        "WellDataManagerApp",
+        "WellDataManagerApp",
+        "WellDataManagerApp",
+        "WellDataManagerApp"
+      ]
+    },
+    {
+      "cycle": 6,
+      "retained_Geo_roots": 6,
+      "well_selection_listener_count": 6,
+      "listener_owner_classes": [
+        "WellDataManagerApp",
+        "WellDataManagerApp",
+        "WellDataManagerApp",
+        "WellDataManagerApp",
+        "WellDataManagerApp",
+        "WellDataManagerApp"
+      ]
+    },
+    {
+      "cycle": 7,
+      "retained_Geo_roots": 7,
+      "well_selection_listener_count": 7,
+      "listener_owner_classes": [
+        "WellDataManagerApp",
+        "WellDataManagerApp",
+        "WellDataManagerApp",
+        "WellDataManagerApp",
+        "WellDataManagerApp",
+        "WellDataManagerApp",
+        "WellDataManagerApp"
+      ]
+    },
+    {
+      "cycle": 8,
+      "retained_Geo_roots": 8,
+      "well_selection_listener_count": 8,
+      "listener_owner_classes": [
+        "WellDataManagerApp",
+        "WellDataManagerApp",
+        "WellDataManagerApp",
+        "WellDataManagerApp",
+        "WellDataManagerApp",
+        "WellDataManagerApp",
+        "WellDataManagerApp",
+        "WellDataManagerApp"
+      ]
+    },
+    {
+      "cycle": 9,
+      "retained_Geo_roots": 9,
+      "well_selection_listener_count": 9,
+      "listener_owner_classes": [
+        "WellDataManagerApp",
+        "WellDataManagerApp",
+        "WellDataManagerApp",
+        "WellDataManagerApp",
+        "WellDataManagerApp",
+        "WellDataManagerApp",
+        "WellDataManagerApp",
+        "WellDataManagerApp",
+        "WellDataManagerApp"
+      ]
+    },
+    {
+      "cycle": 10,
+      "retained_Geo_roots": 10,
+      "well_selection_listener_count": 10,
+      "listener_owner_classes": [
+        "WellDataManagerApp",
+        "WellDataManagerApp",
+        "WellDataManagerApp",
+        "WellDataManagerApp",
+        "WellDataManagerApp",
+        "WellDataManagerApp",
+        "WellDataManagerApp",
+        "WellDataManagerApp",
+        "WellDataManagerApp",
+        "WellDataManagerApp"
+      ]
+    }
+  ],
+  "after_external_listener_cleanup": {
+    "retained_roots": 10,
+    "collected": 0
+  },
+  "after_external_search_trace_cleanup": {
+    "retained_roots": 10,
+    "collected": 0
+  },
+  "original_shutdown_callback_not_used": true
+}

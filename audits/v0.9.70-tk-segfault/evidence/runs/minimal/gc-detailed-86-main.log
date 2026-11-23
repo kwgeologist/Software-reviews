@@ -1,0 +1,2 @@
+{"tk": 8.6, "mode": "main", "controlled_cycle": true, "automatic_gc_disabled": true, "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]", "extension": "/workspace/audit-v0.9.70-tk-segfault/tk86-extension/_tkinter.cpython-312-x86_64-linux-gnu.so", "Tcl_patch": "8.6.16", "Tk_patch": "8.6.16", "pending_after_destroy": [], "roots_in_gc": 1, "figures_in_gc": 0, "rss_max_KiB": 19884, "gc_count": [9, 11, 0]}
+completed

@@ -1,5 +1,13 @@
 # Software reviews
 
+## O&G Workbench v0.9.70 — Focused Tk segmentation-fault investigation
+
+Read-only audit of **1e0867f**. **Original SIGSEGV / exit139 remains unresolved.** Confirmed Geo/Petro ownership retention and orphaned Geo timers; separate controlled wrong-thread Tcl finalization failures on Tk 8.6 and Tk 9. Two 300-test serial GUI workloads completed without native crashes (Tk 9 has one Correlation assertion failure); 800 Cross Section lifecycle windows were exercised. No application changes.
+
+- [Download all required deliverables and evidence in one ZIP](https://github.com/kwgeologist/Software-reviews/raw/refs/heads/main/audits/v0.9.70-tk-segfault/OandG_Workbench_v0.9.70_Tk_Segfault_Audit_Bundle.zip)
+- [Read the PDF](audits/v0.9.70-tk-segfault/OandG_Workbench_v0.9.70_Tk_Segfault_Audit.pdf)
+- [Reports, findings, commands and native traces](audits/v0.9.70-tk-segfault/)
+
 ## O&G Workbench v0.9.70 — Full suite audit and consolidated persistence findings
 
 Read-only audit of **1e0867f** across the suite, incorporating the recent persistence investigation. **17 entries: 2 Critical, 8 High, 4 Medium, 1 Low and 2 Cleanup.** Full suite across all 287 test modules: **3,116 passed, 3 failed, 9 skipped, 1,165 passed subtests**, in four isolated processes.

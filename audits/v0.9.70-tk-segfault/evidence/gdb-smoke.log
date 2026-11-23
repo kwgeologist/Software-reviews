@@ -1,0 +1,10 @@
+
+warning: Loadable section ".dynstr" outside of ELF segments
+  in /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12
+warning: opening /proc/self/mem file failed: Read-only file system (30)
+warning: opening /proc/PID/mem file for lwp 426886.426886 failed: Read-only file system (30)
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+native-debugger-smoke
+[Inferior 1 (process 426886) exited normally]
+No stack.

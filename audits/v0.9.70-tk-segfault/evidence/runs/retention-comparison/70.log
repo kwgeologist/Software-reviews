@@ -1,0 +1,209 @@
+{
+  "checkout": "/workspace/audit-v0.9.70-integrity/checkout",
+  "cases": {
+    "fields": [
+      {
+        "cycle": 1,
+        "retained_roots": 0,
+        "retained_Fields": 0
+      },
+      {
+        "cycle": 2,
+        "retained_roots": 0,
+        "retained_Fields": 0
+      },
+      {
+        "cycle": 3,
+        "retained_roots": 0,
+        "retained_Fields": 0
+      },
+      {
+        "cycle": 4,
+        "retained_roots": 0,
+        "retained_Fields": 0
+      },
+      {
+        "cycle": 5,
+        "retained_roots": 0,
+        "retained_Fields": 0
+      },
+      {
+        "cycle": 6,
+        "retained_roots": 0,
+        "retained_Fields": 0
+      },
+      {
+        "cycle": 7,
+        "retained_roots": 0,
+        "retained_Fields": 0
+      },
+      {
+        "cycle": 8,
+        "retained_roots": 0,
+        "retained_Fields": 0
+      },
+      {
+        "cycle": 9,
+        "retained_roots": 0,
+        "retained_Fields": 0
+      },
+      {
+        "cycle": 10,
+        "retained_roots": 0,
+        "retained_Fields": 0
+      },
+      {
+        "cycle": 11,
+        "retained_roots": 0,
+        "retained_Fields": 0
+      },
+      {
+        "cycle": 12,
+        "retained_roots": 0,
+        "retained_Fields": 0
+      },
+      {
+        "cycle": 13,
+        "retained_roots": 0,
+        "retained_Fields": 0
+      },
+      {
+        "cycle": 14,
+        "retained_roots": 0,
+        "retained_Fields": 0
+      },
+      {
+        "cycle": 15,
+        "retained_roots": 0,
+        "retained_Fields": 0
+      },
+      {
+        "cycle": 16,
+        "retained_roots": 0,
+        "retained_Fields": 0
+      },
+      {
+        "cycle": 17,
+        "retained_roots": 0,
+        "retained_Fields": 0
+      },
+      {
+        "cycle": 18,
+        "retained_roots": 0,
+        "retained_Fields": 0
+      },
+      {
+        "cycle": 19,
+        "retained_roots": 0,
+        "retained_Fields": 0
+      },
+      {
+        "cycle": 20,
+        "retained_roots": 0,
+        "retained_Fields": 0
+      }
+    ],
+    "seismic": [
+      {
+        "cycle": 1,
+        "retained_roots": 0,
+        "retained_Fields": 0
+      },
+      {
+        "cycle": 2,
+        "retained_roots": 0,
+        "retained_Fields": 0
+      },
+      {
+        "cycle": 3,
+        "retained_roots": 0,
+        "retained_Fields": 0
+      },
+      {
+        "cycle": 4,
+        "retained_roots": 0,
+        "retained_Fields": 0
+      },
+      {
+        "cycle": 5,
+        "retained_roots": 0,
+        "retained_Fields": 0
+      },
+      {
+        "cycle": 6,
+        "retained_roots": 0,
+        "retained_Fields": 0
+      },
+      {
+        "cycle": 7,
+        "retained_roots": 0,
+        "retained_Fields": 0
+      },
+      {
+        "cycle": 8,
+        "retained_roots": 0,
+        "retained_Fields": 0
+      },
+      {
+        "cycle": 9,
+        "retained_roots": 0,
+        "retained_Fields": 0
+      },
+      {
+        "cycle": 10,
+        "retained_roots": 0,
+        "retained_Fields": 0
+      },
+      {
+        "cycle": 11,
+        "retained_roots": 0,
+        "retained_Fields": 0
+      },
+      {
+        "cycle": 12,
+        "retained_roots": 0,
+        "retained_Fields": 0
+      },
+      {
+        "cycle": 13,
+        "retained_roots": 0,
+        "retained_Fields": 0
+      },
+      {
+        "cycle": 14,
+        "retained_roots": 0,
+        "retained_Fields": 0
+      },
+      {
+        "cycle": 15,
+        "retained_roots": 0,
+        "retained_Fields": 0
+      },
+      {
+        "cycle": 16,
+        "retained_roots": 0,
+        "retained_Fields": 0
+      },
+      {
+        "cycle": 17,
+        "retained_roots": 0,
+        "retained_Fields": 0
+      },
+      {
+        "cycle": 18,
+        "retained_roots": 0,
+        "retained_Fields": 0
+      },
+      {
+        "cycle": 19,
+        "retained_roots": 0,
+        "retained_Fields": 0
+      },
+      {
+        "cycle": 20,
+        "retained_roots": 0,
+        "retained_Fields": 0
+      }
+    ]
+  }
+}

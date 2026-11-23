@@ -1,0 +1,21 @@
+{
+  "name": "A-86-1",
+  "Tk_requested": "86",
+  "command": [
+    "/workspace/audit-v0.9.56-windows/tooling/bin/python",
+    "-X",
+    "faulthandler",
+    "-m",
+    "pytest",
+    "-q",
+    "-p",
+    "no:cacheprovider",
+    "tests/test_xsection.py",
+    "--tb=short",
+    "-rs",
+    "--junitxml=/workspace/audit-v0.9.70-tk-segfault/runs/A-86-1/results.xml"
+  ],
+  "observer": false,
+  "native": false,
+  "start": 1795448625.0742006
+}

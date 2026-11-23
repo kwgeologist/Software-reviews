@@ -1,0 +1,28 @@
+{
+  "name": "D-9-after-correlation",
+  "Tk_requested": "9",
+  "command": [
+    "/workspace/audit-v0.9.56-windows/tooling/bin/python",
+    "-X",
+    "faulthandler",
+    "-m",
+    "pytest",
+    "-q",
+    "-p",
+    "no:cacheprovider",
+    "-p",
+    "tk_observer",
+    "tests/test_correlation.py",
+    "tests/test_xsection.py::PunchListWindowTests::test_settings_hold_from_one_session_to_the_next",
+    "tests/test_xsection.py::GeoCrossSectionTests::test_wells_chosen_on_the_map_open_a_section",
+    "--tb=short",
+    "-rs",
+    "--junitxml=/workspace/audit-v0.9.70-tk-segfault/runs/D-9-after-correlation/results.xml"
+  ],
+  "observer": true,
+  "native": false,
+  "start": 1795449023.129564,
+  "exit_code": 1,
+  "seconds": 64.3442931175232,
+  "parent_peak_RSS_KiB": 346256
+}

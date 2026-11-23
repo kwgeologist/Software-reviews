@@ -1,0 +1,21 @@
+................F...............................                         [100%]
+=================================== FAILURES ===================================
+____ CorrelationAppTests.test_correlation_box_over_digital_logs_never_pans _____
+tests/test_correlation.py:635: in test_correlation_box_over_digital_logs_never_pans
+    self.assertAlmostEqual(wide.width, end - (p.x0 + 0.3), places=6)
+E   AssertionError: 6.296937045548732 != 6.300000000000001 within 6 places (0.0030629544512690288 difference)
+----------------------------- Captured stderr call -----------------------------
+invalid command name "140409415753088idle_draw"
+    while executing
+"140409415753088idle_draw"
+    ("after" script)
+=============================== warnings summary ===============================
+../../../opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/anyio/pytest_plugin.py:14
+  /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/anyio/pytest_plugin.py:14: PytestRemovedIn10Warning: _pytest.python.CallSpec2 has been renamed to CallSpec.
+  The CallSpec2 alias will be removed in pytest 10.
+  Update imports to use CallSpec instead.
+  See https://docs.pytest.org/en/stable/deprecations.html#callspec2-renamed
+    from _pytest.python import CallSpec2
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+1 failed, 47 passed, 1 warning in 63.21s (0:01:03)
