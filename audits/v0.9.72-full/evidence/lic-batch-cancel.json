@@ -1,0 +1,23 @@
+{
+  "unlocked_cancel_at_2001": {
+    "files": 2327,
+    "planning_seconds": 0.12977603502804413,
+    "writing_seconds": 0.9279050990007818,
+    "cancelled_requested": true,
+    "begun": 2327,
+    "completed": 2327,
+    "added": 2327,
+    "not_processed_report": 0
+  },
+  "locked_cancel_at_2001": {
+    "busy_timeout_ms": 10,
+    "seconds": 4.3301414719899185,
+    "cancelled_requested": true,
+    "begun": 2327,
+    "completed": 2327,
+    "added": 2000,
+    "errors": 327,
+    "not_processed_report": 0,
+    "stored_rows": 2000
+  }
+}

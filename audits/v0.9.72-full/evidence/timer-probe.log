@@ -1,0 +1,18 @@
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+{
+  "pending_after_destroy": [
+    {
+      "job": "after#1",
+      "script": "139911166468416_poll_requests",
+      "type": "timer",
+      "script_command_exists": false
+    },
+    {
+      "job": "after#0",
+      "script": "139911168124096startup_project",
+      "type": "timer",
+      "script_command_exists": false
+    }
+  ]
+}

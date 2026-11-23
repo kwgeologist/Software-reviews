@@ -1,0 +1,15 @@
+{
+  "first_window": {
+    "first_production_month": "2020-01",
+    "expected_first3_oil": 400.0,
+    "observed_first3_oil": 300.0,
+    "cumulative_all_history": 300.0
+  },
+  "nonfinite_import": {
+    "report": "ProductionImportReport(rows=1, added=1, updated=0, skipped=0, replaced_wells=0, wells={1}, unmatched={}, ambiguous={}, short_matches={}, bad_months=[], problems=[])",
+    "problems": [],
+    "stored_oil": Infinity,
+    "cumulative_oil": Infinity,
+    "isfinite": false
+  }
+}

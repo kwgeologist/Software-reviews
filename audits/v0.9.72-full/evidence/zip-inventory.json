@@ -1,0 +1,5132 @@
+[
+  {
+    "name": "OandG_Workbench_v0.9.72/",
+    "bytes": 0,
+    "CRC": 0
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/.git-blame-ignore-revs",
+    "bytes": 124,
+    "CRC": 3067677042
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/.gitattributes",
+    "bytes": 265,
+    "CRC": 3440718875
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/.github/",
+    "bytes": 0,
+    "CRC": 0
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/.github/workflows/",
+    "bytes": 0,
+    "CRC": 0
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/.github/workflows/windows.yml",
+    "bytes": 3205,
+    "CRC": 1925698373
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/.gitignore",
+    "bytes": 620,
+    "CRC": 4241205291
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/Build_Windows_EXE.bat",
+    "bytes": 9042,
+    "CRC": 2949720411
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/CHANGELOG.md",
+    "bytes": 586553,
+    "CRC": 3226918217
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/CLAUDE.md",
+    "bytes": 479,
+    "CRC": 4038864056
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/CORE_POINTS_TEMPLATE.csv",
+    "bytes": 336,
+    "CRC": 235416635
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/GeoWorkbench_Initial_Load_Template.xlsx",
+    "bytes": 221320,
+    "CRC": 3329945356
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/README.md",
+    "bytes": 130712,
+    "CRC": 3360835590
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/Run_Geosteering_Workbench.bat",
+    "bytes": 817,
+    "CRC": 2856816906
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/Run_OandG_Workbench.bat",
+    "bytes": 787,
+    "CRC": 1477889284
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/app.py",
+    "bytes": 759,
+    "CRC": 327195808
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/branding/",
+    "bytes": 0,
+    "CRC": 0
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/branding/Logo.png",
+    "bytes": 807566,
+    "CRC": 713974208
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/branding/OandG_Workbench.ico",
+    "bytes": 160830,
+    "CRC": 3224590480
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/branding/PROVENANCE.json",
+    "bytes": 1485,
+    "CRC": 346729004
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/bulk_import.py",
+    "bytes": 39311,
+    "CRC": 2816733243
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/constraints-build.txt",
+    "bytes": 883,
+    "CRC": 2500777792
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/correlation_app.py",
+    "bytes": 694,
+    "CRC": 859105628
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/correlationworkbench/",
+    "bytes": 0,
+    "CRC": 0
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/correlationworkbench/__init__.py",
+    "bytes": 262,
+    "CRC": 1049869298
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/correlationworkbench/app.py",
+    "bytes": 76030,
+    "CRC": 551078496
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/correlationworkbench/colour_intervals.py",
+    "bytes": 581,
+    "CRC": 3573083245
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/correlationworkbench/dialogs.py",
+    "bytes": 64443,
+    "CRC": 1407347636
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/correlationworkbench/digital.py",
+    "bytes": 11464,
+    "CRC": 1775629238
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/correlationworkbench/model.py",
+    "bytes": 26894,
+    "CRC": 1733404364
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/correlationworkbench/panels.py",
+    "bytes": 15378,
+    "CRC": 3821549437
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/correlationworkbench/store.py",
+    "bytes": 19245,
+    "CRC": 1690901689
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/correlationworkbench/table.py",
+    "bytes": 74807,
+    "CRC": 2582009568
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/correlationworkbench/template_editor.py",
+    "bytes": 48287,
+    "CRC": 3849833406
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/data/",
+    "bytes": 0,
+    "CRC": 0
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/data/autoreg_digits.npz",
+    "bytes": 516039,
+    "CRC": 530246116
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/data/counties_2020.csv",
+    "bytes": 71917,
+    "CRC": 3406461816
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/data/states.csv",
+    "bytes": 1036,
+    "CRC": 4203357115
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/database.py",
+    "bytes": 278890,
+    "CRC": 1942718396
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/docs/",
+    "bytes": 0,
+    "CRC": 0
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/docs/AUDIT_REMEDIATION_v0.8.38.md",
+    "bytes": 9947,
+    "CRC": 4146725196
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/docs/KINGDOM_NATIVE_VALIDATION.md",
+    "bytes": 9342,
+    "CRC": 2713824961
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/docs/MAP_PERFORMANCE.md",
+    "bytes": 54520,
+    "CRC": 710674338
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/docs/NATIVE_IMPORTS.md",
+    "bytes": 10245,
+    "CRC": 2740845867
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/docs/REFACTORING_AUDIT.md",
+    "bytes": 7535,
+    "CRC": 468792880
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/docs/WINDOWS_BUILD.md",
+    "bytes": 5049,
+    "CRC": 2004271136
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/docs/v0.9.71/",
+    "bytes": 0,
+    "CRC": 0
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/docs/v0.9.71/OandG_Workbench_v0.9.71_Findings_Closure.csv",
+    "bytes": 5901,
+    "CRC": 2802216199
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/docs/v0.9.71/OandG_Workbench_v0.9.71_Project_Compatibility.md",
+    "bytes": 4667,
+    "CRC": 1132388957
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/docs/v0.9.71/OandG_Workbench_v0.9.71_Release_Checklist.md",
+    "bytes": 2788,
+    "CRC": 1391797891
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/docs/v0.9.71/OandG_Workbench_v0.9.71_Remediation_Report.md",
+    "bytes": 6144,
+    "CRC": 4029502427
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/docs/v0.9.71/OandG_Workbench_v0.9.71_Test_Results.md",
+    "bytes": 6141,
+    "CRC": 3304704315
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/docs/v0.9.72/",
+    "bytes": 0,
+    "CRC": 0
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/docs/v0.9.72/LIC_Import_Changes.md",
+    "bytes": 7774,
+    "CRC": 3107609553
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/docs/v0.9.72/LIC_Import_Test_Results.md",
+    "bytes": 6805,
+    "CRC": 3124534508
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/docs/v0.9.72/Release_Checklist.md",
+    "bytes": 3007,
+    "CRC": 765628939
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/docs/v0.9.72/TVD_Pay_Correction.md",
+    "bytes": 3265,
+    "CRC": 679008407
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/export_manager.py",
+    "bytes": 34676,
+    "CRC": 3067217764
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/geosteer_app.py",
+    "bytes": 949,
+    "CRC": 4266684333
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/geosteering/",
+    "bytes": 0,
+    "CRC": 0
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/geosteering/README.md",
+    "bytes": 23387,
+    "CRC": 3601845750
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/geosteering/__init__.py",
+    "bytes": 1149,
+    "CRC": 1332248625
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/geosteering/app.py",
+    "bytes": 132783,
+    "CRC": 1425773343
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/geosteering/demo.py",
+    "bytes": 6071,
+    "CRC": 3669108378
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/geosteering/dialogs.py",
+    "bytes": 100515,
+    "CRC": 1407004562
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/geosteering/drawing.py",
+    "bytes": 59736,
+    "CRC": 2525602196
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/geosteering/job.py",
+    "bytes": 49619,
+    "CRC": 4148256923
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/geosteering/model.py",
+    "bytes": 48773,
+    "CRC": 2127438388
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/geosteering/project.py",
+    "bytes": 37202,
+    "CRC": 3585623894
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/geosteering/report.py",
+    "bytes": 5507,
+    "CRC": 2989575576
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/geosteering/wells.py",
+    "bytes": 24588,
+    "CRC": 315886376
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/geoworkbench/",
+    "bytes": 0,
+    "CRC": 0
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/geoworkbench/__init__.py",
+    "bytes": 181,
+    "CRC": 1240685074
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/geoworkbench/common.py",
+    "bytes": 5881,
+    "CRC": 3086421751
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/geoworkbench/core_tab.py",
+    "bytes": 21014,
+    "CRC": 1611121753
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/geoworkbench/crs.py",
+    "bytes": 18233,
+    "CRC": 1324085345
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/geoworkbench/faults_tab.py",
+    "bytes": 10962,
+    "CRC": 3703742770
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/geoworkbench/formation_tab.py",
+    "bytes": 8190,
+    "CRC": 302180830
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/geoworkbench/import_dialogs.py",
+    "bytes": 34420,
+    "CRC": 2216444240
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/geoworkbench/interpretation_dialogs.py",
+    "bytes": 25954,
+    "CRC": 2026015150
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/geoworkbench/las_loader.py",
+    "bytes": 13358,
+    "CRC": 2131035030
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/geoworkbench/las_tab.py",
+    "bytes": 17466,
+    "CRC": 3954067542
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/geoworkbench/location.py",
+    "bytes": 25730,
+    "CRC": 453062707
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/geoworkbench/main_window.py",
+    "bytes": 130970,
+    "CRC": 2547336551
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/geoworkbench/production_tab.py",
+    "bytes": 24709,
+    "CRC": 1583785209
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/geoworkbench/raster_tab.py",
+    "bytes": 18598,
+    "CRC": 1125591769
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/geoworkbench/spreadsheet.py",
+    "bytes": 54708,
+    "CRC": 515911349
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/geoworkbench/survey_bulk_dialog.py",
+    "bytes": 16860,
+    "CRC": 3641567497
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/geoworkbench/symbol_catalog_dialog.py",
+    "bytes": 23926,
+    "CRC": 3120123569
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/geoworkbench/symbol_picker.py",
+    "bytes": 5476,
+    "CRC": 4175220369
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/geoworkbench/tables.py",
+    "bytes": 23500,
+    "CRC": 2792362084
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/geoworkbench/tests_tab.py",
+    "bytes": 38595,
+    "CRC": 3335598772
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/geoworkbench/time_depth_tab.py",
+    "bytes": 13639,
+    "CRC": 1740047588
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/geoworkbench/treatments_tab.py",
+    "bytes": 4377,
+    "CRC": 2949277500
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/geoworkbench/well_tab.py",
+    "bytes": 17404,
+    "CRC": 4264936266
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/geoworkbench/zones_tab.py",
+    "bytes": 18895,
+    "CRC": 680577906
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/installer/",
+    "bytes": 0,
+    "CRC": 0
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/installer/OandG_Workbench.iss",
+    "bytes": 3651,
+    "CRC": 3072530631
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/license_manager/",
+    "bytes": 0,
+    "CRC": 0
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/license_manager/README.md",
+    "bytes": 8359,
+    "CRC": 879647439
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/license_manager/__init__.py",
+    "bytes": 278,
+    "CRC": 3308492824
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/license_manager/__main__.py",
+    "bytes": 6367,
+    "CRC": 1027989051
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/license_manager/gui.py",
+    "bytes": 26354,
+    "CRC": 136053825
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/license_manager/issuer.py",
+    "bytes": 17837,
+    "CRC": 1491193468
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/license_manager/self_test.py",
+    "bytes": 5166,
+    "CRC": 746555079
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/mapped_import.py",
+    "bytes": 58803,
+    "CRC": 1629915164
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/",
+    "bytes": 0,
+    "CRC": 0
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/__init__.py",
+    "bytes": 2687,
+    "CRC": 4065427676
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/api.py",
+    "bytes": 6845,
+    "CRC": 3765909618
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/assistant/",
+    "bytes": 0,
+    "CRC": 0
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/assistant/__init__.py",
+    "bytes": 1657,
+    "CRC": 1908265317
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/assistant/catalog.py",
+    "bytes": 10631,
+    "CRC": 972816333
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/assistant/context.py",
+    "bytes": 4374,
+    "CRC": 245445196
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/assistant/credentials.py",
+    "bytes": 3116,
+    "CRC": 657255623
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/assistant/engine.py",
+    "bytes": 10680,
+    "CRC": 1044215668
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/assistant/provider.py",
+    "bytes": 4762,
+    "CRC": 1763787469
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/assistant/validate.py",
+    "bytes": 3721,
+    "CRC": 1856108
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/assistant_ui.py",
+    "bytes": 16071,
+    "CRC": 220847400
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/attribute_index.py",
+    "bytes": 16843,
+    "CRC": 3927044594
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/autoreg/",
+    "bytes": 0,
+    "CRC": 0
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/autoreg/__init__.py",
+    "bytes": 1293,
+    "CRC": 2754423411
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/autoreg/__main__.py",
+    "bytes": 1894,
+    "CRC": 1574519077
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/autoreg/diagnostics.py",
+    "bytes": 10805,
+    "CRC": 2146287935
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/autoreg/digits.py",
+    "bytes": 3125,
+    "CRC": 2140418217
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/autoreg/engine.py",
+    "bytes": 41162,
+    "CRC": 3359287550
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/autoreg/lines.py",
+    "bytes": 52157,
+    "CRC": 4240752239
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/autoreg/model.py",
+    "bytes": 9658,
+    "CRC": 2092834057
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/autoreg/ocr.py",
+    "bytes": 24178,
+    "CRC": 1363626620
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/autoreg/progression.py",
+    "bytes": 21892,
+    "CRC": 2856358910
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/autoreg/sections.py",
+    "bytes": 26466,
+    "CRC": 1546509981
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/autoreg/source.py",
+    "bytes": 2354,
+    "CRC": 3885783836
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/autotrace.py",
+    "bytes": 38596,
+    "CRC": 3355198302
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/background.py",
+    "bytes": 8664,
+    "CRC": 2389744577
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/batch_curves.py",
+    "bytes": 16403,
+    "CRC": 3261413661
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/batch_ui.py",
+    "bytes": 73010,
+    "CRC": 83726998
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/batch_zones.py",
+    "bytes": 55804,
+    "CRC": 1884292700
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/bhl_repair.py",
+    "bytes": 7422,
+    "CRC": 1635321669
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/binlisting.py",
+    "bytes": 12112,
+    "CRC": 368971037
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/branding.py",
+    "bytes": 2784,
+    "CRC": 850938717
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/cache.py",
+    "bytes": 8687,
+    "CRC": 3420857440
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/cancel.py",
+    "bytes": 953,
+    "CRC": 1356182784
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/cell_editor.py",
+    "bytes": 7766,
+    "CRC": 3566803267
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/cfb.py",
+    "bytes": 7167,
+    "CRC": 2091248712
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/color_bar_files.py",
+    "bytes": 4155,
+    "CRC": 3505285170
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/colour_bars.py",
+    "bytes": 26926,
+    "CRC": 4246423741
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/colour_intervals.py",
+    "bytes": 23304,
+    "CRC": 1347518968
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/core_data.py",
+    "bytes": 10801,
+    "CRC": 2863367182
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/core_equations.py",
+    "bytes": 3808,
+    "CRC": 3536247872
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/core_series.py",
+    "bytes": 5408,
+    "CRC": 3035012478
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/curve_aliases.py",
+    "bytes": 9060,
+    "CRC": 1286687057
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/curve_aliases_ui.py",
+    "bytes": 11376,
+    "CRC": 3865182440
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/curve_calc.py",
+    "bytes": 8740,
+    "CRC": 1846976487
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/curve_grids.py",
+    "bytes": 4988,
+    "CRC": 1809729673
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/curve_store.py",
+    "bytes": 30040,
+    "CRC": 2778012201
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/curve_values.py",
+    "bytes": 7292,
+    "CRC": 2130425673
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/curves.py",
+    "bytes": 7475,
+    "CRC": 2125409141
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/depth.py",
+    "bytes": 16200,
+    "CRC": 2725786899
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/digitize.py",
+    "bytes": 66704,
+    "CRC": 1579400730
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/errorlog.py",
+    "bytes": 3037,
+    "CRC": 331940474
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/existing_wells.py",
+    "bytes": 1481,
+    "CRC": 1451262114
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/filedrop.py",
+    "bytes": 3978,
+    "CRC": 3527567718
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/flowbar.py",
+    "bytes": 4415,
+    "CRC": 2739219434
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/formulas.py",
+    "bytes": 10341,
+    "CRC": 4095016208
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/gridders.py",
+    "bytes": 25557,
+    "CRC": 4277407857
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/gridding.py",
+    "bytes": 14242,
+    "CRC": 2734078680
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/handoff.py",
+    "bytes": 11953,
+    "CRC": 993165349
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/help/",
+    "bytes": 0,
+    "CRC": 0
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/help/catalog.json",
+    "bytes": 75397,
+    "CRC": 1232628120
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/help/ui_labels.json",
+    "bytes": 18333,
+    "CRC": 647580724
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/help/workflows/",
+    "bytes": 0,
+    "CRC": 0
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/help/workflows/correlation.depth_window.md",
+    "bytes": 279,
+    "CRC": 954683042
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/help/workflows/correlation.flatten.md",
+    "bytes": 223,
+    "CRC": 2303541400
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/help/workflows/correlation.layout.md",
+    "bytes": 204,
+    "CRC": 1204234430
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/help/workflows/correlation.pick.md",
+    "bytes": 322,
+    "CRC": 1314102236
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/help/workflows/correlation.wells.md",
+    "bytes": 307,
+    "CRC": 3200401399
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/help/workflows/geo.import.ihs.md",
+    "bytes": 364,
+    "CRC": 2246387177
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/help/workflows/geo.import.ppf.md",
+    "bytes": 800,
+    "CRC": 807847201
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/help/workflows/geo.import.wells_csv.md",
+    "bytes": 641,
+    "CRC": 391067139
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/help/workflows/geo.project.create_open.md",
+    "bytes": 586,
+    "CRC": 1729045935
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/help/workflows/geo.tops.global_manager.md",
+    "bytes": 632,
+    "CRC": 1658177689
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/help/workflows/geosteering.interpret.md",
+    "bytes": 382,
+    "CRC": 224433791
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/help/workflows/geosteering.job.md",
+    "bytes": 282,
+    "CRC": 670884329
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/help/workflows/geosteering.prognosis.md",
+    "bytes": 222,
+    "CRC": 3389497355
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/help/workflows/geosteering.reload.md",
+    "bytes": 373,
+    "CRC": 869463391
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/help/workflows/geosteering.wells.md",
+    "bytes": 261,
+    "CRC": 3105287441
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/help/workflows/map.bubble.md",
+    "bytes": 543,
+    "CRC": 2668527580
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/help/workflows/map.colorbar.edit.md",
+    "bytes": 523,
+    "CRC": 3063781064
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/help/workflows/map.colorbar.generate.md",
+    "bytes": 659,
+    "CRC": 1953980817
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/help/workflows/map.coverage.md",
+    "bytes": 314,
+    "CRC": 31004527
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/help/workflows/map.digitize.active_layer.md",
+    "bytes": 673,
+    "CRC": 2181317791
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/help/workflows/map.grid.contours.md",
+    "bytes": 541,
+    "CRC": 299531489
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/help/workflows/map.grid.display.md",
+    "bytes": 843,
+    "CRC": 1324157224
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/help/workflows/map.grid.export.md",
+    "bytes": 462,
+    "CRC": 2183843153
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/help/workflows/map.grid.import.md",
+    "bytes": 440,
+    "CRC": 2517813407
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/help/workflows/map.grid.new.md",
+    "bytes": 397,
+    "CRC": 2387997190
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/help/workflows/map.isopach.md",
+    "bytes": 553,
+    "CRC": 2043895994
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/help/workflows/map.shapefile.add.md",
+    "bytes": 580,
+    "CRC": 2198007865
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/help/workflows/map.shapefile.append.md",
+    "bytes": 737,
+    "CRC": 16862521
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/help/workflows/petro.add_wells.md",
+    "bytes": 263,
+    "CRC": 830073155
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/help/workflows/petro.common_depth.md",
+    "bytes": 610,
+    "CRC": 3018699636
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/help/workflows/petro.core.md",
+    "bytes": 288,
+    "CRC": 1268897620
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/help/workflows/petro.crossplot.md",
+    "bytes": 307,
+    "CRC": 463690081
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/help/workflows/petro.curve_editor.md",
+    "bytes": 277,
+    "CRC": 396868215
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/help/workflows/petro.load_las.md",
+    "bytes": 315,
+    "CRC": 3575099240
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/help/workflows/petro.payflags.md",
+    "bytes": 477,
+    "CRC": 1208869674
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/help/workflows/petro.sw.md",
+    "bytes": 580,
+    "CRC": 219122650
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/help/workflows/petro.tracks.md",
+    "bytes": 338,
+    "CRC": 3522924917
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/help/workflows/petro.vsh.md",
+    "bytes": 378,
+    "CRC": 644639365
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/help/workflows/raster.digitize.md",
+    "bytes": 476,
+    "CRC": 2665347287
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/help/workflows/raster.import.md",
+    "bytes": 267,
+    "CRC": 369068334
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/help/workflows/raster.register.md",
+    "bytes": 509,
+    "CRC": 2634765233
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/help/workflows/raster.repair.md",
+    "bytes": 441,
+    "CRC": 2997321791
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/help/workflows/seismic.attributes.md",
+    "bytes": 158,
+    "CRC": 2154064474
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/help/workflows/seismic.horizon_grid.md",
+    "bytes": 340,
+    "CRC": 2839712565
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/help/workflows/seismic.load_2d.md",
+    "bytes": 268,
+    "CRC": 4072843886
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/help/workflows/seismic.load_3d.md",
+    "bytes": 300,
+    "CRC": 2949886309
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/help/workflows/seismic.mistie.md",
+    "bytes": 237,
+    "CRC": 753775529
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/help/workflows/seismic.pick_fault.md",
+    "bytes": 288,
+    "CRC": 1069541800
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/help/workflows/seismic.pick_horizon.md",
+    "bytes": 460,
+    "CRC": 3477875251
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/help/workflows/seismic.picks_io.md",
+    "bytes": 386,
+    "CRC": 1147448396
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/help/workflows/seismic.ties.md",
+    "bytes": 516,
+    "CRC": 4282274514
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/help/workflows/seismic.time_depth.md",
+    "bytes": 242,
+    "CRC": 721228485
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/help/workflows/wm.directional.md",
+    "bytes": 315,
+    "CRC": 3555214654
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/help/workflows/wm.edit_well.md",
+    "bytes": 261,
+    "CRC": 385131938
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/help/workflows/wm.production.md",
+    "bytes": 409,
+    "CRC": 4153026768
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/help/workflows/wm.spreadsheet.md",
+    "bytes": 345,
+    "CRC": 3158050737
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/help/workflows/wm.symbols.md",
+    "bytes": 201,
+    "CRC": 2622149857
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/help/workflows/wm.tests.md",
+    "bytes": 310,
+    "CRC": 1308532503
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/help/workflows/wm.tops.md",
+    "bytes": 623,
+    "CRC": 1838532317
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/help/workflows/wm.treatments.md",
+    "bytes": 589,
+    "CRC": 3714911921
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/help/workflows/xs.create.md",
+    "bytes": 318,
+    "CRC": 618664770
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/help/workflows/xs.hang.md",
+    "bytes": 230,
+    "CRC": 2018422317
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/help/workflows/xs.logs.md",
+    "bytes": 301,
+    "CRC": 3584241061
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/help/workflows/xs.save.md",
+    "bytes": 251,
+    "CRC": 2497724566
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons.py",
+    "bytes": 12864,
+    "CRC": 3365930380
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/",
+    "bytes": 0,
+    "CRC": 0
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/add.png",
+    "bytes": 6672,
+    "CRC": 3213988668
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/add_curve.png",
+    "bytes": 9630,
+    "CRC": 2402656268
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/anti_collision.png",
+    "bytes": 7778,
+    "CRC": 1287471368
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/app/",
+    "bytes": 0,
+    "CRC": 0
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/app/app_128.png",
+    "bytes": 32762,
+    "CRC": 2760846330
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/app/app_16.png",
+    "bytes": 962,
+    "CRC": 169654323
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/app/app_20.png",
+    "bytes": 1266,
+    "CRC": 3233245574
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/app/app_24.png",
+    "bytes": 1679,
+    "CRC": 1430345155
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/app/app_256.png",
+    "bytes": 99278,
+    "CRC": 1438396343
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/app/app_32.png",
+    "bytes": 2828,
+    "CRC": 765451046
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/app/app_40.png",
+    "bytes": 4089,
+    "CRC": 2625214513
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/app/app_48.png",
+    "bytes": 5823,
+    "CRC": 180303090
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/app/app_64.png",
+    "bytes": 9881,
+    "CRC": 914065914
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/area.png",
+    "bytes": 9408,
+    "CRC": 1292156632
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/attribute_map.png",
+    "bytes": 9182,
+    "CRC": 2072515818
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/auto_pick.png",
+    "bytes": 5421,
+    "CRC": 834830533
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/auto_pick@28.png",
+    "bytes": 1637,
+    "CRC": 561803944
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/auto_register.png",
+    "bytes": 7416,
+    "CRC": 560369599
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/borehole_blocks.png",
+    "bytes": 4341,
+    "CRC": 122809404
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/break.png",
+    "bytes": 9018,
+    "CRC": 1890438052
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/bubble_map.png",
+    "bytes": 9433,
+    "CRC": 825505942
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/calculate.png",
+    "bytes": 7448,
+    "CRC": 3102972549
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/cancel.png",
+    "bytes": 9089,
+    "CRC": 3386663810
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/clear_edges.png",
+    "bytes": 7675,
+    "CRC": 2395284924
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/close.png",
+    "bytes": 8509,
+    "CRC": 1785698242
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/color_bar.png",
+    "bytes": 4182,
+    "CRC": 4148283821
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/contours.png",
+    "bytes": 11018,
+    "CRC": 1630148941
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/copy.png",
+    "bytes": 8886,
+    "CRC": 2032128728
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/correlate.png",
+    "bytes": 9380,
+    "CRC": 1436272277
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/cross_section.png",
+    "bytes": 7590,
+    "CRC": 1637575346
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/cross_section_well.png",
+    "bytes": 8357,
+    "CRC": 972767633
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/crossline.png",
+    "bytes": 10358,
+    "CRC": 3503340773
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/crossplot.png",
+    "bytes": 6970,
+    "CRC": 656859562
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/curve_properties.png",
+    "bytes": 10285,
+    "CRC": 592047450
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/curves.png",
+    "bytes": 8852,
+    "CRC": 1937181881
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/delete.png",
+    "bytes": 7698,
+    "CRC": 827720679
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/density.png",
+    "bytes": 4866,
+    "CRC": 142833068
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/depth_scale.png",
+    "bytes": 8760,
+    "CRC": 3171945412
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/digitizing.png",
+    "bytes": 3885,
+    "CRC": 1836581719
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/display.png",
+    "bytes": 5887,
+    "CRC": 2653751049
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/done.png",
+    "bytes": 5707,
+    "CRC": 211107023
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/edit.png",
+    "bytes": 9062,
+    "CRC": 389338722
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/edit_curve.png",
+    "bytes": 4369,
+    "CRC": 2961283065
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/export.png",
+    "bytes": 9641,
+    "CRC": 2872640217
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/export_image.png",
+    "bytes": 8507,
+    "CRC": 650768182
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/extract.png",
+    "bytes": 9230,
+    "CRC": 2941815590
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/faults.png",
+    "bytes": 7204,
+    "CRC": 3295355627
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/fill_color.png",
+    "bytes": 10582,
+    "CRC": 139045749
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/find.png",
+    "bytes": 9575,
+    "CRC": 915862006
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/fit_segment.png",
+    "bytes": 2608,
+    "CRC": 1338618255
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/fit_segment@26.png",
+    "bytes": 811,
+    "CRC": 911139017
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/fit_width.png",
+    "bytes": 4280,
+    "CRC": 342628032
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/full_extent.png",
+    "bytes": 8348,
+    "CRC": 901833097
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/geotargets.png",
+    "bytes": 8229,
+    "CRC": 1176208171
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/gr.png",
+    "bytes": 6564,
+    "CRC": 2140178867
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/gr_steering.png",
+    "bytes": 11670,
+    "CRC": 76370015
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/help.png",
+    "bytes": 9614,
+    "CRC": 2498045762
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/hidden.png",
+    "bytes": 5085,
+    "CRC": 3646847811
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/histogram.png",
+    "bytes": 5550,
+    "CRC": 2615986743
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/histogram_2.png",
+    "bytes": 5422,
+    "CRC": 3587848478
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/horizons_tops.png",
+    "bytes": 8403,
+    "CRC": 1559861150
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/import.png",
+    "bytes": 10185,
+    "CRC": 326618067
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/inline.png",
+    "bytes": 10238,
+    "CRC": 738217082
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/interpreted_lateral.png",
+    "bytes": 6047,
+    "CRC": 1416055515
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/job.png",
+    "bytes": 3703,
+    "CRC": 2047876284
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/join.png",
+    "bytes": 7920,
+    "CRC": 1060270464
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/last_node.png",
+    "bytes": 8695,
+    "CRC": 1464560420
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/lateral_plan.png",
+    "bytes": 6313,
+    "CRC": 548733731
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/map.png",
+    "bytes": 10132,
+    "CRC": 273781270
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/map_pin.png",
+    "bytes": 8312,
+    "CRC": 3502120332
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/measure.png",
+    "bytes": 9350,
+    "CRC": 4072345034
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/move_down.png",
+    "bytes": 7219,
+    "CRC": 1674215577
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/move_up.png",
+    "bytes": 7090,
+    "CRC": 662552099
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/neutron.png",
+    "bytes": 5188,
+    "CRC": 814488796
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/new.png",
+    "bytes": 6488,
+    "CRC": 1188139775
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/open.png",
+    "bytes": 6318,
+    "CRC": 2564436941
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/options.png",
+    "bytes": 10311,
+    "CRC": 382356607
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/overlays.png",
+    "bytes": 9247,
+    "CRC": 1824843649
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/pan.png",
+    "bytes": 6926,
+    "CRC": 1942024609
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/paste.png",
+    "bytes": 7626,
+    "CRC": 1416366013
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/point.png",
+    "bytes": 5151,
+    "CRC": 2571458895
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/points.png",
+    "bytes": 3178,
+    "CRC": 1879007059
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/porosity.png",
+    "bytes": 6056,
+    "CRC": 2118701356
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/predrill_prognosis.png",
+    "bytes": 8778,
+    "CRC": 852041558
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/predrill_tops.png",
+    "bytes": 9360,
+    "CRC": 410235737
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/previous_view.png",
+    "bytes": 8340,
+    "CRC": 1268601219
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/print.png",
+    "bytes": 8243,
+    "CRC": 8678303
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/project.png",
+    "bytes": 9318,
+    "CRC": 2329417626
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/real_time.png",
+    "bytes": 9698,
+    "CRC": 2356415340
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/redo.png",
+    "bytes": 7463,
+    "CRC": 3953695704
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/refresh.png",
+    "bytes": 9769,
+    "CRC": 607800126
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/remove_curve.png",
+    "bytes": 10182,
+    "CRC": 138676866
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/report.png",
+    "bytes": 7471,
+    "CRC": 3745961632
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/resistivity.png",
+    "bytes": 4388,
+    "CRC": 1812577411
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/save.png",
+    "bytes": 7743,
+    "CRC": 1909144670
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/save_as.png",
+    "bytes": 8763,
+    "CRC": 2021254794
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/save_curve.png",
+    "bytes": 7138,
+    "CRC": 11065504
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/scale_bar.png",
+    "bytes": 3741,
+    "CRC": 3344108817
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/seismic.png",
+    "bytes": 10529,
+    "CRC": 1381825340
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/select.png",
+    "bytes": 6376,
+    "CRC": 2003055104
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/select_check.png",
+    "bytes": 8810,
+    "CRC": 788540431
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/set_left.png",
+    "bytes": 4822,
+    "CRC": 3926080494
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/set_right.png",
+    "bytes": 5868,
+    "CRC": 72780403
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/settings.png",
+    "bytes": 10274,
+    "CRC": 1360099847
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/show_hide.png",
+    "bytes": 6067,
+    "CRC": 3848621461
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/slice.png",
+    "bytes": 8520,
+    "CRC": 312181636
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/slip_box.png",
+    "bytes": 2327,
+    "CRC": 1885273411
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/slip_box@26.png",
+    "bytes": 1072,
+    "CRC": 3846016814
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/start.png",
+    "bytes": 4620,
+    "CRC": 1930183410
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/steering_targets.png",
+    "bytes": 8720,
+    "CRC": 729819967
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/surveys.png",
+    "bytes": 6446,
+    "CRC": 1493399941
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/sw.png",
+    "bytes": 7294,
+    "CRC": 3828792908
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/table.png",
+    "bytes": 8555,
+    "CRC": 3683515100
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/target_zones.png",
+    "bytes": 9832,
+    "CRC": 3191909824
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/tgas.png",
+    "bytes": 5242,
+    "CRC": 484390979
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/trace.png",
+    "bytes": 2900,
+    "CRC": 51334727
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/track_settings.png",
+    "bytes": 9227,
+    "CRC": 1282719348
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/tracks.png",
+    "bytes": 9793,
+    "CRC": 250152944
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/trajectory.png",
+    "bytes": 9231,
+    "CRC": 3204013222
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/type_well.png",
+    "bytes": 4354,
+    "CRC": 247696560
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/undo.png",
+    "bytes": 8398,
+    "CRC": 4146669646
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/vertical_section.png",
+    "bytes": 8853,
+    "CRC": 3851623775
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/view_3d.png",
+    "bytes": 6126,
+    "CRC": 1140997319
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/volumetrics.png",
+    "bytes": 6537,
+    "CRC": 2039995816
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/vsh.png",
+    "bytes": 6973,
+    "CRC": 818923096
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/well_selection.png",
+    "bytes": 8405,
+    "CRC": 2219459090
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/well_settings.png",
+    "bytes": 9998,
+    "CRC": 3785081116
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/well_templates.png",
+    "bytes": 8923,
+    "CRC": 3608120811
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/wells.png",
+    "bytes": 7644,
+    "CRC": 3851878033
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/zoom_in.png",
+    "bytes": 10739,
+    "CRC": 1382405133
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/icons/zoom_out.png",
+    "bytes": 10345,
+    "CRC": 1273755538
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/ihs297.py",
+    "bytes": 48484,
+    "CRC": 357673367
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/ihs298.py",
+    "bytes": 25959,
+    "CRC": 1650465174
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/import_preview.py",
+    "bytes": 8491,
+    "CRC": 3036322915
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/import_targets.py",
+    "bytes": 12186,
+    "CRC": 1820738389
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/interp_integrity.py",
+    "bytes": 4493,
+    "CRC": 1591034916
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/las.py",
+    "bytes": 18399,
+    "CRC": 1296502516
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/license_gate.py",
+    "bytes": 9434,
+    "CRC": 3569009718
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/license_runtime.py",
+    "bytes": 13046,
+    "CRC": 369301908
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/licensing.py",
+    "bytes": 42875,
+    "CRC": 3524944538
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/licensing_keys.py",
+    "bytes": 1410,
+    "CRC": 4231539702
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/lru.py",
+    "bytes": 4291,
+    "CRC": 3030950475
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/mincurv.py",
+    "bytes": 19895,
+    "CRC": 3143038441
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/multimineral.py",
+    "bytes": 30754,
+    "CRC": 4105195178
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/multivariate.py",
+    "bytes": 8139,
+    "CRC": 3443471123
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/pay.py",
+    "bytes": 15686,
+    "CRC": 1710005203
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/pay_sets.py",
+    "bytes": 29240,
+    "CRC": 3812609570
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/pay_ui.py",
+    "bytes": 35457,
+    "CRC": 3433908614
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/petra_grid.py",
+    "bytes": 11549,
+    "CRC": 2615860604
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/petra_ppf.py",
+    "bytes": 72628,
+    "CRC": 77881192
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/plss.py",
+    "bytes": 8055,
+    "CRC": 404060590
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/production.py",
+    "bytes": 40317,
+    "CRC": 2100360642
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/project.py",
+    "bytes": 27739,
+    "CRC": 3423421279
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/project_ui.py",
+    "bytes": 9709,
+    "CRC": 3539836751
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/raster.py",
+    "bytes": 52018,
+    "CRC": 1612361500
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/recovery.py",
+    "bytes": 27334,
+    "CRC": 1420816222
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/recovery_ui.py",
+    "bytes": 8576,
+    "CRC": 1415543144
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/repositories.py",
+    "bytes": 19177,
+    "CRC": 1480956888
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/repository_ui.py",
+    "bytes": 22871,
+    "CRC": 3737857832
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/resample.py",
+    "bytes": 7924,
+    "CRC": 369738640
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/safeio.py",
+    "bytes": 11598,
+    "CRC": 3135142461
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/scrollframe.py",
+    "bytes": 15953,
+    "CRC": 3477130283
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/seg_p1.py",
+    "bytes": 42154,
+    "CRC": 4085412702
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/segy.py",
+    "bytes": 43899,
+    "CRC": 3655811976
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/segy2d.py",
+    "bytes": 8069,
+    "CRC": 3834127071
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/seis_ties.py",
+    "bytes": 22295,
+    "CRC": 150424920
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/seismic_attributes.py",
+    "bytes": 22307,
+    "CRC": 1754064300
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/sheet.py",
+    "bytes": 21832,
+    "CRC": 3032162358
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/slider.py",
+    "bytes": 3143,
+    "CRC": 1426913625
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/smoothing.py",
+    "bytes": 7070,
+    "CRC": 4110717422
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/sources_ui.py",
+    "bytes": 12810,
+    "CRC": 871889771
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/startup_timing.py",
+    "bytes": 4405,
+    "CRC": 2924654832
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/surface.py",
+    "bytes": 49717,
+    "CRC": 833903640
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/survey_bulk.py",
+    "bytes": 15962,
+    "CRC": 3686252699
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/survey_files.py",
+    "bytes": 14031,
+    "CRC": 3955093023
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/symbol_catalog.py",
+    "bytes": 21229,
+    "CRC": 3727425998
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/sync_safety.py",
+    "bytes": 18039,
+    "CRC": 29428427
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/synthetic.py",
+    "bytes": 11639,
+    "CRC": 3023709990
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/task_progress.py",
+    "bytes": 18002,
+    "CRC": 2658389441
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/text_style.py",
+    "bytes": 16887,
+    "CRC": 3501677454
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/theme.py",
+    "bytes": 9179,
+    "CRC": 909062666
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/toggle.py",
+    "bytes": 1760,
+    "CRC": 2289238459
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/tooltip.py",
+    "bytes": 1868,
+    "CRC": 2994183777
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/top_labels.py",
+    "bytes": 4058,
+    "CRC": 1755001776
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/units.py",
+    "bytes": 3419,
+    "CRC": 1741665707
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/unsaved.py",
+    "bytes": 3513,
+    "CRC": 2783053020
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/userdata.py",
+    "bytes": 5699,
+    "CRC": 1057511717
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/velocity_model.py",
+    "bytes": 38504,
+    "CRC": 3751118857
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/water.py",
+    "bytes": 3344,
+    "CRC": 3164297859
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/well_fields.py",
+    "bytes": 1099,
+    "CRC": 2153929247
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/well_filter_ui.py",
+    "bytes": 6238,
+    "CRC": 634506174
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/well_geometry.py",
+    "bytes": 21827,
+    "CRC": 2435369336
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/well_list_builder.py",
+    "bytes": 75471,
+    "CRC": 873329678
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/well_list_files.py",
+    "bytes": 8900,
+    "CRC": 958235855
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/well_names.py",
+    "bytes": 1929,
+    "CRC": 2206328116
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/well_query.py",
+    "bytes": 47379,
+    "CRC": 4184102984
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/well_selection.py",
+    "bytes": 17427,
+    "CRC": 3491918531
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/well_tests.py",
+    "bytes": 40941,
+    "CRC": 3346136660
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/xyz.py",
+    "bytes": 15226,
+    "CRC": 1583389594
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogcore/zone_destination.py",
+    "bytes": 16489,
+    "CRC": 2964103592
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogmap/",
+    "bytes": 0,
+    "CRC": 0
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogmap/__init__.py",
+    "bytes": 223,
+    "CRC": 3682890360
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogmap/bubble_dialog.py",
+    "bytes": 49062,
+    "CRC": 2573863742
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogmap/bubbles.py",
+    "bytes": 25309,
+    "CRC": 1809434988
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogmap/changes.py",
+    "bytes": 4714,
+    "CRC": 710013474
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogmap/color_scale.py",
+    "bytes": 21679,
+    "CRC": 2750196868
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogmap/colorbar_editor.py",
+    "bytes": 35507,
+    "CRC": 2216027325
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogmap/contour_dialog.py",
+    "bytes": 16987,
+    "CRC": 3182313314
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogmap/contours.py",
+    "bytes": 8154,
+    "CRC": 1198466475
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogmap/control_point_dialog.py",
+    "bytes": 15251,
+    "CRC": 2147735041
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogmap/control_points.py",
+    "bytes": 17027,
+    "CRC": 890341898
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogmap/coverage.py",
+    "bytes": 16698,
+    "CRC": 2521325391
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogmap/culture.py",
+    "bytes": 37864,
+    "CRC": 2624723799
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogmap/cursors.py",
+    "bytes": 7926,
+    "CRC": 1718241297
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogmap/datastore.py",
+    "bytes": 28770,
+    "CRC": 1646090289
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogmap/digitized.py",
+    "bytes": 8405,
+    "CRC": 4270376919
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogmap/drawing_tab.py",
+    "bytes": 66890,
+    "CRC": 286977456
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogmap/drawings.py",
+    "bytes": 15108,
+    "CRC": 3167859538
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogmap/georef.py",
+    "bytes": 19556,
+    "CRC": 3625460917
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogmap/georef_dialog.py",
+    "bytes": 18127,
+    "CRC": 2423976860
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogmap/grid_dialogs.py",
+    "bytes": 63934,
+    "CRC": 1137732780
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogmap/grids.py",
+    "bytes": 49585,
+    "CRC": 463449775
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogmap/isopach.py",
+    "bytes": 24599,
+    "CRC": 2007089418
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogmap/isopach_dialog.py",
+    "bytes": 18648,
+    "CRC": 1451586908
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogmap/labels.py",
+    "bytes": 4564,
+    "CRC": 1608434216
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogmap/layer_dialog.py",
+    "bytes": 6563,
+    "CRC": 1782841967
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogmap/layer_groups.py",
+    "bytes": 8085,
+    "CRC": 1365683770
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogmap/layer_target.py",
+    "bytes": 5236,
+    "CRC": 1430175898
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogmap/layers.py",
+    "bytes": 5837,
+    "CRC": 2945288329
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogmap/legal.py",
+    "bytes": 6574,
+    "CRC": 2981490878
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogmap/lod.py",
+    "bytes": 3049,
+    "CRC": 2906351072
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogmap/measure.py",
+    "bytes": 6660,
+    "CRC": 4130043475
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogmap/palettes.py",
+    "bytes": 15866,
+    "CRC": 1532382484
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogmap/perf.py",
+    "bytes": 11159,
+    "CRC": 252495189
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogmap/point_sets.py",
+    "bytes": 3275,
+    "CRC": 3229635637
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogmap/polygon_dialog.py",
+    "bytes": 3172,
+    "CRC": 152172624
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogmap/polygon_stats.py",
+    "bytes": 11068,
+    "CRC": 2878911599
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogmap/posting.py",
+    "bytes": 13156,
+    "CRC": 245922360
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogmap/project.py",
+    "bytes": 47786,
+    "CRC": 1728193527
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogmap/scale.py",
+    "bytes": 8099,
+    "CRC": 1640727604
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogmap/scrollbars.py",
+    "bytes": 4552,
+    "CRC": 934716554
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogmap/setups.py",
+    "bytes": 2546,
+    "CRC": 798128809
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogmap/shape_export.py",
+    "bytes": 8668,
+    "CRC": 2979436265
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogmap/side_panel.py",
+    "bytes": 1814,
+    "CRC": 445411763
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogmap/sources.py",
+    "bytes": 27630,
+    "CRC": 1286585491
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogmap/spatial.py",
+    "bytes": 8452,
+    "CRC": 1603963131
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogmap/stack.py",
+    "bytes": 10592,
+    "CRC": 1001762749
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogmap/symbols.py",
+    "bytes": 5440,
+    "CRC": 2858185324
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogmap/textpaths.py",
+    "bytes": 11980,
+    "CRC": 375325748
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogmap/view.py",
+    "bytes": 203487,
+    "CRC": 3304387715
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogmap/well_maps.py",
+    "bytes": 5520,
+    "CRC": 2991693483
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogmap/well_values.py",
+    "bytes": 7076,
+    "CRC": 2551303804
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogmap/wells_dialog.py",
+    "bytes": 33109,
+    "CRC": 2675442699
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogmap/window.py",
+    "bytes": 254570,
+    "CRC": 1823714279
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogmap/xyz_dialog.py",
+    "bytes": 10604,
+    "CRC": 3072306892
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ograster/",
+    "bytes": 0,
+    "CRC": 0
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ograster/__init__.py",
+    "bytes": 248,
+    "CRC": 944352699
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ograster/autoreview.py",
+    "bytes": 41776,
+    "CRC": 1963447145
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ograster/bulk_lic.py",
+    "bytes": 17721,
+    "CRC": 83608914
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ograster/calibrate.py",
+    "bytes": 61902,
+    "CRC": 479508391
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ograster/digitize_ui.py",
+    "bytes": 107955,
+    "CRC": 1757944968
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ograster/importing.py",
+    "bytes": 7467,
+    "CRC": 2153916587
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ograster/lic_import.py",
+    "bytes": 30480,
+    "CRC": 3423105762
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ograster/lic_import_ui.py",
+    "bytes": 15395,
+    "CRC": 3674732133
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ograster/overlay.py",
+    "bytes": 34821,
+    "CRC": 3009901653
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ograster/pdf_import.py",
+    "bytes": 21927,
+    "CRC": 654516357
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ograster/pdf_import_ui.py",
+    "bytes": 17258,
+    "CRC": 3283535309
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ograster/progress.py",
+    "bytes": 4585,
+    "CRC": 4236138077
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogvol/",
+    "bytes": 0,
+    "CRC": 0
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogvol/__init__.py",
+    "bytes": 368,
+    "CRC": 2570589969
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogvol/app.py",
+    "bytes": 44254,
+    "CRC": 1125958113
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogvol/building.py",
+    "bytes": 5065,
+    "CRC": 2623592833
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogvol/engine.py",
+    "bytes": 33676,
+    "CRC": 385440229
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogvol/report.py",
+    "bytes": 12631,
+    "CRC": 1876093531
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/ogvol/scenarios.py",
+    "bytes": 12863,
+    "CRC": 255866163
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/petro_app.py",
+    "bytes": 862,
+    "CRC": 3011315901
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/petroworkbench/",
+    "bytes": 0,
+    "CRC": 0
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/petroworkbench/__init__.py",
+    "bytes": 154,
+    "CRC": 3509710434
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/petroworkbench/analysis.py",
+    "bytes": 52614,
+    "CRC": 3247919605
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/petroworkbench/app.py",
+    "bytes": 26935,
+    "CRC": 1401520158
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/petroworkbench/calculations.py",
+    "bytes": 62030,
+    "CRC": 3920027963
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/petroworkbench/colors.py",
+    "bytes": 45443,
+    "CRC": 534457394
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/petroworkbench/constants.py",
+    "bytes": 1611,
+    "CRC": 853109583
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/petroworkbench/core_points.py",
+    "bytes": 30415,
+    "CRC": 4090592883
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/petroworkbench/curve_editor.py",
+    "bytes": 18053,
+    "CRC": 1145852608
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/petroworkbench/curve_editor_panel.py",
+    "bytes": 42884,
+    "CRC": 3808015349
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/petroworkbench/curve_ops.py",
+    "bytes": 19881,
+    "CRC": 1072643986
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/petroworkbench/curve_tools.py",
+    "bytes": 25303,
+    "CRC": 1630198411
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/petroworkbench/depth_entry.py",
+    "bytes": 6721,
+    "CRC": 3429590289
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/petroworkbench/geo_link.py",
+    "bytes": 96508,
+    "CRC": 1461782152
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/petroworkbench/interpretation.py",
+    "bytes": 59681,
+    "CRC": 1888837885
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/petroworkbench/las_files.py",
+    "bytes": 31168,
+    "CRC": 1292195953
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/petroworkbench/multimineral_ui.py",
+    "bytes": 29091,
+    "CRC": 1714501857
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/petroworkbench/multivariate.py",
+    "bytes": 26895,
+    "CRC": 1001190691
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/petroworkbench/multiwell.py",
+    "bytes": 7926,
+    "CRC": 3236588652
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/petroworkbench/pay_picking.py",
+    "bytes": 16780,
+    "CRC": 1936400114
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/petroworkbench/plot_editing.py",
+    "bytes": 31242,
+    "CRC": 1251703246
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/petroworkbench/plotting.py",
+    "bytes": 83366,
+    "CRC": 1124692537
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/petroworkbench/project_tree.py",
+    "bytes": 23857,
+    "CRC": 3790859010
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/petroworkbench/rasters.py",
+    "bytes": 21672,
+    "CRC": 1938598786
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/petroworkbench/tracks.py",
+    "bytes": 32060,
+    "CRC": 1407866768
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/petroworkbench/well_data.py",
+    "bytes": 9891,
+    "CRC": 3746567806
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/petroworkbench/windows.py",
+    "bytes": 12662,
+    "CRC": 116724684
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/petroworkbench/workspace.py",
+    "bytes": 41843,
+    "CRC": 1416620
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/pyproject.toml",
+    "bytes": 107,
+    "CRC": 1496825424
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/python_support.py",
+    "bytes": 3227,
+    "CRC": 233820748
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/references/",
+    "bytes": 0,
+    "CRC": 0
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/references/well_symbols_authoritative_2026-09-22.png",
+    "bytes": 27278,
+    "CRC": 3750321449
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/release/",
+    "bytes": 0,
+    "CRC": 0
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/release/OandG_Workbench.spec",
+    "bytes": 4773,
+    "CRC": 291274186
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/release/OwnerTools_LicenseManager.spec",
+    "bytes": 2874,
+    "CRC": 1296092783
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/release/docs/",
+    "bytes": 0,
+    "CRC": 0
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/release/docs/README.txt",
+    "bytes": 1340,
+    "CRC": 2590469081
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/release/docs/Workbench_Help.html",
+    "bytes": 36964,
+    "CRC": 348685205
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/release/legal/",
+    "bytes": 0,
+    "CRC": 0
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/release/legal/EULA.txt",
+    "bytes": 278,
+    "CRC": 2299227312
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/release/legal/EULA_LGPL_REQUIREMENTS.md",
+    "bytes": 2953,
+    "CRC": 1147916877
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/release/legal/THIRD_PARTY_NOTICES.txt",
+    "bytes": 268020,
+    "CRC": 2347893112
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/release/legal/segyio/",
+    "bytes": 0,
+    "CRC": 0
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/release/legal/segyio/GPL-3.0.txt",
+    "bytes": 35149,
+    "CRC": 2540125440
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/release/legal/segyio/LGPL-3.0.txt",
+    "bytes": 7652,
+    "CRC": 2998883203
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/release/legal/segyio/NOTICE.txt",
+    "bytes": 2211,
+    "CRC": 1517472744
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/release/legal/segyio/REPLACING_SEGYIO.txt",
+    "bytes": 3203,
+    "CRC": 2201879976
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/release/legal/segyio/source/",
+    "bytes": 0,
+    "CRC": 0
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/release/legal/segyio/source/SOURCE.txt",
+    "bytes": 2007,
+    "CRC": 2523256554
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/release/legal/segyio/source/delvewheel-1.13.2-segyio-__init__.patch",
+    "bytes": 495,
+    "CRC": 4084729136
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/release/legal/segyio/source/segyio-1.9.15-src.tar.gz",
+    "bytes": 3921423,
+    "CRC": 1770524484
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/release/manifest.json",
+    "bytes": 6028,
+    "CRC": 1289248624
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/release/records/",
+    "bytes": 0,
+    "CRC": 0
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/release/records/SECURITY_ADDENDUM_v0.9.64_scipy.md",
+    "bytes": 3823,
+    "CRC": 3666312796
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/release/records/SECURITY_REPORT_v0.9.25.md",
+    "bytes": 10831,
+    "CRC": 3040114921
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/release/records/native_inventory_linux_trial.json",
+    "bytes": 29824,
+    "CRC": 1365229685
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/release/records/payload_hashes_linux_trial.txt",
+    "bytes": 117009,
+    "CRC": 3630495282
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/release/records/payload_inventory_linux_trial.json",
+    "bytes": 195560,
+    "CRC": 2101823753
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/release/records/pip_licenses.json",
+    "bytes": 369076,
+    "CRC": 3976118649
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/release/records/sbom/",
+    "bytes": 0,
+    "CRC": 0
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/release/records/sbom/SBOM_SHA256SUMS.txt",
+    "bytes": 286,
+    "CRC": 1058412889
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/release/records/sbom/payload_linux_trial.cdx.json",
+    "bytes": 15287,
+    "CRC": 1767749434
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/release/records/sbom/payload_linux_trial.syft.json",
+    "bytes": 308466,
+    "CRC": 766325222
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/release/records/sbom/release_environment.cdx.json",
+    "bytes": 52025,
+    "CRC": 3285736329
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/release/records/security/",
+    "bytes": 0,
+    "CRC": 0
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/release/records/security/bandit.json",
+    "bytes": 339919,
+    "CRC": 2238408890
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/release/records/security/gitleaks_history.json",
+    "bytes": 3,
+    "CRC": 1885917764
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/release/records/security/gitleaks_payload_linux_trial.json",
+    "bytes": 602,
+    "CRC": 3194731780
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/release/records/security/gitleaks_working_tree.json",
+    "bytes": 3,
+    "CRC": 1885917764
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/release/records/security/grype_payload_linux_trial.json",
+    "bytes": 296456,
+    "CRC": 3063476933
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/release/records/security/grype_release_environment.json",
+    "bytes": 29001,
+    "CRC": 2768843875
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/release/records/security/pip_audit.json",
+    "bytes": 3131,
+    "CRC": 4138538575
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/release/records/security/pip_audit_osv.json",
+    "bytes": 2294,
+    "CRC": 2799752718
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/release/records/security/release_environment_freeze.txt",
+    "bytes": 646,
+    "CRC": 3066471033
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/release/records/security/semgrep.json",
+    "bytes": 47450,
+    "CRC": 1491843837
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/release/records/third_party_inventory.json",
+    "bytes": 7443,
+    "CRC": 2969160869
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/requirements-dev.txt",
+    "bytes": 421,
+    "CRC": 725433265
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/requirements.txt",
+    "bytes": 767,
+    "CRC": 480737153
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/sample_core_measurements.csv",
+    "bytes": 148,
+    "CRC": 1126149562
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/sample_directional_mdiaziinc.csv",
+    "bytes": 49,
+    "CRC": 188146064
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/sample_directional_rectangular.csv",
+    "bytes": 71,
+    "CRC": 2702662790
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/seismic_app.py",
+    "bytes": 678,
+    "CRC": 2102466934
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/seismicworkbench/",
+    "bytes": 0,
+    "CRC": 0
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/seismicworkbench/__init__.py",
+    "bytes": 104,
+    "CRC": 299845793
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/seismicworkbench/app.py",
+    "bytes": 154304,
+    "CRC": 1533686509
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/seismicworkbench/cube.py",
+    "bytes": 36250,
+    "CRC": 2791113517
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/seismicworkbench/dialogs.py",
+    "bytes": 44290,
+    "CRC": 1029978514
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/seismicworkbench/fault_polygons.py",
+    "bytes": 4699,
+    "CRC": 1632170216
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/seismicworkbench/fault_surface.py",
+    "bytes": 8909,
+    "CRC": 482734193
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/seismicworkbench/grid_cache.py",
+    "bytes": 2961,
+    "CRC": 1529836536
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/seismicworkbench/grids_ui.py",
+    "bytes": 16567,
+    "CRC": 2857162448
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/seismicworkbench/interp_registry.py",
+    "bytes": 14522,
+    "CRC": 357469539
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/seismicworkbench/interpretation.py",
+    "bytes": 22808,
+    "CRC": 4225113256
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/seismicworkbench/kingdom.py",
+    "bytes": 40330,
+    "CRC": 734850655
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/seismicworkbench/kingdom_native.py",
+    "bytes": 16904,
+    "CRC": 629847561
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/seismicworkbench/layers_ui.py",
+    "bytes": 10097,
+    "CRC": 3571141547
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/seismicworkbench/layout.py",
+    "bytes": 14525,
+    "CRC": 3874845211
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/seismicworkbench/legacy.py",
+    "bytes": 6569,
+    "CRC": 35327053
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/seismicworkbench/linepath.py",
+    "bytes": 4294,
+    "CRC": 3434312354
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/seismicworkbench/lines2d.py",
+    "bytes": 21231,
+    "CRC": 3494080237
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/seismicworkbench/lines2d_ui.py",
+    "bytes": 15619,
+    "CRC": 3784720888
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/seismicworkbench/mapping.py",
+    "bytes": 90761,
+    "CRC": 2205085925
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/seismicworkbench/mistie.py",
+    "bytes": 6664,
+    "CRC": 3772851826
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/seismicworkbench/nav_import.py",
+    "bytes": 20757,
+    "CRC": 3557729446
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/seismicworkbench/picking.py",
+    "bytes": 17846,
+    "CRC": 2717904673
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/seismicworkbench/picks_io.py",
+    "bytes": 45203,
+    "CRC": 1775594550
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/seismicworkbench/picks_ui.py",
+    "bytes": 14396,
+    "CRC": 2790147274
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/seismicworkbench/polygon_delete.py",
+    "bytes": 4995,
+    "CRC": 1695238269
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/seismicworkbench/project.py",
+    "bytes": 31653,
+    "CRC": 3109600639
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/seismicworkbench/section2d.py",
+    "bytes": 36289,
+    "CRC": 3796759544
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/seismicworkbench/sections.py",
+    "bytes": 72890,
+    "CRC": 951755859
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/seismicworkbench/slices.py",
+    "bytes": 48514,
+    "CRC": 1204697445
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/seismicworkbench/synthetic.py",
+    "bytes": 18776,
+    "CRC": 41940804
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/seismicworkbench/ties_ui.py",
+    "bytes": 60614,
+    "CRC": 3364548895
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/seismicworkbench/time_depth_ui.py",
+    "bytes": 34696,
+    "CRC": 3554867948
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/seismicworkbench/wells.py",
+    "bytes": 32316,
+    "CRC": 2968267520
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/seismicworkbench/windows.py",
+    "bytes": 13733,
+    "CRC": 11794329
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/",
+    "bytes": 0,
+    "CRC": 0
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/autoreg_synth.py",
+    "bytes": 25363,
+    "CRC": 1871573825
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/autotrace_fixtures.py",
+    "bytes": 1956,
+    "CRC": 2590417653
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/conftest.py",
+    "bytes": 6997,
+    "CRC": 2609978943
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/correlation_fixtures.py",
+    "bytes": 4909,
+    "CRC": 1625787768
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/data/",
+    "bytes": 0,
+    "CRC": 0
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/data/30039240440000_Induction_Cal_2IN_30-039-24044-00-00_RAS_RS0022619511.LIC",
+    "bytes": 673,
+    "CRC": 3521616791
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/data/3003926984.LAS",
+    "bytes": 2843845,
+    "CRC": 2102380566
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/data/30045252200000.LAS",
+    "bytes": 1387496,
+    "CRC": 419875231
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/data/Core_Data_Petra_Ready.csv",
+    "bytes": 561,
+    "CRC": 145785360
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/data/Gallup_PhiH.XYZ",
+    "bytes": 200277,
+    "CRC": 628034739
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/data/README.md",
+    "bytes": 640,
+    "CRC": 3024661865
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/data/autotrace_real_golden.json",
+    "bytes": 29240,
+    "CRC": 735178297
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/data/native/",
+    "bytes": 0,
+    "CRC": 0
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/data/native/ihs/",
+    "bytes": 0,
+    "CRC": 0
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/data/native/ihs/production_298.98c",
+    "bytes": 47480,
+    "CRC": 1449221608
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/data/native/ihs/wells_297.97f",
+    "bytes": 99386,
+    "CRC": 3063198472
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/data/native/kingdom/",
+    "bytes": 0,
+    "CRC": 0
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/data/native/kingdom/fault_picks_all.csv",
+    "bytes": 11089,
+    "CRC": 176076928
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/data/native/kingdom/horizon_10300_XYZ.csv",
+    "bytes": 1538,
+    "CRC": 234498221
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/data/native/kingdom/horizon_inventory.csv",
+    "bytes": 288,
+    "CRC": 112703672
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/data/native/kingdom/horizon_picks_all.csv",
+    "bytes": 14681,
+    "CRC": 963021700
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/data/native/kingdom/tile_validation.csv",
+    "bytes": 297,
+    "CRC": 3887459066
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/data/native/kingdom_native/",
+    "bytes": 0,
+    "CRC": 0
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/data/native/kingdom_native/F01000.FLT",
+    "bytes": 92032,
+    "CRC": 143827735
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/data/native/kingdom_native/F01100.FLT",
+    "bytes": 23928,
+    "CRC": 2870359360
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/data/native/kingdom_native/F01102.FLT",
+    "bytes": 13312,
+    "CRC": 3212730608
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/data/native/kingdom_native/F01804.FLT",
+    "bytes": 8704,
+    "CRC": 628364411
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/data/native/kingdom_native/F03301.FLT",
+    "bytes": 5120,
+    "CRC": 3134171752
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/data/native/kingdom_native/H01386.hzn",
+    "bytes": 1046863,
+    "CRC": 4173729982
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/data/native/kingdom_native/H02503.hzn",
+    "bytes": 419398,
+    "CRC": 2036451932
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/data/native/kingdom_native/P02201.FLT",
+    "bytes": 12096,
+    "CRC": 1834529969
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/data/native/kingdom_native/truth_counts_horizon_10300.csv",
+    "bytes": 44,
+    "CRC": 4116417948
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/data/native/kingdom_native/truth_counts_horizon_Rob_L3.csv",
+    "bytes": 55,
+    "CRC": 136538493
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/data/native/kingdom_native/truth_faults.csv",
+    "bytes": 283934,
+    "CRC": 116876080
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/data/native/kingdom_native/truth_horizon_10300.csv",
+    "bytes": 196260,
+    "CRC": 199988542
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/data/native/kingdom_native/truth_horizon_Rob_L3.csv",
+    "bytes": 276052,
+    "CRC": 2808136674
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/data/native/petra/",
+    "bytes": 0,
+    "CRC": 0
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/data/native/petra/FRONTIER-TURNER_MERGED_SOPHIH.GDT",
+    "bytes": 7077,
+    "CRC": 67313582
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/data/native/petra/FRONTIER-TURNER_MERGED_SOPHIH.GRD",
+    "bytes": 6044,
+    "CRC": 665380321
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/data/navigation/",
+    "bytes": 0,
+    "CRC": 0
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/data/navigation/CDP_SP_R23.txt",
+    "bytes": 3235,
+    "CRC": 4235204846
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/data/navigation/Crescent_Valley_SP1.sp1",
+    "bytes": 81482,
+    "CRC": 2840161958
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/data/navigation/NPRANAV_R22_R23.seg",
+    "bytes": 16724,
+    "CRC": 193596278
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/data/navigation/README.md",
+    "bytes": 941,
+    "CRC": 1488259101
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/data/navigation/R_23_headers.sgy.gz",
+    "bytes": 94835,
+    "CRC": 774626798
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/data/real_logs/",
+    "bytes": 0,
+    "CRC": 0
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/data/real_logs/30-045-25220.json",
+    "bytes": 936,
+    "CRC": 1900280607
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/data/real_logs/state16_6.json",
+    "bytes": 911,
+    "CRC": 1549175368
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/fixtures/",
+    "bytes": 0,
+    "CRC": 0
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/fixtures/petra_well_symbols.WSD",
+    "bytes": 6639,
+    "CRC": 376086299
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/segy_fixtures.py",
+    "bytes": 4949,
+    "CRC": 1128852473
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_ambiguous_well_names.py",
+    "bytes": 3808,
+    "CRC": 251882339
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_api_uniqueness.py",
+    "bytes": 9583,
+    "CRC": 3480233768
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_assistant.py",
+    "bytes": 15864,
+    "CRC": 1178925286
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_assistant_ui.py",
+    "bytes": 7823,
+    "CRC": 2044461808
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_atomic_edits.py",
+    "bytes": 9171,
+    "CRC": 1728750642
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_attribute_index.py",
+    "bytes": 7795,
+    "CRC": 3916330232
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_audit_assets.py",
+    "bytes": 14685,
+    "CRC": 411033232
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_audit_cleanup.py",
+    "bytes": 5332,
+    "CRC": 1139860446
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_audit_depth_units.py",
+    "bytes": 5800,
+    "CRC": 672669198
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_audit_fraction_scale.py",
+    "bytes": 3112,
+    "CRC": 432234779
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_audit_invalidation.py",
+    "bytes": 5255,
+    "CRC": 2856239721
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_audit_ownership_schema.py",
+    "bytes": 5947,
+    "CRC": 4102069051
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_audit_performance.py",
+    "bytes": 12968,
+    "CRC": 122916354
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_audit_robustness.py",
+    "bytes": 6347,
+    "CRC": 1917699606
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_audit_v0858.py",
+    "bytes": 46958,
+    "CRC": 2589073577
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_audit_v095.py",
+    "bytes": 55076,
+    "CRC": 2578082946
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_auto_trace.py",
+    "bytes": 37008,
+    "CRC": 3863386088
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_auto_trace_real.py",
+    "bytes": 4516,
+    "CRC": 1845576939
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_autoreg.py",
+    "bytes": 29612,
+    "CRC": 3544946235
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_autoreg_real.py",
+    "bytes": 4177,
+    "CRC": 2893149241
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_axis_tolerance.py",
+    "bytes": 2277,
+    "CRC": 464100559
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_background_work.py",
+    "bytes": 5643,
+    "CRC": 554713205
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_batch_curves.py",
+    "bytes": 7895,
+    "CRC": 1102895148
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_batch_exact_samples.py",
+    "bytes": 7847,
+    "CRC": 2499465206
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_batch_ui.py",
+    "bytes": 13854,
+    "CRC": 165262702
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_batch_zones.py",
+    "bytes": 23285,
+    "CRC": 3682960118
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_batch_zones_grids.py",
+    "bytes": 4016,
+    "CRC": 2869318083
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_bhl_and_scale_units.py",
+    "bytes": 12020,
+    "CRC": 2578981441
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_bhl_validation.py",
+    "bytes": 13580,
+    "CRC": 2419229075
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_bin_listing.py",
+    "bytes": 3478,
+    "CRC": 1989312849
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_branding.py",
+    "bytes": 4820,
+    "CRC": 514363474
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_bubble_audit_fixes.py",
+    "bytes": 9238,
+    "CRC": 2497874325
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_bubble_definitions.py",
+    "bytes": 17027,
+    "CRC": 1286491415
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_bubble_linear_render.py",
+    "bytes": 10115,
+    "CRC": 3827028364
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_bubbles.py",
+    "bytes": 23490,
+    "CRC": 415096555
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_build_test_license.py",
+    "bytes": 5698,
+    "CRC": 779747972
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_bulk_lic.py",
+    "bytes": 6299,
+    "CRC": 3454541266
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_calculated_curve_concurrency.py",
+    "bytes": 6780,
+    "CRC": 3229746963
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_cell_editor.py",
+    "bytes": 3308,
+    "CRC": 1165018025
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_close_project.py",
+    "bytes": 3393,
+    "CRC": 555052802
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_color_range.py",
+    "bytes": 5281,
+    "CRC": 2069708457
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_colorbar_overflow.py",
+    "bytes": 5423,
+    "CRC": 3547614073
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_contouring.py",
+    "bytes": 80706,
+    "CRC": 1948093215
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_core_unit_groups.py",
+    "bytes": 3518,
+    "CRC": 1149672212
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_correlation.py",
+    "bytes": 104538,
+    "CRC": 4069998544
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_correlation_session.py",
+    "bytes": 8051,
+    "CRC": 1477998708
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_curve_aliases.py",
+    "bytes": 12125,
+    "CRC": 3675091716
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_curve_editor_v096.py",
+    "bytes": 26289,
+    "CRC": 3758892421
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_curve_precedence.py",
+    "bytes": 3651,
+    "CRC": 833551407
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_curve_series_project.py",
+    "bytes": 8075,
+    "CRC": 1100494877
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_curve_store.py",
+    "bytes": 21007,
+    "CRC": 912056051
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_cython_build.py",
+    "bytes": 6057,
+    "CRC": 1965280079
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_data_posting.py",
+    "bytes": 9992,
+    "CRC": 2384563715
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_data_safety.py",
+    "bytes": 11280,
+    "CRC": 3787740005
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_database.py",
+    "bytes": 30729,
+    "CRC": 3932972252
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_dh_symbol_fallback.py",
+    "bytes": 3842,
+    "CRC": 2512200647
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_digitize.py",
+    "bytes": 24889,
+    "CRC": 507710134
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_digitize_ui.py",
+    "bytes": 22556,
+    "CRC": 3172752423
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_digitized_save.py",
+    "bytes": 7497,
+    "CRC": 1209877372
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_directional_cache.py",
+    "bytes": 4882,
+    "CRC": 2948507246
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_duplicate_survey_names.py",
+    "bytes": 3296,
+    "CRC": 1470091059
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_export_las_axes.py",
+    "bytes": 2640,
+    "CRC": 4289064987
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_fault_pieces.py",
+    "bytes": 5762,
+    "CRC": 465064036
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_fault_reimport.py",
+    "bytes": 5444,
+    "CRC": 339568812
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_fault_surface.py",
+    "bytes": 3117,
+    "CRC": 772889286
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_fill_amount_units.py",
+    "bytes": 4270,
+    "CRC": 1655972750
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_geo_tabs.py",
+    "bytes": 48434,
+    "CRC": 3238488921
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_geosteer_display.py",
+    "bytes": 31717,
+    "CRC": 446603192
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_geosteer_reload_license.py",
+    "bytes": 4090,
+    "CRC": 1421211689
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_geosteering.py",
+    "bytes": 70596,
+    "CRC": 2401001884
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_geosteering_depth_frame.py",
+    "bytes": 2936,
+    "CRC": 243141069
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_geosteering_own_depths.py",
+    "bytes": 3303,
+    "CRC": 1617571415
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_geosteering_project.py",
+    "bytes": 29101,
+    "CRC": 4049978675
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_geosteering_publish.py",
+    "bytes": 9450,
+    "CRC": 4275066456
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_geosteering_run_depths.py",
+    "bytes": 3064,
+    "CRC": 3308229888
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_geosteering_run_units.py",
+    "bytes": 3228,
+    "CRC": 3846865250
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_grid_display_and_stops.py",
+    "bytes": 12927,
+    "CRC": 2153143530
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_grid_display_save.py",
+    "bytes": 3186,
+    "CRC": 4223996303
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_grid_export_atomic.py",
+    "bytes": 2533,
+    "CRC": 1110817895
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_grid_prognosis_units.py",
+    "bytes": 3982,
+    "CRC": 1265659214
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_gridding.py",
+    "bytes": 9827,
+    "CRC": 33334516
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_gridding_methods.py",
+    "bytes": 12243,
+    "CRC": 2894139498
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_header_post_styles.py",
+    "bytes": 12111,
+    "CRC": 158187157
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_help_catalog.py",
+    "bytes": 7562,
+    "CRC": 2234493617
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_ihs_fill_only.py",
+    "bytes": 7844,
+    "CRC": 2688834744
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_import_well_modes.py",
+    "bytes": 6499,
+    "CRC": 4083790062
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_injection_units.py",
+    "bytes": 2161,
+    "CRC": 1314099771
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_isopach.py",
+    "bytes": 22461,
+    "CRC": 3336052653
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_kingdom_native.py",
+    "bytes": 15707,
+    "CRC": 488527271
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_kingdom_native_full.py",
+    "bytes": 3938,
+    "CRC": 2301917813
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_las_depth_precision.py",
+    "bytes": 4124,
+    "CRC": 255115410
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_las_time_index.py",
+    "bytes": 3585,
+    "CRC": 3143494157
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_legal_location.py",
+    "bytes": 7631,
+    "CRC": 2574240943
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_lic_flat.py",
+    "bytes": 11892,
+    "CRC": 1633744780
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_license_manager_gui.py",
+    "bytes": 16149,
+    "CRC": 3125555437
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_license_runtime.py",
+    "bytes": 20142,
+    "CRC": 2686820248
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_license_runtime_memory.py",
+    "bytes": 22854,
+    "CRC": 2279833846
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_licensing.py",
+    "bytes": 31908,
+    "CRC": 2691849907
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_map_change_kinds.py",
+    "bytes": 7085,
+    "CRC": 832474848
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_map_collections.py",
+    "bytes": 3050,
+    "CRC": 1438196218
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_map_culture_order.py",
+    "bytes": 12751,
+    "CRC": 1712853111
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_map_culture_visibility.py",
+    "bytes": 5590,
+    "CRC": 283342682
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_map_datastore.py",
+    "bytes": 8808,
+    "CRC": 801809328
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_map_dependencies.py",
+    "bytes": 5379,
+    "CRC": 2785248052
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_map_drawing_objects.py",
+    "bytes": 15871,
+    "CRC": 3326780395
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_map_dynamic_layer.py",
+    "bytes": 3503,
+    "CRC": 1176504679
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_map_grid_population.py",
+    "bytes": 5724,
+    "CRC": 1257240509
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_map_images.py",
+    "bytes": 20828,
+    "CRC": 863647599
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_map_label_scaling.py",
+    "bytes": 2949,
+    "CRC": 2021204339
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_map_labels.py",
+    "bytes": 6021,
+    "CRC": 4001652007
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_map_layer_order.py",
+    "bytes": 20721,
+    "CRC": 2374884921
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_map_layer_speed.py",
+    "bytes": 3535,
+    "CRC": 1209281026
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_map_layer_stack.py",
+    "bytes": 16514,
+    "CRC": 512489005
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_map_layers.py",
+    "bytes": 4554,
+    "CRC": 1907140382
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_map_layers_panel.py",
+    "bytes": 19425,
+    "CRC": 954918992
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_map_lifecycle.py",
+    "bytes": 3651,
+    "CRC": 3207807219
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_map_lod.py",
+    "bytes": 4998,
+    "CRC": 1446675865
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_map_logical_layers.py",
+    "bytes": 11305,
+    "CRC": 575277675
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_map_many_wells.py",
+    "bytes": 4367,
+    "CRC": 1897183761
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_map_navigation.py",
+    "bytes": 15256,
+    "CRC": 3712014347
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_map_next_pass.py",
+    "bytes": 14187,
+    "CRC": 2435648194
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_map_open.py",
+    "bytes": 6729,
+    "CRC": 664867373
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_map_overlay_speed.py",
+    "bytes": 15822,
+    "CRC": 1260686123
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_map_perf_probe.py",
+    "bytes": 4394,
+    "CRC": 3353649073
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_map_punch_list.py",
+    "bytes": 27135,
+    "CRC": 3982010638
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_map_spatial.py",
+    "bytes": 4454,
+    "CRC": 3597773167
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_map_startup.py",
+    "bytes": 14821,
+    "CRC": 4231107331
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_map_text_rule.py",
+    "bytes": 14140,
+    "CRC": 2061336536
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_map_ui_cleanup.py",
+    "bytes": 10960,
+    "CRC": 2208389048
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_map_well_markers.py",
+    "bytes": 9397,
+    "CRC": 640309716
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_mm_compare_grid.py",
+    "bytes": 5185,
+    "CRC": 1562937336
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_multimineral.py",
+    "bytes": 21354,
+    "CRC": 3738199853
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_multivariate.py",
+    "bytes": 3192,
+    "CRC": 3237186540
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_native_ihs297.py",
+    "bytes": 19747,
+    "CRC": 2599908310
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_native_ihs298.py",
+    "bytes": 14537,
+    "CRC": 2921582924
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_native_kingdom.py",
+    "bytes": 13213,
+    "CRC": 1502097665
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_native_petra.py",
+    "bytes": 9789,
+    "CRC": 2270118747
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_ogcore.py",
+    "bytes": 27262,
+    "CRC": 1290484147
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_owner_local_trust.py",
+    "bytes": 8104,
+    "CRC": 2480112402
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_owner_tools_build.py",
+    "bytes": 6062,
+    "CRC": 3524725403
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_pay.py",
+    "bytes": 19924,
+    "CRC": 334105965
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_pay_correlation.py",
+    "bytes": 14013,
+    "CRC": 3934420141
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_pay_petro.py",
+    "bytes": 14595,
+    "CRC": 3469787299
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_pay_raster.py",
+    "bytes": 6212,
+    "CRC": 2567887659
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_pay_support.py",
+    "bytes": 6439,
+    "CRC": 4279891644
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_pay_xsection.py",
+    "bytes": 15636,
+    "CRC": 4153230527
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_pdf_log_import.py",
+    "bytes": 9683,
+    "CRC": 227510296
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_pdf_packaging.py",
+    "bytes": 10797,
+    "CRC": 137254916
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_performance_fixes.py",
+    "bytes": 14492,
+    "CRC": 1439276002
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_petra_ppf.py",
+    "bytes": 45670,
+    "CRC": 3396943647
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_petra_recovery_identity.py",
+    "bytes": 3770,
+    "CRC": 3469908709
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_petro_api_search.py",
+    "bytes": 7338,
+    "CRC": 1546488978
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_petro_as_loaded_export.py",
+    "bytes": 3356,
+    "CRC": 661116921
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_petro_canonical_curves.py",
+    "bytes": 15706,
+    "CRC": 2506949927
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_petro_export_paths.py",
+    "bytes": 4390,
+    "CRC": 2179323880
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_petro_external_curves.py",
+    "bytes": 3107,
+    "CRC": 692833445
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_petro_integration.py",
+    "bytes": 123762,
+    "CRC": 2040083494
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_petro_own_axis_conflicts.py",
+    "bytes": 4879,
+    "CRC": 1278972632
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_petro_roster.py",
+    "bytes": 5305,
+    "CRC": 1569157689
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_petro_selection.py",
+    "bytes": 2761,
+    "CRC": 4008870180
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_plss.py",
+    "bytes": 3819,
+    "CRC": 1565883712
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_polygon_area.py",
+    "bytes": 8877,
+    "CRC": 2680263676
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_pre_v1_additions.py",
+    "bytes": 25156,
+    "CRC": 3296434899
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_production.py",
+    "bytes": 22213,
+    "CRC": 377942537
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_production_key.py",
+    "bytes": 4995,
+    "CRC": 2316734633
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_project_assets.py",
+    "bytes": 14013,
+    "CRC": 3201384939
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_project_cache.py",
+    "bytes": 7664,
+    "CRC": 3495864136
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_project_folders.py",
+    "bytes": 12508,
+    "CRC": 4096016592
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_raster.py",
+    "bytes": 52564,
+    "CRC": 173363497
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_raster_overlay.py",
+    "bytes": 13636,
+    "CRC": 2217709439
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_recovery_copy.py",
+    "bytes": 4711,
+    "CRC": 1427380886
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_recovery_hot_journal.py",
+    "bytes": 5116,
+    "CRC": 2134518087
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_recovery_las_snapshot.py",
+    "bytes": 4614,
+    "CRC": 342747708
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_recovery_live_writer.py",
+    "bytes": 5822,
+    "CRC": 2788248961
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_regional_depth_units.py",
+    "bytes": 9462,
+    "CRC": 1272479057
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_release_payload.py",
+    "bytes": 14200,
+    "CRC": 1864545744
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_release_security.py",
+    "bytes": 2421,
+    "CRC": 2181041337
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_repositories.py",
+    "bytes": 31334,
+    "CRC": 913698457
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_repository.py",
+    "bytes": 959,
+    "CRC": 2208025912
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_save_as_nested.py",
+    "bytes": 1939,
+    "CRC": 3104764483
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_scrolling.py",
+    "bytes": 6501,
+    "CRC": 688878921
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_scrolling_geo.py",
+    "bytes": 3704,
+    "CRC": 709249532
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_scrolling_map.py",
+    "bytes": 8848,
+    "CRC": 3686151563
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_scrolling_petro.py",
+    "bytes": 8120,
+    "CRC": 3610735067
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_scrolling_seis.py",
+    "bytes": 10873,
+    "CRC": 3212151933
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_section_navigation_perf.py",
+    "bytes": 5994,
+    "CRC": 606131075
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_seg_p1.py",
+    "bytes": 12551,
+    "CRC": 3317875590
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_segy.py",
+    "bytes": 9621,
+    "CRC": 1274231015
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_seismic_2d_interpretation.py",
+    "bytes": 39209,
+    "CRC": 3011138056
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_seismic_2d_lines.py",
+    "bytes": 16027,
+    "CRC": 445107431
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_seismic_2d_shared_undo.py",
+    "bytes": 5001,
+    "CRC": 932897020
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_seismic_app.py",
+    "bytes": 138639,
+    "CRC": 2872097219
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_seismic_attributes_more.py",
+    "bytes": 11876,
+    "CRC": 1072689668
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_seismic_export_atomic.py",
+    "bytes": 5027,
+    "CRC": 4048883250
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_seismic_external_delete.py",
+    "bytes": 2557,
+    "CRC": 1667333066
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_seismic_grids_access.py",
+    "bytes": 9743,
+    "CRC": 4247223671
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_seismic_interp_preservation.py",
+    "bytes": 14505,
+    "CRC": 1840428033
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_seismic_legacy.py",
+    "bytes": 5072,
+    "CRC": 88900801
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_seismic_map_layers.py",
+    "bytes": 8313,
+    "CRC": 4285432837
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_seismic_picking.py",
+    "bytes": 13830,
+    "CRC": 1361775289
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_seismic_picks_io.py",
+    "bytes": 20320,
+    "CRC": 2216256850
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_seismic_project.py",
+    "bytes": 36117,
+    "CRC": 2844276256
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_seismic_robustness.py",
+    "bytes": 10582,
+    "CRC": 1886620179
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_seismic_slices.py",
+    "bytes": 6305,
+    "CRC": 3561753277
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_seismic_tie_crs.py",
+    "bytes": 8001,
+    "CRC": 2902874352
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_shape_export_collisions.py",
+    "bytes": 3111,
+    "CRC": 369298117
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_shapefile_cache.py",
+    "bytes": 12125,
+    "CRC": 3170422643
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_shared_color_bars.py",
+    "bytes": 17181,
+    "CRC": 1504607561
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_shared_curve_readers.py",
+    "bytes": 3347,
+    "CRC": 568390893
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_sl_bhl.py",
+    "bytes": 13826,
+    "CRC": 3142911411
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_sources.py",
+    "bytes": 26597,
+    "CRC": 2786170461
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_spreadsheet.py",
+    "bytes": 14757,
+    "CRC": 1976731939
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_standalone_las_index.py",
+    "bytes": 2539,
+    "CRC": 517109306
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_startup.py",
+    "bytes": 13107,
+    "CRC": 1479361261
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_survey_files.py",
+    "bytes": 13946,
+    "CRC": 28439505
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_synthetic.py",
+    "bytes": 3223,
+    "CRC": 1709704279
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_synthetic_depth_units.py",
+    "bytes": 2108,
+    "CRC": 755740199
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_task_progress.py",
+    "bytes": 10316,
+    "CRC": 4004367581
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_text_style.py",
+    "bytes": 25579,
+    "CRC": 1138732119
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_time_depth_ui.py",
+    "bytes": 11093,
+    "CRC": 1464490515
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_ui_consistency.py",
+    "bytes": 12565,
+    "CRC": 1239759495
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_ui_lag.py",
+    "bytes": 10453,
+    "CRC": 62682257
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_ui_standard.py",
+    "bytes": 7445,
+    "CRC": 2370507883
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_v0936_fixes.py",
+    "bytes": 17718,
+    "CRC": 1059992709
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_v0937_fixes.py",
+    "bytes": 12308,
+    "CRC": 1152523888
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_v0938_fixes.py",
+    "bytes": 12918,
+    "CRC": 304328515
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_v0939_fixes.py",
+    "bytes": 13456,
+    "CRC": 2416146288
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_v0940_fixes.py",
+    "bytes": 14515,
+    "CRC": 724125617
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_v0941_fixes.py",
+    "bytes": 16279,
+    "CRC": 2954616737
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_v0942_fixes.py",
+    "bytes": 8180,
+    "CRC": 3884074468
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_v0943_fixes.py",
+    "bytes": 4499,
+    "CRC": 3951078410
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_v0944_fixes.py",
+    "bytes": 8210,
+    "CRC": 811120531
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_v0945_fixes.py",
+    "bytes": 11420,
+    "CRC": 362016440
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_v0948_fixes.py",
+    "bytes": 10205,
+    "CRC": 500599436
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_v0949_fixes.py",
+    "bytes": 14551,
+    "CRC": 3452804803
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_v0950_fixes.py",
+    "bytes": 8959,
+    "CRC": 866114868
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_v0951_fixes.py",
+    "bytes": 14848,
+    "CRC": 4183282667
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_v0952_fixes.py",
+    "bytes": 7501,
+    "CRC": 49040064
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_v0953_fixes.py",
+    "bytes": 35340,
+    "CRC": 2389059292
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_v0954_fixes.py",
+    "bytes": 38413,
+    "CRC": 2708159257
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_v0955_fixes.py",
+    "bytes": 6596,
+    "CRC": 613133022
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_v0956_fixes.py",
+    "bytes": 13906,
+    "CRC": 473833646
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_v0957_fixes.py",
+    "bytes": 15554,
+    "CRC": 3274803353
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_v0958_fixes.py",
+    "bytes": 13012,
+    "CRC": 257138470
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_v0959_fixes.py",
+    "bytes": 37863,
+    "CRC": 2487525714
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_v0960_log_display.py",
+    "bytes": 8574,
+    "CRC": 2013958286
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_v0960_zone_curves.py",
+    "bytes": 16038,
+    "CRC": 84294335
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_v0961_correlation_cutoff_fill.py",
+    "bytes": 8835,
+    "CRC": 72852351
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_v0961_log_display_apply.py",
+    "bytes": 7407,
+    "CRC": 3848301676
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_v0961_map_refresh.py",
+    "bytes": 4548,
+    "CRC": 2257942437
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_v0961_zone_decimals.py",
+    "bytes": 5611,
+    "CRC": 2204214551
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_v0962_batch_zone_destination.py",
+    "bytes": 19955,
+    "CRC": 3981876474
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_v0962_correlation.py",
+    "bytes": 19859,
+    "CRC": 431273434
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_v0962_xsection.py",
+    "bytes": 12751,
+    "CRC": 4221000508
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_v0963_importer_destinations.py",
+    "bytes": 31862,
+    "CRC": 1091280467
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_v0964_map_gridding.py",
+    "bytes": 31905,
+    "CRC": 3945829624
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_v0965_xsection_correlation.py",
+    "bytes": 19124,
+    "CRC": 3448230278
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_v0966_control_points.py",
+    "bytes": 24841,
+    "CRC": 2489393871
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_v0967_map_display.py",
+    "bytes": 29678,
+    "CRC": 3509240799
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_v0968_seismic.py",
+    "bytes": 40805,
+    "CRC": 3033379087
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_v0969_fonts_audit.py",
+    "bytes": 5380,
+    "CRC": 3408649694
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_v0969_grid_cache_audit.py",
+    "bytes": 5436,
+    "CRC": 3553590841
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_v0969_petro_stats_audit.py",
+    "bytes": 5104,
+    "CRC": 4160429536
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_v0969_seismic_audit.py",
+    "bytes": 23223,
+    "CRC": 2115865580
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_v0969_setup_audit.py",
+    "bytes": 3257,
+    "CRC": 2733163419
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_v0969_shapes_audit.py",
+    "bytes": 8984,
+    "CRC": 1685947300
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_v0969_transactions_audit.py",
+    "bytes": 7579,
+    "CRC": 2899044192
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_v0969_zone_audit.py",
+    "bytes": 9233,
+    "CRC": 2904289998
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_v0970_tk_lifecycle.py",
+    "bytes": 18722,
+    "CRC": 2070883770
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_v0971_cleanup.py",
+    "bytes": 5915,
+    "CRC": 680404039
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_v0971_integrity.py",
+    "bytes": 17462,
+    "CRC": 2314046718
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_v0971_numerics.py",
+    "bytes": 14547,
+    "CRC": 1548090145
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_v0971_packaging.py",
+    "bytes": 6176,
+    "CRC": 3739246334
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_v0971_persistence.py",
+    "bytes": 24779,
+    "CRC": 2893589745
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_v0972_lic_import.py",
+    "bytes": 27665,
+    "CRC": 3476166026
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_velocity_model.py",
+    "bytes": 15967,
+    "CRC": 2066492362
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_volumetrics.py",
+    "bytes": 40350,
+    "CRC": 2274993959
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_well_list_builder.py",
+    "bytes": 48907,
+    "CRC": 147665712
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_well_list_builder_files.py",
+    "bytes": 9739,
+    "CRC": 3180152602
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_well_list_files.py",
+    "bytes": 9545,
+    "CRC": 1008449495
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_well_manager_merge.py",
+    "bytes": 3874,
+    "CRC": 3381702400
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_well_manager_sheets.py",
+    "bytes": 22251,
+    "CRC": 3244591338
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_well_selection.py",
+    "bytes": 30207,
+    "CRC": 1280687770
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_well_symbols.py",
+    "bytes": 17950,
+    "CRC": 1535309220
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_well_test_concurrency.py",
+    "bytes": 7965,
+    "CRC": 3294988837
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_well_tests.py",
+    "bytes": 28762,
+    "CRC": 2789410503
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_well_value_units.py",
+    "bytes": 2643,
+    "CRC": 2860656684
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_wells_posting.py",
+    "bytes": 14497,
+    "CRC": 119690097
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_windows_reserved_names.py",
+    "bytes": 1626,
+    "CRC": 993867253
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_xsection.py",
+    "bytes": 117077,
+    "CRC": 4019745442
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_xsection_fills.py",
+    "bytes": 18300,
+    "CRC": 1104377322
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_xyz.py",
+    "bytes": 14297,
+    "CRC": 4222469323
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/test_zone_track_units.py",
+    "bytes": 2444,
+    "CRC": 4030763443
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/v0964_petra_benchmark.py",
+    "bytes": 8703,
+    "CRC": 2387057417
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tests/xsection_fixtures.py",
+    "bytes": 8066,
+    "CRC": 1993754563
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tools/",
+    "bytes": 0,
+    "CRC": 0
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tools/bhl_compare.py",
+    "bytes": 3034,
+    "CRC": 371633022
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tools/dump_ui_labels.py",
+    "bytes": 5666,
+    "CRC": 1536188055
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tools/help_catalog_source.py",
+    "bytes": 81115,
+    "CRC": 3260675833
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tools/make_icons.py",
+    "bytes": 3263,
+    "CRC": 3613397921
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tools/make_map_project.py",
+    "bytes": 5571,
+    "CRC": 862377700
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tools/make_native_fixtures.py",
+    "bytes": 11126,
+    "CRC": 3042676280
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tools/map_overlay_benchmark.py",
+    "bytes": 8310,
+    "CRC": 617173679
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tools/map_perf.py",
+    "bytes": 18907,
+    "CRC": 4016170107
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tools/release/",
+    "bytes": 0,
+    "CRC": 0
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tools/release/build_cython.py",
+    "bytes": 2841,
+    "CRC": 680640747
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tools/release/build_help_html.py",
+    "bytes": 3030,
+    "CRC": 342956447
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tools/release/build_segyio.py",
+    "bytes": 3626,
+    "CRC": 3900698690
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tools/release/check_protected.py",
+    "bytes": 17408,
+    "CRC": 2509147289
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tools/release/check_python.py",
+    "bytes": 2221,
+    "CRC": 3678685613
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tools/release/check_runtime.py",
+    "bytes": 8747,
+    "CRC": 1989128863
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tools/release/cython_modules.py",
+    "bytes": 2825,
+    "CRC": 2664608424
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tools/release/inventory.py",
+    "bytes": 10614,
+    "CRC": 2065206071
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tools/release/lgpl_check.py",
+    "bytes": 6338,
+    "CRC": 2201868724
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tools/release/make_version_info.py",
+    "bytes": 2852,
+    "CRC": 1403349992
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tools/release/merge_dist.py",
+    "bytes": 4184,
+    "CRC": 182884175
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tools/release/provision_test_license.py",
+    "bytes": 3647,
+    "CRC": 2531696944
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tools/release/sign_release.ps1",
+    "bytes": 2718,
+    "CRC": 2319930593
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tools/release/source_zip.py",
+    "bytes": 10624,
+    "CRC": 3774826151
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tools/release/stage.py",
+    "bytes": 3490,
+    "CRC": 1029094070
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tools/release/third_party_notices.py",
+    "bytes": 6952,
+    "CRC": 2154686965
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tools/render_symbol_sheet.py",
+    "bytes": 1129,
+    "CRC": 146483075
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tools/section_perf.py",
+    "bytes": 6682,
+    "CRC": 4081490342
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tools/security/",
+    "bytes": 0,
+    "CRC": 0
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tools/security/semgrep_desktop.yml",
+    "bytes": 2779,
+    "CRC": 4141869025
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tools/startup_probe.py",
+    "bytes": 11892,
+    "CRC": 1184874954
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tools/train_digit_model.py",
+    "bytes": 15932,
+    "CRC": 1321537120
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tools/validate_kingdom_native.py",
+    "bytes": 11103,
+    "CRC": 2331663800
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tools/validate_p1_navigation.py",
+    "bytes": 6129,
+    "CRC": 1186521887
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/tools/validate_petra_ppf.py",
+    "bytes": 2570,
+    "CRC": 1324886349
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/well_symbols.py",
+    "bytes": 30236,
+    "CRC": 3396108864
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/xsection/",
+    "bytes": 0,
+    "CRC": 0
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/xsection/__init__.py",
+    "bytes": 2412,
+    "CRC": 2423905831
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/xsection/dialogs.py",
+    "bytes": 78616,
+    "CRC": 1492942640
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/xsection/export.py",
+    "bytes": 11939,
+    "CRC": 3428859197
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/xsection/geometry.py",
+    "bytes": 17895,
+    "CRC": 1013446947
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/xsection/layout.py",
+    "bytes": 24395,
+    "CRC": 1020303018
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/xsection/log_display.py",
+    "bytes": 78799,
+    "CRC": 1535255948
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/xsection/model.py",
+    "bytes": 35656,
+    "CRC": 1496884085
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/xsection/patterns.py",
+    "bytes": 2439,
+    "CRC": 1098339599
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/xsection/render.py",
+    "bytes": 70131,
+    "CRC": 2261771410
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/xsection/store.py",
+    "bytes": 20690,
+    "CRC": 1210598192
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/xsection/widgets.py",
+    "bytes": 13723,
+    "CRC": 1522551520
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/xsection/window.py",
+    "bytes": 131332,
+    "CRC": 1135919282
+  },
+  {
+    "name": "OandG_Workbench_v0.9.72/RELEASE_FILES.txt",
+    "bytes": 99066,
+    "CRC": 2335400229
+  }
+]

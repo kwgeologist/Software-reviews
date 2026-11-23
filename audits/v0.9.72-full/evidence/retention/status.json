@@ -1,0 +1,22 @@
+[
+  {
+    "command": [
+      "/workspace/audit-v0.9.56-windows/tooling/bin/python",
+      "-X",
+      "faulthandler",
+      "/workspace/audit-v0.9.72-full/probes/ownership_probe.py"
+    ],
+    "exit_code": 0,
+    "seconds": 4.980108022689819
+  },
+  {
+    "command": [
+      "/workspace/audit-v0.9.56-windows/tooling/bin/python",
+      "-X",
+      "faulthandler",
+      "/workspace/audit-v0.9.72-full/probes/petro_retention.py"
+    ],
+    "exit_code": 0,
+    "seconds": 3.2776498794555664
+  }
+]

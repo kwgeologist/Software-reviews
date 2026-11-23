@@ -1,0 +1,101 @@
+{
+  "finished": true,
+  "gdb_exit_code": 0,
+  "inferior_normal_exit": true,
+  "inferior_exit_code_from_gdb": 0,
+  "native_signals": [],
+  "pytest_terminal": "3224 passed, 10 skipped, 365 warnings, 1214 subtests passed in 4231.52s (1:10:31)",
+  "seconds": 4260.914442777634,
+  "collected_main_tests": 3234,
+  "test_modules": 293,
+  "counts": {
+    "passed": 3224,
+    "failed": 0,
+    "skipped": 10,
+    "errors": 0,
+    "subtests_passed": 1214
+  },
+  "skips": [
+    "SKIPPED [1] tests/test_cython_build.py:115: the protected modules are not compiled (tools/release/build_cython.py)",
+    "SKIPPED [1] tests/test_cython_build.py:63: the protected modules are not compiled (tools/release/build_cython.py)",
+    "SKIPPED [1] tests/test_cython_build.py:69: the protected modules are not compiled (tools/release/build_cython.py)",
+    "SKIPPED [1] tests/test_geo_tabs.py:591: Explorer drops are a Windows message",
+    "SKIPPED [1] tests/test_kingdom_native_full.py:22: full Kingdom files not supplied (OGW_KINGDOM_NATIVE / OGW_KINGDOM_TRUTH)",
+    "SKIPPED [1] tests/test_licensing.py:389: DPAPI is Windows' (a Windows qualification item)",
+    "SKIPPED [1] tests/test_pdf_packaging.py:208: slow packaged build: set OGW_PACKAGING_TEST=1",
+    "SKIPPED [1] tests/test_v0957_fixes.py:268: DPAPI is Windows' (a Windows qualification item)",
+    "SKIPPED [1] tests/test_v0958_fixes.py:254: DPAPI is Windows' (a Windows qualification item)",
+    "SKIPPED [1] tests/test_v0969_fonts_audit.py:83: no font here that is in Tk as an alias and not in Matplotlib"
+  ],
+  "notes": [
+    "One serial interpreter; separate audit probes ran concurrently on host.",
+    "gdb parent exit is not inferior status.",
+    "Main inferior peak from pinned VmHWM, not initial zero-valued child enumeration."
+  ],
+  "pytest_seconds": 4231.52,
+  "warning_count": 365,
+  "peak_inferior_RSS_KiB": 6887200,
+  "junit_suites": [
+    {
+      "name": "pytest",
+      "errors": "0",
+      "failures": "0",
+      "skipped": "10",
+      "tests": "4448",
+      "time": "4231.394",
+      "timestamp": "2026-11-23T19:12:15.677965+00:00",
+      "hostname": "92eca82e4988"
+    }
+  ],
+  "failed_cases": [],
+  "original_settings_reopen_cases": [
+    {
+      "class": "tests.test_xsection.PunchListWindowTests",
+      "test": "test_settings_hold_from_one_session_to_the_next",
+      "result": "passed"
+    }
+  ],
+  "main_counts_reconcile": true,
+  "junit_tests_including_subtests": 4448,
+  "junit_count_reconciles": true,
+  "terminal_summary": "3224 passed, 10 skipped, 365 warnings, 1214 subtests passed in 4231.52s (1:10:31); inferior exit 0; gdb exit 0",
+  "accepted_complete_pass": true
+}
+{
+  "commit": "cbc253ccf2793859fa909e9b8521331ddf389f22",
+  "tracked_files_checked": 980,
+  "source_or_tests_changed_or_missing": [],
+  "git_status": "",
+  "received_zip_sha256": "41ece88abe5430264e5e3905e4ee1df425cffab10c5a66fe0d2d5ca4edba2b17",
+  "expected_zip_sha256": "41ece88abe5430264e5e3905e4ee1df425cffab10c5a66fe0d2d5ca4edba2b17",
+  "audit_copy_python_source_changed": [],
+  "protected_extensions_built_only_in_separate_audit_copy": true,
+  "no_software_commit_or_version_change": true
+}
+17 prior statuses:14 corrected for original regression,3 partial
+Coverage 14 areas; 362 non-test Python files inventoried
+Registered 15 core/current findings; Tk carry-forward appended separately
+Total current entries 22
+Built report drafts; full run final? True entries 22 {'Critical': 1, 'High': 7, 'Medium': 8, 'Low': 4, 'Cleanup': 2}
+Built evidence draft; final? True
+Polished Markdown deliverables
+Added final measurements and skip reconciliation
+Rendered v0.9.72 audit PDF
+{
+  "finding_rows": 22,
+  "severity_counts": {
+    "High": 7,
+    "Medium": 8,
+    "Low": 4,
+    "Cleanup": 2,
+    "Critical": 1
+  },
+  "prior_findings": 17,
+  "partial_prior_findings": 3,
+  "coverage_areas": 14,
+  "all_finding_ids_present_in_PDF": true,
+  "final_test_result_in_evidence": true,
+  "unfinished_placeholders": false,
+  "source_integrity_checked": 980,
+  "pdf_bytes": 89725
+}

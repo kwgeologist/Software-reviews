@@ -1,0 +1,30 @@
+{
+  "command": [
+    "/workspace/audit-v0.9.56-windows/tooling/bin/python",
+    "-X",
+    "faulthandler",
+    "-m",
+    "pytest",
+    "-q",
+    "-p",
+    "no:cacheprovider",
+    "tests/test_cython_build.py",
+    "tests/test_v0971_persistence.py",
+    "tests/test_v0971_integrity.py",
+    "tests/test_v0971_numerics.py",
+    "tests/test_v0971_cleanup.py",
+    "tests/test_v0971_packaging.py",
+    "tests/test_v0972_lic_import.py",
+    "tests/test_batch_zones.py",
+    "tests/test_v0970_tk_lifecycle.py",
+    "--tb=short",
+    "-rs",
+    "--junitxml=/workspace/audit-v0.9.72-full/compiled-checks/results.xml"
+  ],
+  "cwd": "/workspace/audit-v0.9.72-full/compiled-probe",
+  "Tk": "9.0.4",
+  "start": 1795461562.8257432,
+  "note": "isolated audit-built Linux extensions, not customer Windows binaries",
+  "exit_code": 0,
+  "seconds": 49.447890281677246
+}

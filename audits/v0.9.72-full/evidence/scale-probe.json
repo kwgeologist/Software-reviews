@@ -1,0 +1,17 @@
+{
+  "seed_seconds": 1.4734789060312323,
+  "map_store_load_seconds": 0.8927637659944594,
+  "map_one_well_refresh_seconds": 0.16777956497389823,
+  "map_refresh_changed_ids": [
+    1
+  ],
+  "seismic_wells_load_seconds": 0.6961115799495019,
+  "geo_load_project_including_list_seconds": 1.3735275419894606,
+  "geo_full_list_refresh_seconds": 0.9052712229895405,
+  "geo_displayed_rows": 112000,
+  "wells": 112000,
+  "synthetic_only": true,
+  "no_LAS_or_raster_assets_in_scale_fixture": true,
+  "max_RSS_KiB": 361432,
+  "processes_competing_with_test_suite": true
+}

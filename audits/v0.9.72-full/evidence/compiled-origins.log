@@ -1,0 +1,71 @@
+{
+  "kind": "audit-built Linux extensions; not Windows package",
+  "origins": {
+    "ogcore.licensing": {
+      "path": "/workspace/audit-v0.9.72-full/compiled-probe/ogcore/licensing.cpython-312-x86_64-linux-gnu.so",
+      "sha256": "4a97a2209d85c1f03a1ed98e7b6be946e4ef5a7493c4ca0d35a530c9bcdea2bd"
+    },
+    "ogcore.license_runtime": {
+      "path": "/workspace/audit-v0.9.72-full/compiled-probe/ogcore/license_runtime.cpython-312-x86_64-linux-gnu.so",
+      "sha256": "4cd4a3674ed7132227c0787d54fd1631f4021afb849dfd96eed7eea3c4324a45"
+    },
+    "ogcore.formulas": {
+      "path": "/workspace/audit-v0.9.72-full/compiled-probe/ogcore/formulas.cpython-312-x86_64-linux-gnu.so",
+      "sha256": "69c59a1fc2d5b46c4a49cb5ce305ffbbe540b62a797f3bbfebb242e0c3598d1f"
+    },
+    "ogcore.multimineral": {
+      "path": "/workspace/audit-v0.9.72-full/compiled-probe/ogcore/multimineral.cpython-312-x86_64-linux-gnu.so",
+      "sha256": "94a86c113c2110971c7c5550d222f78021fdd9915640ad00e343c3a0c4787bec"
+    },
+    "ogcore.multivariate": {
+      "path": "/workspace/audit-v0.9.72-full/compiled-probe/ogcore/multivariate.cpython-312-x86_64-linux-gnu.so",
+      "sha256": "b461293c9f2d819773186cc6e78f54d871cc30f2a12c0cde2e4f1700d983b5fd"
+    },
+    "ogcore.core_equations": {
+      "path": "/workspace/audit-v0.9.72-full/compiled-probe/ogcore/core_equations.cpython-312-x86_64-linux-gnu.so",
+      "sha256": "161fc9112f61990977fff833533ea9f7f8e5a13e1511c88b76d642c975f4c527"
+    },
+    "ogcore.water": {
+      "path": "/workspace/audit-v0.9.72-full/compiled-probe/ogcore/water.cpython-312-x86_64-linux-gnu.so",
+      "sha256": "0a8f49719d6bb59ad2cbfe654ed98e3c02458a3c8b7351240bf6e34fcffbf565"
+    },
+    "petroworkbench.curve_ops": {
+      "path": "/workspace/audit-v0.9.72-full/compiled-probe/petroworkbench/curve_ops.cpython-312-x86_64-linux-gnu.so",
+      "sha256": "9be92d7dd90cf3d8baa0cd66aa4baf804828bc9c964cb4918d24a54a9a457313"
+    },
+    "ogcore.pay": {
+      "path": "/workspace/audit-v0.9.72-full/compiled-probe/ogcore/pay.cpython-312-x86_64-linux-gnu.so",
+      "sha256": "216f11dc8bea7b9b17dcbb62d0fa55ff886eadb60ad9c90470c4763f43302bd7"
+    },
+    "ogcore.batch_zones": {
+      "path": "/workspace/audit-v0.9.72-full/compiled-probe/ogcore/batch_zones.cpython-312-x86_64-linux-gnu.so",
+      "sha256": "30bfcf9ef38a10d133d64cb48cf0c41eb0b6566379200be7b2c26250bb4c1e9e"
+    },
+    "ogcore.gridders": {
+      "path": "/workspace/audit-v0.9.72-full/compiled-probe/ogcore/gridders.cpython-312-x86_64-linux-gnu.so",
+      "sha256": "a9e855b9961619de5588d5a889492865d2bdd8c345245a40f6f898ee8be1c1d3"
+    },
+    "ogcore.gridding": {
+      "path": "/workspace/audit-v0.9.72-full/compiled-probe/ogcore/gridding.cpython-312-x86_64-linux-gnu.so",
+      "sha256": "6b5478e4d461ef4906d7da025dbbc06dda0b5e3045c1091291bf00ee7cc765e7"
+    },
+    "ogcore.mincurv": {
+      "path": "/workspace/audit-v0.9.72-full/compiled-probe/ogcore/mincurv.cpython-312-x86_64-linux-gnu.so",
+      "sha256": "d72a3e8ab6f9720bd6dcff76fec940a222c177b495ff493df87491f62a3c9917"
+    },
+    "ogcore.velocity_model": {
+      "path": "/workspace/audit-v0.9.72-full/compiled-probe/ogcore/velocity_model.cpython-312-x86_64-linux-gnu.so",
+      "sha256": "df9188195288cb1b460ac8eb14d2145a25d9b98a8b951beadcd4a7e6b2f8d239"
+    },
+    "ogvol.engine": {
+      "path": "/workspace/audit-v0.9.72-full/compiled-probe/ogvol/engine.cpython-312-x86_64-linux-gnu.so",
+      "sha256": "ca988811bac3cb1b3b2a3b4fe5400bd9c031c8809044ebc0c712c08ffd3a7940"
+    }
+  },
+  "shallow_upturn_FA_002": {
+    "gross": 0.0,
+    "net": 10.0,
+    "phih": 2.0000000000000004,
+    "note": ""
+  }
+}

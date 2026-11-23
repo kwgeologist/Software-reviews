@@ -1,0 +1,136 @@
+{
+  "vertical": {
+    "stations": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        2000.0,
+        2000.0
+      ]
+    ],
+    "zone_MD": [
+      0.0,
+      2000.0
+    ],
+    "expected_TVD_gross": 2000.0,
+    "gross": 2000.0,
+    "net": 2000.0,
+    "ng": 1.0,
+    "phih": 400.0,
+    "gross_md": 2000.0,
+    "note": "",
+    "detected_reversal": false
+  },
+  "inclined": {
+    "stations": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        2000.0,
+        1000.0
+      ]
+    ],
+    "zone_MD": [
+      0.0,
+      2000.0
+    ],
+    "expected_TVD_gross": 1000.0,
+    "gross": 1000.0,
+    "net": 1000.0,
+    "ng": 1.0,
+    "phih": 200.0,
+    "gross_md": 2000.0,
+    "note": "",
+    "detected_reversal": false
+  },
+  "shallow_upturn": {
+    "stations": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        10000.0,
+        10000.0
+      ],
+      [
+        12000.0,
+        9990.0
+      ]
+    ],
+    "zone_MD": [
+      10000.0,
+      12000.0
+    ],
+    "expected_TVD_gross": null,
+    "gross": 0.0,
+    "net": 10.0,
+    "ng": NaN,
+    "phih": 2.0000000000000004,
+    "gross_md": 2000.0,
+    "note": "",
+    "detected_reversal": false
+  },
+  "reversal_between_grid_points": {
+    "stations": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        10000.0,
+        10000.0
+      ],
+      [
+        11000.0,
+        10100.0
+      ],
+      [
+        11000.2,
+        10099.9
+      ],
+      [
+        12000.0,
+        10200.0
+      ]
+    ],
+    "zone_MD": [
+      10000.0,
+      12000.0
+    ],
+    "expected_TVD_gross": null,
+    "gross": NaN,
+    "net": NaN,
+    "ng": NaN,
+    "phih": NaN,
+    "gross_md": 2000.0,
+    "note": "TVD reverses within this zone (the well turns back up through it): there is no single vertical thickness of the zone from this well, so TVD gross, net and N:G are N/A. The MD interval length and MD net are given separately.",
+    "detected_reversal": true
+  },
+  "inverse": {
+    "md": 2750.0,
+    "expected": 2750
+  },
+  "eur_no_months": {
+    "eur_per_ft": 100.0,
+    "expected": 100
+  },
+  "same_survey_sampling_sensitivity": [
+    {
+      "sample_step_ft": 100.0,
+      "gross": NaN,
+      "net": NaN,
+      "note": "TVD reverses within this zone (the well turns back up through it): there is no single vertical thickness of the zone from this well, so TVD gross, net and N:G are N/A. The MD interval length and MD net are given separately."
+    },
+    {
+      "sample_step_ft": 0.25,
+      "gross": 0.0,
+      "net": 50.0,
+      "note": ""
+    }
+  ]
+}

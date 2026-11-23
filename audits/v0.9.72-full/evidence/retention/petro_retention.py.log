@@ -1,0 +1,51 @@
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+{
+  "destroy_cycles": [
+    {
+      "cycle": 1,
+      "retained_roots": 1
+    },
+    {
+      "cycle": 2,
+      "retained_roots": 2
+    },
+    {
+      "cycle": 3,
+      "retained_roots": 3
+    },
+    {
+      "cycle": 4,
+      "retained_roots": 4
+    },
+    {
+      "cycle": 5,
+      "retained_roots": 5
+    },
+    {
+      "cycle": 6,
+      "retained_roots": 6
+    },
+    {
+      "cycle": 7,
+      "retained_roots": 7
+    },
+    {
+      "cycle": 8,
+      "retained_roots": 8
+    },
+    {
+      "cycle": 9,
+      "retained_roots": 9
+    },
+    {
+      "cycle": 10,
+      "retained_roots": 10
+    }
+  ],
+  "after_diagnostic_trace_cleanup": {
+    "retained_roots": 0,
+    "removed_traces": 10,
+    "collected": 16320
+  }
+}

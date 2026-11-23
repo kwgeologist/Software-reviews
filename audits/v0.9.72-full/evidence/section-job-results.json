@@ -1,0 +1,8 @@
+{
+  "before_jobs": 5,
+  "after_completed_callbacks": 1000,
+  "stored_job_ids_after": 1005,
+  "pending_tcl_callbacks": [
+    "after#2"
+  ]
+}

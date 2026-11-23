@@ -1,0 +1,18 @@
+{
+  "finding_rows": 22,
+  "severity_counts": {
+    "High": 7,
+    "Medium": 8,
+    "Low": 4,
+    "Cleanup": 2,
+    "Critical": 1
+  },
+  "prior_findings": 17,
+  "partial_prior_findings": 3,
+  "coverage_areas": 14,
+  "all_finding_ids_present_in_PDF": true,
+  "final_test_result_in_evidence": true,
+  "unfinished_placeholders": false,
+  "source_integrity_checked": 980,
+  "pdf_bytes": 89725
+}

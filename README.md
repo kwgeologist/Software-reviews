@@ -1,5 +1,18 @@
 # Software reviews
 
+## O&G Workbench v0.9.72 — Comprehensive pre-v1.0 audit
+
+Read-only audit of **cbc253ccf2793859fa909e9b8521331ddf389f22**. **22 current entries: 1 Critical, 7 High, 8 Medium, 4 Low, 2 Cleanup** — comprising 12 new findings, 3 incomplete earlier corrections and 7 retained Tk investigation/ownership items. Of the 17 original combined-audit regressions, 14 are corrected and 3 remain partial. The original intermittent Tk SIGSEGV remains open.
+
+Independent full serial run: **3224 passed, 10 skipped, 365 warnings, 1214 subtests passed in 4231.52s (1:10:31)**, main inferior exit **0**, no native signal observed. Additional isolated Linux compiled-extension checks: **128 passed, 4 skipped, 74 subtests passed**. These are overlapping checks, not additive unique coverage. The received source ZIP matches the expected hash and production checkout; Windows customer EXE/PYD qualification remains unverified. No software changes.
+
+- [Download all reports and evidence in one ZIP](https://github.com/kwgeologist/Software-reviews/raw/refs/heads/main/audits/v0.9.72-full/OandG_Workbench_v0.9.72_Audit_Bundle.zip)
+- [Download PDF](https://github.com/kwgeologist/Software-reviews/raw/refs/heads/main/audits/v0.9.72-full/OandG_Workbench_v0.9.72_Full_Audit.pdf)
+- [Read the full audit](audits/v0.9.72-full/OandG_Workbench_v0.9.72_Full_Audit.md)
+- [Findings CSV](audits/v0.9.72-full/OandG_Workbench_v0.9.72_Findings.csv)
+- [All 17 previous-finding verification statuses](audits/v0.9.72-full/OandG_Workbench_v0.9.72_Previous_Findings_Verification.csv)
+- [Evidence, commands and qualification limits](audits/v0.9.72-full/OandG_Workbench_v0.9.72_Audit_Evidence.md)
+
 ## O&G Workbench v0.9.70 — Focused Tk segmentation-fault investigation
 
 Read-only audit of **1e0867f**. **Original SIGSEGV / exit139 remains unresolved.** Confirmed Geo/Petro ownership retention and orphaned Geo timers; separate controlled wrong-thread Tcl finalization failures on Tk 8.6 and Tk 9. Two 300-test serial GUI workloads completed without native crashes (Tk 9 has one Correlation assertion failure); 800 Cross Section lifecycle windows were exercised. No application changes.

@@ -1,0 +1,1 @@
+Historical controlled native-panic evidence from v0.9.70 (1e0867f). These are not v0.9.72 full-run crashes and do not establish the original SIGSEGV root cause. See the focused audit at https://github.com/kwgeologist/Software-reviews/tree/main/audits/v0.9.70-tk-segfault .

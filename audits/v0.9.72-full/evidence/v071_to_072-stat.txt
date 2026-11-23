@@ -1,0 +1,20 @@
+ CHANGELOG.md                            |   7 +
+ README.md                               |   8 +-
+ database.py                             |   4 +
+ docs/v0.9.72/LIC_Import_Changes.md      | 160 ++++++++
+ docs/v0.9.72/LIC_Import_Test_Results.md | 109 ++++++
+ docs/v0.9.72/Release_Checklist.md       |  27 ++
+ docs/v0.9.72/TVD_Pay_Correction.md      |  63 +++
+ geoworkbench/raster_tab.py              |  48 +--
+ ogcore/__init__.py                      |   4 +-
+ ogcore/batch_zones.py                   |   3 +
+ ogcore/raster.py                        |   9 +
+ ograster/bulk_lic.py                    |  75 ++--
+ ograster/lic_import.py                  | 653 ++++++++++++++++++++++++++++++++
+ ograster/lic_import_ui.py               | 328 ++++++++++++++++
+ petroworkbench/rasters.py               |  43 +--
+ tests/test_batch_zones.py               |  29 ++
+ tests/test_geo_tabs.py                  |  15 +-
+ tests/test_petro_integration.py         |  45 +++
+ tests/test_v0972_lic_import.py          | 563 +++++++++++++++++++++++++++
+ 19 files changed, 2097 insertions(+), 96 deletions(-)

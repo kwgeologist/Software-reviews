@@ -1,0 +1,14 @@
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Could not write Petro zone results for well 1: audit injected publish failure
+{
+  "before_published_gross": 60.0,
+  "expected_gross_after_accepted_zone_edit": 80.0,
+  "after_failed_publish_gross": 60.0,
+  "publish_failure_calls": 1,
+  "save_return": true,
+  "UI_error_warning_count": 0,
+  "last_zone_refusals": [],
+  "stored_zone_base": 5520.0,
+  "live_accepted_base": 5520.0
+}

@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/workspace/audit-v0.9.72-full/probes/numerical_reference.py", line 11, in <module>
+    s=production.summarize([],eur=100000,gross_span=1000);out['eur_no_months']=s;assert s['eur_per_ft']==100
+                                                                                        ~^^^^^^^^^^^^^^
+TypeError: 'Summary' object is not subscriptable

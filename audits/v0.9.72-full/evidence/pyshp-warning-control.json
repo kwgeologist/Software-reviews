@@ -1,0 +1,16 @@
+{
+  "control": "Pyshp writer + reader only; no Workbench imports",
+  "version": "3.1.9",
+  "dbf_bytes": 101,
+  "declared_records": 1,
+  "header_bytes": 65,
+  "record_bytes": 21,
+  "records": [
+    [
+      "synthetic"
+    ]
+  ],
+  "warnings": [
+    "Declared file size in <temporary>/synthetic.dbf header: 87 smaller than actual file size: 101 (both in bytes)"
+  ]
+}

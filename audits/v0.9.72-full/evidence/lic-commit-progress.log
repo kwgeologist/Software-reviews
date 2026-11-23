@@ -1,0 +1,15 @@
+Fontconfig error: No writable cache directories
+LIC import: a batch could not be committed: audit injected commit failure
+{
+  "database_rows": 0,
+  "report_added": 0,
+  "report_errors": 2,
+  "progress_counts": {
+    "ok": 2,
+    "skipped": 0,
+    "failed": 0
+  },
+  "visible_tally": "Succeeded 2    Skipped 0    Failed 0",
+  "visible_heading": "Completed",
+  "details_contain_error": true
+}

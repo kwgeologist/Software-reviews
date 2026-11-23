@@ -1,0 +1,40 @@
+The project's generation could not be recorded on closing
+Traceback (most recent call last):
+  File "/workspace/audit-v0.9.72-full/checkout/database.py", line 1752, in close
+    stamp = sync_safety.on_close(self.connection, self.path, changed)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/audit-v0.9.72-full/checkout/ogcore/sync_safety.py", line 379, in on_close
+    stamp = new_generation(connection)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/audit-v0.9.72-full/checkout/ogcore/sync_safety.py", line 165, in new_generation
+    connection.executemany(
+sqlite3.OperationalError: database is locked
+{
+  "close_under_write_lock": {
+    "close_return": null,
+    "before_seq": 1,
+    "after_seq": 1,
+    "generation_changed": false,
+    "committed_name": "Committed newer",
+    "problems_after_lock_released": []
+  },
+  "stale_replaced_same_generation": {
+    "problems": [],
+    "accepted_generation_seq": 1
+  },
+  "malformed_handoff": {
+    "observed_exception": "ValueError: invalid literal for int() with base 10: 'corrupt-but-valid-json'",
+    "expected": "classified unverified-copy result"
+  },
+  "recovery_schema_note": {
+    "schema": 31,
+    "supported_database_schema": 31,
+    "known_schema": 29,
+    "notes": [
+      "The project is from a newer version (schema 31): what this version knows is shown.",
+      "Log curves stored the pre-v0.8.49 way cannot be exported here (use Export Project Copy).",
+      "Read from a recovered copy: the database had an unfinished transaction or log, completed in a temporary copy (only committed data is shown); the project's files are left as they are."
+    ],
+    "originals_unchanged": true
+  }
+}

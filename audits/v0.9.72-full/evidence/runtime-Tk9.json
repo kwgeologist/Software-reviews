@@ -1,0 +1,13 @@
+{
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "executable": "/workspace/audit-v0.9.56-windows/tooling/bin/python",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "Tcl": "9.0.4",
+  "Tk": "9.0.4",
+  "tkinter_extension": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/lib-dynload/_tkinter.cpython-312-x86_64-linux-gnu.so",
+  "tkinter_sha256": "1e01ab445d909465cb154985f9d091ba70f9ec1deb487de8eea6f95060f2beaa",
+  "NumPy": "2.5.5",
+  "Matplotlib": "3.11.2",
+  "SciPy": "1.18.1",
+  "pytest": "9.2.0"
+}

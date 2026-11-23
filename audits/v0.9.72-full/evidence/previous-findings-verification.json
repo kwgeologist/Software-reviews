@@ -1,0 +1,138 @@
+[
+  {
+    "id": "PI-001",
+    "original_severity": "Critical",
+    "title": "Seismic discards an unsaved interpretation after a failed save or cancelled conflict",
+    "status": "Corrected for original audited regression",
+    "evidence": "compiled-checks: SeismicInterpretation; inspected close_project/release_interpretation/on_close; save error/conflict Cancel retained, retry/discard tested",
+    "limits": "Native Windows/customer EXE not independently qualified; status is bounded to named source/compiled Linux checks"
+  },
+  {
+    "id": "PI-002",
+    "original_severity": "Critical",
+    "title": "Geosteering treats a failed autosave as permission to discard a saved/project job",
+    "status": "Corrected for original audited regression",
+    "evidence": "compiled-checks: GeosteeringJob; dirty saved/project job path and failed autosave Retry/Discard/Cancel tested",
+    "limits": "Native Windows/customer EXE not independently qualified; status is bounded to named source/compiled Linux checks"
+  },
+  {
+    "id": "FA-001",
+    "original_severity": "High",
+    "title": "TVD-to-MD inverse can return a point with a different TVD on an undulating survey",
+    "status": "Corrected for original audited regression",
+    "evidence": "compiled-checks: TvdToMd; independent MD2750 unique crossing reference; original invalid MD2000 no longer returned",
+    "limits": "Native Windows/customer EXE not independently qualified; status is bounded to named source/compiled Linux checks"
+  },
+  {
+    "id": "FA-002",
+    "original_severity": "High",
+    "title": "TVD pay net and gross use incompatible measures on non-monotonic wells",
+    "status": "Partial / incomplete correction",
+    "evidence": "shipped coarse-reversal tests pass; independent physically valid shallow-upturn source and compiled probes fail (gross0/net10, no note)",
+    "limits": "Native Windows/customer EXE not independently qualified; status is bounded to named source/compiled Linux checks"
+  },
+  {
+    "id": "FA-003",
+    "original_severity": "High",
+    "title": "LAS run cache does not account for its NumPy arrays, defeating its memory budget",
+    "status": "Corrected for original audited regression",
+    "evidence": "compiled-checks: LasCache tests measure unique ndarray owners, eviction/reload/data integrity and shared-buffer accounting; implementation now recurses dataclasses",
+    "limits": "Native Windows/customer EXE not independently qualified; status is bounded to named source/compiled Linux checks"
+  },
+  {
+    "id": "FA-004",
+    "original_severity": "High",
+    "title": "Raster Digitizer permits closing after its node-state save fails",
+    "status": "Corrected for original audited regression",
+    "evidence": "compiled-checks: DigitizerNodes failed-store Cancel/Retry/Discard and exactly-once node persistence; no broad close rewrite",
+    "limits": "Native Windows/customer EXE not independently qualified; status is bounded to named source/compiled Linux checks"
+  },
+  {
+    "id": "PI-003",
+    "original_severity": "High",
+    "title": "Geo Save Project reports all changes saved while dirty header edits remain; window Exit drops them",
+    "status": "Corrected for original audited regression",
+    "evidence": "compiled-checks: GeoPendingEdits; original Save Project/header and Exit controls pass. Separate Save As path fails (FA72-003)",
+    "limits": "Native Windows/customer EXE not independently qualified; status is bounded to named source/compiled Linux checks"
+  },
+  {
+    "id": "PI-004",
+    "original_severity": "High",
+    "title": "Opening an existing manifest with a missing database silently creates an empty project",
+    "status": "Corrected for original audited regression",
+    "evidence": "compiled-checks: MissingDatabase; checked open paths and create=False; incomplete manifest/database refused before create",
+    "limits": "Native Windows/customer EXE not independently qualified; status is bounded to named source/compiled Linux checks"
+  },
+  {
+    "id": "PI-005",
+    "original_severity": "High",
+    "title": "Synced replicas lack a consistent snapshot handoff or stale-generation acceptance check",
+    "status": "Partial / incomplete correction",
+    "evidence": "compiled-checks: Generations nominal stale/handoff checks pass; independent close-under-write-lock leaves old generation and silently accepts restored stale copy",
+    "limits": "Native Windows/customer EXE not independently qualified; status is bounded to named source/compiled Linux checks"
+  },
+  {
+    "id": "PI-006",
+    "original_severity": "High",
+    "title": "Drawing Finish clears editable vertices before the database write succeeds",
+    "status": "Partial / incomplete correction",
+    "evidence": "compiled-checks: DrawingFinish database/Cancel/refusal controls pass; independent post-commit refresh failure leaves draft and duplicates feature on retry",
+    "limits": "Native Windows/customer EXE not independently qualified; status is bounded to named source/compiled Linux checks"
+  },
+  {
+    "id": "FA-005",
+    "original_severity": "Medium",
+    "title": "Production EUR per foot is omitted when monthly history is absent",
+    "status": "Corrected for original audited regression",
+    "evidence": "compiled-checks: EurPerFoot; independent empty-history100000/1000 reference returns100; production-window issue separately FA72-007",
+    "limits": "Native Windows/customer EXE not independently qualified; status is bounded to named source/compiled Linux checks"
+  },
+  {
+    "id": "PI-007",
+    "original_severity": "Medium",
+    "title": "Correlation and Cross Section close after logging failed session/section persistence",
+    "status": "Corrected for original audited regression",
+    "evidence": "compiled-checks: CorrelationSession, CrossSectionSave, MapSectionLines; explicit failed-save outcomes and coupled section transactions inspected",
+    "limits": "Native Windows/customer EXE not independently qualified; status is bounded to named source/compiled Linux checks"
+  },
+  {
+    "id": "PI-008",
+    "original_severity": "Medium",
+    "title": "Recovery read-only open may create a shared-memory sidecar on the original",
+    "status": "Corrected for original audited regression",
+    "evidence": "compiled-checks: ForensicRecovery; independent current-schema forensic read verifies originals unchanged; worker-reader side effects documented",
+    "limits": "Native Windows/customer EXE not independently qualified; status is bounded to named source/compiled Linux checks"
+  },
+  {
+    "id": "PI-009",
+    "original_severity": "Medium",
+    "title": "The v0.9.70 Drawings layout regression still fails at scaling 1.25 on the audit platform",
+    "status": "Corrected for original audited regression",
+    "evidence": "compiled-checks: test_v0970_tk_lifecycle passes on Tk9; fixed hint wrapping inspected; original independent Tk SIGSEGV remains separate",
+    "limits": "Native Windows/customer EXE not independently qualified; status is bounded to named source/compiled Linux checks"
+  },
+  {
+    "id": "FA-006",
+    "original_severity": "Low",
+    "title": "Two GUI regression contracts remain dependent on font aliases or exact drag geometry",
+    "status": "Corrected for original audited regression",
+    "evidence": "full source serial Correlation pixel-contract case passes; current font alias/capability assertions inspected and full-suite outcomes logged. No Windows DPI qualification implied",
+    "limits": "Native Windows/customer EXE not independently qualified; status is bounded to named source/compiled Linux checks"
+  },
+  {
+    "id": "FA-007",
+    "original_severity": "Cleanup",
+    "title": "UI palette and ribbon metrics still have parallel definitions despite a shared theme",
+    "status": "Corrected for original audited regression",
+    "evidence": "compiled-checks: SharedChrome; theme, Petro constants and Correlation/CrossSection ribbon changes use shared semantic tokens",
+    "limits": "Native Windows/customer EXE not independently qualified; status is bounded to named source/compiled Linux checks"
+  },
+  {
+    "id": "FA-008",
+    "original_severity": "Cleanup",
+    "title": "Legacy hand-drawn Map icon module has no tracked runtime callers",
+    "status": "Corrected for original audited regression",
+    "evidence": "compiled-checks: LegacyMapIcons; legacy ogmap/icons.py absent and active canonical icon module retained",
+    "limits": "Native Windows/customer EXE not independently qualified; status is bounded to named source/compiled Linux checks"
+  }
+]

@@ -1,0 +1,128 @@
+{
+  "python_files": 662,
+  "production_files": 362,
+  "production_lines": 186341,
+  "test_lines": 89444,
+  "largest_production_modules": [
+    {
+      "file": "database.py",
+      "lines": 5496,
+      "test": false,
+      "functions": 221,
+      "broad_except": 10,
+      "sensitive_calls": []
+    },
+    {
+      "file": "ogmap/window.py",
+      "lines": 5329,
+      "test": false,
+      "functions": 317,
+      "broad_except": 23,
+      "sensitive_calls": []
+    },
+    {
+      "file": "ogmap/view.py",
+      "lines": 4164,
+      "test": false,
+      "functions": 203,
+      "broad_except": 2,
+      "broad_except_pass": 1,
+      "sensitive_calls": []
+    },
+    {
+      "file": "seismicworkbench/app.py",
+      "lines": 3221,
+      "test": false,
+      "functions": 176,
+      "broad_except": 3,
+      "broad_except_pass": 1,
+      "sensitive_calls": []
+    },
+    {
+      "file": "geosteering/app.py",
+      "lines": 2879,
+      "test": false,
+      "functions": 177,
+      "broad_except": 12,
+      "sensitive_calls": []
+    },
+    {
+      "file": "xsection/window.py",
+      "lines": 2810,
+      "test": false,
+      "functions": 170,
+      "broad_except": 6,
+      "sensitive_calls": []
+    },
+    {
+      "file": "geoworkbench/main_window.py",
+      "lines": 2792,
+      "test": false,
+      "functions": 145,
+      "broad_except": 30,
+      "broad_except_pass": 10,
+      "sensitive_calls": [
+        {
+          "line": 126,
+          "call": "tree.tk.eval"
+        },
+        {
+          "line": 1654,
+          "call": "subprocess.Popen"
+        },
+        {
+          "line": 1656,
+          "call": "subprocess.Popen"
+        }
+      ]
+    },
+    {
+      "file": "ograster/digitize_ui.py",
+      "lines": 2308,
+      "test": false,
+      "functions": 119,
+      "broad_except": 7,
+      "sensitive_calls": []
+    },
+    {
+      "file": "geosteering/dialogs.py",
+      "lines": 2131,
+      "test": false,
+      "functions": 151,
+      "broad_except": 4,
+      "sensitive_calls": []
+    },
+    {
+      "file": "seismicworkbench/mapping.py",
+      "lines": 1950,
+      "test": false,
+      "functions": 119,
+      "broad_except": 3,
+      "broad_except_pass": 1,
+      "sensitive_calls": []
+    },
+    {
+      "file": "tools/help_catalog_source.py",
+      "lines": 1915,
+      "test": false,
+      "functions": 3,
+      "sensitive_calls": []
+    },
+    {
+      "file": "petroworkbench/geo_link.py",
+      "lines": 1868,
+      "test": false,
+      "functions": 81,
+      "broad_except": 16,
+      "broad_except_pass": 5,
+      "sensitive_calls": [
+        {
+          "line": 1755,
+          "call": "np.load"
+        }
+      ]
+    }
+  ],
+  "broad_except_total": 478,
+  "broad_except_pass": 77
+}

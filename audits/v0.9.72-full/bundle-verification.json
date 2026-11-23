@@ -1,0 +1,10 @@
+{
+  "archive": "OandG_Workbench_v0.9.72_Audit_Bundle.zip",
+  "sha256": "a0c1d3d0427efafffd3a4515e93d48668522e6594da7229f0c85071b655aadfd",
+  "bytes": 725618,
+  "members": 130,
+  "all_required_reports_present": true,
+  "CRC_check": "pass",
+  "member_sha256_checks": 129,
+  "client_databases_or_product_source_included": false
+}

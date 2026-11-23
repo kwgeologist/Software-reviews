@@ -1,0 +1,31 @@
+{
+  "own_LIC_overwrite_false": {
+    "source": "30039277000000_30-039-27700_scan_GR.LIC",
+    "action": "update",
+    "outcome": "updated",
+    "original_changed": true,
+    "marker_survived": false,
+    "backups": 0,
+    "reported_rewritten": false,
+    "notes": []
+  },
+  "group_roundtrip": {
+    "initial_count": 2,
+    "stored_sections": [
+      "1|gr",
+      "2|gr"
+    ],
+    "exported_groups": [
+      0,
+      0
+    ],
+    "reimport_actions": [
+      "error",
+      "error"
+    ],
+    "reimport_reasons": [
+      "2 registrations of Well 0 could be this control file (ids 2, 1): nothing was changed",
+      "2 registrations of Well 0 could be this control file (ids 2, 1): nothing was changed"
+    ]
+  }
+}

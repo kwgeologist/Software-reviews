@@ -1,0 +1,18 @@
+{
+  "commit": "cbc253ccf2793859fa909e9b8521331ddf389f22",
+  "branch_origin": "release/1.0",
+  "tracked_files": 980,
+  "archive_extra_files": [
+    "RELEASE_FILES.txt"
+  ],
+  "expected_export_ignored_tests": [
+    "tests/data/real_logs/30-045-25220-00-00_RAS_RS0022647273.TIF",
+    "tests/data/real_logs/state16_6_30-039-26984.tif",
+    "tests/data/real_logs/test log (2).tif"
+  ],
+  "production_mismatches": [],
+  "version_metadata": [
+    "__version__ = \"0.9.72\"  # O&G Workbench release (Geo, Petro, Seismic, Geosteering and Correlation)",
+    "__build__ = \"\"  # a rebuild of this version, when there is one (\"r2\": the zip OandG_Workbench_v<version>-r2)"
+  ]
+}

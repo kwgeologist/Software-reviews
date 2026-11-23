@@ -1,0 +1,63 @@
+{
+  "finished": true,
+  "gdb_exit_code": 0,
+  "inferior_normal_exit": true,
+  "inferior_exit_code_from_gdb": 0,
+  "native_signals": [],
+  "pytest_terminal": "3224 passed, 10 skipped, 365 warnings, 1214 subtests passed in 4231.52s (1:10:31)",
+  "seconds": 4260.914442777634,
+  "collected_main_tests": 3234,
+  "test_modules": 293,
+  "counts": {
+    "passed": 3224,
+    "failed": 0,
+    "skipped": 10,
+    "errors": 0,
+    "subtests_passed": 1214
+  },
+  "skips": [
+    "SKIPPED [1] tests/test_cython_build.py:115: the protected modules are not compiled (tools/release/build_cython.py)",
+    "SKIPPED [1] tests/test_cython_build.py:63: the protected modules are not compiled (tools/release/build_cython.py)",
+    "SKIPPED [1] tests/test_cython_build.py:69: the protected modules are not compiled (tools/release/build_cython.py)",
+    "SKIPPED [1] tests/test_geo_tabs.py:591: Explorer drops are a Windows message",
+    "SKIPPED [1] tests/test_kingdom_native_full.py:22: full Kingdom files not supplied (OGW_KINGDOM_NATIVE / OGW_KINGDOM_TRUTH)",
+    "SKIPPED [1] tests/test_licensing.py:389: DPAPI is Windows' (a Windows qualification item)",
+    "SKIPPED [1] tests/test_pdf_packaging.py:208: slow packaged build: set OGW_PACKAGING_TEST=1",
+    "SKIPPED [1] tests/test_v0957_fixes.py:268: DPAPI is Windows' (a Windows qualification item)",
+    "SKIPPED [1] tests/test_v0958_fixes.py:254: DPAPI is Windows' (a Windows qualification item)",
+    "SKIPPED [1] tests/test_v0969_fonts_audit.py:83: no font here that is in Tk as an alias and not in Matplotlib"
+  ],
+  "notes": [
+    "One serial interpreter; separate audit probes ran concurrently on host.",
+    "gdb parent exit is not inferior status.",
+    "Main inferior peak from pinned VmHWM, not initial zero-valued child enumeration."
+  ],
+  "pytest_seconds": 4231.52,
+  "warning_count": 365,
+  "peak_inferior_RSS_KiB": 6887200,
+  "junit_suites": [
+    {
+      "name": "pytest",
+      "errors": "0",
+      "failures": "0",
+      "skipped": "10",
+      "tests": "4448",
+      "time": "4231.394",
+      "timestamp": "2026-11-23T19:12:15.677965+00:00",
+      "hostname": "92eca82e4988"
+    }
+  ],
+  "failed_cases": [],
+  "original_settings_reopen_cases": [
+    {
+      "class": "tests.test_xsection.PunchListWindowTests",
+      "test": "test_settings_hold_from_one_session_to_the_next",
+      "result": "passed"
+    }
+  ],
+  "main_counts_reconcile": true,
+  "junit_tests_including_subtests": 4448,
+  "junit_count_reconciles": true,
+  "terminal_summary": "3224 passed, 10 skipped, 365 warnings, 1214 subtests passed in 4231.52s (1:10:31); inferior exit 0; gdb exit 0",
+  "accepted_complete_pass": true
+}

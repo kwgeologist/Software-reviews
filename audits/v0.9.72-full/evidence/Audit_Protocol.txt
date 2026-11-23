@@ -1,0 +1,384 @@
+# CODEX PROTOCOL — O&G WORKBENCH v0.9.72
+## Comprehensive Pre-v1.0 Software Audit
+
+**Priority:** Critical — Final pre-release stabilization  
+**Baseline:** O&G Workbench v0.9.72  
+**Branch:** `release/1.0`  
+**Audit type:** Independent, read-only, full-suite audit  
+**Deliverable:** Complete audit package in `Software-reviews`
+
+## 1. Objective
+
+Perform a comprehensive technical audit of O&G Workbench v0.9.72.
+
+The audit must examine the entire software suite, identify remaining defects, verify earlier corrections, and assess readiness for commercial v1.0.
+
+This is not limited to the recent LIC import changes.
+
+**No defects are too small to report.** Include Critical, High, Medium, Low, and Cleanup findings.
+
+Do not implement fixes. Claude will receive this audit together with the existing Tk segmentation fault audit for one consolidated corrective release.
+
+## 2. Baseline and Source Verification
+
+Use the exact v0.9.72 code corresponding to the delivered release.
+
+Verify:
+
+- Git commit and branch.
+- Version metadata.
+- Release ZIP contents.
+- Package integrity and SHA-256 checksum.
+- Differences between v0.9.71 and v0.9.72.
+- Whether the ZIP contains the same production code being audited.
+
+Expected release:
+
+`OandG_Workbench_v0.9.72.zip`
+
+Expected SHA-256:
+
+`41ece88abe5430264e5e3905e4ee1df425cffab10c5a66fe0d2d5ca4edba2b17`
+
+If the release contents do not match the source, report this before continuing.
+
+Do not modify the release.
+
+## 3. Review Previous Audits
+
+Retrieve the previous audit material from:
+
+https://github.com/kwgeologist/Software-reviews
+
+Review:
+
+1. v0.9.70 Full Combined Audit — 17 findings.
+2. v0.9.70 Project Integrity Audit.
+3. v0.9.70 Tk Segmentation Fault Audit.
+4. v0.9.71 remediation and test reports.
+5. v0.9.72 LIC import and TVD pay correction reports.
+
+Verify that all 17 earlier findings remain corrected.
+
+Do not assume a previously closed finding is still closed.
+
+Retain original finding IDs when identifying regressions or incomplete corrections.
+
+## 4. Full Software Audit
+
+Review every major Workbench module and its shared infrastructure.
+
+### A. GeoWorkbench / Well Manager
+
+- Well creation, editing, and deletion.
+- Well identities and API handling.
+- Formation tops and aliases.
+- Locations and directional surveys.
+- LAS and raster data associations.
+- Production records.
+- Project saving, closing, and reopening.
+- Dirty-form handling.
+- Database transactions and integrity.
+
+### B. SeismicWorkbench
+
+- 2D and 3D SEG-Y loading.
+- Inline, crossline, and time-slice operations.
+- Horizon interpretation and persistence.
+- Fault interpretation and persistence.
+- Polygon drawing and vertex editing.
+- Map synchronization.
+- Project saving and reopening.
+- Undo/redo.
+- Cache and memory management.
+- Tk lifecycle and pending callbacks.
+
+Pay particular attention to preventing loss of interpretation data.
+
+### C. PetroWorkbench
+
+- Curve loading and conditioning.
+- Depth references and conversions.
+- Petrophysical calculations.
+- Zones and facies.
+- Pay calculations.
+- Curve editing and persistence.
+- Multiwell operations.
+- Crossplots and histograms.
+- Interpretation storage.
+- Export and printing.
+
+Validate geological calculations against independent reference cases.
+
+### D. Correlation Workbench
+
+- Well selection and ordering.
+- Digital and raster log display.
+- Formation top picks.
+- Fault placement.
+- Flattening.
+- Session saving and reopening.
+- Mouse and keyboard interactions.
+- Window lifecycle.
+
+### E. Cross Section
+
+- Structural and stratigraphic sections.
+- Depth scaling.
+- Faults and offsets.
+- Formation tops.
+- Curve and raster rendering.
+- Saved section configurations.
+- Project switching.
+- Window destruction and resource cleanup.
+
+Investigate any unexpected retained Tk or Matplotlib objects.
+
+### F. Raster Registration and Digitizer
+
+- Raster registration and calibration.
+- Petra LIC import.
+- Multiple sections per raster.
+- Manual and automatic tracing.
+- Curve/node persistence.
+- LAS output.
+- Error handling.
+- Reopening registered logs.
+
+### G. Geosteering
+
+- Job persistence.
+- Targets and trajectories.
+- Fault handling.
+- Survey calculations.
+- Autosaving.
+- Failed-save recovery.
+- Job and project switching.
+- Application closure.
+
+### H. Shared Infrastructure
+
+- SQLite transactions.
+- Project manifests.
+- File paths and portability.
+- Dropbox/synchronized-folder safeguards.
+- Project snapshot and handoff mechanisms.
+- Recovery and backups.
+- Caching.
+- Memory management.
+- Tkinter lifecycle.
+- Matplotlib ownership.
+- Thread safety.
+- Licensing.
+- Build and packaging.
+- Error handling and logging.
+
+## 5. Targeted v0.9.72 Verification
+
+Perform additional investigation of the latest changes.
+
+### Petra LIC Import
+
+Verify:
+
+- Import dialog opens before LIC parsing.
+- User-selected raster folder overrides embedded LIC paths.
+- Recursive image lookup works reliably.
+- Ambiguous images aren't selected silently.
+- Add New, Update Existing, and Add/Update behave correctly.
+- Existing raster identity matching is reliable.
+- Original LIC overwrite requires permission.
+- Backup and atomic replacement work.
+- Existing registrations and digitized curves are protected.
+- Batch failures are isolated.
+- Import results persist after closing and reopening.
+
+Test using realistic LIC variations as well as synthetic files.
+
+### TVD Pay Convention
+
+Verify:
+
+- Conventional wells retain correct TVD pay.
+- Non-monotonic intervals return N/A for TVD pay and N:G.
+- No automatic MD substitution occurs.
+- MD interval length remains separately identified.
+- Petro, Batch Zones, exports, and maps handle N/A consistently.
+- Protected Cython modules match their source implementations.
+
+## 6. Project Data Integrity
+
+This remains a release-critical area.
+
+Audit:
+
+- Failed saves.
+- Unsaved edits.
+- Project close and exit.
+- Survey switching.
+- Database locks.
+- Transaction failures.
+- Interrupted writes.
+- Missing project files.
+- Stale synchronized copies.
+- SQLite WAL behavior.
+- External file references.
+- Project moves between drives.
+
+Verify that a user cannot unknowingly lose committed geological interpretation data.
+
+Use temporary synthetic projects only.
+
+Do not access live client data.
+
+## 7. Numerical and Geological Verification
+
+Independently evaluate:
+
+- MD/TVD/TVDSS conversion.
+- Directional survey interpolation.
+- Zone thickness calculations.
+- Net pay and net/gross.
+- PhiH and other interval attributes.
+- Water saturation calculations.
+- Production metrics.
+- EUR per foot.
+- Gridding and interpolation.
+- Depth/time conversions.
+- Volumetric calculations.
+
+Identify numerical edge cases, unit inconsistencies, and unsupported conditions.
+
+Do not silently change geological conventions.
+
+## 8. Memory, Performance, and Stability
+
+Investigate:
+
+- LAS cache memory accounting.
+- Repeated opening of wells and projects.
+- Large raster libraries.
+- SEG-Y loading and caching.
+- Matplotlib figure retention.
+- Tk root retention.
+- Background callbacks.
+- Cross-module resource cleanup.
+- Long GUI sessions.
+
+Use reasonable synthetic stress tests.
+
+Distinguish measured results from extrapolations.
+
+## 9. Test Execution
+
+Run the complete available test suite.
+
+Requirements:
+
+- Full serial test run.
+- Targeted subsystem tests.
+- Persistence/failure-injection tests.
+- Numerical reference tests.
+- GUI lifecycle tests.
+- Packaging verification.
+- Relevant Cython parity tests.
+
+Record:
+
+- Passed tests.
+- Failed tests.
+- Skipped tests.
+- Subtest totals.
+- Runtime.
+- Peak memory.
+- Crashes and exit codes.
+
+Never describe an interrupted run as a pass.
+
+Do not repeatedly rerun a crashing suite merely to obtain a green result. Preserve diagnostic evidence and investigate the failure.
+
+Do not disable or weaken tests.
+
+## 10. Finding Classification
+
+Classify every finding:
+
+- **Critical:** Data loss, corruption, native crash, serious security failure.
+- **High:** Major correctness, persistence, or operational defect.
+- **Medium:** Functional defect, inconsistent behavior, or important reliability issue.
+- **Low:** Minor functional or usability defect.
+- **Cleanup:** Redundant, obsolete, or inconsistent code requiring correction.
+
+Every finding must include:
+
+1. Unique ID.
+2. Severity.
+3. Exact file and function.
+4. Line references.
+5. Root cause or supported hypothesis.
+6. Reproduction steps.
+7. Expected and observed behavior.
+8. Test evidence.
+9. Recommended correction.
+10. Potential regression risks.
+
+Use the prefix `FA72-` for new findings.
+
+Preserve earlier IDs for previously reported issues.
+
+Do not omit findings solely because they are cosmetic or low priority.
+
+## 11. Required Deliverables
+
+Publish under:
+
+`Software-reviews/audits/v0.9.72-full/`
+
+Required files:
+
+- `OandG_Workbench_v0.9.72_Full_Audit.md`
+- `OandG_Workbench_v0.9.72_Findings.csv`
+- `OandG_Workbench_v0.9.72_Audit_Evidence.md`
+- `OandG_Workbench_v0.9.72_Review_Coverage.csv`
+- `OandG_Workbench_v0.9.72_Recommended_Fixes.md`
+- `OandG_Workbench_v0.9.72_Regression_Test_Plan.md`
+- `OandG_Workbench_v0.9.72_Full_Audit.pdf`
+- `OandG_Workbench_v0.9.72_Audit_Bundle.zip`
+
+Include supporting logs, diagnostic scripts, and relevant reproduction evidence.
+
+The ZIP must include all reports and findings.
+
+Do not include client databases, proprietary customer data, credentials, or unnecessary application source.
+
+## 12. Final Report
+
+Provide:
+
+- Executive assessment.
+- Complete findings register.
+- Verification status of all 17 previous findings.
+- Findings introduced or exposed in v0.9.72.
+- Data-integrity assessment.
+- Geological/numerical assessment.
+- Tk and memory stability assessment.
+- Packaging and distribution assessment.
+- Windows qualification gaps.
+- Recommended fix order.
+- Remaining unverified risks.
+
+Clearly distinguish confirmed defects from suspected issues.
+
+### STOP RULE
+
+**Audit only. No source corrections.**
+
+Do not modify production code, tests, version numbers, dependencies, or release artifacts.
+
+Do not generate v0.9.73.
+
+Publish the audit and stop.
+
+The next development step will be a single Claude protocol combining this complete v0.9.72 audit with the outstanding v0.9.70 Tk segmentation fault findings.
+
+**Goal: Identify every known remaining defect before the final pre-v1.0 corrective release.**

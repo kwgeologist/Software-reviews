@@ -1,0 +1,11 @@
+{
+  "commit": "cbc253ccf2793859fa909e9b8521331ddf389f22",
+  "tracked_files_checked": 980,
+  "source_or_tests_changed_or_missing": [],
+  "git_status": "",
+  "received_zip_sha256": "41ece88abe5430264e5e3905e4ee1df425cffab10c5a66fe0d2d5ca4edba2b17",
+  "expected_zip_sha256": "41ece88abe5430264e5e3905e4ee1df425cffab10c5a66fe0d2d5ca4edba2b17",
+  "audit_copy_python_source_changed": [],
+  "protected_extensions_built_only_in_separate_audit_copy": true,
+  "no_software_commit_or_version_change": true
+}
